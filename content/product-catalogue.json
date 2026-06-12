@@ -1,0 +1,286 @@
+{
+  "company": "Traya International Exim LLP",
+  "source": "Traya_Consolidated_Product_Catalogue.pdf",
+  "totalCategories": 18,
+  "totalProducts": 151,
+  "note": "Flat product model — each item is its own product document referencing a category. Best for SEO (buyers search exact product names). Doubles as the Sanity seed source.",
+  "categories": [
+    {
+      "title": "Dehydrated White Onion",
+      "slug": "dehydrated-white-onion",
+      "order": 1,
+      "products": [
+        {"n": 1, "name": "Dehydrated White Onion Kibbled", "slug": "dehydrated-white-onion-kibbled"},
+        {"n": 2, "name": "Dehydrated White Onion Chopped", "slug": "dehydrated-white-onion-chopped"},
+        {"n": 3, "name": "Dehydrated White Onion Minced", "slug": "dehydrated-white-onion-minced"},
+        {"n": 4, "name": "Dehydrated White Onion Granules", "slug": "dehydrated-white-onion-granules"},
+        {"n": 5, "name": "Dehydrated White Onion Powder", "slug": "dehydrated-white-onion-powder"}
+      ]
+    },
+    {
+      "title": "Dehydrated Red Onion",
+      "slug": "dehydrated-red-onion",
+      "order": 2,
+      "products": [
+        {"n": 6, "name": "Dehydrated Red Onion Kibbled", "slug": "dehydrated-red-onion-kibbled"},
+        {"n": 7, "name": "Dehydrated Red Onion Chopped", "slug": "dehydrated-red-onion-chopped"},
+        {"n": 8, "name": "Dehydrated Red Onion Minced", "slug": "dehydrated-red-onion-minced"},
+        {"n": 9, "name": "Dehydrated Red Onion Granules", "slug": "dehydrated-red-onion-granules"},
+        {"n": 10, "name": "Dehydrated Red Onion Powder", "slug": "dehydrated-red-onion-powder"}
+      ]
+    },
+    {
+      "title": "Dehydrated Pink Onion",
+      "slug": "dehydrated-pink-onion",
+      "order": 3,
+      "products": [
+        {"n": 11, "name": "Dehydrated Pink Onion Kibbled", "slug": "dehydrated-pink-onion-kibbled"},
+        {"n": 12, "name": "Dehydrated Pink Onion Chopped", "slug": "dehydrated-pink-onion-chopped"},
+        {"n": 13, "name": "Dehydrated Pink Onion Minced", "slug": "dehydrated-pink-onion-minced"},
+        {"n": 14, "name": "Dehydrated Pink Onion Granules", "slug": "dehydrated-pink-onion-granules"},
+        {"n": 15, "name": "Dehydrated Pink Onion Powder", "slug": "dehydrated-pink-onion-powder"}
+      ]
+    },
+    {
+      "title": "Fresh Onion",
+      "slug": "fresh-onion",
+      "order": 4,
+      "products": [
+        {"n": 16, "name": "Fresh White Onion", "slug": "fresh-white-onion"},
+        {"n": 17, "name": "Fresh Red Onion", "slug": "fresh-red-onion"},
+        {"n": 18, "name": "Fresh Pink Onion", "slug": "fresh-pink-onion"}
+      ]
+    },
+    {
+      "title": "Dehydrated Garlic",
+      "slug": "dehydrated-garlic",
+      "order": 5,
+      "products": [
+        {"n": 19, "name": "Dehydrated Garlic Cloves / Kibbled (Flakes)", "slug": "dehydrated-garlic-cloves-kibbled"},
+        {"n": 20, "name": "Dehydrated Garlic Chopped", "slug": "dehydrated-garlic-chopped"},
+        {"n": 21, "name": "Dehydrated Garlic Minced", "slug": "dehydrated-garlic-minced"},
+        {"n": 22, "name": "Dehydrated Garlic Granules", "slug": "dehydrated-garlic-granules"},
+        {"n": 23, "name": "Dehydrated Garlic Powder", "slug": "dehydrated-garlic-powder"}
+      ]
+    },
+    {
+      "title": "Special Dehydrated Products",
+      "slug": "special-dehydrated-products",
+      "order": 6,
+      "products": [
+        {"n": 24, "name": "Crispy Fried Onion", "slug": "crispy-fried-onion"},
+        {"n": 25, "name": "Toasted Onion Flakes / Kibbled", "slug": "toasted-onion-flakes-kibbled"},
+        {"n": 26, "name": "Toasted Onion Powder", "slug": "toasted-onion-powder"},
+        {"n": 27, "name": "Dehydrated Potato Flakes", "slug": "dehydrated-potato-flakes"},
+        {"n": 28, "name": "Dehydrated Potato Powder", "slug": "dehydrated-potato-powder"}
+      ]
+    },
+    {
+      "title": "Dehydrated Vegetables",
+      "slug": "dehydrated-vegetables",
+      "order": 7,
+      "products": [
+        {"n": 29, "name": "Dehydrated Carrot Flakes", "slug": "dehydrated-carrot-flakes"},
+        {"n": 30, "name": "Dehydrated Green Chili Flakes", "slug": "dehydrated-green-chili-flakes"},
+        {"n": 31, "name": "Green Chili Powder", "slug": "green-chili-powder"},
+        {"n": 32, "name": "Dehydrated Coriander Leaves", "slug": "dehydrated-coriander-leaves"},
+        {"n": 33, "name": "Dehydrated Coriander Powder", "slug": "dehydrated-coriander-powder"},
+        {"n": 34, "name": "Dehydrated Ginger Powder", "slug": "dehydrated-ginger-powder"},
+        {"n": 35, "name": "Onion Flakes (Dried)", "slug": "onion-flakes-dried"},
+        {"n": 36, "name": "Mint Leaves and Powder", "slug": "mint-leaves-and-powder"},
+        {"n": 37, "name": "Spinach Leaves and Powder", "slug": "spinach-leaves-and-powder"},
+        {"n": 38, "name": "Curry Leaves and Powder", "slug": "curry-leaves-and-powder"},
+        {"n": 39, "name": "Cabbage Flakes and Powder", "slug": "cabbage-flakes-and-powder"},
+        {"n": 40, "name": "Beetroot Flakes and Powder", "slug": "beetroot-flakes-and-powder"},
+        {"n": 41, "name": "Bitter Gourd Flakes and Powder", "slug": "bitter-gourd-flakes-and-powder"},
+        {"n": 42, "name": "Bottle Gourd Flakes and Powder", "slug": "bottle-gourd-flakes-and-powder"},
+        {"n": 43, "name": "Tamarind Powder", "slug": "tamarind-powder"}
+      ]
+    },
+    {
+      "title": "Spray Dried Products",
+      "slug": "spray-dried-products",
+      "order": 8,
+      "products": [
+        {"n": 44, "name": "Spray Dried Green Chilli Powder", "slug": "spray-dried-green-chilli-powder"},
+        {"n": 45, "name": "Spray Dried Mango Powder", "slug": "spray-dried-mango-powder"},
+        {"n": 46, "name": "Spray Dried Tomato Powder", "slug": "spray-dried-tomato-powder"},
+        {"n": 47, "name": "Spray Dried Lemon Powder", "slug": "spray-dried-lemon-powder"},
+        {"n": 48, "name": "Spray Dried Pineapple Powder", "slug": "spray-dried-pineapple-powder"},
+        {"n": 49, "name": "Spray Dried Tamarind Powder", "slug": "spray-dried-tamarind-powder"},
+        {"n": 50, "name": "Spray Dried Green Banana Powder", "slug": "spray-dried-green-banana-powder"},
+        {"n": 51, "name": "Spray Dried Orange Powder", "slug": "spray-dried-orange-powder"},
+        {"n": 52, "name": "Spray Dried Banana Powder", "slug": "spray-dried-banana-powder"},
+        {"n": 53, "name": "Spray Dried Apple Powder", "slug": "spray-dried-apple-powder"},
+        {"n": 54, "name": "Spray Dried Chickoo Powder", "slug": "spray-dried-chickoo-powder"},
+        {"n": 55, "name": "Spray Dried Guava Powder", "slug": "spray-dried-guava-powder"},
+        {"n": 56, "name": "Spray Dried Papaya Powder", "slug": "spray-dried-papaya-powder"},
+        {"n": 57, "name": "Spray Dried Litchi Powder", "slug": "spray-dried-litchi-powder"},
+        {"n": 58, "name": "Spray Dried Coconut Milk Powder", "slug": "spray-dried-coconut-milk-powder"},
+        {"n": 59, "name": "Spray Dried Strawberry Powder", "slug": "spray-dried-strawberry-powder"},
+        {"n": 60, "name": "Spray Dried Sugarcane Powder", "slug": "spray-dried-sugarcane-powder"},
+        {"n": 61, "name": "Spray Dried Pomegranate Powder", "slug": "spray-dried-pomegranate-powder"},
+        {"n": 62, "name": "Spray Dried Custard Apple Powder", "slug": "spray-dried-custard-apple-powder"},
+        {"n": 63, "name": "Spray Dried Carrot Powder", "slug": "spray-dried-carrot-powder"},
+        {"n": 64, "name": "Spray Dried Mint Powder", "slug": "spray-dried-mint-powder"},
+        {"n": 65, "name": "Spray Dried Spinach Powder", "slug": "spray-dried-spinach-powder"},
+        {"n": 66, "name": "Spray Dried Beetroot Powder", "slug": "spray-dried-beetroot-powder"}
+      ]
+    },
+    {
+      "title": "Dairy Powders",
+      "slug": "dairy-powders",
+      "order": 9,
+      "products": [
+        {"n": 67, "name": "Cheese Powder", "slug": "cheese-powder"},
+        {"n": 68, "name": "Butter Powder", "slug": "butter-powder"},
+        {"n": 69, "name": "Curd Powder", "slug": "curd-powder"},
+        {"n": 70, "name": "Cream Powder", "slug": "cream-powder"},
+        {"n": 71, "name": "Ghee Powder", "slug": "ghee-powder"}
+      ]
+    },
+    {
+      "title": "Taste Enhancers",
+      "slug": "taste-enhancers",
+      "order": 10,
+      "products": [
+        {"n": 72, "name": "Vinegar Powder", "slug": "vinegar-powder"},
+        {"n": 73, "name": "Soyasauce Powder", "slug": "soyasauce-powder"},
+        {"n": 74, "name": "HVP (Hydrolysed Vegetable Protein)", "slug": "hvp-hydrolysed-vegetable-protein"}
+      ]
+    },
+    {
+      "title": "Herbal Powders",
+      "slug": "herbal-powders",
+      "order": 11,
+      "products": [
+        {"n": 75, "name": "Moringa Leaves Powder", "slug": "moringa-leaves-powder"},
+        {"n": 76, "name": "Moringa Powder", "slug": "moringa-powder"},
+        {"n": 77, "name": "Spirulina Powder", "slug": "spirulina-powder"},
+        {"n": 78, "name": "Ashwagandha Powder", "slug": "ashwagandha-powder"},
+        {"n": 79, "name": "Amla Powder", "slug": "amla-powder"},
+        {"n": 80, "name": "Dehydrated Beetroot Powder", "slug": "dehydrated-beetroot-powder"},
+        {"n": 81, "name": "Spinach Leaves Powder", "slug": "spinach-leaves-powder"},
+        {"n": 82, "name": "Coriander Leaves Powder", "slug": "coriander-leaves-powder"},
+        {"n": 83, "name": "Fenugreek Leaves Powder", "slug": "fenugreek-leaves-powder"},
+        {"n": 84, "name": "Curry Leaves Powder", "slug": "curry-leaves-powder"},
+        {"n": 85, "name": "Carrot Powder", "slug": "carrot-powder"},
+        {"n": 86, "name": "Tomato Powder", "slug": "tomato-powder"},
+        {"n": 87, "name": "Bottle Gourd Powder", "slug": "bottle-gourd-powder"},
+        {"n": 88, "name": "Pomegranate Powder", "slug": "pomegranate-powder"},
+        {"n": 89, "name": "Sprouted Moong Powder", "slug": "sprouted-moong-powder"},
+        {"n": 90, "name": "Onion Powder", "slug": "onion-powder"},
+        {"n": 91, "name": "Beetroot Chips", "slug": "beetroot-chips"}
+      ]
+    },
+    {
+      "title": "Spices & Powders",
+      "slug": "spices-powders",
+      "order": 12,
+      "products": [
+        {"n": 92, "name": "Turmeric Powder", "slug": "turmeric-powder"},
+        {"n": 93, "name": "Red Chilli Powder", "slug": "red-chilli-powder"},
+        {"n": 94, "name": "Coriander Powder", "slug": "coriander-powder"},
+        {"n": 95, "name": "Dried Cumin Seed Powder", "slug": "dried-cumin-seed-powder"},
+        {"n": 96, "name": "Jeera Powder", "slug": "jeera-powder"},
+        {"n": 97, "name": "Whole Jeera (Cumin Seeds)", "slug": "whole-jeera-cumin-seeds"},
+        {"n": 98, "name": "Ginger Powder", "slug": "ginger-powder"},
+        {"n": 99, "name": "Methi Seeds (Fenugreek Seeds)", "slug": "methi-seeds-fenugreek-seeds"},
+        {"n": 100, "name": "Lemon Powder", "slug": "lemon-powder"},
+        {"n": 101, "name": "Dried Pomegranate Seeds", "slug": "dried-pomegranate-seeds"},
+        {"n": 102, "name": "Black Pepper Powder", "slug": "black-pepper-powder"},
+        {"n": 103, "name": "Black Salt Powder", "slug": "black-salt-powder"},
+        {"n": 104, "name": "Rock Salt Powder", "slug": "rock-salt-powder"},
+        {"n": 105, "name": "Cinnamon Powder", "slug": "cinnamon-powder"},
+        {"n": 106, "name": "Clove Powder", "slug": "clove-powder"},
+        {"n": 107, "name": "Cumin Powder", "slug": "cumin-powder"},
+        {"n": 108, "name": "Fenugreek Powder", "slug": "fenugreek-powder"}
+      ]
+    },
+    {
+      "title": "Chilli Flakes",
+      "slug": "chilli-flakes",
+      "order": 13,
+      "products": [
+        {"n": 109, "name": "Red Chili Flakes (Crushed)", "slug": "red-chili-flakes-crushed"},
+        {"n": 110, "name": "Deluxe Chilli Flakes (Sannam)", "slug": "deluxe-chilli-flakes-sannam"},
+        {"n": 111, "name": "Seedless Chilli Flakes", "slug": "seedless-chilli-flakes"},
+        {"n": 112, "name": "Dried Red Chilli Flakes (Guntur)", "slug": "dried-red-chilli-flakes-guntur"}
+      ]
+    },
+    {
+      "title": "Seasonings",
+      "slug": "seasonings",
+      "order": 14,
+      "products": [
+        {"n": 113, "name": "Spanish Tomato Seasoning", "slug": "spanish-tomato-seasoning"},
+        {"n": 114, "name": "Cream and Onion Seasoning", "slug": "cream-and-onion-seasoning"},
+        {"n": 115, "name": "Oregano Pizza Seasoning", "slug": "oregano-pizza-seasoning"},
+        {"n": 116, "name": "Barbecue Seasoning Powder", "slug": "barbecue-seasoning-powder"},
+        {"n": 117, "name": "Noodles Seasoning", "slug": "noodles-seasoning"},
+        {"n": 118, "name": "Kurkure Seasoning", "slug": "kurkure-seasoning"},
+        {"n": 119, "name": "Tangy Tomato Seasoning", "slug": "tangy-tomato-seasoning"},
+        {"n": 120, "name": "Soyastick Seasoning", "slug": "soyastick-seasoning"},
+        {"n": 121, "name": "Manchurian Seasoning", "slug": "manchurian-seasoning"},
+        {"n": 122, "name": "Tikha Tadka Seasoning", "slug": "tikha-tadka-seasoning"},
+        {"n": 123, "name": "Mint Seasoning", "slug": "mint-seasoning"},
+        {"n": 124, "name": "Garlic Seasoning", "slug": "garlic-seasoning"},
+        {"n": 125, "name": "Peri Peri Seasoning", "slug": "peri-peri-seasoning"},
+        {"n": 126, "name": "Cheese Peri Peri Seasoning", "slug": "cheese-peri-peri-seasoning"},
+        {"n": 127, "name": "Cheese Seasoning", "slug": "cheese-seasoning"},
+        {"n": 128, "name": "Schezwan Seasoning", "slug": "schezwan-seasoning"},
+        {"n": 129, "name": "Mexican Seasoning", "slug": "mexican-seasoning"},
+        {"n": 130, "name": "Chinese Seasoning", "slug": "chinese-seasoning"},
+        {"n": 131, "name": "Oregano Seasoning", "slug": "oregano-seasoning"}
+      ]
+    },
+    {
+      "title": "Herbs",
+      "slug": "herbs",
+      "order": 15,
+      "products": [
+        {"n": 132, "name": "Dried Oregano Leaves", "slug": "dried-oregano-leaves"},
+        {"n": 133, "name": "Dry Parsley Leaves", "slug": "dry-parsley-leaves"},
+        {"n": 134, "name": "Kasuri Methi (Dried Fenugreek Leaves)", "slug": "kasuri-methi-dried-fenugreek-leaves"},
+        {"n": 135, "name": "Basil", "slug": "basil"},
+        {"n": 136, "name": "Thyme", "slug": "thyme"},
+        {"n": 137, "name": "Rosemary", "slug": "rosemary"},
+        {"n": 138, "name": "Mix Herbs", "slug": "mix-herbs"}
+      ]
+    },
+    {
+      "title": "Edible Seeds & Sesame",
+      "slug": "edible-seeds-sesame",
+      "order": 16,
+      "products": [
+        {"n": 139, "name": "Black Chia Seeds", "slug": "black-chia-seeds"},
+        {"n": 140, "name": "Hulled Sesame Seeds", "slug": "hulled-sesame-seeds"},
+        {"n": 141, "name": "Natural Sesame Seeds", "slug": "natural-sesame-seeds"},
+        {"n": 142, "name": "Black Sesame Seeds", "slug": "black-sesame-seeds"}
+      ]
+    },
+    {
+      "title": "Sweeteners & Oils",
+      "slug": "sweeteners-oils",
+      "order": 17,
+      "products": [
+        {"n": 143, "name": "Jaggery Cubes", "slug": "jaggery-cubes"},
+        {"n": 144, "name": "Jaggery Powder", "slug": "jaggery-powder"},
+        {"n": 145, "name": "Brown Sugar (Khandsari)", "slug": "brown-sugar-khandsari"},
+        {"n": 146, "name": "Pink Salt", "slug": "pink-salt"},
+        {"n": 147, "name": "A2 Cow Ghee", "slug": "a2-cow-ghee"},
+        {"n": 148, "name": "Cold Pressed Groundnut Oil", "slug": "cold-pressed-groundnut-oil"},
+        {"n": 149, "name": "Cold Pressed Sesame Oil", "slug": "cold-pressed-sesame-oil"}
+      ]
+    },
+    {
+      "title": "Millets & Specialty",
+      "slug": "millets-specialty",
+      "order": 18,
+      "products": [
+        {"n": 150, "name": "All Millets (Mixed)", "slug": "all-millets-mixed"},
+        {"n": 151, "name": "Tomato Ketchup (Organic, No Preservatives)", "slug": "tomato-ketchup-organic"}
+      ]
+    }
+  ]
+}

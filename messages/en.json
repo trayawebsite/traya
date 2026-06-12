@@ -1,0 +1,42 @@
+{
+  "Links": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "certifications": "Certifications",
+    "contact": "Contact",
+    "catalogue": "Download Catalogue",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "Header": {
+    "getQuote": "Get a Quote",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "skip": "Skip to content",
+    "whatsapp": "Chat on WhatsApp"
+  },
+  "Footer": {
+    "blurb": "A global food & agro ingredient export partner — building partnerships across continents.",
+    "company": "Company",
+    "explore": "Explore",
+    "legal": "Legal",
+    "contactHeading": "Get in touch",
+    "rights": "All rights reserved."
+  },
+  "Language": {
+    "label": "Language",
+    "en": "English"
+  },
+  "Home": {
+    "title": "Traya International Exim LLP",
+    "subtitle": "Building partnerships across continents."
+  },
+  "NotFound": {
+    "code": "404",
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or may have moved.",
+    "back": "Back to home"
+  }
+}

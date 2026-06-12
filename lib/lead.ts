@@ -1,0 +1,92 @@
+import {NextResponse} from 'next/server';
+import type {z} from 'zod';
+import {resend, getLeadRecipients, FROM_EMAIL} from '@/lib/resend';
+import {logLeadToSheet} from '@/lib/sheets';
+
+// Shared lead-handling pipeline used by the three form routes
+// (/api/contact, /api/inquiry, /api/quote). Each route is a thin wrapper that
+// supplies its own type + zod schema; everything else lives here so the email
+// fan-out and Sheets logging are defined exactly once.
+export type LeadType = 'contact' | 'inquiry' | 'quote';
+type LeadData = Record<string, string | undefined>;
+
+export async function handleLead(
+  type: LeadType,
+  schema: z.ZodTypeAny,
+  req: Request
+): Promise<Response> {
+  let raw: unknown;
+  try {
+    raw = await req.json();
+  } catch {
+    return NextResponse.json({ok: false, error: 'Invalid JSON body'}, {status: 400});
+  }
+
+  const parsed = schema.safeParse(raw);
+  if (!parsed.success) {
+    return NextResponse.json(
+      {ok: false, error: 'Validation failed', issues: parsed.error.flatten().fieldErrors},
+      {status: 422}
+    );
+  }
+
+  const data = parsed.data as LeadData;
+
+  // ── 1) Email fan-out to every configured recipient ──────────────────
+  const recipients = getLeadRecipients();
+  let email: {sent: boolean; to: string[]; id?: string; error?: string} = {
+    sent: false,
+    to: recipients
+  };
+
+  if (!process.env.RESEND_API_KEY) {
+    email.error = 'RESEND_API_KEY not set';
+  } else if (recipients.length === 0) {
+    email.error = 'LEAD_RECIPIENT_EMAILS not set';
+  } else {
+    try {
+      const {data: sent, error} = await resend.emails.send({
+        from: FROM_EMAIL,
+        to: recipients,
+        replyTo: data.email,
+        subject: subjectFor(type, data),
+        text: textFor(type, data)
+      });
+      email = error
+        ? {sent: false, to: recipients, error: error.message}
+        : {sent: true, to: recipients, id: sent?.id};
+    } catch (err) {
+      email = {sent: false, to: recipients, error: String(err)};
+    }
+  }
+
+  // ── 2) Sheets log (best-effort — never blocks the response) ──────────
+  const sheet = await logLeadToSheet(type, data);
+
+  return NextResponse.json({ok: true, type, email, sheet});
+}
+
+function subjectFor(type: LeadType, data: LeadData): string {
+  const who = data.company ? `${data.name} (${data.company})` : data.name;
+  if (type === 'quote') return `Quote request — ${data.productName || 'general'} — ${who}`;
+  if (type === 'inquiry') return `Product inquiry — ${data.productName || 'general'} — ${who}`;
+  return `Contact form — ${who}`;
+}
+
+function textFor(type: LeadType, data: LeadData): string {
+  const rows: Array<string | null> = [
+    `New ${type} lead from the Traya website`,
+    '',
+    `Name:     ${data.name}`,
+    `Email:    ${data.email}`,
+    data.company ? `Company:  ${data.company}` : null,
+    data.country ? `Country:  ${data.country}` : null,
+    data.phone ? `Phone:    ${data.phone}` : null,
+    data.productName ? `Product:  ${data.productName}` : null,
+    data.quantity ? `Quantity: ${data.quantity}` : null,
+    '',
+    'Message:',
+    data.message ?? ''
+  ];
+  return rows.filter((r) => r !== null).join('\n');
+}

@@ -1,0 +1,171 @@
+// Transforms content/product-catalogue.json into a Sanity-importable NDJSON file.
+// Run:  node scripts/generate-seed.mjs
+// Import later (once the project is connected):
+//   pnpm dlx sanity@latest dataset import content/seed.ndjson production
+//
+// Grouping rule: the onion/garlic families collapse into ONE product with a
+// `forms[]` array (Kibbled, Chopped, ...). Every other item stays standalone.
+// Edit GROUPED_CATEGORIES to change which categories collapse into variants.
+
+import {readFileSync, writeFileSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+import {dirname, join} from 'node:path';
+
+const root = join(dirname(fileURLToPath(import.meta.url)), '..');
+const catalogue = JSON.parse(
+  readFileSync(join(root, 'content/product-catalogue.json'), 'utf8')
+);
+
+// Categories whose items are forms of one base product.
+const GROUPED_CATEGORIES = new Set([
+  'dehydrated-white-onion',
+  'dehydrated-red-onion',
+  'dehydrated-pink-onion',
+  'dehydrated-garlic'
+]);
+
+const FORM_WORDS = ['Kibbled', 'Chopped', 'Minced', 'Granules', 'Powder', 'Flakes', 'Cloves'];
+
+function detectForm(name) {
+  const match = FORM_WORDS.find((w) => name.includes(w));
+  return match ?? name;
+}
+
+const docs = [];
+
+for (const cat of catalogue.categories) {
+  const categoryId = `category.${cat.slug}`;
+
+  docs.push({
+    _id: categoryId,
+    _type: 'category',
+    title: cat.title,
+    slug: {_type: 'slug', current: cat.slug},
+    order: cat.order
+  });
+
+  const categoryRef = {_type: 'reference', _ref: categoryId};
+
+  if (GROUPED_CATEGORIES.has(cat.slug)) {
+    docs.push({
+      _id: `product.${cat.slug}`,
+      _type: 'product',
+      title: cat.title,
+      slug: {_type: 'slug', current: cat.slug},
+      category: categoryRef,
+      origin: 'India',
+      forms: cat.products.map((p) => ({
+        _type: 'productForm',
+        _key: p.slug,
+        name: detectForm(p.name)
+      }))
+    });
+  } else {
+    for (const p of cat.products) {
+      docs.push({
+        _id: `product.${p.slug}`,
+        _type: 'product',
+        title: p.name,
+        slug: {_type: 'slug', current: p.slug},
+        category: categoryRef,
+        origin: 'India',
+        forms: []
+      });
+    }
+  }
+}
+
+// ── Company profile content (from .claude/company-profile.md) ───────────────
+function block(text, i) {
+  return {
+    _type: 'block',
+    _key: `b${i}`,
+    style: 'normal',
+    markDefs: [],
+    children: [{_type: 'span', _key: `s${i}`, text, marks: []}]
+  };
+}
+function feat(title, description) {
+  return {
+    _type: 'featureItem',
+    _key: title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''),
+    title,
+    description
+  };
+}
+
+docs.push({
+  _id: 'siteSettings',
+  _type: 'siteSettings',
+  companyName: 'Traya International Exim LLP',
+  tagline: 'A Refined Approach to Global Trade'
+});
+
+docs.push({
+  _id: 'aboutPage',
+  _type: 'aboutPage',
+  heading: 'About Us',
+  tagline: 'A Refined Approach to Global Trade',
+  intro: [
+    block(
+      'Traya International EXIM is a global trade firm built on precision, structure, and disciplined execution. We operate across international markets with a clear focus — to facilitate seamless import and export operations while building long-term, high-value global relationships.',
+      1
+    ),
+    block(
+      'We are a modern, forward-looking trade enterprise that combines operational strength with a global outlook, facilitating both exports and imports across diverse product categories aligned with international standards.',
+      2
+    )
+  ],
+  vision:
+    'To become the most trusted and largest trading partner for businesses expanding across borders.',
+  mission: [
+    'To facilitate efficient and well-structured export and import operations across global markets',
+    'To build and strengthen long-term international trade partnerships and provide sustainable solutions',
+    'To ensure seamless execution through disciplined systems and operational clarity',
+    'To expand our global presence through strategic market engagement',
+    'To uphold the highest standards of professionalism, reliability, quality, transparency and consistency'
+  ],
+  philosophy: [
+    feat('Clarity', 'Knowing where and how to operate.'),
+    feat('Structure', 'Having systems that support execution.'),
+    feat('Reliability', 'Delivering consistently across transactions.'),
+    feat('Scalability', 'Creating pathways for long-term expansion.')
+  ],
+  capabilities: [
+    feat(
+      'Export & Import Operations',
+      'A comprehensive, end-to-end approach — from initial planning to final delivery, every stage handled with attention to detail and operational control.'
+    ),
+    feat(
+      'Global Market Positioning',
+      'Aligning products with the right regions, demand cycles, and trade environments to enable entry and expansion across international markets.'
+    ),
+    feat(
+      'International Client & Partner Network',
+      'A network spanning multiple geographies, built on credibility and long-term, growth-oriented association.'
+    ),
+    feat(
+      'Trade Execution & Coordination',
+      'Overseeing the entire execution cycle — documentation, regulatory alignment, and logistics coordination — so transactions move efficiently across borders.'
+    ),
+    feat(
+      'Strategic Trade Direction',
+      'Structured thinking in every aspect of trade, enabling clear decision-making and consistent global positioning.'
+    )
+  ],
+  whyTraya: [
+    feat('Structured Systems', 'Ensuring efficiency and clarity at every stage.'),
+    feat('Global Network Strength', 'Enabling reliable international connections.'),
+    feat('Execution Excellence', 'Maintaining precision across operations.'),
+    feat('Professional Integrity', 'Building trust through consistent delivery.')
+  ]
+});
+
+const ndjson = docs.map((d) => JSON.stringify(d)).join('\n') + '\n';
+writeFileSync(join(root, 'content/seed.ndjson'), ndjson);
+
+const categories = docs.filter((d) => d._type === 'category').length;
+const products = docs.filter((d) => d._type === 'product').length;
+console.log(
+  `Wrote content/seed.ndjson — ${categories} categories, ${products} products, + siteSettings & aboutPage (${docs.length} docs total).`
+);

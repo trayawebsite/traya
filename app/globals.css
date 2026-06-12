@@ -1,0 +1,254 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* ═══════════════════════════════════════════════════════════════════
+   TRAYA DESIGN SYSTEM — Saffron Route
+   Premium-but-warm food-ingredient export house.
+   Register: earthy neutrals carry the page, saffron punctuates (≤2%),
+   forest is the meaningful secondary. Fraunces (display) + Figtree (body)
+   + DM Mono (specs). Research-validated direction.
+   ═══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Brand raw values ─────────────────────────────────────────── */
+  /* Dark family — hero / footer / CTA bands / dark sections */
+  --traya-deep:        #100D08;
+  --traya-deep-mid:    #1C1811;
+  /* Ink — primary text (warm near-black, never pure #000) */
+  --traya-ink:         #14120E;
+  /* Light family */
+  --traya-cream:       #F8F4EA;  /* primary background — warm, never clinical white */
+  --traya-card:        #FCFAF4;  /* cards — subtle lift off cream */
+  --traya-surface:     #EEE7D4;  /* alternate sections / tonal cards */
+  --traya-border:      #E0D8C5;  /* hairlines, dividers, form underlines */
+  /* Saffron — THE accent (turmeric, not banking-gold). Use sparingly. */
+  --traya-saffron:     #C4820A;  /* fills, CTAs, badge borders (non-text / large) */
+  --traya-saffron-hi:  #E8A81F;  /* saffron on dark backgrounds */
+  --traya-saffron-lo:  #8B5C06;  /* saffron as TEXT on cream — WCAG AA 5.2:1 */
+  --traya-saffron-soft:#F3E7CC;  /* soft saffron tint — badge / highlight backgrounds */
+  /* Forest — agriculture / nature secondary (sourcing story, quality) */
+  --traya-forest:      #1C4230;
+  --traya-forest-mid:  #2D5E42;
+  /* Slate — secondary text, captions, metadata */
+  --traya-slate:       #6E6456;
+
+  /* ── Radius ───────────────────────────────────────────────────── */
+  --radius: 0.5rem;            /* 8px base — restrained, not bubbly */
+
+  /* ── Motion (raw — for component transitions) ─────────────────── */
+  --duration-fast: 150ms;      /* hovers */
+  --duration-base: 300ms;
+  --duration-slow: 650ms;      /* scroll reveals */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);   /* out-expo — all entrances */
+
+  /* ── Semantic layer (shadcn) → mapped to BRAND. Light theme ───── */
+  --background:            var(--traya-cream);
+  --foreground:            var(--traya-ink);
+  --card:                  var(--traya-card);
+  --card-foreground:       var(--traya-ink);
+  --popover:               var(--traya-card);
+  --popover-foreground:    var(--traya-ink);
+  --primary:               var(--traya-ink);      /* primary button: ink bg */
+  --primary-foreground:    var(--traya-cream);     /* cream text */
+  --secondary:             var(--traya-surface);
+  --secondary-foreground:  var(--traya-ink);
+  --muted:                 var(--traya-surface);
+  --muted-foreground:      var(--traya-slate);
+  --accent:                var(--traya-surface);    /* subtle hovers — NOT saffron */
+  --accent-foreground:     var(--traya-ink);
+  --destructive:           #B42318;                 /* harmonized warm red */
+  --destructive-foreground:#FFFFFF;
+  --border:                var(--traya-border);
+  --input:                 var(--traya-border);
+  --ring:                  var(--traya-saffron);    /* focus ring = brand */
+  /* Charts → brand palette */
+  --chart-1: var(--traya-saffron);
+  --chart-2: var(--traya-forest);
+  --chart-3: var(--traya-saffron-hi);
+  --chart-4: var(--traya-forest-mid);
+  --chart-5: var(--traya-slate);
+  /* Sidebar (Studio etc.) */
+  --sidebar:                       var(--traya-surface);
+  --sidebar-foreground:            var(--traya-ink);
+  --sidebar-primary:               var(--traya-ink);
+  --sidebar-primary-foreground:    var(--traya-cream);
+  --sidebar-accent:                var(--traya-saffron-soft);
+  --sidebar-accent-foreground:     var(--traya-ink);
+  --sidebar-border:                var(--traya-border);
+  --sidebar-ring:                  var(--traya-saffron);
+}
+
+.dark {
+  /* Light-first brand — dark sections normally use bg-traya-deep directly.
+     This block keeps a coherent dark THEME if ever toggled. */
+  --background:            var(--traya-deep);
+  --foreground:            var(--traya-cream);
+  --card:                  var(--traya-deep-mid);
+  --card-foreground:       var(--traya-cream);
+  --popover:               var(--traya-deep-mid);
+  --popover-foreground:    var(--traya-cream);
+  --primary:               var(--traya-saffron-hi); /* on dark, saffron leads */
+  --primary-foreground:    var(--traya-deep);
+  --secondary:             var(--traya-deep-mid);
+  --secondary-foreground:  var(--traya-cream);
+  --muted:                 var(--traya-deep-mid);
+  --muted-foreground:      #A99F8E;
+  --accent:                var(--traya-deep-mid);
+  --accent-foreground:     var(--traya-cream);
+  --destructive:           #F0635A;
+  --destructive-foreground:var(--traya-deep);
+  --border:                oklch(1 0 0 / 12%);
+  --input:                 oklch(1 0 0 / 15%);
+  --ring:                  var(--traya-saffron-hi);
+  --chart-1: var(--traya-saffron-hi);
+  --chart-2: var(--traya-forest-mid);
+  --chart-3: var(--traya-saffron);
+  --chart-4: #5A8A6E;
+  --chart-5: #A99F8E;
+  --sidebar:                       var(--traya-deep-mid);
+  --sidebar-foreground:            var(--traya-cream);
+  --sidebar-primary:               var(--traya-saffron-hi);
+  --sidebar-primary-foreground:    var(--traya-deep);
+  --sidebar-accent:                oklch(1 0 0 / 8%);
+  --sidebar-accent-foreground:     var(--traya-cream);
+  --sidebar-border:                oklch(1 0 0 / 12%);
+  --sidebar-ring:                  var(--traya-saffron-hi);
+}
+
+@theme inline {
+  /* ── Brand colors → utilities (bg-traya-deep, text-traya-saffron-lo…) */
+  --color-traya-deep:         var(--traya-deep);
+  --color-traya-deep-mid:     var(--traya-deep-mid);
+  --color-traya-ink:          var(--traya-ink);
+  --color-traya-cream:        var(--traya-cream);
+  --color-traya-card:         var(--traya-card);
+  --color-traya-surface:      var(--traya-surface);
+  --color-traya-border:       var(--traya-border);
+  --color-traya-saffron:      var(--traya-saffron);
+  --color-traya-saffron-hi:   var(--traya-saffron-hi);
+  --color-traya-saffron-lo:   var(--traya-saffron-lo);
+  --color-traya-saffron-soft: var(--traya-saffron-soft);
+  --color-traya-forest:       var(--traya-forest);
+  --color-traya-forest-mid:   var(--traya-forest-mid);
+  --color-traya-slate:        var(--traya-slate);
+
+  /* ── Semantic colors → utilities */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ── Radius scale */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* ── Fonts (next/font injects --font-fraunces/figtree/dm-mono on <html>) */
+  --font-sans:    var(--font-figtree);      /* default body/UI */
+  --font-body:    var(--font-figtree);      /* alias */
+  --font-display: var(--font-fraunces);     /* headlines, font-display */
+  --font-mono:    var(--font-dm-mono);      /* specs, data */
+  --font-code:    var(--font-dm-mono);      /* alias */
+
+  /* ── Display type scale (fluid) → text-display-xl … text-display-sm */
+  --text-display-xl: clamp(2.75rem, 1.6rem + 4vw, 5rem);
+  --text-display-xl--line-height: 1.02;
+  --text-display-xl--letter-spacing: -0.02em;
+  --text-display-lg: clamp(2.25rem, 1.5rem + 3vw, 3.5rem);
+  --text-display-lg--line-height: 1.05;
+  --text-display-lg--letter-spacing: -0.015em;
+  --text-display: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  --text-display--line-height: 1.1;
+  --text-display--letter-spacing: -0.01em;
+  --text-display-sm: clamp(1.375rem, 1.2rem + 1vw, 1.75rem);
+  --text-display-sm--line-height: 1.15;
+  --text-display-sm--letter-spacing: -0.01em;
+
+  /* ── Section spacing rhythm → py-section, py-section-lg … */
+  --spacing-section-sm: 4rem;    /* 64  */
+  --spacing-section:    6rem;    /* 96  */
+  --spacing-section-lg: 8rem;    /* 128 */
+  --spacing-section-xl: 10rem;   /* 160 */
+
+  /* ── Container → max-w-page */
+  --container-page: 82.5rem;     /* 1320px */
+
+  /* ── Warm-tinted shadows (soft, premium — low contrast) */
+  --shadow-xs: 0 1px 2px 0 rgb(20 18 14 / 0.04);
+  --shadow-sm: 0 2px 8px -2px rgb(20 18 14 / 0.06);
+  --shadow-md: 0 8px 24px -6px rgb(20 18 14 / 0.08);
+  --shadow-lg: 0 20px 48px -12px rgb(20 18 14 / 0.12);
+  --shadow-xl: 0 32px 64px -16px rgb(20 18 14 / 0.16);
+
+  /* ── Easing → ease-expo */
+  --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv01";
+  }
+  /* Headlines default to Fraunces — the editorial half of the brand */
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background: var(--traya-saffron);
+    color: var(--traya-cream);
+  }
+}
+
+@layer components {
+  /* Identity-defining section label: amber eyebrow above every heading */
+  .section-label {
+    font-family: var(--font-body);
+    font-size: 0.6875rem;        /* 11px */
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--traya-saffron-lo);  /* text-safe saffron on cream */
+  }
+  /* On dark sections */
+  .dark .section-label,
+  .section-label.on-dark {
+    color: var(--traya-saffron-hi);
+  }
+}
