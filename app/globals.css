@@ -33,6 +33,8 @@
   --traya-forest-mid:  #2D5E42;
   /* Slate — secondary text, captions, metadata */
   --traya-slate:       #6E6456;
+  /* WhatsApp — fixed brand colour for the floating chat button */
+  --whatsapp:          #25D366;
 
   /* ── Radius ───────────────────────────────────────────────────── */
   --radius: 0.5rem;            /* 8px base — restrained, not bubbly */
@@ -133,6 +135,7 @@
   --color-traya-forest:       var(--traya-forest);
   --color-traya-forest-mid:   var(--traya-forest-mid);
   --color-traya-slate:        var(--traya-slate);
+  --color-whatsapp:           var(--whatsapp);
 
   /* ── Semantic colors → utilities */
   --color-background: var(--background);

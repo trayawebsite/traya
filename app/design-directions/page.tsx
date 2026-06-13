@@ -1,10 +1,10 @@
-import {Fraunces, Figtree, Lora, Nunito_Sans, Space_Grotesk, Plus_Jakarta_Sans} from 'next/font/google'
+import {Fraunces, Figtree, Lora, DM_Mono, Space_Grotesk, Plus_Jakarta_Sans} from 'next/font/google'
 
 /* ── Fonts (all variable — no weight arrays needed) ─────────────────── */
 const fraunces = Fraunces({subsets: ['latin'], style: ['normal', 'italic'], display: 'swap'})
 const figtree = Figtree({subsets: ['latin'], display: 'swap'})
 const lora = Lora({subsets: ['latin'], style: ['normal', 'italic'], display: 'swap'})
-const nunito = Nunito_Sans({subsets: ['latin'], display: 'swap'})
+const dmMono = DM_Mono({subsets: ['latin'], weight: ['400', '500'], display: 'swap'})
 const spaceGrotesk = Space_Grotesk({subsets: ['latin'], display: 'swap'})
 const jakarta = Plus_Jakarta_Sans({subsets: ['latin'], display: 'swap'})
 
@@ -60,62 +60,62 @@ type Direction = {
 const DIRECTIONS: Direction[] = [
   {
     num: '01',
-    name: 'Saffron Route',
+    name: 'Pomegranate',
     recommended: true,
-    tag: 'Dark',
-    accentOnLight: '#8B5C06',
+    tag: 'Chosen',
+    accentOnLight: '#821327',
     showPacks: true,
-    positioning: 'Warm editorial premium — founder-led, spice-forward, refined.',
+    positioning: 'The chosen direction — warm editorial premium on light ivory, Lora display, pomegranate-red accent. Built for a diversified, founder-led trade house.',
     hero: {
-      bg: '#100D08',
-      text: '#F8F4EA',
-      muted: 'rgba(248,244,234,0.58)',
-      eyebrowColor: '#E8A81F',
-      accent: '#C4820A',
-      accentText: '#100D08',
-      ctaIconBg: 'rgba(16,13,8,0.18)',
-      outline: 'rgba(248,244,234,0.28)',
-      glow: 'rgba(196,130,10,0.20)',
-      topHighlight: 'rgba(255,255,255,0.06)',
-      chipBorder: 'rgba(232,168,31,0.32)',
-      eyebrow: 'Food & Agro Ingredient Export · India',
-      headline: 'A refined approach to global trade.',
-      sub: 'Spices, dehydrates, and herbal ingredients — sourced, processed, and shipped with founder-led precision.',
-      displayFamily: fraunces.style.fontFamily,
+      bg: '#FBF8F2',
+      text: '#14120E',
+      muted: 'rgba(20,18,14,0.62)',
+      eyebrowColor: '#821327',
+      accent: '#9E1B32',
+      accentText: '#FBF8F2',
+      ctaIconBg: 'rgba(251,248,242,0.25)',
+      outline: 'rgba(20,18,14,0.26)',
+      topHighlight: 'rgba(255,255,255,0.70)',
+      chipBorder: 'rgba(20,18,14,0.16)',
+      eyebrow: 'Diversified Trade House · India',
+      headline: "From Indian soil to the world's shelves.",
+      sub: 'Food & agro ingredients today, a widening trade portfolio tomorrow — sourced, processed, and exported with founder-led precision.',
+      displayFamily: lora.style.fontFamily,
       bodyFamily: figtree.style.fontFamily,
-      headlineWeight: 500,
-      headlineSpacing: '-0.025em',
-      italicWord: 'refined'
+      headlineWeight: 600,
+      headlineSpacing: '-0.015em',
+      italicWord: 'soil'
     },
     swatches: [
-      {n: 'Deep Espresso', h: '#100D08'},
-      {n: 'Warm Cream', h: '#F8F4EA'},
-      {n: 'Saffron', h: '#C4820A'},
+      {n: 'Ivory', h: '#FBF8F2'},
+      {n: 'Ink', h: '#14120E'},
+      {n: 'Pomegranate', h: '#9E1B32'},
+      {n: 'Pomegranate Deep', h: '#6E0F22'},
       {n: 'Forest', h: '#1C4230'}
     ],
     type: {
-      displayName: 'Fraunces',
-      displayNote: 'Optical serif · headings & brand moments',
-      displayFamily: fraunces.style.fontFamily,
+      displayName: 'Lora',
+      displayNote: 'Calligraphic serif · headings & brand moments',
+      displayFamily: lora.style.fontFamily,
       displayItalic: true,
       bodyName: 'Figtree',
       bodyNote: 'Geometric humanist · body & UI',
       bodyFamily: figtree.style.fontFamily
     },
-    mood: ['Premium', 'Founder-led', 'Editorial', 'Warm']
+    mood: ['Premium', 'Founder-led', 'Warm', 'Editorial']
   },
   {
-    num: '01',
+    num: '02',
     name: 'Saffron Route',
     tag: 'Light variant',
     accentOnLight: '#8B5C06',
-    positioning: 'Same system, light treatment — compare against the dark hero above.',
+    positioning: 'The original Saffron Route palette (turmeric gold) on cream — kept for comparison against the chosen vermilion above.',
     hero: {
       bg: '#F8F4EA',
       text: '#14120E',
       muted: 'rgba(20,18,14,0.62)',
       eyebrowColor: '#8B5C06',
-      accent: '#14120E',
+      accent: '#8B5C06',
       accentText: '#F8F4EA',
       ctaIconBg: 'rgba(248,244,234,0.22)',
       outline: 'rgba(35,26,14,0.28)',
@@ -147,91 +147,10 @@ const DIRECTIONS: Direction[] = [
     },
     mood: ['Premium', 'Airy', 'Editorial', 'Warm']
   },
-  {
-    num: '02',
-    name: 'Harvest',
-    positioning: 'Earthy & organic — provenance, soil-to-shelf, naturally sourced.',
-    hero: {
-      bg: '#EFE6D4',
-      text: '#2A2117',
-      muted: 'rgba(42,33,23,0.60)',
-      eyebrowColor: '#9A5A34',
-      accent: '#B5603A',
-      accentText: '#F7F1E6',
-      ctaIconBg: 'rgba(247,241,230,0.26)',
-      outline: 'rgba(62,74,46,0.50)',
-      topHighlight: 'rgba(255,255,255,0.45)',
-      chipBorder: 'rgba(62,74,46,0.28)',
-      eyebrow: 'Naturally Sourced · From Indian Soil',
-      headline: "From Indian soil to the world's shelves.",
-      sub: 'Honest provenance, clean processing, and ingredients you can trace from farm to freight.',
-      displayFamily: lora.style.fontFamily,
-      bodyFamily: nunito.style.fontFamily,
-      headlineWeight: 600,
-      headlineSpacing: '-0.01em',
-      italicWord: 'soil'
-    },
-    swatches: [
-      {n: 'Oat', h: '#EFE6D4'},
-      {n: 'Olive', h: '#3E4A2E'},
-      {n: 'Terracotta', h: '#B5603A'},
-      {n: 'Sage', h: '#8A9A7B'},
-      {n: 'Clay Brown', h: '#2A2117'}
-    ],
-    type: {
-      displayName: 'Lora',
-      displayNote: 'Calligraphic serif · warm & organic',
-      displayFamily: lora.style.fontFamily,
-      displayItalic: true,
-      bodyName: 'Nunito Sans',
-      bodyNote: 'Rounded humanist · friendly & natural',
-      bodyFamily: nunito.style.fontFamily
-    },
-    mood: ['Organic', 'Provenance', 'Grounded', 'Trustworthy']
-  },
-  {
-    num: '03',
-    name: 'Meridian',
-    positioning: 'Clean & modern — precision, scale, documentation-grade B2B.',
-    hero: {
-      bg: '#F5F6F3',
-      text: '#15211C',
-      muted: 'rgba(21,33,28,0.56)',
-      eyebrowColor: '#0E6E52',
-      accent: '#0E6E52',
-      accentText: '#FFFFFF',
-      ctaIconBg: 'rgba(255,255,255,0.24)',
-      outline: 'rgba(21,33,28,0.18)',
-      topHighlight: 'rgba(255,255,255,0.7)',
-      chipBorder: 'rgba(21,33,28,0.14)',
-      eyebrow: 'Global Ingredient Supply',
-      headline: 'Precision sourcing for global food brands.',
-      sub: 'Documentation-grade specs, reliable logistics, and a sourcing partner built for scale.',
-      displayFamily: spaceGrotesk.style.fontFamily,
-      bodyFamily: jakarta.style.fontFamily,
-      headlineWeight: 600,
-      headlineSpacing: '-0.03em'
-    },
-    swatches: [
-      {n: 'Paper', h: '#F5F6F3'},
-      {n: 'Ink Green', h: '#15211C'},
-      {n: 'Emerald', h: '#0E6E52'},
-      {n: 'Mist', h: '#DCE3DE'}
-    ],
-    type: {
-      displayName: 'Space Grotesk',
-      displayNote: 'Technical grotesk · structured headings',
-      displayFamily: spaceGrotesk.style.fontFamily,
-      bodyName: 'Plus Jakarta Sans',
-      bodyNote: 'Premium geometric · body & data',
-      bodyFamily: jakarta.style.fontFamily
-    },
-    mood: ['Modern', 'Precise', 'Scalable', 'Enterprise']
-  }
 ]
 
-const NAV = ['Products', 'About', 'Certifications', 'Contact']
-const CERTS = ['ISO 22000', 'FSSAI', 'APEDA', 'HACCP']
+const NAV = ['About', 'Capabilities', 'Products', 'Certifications', 'Contact']
+const CERTS = ['FSSAI', 'APEDA', 'FIEO', 'Spice Board']
 
 const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")"
@@ -365,6 +284,215 @@ function ProductPacks() {
         dot="#1C4230"
         style={{left: '24%', top: '4%', transform: 'rotate(-3deg) scale(1.02)', zIndex: 3}}
       />
+    </div>
+  )
+}
+
+/* ── Crafted hero for the CHOSEN direction — a distinct composition, not the
+   reskinned template. Editorial split, no eyebrow-pill / italic-word / circled
+   pill; specific founder copy + a DM-Mono spec-sheet signature motif. ─────── */
+const SPEC_ROWS: [string, string][] = [
+  ['ORIGIN', 'India'],
+  ['HS CODE', '0712.20'],
+  ['MOQ', '1x20 FCL'],
+  ['LEAD', '2-3 wks']
+]
+
+function FinalHero({d}: {d: Direction}) {
+  const h = d.hero
+  return (
+    <div
+      style={{
+        background: SHELL_BG,
+        border: `1px solid ${HAIRLINE}`,
+        borderRadius: 30,
+        padding: 7,
+        boxShadow: '0 40px 80px -40px rgba(40,30,15,0.34)'
+      }}
+    >
+      <div
+        style={{
+          position: 'relative',
+          background: h.bg,
+          color: h.text,
+          borderRadius: 23,
+          overflow: 'hidden',
+          boxShadow: h.topHighlight ? `inset 0 1px 0 ${h.topHighlight}` : undefined
+        }}
+      >
+        <div style={{position: 'relative', padding: 'clamp(26px, 4.2vw, 60px)'}}>
+          {/* nav — squared CTA (not a pill) to read intentional */}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: 16,
+              flexWrap: 'wrap',
+              paddingBottom: 'clamp(34px, 5.2vw, 64px)'
+            }}
+          >
+            <span style={{fontFamily: h.displayFamily, fontWeight: 600, fontSize: 19, letterSpacing: '0.18em', color: h.text}}>
+              TRAYA
+            </span>
+            <div style={{display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap'}}>
+              {NAV.map((n) => (
+                <span key={n} style={{fontFamily: h.bodyFamily, fontSize: 13.5, color: h.muted}}>
+                  {n}
+                </span>
+              ))}
+              <span
+                style={{
+                  fontFamily: h.bodyFamily,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: h.accentText,
+                  background: h.accent,
+                  padding: '9px 16px',
+                  borderRadius: 6
+                }}
+              >
+                Get a Quote
+              </span>
+            </div>
+          </div>
+
+          {/* editorial split — copy left, real product packs right */}
+          <div style={{display: 'flex', gap: 'clamp(28px, 4vw, 56px)', alignItems: 'center', flexWrap: 'wrap'}}>
+            <div style={{flex: '1 1 380px', minWidth: 0}}>
+              {/* index eyebrow — rule + mono label, no pill */}
+              <div style={{display: 'flex', alignItems: 'center', gap: 14, marginBottom: 24}}>
+                <span style={{width: 34, height: 1, background: h.eyebrowColor, display: 'inline-block'}} />
+                <span
+                  style={{
+                    fontFamily: dmMono.style.fontFamily,
+                    fontSize: 11,
+                    letterSpacing: '0.16em',
+                    textTransform: 'uppercase',
+                    color: h.eyebrowColor
+                  }}
+                >
+                  Diversified Trade House &middot; India
+                </span>
+              </div>
+
+              {/* headline — emphasis via colour + rule, not an italic word */}
+              <h3
+                style={{
+                  fontFamily: h.displayFamily,
+                  fontWeight: 600,
+                  fontSize: 'clamp(32px, 4.6vw, 56px)',
+                  lineHeight: 1.05,
+                  letterSpacing: '-0.015em',
+                  margin: 0,
+                  color: h.text
+                }}
+              >
+                Sourced in India.
+                <br />
+                Shipped with{' '}
+                <span style={{position: 'relative', color: h.accent, whiteSpace: 'nowrap'}}>
+                  proof
+                  <span
+                    aria-hidden
+                    style={{position: 'absolute', left: 0, right: 0, bottom: '0.06em', height: 2, background: h.accent, opacity: 0.5}}
+                  />
+                </span>
+                .
+              </h3>
+
+              {/* sub — specific, founder-voiced */}
+              <p
+                style={{
+                  fontFamily: h.bodyFamily,
+                  fontSize: 'clamp(15px, 1.4vw, 17px)',
+                  lineHeight: 1.6,
+                  color: h.muted,
+                  maxWidth: 460,
+                  margin: '22px 0 0'
+                }}
+              >
+                151 SKUs across 18 categories — dehydrates, spray-dried powders, spices and more. Every
+                order ships with FSSAI and APEDA papers, specs, and a sample on request. Founder-led by
+                Neha Pardeshi.
+              </p>
+
+              {/* CTAs — squared button + underlined text link (varied, not twin pills) */}
+              <div style={{display: 'flex', alignItems: 'center', gap: 22, flexWrap: 'wrap', marginTop: 30}}>
+                <span
+                  style={{
+                    fontFamily: h.bodyFamily,
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: h.accentText,
+                    background: h.accent,
+                    padding: '12px 22px',
+                    borderRadius: 6
+                  }}
+                >
+                  Request a sample
+                </span>
+                <span
+                  style={{
+                    fontFamily: h.bodyFamily,
+                    fontSize: 14,
+                    fontWeight: 600,
+                    color: h.text,
+                    borderBottom: `1.5px solid ${h.accent}`,
+                    paddingBottom: 2
+                  }}
+                >
+                  Download the catalogue &rarr;
+                </span>
+              </div>
+
+              {/* signature motif — DM-Mono spec/lot tag (real B2B detail) */}
+              <div
+                style={{
+                  marginTop: 'clamp(26px, 3.5vw, 40px)',
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  border: `1px solid ${h.chipBorder}`,
+                  borderRadius: 8,
+                  overflow: 'hidden',
+                  maxWidth: 520
+                }}
+              >
+                {SPEC_ROWS.map(([k, v], i) => (
+                  <div key={k} style={{flex: '1 1 110px', padding: '10px 14px', borderLeft: i ? `1px solid ${h.chipBorder}` : 'none'}}>
+                    <div style={{fontFamily: dmMono.style.fontFamily, fontSize: 9.5, letterSpacing: '0.12em', color: h.muted}}>{k}</div>
+                    <div style={{fontFamily: dmMono.style.fontFamily, fontSize: 13, fontWeight: 500, color: h.text, marginTop: 3}}>{v}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <ProductPacks />
+          </div>
+
+          {/* cert row — flat mono line, not pills */}
+          <div
+            style={{
+              marginTop: 'clamp(28px, 4.5vw, 48px)',
+              paddingTop: 22,
+              borderTop: `1px solid ${h.chipBorder}`,
+              display: 'flex',
+              alignItems: 'center',
+              gap: 16,
+              flexWrap: 'wrap'
+            }}
+          >
+            <span style={{fontFamily: dmMono.style.fontFamily, fontSize: 10.5, letterSpacing: '0.14em', color: h.muted}}>
+              CERTIFIED
+            </span>
+            {CERTS.map((c) => (
+              <span key={c} style={{fontFamily: dmMono.style.fontFamily, fontSize: 12, fontWeight: 500, color: h.text}}>
+                {c}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
@@ -684,9 +812,14 @@ function SubLabel({children}: {children: React.ReactNode}) {
 }
 
 /* ── Direction block ────────────────────────────────────────────────── */
-function DirectionBlock({d}: {d: Direction}) {
+function DirectionBlock({d, first}: {d: Direction; first?: boolean}) {
   return (
-    <section style={{borderTop: `1px solid ${HAIRLINE}`, padding: 'clamp(56px, 8vw, 104px) 0'}}>
+    <section
+      style={{
+        borderTop: first ? 'none' : `1px solid ${HAIRLINE}`,
+        padding: first ? '0 0 clamp(56px, 8vw, 104px)' : 'clamp(56px, 8vw, 104px) 0'
+      }}
+    >
       {/* header */}
       <div style={{display: 'flex', alignItems: 'baseline', gap: 18, flexWrap: 'wrap', marginBottom: 30}}>
         <span
@@ -766,7 +899,7 @@ function DirectionBlock({d}: {d: Direction}) {
         </div>
       </div>
 
-      <HeroMock d={d} />
+      {d.showPacks ? <FinalHero d={d} /> : <HeroMock d={d} />}
 
       <div
         style={{
@@ -821,49 +954,15 @@ export default function DesignDirections() {
         }}
       />
 
-      <div style={{maxWidth: 1080, margin: '0 auto', padding: '0 clamp(20px, 5vw, 52px)'}}>
-        {/* header */}
-        <header style={{padding: 'clamp(64px, 10vw, 120px) 0 clamp(10px, 2vw, 20px)', textAlign: 'center'}}>
-          <Eyebrow color="#8B5C06" border="rgba(139,92,6,0.32)" family={jakarta.style.fontFamily}>
-            Traya International Exim · Brand Directions
-          </Eyebrow>
-          <h1
-            style={{
-              fontFamily: fraunces.style.fontFamily,
-              fontSize: 'clamp(40px, 6.5vw, 74px)',
-              fontWeight: 500,
-              lineHeight: 1.02,
-              letterSpacing: '-0.035em',
-              margin: '22px auto 0',
-              maxWidth: 860
-            }}
-          >
-            Three directions for a global{' '}
-            <em style={{fontStyle: 'italic', color: '#8B5C06'}}>ingredient house</em>.
-          </h1>
-          <p
-            style={{
-              fontFamily: figtree.style.fontFamily,
-              fontSize: 'clamp(16px, 1.6vw, 19px)',
-              lineHeight: 1.62,
-              color: MUTED,
-              maxWidth: 600,
-              margin: '26px auto 0'
-            }}
-          >
-            Each is a complete system — palette, typography, and tone — shown as a real homepage
-            hero. Pick one and we build the entire site in it.
-          </p>
-        </header>
-
-        {DIRECTIONS.map((d) => (
-          <DirectionBlock key={d.num} d={d} />
+      <div style={{maxWidth: 1080, margin: '0 auto', padding: 'clamp(40px, 6vw, 72px) clamp(20px, 5vw, 52px) 0'}}>
+        {DIRECTIONS.map((d, i) => (
+          <DirectionBlock key={d.num} d={d} first={i === 0} />
         ))}
 
         {/* footer */}
         <footer style={{borderTop: `1px solid ${HAIRLINE}`, padding: 'clamp(44px, 6vw, 72px) 0', textAlign: 'center'}}>
           <p style={{fontFamily: jakarta.style.fontFamily, fontSize: 13, color: MUTED, margin: 0}}>
-            All three are production-ready systems. Tell me which number to build the site in.
+            Both are production-ready systems. Tell me which number to build the site in.
           </p>
         </footer>
       </div>

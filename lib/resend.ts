@@ -1,6 +1,16 @@
 import {Resend} from 'resend';
 
-export const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy singleton — NEVER instantiate at module load. A missing RESEND_API_KEY
+// must not crash the build (Vercel) or route data-collection. Returns null when
+// unconfigured; callers degrade gracefully.
+let client: Resend | null = null;
+
+export function getResend(): Resend | null {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) return null;
+  if (!client) client = new Resend(key);
+  return client;
+}
 
 // Lead notifications can fan out to multiple inboxes (Q8 in the agreement).
 export function getLeadRecipients(): string[] {

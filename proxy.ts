@@ -8,5 +8,5 @@ export default createMiddleware(routing);
 export const config = {
   // Run on all paths except API routes, the Sanity Studio, Next internals,
   // and anything with a file extension (static assets).
-  matcher: ['/((?!api|studio|design-directions|lead-demo|i18n-demo|_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!api|studio|design-directions|design-studio|lead-demo|i18n-demo|_next|_vercel|.*\\..*).*)']
 };

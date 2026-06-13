@@ -11,6 +11,7 @@ export const siteConfig = {
   // Top navigation — labels resolved via t('Links.<key>'). Logo links Home.
   nav: [
     {key: 'about', href: '/about'},
+    {key: 'capabilities', href: '/capabilities'},
     {key: 'products', href: '/products'},
     {key: 'certifications', href: '/certifications'},
     {key: 'contact', href: '/contact'}
@@ -25,6 +26,7 @@ export const siteConfig = {
       titleKey: 'company',
       links: [
         {key: 'about', href: '/about'},
+        {key: 'capabilities', href: '/capabilities'},
         {key: 'certifications', href: '/certifications'},
         {key: 'contact', href: '/contact'}
       ]
@@ -39,17 +41,20 @@ export const siteConfig = {
     {
       titleKey: 'legal',
       links: [
-        {key: 'privacy', href: '/privacy'},
-        {key: 'terms', href: '/terms'}
+        // Pages not built yet — keep as anchors so they never 404. Point to
+        // /privacy and /terms once those pages exist.
+        {key: 'privacy', href: '#'},
+        {key: 'terms', href: '#'}
       ]
     }
   ] as FooterGroup[],
 
-  // Contact details — placeholders until wired to Sanity siteSettings.
+  // Contact details — env/Sanity-driven. Empty by default (honesty rule: never
+  // ship a fabricated address). The footer renders each item only when set.
   contact: {
-    email: 'contact@trayaexim.com',
-    phone: '',
-    address: 'India'
+    email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? '',
+    phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? '',
+    address: ''
   },
 
   // WhatsApp — number from env (NEXT_PUBLIC_WHATSAPP_NUMBER), digits only.

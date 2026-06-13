@@ -1,6 +1,6 @@
 import {NextResponse} from 'next/server';
 import type {z} from 'zod';
-import {resend, getLeadRecipients, FROM_EMAIL} from '@/lib/resend';
+import {getResend, getLeadRecipients, FROM_EMAIL} from '@/lib/resend';
 import {logLeadToSheet} from '@/lib/sheets';
 
 // Shared lead-handling pipeline used by the three form routes
@@ -39,7 +39,8 @@ export async function handleLead(
     to: recipients
   };
 
-  if (!process.env.RESEND_API_KEY) {
+  const resend = getResend();
+  if (!resend) {
     email.error = 'RESEND_API_KEY not set';
   } else if (recipients.length === 0) {
     email.error = 'LEAD_RECIPIENT_EMAILS not set';
