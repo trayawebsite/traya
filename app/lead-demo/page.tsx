@@ -6,12 +6,12 @@ import {useState} from 'react'
 const C = {
   deep: '#100D08',
   deepMid: '#1C1811',
-  cream: '#F8F4EA',
-  surface: '#EEE7D4',
-  border: '#E0D8C5',
-  saffron: '#C4820A',
-  saffronHi: '#E8A81F',
-  saffronLo: '#8B5C06',
+  cream: '#FDFAF4',
+  surface: '#F4EFE6',
+  border: '#EBE4D7',
+  saffron: '#B5341A',
+  saffronHi: '#D9583C',
+  saffronLo: '#8F2814',
   forest: '#1C4230',
   slate: '#6E6456',
   error: '#C44F3C',
@@ -128,7 +128,7 @@ export default function LeadDemo() {
                 borderRadius: 4,
                 border: `1.5px solid ${type === t ? C.saffron : C.border}`,
                 background: type === t ? C.saffron : 'transparent',
-                color: type === t ? C.deep : C.slate,
+                color: type === t ? C.cream : C.slate,
                 fontWeight: 600,
                 fontSize: 13,
                 cursor: 'pointer',
@@ -141,7 +141,7 @@ export default function LeadDemo() {
         </div>
 
         {/* Fields */}
-        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16, marginBottom: 20}}>
+        <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', columnGap: 20, rowGap: 28, marginBottom: 28}}>
           {FIELDS[type].map((k) => (
             <div key={k} style={{gridColumn: k === 'message' ? '1 / -1' : undefined}}>
               <label
@@ -197,7 +197,7 @@ export default function LeadDemo() {
           disabled={loading}
           style={{
             background: C.saffron,
-            color: C.deep,
+            color: C.cream,
             fontWeight: 700,
             fontSize: 14,
             padding: '13px 26px',

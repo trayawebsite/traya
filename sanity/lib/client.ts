@@ -5,5 +5,7 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true // set false if you need fresh data on every request
+  // false so on-demand revalidation (cache tags) pulls fresh content; the Next
+  // data cache (see lib/fetch.ts) does the caching, not the Sanity CDN.
+  useCdn: false
 });

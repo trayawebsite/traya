@@ -16,6 +16,16 @@ A fast, modern, fully client-editable marketing + catalogue website for **Traya 
 ## 🗺️ FINALIZED SITE MAP (research-backed — locked 2026-06-10)
 Decided from [research-findings.md](./research-findings.md). IA = "company/solutions-first + browsable catalogue" (Kanegrade/Jain/Synthite model), not a flat product dump.
 
+> **Build layouts per [design-playbook.md](./design-playbook.md)** — concrete homepage section order, hero, hub/category/PDP layouts, nav, conversion, motion, and anti-patterns from the 13-site teardown.
+>
+> **Playbook additions beyond original scope (review before committing):**
+> - Multi-axis catalogue browse (by Application / Certification / Origin, not just Category) — *enhancement*
+> - Self-segmentation intent router on Home ("What are you sourcing today?") — *enhancement*
+> - Document-led conversion: per-SKU **spec-sheet/COA PDF** downloads (beyond the single site catalogue) — *new content + Sanity field*
+> - Resources / Expert hub (sourcing guides) — *optional, post-launch candidate*
+> - Three-column action footer with GSTIN/IEC export-legitimacy block — *refinement*
+> These sharpen conversion but add build/content. Confirm which are in v1 vs post-launch.
+
 | Route | Page | Notes |
 |---|---|---|
 | `/` | Home | hero · capabilities teaser · stats (150+) · category showcase (6 groups) · founder quote · cert cluster · CTA |
@@ -42,7 +52,7 @@ Decided from [research-findings.md](./research-findings.md). IA = "company/solut
 ---
 
 ## 🔑 Open decisions / client inputs still needed
-- 🔒 **Design direction** — Saffron Route (recommended) vs Harvest Deep vs Spice Trade. Build is on hold for *visual* polish until confirmed; tokens default to Saffron Route.
+- 🔒 **Design direction** — Saffron Route (recommended) vs Harvest vs Meridian (the 3 options live on `/design-directions`). Build is on hold for *visual* polish until confirmed; tokens default to Saffron Route.
 - 🔒 **"40+ countries" stat** — real figure or drop it (don't publish unverified).
 - 🔒 **Recipient email IDs** for lead routing — client to provide.
 - 🔒 **Chatbot** — Crisp recommended; client to confirm.
@@ -80,14 +90,25 @@ Decided from [research-findings.md](./research-findings.md). IA = "company/solut
 
 ---
 
-## PHASE 2 — Global shell (every page depends on this — build first)
-- [ ] **Header** — logo, primary nav (Home, About, Products, Certifications, Contact), mobile menu, sticky behaviour
-- [ ] **Footer** — company info, nav links, contact details, social, legal line, catalogue download link
-- [ ] **WhatsApp floating button** (Q7) — fixed, all pages, `#25D366`, 56px, prefilled message, opens `wa.me`
-- [ ] **LanguageSwitcher** — scaffold even with 1 language (Q23); locale-aware
-- [ ] `app/[locale]/not-found.tsx` (404)
-- [ ] `loading.tsx` / `error.tsx` boundaries
-- [ ] Wire shared layout (fonts, `<html lang>`, metadata defaults, Toaster)
+## PHASE 2 — Global shell `[x] BUILT & VERIFIED 2026-06-10`
+Logic/design separation throughout: data in `lib/site-config.ts`, behaviour in hooks/containers, presentation in dumb token-styled components. `pnpm build`+`lint` green.
+- [x] **Header** — `components/layout/site-header.tsx` — logo, primary nav (About · Capabilities · Products · Certifications · Contact), CTA, language switcher, sticky elevation on scroll
+- [x] **Desktop nav** — `nav-desktop.tsx` (pure, prop-driven, active-route state)
+- [x] **Mobile nav drawer** — `nav-mobile.tsx` (focus trap, Esc, scroll-lock, focus restore)
+- [x] **Footer** — `site-footer.tsx` — credibility strip (verifiable stats only), brand blurb, link groups, contact, legal
+- [x] **WhatsApp floating button** (Q7) — `whatsapp-button.tsx`, fixed, `bg-whatsapp` #25D366, 56px, prefilled, renders only when number set
+- [x] **LanguageSwitcher** — `language-switcher.tsx`, path-preserving, renders nothing with 1 locale (Q23)
+- [x] `Container` primitive + `useScrolled` hook
+- [x] `app/(frontend)/[locale]/not-found.tsx` (404) + `[...rest]` catch-all to force localized 404
+- [x] Shared layout wired (fonts, `<html lang>`, skip-link, metadata, `NextIntlClientProvider`)
+- [x] Aligned to locked IA (added Capabilities) + honesty rule (removed unverified "40+ countries")
+- [ ] `loading.tsx` / `error.tsx` boundaries (minor — add during page build)
+
+**Deferred to Phase 4/5 (need product data / enquiry state — build "basic but solid" now, enrich later):**
+- [ ] Products **card mega-menu** (6 groups → 18 categories) — replaces flat Products link once categories exist
+- [ ] Header **Enquiry List indicator** (live counter) — with the cart-style RFQ state (Phase 5)
+- [ ] Footer → full **3-column action footer** (Sections | Actions: Sample/Catalogue/Certifications | Legal + GSTIN/IEC)
+- [ ] CTA → "Request Catalogue" / enquiry once `/enquiry` + catalogue PDF exist
 
 ---
 

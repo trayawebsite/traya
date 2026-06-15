@@ -2,6 +2,7 @@ import {NextResponse} from 'next/server';
 import type {z} from 'zod';
 import {getResend, getLeadRecipients, FROM_EMAIL} from '@/lib/resend';
 import {logLeadToSheet} from '@/lib/sheets';
+import {rateLimit, getClientIp} from '@/lib/rate-limit';
 
 // Shared lead-handling pipeline used by the three form routes
 // (/api/contact, /api/inquiry, /api/quote). Each route is a thin wrapper that
@@ -27,6 +28,23 @@ export async function handleLead(
     return NextResponse.json(
       {ok: false, error: 'Validation failed', issues: parsed.error.flatten().fieldErrors},
       {status: 422}
+    );
+  }
+
+  // Rate limit AFTER validation, so the budget only counts real, well-formed
+  // enquiries (a user fixing a typo isn't penalised; bad payloads are rejected
+  // cheaply above and never consume the limit). Keyed by IP, shared across all
+  // three lead types — one device gets a few genuine enquiries per 24h.
+  const ip = getClientIp(req);
+  const limit = rateLimit(`lead:${ip}`);
+  if (!limit.ok) {
+    return NextResponse.json(
+      {
+        ok: false,
+        error:
+          'You have reached the enquiry limit for today. Please email us or message on WhatsApp, and we will get back to you.'
+      },
+      {status: 429, headers: {'Retry-After': String(limit.retryAfterSec)}}
     );
   }
 

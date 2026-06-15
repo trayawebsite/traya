@@ -18,12 +18,16 @@
   --traya-deep-mid:    #1C1811;
   /* Ink — primary text (warm near-black, never pure #000) */
   --traya-ink:         #14120E;
-  /* Light family */
-  --traya-cream:       #F8F4EA;  /* primary background — warm, never clinical white */
-  --traya-card:        #FCFAF4;  /* cards — subtle lift off cream */
-  --traya-surface:     #EEE7D4;  /* alternate sections / tonal cards */
-  --traya-border:      #E0D8C5;  /* hairlines, dividers, form underlines */
-  /* Saffron — THE accent (turmeric, not banking-gold). Use sparingly. */
+  /* Light family — lightened to pair with the vermilion accent */
+  --traya-cream:       #FDFAF4;  /* primary background — warm near-white */
+  --traya-card:        #FFFFFF;  /* cards — clean white lift off the ivory */
+  --traya-surface:     #F4EFE6;  /* alternate sections / tonal cards */
+  --traya-border:      #EBE4D7;  /* hairlines, dividers, form underlines */
+  /* Vermilion — THE primary accent / button colour (chosen red direction) */
+  --traya-red:         #B5341A;  /* buttons, primary CTAs, active states */
+  --traya-red-deep:    #8F2814;  /* hover / red-as-text on light (WCAG AA) */
+  --traya-red-soft:    #F6E3DC;  /* soft tint — badges / highlight backgrounds */
+  /* Saffron — secondary accent (kept; no longer the button colour). */
   --traya-saffron:     #C4820A;  /* fills, CTAs, badge borders (non-text / large) */
   --traya-saffron-hi:  #E8A81F;  /* saffron on dark backgrounds */
   --traya-saffron-lo:  #8B5C06;  /* saffron as TEXT on cream — WCAG AA 5.2:1 */
@@ -52,8 +56,8 @@
   --card-foreground:       var(--traya-ink);
   --popover:               var(--traya-card);
   --popover-foreground:    var(--traya-ink);
-  --primary:               var(--traya-ink);      /* primary button: ink bg */
-  --primary-foreground:    var(--traya-cream);     /* cream text */
+  --primary:               var(--traya-red);       /* primary button: vermilion */
+  --primary-foreground:    var(--traya-cream);      /* near-white text (≈5.5:1) */
   --secondary:             var(--traya-surface);
   --secondary-foreground:  var(--traya-ink);
   --muted:                 var(--traya-surface);
@@ -64,9 +68,9 @@
   --destructive-foreground:#FFFFFF;
   --border:                var(--traya-border);
   --input:                 var(--traya-border);
-  --ring:                  var(--traya-saffron);    /* focus ring = brand */
+  --ring:                  var(--traya-red);        /* focus ring = brand */
   /* Charts → brand palette */
-  --chart-1: var(--traya-saffron);
+  --chart-1: var(--traya-red);
   --chart-2: var(--traya-forest);
   --chart-3: var(--traya-saffron-hi);
   --chart-4: var(--traya-forest-mid);
@@ -135,6 +139,9 @@
   --color-traya-forest:       var(--traya-forest);
   --color-traya-forest-mid:   var(--traya-forest-mid);
   --color-traya-slate:        var(--traya-slate);
+  --color-traya-red:          var(--traya-red);
+  --color-traya-red-deep:     var(--traya-red-deep);
+  --color-traya-red-soft:     var(--traya-red-soft);
   --color-whatsapp:           var(--whatsapp);
 
   /* ── Semantic colors → utilities */

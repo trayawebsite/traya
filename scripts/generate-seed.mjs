@@ -34,7 +34,9 @@ function detectForm(name) {
 const docs = [];
 
 for (const cat of catalogue.categories) {
-  const categoryId = `category.${cat.slug}`;
+  // NOTE: dashes, not dots — Sanity silently drops documents whose _id contains
+  // a dot (they import "ok" but aren't queryable). Learned the hard way.
+  const categoryId = `category-${cat.slug}`;
 
   docs.push({
     _id: categoryId,
@@ -48,7 +50,7 @@ for (const cat of catalogue.categories) {
 
   if (GROUPED_CATEGORIES.has(cat.slug)) {
     docs.push({
-      _id: `product.${cat.slug}`,
+      _id: `product-${cat.slug}`,
       _type: 'product',
       title: cat.title,
       slug: {_type: 'slug', current: cat.slug},
@@ -63,7 +65,7 @@ for (const cat of catalogue.categories) {
   } else {
     for (const p of cat.products) {
       docs.push({
-        _id: `product.${p.slug}`,
+        _id: `product-${p.slug}`,
         _type: 'product',
         title: p.name,
         slug: {_type: 'slug', current: p.slug},

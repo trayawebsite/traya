@@ -7,12 +7,12 @@ import {NextIntlClientProvider, useTranslations} from 'next-intl'
 const C = {
   deep: '#100D08',
   deepMid: '#1C1811',
-  cream: '#F8F4EA',
-  surface: '#EEE7D4',
-  border: '#E0D8C5',
-  saffron: '#C4820A',
-  saffronHi: '#E8A81F',
-  saffronLo: '#8B5C06',
+  cream: '#FDFAF4',
+  surface: '#F4EFE6',
+  border: '#EBE4D7',
+  saffron: '#B5341A',
+  saffronHi: '#D9583C',
+  saffronLo: '#8F2814',
   slate: '#6E6456'
 } as const
 
@@ -108,7 +108,7 @@ export default function I18nDemo() {
                 borderRadius: 4,
                 border: `1.5px solid ${locale === l ? C.saffron : C.border}`,
                 background: locale === l ? C.saffron : 'transparent',
-                color: locale === l ? C.deep : C.slate,
+                color: locale === l ? C.cream : C.slate,
                 fontWeight: 600,
                 fontSize: 13,
                 cursor: 'pointer'
@@ -224,7 +224,7 @@ function Preview({locale}: {locale: Loc}) {
           <button
             style={{
               background: C.saffron,
-              color: C.deep,
+              color: C.cream,
               fontWeight: 700,
               fontSize: 14,
               padding: '12px 22px',
