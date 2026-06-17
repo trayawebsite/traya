@@ -3,8 +3,10 @@ import {setRequestLocale} from 'next-intl/server';
 import {getSiteSettings} from '@/lib/site-settings';
 import {Hero} from '@/components/sections/home/hero';
 import {Intro} from '@/components/sections/home/intro';
+import {Stats} from '@/components/sections/home/stats';
 import {ProductGroups} from '@/components/sections/home/product-groups';
 import {WhyTraya} from '@/components/sections/home/why-traya';
+import {Testimonials} from '@/components/sections/home/testimonials';
 import {CertBand} from '@/components/sections/home/cert-band';
 import {FinalCta} from '@/components/sections/home/final-cta';
 
@@ -48,8 +50,10 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
       />
       <Hero />
       <Intro />
+      <Stats />
       <ProductGroups />
       <WhyTraya />
+      <Testimonials />
       <CertBand />
       <FinalCta />
     </>

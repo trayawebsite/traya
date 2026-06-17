@@ -17,7 +17,7 @@
 :root {
   /* ── Brand raw values ─────────────────────────────────────────── */
   /* Dark family — hero / footer / CTA bands / dark sections */
-  --traya-deep:        #100D08;
+  --traya-deep:        #1a1008;  /* warm espresso near-black — the canonical deep */
   --traya-deep-mid:    #1C1811;
   /* Ink — primary text (warm near-black, never pure #000) */
   --traya-ink:         #14120E;

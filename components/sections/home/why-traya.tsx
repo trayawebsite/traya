@@ -62,8 +62,11 @@ export async function WhyTraya() {
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
           {WHY.map((w) => (
-            <div key={w.key} className="rounded-2xl border border-traya-border bg-card p-6 sm:p-7">
-              <span className="grid size-11 place-items-center rounded-full bg-traya-forest/10 text-traya-forest">
+            <div
+              key={w.key}
+              className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+            >
+              <span className="grid size-11 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
                 {w.icon}
               </span>
               <h3 className="mt-4 font-display text-lg text-foreground">{t(w.key)}</h3>

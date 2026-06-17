@@ -1,19 +1,10 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
-import {StatCounter} from './stat-counter';
 import {SpecLine} from './spec-line';
 
-// "Who we are + proof" as ONE cohesive section with a clear vertical rhythm:
-// narrative → a clean horizontal stat BAND (counts up on scroll; honest counts
-// only) → the Vision/Mission pair. The stats are a band, not a boxed card, so the
-// only cards in the section are Vision + Mission — they now read as a set.
-const STATS = [
-  {value: '150+', key: 'products'},
-  {value: '18', key: 'categories'},
-  {value: '100%', key: 'origin'},
-  {value: '5', key: 'certs'}
-] as const;
-
+// "Who we are" — narrative → the Vision/Mission pair. The headline numbers now
+// live in their own dark <Stats> band below this section (more impact + tonal
+// rhythm), so this section stays light and reads as a clean set of two cards.
 const VM_ICONS = {
   vision: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="size-5" aria-hidden="true">
@@ -46,29 +37,18 @@ export async function Intro() {
           <SpecLine items={t('intro.spec').split(' · ')} className="mt-6" />
         </div>
 
-        {/* Proof — clean horizontal stat band (hairline-divided, not a card) */}
-        <dl className="mt-12 grid grid-cols-2 gap-y-8 border-y border-traya-border py-8 sm:grid-cols-4 sm:divide-x sm:divide-traya-border">
-          {STATS.map((s) => (
-            <div key={s.key} className="text-center sm:px-4">
-              <dt className="font-display text-4xl text-foreground lg:text-5xl">
-                <StatCounter value={s.value} />
-              </dt>
-              <dd className="mt-2 text-xs uppercase tracking-[0.14em] text-muted-foreground">
-                {t(`stats.${s.key}`)}
-              </dd>
-            </div>
-          ))}
-        </dl>
-
-        {/* Vision / Mission — the matched pair */}
+        {/* Vision / Mission — the matched pair, lifted off the surface as real cards */}
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
           {(['vision', 'mission'] as const).map((k) => (
-            <div key={k} className="rounded-2xl border border-traya-border bg-card p-6 sm:p-7">
+            <div
+              key={k}
+              className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+            >
               <div className="flex items-center gap-3">
-                <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-red-soft text-traya-red-deep">
+                <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
                   {VM_ICONS[k]}
                 </span>
-                <h3 className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-traya-red-deep">
+                <h3 className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
                   {t(`intro.${k}Label`)}
                 </h3>
               </div>

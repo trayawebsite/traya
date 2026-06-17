@@ -98,6 +98,7 @@
       "sub": "From dehydrated alliums to spray-dried powders, spices, herbs, and premium wellness lines. Browse by what you make.",
       "spec": "6 groups · 18 categories · 150+ SKUs",
       "cta": "Browse all products",
+      "badgePremium": "Premium",
       "alliums": "Dehydrated Alliums & Vegetables",
       "alliumsBlurb": "Onion and garlic in every cut and grade, plus dehydrated vegetables.",
       "powders": "Spray-Dried Powders",
@@ -123,6 +124,10 @@
       "docsBody": "Spec sheets, COA, and certified, quality-controlled supply chains, so your goods clear customs and perform.",
       "logistics": "Global logistics, custom packaging",
       "logisticsBody": "Competitive pricing, international-standard packaging, and timely shipment to your market."
+    },
+    "testimonials": {
+      "eyebrow": "What buyers say",
+      "heading": "Trusted by buyers across continents."
     },
     "certs": {
       "eyebrow": "Certifications & memberships",

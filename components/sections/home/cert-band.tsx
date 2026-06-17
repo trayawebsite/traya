@@ -9,10 +9,9 @@ const maskStyle = {
   maskImage: 'linear-gradient(to right, transparent, #000 7%, #000 93%, transparent)'
 } as const;
 
-// Home certifications — a live, infinitely scrolling cert wall (pauses on hover,
-// static under reduced-motion). Each item shows the logo + name; the issuing
-// authority is kept in data for the future /certifications page. Self-hosted
-// logos, honesty-gated.
+// Home certifications — a live, infinitely scrolling cert wall on the light
+// ivory band. Each chip is a lifted white card; pauses on hover, static under
+// reduced-motion. Self-hosted logos, honesty-gated.
 export async function CertBand() {
   const t = await getTranslations('Home.certs');
   const s = await getSiteSettings();
@@ -39,7 +38,7 @@ export async function CertBand() {
             <li
               key={i}
               aria-hidden={i >= s.certifications.length}
-              className="mr-5 flex w-44 shrink-0 flex-col items-center justify-center gap-4 rounded-2xl border border-traya-border bg-card px-6 py-6"
+              className="mr-5 flex w-44 shrink-0 flex-col items-center justify-center gap-4 rounded-2xl border border-traya-border bg-card px-6 py-6 shadow-sm"
             >
               <span className="flex h-12 items-center justify-center">
                 <CertMark name={c.name} src={c.file} boost={c.boost} />

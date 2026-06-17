@@ -4,30 +4,40 @@ import {useState} from 'react';
 import Image from 'next/image';
 
 // Image-with-graceful-placeholder. Until a real photo exists at `src`, a refined
-// warm panel shows (never a broken-image icon); the photo fades in when it loads.
+// panel shows (never a broken-image icon); the photo fades in when it loads.
 // Drop files into /public/home and they appear with no code change.
+// `dark` swaps the placeholder to deep tones so it never flashes light on a
+// dark band (hero, dark stats band, etc.).
 export function Photo({
   src,
   alt,
   className = '',
   sizes,
-  priority
+  priority,
+  dark = false,
+  imgClassName = ''
 }: {
   src: string;
   alt: string;
   className?: string;
   sizes?: string;
   priority?: boolean;
+  dark?: boolean;
+  imgClassName?: string;
 }) {
   const [loaded, setLoaded] = useState(false);
   const [failed, setFailed] = useState(false);
 
   return (
-    <div className={`relative overflow-hidden bg-traya-surface ${className}`}>
+    <div className={`relative overflow-hidden ${dark ? 'bg-traya-deep' : 'bg-traya-surface'} ${className}`}>
       {(!loaded || failed) && (
         <div
           aria-hidden
-          className="absolute inset-0 grid place-items-center bg-linear-to-br from-traya-surface via-traya-surface to-traya-red-soft/45"
+          className={`absolute inset-0 grid place-items-center ${
+            dark
+              ? 'bg-linear-to-br from-traya-deep-mid via-traya-deep to-traya-deep'
+              : 'bg-linear-to-br from-traya-surface via-traya-surface to-traya-red-soft/45'
+          }`}
         >
           <svg
             viewBox="0 0 24 24"
@@ -36,7 +46,7 @@ export function Photo({
             strokeWidth="1.3"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="size-10 text-traya-clay/45"
+            className={`size-10 ${dark ? 'text-traya-clay/30' : 'text-traya-clay/45'}`}
             aria-hidden="true"
           >
             <rect x="3" y="5" width="18" height="14" rx="2" />
@@ -54,7 +64,7 @@ export function Photo({
           priority={priority}
           onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
-          className={`object-cover transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`object-cover ${imgClassName} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
         />
       )}
     </div>

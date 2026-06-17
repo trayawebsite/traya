@@ -57,7 +57,9 @@ export const siteConfig = {
   // with the business line as the default. The prefilled message primes the
   // buyer to include what we need to respond fast (product, quantity, market).
   whatsapp: {
-    number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '919972422424',
+    // `||` (not `??`) so an empty env value in production also falls back to the
+    // real number — the button must never disappear from a misconfigured var.
+    number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919972422424',
     message:
       'Hello Traya International Exim, I would like to enquire about your food-ingredient exports.\n\nProduct(s): \nQuantity / grade: \nDestination country: \nCompany: '
   }

@@ -38,11 +38,11 @@ export async function SiteFooter() {
 
   return (
     <footer className="relative mt-auto overflow-hidden bg-traya-deep text-traya-cream">
-      {/* Brand-tone spectrum rule — deep-red · vermilion · clay · forest */}
+      {/* Brand spectrum rule — chilli-deep · chilli · turmeric · forest */}
       <div aria-hidden className="flex h-1.5 w-full">
         <span className="w-1/4 bg-traya-red-deep" />
         <span className="w-1/4 bg-traya-red" />
-        <span className="w-1/4 bg-traya-clay" />
+        <span className="w-1/4 bg-traya-saffron" />
         <span className="w-1/4 bg-traya-forest" />
       </div>
       {/* faint line-grid texture */}

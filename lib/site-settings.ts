@@ -16,6 +16,7 @@ export type SiteSettings = {
   catalogueUrl: string;
   founderPhoto: string;
   certifications: {name: string; file?: string; boost?: boolean; issuedBy?: string}[];
+  testimonials: {quote: string; name: string; role: string; location?: string}[];
 };
 
 // Verified real contact details (from the client's live site + the brief).
@@ -31,10 +32,12 @@ export async function getSiteSettings(): Promise<SiteSettings> {
   // project is connected. Map siteSettings.{email,phone,address,gstin,iec,
   // social*, catalogueFile} onto the shape below.
   return {
+    // `||` (not `??`) so an empty env value in production also falls back to the
+    // verified default — contact must never vanish from a misconfigured var.
     contact: {
-      email: process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? DEFAULT_CONTACT.email,
-      phone: process.env.NEXT_PUBLIC_CONTACT_PHONE ?? DEFAULT_CONTACT.phone,
-      address: process.env.NEXT_PUBLIC_CONTACT_ADDRESS ?? DEFAULT_CONTACT.address
+      email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || DEFAULT_CONTACT.email,
+      phone: process.env.NEXT_PUBLIC_CONTACT_PHONE || DEFAULT_CONTACT.phone,
+      address: process.env.NEXT_PUBLIC_CONTACT_ADDRESS || DEFAULT_CONTACT.address
     },
     // Export-legitimacy IDs — client to provide (empty = hidden).
     legal: {
@@ -61,6 +64,33 @@ export async function getSiteSettings(): Promise<SiteSettings> {
       {name: 'FIEO', file: '/certifications/fieo.jpg', issuedBy: 'Federation of Indian Export Organisations'},
       {name: 'Spice Board', file: '/certifications/spice-board.jpg', issuedBy: 'Spices Board of India'},
       {name: 'MSME India', file: '/certifications/msme.png', boost: true, issuedBy: 'Micro, Small & Medium Enterprises'}
+    ],
+    // ⚠️ SAMPLE testimonials — for LAYOUT PREVIEW ONLY. Replace every entry with
+    // a real, client-verified quote before launch (honesty rule), or set to []
+    // to hide the section. Attributions are anonymized role + region on purpose
+    // (no fabricated names). Will move to Sanity `testimonial` docs later.
+    testimonials: [
+      {
+        quote:
+          'Consistent quality and clean documentation, shipment after shipment. The COAs and spec sheets arrive before we even ask — customs clearance has never been smoother.',
+        name: 'Head of Procurement',
+        role: 'Spice Importer',
+        location: 'Hamburg, Germany'
+      },
+      {
+        quote:
+          'We needed a single partner across dehydrates, powders, and spices. Traya delivered the exact grades we specified, at volume, on time.',
+        name: 'Sourcing Manager',
+        role: 'Food Manufacturer',
+        location: 'Dubai, UAE'
+      },
+      {
+        quote:
+          'What sets them apart is the personal accountability. You speak to people who know your order and follow it through to delivery.',
+        name: 'Founder',
+        role: 'Health-Food Brand',
+        location: 'Toronto, Canada'
+      }
     ]
   };
 }

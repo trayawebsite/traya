@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
+import {Badge} from '@/components/ui/badge';
 import {secondaryBtn} from './styles';
 import {Photo} from './photo';
 import {SpecLine} from './spec-line';
@@ -8,6 +9,9 @@ import {SpecLine} from './spec-line';
 // The 6 groups as photo tiles (name overlaid on a real product shot) — the
 // browsable catalogue is Traya's edge, so it gets the most visual weight.
 const GROUPS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
+
+// The premium retail line gets a saffron highlight tag (demo of the Badge).
+const FEATURED: (typeof GROUPS)[number] = 'wellness';
 
 export async function ProductGroups() {
   const t = await getTranslations('Home.groups');
@@ -46,6 +50,11 @@ export async function ProductGroups() {
                   aria-hidden
                   className="pointer-events-none absolute inset-0 bg-linear-to-t from-traya-deep/85 via-traya-deep/20 to-transparent"
                 />
+                {g === FEATURED && (
+                  <span className="absolute left-4 top-4">
+                    <Badge>{t('badgePremium')}</Badge>
+                  </span>
+                )}
                 <span className="pointer-events-none absolute inset-x-0 bottom-0 p-5">
                   <span className="block font-display text-xl text-traya-cream">{t(g)}</span>
                   <span className="mt-1 block text-sm leading-snug text-traya-cream/75 line-clamp-2">
