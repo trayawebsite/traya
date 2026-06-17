@@ -5,7 +5,9 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       // Sanity-hosted images
-      {protocol: 'https', hostname: 'cdn.sanity.io'}
+      {protocol: 'https', hostname: 'cdn.sanity.io'},
+      // Client WordPress media (e.g. founder portrait) — interim until Sanity
+      {protocol: 'https', hostname: 'www.trayaexim.com'}
     ]
   }
 };

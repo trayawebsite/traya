@@ -16,23 +16,131 @@
     "closeMenu": "Close menu",
     "menu": "Menu",
     "skip": "Skip to content",
-    "whatsapp": "Chat on WhatsApp"
+    "whatsapp": "Chat on WhatsApp",
+    "chat": "Chat with us",
+    "enquireNow": "Enquire Now",
+    "topNote": "Indian food-ingredient export house"
   },
   "Footer": {
-    "blurb": "A global food & agro ingredient export partner — building partnerships across continents.",
-    "company": "Company",
+    "tagline": "Building Partnerships Across Continents",
+    "reachOut": "Have a sourcing question? Talk to our team — we'll be glad to help.",
     "explore": "Explore",
-    "legal": "Legal",
-    "contactHeading": "Get in touch",
-    "rights": "All rights reserved."
+    "actions": "Quick Actions",
+    "getInTouch": "Get in Touch",
+    "social": "Follow us",
+    "certified": "Certified",
+    "requestSample": "Request a Sample",
+    "requestQuote": "Request a Quote",
+    "downloadCatalogue": "Download Catalogue",
+    "rights": "All rights reserved.",
+    "builtBy": "Built by Studio Morpheus",
+    "toTop": "Back to top",
+    "eyebrow": "Traya International Exim · India"
+  },
+  "Enquiry": {
+    "eyebrow": "Start an Enquiry",
+    "heading": "Tell us what you're sourcing.",
+    "sub": "Share your requirement and our team responds with specs, pricing, and a sample — usually within one business day.",
+    "trust1": "Spec sheets, COA & documentation on request",
+    "trust2": "Bulk & custom packaging, global logistics",
+    "trust3": "Founder-led, relationship-first service",
+    "founderNote": "Tell us what you need, and we'll handle it personally.",
+    "founderName": "Neha Pardeshi",
+    "founderRole": "Founder & CEO",
+    "name": "Your name",
+    "email": "Email address",
+    "phone": "Phone / WhatsApp",
+    "company": "Organisation",
+    "product": "Products / HS code",
+    "shipment": "Shipment mode",
+    "shipmentPlaceholder": "Select a mode",
+    "requirements": "Your requirement",
+    "requirementsPlaceholder": "Quantity, grade, destination, timeline…",
+    "submit": "Send enquiry",
+    "sending": "Sending…",
+    "success": "Thank you — your enquiry is in. We'll be in touch shortly.",
+    "error": "Something went wrong. Please try again, or email us directly.",
+    "rateLimited": "You've reached today's enquiry limit. Please email us or message us on WhatsApp."
   },
   "Language": {
     "label": "Language",
     "en": "English"
   },
   "Home": {
-    "title": "Traya International Exim LLP",
-    "subtitle": "Building partnerships across continents."
+    "hero": {
+      "eyebrow": "Indian food-ingredient exports",
+      "heading": "A trusted bridge between Indian growers and global buyers.",
+      "sub": "Premium agricultural and food ingredients — sourced and processed in India, exported with the documentation and care global trade demands.",
+      "ctaPrimary": "Request a sample",
+      "ctaSecondary": "Browse the range",
+      "stat": "150+ products · 18 categories · India origin",
+      "certified": "Certified"
+    },
+    "intro": {
+      "eyebrow": "Who we are",
+      "heading": "A broad-spectrum food-ingredient partner, built on trust.",
+      "body": "Traya International Exim LLP is a dynamic, globally oriented export house delivering premium agricultural and food-processing products from India to international markets. We work with certified production facilities and quality-controlled supply chains, so every shipment meets international food-safety standards and your exact specification.",
+      "visionLabel": "Our vision",
+      "vision": "To become a globally recognised leader in premium agricultural exports, connecting the finest products of India with food industries and consumers across the world.",
+      "missionLabel": "Our mission",
+      "mission": "To promote Indian agricultural excellence through reliable, precise, relationship-first export solutions, built on quality, consistency, and trust.",
+      "spec": "India origin · Bulk & custom packaging · Global export"
+    },
+    "stats": {
+      "products": "Products in the catalogue",
+      "categories": "Browsable categories",
+      "origin": "Single origin, India",
+      "certs": "Certifications held"
+    },
+    "groups": {
+      "eyebrow": "What we export",
+      "heading": "Eighteen categories, one accountable partner.",
+      "sub": "From dehydrated alliums to spray-dried powders, spices, herbs, and premium wellness lines. Browse by what you make.",
+      "spec": "6 groups · 18 categories · 150+ SKUs",
+      "cta": "Browse all products",
+      "alliums": "Dehydrated Alliums & Vegetables",
+      "alliumsBlurb": "Onion and garlic in every cut and grade, plus dehydrated vegetables.",
+      "powders": "Spray-Dried Powders",
+      "powdersBlurb": "Fruit and vegetable powders, from mango and tomato to coconut milk.",
+      "spices": "Spices & Seasonings",
+      "spicesBlurb": "Turmeric, cumin, and chilli, plus ready snack seasonings.",
+      "herbs": "Culinary Herbs",
+      "herbsBlurb": "Oregano, basil, thyme, rosemary, and kasuri methi.",
+      "nutraceutical": "Herbal & Nutraceutical",
+      "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, and other superfoods.",
+      "wellness": "Dairy & Premium Wellness",
+      "wellnessBlurb": "Dairy powders, A2 ghee, cold-pressed oils, and millets."
+    },
+    "why": {
+      "eyebrow": "Why Traya",
+      "heading": "The discipline of a trading house, the care of a founder.",
+      "cta": "See our capabilities",
+      "catalogue": "A browsable 151-product catalogue",
+      "catalogueBody": "Not a single-commodity exporter. Find the exact grade, cut, and form you need across 18 categories.",
+      "founder": "Founder-led, relationship-first",
+      "founderBody": "You deal with people who answer personally and stay accountable from first enquiry to final delivery.",
+      "docs": "Documentation that travels",
+      "docsBody": "Spec sheets, COA, and certified, quality-controlled supply chains, so your goods clear customs and perform.",
+      "logistics": "Global logistics, custom packaging",
+      "logisticsBody": "Competitive pricing, international-standard packaging, and timely shipment to your market."
+    },
+    "certs": {
+      "eyebrow": "Certifications & memberships",
+      "heading": "Credentials global buyers can verify.",
+      "sub": "Registered and recognised across India's key food-export authorities."
+    },
+    "founderSection": {
+      "eyebrow": "The founder",
+      "heading": "Built by someone who shows up.",
+      "body": "Traya is led by Neha Pardeshi, a founder who believes trade is, first, a relationship. Every partnership begins with a conversation and is held to one standard: precision, honesty, and care, shipment after shipment.",
+      "cta": "Read our story"
+    },
+    "finalCta": {
+      "heading": "Ready to source from India?",
+      "sub": "Bulk volumes, custom packaging, full documentation. Tell us what you need and we will respond within one business day.",
+      "cta": "Start an enquiry",
+      "whatsapp": "Message on WhatsApp"
+    }
   },
   "NotFound": {
     "code": "404",

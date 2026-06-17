@@ -3,12 +3,9 @@
 import {useEffect, useRef} from 'react';
 import {Link} from '@/i18n/navigation';
 import {cn} from '@/lib/utils';
+import {primaryButton} from '@/lib/button-styles';
 
 type Item = {key: string; href: string; label: string};
-
-// Shared CTA style — semantic tokens only, no transitions.
-const cta =
-  'inline-flex items-center justify-center rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background';
 
 // PRESENTATION + focus management — full-width drawer. Focus trap, Escape to
 // close, body-scroll lock, focus restore. No animation; closes on link click.
@@ -109,7 +106,7 @@ export function NavMobile({
                   );
                 })}
               </ul>
-              <Link href={ctaHref} onClick={onClose} className={cn(cta, 'mt-4 w-full')}>
+              <Link href={ctaHref} onClick={onClose} className={cn(primaryButton, 'mt-4 w-full')}>
                 {ctaLabel}
               </Link>
             </nav>

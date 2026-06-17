@@ -1,14 +1,17 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Class-gated dark variant kept so any `dark:` utilities stay inert.
+   The project is LIGHT-ONLY — there is no .dark block and nothing adds .dark. */
 @custom-variant dark (&:is(.dark *));
 
 /* ═══════════════════════════════════════════════════════════════════
-   TRAYA DESIGN SYSTEM — Saffron Route
-   Premium-but-warm food-ingredient export house.
-   Register: earthy neutrals carry the page, saffron punctuates (≤2%),
-   forest is the meaningful secondary. Fraunces (display) + Figtree (body)
-   + DM Mono (specs). Research-validated direction.
+   TRAYA DESIGN SYSTEM — Vermilion
+   Premium-but-warm diversified trade house. Light-only.
+   Register: warm ivory + ink carry the page; VERMILION (#B5341A) is the
+   primary accent / button colour; forest is the meaningful secondary.
+   Saffron is retained in the tokens but NOT used by default.
+   Display: Lora · Body: Figtree · Specs/data: DM Mono.
    ═══════════════════════════════════════════════════════════════════ */
 
 :root {
@@ -18,30 +21,34 @@
   --traya-deep-mid:    #1C1811;
   /* Ink — primary text (warm near-black, never pure #000) */
   --traya-ink:         #14120E;
-  /* Light family — lightened to pair with the vermilion accent */
-  --traya-cream:       #FDFAF4;  /* primary background — warm near-white */
+  /* Light family — warm ivory base */
+  --traya-cream:       #FBF8F2;  /* primary background — warm ivory */
   --traya-card:        #FFFFFF;  /* cards — clean white lift off the ivory */
   --traya-surface:     #F4EFE6;  /* alternate sections / tonal cards */
   --traya-border:      #EBE4D7;  /* hairlines, dividers, form underlines */
-  /* Vermilion — THE primary accent / button colour (chosen red direction) */
+  /* Vermilion — THE primary accent / button colour (chosen direction) */
   --traya-red:         #B5341A;  /* buttons, primary CTAs, active states */
-  --traya-red-deep:    #8F2814;  /* hover / red-as-text on light (WCAG AA) */
+  --traya-red-deep:    #6D1F10;  /* hover · red-as-text on ivory (WCAG AA ~10:1) · deep CTA bands */
+  --traya-red-hi:      #E0795E;  /* red on DARK backgrounds (eyebrows on deep sections) */
   --traya-red-soft:    #F6E3DC;  /* soft tint — badges / highlight backgrounds */
-  /* Saffron — secondary accent (kept; no longer the button colour). */
-  --traya-saffron:     #C4820A;  /* fills, CTAs, badge borders (non-text / large) */
-  --traya-saffron-hi:  #E8A81F;  /* saffron on dark backgrounds */
-  --traya-saffron-lo:  #8B5C06;  /* saffron as TEXT on cream — WCAG AA 5.2:1 */
-  --traya-saffron-soft:#F3E7CC;  /* soft saffron tint — badge / highlight backgrounds */
-  /* Forest — agriculture / nature secondary (sourcing story, quality) */
+  /* Saffron — retained but UNUSED by default (legacy/secondary option) */
+  --traya-saffron:     #C4820A;
+  --traya-saffron-hi:  #E8A81F;
+  --traya-saffron-lo:  #8B5C06;
+  --traya-saffron-soft:#F3E7CC;
+  /* Forest — the working secondary (sourcing/quality; pairs with vermilion) */
   --traya-forest:      #1C4230;
   --traya-forest-mid:  #2D5E42;
   /* Slate — secondary text, captions, metadata */
   --traya-slate:       #6E6456;
+  /* Clay — warm tan/oak: dividers, icon strokes, decorative accents, text on
+     DARK sections (~4.8:1 on deep). NOT body text on ivory (~3.6:1). */
+  --traya-clay:        #A67B5B;
   /* WhatsApp — fixed brand colour for the floating chat button */
   --whatsapp:          #25D366;
 
   /* ── Radius ───────────────────────────────────────────────────── */
-  --radius: 0.5rem;            /* 8px base — restrained, not bubbly */
+  --radius: 0.5rem;            /* 8px base — soft, restrained buttons */
 
   /* ── Motion (raw — for component transitions) ─────────────────── */
   --duration-fast: 150ms;      /* hovers */
@@ -49,7 +56,7 @@
   --duration-slow: 650ms;      /* scroll reveals */
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);   /* out-expo — all entrances */
 
-  /* ── Semantic layer (shadcn) → mapped to BRAND. Light theme ───── */
+  /* ── Semantic layer (shadcn) → mapped to BRAND. Light only. ───── */
   --background:            var(--traya-cream);
   --foreground:            var(--traya-ink);
   --card:                  var(--traya-card);
@@ -57,74 +64,39 @@
   --popover:               var(--traya-card);
   --popover-foreground:    var(--traya-ink);
   --primary:               var(--traya-red);       /* primary button: vermilion */
-  --primary-foreground:    var(--traya-cream);      /* near-white text (≈5.5:1) */
+  --primary-foreground:    #FFFFFF;                 /* white text on red (~6:1) */
   --secondary:             var(--traya-surface);
   --secondary-foreground:  var(--traya-ink);
   --muted:                 var(--traya-surface);
   --muted-foreground:      var(--traya-slate);
-  --accent:                var(--traya-surface);    /* subtle hovers — NOT saffron */
+  --accent:                var(--traya-surface);    /* subtle hovers — NOT the brand red */
   --accent-foreground:     var(--traya-ink);
-  --destructive:           #B42318;                 /* harmonized warm red */
+  /* Error/destructive — a COOLER crimson, intentionally distinct from the
+     warm brand red so a delete/error never reads as a primary CTA. */
+  --destructive:           #A8132F;
   --destructive-foreground:#FFFFFF;
   --border:                var(--traya-border);
   --input:                 var(--traya-border);
   --ring:                  var(--traya-red);        /* focus ring = brand */
-  /* Charts → brand palette */
+  /* Charts → brand palette (no saffron) */
   --chart-1: var(--traya-red);
   --chart-2: var(--traya-forest);
-  --chart-3: var(--traya-saffron-hi);
+  --chart-3: var(--traya-red-deep);
   --chart-4: var(--traya-forest-mid);
   --chart-5: var(--traya-slate);
   /* Sidebar (Studio etc.) */
   --sidebar:                       var(--traya-surface);
   --sidebar-foreground:            var(--traya-ink);
-  --sidebar-primary:               var(--traya-ink);
-  --sidebar-primary-foreground:    var(--traya-cream);
-  --sidebar-accent:                var(--traya-saffron-soft);
+  --sidebar-primary:               var(--traya-red);
+  --sidebar-primary-foreground:    #FFFFFF;
+  --sidebar-accent:                var(--traya-red-soft);
   --sidebar-accent-foreground:     var(--traya-ink);
   --sidebar-border:                var(--traya-border);
-  --sidebar-ring:                  var(--traya-saffron);
-}
-
-.dark {
-  /* Light-first brand — dark sections normally use bg-traya-deep directly.
-     This block keeps a coherent dark THEME if ever toggled. */
-  --background:            var(--traya-deep);
-  --foreground:            var(--traya-cream);
-  --card:                  var(--traya-deep-mid);
-  --card-foreground:       var(--traya-cream);
-  --popover:               var(--traya-deep-mid);
-  --popover-foreground:    var(--traya-cream);
-  --primary:               var(--traya-saffron-hi); /* on dark, saffron leads */
-  --primary-foreground:    var(--traya-deep);
-  --secondary:             var(--traya-deep-mid);
-  --secondary-foreground:  var(--traya-cream);
-  --muted:                 var(--traya-deep-mid);
-  --muted-foreground:      #A99F8E;
-  --accent:                var(--traya-deep-mid);
-  --accent-foreground:     var(--traya-cream);
-  --destructive:           #F0635A;
-  --destructive-foreground:var(--traya-deep);
-  --border:                oklch(1 0 0 / 12%);
-  --input:                 oklch(1 0 0 / 15%);
-  --ring:                  var(--traya-saffron-hi);
-  --chart-1: var(--traya-saffron-hi);
-  --chart-2: var(--traya-forest-mid);
-  --chart-3: var(--traya-saffron);
-  --chart-4: #5A8A6E;
-  --chart-5: #A99F8E;
-  --sidebar:                       var(--traya-deep-mid);
-  --sidebar-foreground:            var(--traya-cream);
-  --sidebar-primary:               var(--traya-saffron-hi);
-  --sidebar-primary-foreground:    var(--traya-deep);
-  --sidebar-accent:                oklch(1 0 0 / 8%);
-  --sidebar-accent-foreground:     var(--traya-cream);
-  --sidebar-border:                oklch(1 0 0 / 12%);
-  --sidebar-ring:                  var(--traya-saffron-hi);
+  --sidebar-ring:                  var(--traya-red);
 }
 
 @theme inline {
-  /* ── Brand colors → utilities (bg-traya-deep, text-traya-saffron-lo…) */
+  /* ── Brand colors → utilities (bg-traya-red, text-traya-red-deep…) */
   --color-traya-deep:         var(--traya-deep);
   --color-traya-deep-mid:     var(--traya-deep-mid);
   --color-traya-ink:          var(--traya-ink);
@@ -132,6 +104,10 @@
   --color-traya-card:         var(--traya-card);
   --color-traya-surface:      var(--traya-surface);
   --color-traya-border:       var(--traya-border);
+  --color-traya-red:          var(--traya-red);
+  --color-traya-red-deep:     var(--traya-red-deep);
+  --color-traya-red-hi:       var(--traya-red-hi);
+  --color-traya-red-soft:     var(--traya-red-soft);
   --color-traya-saffron:      var(--traya-saffron);
   --color-traya-saffron-hi:   var(--traya-saffron-hi);
   --color-traya-saffron-lo:   var(--traya-saffron-lo);
@@ -139,9 +115,7 @@
   --color-traya-forest:       var(--traya-forest);
   --color-traya-forest-mid:   var(--traya-forest-mid);
   --color-traya-slate:        var(--traya-slate);
-  --color-traya-red:          var(--traya-red);
-  --color-traya-red-deep:     var(--traya-red-deep);
-  --color-traya-red-soft:     var(--traya-red-soft);
+  --color-traya-clay:         var(--traya-clay);
   --color-whatsapp:           var(--whatsapp);
 
   /* ── Semantic colors → utilities */
@@ -184,12 +158,12 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 
-  /* ── Fonts (next/font injects --font-fraunces/figtree/dm-mono on <html>) */
-  --font-sans:    var(--font-figtree);      /* default body/UI */
-  --font-body:    var(--font-figtree);      /* alias */
-  --font-display: var(--font-fraunces);     /* headlines, font-display */
-  --font-mono:    var(--font-dm-mono);      /* specs, data */
-  --font-code:    var(--font-dm-mono);      /* alias */
+  /* ── Fonts (next/font injects --font-lora/figtree/dm-mono on <html>) */
+  --font-sans:    var(--font-figtree);   /* default body/UI */
+  --font-body:    var(--font-figtree);   /* alias */
+  --font-display: var(--font-lora);      /* headlines, font-display */
+  --font-mono:    var(--font-dm-mono);   /* specs, data */
+  --font-code:    var(--font-dm-mono);   /* alias */
 
   /* ── Display type scale (fluid) → text-display-xl … text-display-sm */
   --text-display-xl: clamp(2.75rem, 1.6rem + 4vw, 5rem);
@@ -233,32 +207,147 @@
     @apply bg-background text-foreground font-sans antialiased;
     font-feature-settings: "ss01", "cv01";
   }
-  /* Headlines default to Fraunces — the editorial half of the brand */
+  /* Headlines default to Lora — the editorial half of the brand */
   h1, h2, h3, h4 {
     font-family: var(--font-display);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.1;
     letter-spacing: -0.01em;
   }
   ::selection {
-    background: var(--traya-saffron);
-    color: var(--traya-cream);
+    background: var(--traya-red);
+    color: #FFFFFF;
   }
 }
 
+/* WhatsApp launcher — a smooth, rotation-only "wave" every ~5s, applied to the
+   ICON only (the green-bordered circle frame stays static). No scaling. The
+   icon rests ~72% of the cycle, then a damped pendulum swing settles to rest.
+   ease-in-out = slow at the extremes, fast through centre (real pendulum). */
+@keyframes wa-swing {
+  0%, 72%, 100% { transform: rotate(0deg); }
+  78%           { transform: rotate(10deg); }
+  84%           { transform: rotate(-8deg); }
+  89%           { transform: rotate(5deg); }
+  94%           { transform: rotate(-3deg); }
+  97%           { transform: rotate(1deg); }
+}
+.wa-icon {
+  transform-origin: center;
+  animation: wa-swing 5s ease-in-out infinite;
+}
+
+/* Bot idle — a gentle bob + head-tilt, placed in the EARLY part of the cycle so
+   it never moves in unison with the WhatsApp swing (which lives at 72-100%).
+   Shares the 5s period, so the two read as a choreographed call-and-response. */
+@keyframes bot-idle {
+  0%   { transform: translateY(0)     rotate(0deg); }
+  5%   { transform: translateY(-1.5px) rotate(-8deg); }
+  11%  { transform: translateY(0)     rotate(6deg); }
+  17%  { transform: translateY(-1px)  rotate(-4deg); }
+  22%  { transform: translateY(0)     rotate(2deg); }
+  27%, 100% { transform: translateY(0) rotate(0deg); }
+}
+.bot-icon {
+  transform-origin: center;
+  animation: bot-idle 5s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wa-icon,
+  .bot-icon { animation: none; }
+}
+
+/* Infinite cert/logo marquee — the track holds two identical copies and slides
+   -50%, so it loops seamlessly. Items use margin (not flex gap) so the halves
+   align exactly. Pauses on hover; static under reduced-motion. */
+@keyframes traya-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: traya-marquee 22s linear infinite;
+  will-change: transform;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+}
+
+/* Soft drifting glow on the closing CTA band — a gentle living gradient. */
+@keyframes glow-drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50%      { transform: translate3d(-2.5rem, 1.5rem, 0) scale(1.15); }
+}
+.glow-drift {
+  animation: glow-drift 16s ease-in-out infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .glow-drift { animation: none; }
+}
+
 @layer components {
-  /* Identity-defining section label: amber eyebrow above every heading */
+  /* Identity-defining section label: vermilion eyebrow above every heading */
   .section-label {
     font-family: var(--font-body);
     font-size: 0.6875rem;        /* 11px */
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--traya-saffron-lo);  /* text-safe saffron on cream */
+    color: var(--traya-red-deep);  /* text-safe red on ivory */
   }
-  /* On dark sections */
-  .dark .section-label,
+  /* On dark sections (hero / footer / CTA bands) */
   .section-label.on-dark {
-    color: var(--traya-saffron-hi);
+    color: var(--traya-red-hi);
+  }
+
+  /* Gradient-ring button (the Uiverse glowing-border idea, retoned to brand).
+     A vermilion gradient hairline on a solid fill that goes full-vermilion + a
+     soft glow on hover, and a clear ring on focus. Light-bg by default; add
+     `.on-dark` on the deep band. The fill must match the local background. */
+  .btn-ring {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--card), var(--card)) padding-box,
+      linear-gradient(135deg, var(--traya-red), rgb(181 52 26 / 0.14)) border-box;
+    transition: box-shadow var(--duration-base) var(--ease-expo),
+      background var(--duration-base) var(--ease-expo);
+  }
+  .btn-ring:hover {
+    background:
+      linear-gradient(var(--card), var(--card)) padding-box,
+      linear-gradient(135deg, var(--traya-red), var(--traya-red)) border-box;
+    box-shadow: 0 4px 14px -8px rgb(181 52 26 / 0.28);
+  }
+  .btn-ring:focus-visible {
+    outline: none;
+    background:
+      linear-gradient(var(--card), var(--card)) padding-box,
+      linear-gradient(135deg, var(--traya-red), var(--traya-red)) border-box;
+    box-shadow: 0 0 0 2px var(--traya-red);
+  }
+  /* Deep-band variant — fill is the deep tone; ring is red-hi for contrast. */
+  .btn-ring.on-dark {
+    background:
+      linear-gradient(var(--traya-deep), var(--traya-deep)) padding-box,
+      linear-gradient(135deg, var(--traya-red-hi), rgb(224 121 94 / 0.16)) border-box;
+  }
+  .btn-ring.on-dark:hover {
+    background:
+      linear-gradient(var(--traya-deep), var(--traya-deep)) padding-box,
+      linear-gradient(135deg, var(--traya-red-hi), var(--traya-red-hi)) border-box;
+    box-shadow: 0 4px 14px -8px rgb(224 121 94 / 0.26);
+  }
+  .btn-ring.on-dark:focus-visible {
+    outline: none;
+    background:
+      linear-gradient(var(--traya-deep), var(--traya-deep)) padding-box,
+      linear-gradient(135deg, var(--traya-red-hi), var(--traya-red-hi)) border-box;
+    box-shadow: 0 0 0 2px var(--traya-red-hi);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .btn-ring { transition: none; }
   }
 }

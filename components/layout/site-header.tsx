@@ -6,14 +6,11 @@ import {Link, usePathname} from '@/i18n/navigation';
 import {siteConfig} from '@/lib/site-config';
 import {Container} from '@/components/ui/container';
 import {cn} from '@/lib/utils';
+import {primaryButton} from '@/lib/button-styles';
 import {useScrolled} from '@/components/hooks/use-scrolled';
 import {NavDesktop} from './nav-desktop';
 import {NavMobile} from './nav-mobile';
 import {LanguageSwitcher} from './language-switcher';
-
-// Shared CTA style — semantic tokens only, no transitions.
-const cta =
-  'inline-flex items-center justify-center rounded-md bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background';
 
 // CONTAINER — resolves labels via i18n, wires behaviour (active route, mobile
 // open/close, sticky elevation). Presentation is token-driven; no animation.
@@ -47,7 +44,7 @@ export function SiteHeader() {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          <Link href={siteConfig.cta.href} className={cn(cta, 'hidden sm:inline-flex')}>
+          <Link href={siteConfig.cta.href} className={cn(primaryButton, 'hidden sm:inline-flex')}>
             {ctaLabel}
           </Link>
           <button

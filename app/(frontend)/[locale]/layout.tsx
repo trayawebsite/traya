@@ -1,17 +1,22 @@
 import type {Metadata} from 'next';
-import {Fraunces, Figtree, DM_Mono} from 'next/font/google';
+import {Lora, Figtree, DM_Mono} from 'next/font/google';
 import {notFound} from 'next/navigation';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
+import {getSiteSettings} from '@/lib/site-settings';
+import {TopBar} from '@/components/layout/top-bar';
 import {SiteHeader} from '@/components/layout/site-header';
 import {SiteFooter} from '@/components/layout/site-footer';
-import {WhatsAppButton} from '@/components/layout/whatsapp-button';
+import {FloatingActions} from '@/components/layout/floating-actions';
+import {EnquireTab} from '@/components/layout/enquire-tab';
+import {EnquirySection} from '@/components/sections/enquiry-section';
+import {Toaster} from '@/components/ui/sonner';
 import '../../globals.css';
 
-// Display — Fraunces (variable optical serif, warm editorial). Headlines only.
-const fraunces = Fraunces({
-  variable: '--font-fraunces',
+// Display — Lora (calligraphic serif, warm & editorial). Headlines only.
+const lora = Lora({
+  variable: '--font-lora',
   subsets: ['latin'],
   style: ['normal', 'italic'],
   display: 'swap'
@@ -32,13 +37,30 @@ const dmMono = DM_Mono({
   display: 'swap'
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: 'Traya International Exim LLP',
+    default: 'Traya International Exim LLP — Indian Food-Ingredient Exports',
     template: '%s | Traya International Exim LLP'
   },
   description:
-    'Traya International Exim LLP — a trusted global export-import partner. Explore our product portfolio and request a quote.'
+    'Traya International Exim LLP sources, processes, and exports premium Indian food ingredients — 150+ products across 18 categories, with the documentation and care global buyers need.',
+  openGraph: {
+    type: 'website',
+    siteName: 'Traya International Exim LLP',
+    title: 'Traya International Exim LLP — Indian Food-Ingredient Exports',
+    description:
+      'Premium Indian food ingredients for global buyers. 150+ products across 18 categories.',
+    url: siteUrl,
+    locale: 'en'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Traya International Exim LLP — Indian Food-Ingredient Exports',
+    description: 'Premium Indian food ingredients for global buyers.'
+  }
 };
 
 // Pre-render all configured locales at build time (SSG).
@@ -64,11 +86,12 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const t = await getTranslations('Header');
+  const settings = await getSiteSettings();
 
   return (
     <html
       lang={locale}
-      className={`${fraunces.variable} ${figtree.variable} ${dmMono.variable} h-full antialiased`}
+      className={`${lora.variable} ${figtree.variable} ${dmMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider messages={messages}>
@@ -78,12 +101,16 @@ export default async function LocaleLayout({
           >
             {t('skip')}
           </a>
+          <TopBar />
           <SiteHeader />
           <main id="main" className="flex-1">
             {children}
           </main>
+          <EnquirySection founderPhoto={settings.founderPhoto} />
           <SiteFooter />
-          <WhatsAppButton />
+          <EnquireTab />
+          <FloatingActions />
+          <Toaster richColors position="top-center" />
         </NextIntlClientProvider>
       </body>
     </html>

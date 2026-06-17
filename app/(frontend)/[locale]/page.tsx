@@ -1,32 +1,57 @@
+import type {Metadata} from 'next';
 import {setRequestLocale} from 'next-intl/server';
-import {useTranslations} from 'next-intl';
+import {getSiteSettings} from '@/lib/site-settings';
+import {Hero} from '@/components/sections/home/hero';
+import {Intro} from '@/components/sections/home/intro';
+import {ProductGroups} from '@/components/sections/home/product-groups';
+import {WhyTraya} from '@/components/sections/home/why-traya';
+import {CertBand} from '@/components/sections/home/cert-band';
+import {FinalCta} from '@/components/sections/home/final-cta';
 
-export default async function HomePage({
-  params
-}: {
-  params: Promise<{locale: string}>;
-}) {
-  const {locale} = await params;
-  setRequestLocale(locale);
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
-  return <HomeContent />;
+export async function generateMetadata(): Promise<Metadata> {
+  return {alternates: {canonical: '/'}};
 }
 
-function HomeContent() {
-  const t = useTranslations('Home');
+// Home flow (Who → What → Why → Proof → Act). The founder / "human" story lives
+// on /about, not here. The global pre-footer Enquiry section + Footer come from
+// the layout, so the final CTA funnels into #enquiry rather than repeating a form.
+export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  setRequestLocale(locale);
+  const s = await getSiteSettings();
+
+  const orgSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Traya International Exim LLP',
+    url: siteUrl,
+    description:
+      'Indian food-ingredient export house — sourcing, processing, and exporting premium agricultural and food-processing products from India to global buyers.',
+    founder: {'@type': 'Person', name: 'Neha Pardeshi'},
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: 'Ahmedabad',
+      addressRegion: 'Gujarat',
+      addressCountry: 'IN'
+    },
+    ...(s.contact.email ? {email: s.contact.email} : {}),
+    ...(s.contact.phone ? {telephone: s.contact.phone} : {})
+  };
 
   return (
-    <main className="bg-background flex flex-1 flex-col items-center justify-center px-6 py-section-xl text-center">
-      <p className="section-label mb-5">Building Partnerships Across Continents</p>
-      <h1 className="text-foreground max-w-3xl text-display-lg font-display">
-        {t('title')}
-      </h1>
-      <p className="text-muted-foreground mt-5 max-w-md text-lg">
-        {t('subtitle')}
-      </p>
-      <p className="text-traya-slate mt-10 font-mono text-xs tracking-wide">
-        150+ PRODUCTS · 18 CATEGORIES · INDIA
-      </p>
-    </main>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(orgSchema)}}
+      />
+      <Hero />
+      <Intro />
+      <ProductGroups />
+      <WhyTraya />
+      <CertBand />
+      <FinalCta />
+    </>
   );
 }
