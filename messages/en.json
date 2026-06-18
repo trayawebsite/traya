@@ -134,6 +134,34 @@
       "heading": "Credentials global buyers can verify.",
       "sub": "Registered and recognised across India's key food-export authorities."
     },
+    "process": {
+      "eyebrow": "How it works",
+      "heading": "From first enquiry to delivered cargo.",
+      "sub": "A simple, transparent path — no guesswork, no surprises.",
+      "step": "Step",
+      "step1Title": "Enquire",
+      "step1Body": "Tell us what you need — product, grade, volume, and destination. We respond within one business day.",
+      "step2Title": "Sample & Quote",
+      "step2Body": "We send specs, a COA, and a representative sample, with clear FOB / CIF pricing and packaging options.",
+      "step3Title": "Ship",
+      "step3Body": "On approval, we produce, document, and dispatch — with full export paperwork and tracking to your port."
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "heading": "What buyers ask first.",
+      "moqQ": "What are your minimum order quantities?",
+      "moqA": "MOQs vary by product and packaging — typically from one pallet to a full container (FCL). Tell us your target volume and we'll confirm the MOQ and the best packaging for your market.",
+      "samplesQ": "Can I get a sample before ordering?",
+      "samplesA": "Yes. We provide a representative sample with a COA for evaluation — just request one with your enquiry.",
+      "leadtimeQ": "What are your typical lead times?",
+      "leadtimeA": "Most orders ship within 2–4 weeks of confirmation, depending on product, volume, and documentation. We confirm a firm timeline with every quote.",
+      "paymentQ": "Which Incoterms and payment terms do you offer?",
+      "paymentA": "We work on FOB and CIF terms and accept T/T and L/C. Exact terms are confirmed per order and destination.",
+      "packagingQ": "Do you offer custom or private-label packaging?",
+      "packagingA": "Yes — bulk, retail, and private-label packaging to your specification, compliant with your destination's labelling rules.",
+      "certsQ": "Which certifications and documents do you provide?",
+      "certsA": "FSSAI, APEDA, and Spice Board registrations, plus a per-shipment COA and full export documentation. Region-specific certifications are available on request."
+    },
     "founderSection": {
       "eyebrow": "The founder",
       "heading": "Built by someone who shows up.",
@@ -146,6 +174,101 @@
       "cta": "Start an enquiry",
       "whatsapp": "Message on WhatsApp"
     }
+  },
+  "About": {
+    "meta": {
+      "title": "About",
+      "description": "Traya International Exim LLP — a founder-led global trade house built on precision, partnership, and genuine care for every relationship."
+    },
+    "hero": {
+      "eyebrow": "About Traya",
+      "heading": "Building partnerships across continents.",
+      "tagline": "A refined approach to global trade.",
+      "body": "A global trade firm built for businesses that think beyond borders — pairing operational precision with a deep international network. We believe trade is not just the movement of goods, but the alignment of timing, trust, and purpose."
+    },
+    "founder": {
+      "eyebrow": "From the founder",
+      "heading": "Trade is, first, a relationship.",
+      "name": "Neha Pardeshi",
+      "role": "Founder & CEO",
+      "p1": "The world didn't open up to me through textbooks — it opened up through travel. Exploring different cultures, meeting people from all walks of life, and seeing the world through different perspectives shaped not only who I am, but also what I chose to build.",
+      "p2": "I've always believed that global trade is ultimately about human connection. Behind every shipment, every product, and every partnership is a relationship built on trust and understanding — something no algorithm or automation can truly replace.",
+      "p3": "At Traya International EXIM, our goal is not simply to facilitate trade, but to build meaningful and lasting relationships across borders — relationships that grow stronger with every transaction and every conversation.",
+      "p4": "What began as a passion for exploring the world has evolved into a business driven by commitment, integrity, and a truly global vision. And we are only just getting started."
+    },
+    "principles": {
+      "eyebrow": "Who we are",
+      "heading": "Discipline and care, in every engagement.",
+      "body": "What defines us isn't the breadth of our reach, but the discipline and care behind every engagement — held to three founding standards.",
+      "p1Title": "Precision",
+      "p1Body": "In planning and execution — every detail considered before it matters.",
+      "p2Title": "Consistency",
+      "p2Body": "In delivery and conduct — the same standard, shipment after shipment.",
+      "p3Title": "Integrity",
+      "p3Body": "In every association — relationships held to one honest standard."
+    },
+    "philosophy": {
+      "eyebrow": "Our philosophy",
+      "heading": "Sustainable trade, built on four foundations.",
+      "body": "These are not values we display — they are the standards we hold ourselves to in every engagement.",
+      "f1Title": "Clarity",
+      "f1Body": "Knowing precisely where and how to operate.",
+      "f2Title": "Structure",
+      "f2Body": "Systems that support seamless execution.",
+      "f3Title": "Reliability",
+      "f3Body": "Consistency across every transaction.",
+      "f4Title": "Scalability",
+      "f4Body": "Pathways designed for long-term expansion."
+    },
+    "why": {
+      "eyebrow": "Why Traya",
+      "heading": "Most trade firms offer a process. We offer a partnership.",
+      "body": "Traya was built on one idea — that trade should be handled with integrity and genuine care, from the first conversation to the final delivery.",
+      "w1Title": "Founder-driven standards",
+      "w1Body": "Every process and partnership reflects the values this company was built on.",
+      "w2Title": "Structured execution",
+      "w2Body": "Clear systems that remove friction at every stage of the trade cycle.",
+      "w3Title": "Relationship-first thinking",
+      "w3Body": "Built for the long term, not the single transaction.",
+      "w4Title": "Global outlook, personal touch",
+      "w4Body": "International reach backed by a human, relationship-led approach.",
+      "w5Title": "Breadth, one partner",
+      "w5Body": "A diversified catalogue across categories — sourced, handled, and shipped by a single accountable team.",
+      "w6Title": "Documentation that travels",
+      "w6Body": "Spec sheets, COA, and compliant, quality-controlled supply chains, so your goods clear customs and perform.",
+      "w7Title": "Transparent throughout",
+      "w7Body": "Clear pricing, honest timelines, and proactive updates — you always know where your order stands."
+    },
+    "vision": {
+      "eyebrow": "Vision & mission",
+      "visionLabel": "Our vision",
+      "vision": "To become the most trusted and largest trading partner for businesses expanding across borders.",
+      "missionLabel": "Our mission",
+      "m1": "Facilitate efficient, well-structured trade operations across global markets.",
+      "m2": "Build lasting international partnerships grounded in reliability, transparency, and mutual growth.",
+      "m3": "Expand global presence through strategic market engagement and disciplined execution.",
+      "commitment": "We are not building a firm of isolated transactions. We are building a trade partner you can count on — across borders, across time zones, and across years."
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Get in touch with Traya International Exim — email, phone, WhatsApp, or send an enquiry. We respond within one business day."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "heading": "Let's start a conversation.",
+      "body": "Reach us directly below, or send an enquiry with your requirement — our team responds within one business day."
+    },
+    "emailLabel": "Email us",
+    "phoneLabel": "Call us",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Message on WhatsApp",
+    "addressLabel": "Visit us",
+    "mapCta": "View on map",
+    "hoursLabel": "Response time",
+    "hours": "Within one business day · Mon–Sat",
+    "socialLabel": "Follow us"
   },
   "NotFound": {
     "code": "404",

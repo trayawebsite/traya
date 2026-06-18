@@ -8,7 +8,10 @@ import {ProductGroups} from '@/components/sections/home/product-groups';
 import {WhyTraya} from '@/components/sections/home/why-traya';
 import {Testimonials} from '@/components/sections/home/testimonials';
 import {CertBand} from '@/components/sections/home/cert-band';
+import {HowItWorks} from '@/components/sections/home/how-it-works';
+import {Faq} from '@/components/sections/home/faq';
 import {FinalCta} from '@/components/sections/home/final-cta';
+import {Reveal} from '@/components/ui/reveal';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
@@ -49,13 +52,33 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
         dangerouslySetInnerHTML={{__html: JSON.stringify(orgSchema)}}
       />
       <Hero />
-      <Intro />
-      <Stats />
-      <ProductGroups />
-      <WhyTraya />
-      <Testimonials />
-      <CertBand />
-      <FinalCta />
+      <Reveal>
+        <Intro />
+      </Reveal>
+      <Reveal>
+        <Stats />
+      </Reveal>
+      <Reveal>
+        <ProductGroups />
+      </Reveal>
+      <Reveal>
+        <WhyTraya />
+      </Reveal>
+      <Reveal>
+        <Testimonials />
+      </Reveal>
+      <Reveal>
+        <CertBand />
+      </Reveal>
+      <Reveal>
+        <HowItWorks />
+      </Reveal>
+      <Reveal>
+        <Faq />
+      </Reveal>
+      <Reveal>
+        <FinalCta />
+      </Reveal>
     </>
   );
 }

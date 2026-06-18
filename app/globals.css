@@ -288,6 +288,29 @@
   .glow-drift { animation: none; }
 }
 
+/* Scroll-reveal entrance signature — the site's one motion signature: a fade +
+   24px rise, played once when JS toggles [data-shown] on intersection (see
+   components/ui/reveal.tsx). Static under reduced-motion; the <noscript>
+   override in the layout keeps content visible with no JS. */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity var(--duration-slow) var(--ease-expo),
+    transform var(--duration-slow) var(--ease-expo);
+}
+[data-reveal][data-shown] {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
 @layer components {
   /* Identity-defining section label: vermilion eyebrow above every heading */
   .section-label {
@@ -313,7 +336,12 @@
       linear-gradient(var(--card), var(--card)) padding-box,
       linear-gradient(135deg, var(--traya-red), rgb(181 52 26 / 0.14)) border-box;
     transition: box-shadow var(--duration-base) var(--ease-expo),
-      background var(--duration-base) var(--ease-expo);
+      background var(--duration-base) var(--ease-expo),
+      transform var(--duration-fast) var(--ease-expo);
+  }
+  /* Press feedback — the secondary button now "listens" to clicks like the primary. */
+  .btn-ring:active {
+    transform: scale(0.97);
   }
   .btn-ring:hover {
     background:
@@ -349,5 +377,6 @@
   }
   @media (prefers-reduced-motion: reduce) {
     .btn-ring { transition: none; }
+    .btn-ring:active { transform: none; }
   }
 }

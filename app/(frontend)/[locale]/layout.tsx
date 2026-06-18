@@ -94,6 +94,11 @@ export default async function LocaleLayout({
       className={`${lora.variable} ${figtree.variable} ${dmMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
+        {/* No-JS / crawler safety: scroll-reveal starts content at opacity:0, so
+            force it visible when JS is unavailable. */}
+        <noscript>
+          <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main"

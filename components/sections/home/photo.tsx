@@ -64,7 +64,7 @@ export function Photo({
           priority={priority}
           onLoad={() => setLoaded(true)}
           onError={() => setFailed(true)}
-          className={`object-cover ${imgClassName} transition-opacity duration-500 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+          className={`object-cover ${imgClassName} transition-[opacity,filter] duration-500 ease-expo ${loaded ? 'opacity-100 blur-0' : 'opacity-0 blur-sm'}`}
         />
       )}
     </div>

@@ -44,7 +44,7 @@ export async function ProductGroups() {
                   src={`/home/group-${g}.png`}
                   alt={t(g)}
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="aspect-4/5 w-full transition-transform duration-300 ease-out group-hover:scale-105 motion-reduce:transition-none"
+                  className="aspect-4/5 w-full transition-transform duration-500 ease-expo group-hover:scale-105 motion-reduce:transition-none"
                 />
                 <span
                   aria-hidden
@@ -57,7 +57,11 @@ export async function ProductGroups() {
                 )}
                 <span className="pointer-events-none absolute inset-x-0 bottom-0 p-5">
                   <span className="block font-display text-xl text-traya-cream">{t(g)}</span>
-                  <span className="mt-1 block text-sm leading-snug text-traya-cream/75 line-clamp-2">
+                  <span
+                    aria-hidden
+                    className="mt-2 block h-0.5 w-10 origin-left scale-x-0 bg-traya-saffron transition-transform duration-300 ease-expo group-hover:scale-x-100 motion-reduce:transition-none"
+                  />
+                  <span className="mt-2 block text-sm leading-snug text-traya-cream/75 line-clamp-2">
                     {t(`${g}Blurb`)}
                   </span>
                 </span>
