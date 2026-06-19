@@ -18,6 +18,22 @@ export const category = defineType({
       type: 'number',
       initialValue: 99
     }),
+    defineField({
+      name: 'group',
+      title: 'Browse group',
+      type: 'string',
+      description: 'Which of the 6 catalogue groups this category appears under on /products',
+      options: {
+        list: [
+          {title: 'Dehydrated Alliums & Vegetables', value: 'alliums'},
+          {title: 'Spray-Dried Powders', value: 'powders'},
+          {title: 'Spices & Seasonings', value: 'spices'},
+          {title: 'Culinary Herbs', value: 'herbs'},
+          {title: 'Herbal & Nutraceutical', value: 'nutraceutical'},
+          {title: 'Dairy & Premium Wellness', value: 'wellness'}
+        ]
+      }
+    }),
     defineField({name: 'description', type: 'text', rows: 3}),
     defineField({name: 'image', type: 'image', options: {hotspot: true}}),
     defineField({name: 'seo', type: 'seo'})

@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {ContactInfo} from '@/components/sections/contact/contact-info';
+import {Reveal} from '@/components/ui/reveal';
 
 export async function generateMetadata({
   params
@@ -23,5 +24,9 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
   const {locale} = await params;
   setRequestLocale(locale);
 
-  return <ContactInfo />;
+  return (
+    <Reveal>
+      <ContactInfo />
+    </Reveal>
+  );
 }

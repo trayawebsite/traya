@@ -38,7 +38,7 @@ export const siteConfig = {
     actions: [
       {key: 'requestSample', href: '/contact'},
       {key: 'requestQuote', href: '/contact'},
-      {key: 'downloadCatalogue', href: '#catalogue'}
+      {key: 'downloadCatalogue', href: '#'}
     ] as NavItem[],
     // Bottom-bar legal. Anchors until /privacy + /terms are built (no 404s).
     legal: [

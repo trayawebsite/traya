@@ -54,6 +54,7 @@ export async function Principles() {
           {PRINCIPLES.map((p) => (
             <div
               key={p.key}
+              data-stagger
               className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
               <span className="grid size-11 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">

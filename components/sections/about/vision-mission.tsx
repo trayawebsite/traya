@@ -15,7 +15,7 @@ export async function VisionMission() {
         <p className="section-label on-dark">{t('eyebrow')}</p>
         <div className="mt-8 grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <p className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
               {t('visionLabel')}
             </p>
             <h2 className="mt-3 text-balance font-display text-display-sm lg:text-display">
@@ -24,7 +24,7 @@ export async function VisionMission() {
           </div>
 
           <div>
-            <p className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
               {t('missionLabel')}
             </p>
             <ul className="mt-5 space-y-4">

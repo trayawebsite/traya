@@ -42,13 +42,14 @@ export async function Intro() {
           {(['vision', 'mission'] as const).map((k) => (
             <div
               key={k}
+              data-stagger
               className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
               <div className="flex items-center gap-3">
                 <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
                   {VM_ICONS[k]}
                 </span>
-                <h3 className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
                   {t(`intro.${k}Label`)}
                 </h3>
               </div>

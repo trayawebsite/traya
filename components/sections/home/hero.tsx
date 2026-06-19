@@ -19,7 +19,7 @@ export async function Hero() {
       <div className="absolute inset-0">
         <Photo
           src="/home/02.png"
-          alt="Premium Indian food ingredients prepared for export"
+          alt=""
           priority
           sizes="100vw"
           className="size-full"

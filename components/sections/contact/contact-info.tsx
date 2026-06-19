@@ -69,13 +69,15 @@ export async function ContactInfo() {
 
   return (
     <section className="border-b border-traya-border bg-background">
-      <Container className="py-section-lg">
-        <div className="max-w-2xl">
+      <Container className="pt-section-sm pb-section-lg">
+        <div className="mx-auto max-w-4xl text-center">
           <p className="section-label">{t('hero.eyebrow')}</p>
-          <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
+          <h1 className="mt-3 text-balance font-display text-display-lg text-foreground">
             {t('hero.heading')}
           </h1>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-muted-foreground">{t('hero.body')}</p>
+          <p className="mx-auto mt-4 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+            {t('hero.body')}
+          </p>
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -110,7 +112,7 @@ export async function ContactInfo() {
                   rel="noopener noreferrer"
                   className={`mt-2 inline-block text-sm text-traya-red-deep ${linkCls}`}
                 >
-                  {t('mapCta')} →
+                  {t('mapCta')} <span aria-hidden="true">→</span>
                 </a>
               )}
             </ContactCard>
@@ -147,13 +149,13 @@ function ContactCard({
   children: React.ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7">
+    <div data-stagger className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7">
       <span className="grid size-11 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
         {icon}
       </span>
-      <h2 className="mt-4 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
+      <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
         {label}
-      </h2>
+      </p>
       <div className="mt-2 text-base">{children}</div>
     </div>
   );

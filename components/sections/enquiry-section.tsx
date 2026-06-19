@@ -1,6 +1,6 @@
 'use client';
 
-import {useState, cloneElement, type ReactElement} from 'react';
+import {useState, useEffect, cloneElement, type ReactElement} from 'react';
 import Image from 'next/image';
 import {z} from 'zod';
 import {useForm} from 'react-hook-form';
@@ -10,8 +10,6 @@ import {toast} from 'sonner';
 import {inquirySchema} from '@/lib/validations';
 import {Container} from '@/components/ui/container';
 import {primaryButton} from '@/lib/button-styles';
-
-const SHIPMENT_MODES = ['Sea (FCL / LCL)', 'Air', 'Road', 'Courier', 'Not sure yet'];
 
 // Shipment isn't on the API schema, so extend locally; it's folded into the
 // message before POSTing to /api/inquiry.
@@ -24,12 +22,29 @@ type FormValues = z.infer<typeof formSchema>;
 // limit all already behind it). Real <label>s, not placeholder-as-label.
 export function EnquirySection({founderPhoto}: {founderPhoto: string}) {
   const t = useTranslations('Enquiry');
+  const shipmentModes = t('shipmentModes').split(' · ');
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
+    setFocus,
     formState: {errors, isSubmitting}
   } = useForm<FormValues>({resolver: zodResolver(formSchema)});
+
+  // Prefill the product field from a "?product=…" enquire link (so the buyer
+  // doesn't retype it and we keep per-product lead attribution).
+  useEffect(() => {
+    const product = new URLSearchParams(window.location.search).get('product');
+    if (product) setValue('productName', product);
+  }, [setValue]);
+
+  // Move focus to the first invalid field on a failed submit (a11y — with
+  // noValidate the native jump is off).
+  function onInvalid(errs: Record<string, unknown>) {
+    const first = Object.keys(errs)[0];
+    if (first) setFocus(first as keyof FormValues);
+  }
 
   async function onSubmit(values: FormValues) {
     const {shipment, ...rest} = values;
@@ -69,7 +84,7 @@ export function EnquirySection({founderPhoto}: {founderPhoto: string}) {
               {(['trust1', 'trust2', 'trust3'] as const).map((k) => (
                 <li key={k} className="flex items-start gap-3 text-sm text-foreground/80">
                   <svg
-                    className="mt-0.5 size-4 shrink-0 text-traya-red"
+                    className="mt-0.5 size-4 shrink-0 text-traya-forest"
                     viewBox="0 0 20 20"
                     fill="none"
                     stroke="currentColor"
@@ -103,9 +118,9 @@ export function EnquirySection({founderPhoto}: {founderPhoto: string}) {
 
           {/* Right — form card */}
           <form
-            onSubmit={handleSubmit(onSubmit)}
+            onSubmit={handleSubmit(onSubmit, onInvalid)}
             noValidate
-            className="rounded-xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
+            className="rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
           >
             <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
               <Field id="name" label={t('name')} required error={errors.name?.message}>
@@ -128,7 +143,7 @@ export function EnquirySection({founderPhoto}: {founderPhoto: string}) {
                   <option value="" disabled>
                     {t('shipmentPlaceholder')}
                   </option>
-                  {SHIPMENT_MODES.map((m) => (
+                  {shipmentModes.map((m) => (
                     <option key={m} value={m}>
                       {m}
                     </option>
@@ -211,15 +226,16 @@ function Field({
     <div className={full ? 'sm:col-span-2' : undefined}>
       <label htmlFor={id} className="mb-1.5 block text-xs font-medium text-foreground/70">
         {label}
-        {required && <span className="text-traya-red"> *</span>}
+        {required && <span aria-hidden="true" className="text-destructive"> *</span>}
       </label>
-      {/* Inject a11y wiring so the control announces its invalid state + error. */}
+      {/* Inject a11y wiring: required + invalid state announced; error is a live region. */}
       {cloneElement(children as ReactElement<Record<string, unknown>>, {
+        'aria-required': required ? true : undefined,
         'aria-invalid': error ? true : undefined,
         'aria-describedby': errorId
       })}
       {error && (
-        <p id={errorId} className="mt-1.5 text-xs text-destructive">
+        <p id={errorId} role="alert" className="mt-1.5 text-xs text-destructive">
           {error}
         </p>
       )}

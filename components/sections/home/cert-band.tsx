@@ -1,7 +1,9 @@
 import {getTranslations} from 'next-intl/server';
+import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
 import {getSiteSettings} from '@/lib/site-settings';
 import {CertMark} from '@/components/layout/cert-mark';
+import {secondaryBtn} from './styles';
 
 // Edge fade so items appear/disappear softly at the viewport sides.
 const maskStyle = {
@@ -28,6 +30,9 @@ export async function CertBand() {
             {t('heading')}
           </h2>
           <p className="mt-4 leading-relaxed text-muted-foreground">{t('sub')}</p>
+          <Link href="/certifications" className={`${secondaryBtn} mt-6`}>
+            {t('cta')}
+          </Link>
         </div>
       </Container>
 

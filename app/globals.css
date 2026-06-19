@@ -10,11 +10,15 @@
    Premium-but-warm diversified trade house. Light-only.
    Register: warm ivory + ink carry the page; VERMILION (#B5341A) is the
    primary accent / button colour; forest is the meaningful secondary.
-   Saffron is retained in the tokens but NOT used by default.
+   Saffron (gold #C4820A) is the second brand accent — highlights (stat numbers,
+   icon chips, footer rule, badges).
    Display: Lora · Body: Figtree · Specs/data: DM Mono.
    ═══════════════════════════════════════════════════════════════════ */
 
 :root {
+  /* Enable animating to intrinsic sizes (the FAQ accordion height). */
+  interpolate-size: allow-keywords;
+
   /* ── Brand raw values ─────────────────────────────────────────── */
   /* Dark family — hero / footer / CTA bands / dark sections */
   --traya-deep:        #1a1008;  /* warm espresso near-black — the canonical deep */
@@ -31,7 +35,9 @@
   --traya-red-deep:    #6D1F10;  /* hover · red-as-text on ivory (WCAG AA ~10:1) · deep CTA bands */
   --traya-red-hi:      #E0795E;  /* red on DARK backgrounds (eyebrows on deep sections) */
   --traya-red-soft:    #F6E3DC;  /* soft tint — badges / highlight backgrounds */
-  /* Saffron — retained but UNUSED by default (legacy/secondary option) */
+  /* Saffron — the SECOND brand accent (gold). Visible value #C4820A; the
+     hi/lo/soft variants are the same hue, contrast-adjusted (dark glow / AA
+     text-on-light / soft fills). Jobs: stat numbers, icon chips, footer rule, badges. */
   --traya-saffron:     #C4820A;
   --traya-saffron-hi:  #E8A81F;
   --traya-saffron-lo:  #8B5C06;
@@ -40,7 +46,7 @@
   --traya-forest:      #1C4230;
   --traya-forest-mid:  #2D5E42;
   /* Slate — secondary text, captions, metadata */
-  --traya-slate:       #6E6456;
+  --traya-slate:       #655B4D;  /* darkened for AA margin on white cards (~5.2:1) */
   /* Clay — warm tan/oak: dividers, icon strokes, decorative accents, text on
      DARK sections (~4.8:1 on deep). NOT body text on ivory (~3.6:1). */
   --traya-clay:        #A67B5B;
@@ -311,6 +317,50 @@
   }
 }
 
+/* Stagger — grid items marked [data-stagger] cascade in (60ms steps) once their
+   section reveals (the parent [data-reveal] gains [data-shown]). Decorative;
+   gated under reduced-motion, and forced visible with no JS via the layout's
+   <noscript> override. */
+[data-stagger] {
+  opacity: 0;
+  transform: translateY(10px);
+  transition:
+    opacity var(--duration-base) var(--ease-expo),
+    transform var(--duration-base) var(--ease-expo);
+}
+[data-reveal][data-shown] [data-stagger] {
+  opacity: 1;
+  transform: none;
+}
+[data-reveal][data-shown] [data-stagger]:nth-child(2) { transition-delay: 60ms; }
+[data-reveal][data-shown] [data-stagger]:nth-child(3) { transition-delay: 120ms; }
+[data-reveal][data-shown] [data-stagger]:nth-child(4) { transition-delay: 180ms; }
+[data-reveal][data-shown] [data-stagger]:nth-child(5) { transition-delay: 240ms; }
+[data-reveal][data-shown] [data-stagger]:nth-child(6) { transition-delay: 300ms; }
+[data-reveal][data-shown] [data-stagger]:nth-child(7) { transition-delay: 360ms; }
+@media (prefers-reduced-motion: reduce) {
+  [data-stagger] { opacity: 1; transform: none; transition: none; }
+}
+
+/* FAQ accordion — smooth height + fade via ::details-content where supported
+   (Chromium); gracefully snaps elsewhere, still fully functional. */
+.faq-item::details-content {
+  block-size: 0;
+  overflow: clip;
+  opacity: 0;
+  transition:
+    block-size var(--duration-base) var(--ease-expo),
+    opacity var(--duration-base) var(--ease-expo),
+    content-visibility var(--duration-base) allow-discrete;
+}
+.faq-item[open]::details-content {
+  block-size: auto;
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-item::details-content { transition: none; }
+}
+
 @layer components {
   /* Identity-defining section label: vermilion eyebrow above every heading */
   .section-label {
@@ -331,13 +381,27 @@
      soft glow on hover, and a clear ring on focus. Light-bg by default; add
      `.on-dark` on the deep band. The fill must match the local background. */
   .btn-ring {
+    /* Soft vermilion blush fill — same colour family as the glow border, so the
+       pill reads as a warm echo of the solid-red primary (no gold/border clash)
+       and still has presence on the ivory page. */
+    --btn-ring-fill: color-mix(in srgb, var(--traya-red) 5%, var(--card));
     border: 1px solid transparent;
     background:
-      linear-gradient(var(--card), var(--card)) padding-box,
+      linear-gradient(var(--btn-ring-fill), var(--btn-ring-fill)) padding-box,
       linear-gradient(135deg, var(--traya-red), rgb(181 52 26 / 0.14)) border-box;
     transition: box-shadow var(--duration-base) var(--ease-expo),
       background var(--duration-base) var(--ease-expo),
       transform var(--duration-fast) var(--ease-expo);
+  }
+  /* Trailing arrow — turns the outline into a clear "go" CTA (echoes the arrow
+     motif on the product cards); nudges right on hover. Spaced by the button's
+     own gap; inherits the label colour. */
+  .btn-ring::after {
+    content: '→';
+    transition: transform var(--duration-fast) var(--ease-expo);
+  }
+  .btn-ring:hover::after {
+    transform: translateX(2px);
   }
   /* Press feedback — the secondary button now "listens" to clicks like the primary. */
   .btn-ring:active {
@@ -345,14 +409,14 @@
   }
   .btn-ring:hover {
     background:
-      linear-gradient(var(--card), var(--card)) padding-box,
+      linear-gradient(var(--btn-ring-fill), var(--btn-ring-fill)) padding-box,
       linear-gradient(135deg, var(--traya-red), var(--traya-red)) border-box;
     box-shadow: 0 4px 14px -8px rgb(181 52 26 / 0.28);
   }
   .btn-ring:focus-visible {
     outline: none;
     background:
-      linear-gradient(var(--card), var(--card)) padding-box,
+      linear-gradient(var(--btn-ring-fill), var(--btn-ring-fill)) padding-box,
       linear-gradient(135deg, var(--traya-red), var(--traya-red)) border-box;
     box-shadow: 0 0 0 2px var(--traya-red);
   }
@@ -378,5 +442,7 @@
   @media (prefers-reduced-motion: reduce) {
     .btn-ring { transition: none; }
     .btn-ring:active { transform: none; }
+    .btn-ring::after { transition: none; }
+    .btn-ring:hover::after { transform: none; }
   }
 }

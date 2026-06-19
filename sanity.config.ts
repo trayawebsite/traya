@@ -7,7 +7,7 @@ import {schemaTypes} from './sanity/schemas';
 import {apiVersion, dataset, projectId} from './sanity/env';
 
 // siteSettings + aboutPage are singletons — one fixed document each.
-const SINGLETONS = new Set(['siteSettings', 'aboutPage']);
+const SINGLETONS = new Set(['siteSettings', 'aboutPage', 'homePage']);
 
 export default defineConfig({
   basePath: '/studio',
@@ -32,6 +32,10 @@ export default defineConfig({
           .title('Content')
           .items([
             S.listItem()
+              .title('Home Page')
+              .id('homePage')
+              .child(S.document().schemaType('homePage').documentId('homePage')),
+            S.listItem()
               .title('Site Settings')
               .id('siteSettings')
               .child(S.document().schemaType('siteSettings').documentId('siteSettings')),
@@ -42,7 +46,8 @@ export default defineConfig({
             S.divider(),
             S.documentTypeListItem('category').title('Categories'),
             S.documentTypeListItem('product').title('Products'),
-            S.documentTypeListItem('certification').title('Certifications')
+            S.documentTypeListItem('certification').title('Certifications'),
+            S.documentTypeListItem('testimonial').title('Testimonials')
           ])
     }),
     visionTool({defaultApiVersion: apiVersion})

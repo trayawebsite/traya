@@ -24,6 +24,7 @@ export async function Testimonials() {
           {s.testimonials.map((q, i) => (
             <li
               key={i}
+              data-stagger
               className="flex flex-col rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
               <span aria-hidden className="font-display text-5xl leading-[0.5] text-traya-red/25">

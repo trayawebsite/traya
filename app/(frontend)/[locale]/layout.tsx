@@ -97,7 +97,7 @@ export default async function LocaleLayout({
         {/* No-JS / crawler safety: scroll-reveal starts content at opacity:0, so
             force it visible when JS is unavailable. */}
         <noscript>
-          <style>{`[data-reveal]{opacity:1!important;transform:none!important}`}</style>
+          <style>{`[data-reveal],[data-stagger]{opacity:1!important;transform:none!important}`}</style>
         </noscript>
         <NextIntlClientProvider messages={messages}>
           <a

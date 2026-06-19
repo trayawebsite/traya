@@ -1,23 +1,29 @@
 import {getTranslations} from 'next-intl/server';
-import {Container} from '@/components/ui/container';
+import {PageHero} from '@/components/ui/page-hero';
+import {Photo} from '@/components/sections/home/photo';
 
-// About page header — clean light opening. Eyebrow → headline → a gold italic
-// tagline (the brand's "refined approach" line) → lead paragraph.
+// About page header — centered statement (eyebrow → headline → gold tagline →
+// lead), then a wide framed image banner beneath it, so the visual sits as
+// evidence under the thesis. Shared PageHero recipe. Image is a placeholder —
+// swap for Traya's own imagery.
 export async function AboutHero() {
   const t = await getTranslations('About.hero');
 
   return (
-    <section className="border-b border-traya-border bg-background">
-      <Container className="py-section-lg">
-        <div className="max-w-3xl">
-          <p className="section-label">{t('eyebrow')}</p>
-          <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
-            {t('heading')}
-          </h1>
-          <p className="mt-4 font-display text-lg italic text-traya-saffron-lo">{t('tagline')}</p>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t('body')}</p>
-        </div>
-      </Container>
-    </section>
+    <PageHero
+      eyebrow={t('eyebrow')}
+      heading={t('heading')}
+      tagline={t('tagline')}
+      sub={t('body')}
+    >
+      <div className="mx-auto max-w-5xl overflow-hidden rounded-2xl border border-traya-border shadow-sm">
+        <Photo
+          src="/about/global-trade.jpg"
+          alt="Container ships and cranes at an international shipping port"
+          sizes="(min-width: 1024px) 64rem, 100vw"
+          className="aspect-21/9 w-full"
+        />
+      </div>
+    </PageHero>
   );
 }

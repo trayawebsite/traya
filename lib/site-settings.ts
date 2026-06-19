@@ -15,7 +15,7 @@ export type SiteSettings = {
   socials: {linkedin: string; instagram: string};
   catalogueUrl: string;
   founderPhoto: string;
-  certifications: {name: string; file?: string; boost?: boolean; issuedBy?: string}[];
+  certifications: {key: string; name: string; file?: string; boost?: boolean}[];
   testimonials: {quote: string; name: string; role: string; location?: string}[];
 };
 
@@ -58,39 +58,20 @@ export async function getSiteSettings(): Promise<SiteSettings> {
     // ⚠️ CLIENT TO CONFIRM each one is actually held. DGFT was dropped: it is the
     // authority that issues the IEC (already shown in the legal bar), not a
     // credential. Will move to Sanity `certification` docs later.
+    // Logos + names are data; the issuing-authority + "what it means" copy lives
+    // in i18n (Certifications.marks.<key>) — the reviewable/translatable surface.
+    // ⚠️ CLIENT TO CONFIRM each registration is actually held.
     certifications: [
-      {name: 'FSSAI', file: '/certifications/fssai.png', issuedBy: 'Food Safety & Standards Authority of India'},
-      {name: 'APEDA', file: '/certifications/apeda.png', issuedBy: 'Agri & Processed Food Export Authority'},
-      {name: 'FIEO', file: '/certifications/fieo.jpg', issuedBy: 'Federation of Indian Export Organisations'},
-      {name: 'Spice Board', file: '/certifications/spice-board.jpg', issuedBy: 'Spices Board of India'},
-      {name: 'MSME India', file: '/certifications/msme.png', boost: true, issuedBy: 'Micro, Small & Medium Enterprises'}
+      {key: 'fssai', name: 'FSSAI', file: '/certifications/fssai.png'},
+      {key: 'apeda', name: 'APEDA', file: '/certifications/apeda.png'},
+      {key: 'fieo', name: 'FIEO', file: '/certifications/fieo.jpg'},
+      {key: 'spiceBoard', name: 'Spice Board', file: '/certifications/spice-board.jpg'},
+      {key: 'msme', name: 'MSME India', file: '/certifications/msme.png', boost: true}
     ],
-    // ⚠️ SAMPLE testimonials — for LAYOUT PREVIEW ONLY. Replace every entry with
-    // a real, client-verified quote before launch (honesty rule), or set to []
-    // to hide the section. Attributions are anonymized role + region on purpose
-    // (no fabricated names). Will move to Sanity `testimonial` docs later.
-    testimonials: [
-      {
-        quote:
-          'Consistent quality and clean documentation, shipment after shipment. The COAs and spec sheets arrive before we even ask — customs clearance has never been smoother.',
-        name: 'Head of Procurement',
-        role: 'Spice Importer',
-        location: 'Hamburg, Germany'
-      },
-      {
-        quote:
-          'We needed a single partner across dehydrates, powders, and spices. Traya delivered the exact grades we specified, at volume, on time.',
-        name: 'Sourcing Manager',
-        role: 'Food Manufacturer',
-        location: 'Dubai, UAE'
-      },
-      {
-        quote:
-          'What sets them apart is the personal accountability. You speak to people who know your order and follow it through to delivery.',
-        name: 'Founder',
-        role: 'Health-Food Brand',
-        location: 'Toronto, Canada'
-      }
-    ]
+    // Testimonials — EMPTY by default (honesty rule: no invented quotes). The
+    // home Testimonials section hides until this is populated. Add real,
+    // client-verified quotes here — shape: {quote, name, role, location?}.
+    // Will move to Sanity `testimonial` docs later.
+    testimonials: []
   };
 }

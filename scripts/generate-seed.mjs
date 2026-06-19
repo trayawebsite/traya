@@ -24,6 +24,29 @@ const GROUPED_CATEGORIES = new Set([
   'dehydrated-garlic'
 ]);
 
+// Browse group per category — mirrors lib/catalogue.ts GROUP_CATEGORIES (drives
+// the 6-group /products hub). KEEP IN SYNC with that file.
+const GROUP_OF = {
+  'dehydrated-white-onion': 'alliums',
+  'dehydrated-red-onion': 'alliums',
+  'dehydrated-pink-onion': 'alliums',
+  'fresh-onion': 'alliums',
+  'dehydrated-garlic': 'alliums',
+  'special-dehydrated-products': 'alliums',
+  'dehydrated-vegetables': 'alliums',
+  'spray-dried-products': 'powders',
+  'spices-powders': 'spices',
+  'chilli-flakes': 'spices',
+  'seasonings': 'spices',
+  'taste-enhancers': 'spices',
+  'herbs': 'herbs',
+  'herbal-powders': 'nutraceutical',
+  'dairy-powders': 'wellness',
+  'sweeteners-oils': 'wellness',
+  'edible-seeds-sesame': 'wellness',
+  'millets-specialty': 'wellness'
+};
+
 const FORM_WORDS = ['Kibbled', 'Chopped', 'Minced', 'Granules', 'Powder', 'Flakes', 'Cloves'];
 
 function detectForm(name) {
@@ -43,7 +66,8 @@ for (const cat of catalogue.categories) {
     _type: 'category',
     title: cat.title,
     slug: {_type: 'slug', current: cat.slug},
-    order: cat.order
+    order: cat.order,
+    group: GROUP_OF[cat.slug] ?? 'wellness'
   });
 
   const categoryRef = {_type: 'reference', _ref: categoryId};

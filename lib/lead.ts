@@ -82,7 +82,31 @@ export async function handleLead(
   // ── 2) Sheets log (best-effort — never blocks the response) ──────────
   const sheet = await logLeadToSheet(type, data);
 
-  return NextResponse.json({ok: true, type, email, sheet});
+  // ── 3) Honest success ───────────────────────────────────────────────
+  // A lead is only "delivered" if it reached at least one channel (email OR
+  // the sheet). If BOTH failed, NEVER report success — surface an error so the
+  // user reaches out directly, and log the lost lead so it's recoverable.
+  const delivered = email.sent || sheet.ok;
+  if (!delivered) {
+    console.error(
+      `[lead] NOT DELIVERED (${type}) — email: ${email.error ?? 'failed'}; ` +
+        `sheet: ${sheet.error ?? (sheet.configured ? 'failed' : 'not configured')}. Payload:`,
+      data
+    );
+    // Body stays opaque — the failure detail (recipient emails, provider error
+    // strings) lives in the server log above, not in the client response.
+    return NextResponse.json({ok: false, error: 'delivery_failed'}, {status: 502});
+  }
+
+  // Delivered, but if a channel dropped (e.g. email down, sheet up), leave a
+  // server trace instead of failing silently.
+  if (!email.sent) {
+    console.warn(`[lead] email not sent (${type}): ${email.error ?? 'unknown'} — captured via sheet.`);
+  }
+
+  // Don't echo `to` (internal recipient addresses) or provider ids to the
+  // client — the form only needs `ok`.
+  return NextResponse.json({ok: true, type});
 }
 
 function subjectFor(type: LeadType, data: LeadData): string {

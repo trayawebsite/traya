@@ -6,6 +6,7 @@ export const allCategoriesQuery = groq`
     _id,
     title,
     "slug": slug.current,
+    group,
     description,
     image,
     "productCount": count(*[_type == "product" && references(^._id)])
@@ -21,6 +22,7 @@ export const categoryBySlugQuery = groq`
     _id,
     title,
     "slug": slug.current,
+    group,
     description,
     image,
     seo,

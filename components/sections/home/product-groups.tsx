@@ -35,7 +35,7 @@ export async function ProductGroups() {
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {GROUPS.map((g) => (
-            <li key={g} className="group relative overflow-hidden rounded-2xl">
+            <li key={g} data-stagger className="group relative overflow-hidden rounded-2xl">
               <Link
                 href="/products"
                 className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-traya-surface"

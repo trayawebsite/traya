@@ -22,8 +22,8 @@ export async function generateMetadata({
 }
 
 // About — the company + founder story (per the design playbook): light header →
-// founder letter (dark centerpiece) → who we are / principles → philosophy →
-// why Traya → vision & mission (dark closer). The global Enquiry section + Footer
+// founder letter (dark centerpiece) → who we are / principles → why Traya →
+// vision & mission (dark closer). The global Enquiry section + Footer
 // come from the layout. Sections fade up on scroll via <Reveal>.
 export default async function AboutPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;

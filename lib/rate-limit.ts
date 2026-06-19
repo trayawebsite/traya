@@ -7,7 +7,14 @@
 // `rateLimit()` signature — no caller changes needed.
 
 const WINDOW_MS = 24 * 60 * 60 * 1000; // 24 hours
-const DEFAULT_MAX = Number(process.env.LEAD_MAX_PER_DAY ?? '4'); // submissions / window
+
+// Parse the env limit defensively — a non-numeric value must NOT silently
+// disable the limiter (Number('foo') is NaN, and `>= NaN` is always false).
+function parseMax(raw: string | undefined, fallback: number): number {
+  const n = Number(raw);
+  return Number.isFinite(n) && n > 0 ? Math.floor(n) : fallback;
+}
+const DEFAULT_MAX = parseMax(process.env.LEAD_MAX_PER_DAY, 4); // submissions / window
 
 // key → submission timestamps within the window
 const store = new Map<string, number[]>();
@@ -15,6 +22,9 @@ const store = new Map<string, number[]>();
 export type RateResult = {ok: boolean; remaining: number; retryAfterSec: number};
 
 export function rateLimit(key: string, max = DEFAULT_MAX, windowMs = WINDOW_MS): RateResult {
+  // Guard: a max <= 0 would make `hits.length >= max` true on an empty window,
+  // then read hits[0] (undefined) → NaN Retry-After. Floor to at least 1.
+  max = Math.max(1, Math.floor(max));
   const now = Date.now();
   const hits = (store.get(key) ?? []).filter((t) => now - t < windowMs);
 
@@ -39,10 +49,14 @@ export function rateLimit(key: string, max = DEFAULT_MAX, windowMs = WINDOW_MS):
   return {ok: true, remaining: max - hits.length, retryAfterSec: 0};
 }
 
-// Best-effort client IP. Vercel always sets x-forwarded-for; locally it may be
-// absent (falls back to a shared 'unknown' bucket, which is fine in dev).
+// Best-effort client IP. Prefer x-real-ip (set by the platform, not client-
+// settable) over x-forwarded-for, whose left-most value a client can spoof to
+// rotate past the limit or lock out a victim. Both may be absent locally (falls
+// back to a shared 'unknown' bucket, which is fine in dev).
 export function getClientIp(req: Request): string {
+  const realIp = req.headers.get('x-real-ip')?.trim();
+  if (realIp) return realIp;
   const xff = req.headers.get('x-forwarded-for');
   if (xff) return xff.split(',')[0]!.trim();
-  return req.headers.get('x-real-ip')?.trim() || 'unknown';
+  return 'unknown';
 }

@@ -44,6 +44,15 @@ export const siteSettings = defineType({
       description: 'International format, digits only (e.g. 919876543210)'
     }),
     defineField({name: 'address', type: 'text', rows: 3}),
+    defineField({name: 'gstin', title: 'GSTIN', type: 'string', description: 'Shown in the footer legal bar'}),
+    defineField({name: 'iec', title: 'IEC (Import Export Code)', type: 'string', description: 'Shown in the footer legal bar'}),
+    defineField({
+      name: 'founderPhoto',
+      title: 'Founder photo',
+      type: 'image',
+      options: {hotspot: true},
+      description: 'Used in the enquiry section + About page founder block'
+    }),
     defineField({
       name: 'social',
       type: 'object',

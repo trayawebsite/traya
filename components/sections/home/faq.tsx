@@ -21,8 +21,8 @@ export async function Faq() {
 
         <div className="mx-auto mt-10 max-w-3xl divide-y divide-traya-border border-y border-traya-border">
           {FAQS.map((k) => (
-            <details key={k} className="group">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 py-5 font-display text-lg text-foreground transition-colors hover:text-traya-red-deep [&::-webkit-details-marker]:hidden">
+            <details key={k} className="group faq-item">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 rounded-sm py-5 font-display text-lg text-foreground transition-colors hover:text-traya-red-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring [&::-webkit-details-marker]:hidden">
                 {t(`${k}Q`)}
                 <svg
                   viewBox="0 0 24 24"
@@ -31,7 +31,7 @@ export async function Faq() {
                   strokeWidth="1.8"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="size-5 shrink-0 text-traya-saffron-lo transition-transform duration-200 ease-expo group-open:rotate-180"
+                  className="size-5 shrink-0 text-traya-saffron-lo transition-transform duration-150 ease-expo group-open:rotate-180 motion-reduce:transition-none"
                   aria-hidden="true"
                 >
                   <path d="m6 9 6 6 6-6" />

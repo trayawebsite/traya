@@ -23,7 +23,7 @@ export async function WhyAbout() {
 
           <ul className="divide-y divide-traya-border border-y border-traya-border">
             {PILLARS.map((w) => (
-              <li key={w} className="flex gap-4 py-6">
+              <li key={w} data-stagger className="flex gap-4 py-6">
                 <span aria-hidden className="mt-2 size-2 shrink-0 rotate-45 bg-traya-saffron" />
                 <div>
                   <h3 className="font-display text-lg text-foreground">{t(`${w}Title`)}</h3>

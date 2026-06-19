@@ -24,6 +24,7 @@ export type CategoryListItem = {
   _id: string;
   title: string;
   slug: string;
+  group?: string;
   description?: string;
   image?: SanityImage;
   productCount: number;
@@ -60,11 +61,21 @@ export type CategoryWithProducts = {
   _id: string;
   title: string;
   slug: string;
+  group?: string;
   description?: string;
   image?: SanityImage;
   seo?: Seo;
   productCount: number;
   products: ProductListItem[];
+};
+
+export type Testimonial = {
+  _id: string;
+  quote: string;
+  name: string;
+  role?: string;
+  location?: string;
+  order?: number;
 };
 
 export type Certification = {
@@ -88,6 +99,9 @@ export type SiteSettings = {
   phone?: string;
   whatsappNumber?: string;
   address?: string;
+  gstin?: string;
+  iec?: string;
+  founderPhoto?: SanityImage;
   social?: Social;
 };
 
@@ -105,5 +119,36 @@ export type AboutPage = {
   commitment?: string;
   founder?: Founder;
   stats?: Stat[];
+  seo?: Seo;
+};
+
+export type HomePage = {
+  hero?: {
+    eyebrow?: string;
+    heading?: string;
+    sub?: string;
+    ctaPrimaryLabel?: string;
+    ctaSecondaryLabel?: string;
+    statLine?: string;
+    image?: SanityImage;
+  };
+  intro?: {
+    eyebrow?: string;
+    heading?: string;
+    body?: string;
+    specLine?: string;
+    visionLabel?: string;
+    vision?: string;
+    missionLabel?: string;
+    mission?: string;
+  };
+  stats?: Stat[];
+  productsSection?: {eyebrow?: string; heading?: string; sub?: string; specLine?: string};
+  why?: {eyebrow?: string; heading?: string; items?: FeatureItem[]};
+  testimonialsSection?: {eyebrow?: string; heading?: string};
+  certsSection?: {eyebrow?: string; heading?: string; sub?: string};
+  process?: {eyebrow?: string; heading?: string; sub?: string; steps?: FeatureItem[]};
+  faq?: {eyebrow?: string; heading?: string; items?: {question: string; answer: string}[]};
+  finalCta?: {heading?: string; sub?: string; ctaLabel?: string; image?: SanityImage};
   seo?: Seo;
 };

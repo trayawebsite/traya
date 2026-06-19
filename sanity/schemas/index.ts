@@ -8,8 +8,10 @@ import {stat} from './stat';
 import {category} from './category';
 import {product} from './product';
 import {certification} from './certification';
+import {testimonial} from './testimonial';
 import {siteSettings} from './siteSettings';
 import {aboutPage} from './aboutPage';
+import {homePage} from './homePage';
 
 export const schemaTypes: SchemaTypeDefinition[] = [
   // Reusable objects
@@ -22,6 +24,8 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   category,
   product,
   certification,
+  testimonial,
   siteSettings,
-  aboutPage
+  aboutPage,
+  homePage
 ];

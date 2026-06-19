@@ -12,7 +12,7 @@ import {CertMark} from './cert-mark';
 // for the faint line-grid texture only (kept it from reading muddy as text).
 const headingCls = 'text-xs font-semibold uppercase tracking-[0.16em] text-traya-cream/90';
 const linkCls =
-  'rounded-sm text-sm text-traya-cream/55 transition-colors duration-150 hover:text-traya-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi';
+  'rounded-sm text-sm text-traya-cream/65 transition-colors duration-150 hover:text-traya-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi';
 
 // Faint architectural line-grid (the wine-bar "rack" texture), masked to fade.
 const gridStyle: React.CSSProperties = {

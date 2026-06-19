@@ -2,6 +2,7 @@ import {getTranslations} from 'next-intl/server';
 import {siteConfig} from '@/lib/site-config';
 import {Container} from '@/components/ui/container';
 import {primaryButtonDark} from '@/lib/button-styles';
+import {secondaryBtnDark} from './styles';
 import {Photo} from './photo';
 
 // Closing CTA band over a dark, moody ingredient still-life (subject weighted
@@ -49,7 +50,7 @@ export async function FinalCta() {
                 href={waHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-ring on-dark inline-flex items-center justify-center rounded-lg px-6 py-3 text-sm font-medium text-traya-cream focus-visible:outline-none"
+                className={secondaryBtnDark}
               >
                 {t('whatsapp')}
               </a>

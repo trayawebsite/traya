@@ -52,6 +52,7 @@ export async function HowItWorks() {
           {STEPS.map((s, i) => (
             <li
               key={s.key}
+              data-stagger
               className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
               <div className="flex items-center gap-3">

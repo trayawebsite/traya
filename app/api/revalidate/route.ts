@@ -10,11 +10,15 @@ import {parseBody} from 'next-sanity/webhook';
 export const runtime = 'nodejs';
 
 export async function POST(req: NextRequest) {
+  const secret = process.env.SANITY_REVALIDATE_SECRET;
+  // Hard-fail when unconfigured — never allow an unauthenticated cache purge.
+  if (!secret) {
+    console.error('[revalidate] SANITY_REVALIDATE_SECRET not set — refusing to revalidate.');
+    return new Response('Revalidation not configured', {status: 401});
+  }
+
   try {
-    const {isValidSignature, body} = await parseBody<{_type?: string}>(
-      req,
-      process.env.SANITY_REVALIDATE_SECRET
-    );
+    const {isValidSignature, body} = await parseBody<{_type?: string}>(req, secret);
 
     if (!isValidSignature) {
       return new Response('Invalid signature', {status: 401});
