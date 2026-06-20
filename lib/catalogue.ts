@@ -37,6 +37,7 @@ export type CatalogueCategory = {
   slug: string;
   order: number;
   group: GroupKey;
+  description?: string;
   products: CatalogueProduct[];
 };
 

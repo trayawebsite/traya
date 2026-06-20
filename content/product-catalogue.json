@@ -9,6 +9,7 @@
       "title": "Dehydrated White Onion",
       "slug": "dehydrated-white-onion",
       "order": 1,
+      "description": "Kibbled, chopped, minced, granules, and powder — all from Indian white onion.",
       "products": [
         {"n": 1, "name": "Dehydrated White Onion Kibbled", "slug": "dehydrated-white-onion-kibbled"},
         {"n": 2, "name": "Dehydrated White Onion Chopped", "slug": "dehydrated-white-onion-chopped"},
@@ -21,6 +22,7 @@
       "title": "Dehydrated Red Onion",
       "slug": "dehydrated-red-onion",
       "order": 2,
+      "description": "Full range of cuts and grades from Indian red onion varieties.",
       "products": [
         {"n": 6, "name": "Dehydrated Red Onion Kibbled", "slug": "dehydrated-red-onion-kibbled"},
         {"n": 7, "name": "Dehydrated Red Onion Chopped", "slug": "dehydrated-red-onion-chopped"},
@@ -33,6 +35,7 @@
       "title": "Dehydrated Pink Onion",
       "slug": "dehydrated-pink-onion",
       "order": 3,
+      "description": "Premium pink onion in every dehydrated form, known for milder flavour.",
       "products": [
         {"n": 11, "name": "Dehydrated Pink Onion Kibbled", "slug": "dehydrated-pink-onion-kibbled"},
         {"n": 12, "name": "Dehydrated Pink Onion Chopped", "slug": "dehydrated-pink-onion-chopped"},
@@ -45,6 +48,7 @@
       "title": "Fresh Onion",
       "slug": "fresh-onion",
       "order": 4,
+      "description": "Fresh white, red, and pink onion sourced directly from Indian farms.",
       "products": [
         {"n": 16, "name": "Fresh White Onion", "slug": "fresh-white-onion"},
         {"n": 17, "name": "Fresh Red Onion", "slug": "fresh-red-onion"},
@@ -55,6 +59,7 @@
       "title": "Dehydrated Garlic",
       "slug": "dehydrated-garlic",
       "order": 5,
+      "description": "Cloves, kibbled, chopped, minced, granules, and powder from Indian garlic.",
       "products": [
         {"n": 19, "name": "Dehydrated Garlic Cloves / Kibbled (Flakes)", "slug": "dehydrated-garlic-cloves-kibbled"},
         {"n": 20, "name": "Dehydrated Garlic Chopped", "slug": "dehydrated-garlic-chopped"},
@@ -67,6 +72,7 @@
       "title": "Special Dehydrated Products",
       "slug": "special-dehydrated-products",
       "order": 6,
+      "description": "Crispy fried onion, toasted onion flakes, and dehydrated potato products.",
       "products": [
         {"n": 24, "name": "Crispy Fried Onion", "slug": "crispy-fried-onion"},
         {"n": 25, "name": "Toasted Onion Flakes / Kibbled", "slug": "toasted-onion-flakes-kibbled"},
@@ -79,6 +85,7 @@
       "title": "Dehydrated Vegetables",
       "slug": "dehydrated-vegetables",
       "order": 7,
+      "description": "Carrot, ginger, coriander, mint, spinach, curry leaves, beetroot, and more.",
       "products": [
         {"n": 29, "name": "Dehydrated Carrot Flakes", "slug": "dehydrated-carrot-flakes"},
         {"n": 30, "name": "Dehydrated Green Chili Flakes", "slug": "dehydrated-green-chili-flakes"},
@@ -101,6 +108,7 @@
       "title": "Spray Dried Products",
       "slug": "spray-dried-products",
       "order": 8,
+      "description": "Mango, tomato, banana, coconut milk, pomegranate — fruit and vegetable powders.",
       "products": [
         {"n": 44, "name": "Spray Dried Green Chilli Powder", "slug": "spray-dried-green-chilli-powder"},
         {"n": 45, "name": "Spray Dried Mango Powder", "slug": "spray-dried-mango-powder"},
@@ -131,6 +139,7 @@
       "title": "Dairy Powders",
       "slug": "dairy-powders",
       "order": 9,
+      "description": "Cheese, butter, curd, cream, and ghee powders for food processing and bakery.",
       "products": [
         {"n": 67, "name": "Cheese Powder", "slug": "cheese-powder"},
         {"n": 68, "name": "Butter Powder", "slug": "butter-powder"},
@@ -143,6 +152,7 @@
       "title": "Taste Enhancers",
       "slug": "taste-enhancers",
       "order": 10,
+      "description": "Vinegar powder, soyasauce powder, and HVP for industrial flavour formulation.",
       "products": [
         {"n": 72, "name": "Vinegar Powder", "slug": "vinegar-powder"},
         {"n": 73, "name": "Soyasauce Powder", "slug": "soyasauce-powder"},
@@ -153,6 +163,7 @@
       "title": "Herbal Powders",
       "slug": "herbal-powders",
       "order": 11,
+      "description": "Moringa, spirulina, ashwagandha, amla, sprouted moong, and superfood powders.",
       "products": [
         {"n": 75, "name": "Moringa Leaves Powder", "slug": "moringa-leaves-powder"},
         {"n": 76, "name": "Moringa Powder", "slug": "moringa-powder"},
@@ -177,6 +188,7 @@
       "title": "Spices & Powders",
       "slug": "spices-powders",
       "order": 12,
+      "description": "Turmeric, cumin, coriander, pepper, cinnamon, and whole spice seeds.",
       "products": [
         {"n": 92, "name": "Turmeric Powder", "slug": "turmeric-powder"},
         {"n": 93, "name": "Red Chilli Powder", "slug": "red-chilli-powder"},
@@ -201,6 +213,7 @@
       "title": "Chilli Flakes",
       "slug": "chilli-flakes",
       "order": 13,
+      "description": "Guntur and Sannam varieties — crushed, deluxe, and seedless grades.",
       "products": [
         {"n": 109, "name": "Red Chili Flakes (Crushed)", "slug": "red-chili-flakes-crushed"},
         {"n": 110, "name": "Deluxe Chilli Flakes (Sannam)", "slug": "deluxe-chilli-flakes-sannam"},
@@ -212,6 +225,7 @@
       "title": "Seasonings",
       "slug": "seasonings",
       "order": 14,
+      "description": "Peri peri, schezwan, BBQ, pizza, kurkure, and ready-to-use snack blends.",
       "products": [
         {"n": 113, "name": "Spanish Tomato Seasoning", "slug": "spanish-tomato-seasoning"},
         {"n": 114, "name": "Cream and Onion Seasoning", "slug": "cream-and-onion-seasoning"},
@@ -238,6 +252,7 @@
       "title": "Herbs",
       "slug": "herbs",
       "order": 15,
+      "description": "Oregano, basil, thyme, rosemary, kasuri methi, and mixed herb blends.",
       "products": [
         {"n": 132, "name": "Dried Oregano Leaves", "slug": "dried-oregano-leaves"},
         {"n": 133, "name": "Dry Parsley Leaves", "slug": "dry-parsley-leaves"},
@@ -252,6 +267,7 @@
       "title": "Edible Seeds & Sesame",
       "slug": "edible-seeds-sesame",
       "order": 16,
+      "description": "Black chia seeds, hulled and natural sesame, and black sesame seeds.",
       "products": [
         {"n": 139, "name": "Black Chia Seeds", "slug": "black-chia-seeds"},
         {"n": 140, "name": "Hulled Sesame Seeds", "slug": "hulled-sesame-seeds"},
@@ -263,6 +279,7 @@
       "title": "Sweeteners & Oils",
       "slug": "sweeteners-oils",
       "order": 17,
+      "description": "A2 cow ghee, cold-pressed oils, jaggery, pink salt, and brown sugar.",
       "products": [
         {"n": 143, "name": "Jaggery Cubes", "slug": "jaggery-cubes"},
         {"n": 144, "name": "Jaggery Powder", "slug": "jaggery-powder"},
@@ -277,6 +294,7 @@
       "title": "Millets & Specialty",
       "slug": "millets-specialty",
       "order": 18,
+      "description": "Mixed millets and organic tomato ketchup — premium wellness retail lines.",
       "products": [
         {"n": 150, "name": "All Millets (Mixed)", "slug": "all-millets-mixed"},
         {"n": 151, "name": "Tomato Ketchup (Organic, No Preservatives)", "slug": "tomato-ketchup-organic"}

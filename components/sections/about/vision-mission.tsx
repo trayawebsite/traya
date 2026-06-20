@@ -1,9 +1,11 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 
-// Vision & mission — the closing dark espresso band. Vision as a large statement
-// on the left; the mission points + a commitment pull-line on the right. Saffron
-// labels/marks (gold on dark reads well and ties to the home stats band).
+// Vision & mission — the closing dark espresso band. Vision is presented as a
+// large centered statement (the aspirational anchor), then mission points flow
+// in a horizontal row beneath it (varied from the vertical list). Commitment
+// line closes as a centered italic pullquote. More dramatic than a simple
+// 2-column split.
 const MISSION = ['m1', 'm2', 'm3'] as const;
 
 export async function VisionMission() {
@@ -12,44 +14,37 @@ export async function VisionMission() {
   return (
     <section className="bg-traya-deep text-traya-cream">
       <Container className="py-section-lg">
-        <p className="section-label on-dark">{t('eyebrow')}</p>
-        <div className="mt-8 grid gap-12 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
-              {t('visionLabel')}
-            </p>
-            <h2 className="mt-3 text-balance font-display text-display-sm lg:text-display">
-              {t('vision')}
-            </h2>
-          </div>
+        {/* Vision — the aspirational anchor, full-width centered */}
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="section-label on-dark">{t('eyebrow')}</p>
+          <p className="mt-6 text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
+            {t('visionLabel')}
+          </p>
+          <h2 className="mt-4 text-balance font-display text-display italic leading-tight text-traya-cream">
+            {t('vision')}
+          </h2>
+        </div>
 
-          <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
-              {t('missionLabel')}
-            </p>
-            <ul className="mt-5 space-y-4">
-              {MISSION.map((m) => (
-                <li key={m} className="flex gap-3 leading-relaxed text-traya-cream/80">
-                  <svg
-                    className="mt-1 size-4 shrink-0 text-traya-saffron"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    aria-hidden="true"
-                  >
-                    <path d="M4 10.5l4 4 8-9" />
-                  </svg>
-                  {t(m)}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-8 border-t border-traya-cream/15 pt-6 font-display text-lg italic text-traya-cream">
-              {t('commitment')}
-            </p>
+        {/* Mission — horizontal row of 3 pillars */}
+        <div className="mt-16 border-t border-traya-cream/15 pt-12">
+          <p className="text-center text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron">
+            {t('missionLabel')}
+          </p>
+          <div className="mt-8 grid gap-8 sm:grid-cols-3">
+            {MISSION.map((m, i) => (
+              <div key={m} data-stagger className="border-t-2 border-traya-saffron/40 pt-5">
+                <span className="font-mono text-xs text-traya-cream/50">0{i + 1}</span>
+                <p className="mt-3 leading-relaxed text-traya-cream/80">{t(m)}</p>
+              </div>
+            ))}
           </div>
+        </div>
+
+        {/* Commitment — centered pullquote */}
+        <div className="mx-auto mt-16 max-w-2xl border-t border-traya-cream/15 pt-12 text-center">
+          <p className="font-display text-lg italic leading-relaxed text-traya-cream">
+            {t('commitment')}
+          </p>
         </div>
       </Container>
     </section>

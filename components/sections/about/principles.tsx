@@ -1,8 +1,10 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 
-// "Who we are" + the 3 founding principles, as lifted cards with gold icon
-// chips (consistent with the home icon-chip system).
+// "Who we are" + the 3 founding principles — an editorial numbered list
+// (gold index + icon chip on the left, title + description on the right).
+// Deliberately NOT a card grid: the horizontal rule treatment reads as more
+// considered and avoids the visual repetition of lifted cards.
 const PRINCIPLES: {key: string; icon: React.ReactNode}[] = [
   {
     key: 'p1',
@@ -50,21 +52,26 @@ export async function Principles() {
           <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{t('body')}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-3">
-          {PRINCIPLES.map((p) => (
-            <div
+        <ul className="mt-12">
+          {PRINCIPLES.map((p, i) => (
+            <li
               key={p.key}
               data-stagger
-              className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+              className="grid gap-x-12 gap-y-4 border-t border-traya-border py-8 first:border-t-0 md:grid-cols-[auto_1fr]"
             >
-              <span className="grid size-11 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                {p.icon}
-              </span>
-              <h3 className="mt-4 font-display text-lg text-foreground">{t(`${p.key}Title`)}</h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{t(`${p.key}Body`)}</p>
-            </div>
+              <div className="flex items-center gap-4">
+                <span className="grid size-12 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
+                  {p.icon}
+                </span>
+                <span className="font-mono text-sm text-muted-foreground">0{i + 1}</span>
+              </div>
+              <div className="md:max-w-xl">
+                <h3 className="font-display text-xl text-foreground">{t(`${p.key}Title`)}</h3>
+                <p className="mt-2 leading-relaxed text-muted-foreground">{t(`${p.key}Body`)}</p>
+              </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </Container>
     </section>
   );
