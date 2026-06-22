@@ -6,6 +6,7 @@
     "products": "Products",
     "certifications": "Certifications",
     "contact": "Contact",
+    "enquiry": "Enquiry",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "breadcrumb": "Breadcrumb"
@@ -59,7 +60,38 @@
     "sending": "Sending…",
     "success": "Thank you. Your enquiry is in. We'll be in touch shortly.",
     "error": "Something went wrong. Please try again, or email us directly.",
-    "rateLimited": "You've reached today's enquiry limit. Please email us or message us on WhatsApp."
+    "rateLimited": "You've reached today's enquiry limit. Please email us or message us on WhatsApp.",
+    "addToList": "Add to enquiry",
+    "removeFromList": "Remove from enquiry",
+    "list": {
+      "eyebrow": "Enquiry List",
+      "heading": "Review your enquiry.",
+      "sub": "You've selected these products. Review, add your details, and submit — we'll respond with specs, pricing, and samples.",
+      "empty": "Your enquiry list is empty. Browse our products and add items to get started.",
+      "browseProducts": "Browse products",
+      "remove": "Remove",
+      "clearAll": "Clear all",
+      "contactHeading": "Your details",
+      "contactSub": "We'll use these to respond to your enquiry.",
+      "name": "Your name",
+      "email": "Email address",
+      "company": "Organisation",
+      "phone": "Phone / WhatsApp",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Quantities, grades, destination, timeline…",
+      "submit": "Submit enquiry",
+      "sending": "Submitting…",
+      "success": "Your enquiry has been submitted. We'll be in touch shortly.",
+      "error": "Something went wrong. Please try again, or email us directly.",
+      "rateLimited": "You've reached today's enquiry limit. Please email us or message us on WhatsApp.",
+      "submittedHeading": "Enquiry submitted.",
+      "submittedBody": "Thank you. Our team will review your requirements and respond with specs, pricing, and samples, usually within one business day.",
+      "browseMore": "Continue browsing"
+    },
+    "meta": {
+      "title": "Enquiry List",
+      "description": "Review and submit your product enquiry. Specs, MOQ, and pricing on request."
+    }
   },
   "Language": {
     "label": "Language",
@@ -205,6 +237,7 @@
       "eyebrow": "Why Traya",
       "heading": "Most trade firms offer a process. We offer a partnership.",
       "body": "Traya was built on one idea: that trade should be handled with integrity and genuine care, from the first conversation to the final delivery.",
+      "cta": "See our capabilities",
       "w1Title": "Founder-driven standards",
       "w1Body": "Every process and partnership reflects the values this company was built on.",
       "w2Title": "Structured execution",
@@ -363,7 +396,10 @@
       "eyebrow": "Catalogue",
       "heading": "150+ ingredients. 18 categories. One partner.",
       "sub": "Browse by what you make. Every category opens its full product range. Specifications, MOQ, and pricing are shared on enquiry.",
-      "spec": "6 groups · 18 categories · 150+ SKUs"
+      "spec": "6 groups · 18 categories · 150+ SKUs",
+      "search": "Search products or categories…",
+      "all": "All",
+      "noResults": "No products match your search."
     },
     "product": "product",
     "products": "products",
@@ -373,7 +409,9 @@
       "rangeHeading": "The full range",
       "note": "Specifications, grades, MOQ, and pricing are shared on enquiry. Tell us your requirement and our team sends the details, usually within one business day.",
       "enquireCta": "Enquire about this category",
-      "viewProduct": "View"
+      "viewProduct": "View",
+      "search": "Search products…",
+      "noResults": "No products match your search."
     },
     "detail": {
       "eyebrow": "Product",

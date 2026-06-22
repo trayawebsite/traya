@@ -1,7 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
-import {Photo} from './photo';
+import {HeroCarousel} from './hero-carousel';
 import {SpecLine} from './spec-line';
 import {primaryBtn, secondaryBtn} from './styles';
 
@@ -15,16 +15,8 @@ export async function Hero() {
 
   return (
     <section className="relative isolate overflow-hidden border-b border-traya-border bg-background">
-      {/* Background photograph */}
-      <div className="absolute inset-0">
-        <Photo
-          src="/home/02.png"
-          alt=""
-          priority
-          sizes="100vw"
-          className="size-full"
-        />
-      </div>
+      {/* Background image carousel */}
+      <HeroCarousel />
       {/* Left ivory gradient — keeps the left-side headline legible over the image */}
       <div
         aria-hidden

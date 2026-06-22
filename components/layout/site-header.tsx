@@ -11,6 +11,7 @@ import {useScrolled} from '@/components/hooks/use-scrolled';
 import {NavDesktop} from './nav-desktop';
 import {NavMobile} from './nav-mobile';
 import {LanguageSwitcher} from './language-switcher';
+import {EnquiryBadge} from '@/components/enquiry/enquiry-badge';
 
 // CONTAINER — resolves labels via i18n, wires behaviour (active route, mobile
 // open/close, sticky elevation). Presentation is token-driven; no animation.
@@ -43,6 +44,7 @@ export function SiteHeader() {
         <NavDesktop items={items} pathname={pathname} />
 
         <div className="flex items-center gap-2">
+          <EnquiryBadge className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
           <LanguageSwitcher />
           <Link href={siteConfig.cta.href} className={cn(primaryButton, 'hidden sm:inline-flex')}>
             {ctaLabel}

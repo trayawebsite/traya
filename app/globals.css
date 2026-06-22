@@ -263,6 +263,24 @@
   .bot-icon { animation: none; }
 }
 
+/* Hero background image carousel — pure CSS crossfade, no JS.
+   10 images × 3.5s = 35s total cycle. Each image fades in, holds, fades out.
+   Negative animation-delay staggers them so one is always visible. */
+@keyframes hero-slide {
+  0%    { opacity: 0; }
+  4%    { opacity: 1; }
+  10%   { opacity: 1; }
+  14%   { opacity: 0; }
+  100%  { opacity: 0; }
+}
+.hero-slide {
+  animation: hero-slide 35s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide { animation: none; opacity: 0; }
+  .hero-slide:first-child { opacity: 1; }
+}
+
 /* Infinite cert/logo marquee — the track holds two identical copies and slides
    -50%, so it loops seamlessly. Items use margin (not flex gap) so the halves
    align exactly. Pauses on hover; static under reduced-motion. */

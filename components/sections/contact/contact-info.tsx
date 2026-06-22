@@ -3,10 +3,6 @@ import {Container} from '@/components/ui/container';
 import {getSiteSettings} from '@/lib/site-settings';
 import {siteConfig} from '@/lib/site-config';
 
-// Contact — direct contact methods (the structured enquiry FORM is the global
-// pre-footer section, so we don't stack two forms). Values come from the same
-// site-settings seam the footer/top-bar use; each card renders only when its
-// value exists. Gold icon chips keep it on the home system.
 const ICON = 'size-5';
 
 const MailIcon = (
@@ -57,9 +53,6 @@ export async function ContactInfo() {
   const waHref = wa
     ? `https://wa.me/${wa}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`
     : null;
-  const mapHref = s.contact.address
-    ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(s.contact.address)}`
-    : null;
 
   const socialUrl: Record<string, string> = {
     linkedin: s.socials.linkedin,
@@ -70,17 +63,23 @@ export async function ContactInfo() {
   return (
     <section className="border-b border-traya-border bg-background">
       <Container className="pt-section-sm pb-section-lg">
-        <div className="mx-auto max-w-4xl text-center">
+        {/* Header */}
+        <div className="mx-auto max-w-2xl text-center">
           <p className="section-label">{t('hero.eyebrow')}</p>
           <h1 className="mt-3 text-balance font-display text-display-lg text-foreground">
             {t('hero.heading')}
           </h1>
-          <p className="mx-auto mt-4 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p className="mx-auto mt-4 max-w-lg text-pretty text-lg leading-relaxed text-muted-foreground">
             {t('hero.body')}
           </p>
+          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-traya-saffron-soft bg-traya-saffron-soft/50 px-4 py-1.5 text-sm font-medium text-traya-saffron-lo">
+            {ClockIcon}
+            <span>{t('hours')}</span>
+          </div>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Primary contact methods */}
+        <div className="mt-14 grid gap-5 sm:grid-cols-3">
           {s.contact.email && (
             <ContactCard icon={MailIcon} label={t('emailLabel')}>
               <a href={`mailto:${s.contact.email}`} className={`text-foreground ${linkCls}`}>
@@ -102,19 +101,13 @@ export async function ContactInfo() {
               </a>
             </ContactCard>
           )}
+        </div>
+
+        {/* Secondary info */}
+        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {s.contact.address && (
             <ContactCard icon={PinIcon} label={t('addressLabel')}>
               <address className="not-italic leading-relaxed text-foreground">{s.contact.address}</address>
-              {mapHref && (
-                <a
-                  href={mapHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`mt-2 inline-block text-sm text-traya-red-deep ${linkCls}`}
-                >
-                  {t('mapCta')} <span aria-hidden="true">→</span>
-                </a>
-              )}
             </ContactCard>
           )}
           <ContactCard icon={ClockIcon} label={t('hoursLabel')}>
@@ -149,8 +142,8 @@ function ContactCard({
   children: React.ReactNode;
 }) {
   return (
-    <div data-stagger className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7">
-      <span className="grid size-11 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
+    <div data-stagger className="rounded-2xl border border-traya-border bg-card p-6 transition-shadow duration-200 hover:shadow-sm sm:p-7">
+      <span className="grid size-10 place-items-center rounded-lg bg-traya-saffron-soft text-traya-saffron-lo">
         {icon}
       </span>
       <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">

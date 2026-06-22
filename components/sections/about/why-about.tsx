@@ -3,11 +3,7 @@ import {Container} from '@/components/ui/container';
 import {Link} from '@/i18n/navigation';
 import {secondaryBtn} from '@/components/sections/home/styles';
 
-// "Why Traya" — editorial 2-column. Left: sticky heading + CTA. Right: 7
-// differentiators as an alternating-tone list (even items on card, odd on
-// surface) so the long list never feels monotonous. Each item gets a saffron
-// diamond marker + bold title + one-line description.
-const PILLARS = ['w1', 'w2', 'w3', 'w4', 'w5', 'w6', 'w7'] as const;
+const PILLARS = ['w1', 'w2', 'w3', 'w4', 'w5'] as const;
 
 export async function WhyAbout() {
   const t = await getTranslations('About.why');
@@ -25,12 +21,12 @@ export async function WhyAbout() {
             <p className="mt-5 leading-relaxed text-muted-foreground">{t('body')}</p>
             <div className="mt-8">
               <Link href="/capabilities" className={secondaryBtn}>
-                See our capabilities
+                {t('cta')}
               </Link>
             </div>
           </div>
 
-          {/* Right — alternating-tone pillar list */}
+          {/* Right — pillar list */}
           <div>
             {PILLARS.map((w, i) => (
               <div
@@ -38,7 +34,7 @@ export async function WhyAbout() {
                 data-stagger
                 className={`flex gap-4 py-6 ${
                   i > 0 ? 'border-t border-traya-border' : ''
-                } ${i % 2 === 0 ? 'rounded-xl bg-traya-surface px-5 -mx-5' : ''}`}
+                }`}
               >
                 <span aria-hidden className="mt-2 size-2 shrink-0 rotate-45 bg-traya-saffron" />
                 <div>

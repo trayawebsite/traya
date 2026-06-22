@@ -9,6 +9,7 @@ import {TopBar} from '@/components/layout/top-bar';
 import {SiteHeader} from '@/components/layout/site-header';
 import {SiteFooter} from '@/components/layout/site-footer';
 import {FloatingActions} from '@/components/layout/floating-actions';
+import {EnquiryProvider} from '@/lib/enquiry-context';
 import {EnquireTab} from '@/components/layout/enquire-tab';
 import {EnquirySection} from '@/components/sections/enquiry-section';
 import {Toaster} from '@/components/ui/sonner';
@@ -100,6 +101,7 @@ export default async function LocaleLayout({
           <style>{`[data-reveal],[data-stagger]{opacity:1!important;transform:none!important}`}</style>
         </noscript>
         <NextIntlClientProvider messages={messages}>
+          <EnquiryProvider>
           <a
             href="#main"
             className="sr-only focus:fixed focus:left-4 focus:top-4 focus:z-60 focus:rounded-md focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-foreground focus:shadow-md focus:outline-none focus:ring-2 focus:ring-ring"
@@ -116,6 +118,7 @@ export default async function LocaleLayout({
           <EnquireTab />
           <FloatingActions />
           <Toaster richColors position="top-center" />
+          </EnquiryProvider>
         </NextIntlClientProvider>
       </body>
     </html>

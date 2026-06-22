@@ -1,14 +1,11 @@
 import {getTranslations} from 'next-intl/server';
-import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
 import {Breadcrumb} from '@/components/ui/breadcrumb';
 import {Reveal} from '@/components/ui/reveal';
 import {primaryButton} from '@/lib/button-styles';
+import {CategoryProductList} from './category-products';
 import type {CatalogueCategory} from '@/lib/catalogue';
 
-// Category landing — breadcrumb · header (group eyebrow, title, count, RFQ note)
-// · the full product range as a card grid linking to /products/[slug]. Spec-
-// forward: specs/MOQ/pricing are shared on enquiry.
 export async function CategoryView({category}: {category: CatalogueCategory}) {
   const t = await getTranslations('Catalogue');
   const tg = await getTranslations('Home.groups');
@@ -45,30 +42,13 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
         <section className="bg-traya-surface">
           <Container className="py-section">
             <h2 className="font-display text-display-sm text-foreground">{t('category.rangeHeading')}</h2>
-            <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-              {category.products.map((p) => (
-                <li key={p.slug}>
-                  <Link
-                    href={`/products/${p.slug}`}
-                    className="group flex items-center justify-between gap-3 rounded-2xl border border-traya-border bg-card p-4 shadow-sm transition-shadow duration-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
-                  >
-                    <span className="font-medium text-foreground">{p.name}</span>
-                    <svg
-                      className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 motion-reduce:transition-none"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <CategoryProductList
+              products={category.products.map((p) => ({name: p.name, slug: p.slug}))}
+              labels={{
+                search: t('category.search'),
+                noResults: t('category.noResults')
+              }}
+            />
             <div className="mt-10">
               <a href={`?product=${encodeURIComponent(category.title)}#enquiry`} className={primaryButton}>
                 {t('category.enquireCta')}

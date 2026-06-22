@@ -5,6 +5,7 @@ import {Breadcrumb} from '@/components/ui/breadcrumb';
 import {primaryButton} from '@/lib/button-styles';
 import {secondaryBtn} from '@/components/sections/home/styles';
 import {getRelatedProducts, type CatalogueCategory, type CatalogueProduct} from '@/lib/catalogue';
+import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
 
 // Product detail (light, flat URL) — breadcrumb · name · key facts (category /
 // origin / RFQ pricing) · a "specs on request" panel · enquiry CTAs (a buy-box
@@ -63,6 +64,12 @@ export async function ProductView({
               <p className="font-display text-lg leading-snug text-foreground">{product.name}</p>
               <p className="mt-1 text-sm text-muted-foreground">{category.title}</p>
               <div className="mt-6 flex flex-col gap-3">
+                <AddToEnquiryButton
+                  slug={product.slug}
+                  name={product.name}
+                  category={category.title}
+                  className={secondaryBtn}
+                />
                 <a href={`?product=${encodeURIComponent(product.name)}#enquiry`} className={primaryButton}>
                   {t('detail.sampleCta')}
                 </a>
