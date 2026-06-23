@@ -78,18 +78,25 @@ async function fetchFromSanity(): Promise<SiteSettings | null> {
       'msme': '/certifications/msme.png'
     };
 
+    const seen = new Set<string>();
     const mappedCerts = certs.length > 0
-      ? certs.map((c) => {
-          const key = certKeyMap[c.title.toLowerCase()] ?? c.title.toLowerCase().replace(/\s+/g, '');
-          return {
-            key,
-            name: c.title,
-            file: c.image
-              ? urlForImage(c.image).url()
-              : certImageFallbacks[c.title.toLowerCase()] ?? certImageFallbacks[key],
-            boost: key === 'msme'
-          };
-        })
+      ? certs
+          .map((c) => {
+            const key = certKeyMap[c.title.toLowerCase()] ?? c.title.toLowerCase().replace(/\s+/g, '');
+            return {
+              key,
+              name: c.title,
+              file: c.image
+                ? urlForImage(c.image).url()
+                : certImageFallbacks[c.title.toLowerCase()] ?? certImageFallbacks[key],
+              boost: key === 'msme'
+            };
+          })
+          .filter((c) => {
+            if (seen.has(c.key)) return false;
+            seen.add(c.key);
+            return true;
+          })
       : DEFAULT_CERTS;
 
     cached = {

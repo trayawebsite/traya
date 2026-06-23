@@ -20,7 +20,7 @@ export async function Hero() {
       {/* Left ivory gradient — keeps the left-side headline legible over the image */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-linear-to-r from-background via-background/80 to-transparent"
+        className="absolute inset-0 bg-linear-to-r from-background via-background from-50% to-transparent"
       />
 
       <Container className="relative z-20 flex min-h-112 flex-col justify-center py-12 lg:min-h-[34rem] lg:py-14">

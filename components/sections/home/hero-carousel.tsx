@@ -2,7 +2,7 @@ const IMAGES = Array.from({length: 10}, (_, i) => `/home/t${i + 1}.png`);
 
 export function HeroCarousel({className = ''}: {className?: string}) {
   return (
-    <div className={`absolute inset-0 size-full overflow-hidden ${className}`} aria-hidden="true">
+    <div className={`absolute inset-0 overflow-hidden ${className}`} aria-hidden="true">
       {IMAGES.map((src, i) => (
         <img
           key={src}
