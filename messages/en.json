@@ -19,7 +19,7 @@
     "whatsapp": "Chat on WhatsApp",
     "chat": "Chat with us",
     "enquireNow": "Enquire Now",
-    "topNote": "Indian food-ingredient export house"
+    "topNote": "Multi-sector exports from India"
   },
   "Footer": {
     "tagline": "Building Partnerships Across Continents",
@@ -37,27 +37,27 @@
     "toTop": "Back to top"
   },
   "Enquiry": {
-    "eyebrow": "Start an Enquiry",
-    "heading": "Tell us what you're sourcing.",
-    "sub": "Share your requirement and our team responds with specs, pricing, and a sample, usually within one business day.",
-    "trust1": "Spec sheets, COA & documentation on request",
-    "trust2": "Bulk & custom packaging, global logistics",
-    "trust3": "Founder-led, relationship-first service",
-    "founderNote": "Tell us what you need, and we'll handle it personally.",
+    "eyebrow": "Send an enquiry",
+    "heading": "Share your product requirement.",
+    "sub": "Include the product name, specifications, quantity, destination, and required timeline. Our team will review the details and contact you about the available options.",
+    "trust1": "Food, chemicals, mechanical products, and paper",
+    "trust2": "Specifications and required documents confirmed",
+    "trust3": "Packaging and shipment requirements reviewed",
+    "founderNote": "Share the details you have. We will help you clarify the rest.",
     "founderName": "Neha Pardeshi",
     "founderRole": "Founder & CEO",
     "name": "Your name",
     "email": "Email address",
     "phone": "Phone / WhatsApp",
     "company": "Organisation",
-    "product": "Products / HS code",
+    "product": "Product / HS code",
     "shipment": "Shipment mode",
     "shipmentPlaceholder": "Select a mode",
     "shipmentModes": "Sea (FCL / LCL) · Air · Road · Courier · Not sure yet",
     "requirements": "Your requirement",
-    "requirementsPlaceholder": "Quantity, grade, destination, timeline…",
+    "requirementsPlaceholder": "Specifications, quantity, packaging, destination, and timeline",
     "submit": "Send enquiry",
-    "sending": "Sending…",
+    "sending": "Sending...",
     "success": "Thank you. Your enquiry is in. We'll be in touch shortly.",
     "error": "Something went wrong. Please try again, or email us directly.",
     "rateLimited": "You've reached today's enquiry limit. Please email us or message us on WhatsApp.",
@@ -66,7 +66,7 @@
     "list": {
       "eyebrow": "Enquiry List",
       "heading": "Review your enquiry.",
-      "sub": "You've selected these products. Review, add your details, and submit — we'll respond with specs, pricing, and samples.",
+      "sub": "You've selected these products. Review the list, add your details, and submit the enquiry.",
       "empty": "Your enquiry list is empty. Browse our products and add items to get started.",
       "browseProducts": "Browse products",
       "remove": "Remove",
@@ -78,19 +78,19 @@
       "company": "Organisation",
       "phone": "Phone / WhatsApp",
       "notes": "Notes (optional)",
-      "notesPlaceholder": "Quantities, grades, destination, timeline…",
+      "notesPlaceholder": "Quantities, grades, destination, timeline",
       "submit": "Submit enquiry",
-      "sending": "Submitting…",
+      "sending": "Submitting...",
       "success": "Your enquiry has been submitted. We'll be in touch shortly.",
       "error": "Something went wrong. Please try again, or email us directly.",
       "rateLimited": "You've reached today's enquiry limit. Please email us or message us on WhatsApp.",
       "submittedHeading": "Enquiry submitted.",
-      "submittedBody": "Thank you. Our team will review your requirements and respond with specs, pricing, and samples, usually within one business day.",
+      "submittedBody": "Thank you. Our team will review your requirement and contact you with the available product details, documents, pricing, and next steps.",
       "browseMore": "Continue browsing"
     },
     "meta": {
       "title": "Enquiry List",
-      "description": "Review and submit your product enquiry. Specs, MOQ, and pricing on request."
+      "description": "Review and submit your product enquiry. Share the specifications, quantity, destination, and timeline so our team can respond with the right details."
     }
   },
   "Language": {
@@ -99,118 +99,118 @@
   },
   "Home": {
     "hero": {
-      "eyebrow": "Indian food-ingredient exports",
-      "heading": "A trusted bridge between Indian growers and global buyers.",
-      "sub": "Premium agricultural and food ingredients, sourced and processed in India, exported with the documentation and care global trade demands.",
-      "ctaPrimary": "Request a sample",
-      "ctaSecondary": "Browse the range",
-      "stat": "150+ products · 18 categories · India origin",
+      "eyebrow": "Exports from India across key sectors",
+      "heading": "A reliable export partner for products made in India.",
+      "sub": "We help global buyers source Food & Agro, Chemicals, Mechanical products, and Paper from India. Share your requirement and our team will coordinate suppliers, specifications, documents, packaging, and shipment.",
+      "ctaPrimary": "Send your requirement",
+      "ctaSecondary": "View Food & Agro products",
+      "stat": "Food & Agro catalogue · 150+ products · 18 categories",
       "certified": "Certified"
     },
     "intro": {
-      "eyebrow": "Who we are",
-      "heading": "A broad-spectrum food-ingredient partner, built on trust.",
-      "body": "Traya International Exim LLP is a dynamic, globally oriented export house delivering premium agricultural and food-processing products from India to international markets. We work with quality-controlled production facilities and supply chains, so every shipment meets India's statutory food-safety standards and your exact specification.",
+      "eyebrow": "How Traya helps",
+      "heading": "One team to manage your sourcing and export requirements.",
+      "body": "Tell us what you need and where it needs to go. We identify suitable suppliers, confirm product details, arrange the required documents, and coordinate the shipment. You receive clear updates and have one team to contact throughout the order.",
       "visionLabel": "Our vision",
-      "vision": "To become a globally recognised leader in premium agricultural exports, connecting the finest products of India with food industries and consumers across the world.",
+      "vision": "To become a trusted long-term EXIM partner for businesses that source from India and trade across global markets. We aim to make cross-border buying clearer, more reliable, and easier to manage.",
       "missionLabel": "Our mission",
-      "mission": "To promote Indian agricultural excellence through reliable, precise, relationship-first export solutions, built on quality, consistency, and trust.",
-      "spec": "India origin · Bulk & custom packaging · Global export"
+      "mission": "To support buyers with reliable product sourcing, careful supplier coordination, required export documents, suitable packaging, and clear shipment updates from enquiry to dispatch.",
+      "spec": "Product sourcing · Export documents · Shipment support"
     },
     "stats": {
-      "products": "Products in the catalogue",
-      "categories": "Browsable categories",
-      "origin": "Single origin, India",
-      "certs": "Registrations & memberships"
+      "products": "Food & Agro products",
+      "categories": "Food & Agro categories",
+      "origin": "Sourced from India",
+      "sectors": "Product sectors"
     },
     "groups": {
-      "eyebrow": "What we export",
-      "heading": "Eighteen categories, one accountable partner.",
-      "sub": "From dehydrated alliums to spray-dried powders, spices, herbs, and premium wellness lines. Browse by what you make.",
-      "spec": "6 groups · 18 categories · 150+ SKUs",
-      "cta": "Browse all products",
-      "badgePremium": "Premium",
+      "eyebrow": "Food & Agro catalogue",
+      "heading": "Explore our Food & Agro products.",
+      "sub": "Our online catalogue currently covers Food & Agro products. If you need chemicals, mechanical products, paper, or a product that is not listed, send us your requirement.",
+      "spec": "150+ listed products · 18 categories · 6 product groups",
+      "cta": "View all Food & Agro products",
+      "badgePremium": "Food & Agro",
       "alliums": "Dehydrated Alliums & Vegetables",
-      "alliumsBlurb": "Onion and garlic in every cut and grade, plus dehydrated vegetables.",
+      "alliumsBlurb": "Onion, garlic, and vegetables in multiple cuts and forms for food production.",
       "powders": "Spray-Dried Powders",
-      "powdersBlurb": "Fruit and vegetable powders, from mango and tomato to coconut milk.",
+      "powdersBlurb": "Fruit and vegetable powders for beverages, bakery, blends, and instant foods.",
       "spices": "Spices & Seasonings",
-      "spicesBlurb": "Turmeric, cumin, and chilli, plus ready snack seasonings.",
+      "spicesBlurb": "Whole and powdered spices, chilli flakes, taste enhancers, and seasoning blends.",
       "herbs": "Culinary Herbs",
-      "herbsBlurb": "Oregano, basil, thyme, rosemary, and kasuri methi.",
+      "herbsBlurb": "Oregano, basil, thyme, rosemary, kasuri methi, and mixed herbs.",
       "nutraceutical": "Herbal & Nutraceutical",
-      "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, and other superfoods.",
+      "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, and other plant-based powders.",
       "wellness": "Dairy & Premium Wellness",
-      "wellnessBlurb": "Dairy powders, A2 ghee, cold-pressed oils, and millets."
+      "wellnessBlurb": "Dairy powders, edible seeds, jaggery, A2 ghee, cold-pressed oils, and millets."
     },
     "why": {
-      "eyebrow": "Why Traya",
-      "heading": "The discipline of a trading house, the care of a founder.",
-      "cta": "See our capabilities",
-      "catalogue": "A browsable 151-product catalogue",
-      "catalogueBody": "Not a single-commodity exporter. Find the exact grade, cut, and form you need across 18 categories.",
-      "founder": "Founder-led, relationship-first",
-      "founderBody": "You deal with people who answer personally and stay accountable from first enquiry to final delivery.",
-      "docs": "Documentation that travels",
-      "docsBody": "Spec sheets, COA, and quality-controlled supply chains, so your goods clear customs and perform.",
-      "logistics": "Global logistics, custom packaging",
-      "logisticsBody": "Competitive pricing, international-standard packaging, and timely shipment to your market."
+      "eyebrow": "Working with Traya",
+      "heading": "What you can expect when you work with us.",
+      "cta": "View our capabilities",
+      "catalogue": "Products across multiple sectors",
+      "catalogueBody": "Browse our Food & Agro catalogue online. For chemicals, mechanical products, paper, or other requirements, send our team the specifications.",
+      "founder": "Direct communication",
+      "founderBody": "Our founder-led team takes time to understand your requirement and keeps you updated through each stage of the order.",
+      "docs": "The documents your order needs",
+      "docsBody": "We confirm which specifications, certificates, commercial documents, and export documents are required for your product and destination.",
+      "logistics": "Order details confirmed in advance",
+      "logisticsBody": "We confirm the grade, quantity, packaging, destination, timeline, and commercial terms before the order proceeds."
     },
     "testimonials": {
       "eyebrow": "What buyers say",
-      "heading": "Trusted, shipment after shipment."
+      "heading": "Long-term relationships are built through reliable work."
     },
     "certs": {
-      "eyebrow": "Certifications & memberships",
-      "heading": "Credentials global buyers can verify.",
-      "sub": "Registered and recognised across India's key food-export authorities.",
-      "cta": "See what each credential means"
+      "eyebrow": "Food-export registrations",
+      "heading": "See the registrations behind our Food & Agro exports.",
+      "sub": "Each registration is shown with its issuing authority and what it means for the buyer. Documents for a specific product or destination are confirmed during quotation.",
+      "cta": "View our registrations"
     },
     "process": {
-      "eyebrow": "How it works",
-      "heading": "From first enquiry to delivered cargo.",
-      "sub": "A simple, transparent path. No guesswork, no surprises.",
+      "eyebrow": "The export process",
+      "heading": "How an export order works with Traya.",
+      "sub": "You receive the product and commercial details before you approve the order.",
       "step": "Step",
-      "step1Title": "Enquire",
-      "step1Body": "Tell us what you need: product, grade, volume, and destination. We usually respond within one business day.",
-      "step2Title": "Sample & Quote",
-      "step2Body": "We send specs, a COA, and a representative sample, with clear FOB / CIF pricing and packaging options.",
-      "step3Title": "Ship",
-      "step3Body": "On approval, we produce, document, and dispatch, with full export paperwork and tracking to your port."
+      "step1Title": "Send your requirement",
+      "step1Body": "Share the product name, specification, quantity, packaging, destination, and required timeline. We will ask for any missing details.",
+      "step2Title": "Review the offer",
+      "step2Body": "We confirm the product, available specifications, documents, sample options, pricing, and commercial terms.",
+      "step3Title": "Confirm and ship",
+      "step3Body": "After approval, we coordinate the order, packaging, documents, and dispatch. We keep you informed as the order progresses."
     },
     "faq": {
-      "eyebrow": "Questions",
-      "heading": "What buyers ask first.",
+      "eyebrow": "Buyer questions",
+      "heading": "Important details before you place an order.",
       "moqQ": "What are your minimum order quantities?",
-      "moqA": "MOQs vary by product and packaging, typically from one pallet to a full container (FCL). Tell us your target volume and we'll confirm the MOQ and the best packaging for your market.",
+      "moqA": "MOQs depend on the product, grade, supplier, and packaging format. Share your target quantity and destination, and we will confirm the workable minimum with the quotation.",
       "samplesQ": "Can I get a sample before ordering?",
-      "samplesA": "Yes. We provide a representative sample with a COA for evaluation. Just request one with your enquiry.",
+      "samplesA": "Sample availability depends on the product and destination. Where samples are available, we will confirm the format, documentation, courier cost, and dispatch timeline before proceeding.",
       "leadtimeQ": "What are your typical lead times?",
-      "leadtimeA": "Most orders ship within 2–4 weeks of confirmation, depending on product, volume, and documentation. We confirm a firm timeline with every quote.",
+      "leadtimeA": "Lead time varies by product, quantity, packaging, documentation, and destination. We provide a realistic schedule after reviewing the complete requirement.",
       "paymentQ": "Which Incoterms and payment terms do you offer?",
-      "paymentA": "We work on FOB and CIF terms and accept T/T and L/C. Exact terms are confirmed per order and destination.",
+      "paymentA": "Available Incoterms and payment terms depend on the product, shipment size, and destination. We list the applicable options in the quotation.",
       "packagingQ": "Do you offer custom or private-label packaging?",
-      "packagingA": "Yes. We offer bulk, retail, and private-label packaging to your specification, compliant with your destination's labelling rules.",
+      "packagingA": "Bulk, custom, and private-label options may be available depending on the product and order volume. Share your pack size, material, labelling, and destination requirements for confirmation.",
       "certsQ": "Which certifications and documents do you provide?",
-      "certsA": "FSSAI, APEDA, and Spice Board registrations, plus a per-shipment COA and full export documentation. Region-specific certifications are available on request."
+      "certsA": "Document requirements vary by product and importing country. We confirm the applicable registrations, specifications, certificates, test reports, and export documents during quotation."
     },
     "finalCta": {
-      "heading": "Ready to source from India?",
-      "sub": "Bulk volumes, custom packaging, full documentation. Tell us what you need and we will usually respond within one business day.",
-      "cta": "Start an enquiry",
+      "heading": "Source from India with Traya.",
+      "sub": "Send the product name, specifications, quantity, and destination. We will review the requirement and explain the available products, documents, packaging, pricing, and next steps.",
+      "cta": "Send your requirement",
       "whatsapp": "Message on WhatsApp"
     }
   },
   "About": {
     "meta": {
       "title": "About",
-      "description": "Traya International Exim LLP, a founder-led global trade house built on precision, partnership, and genuine care for every relationship."
+      "description": "Learn about Traya International Exim LLP, a multi-sector Indian EXIM company helping buyers source products from India with clear coordination and dependable trade support."
     },
     "hero": {
       "eyebrow": "About Traya",
-      "heading": "Building partnerships across continents.",
-      "tagline": "A refined approach to global trade.",
-      "body": "A diversified Indian trade house, today exporting 150+ food and agricultural ingredients across 18 categories, from dehydrated alliums and spray-dried powders to spices, nutraceuticals and premium retail goods, and built to grow into new categories tomorrow. Because trade isn't just the movement of goods; it's the alignment of timing, trust, and purpose."
+      "heading": "An Indian EXIM partner for buyers across sectors.",
+      "tagline": "Sourcing, documents, packaging, and shipment support from one team.",
+      "body": "Traya International Exim LLP helps international buyers source products from India across Food & Agro, Chemicals, Mechanical products, and Paper. Our Food & Agro catalogue currently includes 150+ products across 18 categories. For every requirement, we focus on clear product details, reliable coordination, required documentation, and practical shipment support."
     },
     "founder": {
       "eyebrow": "From the founder",
@@ -218,61 +218,61 @@
       "name": "Neha Pardeshi",
       "role": "Founder & CEO",
       "p1": "The world didn't open up to me through textbooks. It opened up through travel. Exploring different cultures, meeting people from all walks of life, and seeing the world through different perspectives shaped not only who I am, but also what I chose to build.",
-      "p2": "I've always believed that global trade is ultimately about human connection. Behind every shipment, every product, and every partnership is a relationship built on trust and understanding, something no algorithm or automation can truly replace.",
-      "p3": "At Traya International EXIM, our goal is not simply to facilitate trade, but to build meaningful and lasting relationships across borders, relationships that grow stronger with every transaction and every conversation.",
+      "p2": "I believe global trade works best when people communicate clearly and treat each order with responsibility. Behind every shipment is a buyer, a supplier, and a relationship that needs trust.",
+      "p3": "At Traya International EXIM, our goal is to make global sourcing easier and more dependable for buyers who need clear communication, careful coordination, and a team they can reach when it matters.",
       "p4": "What began as a passion for exploring the world has evolved into a business driven by commitment, integrity, and a truly global vision. And we are only just getting started."
     },
     "principles": {
       "eyebrow": "Who we are",
       "heading": "Discipline and care, in every engagement.",
-      "body": "What defines us isn't the breadth of our reach, but the discipline and care behind every engagement, held to three founding standards.",
+      "body": "What defines us is the way we handle each enquiry, each supplier conversation, and each shipment detail. Our work is guided by three practical standards.",
       "p1Title": "Precision",
-      "p1Body": "In planning and execution, every detail considered before it matters.",
+      "p1Body": "Product details, documents, packaging, commercial terms, and shipment needs are checked before an order moves ahead.",
       "p2Title": "Consistency",
-      "p2Body": "In delivery and conduct, the same standard, shipment after shipment.",
+      "p2Body": "We keep communication, follow-up, and coordination steady from first enquiry to dispatch.",
       "p3Title": "Integrity",
-      "p3Body": "In every association, relationships held to one honest standard."
+      "p3Body": "We communicate clearly about what is available, what needs confirmation, and what the next step should be."
     },
     "why": {
       "eyebrow": "Why Traya",
-      "heading": "Most trade firms offer a process. We offer a partnership.",
-      "body": "Traya was built on one idea: that trade should be handled with integrity and genuine care, from the first conversation to the final delivery.",
+      "heading": "A practical partner for international sourcing.",
+      "body": "Traya was built to help buyers reduce confusion in international trade. We bring product sourcing, supplier coordination, documentation, packaging, and shipment support into one clear workflow.",
       "cta": "See our capabilities",
       "w1Title": "Founder-driven standards",
-      "w1Body": "Every process and partnership reflects the values this company was built on.",
+      "w1Body": "You work with a team that takes ownership of the requirement and follows through on the details.",
       "w2Title": "Structured execution",
-      "w2Body": "Clear systems that remove friction at every stage of the trade cycle.",
+      "w2Body": "We confirm specifications, quantities, packaging, documents, commercial terms, and timelines before the order proceeds.",
       "w3Title": "Relationship-first thinking",
-      "w3Body": "Built for the long term, not the single transaction.",
+      "w3Body": "We aim to support repeat buyers with clear answers, steady updates, and dependable coordination.",
       "w4Title": "Global outlook, personal touch",
-      "w4Body": "International reach backed by a human, relationship-led approach.",
-      "w5Title": "Breadth, one partner",
-      "w5Body": "A diversified catalogue across categories, sourced, handled, and shipped by a single accountable team.",
+      "w4Body": "You can speak to a real team that understands the requirement and responds with practical next steps.",
+      "w5Title": "Multiple sectors, one partner",
+      "w5Body": "We support requirements across Food & Agro, Chemicals, Mechanical products, Paper, and other trade enquiries.",
       "w6Title": "Documentation that travels",
-      "w6Body": "Spec sheets, COA, and quality-controlled supply chains, so your goods clear customs and perform.",
+      "w6Body": "We confirm the specifications, certificates, commercial documents, and export documents required for the product and destination.",
       "w7Title": "Transparent throughout",
-      "w7Body": "Clear pricing, honest timelines, and proactive updates, so you always know where your order stands."
+      "w7Body": "We share pricing, timelines, order status, and pending requirements clearly, so you know what is happening at each stage."
     },
     "vision": {
       "eyebrow": "Vision & mission",
       "visionLabel": "Our vision",
-      "vision": "To become the most trusted and largest trading partner for businesses expanding across borders.",
+      "vision": "To become a trusted long-term trade partner for businesses sourcing from and selling into global markets.",
       "missionLabel": "Our mission",
-      "m1": "Facilitate efficient, well-structured trade operations across global markets.",
-      "m2": "Build lasting international partnerships grounded in reliability, transparency, and mutual growth.",
-      "m3": "Expand global presence through strategic market engagement and disciplined execution.",
-      "commitment": "We are not building a firm of isolated transactions. We are building a trade partner you can count on, across borders, across time zones, and across years."
+      "m1": "Help buyers source the right products from India with clear specifications and supplier coordination.",
+      "m2": "Support international trade with practical documentation, packaging, and shipment coordination.",
+      "m3": "Build lasting trade relationships through reliable communication, fair dealing, and consistent follow-up.",
+      "commitment": "We are not building a firm of one-time transactions. We are building a trade partner buyers can return to for clear support across products, sectors, and markets."
     }
   },
   "Contact": {
     "meta": {
       "title": "Contact",
-      "description": "Get in touch with Traya International Exim: email, phone, WhatsApp, or send an enquiry. We usually respond within one business day."
+      "description": "Contact Traya International Exim by email, phone, WhatsApp, or enquiry form. Share your product requirement, quantity, destination, and timeline."
     },
     "hero": {
       "eyebrow": "Contact",
-      "heading": "Let's start a conversation.",
-      "body": "Reach us directly below, or send an enquiry with your requirement, and our team usually responds within one business day."
+      "heading": "Send your sourcing or export requirement.",
+      "body": "Reach us by email, phone, WhatsApp, or the enquiry form. Share the product name, specifications, quantity, destination, and timeline so our team can review it properly."
     },
     "emailLabel": "Email us",
     "phoneLabel": "Call us",
@@ -281,123 +281,123 @@
     "addressLabel": "Visit us",
     "mapCta": "View on map",
     "hoursLabel": "Response time",
-    "hours": "Usually within one business day",
+    "hours": "We respond after reviewing your requirement",
     "socialLabel": "Follow us"
   },
   "Certifications": {
     "meta": {
       "title": "Certifications & Quality",
-      "description": "How Traya International Exim earns buyer trust: recognised Indian food-export registrations, quality-controlled supply chains, and per-shipment documentation."
+      "description": "See Traya International Exim's Food & Agro registrations and the documentation approach used to support buyer confidence and export compliance."
     },
     "hero": {
-      "eyebrow": "Quality & certifications",
-      "heading": "Trust you can verify.",
-      "body": "For an exporter, trust isn't claimed. It's documented. Every Traya shipment is backed by recognised Indian food-export registrations, quality-controlled supply chains, and a paper trail that clears customs and proves exactly what's inside.",
+      "eyebrow": "Registrations & documentation",
+      "heading": "Documents matter in international trade.",
+      "body": "For Food & Agro exports, Traya works with the registrations and documents buyers commonly need to review before an order proceeds. For every product and destination, we confirm the applicable specifications, certificates, commercial documents, and export paperwork during quotation.",
       "recognisedBy": "Recognised by"
     },
     "why": {
       "eyebrow": "Why trust Traya",
       "heading": "Trust, backed by process, not promises.",
-      "body": "We're an emerging export house, and we earn confidence the only honest way: through controls and documentation a buyer can check.",
-      "t1Title": "Quality-controlled production",
-      "t1Body": "We work with quality-controlled production facilities that meet India's statutory food-safety standards (FSSAI).",
-      "t2Title": "Quality-controlled supply",
-      "t2Body": "Source-to-shipment quality control, with batch checks at every stage of processing.",
-      "t3Title": "Documentation that travels",
-      "t3Body": "A per-shipment COA, spec sheets, and full export paperwork accompany every order, so your goods clear customs and perform.",
-      "t4Title": "Full traceability",
-      "t4Body": "Every batch traces back to its origin and processing lot, accountability you can audit, shipment after shipment."
+      "body": "We earn buyer confidence through clear requirements, careful supplier coordination, and documents that can be reviewed before shipment.",
+      "t1Title": "Food & Agro registrations",
+      "t1Body": "Our Food & Agro export work is supported by registrations and memberships relevant to Indian food and agricultural exports.",
+      "t2Title": "Supplier and product checks",
+      "t2Body": "We review the product requirement, available grades, packaging needs, and supplier capability before confirming an offer.",
+      "t3Title": "Documents confirmed by order",
+      "t3Body": "Specifications, certificates, test reports, commercial documents, and export paperwork are confirmed based on the product and destination.",
+      "t4Title": "Clear order records",
+      "t4Body": "Product details, quantity, packaging, destination, commercial terms, and timeline are kept clear so buyers can review the order properly."
     },
     "certs": {
       "eyebrow": "Registrations & memberships",
-      "heading": "Recognised across India's key food-export authorities.",
-      "sub": "Not just logos. Here's what each one means for you as a buyer.",
+      "heading": "Food & Agro registrations buyers can review.",
+      "sub": "Each registration is listed with the issuing authority and its relevance for Food & Agro exports.",
       "issuedByLabel": "Issued by",
       "meaningLabel": "What it means for you"
     },
     "marks": {
       "fssai": {
         "issuedBy": "Food Safety & Standards Authority of India",
-        "meaning": "Confirms our products meet India's statutory food-safety standards before they clear for export."
+        "meaning": "Supports compliance with India's statutory food-safety framework for applicable Food & Agro products."
       },
       "apeda": {
         "issuedBy": "Agricultural & Processed Food Products Export Development Authority",
-        "meaning": "Registered with India's agri-food export authority, aligned with the national framework for export quality and compliance."
+        "meaning": "Shows registration with India's agricultural and processed food export authority for applicable export activities."
       },
       "fieo": {
         "issuedBy": "Federation of Indian Export Organisations",
-        "meaning": "A member of India's apex export-promotion body, a vetted part of the country's official export community."
+        "meaning": "Shows membership in India's national export promotion ecosystem."
       },
       "spiceBoard": {
         "issuedBy": "Spices Board of India",
-        "meaning": "Our spice exports meet the Spices Board of India's grading and quality standards for international markets."
+        "meaning": "Relevant for spice exports and related compliance under the Spices Board of India."
       },
       "msme": {
         "issuedBy": "Micro, Small & Medium Enterprises",
-        "meaning": "A registered Indian enterprise, an accountable, recognised legal entity behind every contract."
+        "meaning": "Shows Traya as a registered Indian enterprise for business and trade activity."
       }
     },
     "trace": {
       "eyebrow": "The paper trail",
-      "heading": "Every shipment, documented end to end.",
-      "body": "Ask, and the documentation arrives before your goods do, so nothing about your order is a surprise at the port.",
-      "d1": "Certificate of Analysis (COA), per batch",
+      "heading": "The right documents are confirmed before shipment.",
+      "body": "Document requirements are different for every product and importing country. We confirm what applies to your order before dispatch.",
+      "d1": "Certificate of Analysis (COA), where applicable",
       "d2": "Product specification sheets",
       "d3": "Phytosanitary certificate (where required)",
       "d4": "Certificate of Origin",
-      "d5": "Complete export & customs paperwork"
+      "d5": "Commercial invoice, packing list, and export paperwork"
     },
-    "disclaimer": "Registrations and memberships shown are held by Traya International Exim or its partner production facilities; specific scopes and certificates are available on request."
+    "disclaimer": "Registrations and memberships shown may apply to Traya International Exim or partner production facilities. Exact scope, certificate availability, and destination requirements are confirmed during quotation."
   },
   "Capabilities": {
     "meta": {
       "title": "Capabilities",
-      "description": "Traya International Exim handles the full trade cycle: sourcing, market positioning, execution, and logistics, as a partner, not just a supplier."
+      "description": "Traya International Exim supports buyers with product sourcing, supplier coordination, export documentation, packaging, and shipment coordination across key sectors."
     },
     "hero": {
       "eyebrow": "Capabilities",
-      "heading": "More than a supplier. A trade partner.",
-      "body": "Traya manages the full trade cycle, from sourcing the right product to landing it at your port, so a single, accountable partner carries your order from first enquiry to final delivery."
+      "heading": "Trade support from requirement to shipment.",
+      "body": "Traya helps buyers source products from India and coordinate the steps that make an export order work: supplier discussions, specifications, packaging, documents, commercial terms, and shipment updates."
     },
     "core": {
       "eyebrow": "What we do",
-      "heading": "Five capabilities, one accountable partner.",
-      "c1Title": "Export & import operations",
-      "c1Body": "From sourcing to shipment, we manage the full trade cycle, so you focus on your business while every stage is handled with operational control and attention to detail.",
-      "c2Title": "Global market positioning",
-      "c2Body": "We match products to the right markets, regions, and demand cycles, connecting buyers with the right supply, reducing risk and accelerating reach.",
-      "c3Title": "International client & partner network",
-      "c3Body": "A network spanning multiple geographies, built on credibility and long-term association, relationships that are stable, reliable, and growth-oriented.",
-      "c4Title": "Trade execution & coordination",
-      "c4Body": "Full documentation, regulatory alignment, and logistics coordination, handled without friction, so every transaction moves efficiently from origin to destination.",
-      "c5Title": "Strategic trade direction",
-      "c5Body": "Structured thinking for complex trade decisions, so your global moves are calculated, deliberate, and aligned with long-term value."
+      "heading": "Core capabilities for international buyers.",
+      "c1Title": "Product sourcing",
+      "c1Body": "We help buyers source Food & Agro, Chemicals, Mechanical products, Paper, and other export requirements from India based on specifications, quantity, and destination.",
+      "c2Title": "Supplier coordination",
+      "c2Body": "We coordinate with suitable suppliers to check availability, grade, packaging, production readiness, and order feasibility.",
+      "c3Title": "Specification and documentation support",
+      "c3Body": "We help confirm the specifications, certificates, test reports, commercial documents, and export documents required for the product and destination.",
+      "c4Title": "Packaging and shipment coordination",
+      "c4Body": "We review packaging needs, shipment mode, destination requirements, and dispatch timelines so the order can move with fewer surprises.",
+      "c5Title": "Clear buyer communication",
+      "c5Body": "We keep the buyer informed about available options, pending details, quotation terms, order status, and next steps."
     },
     "foundations": {
       "eyebrow": "How we operate",
       "heading": "The standards behind every capability.",
-      "body": "These aren't values we display. They're the discipline that makes the work dependable.",
+      "body": "These standards keep the sourcing and export process easier for buyers to understand and manage.",
       "f1Title": "Clarity",
-      "f1Body": "Knowing precisely where and how to operate.",
+      "f1Body": "Clear product requirements, clear commercial terms, and clear next steps.",
       "f2Title": "Structure",
-      "f2Body": "Systems that support seamless execution.",
+      "f2Body": "A defined flow for enquiry review, supplier coordination, documentation, and shipment follow-up.",
       "f3Title": "Reliability",
-      "f3Body": "Consistency across every transaction.",
+      "f3Body": "Steady communication and practical follow-up from enquiry to dispatch.",
       "f4Title": "Scalability",
-      "f4Body": "Pathways designed for long-term expansion."
+      "f4Body": "Support for repeat buyers across multiple product sectors and markets."
     }
   },
   "Catalogue": {
     "meta": {
       "title": "Products",
-      "description": "Browse Traya's 150+ food and agricultural ingredients across 18 categories: dehydrates, spray-dried powders, spices, nutraceuticals, dairy, and premium retail. Specs, MOQ, and pricing on request."
+      "description": "Browse Traya's Food & Agro catalogue with 150+ products across 18 categories. For chemicals, mechanical products, paper, or other export requirements, send us your specifications."
     },
     "hub": {
-      "eyebrow": "Catalogue",
-      "heading": "150+ ingredients. 18 categories. One partner.",
-      "sub": "Browse by what you make. Every category opens its full product range. Specifications, MOQ, and pricing are shared on enquiry.",
-      "spec": "6 groups · 18 categories · 150+ SKUs",
-      "search": "Search products or categories…",
+      "eyebrow": "Food & Agro catalogue",
+      "heading": "Find the Food & Agro products you want to source from India.",
+      "sub": "Browse our listed Food & Agro products by category. For chemicals, mechanical products, paper, or any product not shown here, send us your requirement and we will review the available sourcing options.",
+      "spec": "6 groups · 18 categories · 150+ listed products",
+      "search": "Search products or categories...",
       "all": "All",
       "noResults": "No products match your search."
     },
@@ -407,10 +407,10 @@
     "category": {
       "eyebrow": "Category",
       "rangeHeading": "The full range",
-      "note": "Specifications, grades, MOQ, and pricing are shared on enquiry. Tell us your requirement and our team sends the details, usually within one business day.",
+      "note": "Specifications, grades, MOQ, packaging, documents, and pricing are confirmed after we review your requirement. Share the quantity and destination for a more accurate response.",
       "enquireCta": "Enquire about this category",
       "viewProduct": "View",
-      "search": "Search products…",
+      "search": "Search products...",
       "noResults": "No products match your search."
     },
     "detail": {
@@ -421,8 +421,8 @@
       "pricingLabel": "Pricing",
       "pricing": "On request (RFQ)",
       "docsHeading": "Specifications & documentation",
-      "docsNote": "Full specs, grades, packaging options, and a Certificate of Analysis are available on request. Share your target volume and destination for an accurate quote.",
-      "sampleCta": "Request a sample",
+      "docsNote": "Product specifications, grades, packaging options, certificates, test reports, and export documents depend on the product and destination. Share your quantity, packaging needs, and destination so we can confirm the right details.",
+      "sampleCta": "Ask about sample availability",
       "enquireCta": "Enquire about this product",
       "relatedHeading": "More in this category"
     }

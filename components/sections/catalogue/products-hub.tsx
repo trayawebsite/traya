@@ -7,7 +7,7 @@ import {getGroups} from '@/lib/catalogue';
 export async function ProductsHub() {
   const t = await getTranslations('Catalogue');
   const tg = await getTranslations('Home.groups');
-  const groups = getGroups();
+  const groups = await getGroups();
 
   const serialized = groups.map((g) => ({
     key: g.key,

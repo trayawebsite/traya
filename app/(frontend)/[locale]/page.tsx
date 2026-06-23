@@ -33,7 +33,7 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
     name: 'Traya International Exim LLP',
     url: siteUrl,
     description:
-      'Indian food-ingredient export house — sourcing, processing, and exporting premium agricultural and food-processing products from India to global buyers.',
+      'Indian multi-sector export company helping global buyers source food and agricultural products, chemicals, mechanical and engineering goods, and paper.',
     founder: {'@type': 'Person', name: 'Neha Pardeshi'},
     address: {
       '@type': 'PostalAddress',

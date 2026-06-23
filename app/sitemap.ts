@@ -1,27 +1,57 @@
 import type {MetadataRoute} from 'next';
 import {routing} from '@/i18n/routing';
+import {getCategorySlugs, getProductSlugs} from '@/lib/catalogue';
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
-// Static routes. Dynamic product routes will be appended here once Sanity is wired.
-const paths = ['', '/about', '/products', '/certifications', '/contact'];
+const STATIC_PATHS = ['', '/about', '/capabilities', '/products', '/certifications', '/contact', '/enquiry'];
 
 function urlFor(locale: string, path: string) {
   const prefix = locale === routing.defaultLocale ? '' : `/${locale}`;
   return `${baseUrl}${prefix}${path}`;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return paths.map((path) => ({
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const [categorySlugs, productSlugs] = await Promise.all([
+    getCategorySlugs(),
+    getProductSlugs()
+  ]);
+
+  const staticEntries: MetadataRoute.Sitemap = STATIC_PATHS.map((path) => ({
     url: urlFor(routing.defaultLocale, path),
     lastModified: new Date(),
-    changeFrequency: 'weekly',
+    changeFrequency: 'weekly' as const,
     priority: path === '' ? 1 : 0.8,
-    // hreflang alternates — populated automatically as locales are added
     alternates: {
       languages: Object.fromEntries(
         routing.locales.map((locale) => [locale, urlFor(locale, path)])
       )
     }
   }));
+
+  const categoryEntries: MetadataRoute.Sitemap = categorySlugs.map((slug) => ({
+    url: urlFor(routing.defaultLocale, `/categories/${slug}`),
+    lastModified: new Date(),
+    changeFrequency: 'weekly' as const,
+    priority: 0.7,
+    alternates: {
+      languages: Object.fromEntries(
+        routing.locales.map((locale) => [locale, urlFor(locale, `/categories/${slug}`)])
+      )
+    }
+  }));
+
+  const productEntries: MetadataRoute.Sitemap = productSlugs.map((slug) => ({
+    url: urlFor(routing.defaultLocale, `/products/${slug}`),
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+    alternates: {
+      languages: Object.fromEntries(
+        routing.locales.map((locale) => [locale, urlFor(locale, `/products/${slug}`)])
+      )
+    }
+  }));
+
+  return [...staticEntries, ...categoryEntries, ...productEntries];
 }

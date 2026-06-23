@@ -124,7 +124,140 @@ docs.push({
   _id: 'siteSettings',
   _type: 'siteSettings',
   companyName: 'Traya International Exim LLP',
-  tagline: 'A Refined Approach to Global Trade'
+  tagline: 'Building Partnerships Across Continents',
+  secondaryTagline: 'A Refined Approach to Global Trade',
+  emails: ['info@trayaexim.com'],
+  phone: '+91 99989 16679',
+  whatsappNumber: '919972422424',
+  address: 'Shantakaaram, Shivranjani Society, Satellite, Ahmedabad, Gujarat 380015, India',
+  social: {
+    _type: 'object',
+    linkedin: '',
+    instagram: ''
+  }
+});
+
+// ── Certifications ──────────────────────────────────────────────────────
+docs.push({
+  _id: 'fssai',
+  _type: 'certification',
+  title: 'FSSAI',
+  issuedBy: 'Food Safety & Standards Authority of India',
+  description: 'Confirms our products meet India\'s statutory food-safety standards before they clear for export.',
+  order: 1
+});
+docs.push({
+  _id: 'apeda',
+  _type: 'certification',
+  title: 'APEDA',
+  issuedBy: 'Agricultural & Processed Food Products Export Development Authority',
+  description: 'Registered with India\'s agri-food export authority, aligned with the national framework for export quality and compliance.',
+  order: 2
+});
+docs.push({
+  _id: 'fieo',
+  _type: 'certification',
+  title: 'FIEO',
+  issuedBy: 'Federation of Indian Export Organisations',
+  description: 'A member of India\'s apex export-promotion body, a vetted part of the country\'s official export community.',
+  order: 3
+});
+docs.push({
+  _id: 'spice-board',
+  _type: 'certification',
+  title: 'Spice Board',
+  issuedBy: 'Spices Board of India',
+  description: 'Our spice exports meet the Spices Board of India\'s grading and quality standards for international markets.',
+  order: 4
+});
+docs.push({
+  _id: 'msme',
+  _type: 'certification',
+  title: 'MSME India',
+  issuedBy: 'Micro, Small & Medium Enterprises',
+  description: 'A registered Indian enterprise, an accountable, recognised legal entity behind every contract.',
+  order: 5
+});
+
+// ── Testimonials (sample — client to replace with real quotes) ──────────
+docs.push({
+  _id: 'testimonial-1',
+  _type: 'testimonial',
+  quote: 'Traya has been a reliable partner for our onion and garlic imports. Consistent quality, proper documentation, and they always deliver on time.',
+  name: 'Procurement Manager',
+  role: 'Food Processing Company',
+  location: 'Dubai, UAE',
+  order: 1
+});
+docs.push({
+  _id: 'testimonial-2',
+  _type: 'testimonial',
+  quote: 'We switched to Traya for our spice sourcing and the difference in quality consistency has been noticeable. Their COA and spec sheets make customs clearance smooth.',
+  name: 'Import Director',
+  role: 'Spice Distributor',
+  location: 'Hamburg, Germany',
+  order: 2
+});
+docs.push({
+  _id: 'testimonial-3',
+  _type: 'testimonial',
+  quote: 'The team at Traya understands export documentation better than most. Every shipment arrives with complete paperwork, which saves us time and cost at the port.',
+  name: 'Supply Chain Head',
+  role: 'Food Ingredient Company',
+  location: 'Singapore',
+  order: 3
+});
+
+// ── Home Page singleton ─────────────────────────────────────────────────
+docs.push({
+  _id: 'homePage',
+  _type: 'homePage',
+  hero: {
+    _type: 'object',
+    eyebrow: 'Indian food-ingredient exports',
+    heading: 'A trusted bridge between Indian growers and global buyers.',
+    sub: 'Premium agricultural and food ingredients, sourced and processed in India, exported with the documentation and care global trade demands.',
+    ctaPrimaryLabel: 'Request a sample',
+    ctaSecondaryLabel: 'Browse the range',
+    statLine: '150+ products · 18 categories · India origin'
+  },
+  intro: {
+    _type: 'object',
+    eyebrow: 'Who we are',
+    heading: 'A broad-spectrum food-ingredient partner, built on trust.',
+    body: 'Traya International Exim LLP is a dynamic, globally oriented export house delivering premium agricultural and food-processing products from India to international markets.',
+    specLine: 'India origin · Bulk & custom packaging · Global export'
+  },
+  stats: [
+    {_type: 'stat', _key: 'products', value: '150+', label: 'Products in the catalogue'},
+    {_type: 'stat', _key: 'categories', value: '18', label: 'Browsable categories'},
+    {_type: 'stat', _key: 'origin', value: '100%', label: 'Single origin, India'},
+    {_type: 'stat', _key: 'sectors', value: '5', label: 'Registrations & memberships'}
+  ],
+  productsSection: {
+    _type: 'object',
+    eyebrow: 'What we export',
+    heading: 'Eighteen categories, one accountable partner.',
+    sub: 'From dehydrated alliums to spray-dried powders, spices, herbs, and premium wellness lines. Browse by what you make.',
+    specLine: '6 groups · 18 categories · 150+ SKUs'
+  },
+  why: {
+    _type: 'object',
+    eyebrow: 'Why Traya',
+    heading: 'The discipline of a trading house, the care of a founder.'
+  },
+  process: {
+    _type: 'object',
+    eyebrow: 'How it works',
+    heading: 'From first enquiry to delivered cargo.',
+    sub: 'A simple, transparent path. No guesswork, no surprises.'
+  },
+  finalCta: {
+    _type: 'object',
+    heading: 'Ready to source from India?',
+    sub: 'Bulk volumes, custom packaging, full documentation. Tell us what you need and we will usually respond within one business day.',
+    ctaLabel: 'Start an enquiry'
+  }
 });
 
 docs.push({

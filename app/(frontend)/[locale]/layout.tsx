@@ -15,7 +15,7 @@ import {EnquirySection} from '@/components/sections/enquiry-section';
 import {Toaster} from '@/components/ui/sonner';
 import '../../globals.css';
 
-// Display — Lora (calligraphic serif, warm & editorial). Headlines only.
+// Display: Lora (calligraphic serif, warm & editorial). Headlines only.
 const lora = Lora({
   variable: '--font-lora',
   subsets: ['latin'],
@@ -23,14 +23,14 @@ const lora = Lora({
   display: 'swap'
 });
 
-// Body / UI — Figtree (clean humanist sans).
+// Body / UI: Figtree (clean humanist sans).
 const figtree = Figtree({
   variable: '--font-figtree',
   subsets: ['latin'],
   display: 'swap'
 });
 
-// Technical — DM Mono (specs, HS codes, MOQ, product codes).
+// Technical: DM Mono (specs, HS codes, MOQ, product codes).
 const dmMono = DM_Mono({
   variable: '--font-dm-mono',
   subsets: ['latin'],
@@ -43,24 +43,24 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Traya International Exim LLP — Indian Food-Ingredient Exports',
+    default: 'Traya International Exim LLP | Multi-Sector Exports from India',
     template: '%s | Traya International Exim LLP'
   },
   description:
-    'Traya International Exim LLP sources, processes, and exports premium Indian food ingredients — 150+ products across 18 categories, with the documentation and care global buyers need.',
+    'Source food and agricultural products, chemicals, mechanical and engineering goods, and paper from India through one accountable export partner.',
   openGraph: {
     type: 'website',
     siteName: 'Traya International Exim LLP',
-    title: 'Traya International Exim LLP — Indian Food-Ingredient Exports',
+    title: 'Traya International Exim LLP | Multi-Sector Exports from India',
     description:
-      'Premium Indian food ingredients for global buyers. 150+ products across 18 categories.',
+      'Multi-sector sourcing, export documentation, and shipment coordination for global buyers sourcing from India.',
     url: siteUrl,
     locale: 'en'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Traya International Exim LLP — Indian Food-Ingredient Exports',
-    description: 'Premium Indian food ingredients for global buyers.'
+    title: 'Traya International Exim LLP | Multi-Sector Exports from India',
+    description: 'One accountable export partner for buyers sourcing across sectors from India.'
   }
 };
 

@@ -112,3 +112,14 @@ export const certificationsQuery = groq`
     order
   }
 `;
+
+export const testimonialsQuery = groq`
+  *[_type == "testimonial"] | order(order asc) {
+    _id,
+    quote,
+    name,
+    role,
+    location,
+    order
+  }
+`;

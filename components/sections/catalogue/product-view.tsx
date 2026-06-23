@@ -7,9 +7,9 @@ import {secondaryBtn} from '@/components/sections/home/styles';
 import {getRelatedProducts, type CatalogueCategory, type CatalogueProduct} from '@/lib/catalogue';
 import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
 
-// Product detail (light, flat URL) — breadcrumb · name · key facts (category /
+// Product detail (light, flat URL): breadcrumb · name · key facts (category /
 // origin / RFQ pricing) · a "specs on request" panel · enquiry CTAs (a buy-box
-// aside) · related products. No invented specs — they're shared on enquiry.
+// aside) · related products. No invented specs. They are shared on enquiry.
 export async function ProductView({
   product,
   category
@@ -19,10 +19,35 @@ export async function ProductView({
 }) {
   const t = await getTranslations('Catalogue');
   const tl = await getTranslations('Links');
-  const related = getRelatedProducts(category, product.slug, 6);
+  const related = await getRelatedProducts(category, product.slug, 6);
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    url: `${siteUrl}/products/${product.slug}`,
+    category: category.title,
+    brand: {'@type': 'Brand', name: 'Traya International Exim LLP'},
+    manufacturer: {'@type': 'Organization', name: 'Traya International Exim LLP'},
+    offers: {
+      '@type': 'Offer',
+      availability: 'https://schema.org/InStock',
+      priceCurrency: 'USD',
+      price: '0',
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        description: 'Price on request. Contact for FOB/CIF pricing'
+      }
+    }
+  };
 
   return (
     <section className="bg-background">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify(productSchema)}}
+      />
       <Container className="py-section-lg">
         <Breadcrumb
           items={[

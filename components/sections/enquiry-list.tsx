@@ -29,7 +29,7 @@ export function EnquiryListView() {
     try {
       const productList = items.map((i) => `${i.name} (${i.category})`).join('\n  ');
       const fullMessage = [
-        'Enquiry List — batched RFQ',
+        'Enquiry List: batched RFQ',
         '',
         'Products:',
         `  ${productList}`,

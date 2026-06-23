@@ -1,9 +1,8 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {totalCategories} from '@/lib/catalogue';
-import {getSiteSettings} from '@/lib/site-settings';
 
-// Dark proof band — the four headline numbers as the page's first big "chapter"
+// Dark proof band: the four headline numbers as the page's first big "chapter"
 // after the intro. Deep espresso ground + oversized cream numerals so the
 // strongest trust signal actually commands the page (honest counts only).
 // Rendered statically (no count-up) so the values are always screenshot-safe.
@@ -11,12 +10,11 @@ import {getSiteSettings} from '@/lib/site-settings';
 // desync. A thin vermilion top rule ties it to the brand.
 export async function Stats() {
   const t = await getTranslations('Home');
-  const s = await getSiteSettings();
   const STATS = [
     {value: '150+', key: 'products'},
     {value: String(totalCategories), key: 'categories'},
     {value: '100%', key: 'origin'},
-    {value: String(s.certifications.length), key: 'certs'}
+    {value: '4', key: 'sectors'}
   ];
 
   return (

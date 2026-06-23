@@ -148,9 +148,9 @@ export async function SiteFooter() {
           <div className="mt-12 flex flex-col items-start gap-5">
             <h2 className={headingCls}>{t('certified')}</h2>
             <ul className="flex flex-wrap items-center gap-3">
-              {s.certifications.map((c) => (
+              {s.certifications.map((c, i) => (
                 <li
-                  key={c.name}
+                  key={`${c.name}-${i}`}
                   className="flex h-12 min-w-20 items-center justify-center rounded-lg bg-white px-4"
                 >
                   <CertMark name={c.name} src={c.file} boost={c.boost} />

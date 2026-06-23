@@ -7,7 +7,8 @@ import type {
   Certification,
   Product,
   ProductListItem,
-  SiteSettings
+  SiteSettings,
+  Testimonial
 } from './types';
 
 // Typed data-access layer. Every read is cached by the Next data cache and
@@ -26,7 +27,8 @@ export const SANITY_TAGS = {
   product: 'product',
   certification: 'certification',
   siteSettings: 'siteSettings',
-  aboutPage: 'aboutPage'
+  aboutPage: 'aboutPage',
+  testimonial: 'testimonial'
 } as const;
 
 // ── Categories ──────────────────────────────────────────────────────────
@@ -79,4 +81,8 @@ export function getAboutPage() {
 
 export function getCertifications() {
   return client.fetch<Certification[]>(q.certificationsQuery, {}, opts(['certification']));
+}
+
+export function getTestimonials() {
+  return client.fetch<Testimonial[]>(q.testimonialsQuery, {}, opts(['testimonial']));
 }

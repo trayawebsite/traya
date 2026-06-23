@@ -23,13 +23,13 @@ export async function Hero() {
         className="absolute inset-0 bg-linear-to-r from-background via-background/80 to-transparent"
       />
 
-      <Container className="relative z-20 flex min-h-112 flex-col justify-center py-12 lg:min-h-144 lg:py-16">
+      <Container className="relative z-20 flex min-h-112 flex-col justify-center py-12 lg:min-h-[34rem] lg:py-14">
         <div className="max-w-2xl">
           <p className="section-label">{t('eyebrow')}</p>
           <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
             {t('heading')}
           </h1>
-          <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">{t('sub')}</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{t('sub')}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a href="#enquiry" className={primaryBtn}>

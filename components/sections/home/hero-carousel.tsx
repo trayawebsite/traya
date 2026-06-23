@@ -10,7 +10,7 @@ export function HeroCarousel({className = ''}: {className?: string}) {
           alt=""
           loading={i < 2 ? 'eager' : 'lazy'}
           decoding="async"
-          className="hero-slide absolute inset-0 size-full object-cover"
+          className="hero-slide absolute inset-0 size-full object-contain object-right"
           style={{animationDelay: `${-i * 3.5}s`}}
         />
       ))}

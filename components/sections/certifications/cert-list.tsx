@@ -25,9 +25,9 @@ export async function CertList() {
         </div>
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {s.certifications.map((c) => (
+          {s.certifications.map((c, i) => (
             <li
-              key={c.name}
+              key={`${c.name}-${i}`}
               data-stagger
               className="flex flex-col rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
