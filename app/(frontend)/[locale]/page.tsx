@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import {setRequestLocale} from 'next-intl/server';
 import {getSiteSettings} from '@/lib/site-settings';
+import {getHomePage} from '@/sanity/lib/fetch';
 import {Hero} from '@/components/sections/home/hero';
 import {Intro} from '@/components/sections/home/intro';
 import {Stats} from '@/components/sections/home/stats';
@@ -19,13 +20,12 @@ export async function generateMetadata(): Promise<Metadata> {
   return {alternates: {canonical: '/'}};
 }
 
-// Home flow (Who → What → Why → Proof → Act). The founder / "human" story lives
-// on /about, not here. The global pre-footer Enquiry section + Footer come from
-// the layout, so the final CTA funnels into #enquiry rather than repeating a form.
+// Home flow (Who → What → Why → Proof → Act). Content comes from Sanity
+// homePage singleton with i18n fallback for fields not yet in CMS.
 export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const s = await getSiteSettings();
+  const [s, home] = await Promise.all([getSiteSettings(), getHomePage()]);
 
   const orgSchema = {
     '@context': 'https://schema.org',
@@ -51,33 +51,33 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
         type="application/ld+json"
         dangerouslySetInnerHTML={{__html: JSON.stringify(orgSchema)}}
       />
-      <Hero />
+      <Hero data={home?.hero} />
       <Reveal>
-        <Intro />
+        <Intro data={home?.intro} />
       </Reveal>
       <Reveal>
-        <Stats />
+        <Stats data={home?.stats} />
       </Reveal>
       <Reveal>
-        <ProductGroups />
+        <ProductGroups data={home?.productsSection} />
       </Reveal>
       <Reveal>
-        <WhyTraya />
+        <WhyTraya data={home?.why} />
       </Reveal>
       <Reveal>
-        <Testimonials />
+        <Testimonials data={home?.testimonialsSection} />
       </Reveal>
       <Reveal>
-        <CertBand />
+        <CertBand data={home?.certsSection} />
       </Reveal>
       <Reveal>
-        <HowItWorks />
+        <HowItWorks data={home?.process} />
       </Reveal>
       <Reveal>
-        <Faq />
+        <Faq data={home?.faq} />
       </Reveal>
       <Reveal>
-        <FinalCta />
+        <FinalCta data={home?.finalCta} />
       </Reveal>
     </>
   );

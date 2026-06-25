@@ -1,6 +1,8 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {ContactInfo} from '@/components/sections/contact/contact-info';
+import {ContactForm} from '@/components/sections/contact/contact-form';
+import {Container} from '@/components/ui/container';
 import {Reveal} from '@/components/ui/reveal';
 
 export async function generateMetadata({
@@ -17,9 +19,8 @@ export async function generateMetadata({
   };
 }
 
-// Contact — direct contact methods up top; the global pre-footer Enquiry form
-// (from the layout) is the structured "send us your requirement" conversion,
-// so this page provides the details and lets that form do the rest.
+// Contact — direct contact methods up top, then a structured contact form
+// wired to /api/contact (validation → email → Sheets → rate limit).
 export default async function ContactPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
@@ -27,6 +28,13 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
   return (
     <Reveal>
       <ContactInfo />
+      <section className="border-b border-traya-border bg-traya-surface">
+        <Container className="py-section">
+          <div className="mx-auto max-w-2xl">
+            <ContactForm />
+          </div>
+        </Container>
+      </section>
     </Reveal>
   );
 }

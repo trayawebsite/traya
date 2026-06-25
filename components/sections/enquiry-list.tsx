@@ -1,6 +1,9 @@
 'use client';
 
-import {useState} from 'react';
+import {useState, cloneElement, type ReactElement} from 'react';
+import {z} from 'zod';
+import {useForm} from 'react-hook-form';
+import {zodResolver} from '@hookform/resolvers/zod';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {useEnquiry, type EnquiryItem} from '@/lib/enquiry-context';
@@ -8,45 +11,57 @@ import {Container} from '@/components/ui/container';
 import {primaryButton} from '@/lib/button-styles';
 import {toast} from 'sonner';
 
+// Local schema for the enquiry-list form fields. productName and message are
+// constructed from the cart items before POSTing, so they aren't form inputs.
+const formSchema = z.object({
+  name: z.string().min(2, 'Please enter your name').max(100),
+  email: z.string().email('Please enter a valid email'),
+  company: z.string().max(150).optional().or(z.literal('')),
+  phone: z.string().max(30).optional().or(z.literal('')),
+  notes: z.string().max(2000).optional().or(z.literal(''))
+});
+type FormValues = z.infer<typeof formSchema>;
+
 export function EnquiryListView() {
   const t = useTranslations('Enquiry.list');
   const {items, remove, clear} = useEnquiry();
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [company, setCompany] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
-  const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    setFocus,
+    formState: {errors, isSubmitting}
+  } = useForm<FormValues>({resolver: zodResolver(formSchema)});
 
-  const canSubmit = items.length > 0 && name.trim().length >= 2 && email.trim().length > 0;
+  // Move focus to the first invalid field on a failed submit (a11y).
+  function onInvalid(errs: Record<string, unknown>) {
+    const first = Object.keys(errs)[0];
+    if (first) setFocus(first as keyof FormValues);
+  }
 
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!canSubmit) return;
+  async function onSubmit(values: FormValues) {
+    const productList = items.map((i) => `${i.name} (${i.category})`).join('\n  ');
+    const fullMessage = [
+      'Enquiry List: batched RFQ',
+      '',
+      'Products:',
+      `  ${productList}`,
+      '',
+      values.notes ? `Notes:\n${values.notes}` : ''
+    ]
+      .filter(Boolean)
+      .join('\n');
 
-    setSubmitting(true);
     try {
-      const productList = items.map((i) => `${i.name} (${i.category})`).join('\n  ');
-      const fullMessage = [
-        'Enquiry List: batched RFQ',
-        '',
-        'Products:',
-        `  ${productList}`,
-        '',
-        message ? `Notes:\n${message}` : ''
-      ]
-        .filter(Boolean)
-        .join('\n');
-
       const res = await fetch('/api/inquiry', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
-          name: name.trim(),
-          email: email.trim(),
-          company: company.trim() || undefined,
-          phone: phone.trim() || undefined,
+          name: values.name.trim(),
+          email: values.email.trim(),
+          company: values.company?.trim() || undefined,
+          phone: values.phone?.trim() || undefined,
           productName: items.map((i) => i.name).join(', '),
           message: fullMessage
         })
@@ -56,6 +71,7 @@ export function EnquiryListView() {
       if (res.ok && json.ok) {
         toast.success(t('success'));
         clear();
+        reset();
         setSubmitted(true);
       } else if (res.status === 429) {
         toast.error(t('rateLimited'));
@@ -64,8 +80,6 @@ export function EnquiryListView() {
       }
     } catch {
       toast.error(t('error'));
-    } finally {
-      setSubmitting(false);
     }
   }
 
@@ -117,78 +131,36 @@ export function EnquiryListView() {
               </div>
 
               {/* Contact form */}
-              <form onSubmit={handleSubmit} noValidate className="mt-10 rounded-2xl border border-traya-border bg-card p-6 shadow-sm sm:p-8">
+              <form
+                onSubmit={handleSubmit(onSubmit, onInvalid)}
+                noValidate
+                className="mt-10 rounded-2xl border border-traya-border bg-card p-6 shadow-sm sm:p-8"
+              >
                 <h2 className="font-display text-lg text-foreground">{t('contactHeading')}</h2>
                 <p className="mt-1 text-sm text-muted-foreground">{t('contactSub')}</p>
 
                 <div className="mt-6 grid gap-x-5 gap-y-5 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="enq-name" className="mb-1.5 block text-xs font-medium text-foreground/70">
-                      {t('name')} <span className="text-destructive" aria-hidden="true">*</span>
-                    </label>
-                    <input
-                      id="enq-name"
-                      type="text"
-                      required
-                      autoComplete="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      className={inputCls}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="enq-email" className="mb-1.5 block text-xs font-medium text-foreground/70">
-                      {t('email')} <span className="text-destructive" aria-hidden="true">*</span>
-                    </label>
-                    <input
-                      id="enq-email"
-                      type="email"
-                      required
-                      autoComplete="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      className={inputCls}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="enq-company" className="mb-1.5 block text-xs font-medium text-foreground/70">
-                      {t('company')}
-                    </label>
-                    <input
-                      id="enq-company"
-                      type="text"
-                      autoComplete="organization"
-                      value={company}
-                      onChange={(e) => setCompany(e.target.value)}
-                      className={inputCls}
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="enq-phone" className="mb-1.5 block text-xs font-medium text-foreground/70">
-                      {t('phone')}
-                    </label>
-                    <input
-                      id="enq-phone"
-                      type="tel"
-                      autoComplete="tel"
-                      value={phone}
-                      onChange={(e) => setPhone(e.target.value)}
-                      className={inputCls}
-                    />
-                  </div>
-                  <div className="sm:col-span-2">
-                    <label htmlFor="enq-message" className="mb-1.5 block text-xs font-medium text-foreground/70">
-                      {t('notes')}
-                    </label>
+                  <Field id="name" label={t('name')} required error={errors.name?.message}>
+                    <input id="name" type="text" autoComplete="name" {...register('name')} className={inputCls} />
+                  </Field>
+                  <Field id="email" label={t('email')} required error={errors.email?.message}>
+                    <input id="email" type="email" autoComplete="email" {...register('email')} className={inputCls} />
+                  </Field>
+                  <Field id="company" label={t('company')} error={errors.company?.message}>
+                    <input id="company" type="text" autoComplete="organization" {...register('company')} className={inputCls} />
+                  </Field>
+                  <Field id="phone" label={t('phone')} error={errors.phone?.message}>
+                    <input id="phone" type="tel" autoComplete="tel" {...register('phone')} className={inputCls} />
+                  </Field>
+                  <Field id="notes" label={t('notes')} error={errors.notes?.message} full>
                     <textarea
-                      id="enq-message"
+                      id="notes"
                       rows={3}
                       placeholder={t('notesPlaceholder')}
-                      value={message}
-                      onChange={(e) => setMessage(e.target.value)}
+                      {...register('notes')}
                       className={`${inputCls} resize-y`}
                     />
-                  </div>
+                  </Field>
                 </div>
 
                 <div className="mt-7 flex items-center justify-between">
@@ -197,10 +169,10 @@ export function EnquiryListView() {
                   </button>
                   <button
                     type="submit"
-                    disabled={!canSubmit || submitting}
+                    disabled={items.length === 0 || isSubmitting}
                     className={`${primaryButton} disabled:cursor-not-allowed disabled:opacity-60`}
                   >
-                    {submitting ? t('sending') : t('submit')}
+                    {isSubmitting ? t('sending') : t('submit')}
                   </button>
                 </div>
               </form>
@@ -213,7 +185,43 @@ export function EnquiryListView() {
 }
 
 const inputCls =
-  'w-full rounded-md border border-traya-border bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30';
+  'w-full rounded-md border border-traya-border bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30 aria-[invalid=true]:border-destructive';
+
+function Field({
+  id,
+  label,
+  required,
+  error,
+  full,
+  children
+}: {
+  id: string;
+  label: string;
+  required?: boolean;
+  error?: string;
+  full?: boolean;
+  children: ReactElement;
+}) {
+  const errorId = error ? `${id}-error` : undefined;
+  return (
+    <div className={full ? 'sm:col-span-2' : undefined}>
+      <label htmlFor={id} className="mb-1.5 block text-xs font-medium text-foreground/70">
+        {label}
+        {required && <span aria-hidden="true" className="text-destructive"> *</span>}
+      </label>
+      {cloneElement(children as ReactElement<Record<string, unknown>>, {
+        'aria-required': required ? true : undefined,
+        'aria-invalid': error ? true : undefined,
+        'aria-describedby': errorId
+      })}
+      {error && (
+        <p id={errorId} role="alert" className="mt-1.5 text-xs text-destructive">
+          {error}
+        </p>
+      )}
+    </div>
+  );
+}
 
 function EnquiryItemRow({
   item,

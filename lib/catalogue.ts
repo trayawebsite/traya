@@ -5,6 +5,7 @@
 // Return shapes stay identical, so NO caller changes needed.
 // ─────────────────────────────────────────────────────────────────────────
 import catalogueData from '@/content/product-catalogue.json';
+import type {SanityImage, SpecRow, ProductForm} from '@/sanity/lib/types';
 
 // The 6 browse groups (mirror the home ProductGroups tiles + i18n Home.groups).
 export const GROUP_KEYS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
@@ -28,13 +29,26 @@ const GROUP_CATEGORIES: Record<GroupKey, string[]> = {
   wellness: ['dairy-powders', 'sweeteners-oils', 'edible-seeds-sesame', 'millets-specialty']
 };
 
-export type CatalogueProduct = {n: number; name: string; slug: string};
+export type CatalogueProduct = {
+  n: number;
+  name: string;
+  slug: string;
+  shortDescription?: string;
+  images?: SanityImage[];
+  forms?: ProductForm[];
+  specifications?: SpecRow[];
+  hsCode?: string;
+  origin?: string;
+  brochureUrl?: string;
+};
+
 export type CatalogueCategory = {
   title: string;
   slug: string;
   order: number;
   group: GroupKey;
   description?: string;
+  image?: SanityImage;
   products: CatalogueProduct[];
 };
 
@@ -72,6 +86,7 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
           order: i,
           group: (c.group as GroupKey) ?? 'wellness',
           description: c.description,
+          image: c.image,
           products: [] // products loaded on demand via getCategoryBySlug
         }));
 
@@ -84,7 +99,10 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
               products: (detail?.products ?? []).map((p, j) => ({
                 n: j + 1,
                 name: p.title,
-                slug: p.slug
+                slug: p.slug,
+                shortDescription: p.shortDescription,
+                images: p.images,
+                forms: p.forms
               }))
             };
           })
@@ -130,6 +148,39 @@ export async function getCategoryBySlug(slug: string): Promise<CatalogueCategory
 export async function getProductBySlug(
   slug: string
 ): Promise<{product: CatalogueProduct; category: CatalogueCategory} | undefined> {
+  if (useSanity) {
+    try {
+      const {getProductBySlug: getSanityProduct} = await import('@/sanity/lib/fetch');
+      const fullProduct = await getSanityProduct(slug);
+      if (!fullProduct) return undefined;
+
+      // Find the category from cached categories
+      const cats = await getCategories();
+      const category = cats.find((c) =>
+        c.products.some((p) => p.slug === slug)
+      );
+
+      return {
+        product: {
+          n: 1,
+          name: fullProduct.title,
+          slug: fullProduct.slug,
+          shortDescription: fullProduct.shortDescription,
+          images: fullProduct.images,
+          forms: fullProduct.forms,
+          specifications: fullProduct.specifications,
+          hsCode: fullProduct.hsCode,
+          origin: fullProduct.origin,
+          brochureUrl: fullProduct.brochure?.asset?._ref
+        },
+        category: category ?? {title: fullProduct.category?.title ?? '', slug: '', order: 0, group: 'wellness', products: []}
+      };
+    } catch (err) {
+      console.error('[catalogue] Sanity product fetch failed:', err);
+    }
+  }
+
+  // Fallback: find from cached categories
   const cats = await getCategories();
   for (const category of cats) {
     const product = category.products.find((p) => p.slug === slug);

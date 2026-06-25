@@ -1,22 +1,26 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {getSiteSettings} from '@/lib/site-settings';
+import type {HomePage} from '@/sanity/lib/types';
 
-// Social proof — editorial quote cards (no stock 5-star clichés). Honesty-gated:
-// renders only when testimonials exist in settings. Large Lora quote mark, quiet
-// attribution. Will read from Sanity `testimonial` docs later.
-export async function Testimonials() {
+type TestimonialsData = HomePage['testimonialsSection'];
+
+// Social proof — editorial quote cards. Uses Sanity heading data when available.
+export async function Testimonials({data}: {data?: TestimonialsData}) {
   const t = await getTranslations('Home.testimonials');
   const s = await getSiteSettings();
   if (s.testimonials.length === 0) return null;
+
+  const eyebrow = data?.eyebrow || t('eyebrow');
+  const heading = data?.heading || t('heading');
 
   return (
     <section className="border-b border-traya-border bg-background">
       <Container className="py-section">
         <div className="max-w-2xl">
-          <p className="section-label">{t('eyebrow')}</p>
+          <p className="section-label">{eyebrow}</p>
           <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {t('heading')}
+            {heading}
           </h2>
         </div>
 

@@ -5,6 +5,7 @@ import type {
   CategoryListItem,
   CategoryWithProducts,
   Certification,
+  HomePage,
   Product,
   ProductListItem,
   SiteSettings,
@@ -27,6 +28,7 @@ export const SANITY_TAGS = {
   product: 'product',
   certification: 'certification',
   siteSettings: 'siteSettings',
+  homePage: 'homePage',
   aboutPage: 'aboutPage',
   testimonial: 'testimonial'
 } as const;
@@ -73,6 +75,10 @@ export function getProductSlugs() {
 // ── Singletons & misc ───────────────────────────────────────────────────
 export function getSiteSettings() {
   return client.fetch<SiteSettings | null>(q.siteSettingsQuery, {}, opts(['siteSettings']));
+}
+
+export function getHomePage() {
+  return client.fetch<HomePage | null>(q.homePageQuery, {}, opts(['homePage']));
 }
 
 export function getAboutPage() {

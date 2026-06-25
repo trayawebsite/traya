@@ -2,11 +2,20 @@ import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {Link} from '@/i18n/navigation';
 import {secondaryBtn} from '@/components/sections/home/styles';
+import type {FeatureItem, AboutPage} from '@/sanity/lib/types';
 
-const PILLARS = ['w1', 'w2', 'w3', 'w4', 'w5'] as const;
+type WhyData = AboutPage['whyTraya'];
 
-export async function WhyAbout() {
+const PILLAR_KEYS = ['w1', 'w2', 'w3', 'w4', 'w5'] as const;
+
+// Why Traya section on About page. Uses Sanity data when available.
+export async function WhyAbout({data}: {data?: WhyData}) {
   const t = await getTranslations('About.why');
+
+  // Use Sanity items if provided, otherwise fall back to i18n
+  const pillars = data && data.length > 0
+    ? data.map((item: FeatureItem) => ({title: item.title, description: item.description || ''}))
+    : PILLAR_KEYS.map((k) => ({title: t(`${k}Title`), description: t(`${k}Body`)}));
 
   return (
     <section className="border-b border-traya-border bg-background">
@@ -28,9 +37,9 @@ export async function WhyAbout() {
 
           {/* Right — pillar list */}
           <div>
-            {PILLARS.map((w, i) => (
+            {pillars.map((p, i) => (
               <div
-                key={w}
+                key={i}
                 data-stagger
                 className={`flex gap-4 py-6 ${
                   i > 0 ? 'border-t border-traya-border' : ''
@@ -38,9 +47,9 @@ export async function WhyAbout() {
               >
                 <span aria-hidden className="mt-2 size-2 shrink-0 rotate-45 bg-traya-saffron" />
                 <div>
-                  <h3 className="font-display text-lg text-foreground">{t(`${w}Title`)}</h3>
+                  <h3 className="font-display text-lg text-foreground">{p.title}</h3>
                   <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                    {t(`${w}Body`)}
+                    {p.description}
                   </p>
                 </div>
               </div>

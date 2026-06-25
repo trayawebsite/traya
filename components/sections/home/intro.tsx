@@ -1,10 +1,12 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {SpecLine} from './spec-line';
+import type {HomePage} from '@/sanity/lib/types';
 
-// "Who we are" — narrative → the Vision/Mission pair. The headline numbers now
-// live in their own dark <Stats> band below this section (more impact + tonal
-// rhythm), so this section stays light and reads as a clean set of two cards.
+type IntroData = HomePage['intro'];
+
+// "Who we are" — narrative → the Vision/Mission pair.
+// Uses Sanity data when available, falls back to i18n.
 const VM_ICONS = {
   vision: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="size-5" aria-hidden="true">
@@ -21,43 +23,65 @@ const VM_ICONS = {
   )
 } as const;
 
-export async function Intro() {
+export async function Intro({data}: {data?: IntroData}) {
   const t = await getTranslations('Home');
+
+  const eyebrow = data?.eyebrow || t('intro.eyebrow');
+  const heading = data?.heading || t('intro.heading');
+  const body = data?.body || t('intro.body');
+  const specLine = data?.specLine || t('intro.spec');
+  const visionLabel = data?.visionLabel || t('intro.visionLabel');
+  const vision = data?.vision || t('intro.vision');
+  const missionLabel = data?.missionLabel || t('intro.missionLabel');
+  const mission = data?.mission || t('intro.mission');
 
   return (
     <section className="border-b border-traya-border bg-traya-surface">
       <Container className="py-section">
         {/* Narrative */}
         <div className="max-w-3xl">
-          <p className="section-label">{t('intro.eyebrow')}</p>
+          <p className="section-label">{eyebrow}</p>
           <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {t('intro.heading')}
+            {heading}
           </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{t('intro.body')}</p>
-          <SpecLine items={t('intro.spec').split(' · ')} className="mt-6" />
+          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{body}</p>
+          <SpecLine items={specLine.split(' · ')} className="mt-6" />
         </div>
 
         {/* Vision / Mission — the matched pair, lifted off the surface as real cards */}
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
-          {(['vision', 'mission'] as const).map((k) => (
-            <div
-              key={k}
-              data-stagger
-              className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
-            >
-              <div className="flex items-center gap-3">
-                <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                  {VM_ICONS[k]}
-                </span>
-                <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
-                  {t(`intro.${k}Label`)}
-                </h3>
-              </div>
-              <p className="mt-4 font-display text-lg leading-snug text-foreground/90">
-                {t(`intro.${k}`)}
-              </p>
+          <div
+            data-stagger
+            className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+          >
+            <div className="flex items-center gap-3">
+              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
+                {VM_ICONS.vision}
+              </span>
+              <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
+                {visionLabel}
+              </h3>
             </div>
-          ))}
+            <p className="mt-4 font-display text-lg leading-snug text-foreground/90">
+              {vision}
+            </p>
+          </div>
+          <div
+            data-stagger
+            className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+          >
+            <div className="flex items-center gap-3">
+              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
+                {VM_ICONS.mission}
+              </span>
+              <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
+                {missionLabel}
+              </h3>
+            </div>
+            <p className="mt-4 font-display text-lg leading-snug text-foreground/90">
+              {mission}
+            </p>
+          </div>
         </div>
       </Container>
     </section>

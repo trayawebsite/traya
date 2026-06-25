@@ -2,13 +2,15 @@ import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {Photo} from '@/components/sections/home/photo';
 import {SpecLine} from '@/components/sections/home/spec-line';
+import type {AboutPage} from '@/sanity/lib/types';
 
-// Editorial 2-column hero — headline + narrative on the left, a large
-// ingredient photograph breathing on the right. Asymmetric split (0.55/0.45)
-// so the type dominates and the image reads as evidence, not decoration.
-// The photograph bleeds to the right edge; no border or frame.
-export async function AboutHero() {
+// Editorial 2-column hero. Uses Sanity data when available, falls back to i18n.
+export async function AboutHero({data}: {data?: AboutPage | null}) {
   const t = await getTranslations('About.hero');
+
+  const heading = data?.heading || t('heading');
+  const tagline = data?.tagline || t('tagline');
+  const body = t('body'); // Body stays i18n until Sanity has a dedicated field
 
   return (
     <section className="relative overflow-hidden border-b border-traya-border bg-background">
@@ -18,13 +20,13 @@ export async function AboutHero() {
           <div className="order-2 lg:order-1">
             <p className="section-label">{t('eyebrow')}</p>
             <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
-              {t('heading')}
+              {heading}
             </h1>
             <p className="mt-3 font-display text-lg italic text-traya-saffron-lo">
-              {t('tagline')}
+              {tagline}
             </p>
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              {t('body')}
+              {body}
             </p>
             <SpecLine
               items={['150+ products', '18 categories', 'India origin']}
@@ -35,7 +37,7 @@ export async function AboutHero() {
           {/* Right — photograph, full-bleed to the right edge */}
           <div className="order-1 lg:order-2">
             <Photo
-              src="/about/global-trade.jpg"
+              src="/exim.jpg"
               alt="Container ships and cranes at an international shipping port"
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"

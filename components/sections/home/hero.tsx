@@ -4,14 +4,21 @@ import {Container} from '@/components/ui/container';
 import {HeroCarousel} from './hero-carousel';
 import {SpecLine} from './spec-line';
 import {primaryBtn, secondaryBtn} from './styles';
+import type {HomePage} from '@/sanity/lib/types';
+
+type HeroData = HomePage['hero'];
 
 // Full-bleed hero on a light ingredient photograph (visual weight on the right).
-// A left-to-right ivory gradient keeps the headline crisp over any image, so the
-// type is dark ink — not cream. Content sits centre-left; image breathes right.
-// Kept deliberately lean: eyebrow → headline → one-line sub → CTAs → one stat.
-// (Certs get their own section below, so no cert row repeated here.)
-export async function Hero() {
+// Uses Sanity data when available, falls back to i18n.
+export async function Hero({data}: {data?: HeroData}) {
   const t = await getTranslations('Home.hero');
+
+  const eyebrow = data?.eyebrow || t('eyebrow');
+  const heading = data?.heading || t('heading');
+  const sub = data?.sub || t('sub');
+  const ctaPrimary = data?.ctaPrimaryLabel || t('ctaPrimary');
+  const ctaSecondary = data?.ctaSecondaryLabel || t('ctaSecondary');
+  const statLine = data?.statLine || t('stat');
 
   return (
     <section className="relative isolate overflow-hidden border-b border-traya-border bg-background">
@@ -25,23 +32,23 @@ export async function Hero() {
 
       <Container className="relative z-20 flex min-h-112 flex-col justify-center py-12 lg:min-h-[34rem] lg:py-14">
         <div className="max-w-2xl">
-          <p className="section-label">{t('eyebrow')}</p>
+          <p className="section-label">{eyebrow}</p>
           <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
-            {t('heading')}
+            {heading}
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{t('sub')}</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{sub}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <a href="#enquiry" className={primaryBtn}>
-              {t('ctaPrimary')}
+              {ctaPrimary}
             </a>
             <Link href="/products" className={secondaryBtn}>
-              {t('ctaSecondary')}
+              {ctaSecondary}
             </Link>
           </div>
 
           <div className="mt-10 border-t border-traya-border pt-6">
-            <SpecLine items={t('stat').split(' · ')} />
+            <SpecLine items={statLine.split(' · ')} />
           </div>
         </div>
       </Container>

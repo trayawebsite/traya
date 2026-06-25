@@ -5,6 +5,9 @@ import {Badge} from '@/components/ui/badge';
 import {secondaryBtn} from './styles';
 import {Photo} from './photo';
 import {SpecLine} from './spec-line';
+import type {HomePage} from '@/sanity/lib/types';
+
+type ProductsData = HomePage['productsSection'];
 
 // The 6 groups as photo tiles (name overlaid on a real product shot) — the
 // browsable catalogue is Traya's edge, so it gets the most visual weight.
@@ -13,23 +16,29 @@ const GROUPS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'welln
 // The premium retail line gets a saffron highlight tag (demo of the Badge).
 const FEATURED: (typeof GROUPS)[number] = 'wellness';
 
-export async function ProductGroups() {
+export async function ProductGroups({data}: {data?: ProductsData}) {
   const t = await getTranslations('Home.groups');
+
+  const eyebrow = data?.eyebrow || t('eyebrow');
+  const heading = data?.heading || t('heading');
+  const sub = data?.sub || t('sub');
+  const specLine = data?.specLine || t('spec');
+  const cta = t('cta');
 
   return (
     <section className="border-b border-traya-border bg-background">
       <Container className="py-section">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <p className="section-label">{t('eyebrow')}</p>
+            <p className="section-label">{eyebrow}</p>
             <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-              {t('heading')}
+              {heading}
             </h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{t('sub')}</p>
-            <SpecLine items={t('spec').split(' · ')} className="mt-5" />
+            <p className="mt-4 leading-relaxed text-muted-foreground">{sub}</p>
+            <SpecLine items={specLine.split(' · ')} className="mt-5" />
           </div>
           <Link href="/products" className={`${secondaryBtn} hidden sm:inline-flex`}>
-            {t('cta')}
+            {cta}
           </Link>
         </div>
 

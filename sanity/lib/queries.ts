@@ -100,6 +100,20 @@ export const productSlugsQuery = groq`
 // ── Singletons & misc ───────────────────────────────────────────────────
 export const siteSettingsQuery = groq`*[_type == "siteSettings"][0]`;
 
+export const homePageQuery = groq`*[_type == "homePage"][0] {
+  hero,
+  intro,
+  stats,
+  productsSection,
+  why,
+  testimonialsSection,
+  certsSection,
+  process,
+  faq,
+  finalCta,
+  seo
+}`;
+
 export const aboutPageQuery = groq`*[_type == "aboutPage"][0]`;
 
 export const certificationsQuery = groq`

@@ -5,7 +5,7 @@
     "capabilities": "Capabilities",
     "products": "Products",
     "certifications": "Certifications",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "enquiry": "Enquiry",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
@@ -95,7 +95,28 @@
   },
   "Language": {
     "label": "Language",
-    "en": "English"
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "Quote": {
+    "eyebrow": "Request a quote",
+    "heading": "Get pricing for this product.",
+    "sub": "Share your details and requirements. Our team will review and respond with pricing, MOQ, packaging, and commercial terms.",
+    "name": "Your name",
+    "email": "Email address",
+    "company": "Organisation",
+    "phone": "Phone / WhatsApp",
+    "country": "Destination country",
+    "quantity": "Quantity / grade",
+    "quantityPlaceholder": "e.g. 5 MT, 1 container, sample",
+    "message": "Additional requirements",
+    "messagePlaceholder": "Packaging, certifications, timeline, or any other details",
+    "submit": "Request quote",
+    "sending": "Sending...",
+    "success": "Thank you. Your quote request has been sent. We'll respond with the details shortly.",
+    "error": "Something went wrong. Please try again, or email us directly.",
+    "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp."
   },
   "Home": {
     "hero": {
@@ -161,8 +182,8 @@
       "heading": "Long-term relationships are built through reliable work."
     },
     "certs": {
-      "eyebrow": "Food-export registrations",
-      "heading": "See the registrations behind our Food & Agro exports.",
+      "eyebrow": "Export registrations",
+      "heading": "See the registrations behind our exports.",
       "sub": "Each registration is shown with its issuing authority and what it means for the buyer. Documents for a specific product or destination are confirmed during quotation.",
       "cta": "View our registrations"
     },
@@ -282,25 +303,40 @@
     "mapCta": "View on map",
     "hoursLabel": "Response time",
     "hours": "We respond after reviewing your requirement",
-    "socialLabel": "Follow us"
+    "socialLabel": "Follow us",
+    "form": {
+      "eyebrow": "Send us a message",
+      "heading": "Share your requirement.",
+      "sub": "Fill in the details below and our team will review your requirement and get back to you.",
+      "name": "Your name",
+      "email": "Email address",
+      "company": "Organisation",
+      "message": "Your message",
+      "messagePlaceholder": "Product, specifications, quantity, destination, and timeline",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you. Your message has been sent. We'll be in touch shortly.",
+      "error": "Something went wrong. Please try again, or email us directly.",
+      "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp."
+    }
   },
   "Certifications": {
     "meta": {
       "title": "Certifications & Quality",
-      "description": "See Traya International Exim's Food & Agro registrations and the documentation approach used to support buyer confidence and export compliance."
+      "description": "See Traya International Exim's registrations and the documentation approach used to support buyer confidence and export compliance."
     },
     "hero": {
       "eyebrow": "Registrations & documentation",
       "heading": "Documents matter in international trade.",
-      "body": "For Food & Agro exports, Traya works with the registrations and documents buyers commonly need to review before an order proceeds. For every product and destination, we confirm the applicable specifications, certificates, commercial documents, and export paperwork during quotation.",
+      "body": "Traya works with the registrations and documents buyers commonly need to review before an order proceeds. For every product and destination, we confirm the applicable specifications, certificates, commercial documents, and export paperwork during quotation.",
       "recognisedBy": "Recognised by"
     },
     "why": {
       "eyebrow": "Why trust Traya",
       "heading": "Trust, backed by process, not promises.",
       "body": "We earn buyer confidence through clear requirements, careful supplier coordination, and documents that can be reviewed before shipment.",
-      "t1Title": "Food & Agro registrations",
-      "t1Body": "Our Food & Agro export work is supported by registrations and memberships relevant to Indian food and agricultural exports.",
+      "t1Title": "Registrations & certifications",
+      "t1Body": "Our export work is supported by registrations and memberships relevant to Indian exports.",
       "t2Title": "Supplier and product checks",
       "t2Body": "We review the product requirement, available grades, packaging needs, and supplier capability before confirming an offer.",
       "t3Title": "Documents confirmed by order",
@@ -309,16 +345,16 @@
       "t4Body": "Product details, quantity, packaging, destination, commercial terms, and timeline are kept clear so buyers can review the order properly."
     },
     "certs": {
-      "eyebrow": "Registrations & memberships",
-      "heading": "Food & Agro registrations buyers can review.",
-      "sub": "Each registration is listed with the issuing authority and its relevance for Food & Agro exports.",
+      "eyebrow": "Registrations & Certifications",
+      "heading": "Registrations & certifications buyers can review.",
+      "sub": "Each registration is listed with the issuing authority and its relevance for exports.",
       "issuedByLabel": "Issued by",
       "meaningLabel": "What it means for you"
     },
     "marks": {
       "fssai": {
         "issuedBy": "Food Safety & Standards Authority of India",
-        "meaning": "Supports compliance with India's statutory food-safety framework for applicable Food & Agro products."
+        "meaning": "Supports compliance with India's statutory food-safety framework for applicable products."
       },
       "apeda": {
         "issuedBy": "Agricultural & Processed Food Products Export Development Authority",

@@ -6,10 +6,11 @@ import {primaryButton} from '@/lib/button-styles';
 import {secondaryBtn} from '@/components/sections/home/styles';
 import {getRelatedProducts, type CatalogueCategory, type CatalogueProduct} from '@/lib/catalogue';
 import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
+import {QuoteForm} from '@/components/sections/quote-form';
+import {ProductImages} from './product-images';
 
-// Product detail (light, flat URL): breadcrumb · name · key facts (category /
-// origin / RFQ pricing) · a "specs on request" panel · enquiry CTAs (a buy-box
-// aside) · related products. No invented specs. They are shared on enquiry.
+// Product detail — renders rich Sanity data when available (images, description,
+// specs, forms), with i18n fallback for fields not in CMS.
 export async function ProductView({
   product,
   category
@@ -42,6 +43,11 @@ export async function ProductView({
     }
   };
 
+  const hasImages = product.images && product.images.length > 0;
+  const hasSpecs = product.specifications && product.specifications.length > 0;
+  const hasForms = product.forms && product.forms.length > 0;
+  const hasRichData = hasImages || hasSpecs || hasForms || product.shortDescription;
+
   return (
     <section className="bg-background">
       <script
@@ -60,10 +66,22 @@ export async function ProductView({
 
         <div className="mt-8 grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:gap-16">
           <div>
+            {/* Product images */}
+            {hasImages && (
+              <ProductImages images={product.images!} name={product.name} />
+            )}
+
             <p className="section-label">{t('detail.eyebrow')}</p>
             <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
               {product.name}
             </h1>
+
+            {/* Short description */}
+            {product.shortDescription && (
+              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                {product.shortDescription}
+              </p>
+            )}
 
             <dl className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 border-t border-traya-border pt-6 sm:max-w-md">
               <Fact label={t('detail.categoryLabel')}>
@@ -74,14 +92,59 @@ export async function ProductView({
                   {category.title}
                 </Link>
               </Fact>
-              <Fact label={t('detail.originLabel')}>{t('detail.origin')}</Fact>
+              <Fact label={t('detail.originLabel')}>
+                {product.origin || t('detail.origin')}
+              </Fact>
               <Fact label={t('detail.pricingLabel')}>{t('detail.pricing')}</Fact>
+              {product.hsCode && (
+                <Fact label="HS Code">{product.hsCode}</Fact>
+              )}
             </dl>
 
-            <div className="mt-8 rounded-2xl border border-traya-border bg-traya-surface p-6">
-              <h2 className="font-display text-lg text-foreground">{t('detail.docsHeading')}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('detail.docsNote')}</p>
-            </div>
+            {/* Specifications */}
+            {hasSpecs && (
+              <div className="mt-8 rounded-2xl border border-traya-border bg-traya-surface p-6">
+                <h2 className="font-display text-lg text-foreground">{t('detail.docsHeading')}</h2>
+                <dl className="mt-4 space-y-3">
+                  {product.specifications!.map((spec, i) => (
+                    <div key={i} className="flex justify-between gap-4 border-b border-traya-border pb-3 last:border-0 last:pb-0">
+                      <dt className="text-sm text-muted-foreground">{spec.label}</dt>
+                      <dd className="text-sm font-medium text-foreground">{spec.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            )}
+
+            {/* Forms / Variants */}
+            {hasForms && (
+              <div className="mt-8 space-y-4">
+                <h2 className="font-display text-lg text-foreground">Available Forms</h2>
+                {product.forms!.map((form) => (
+                  <div key={form._key} className="rounded-xl border border-traya-border bg-traya-surface p-4">
+                    <p className="font-display text-base text-foreground">{form.name}</p>
+                    {form.specs && form.specs.length > 0 && (
+                      <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2">
+                        {form.specs.map((spec, i) => (
+                          <div key={i} className="flex justify-between gap-2">
+                            <dt className="text-xs text-muted-foreground">{spec.label}</dt>
+                            <dd className="text-xs font-medium text-foreground">{spec.value}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Fallback: specs note when no rich data */}
+            {!hasRichData && (
+              <div className="mt-8 rounded-2xl border border-traya-border bg-traya-surface p-6">
+                <h2 className="font-display text-lg text-foreground">{t('detail.docsHeading')}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('detail.docsNote')}</p>
+              </div>
+            )}
           </div>
 
           <aside className="lg:pt-9">
@@ -104,6 +167,13 @@ export async function ProductView({
               </div>
             </div>
           </aside>
+        </div>
+
+        {/* Quote request form */}
+        <div className="mt-16 border-t border-traya-border pt-10">
+          <div className="mx-auto max-w-2xl">
+            <QuoteForm productName={product.name} productSlug={product.slug} />
+          </div>
         </div>
 
         {related.length > 0 && (

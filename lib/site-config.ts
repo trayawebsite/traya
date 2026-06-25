@@ -14,6 +14,7 @@ export const siteConfig = {
 
   // Top navigation — labels via t('Links.<key>'). Logo links Home.
   nav: [
+    {key: 'home', href: '/'},
     {key: 'about', href: '/about'},
     {key: 'capabilities', href: '/capabilities'},
     {key: 'products', href: '/products'},

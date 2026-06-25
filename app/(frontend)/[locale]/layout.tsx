@@ -12,6 +12,7 @@ import {FloatingActions} from '@/components/layout/floating-actions';
 import {EnquiryProvider} from '@/lib/enquiry-context';
 import {EnquireTab} from '@/components/layout/enquire-tab';
 import {EnquirySection} from '@/components/sections/enquiry-section';
+import {LanguagePrompt} from '@/components/layout/language-prompt';
 import {Toaster} from '@/components/ui/sonner';
 import '../../globals.css';
 
@@ -92,6 +93,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
+      dir={locale === 'ar' ? 'rtl' : 'ltr'}
       className={`${lora.variable} ${figtree.variable} ${dmMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
@@ -102,6 +104,7 @@ export default async function LocaleLayout({
         </noscript>
         <NextIntlClientProvider messages={messages}>
           <EnquiryProvider>
+          <LanguagePrompt />
           <a
             href="#main"
             className="sr-only focus:fixed focus:left-4 focus:top-4 focus:z-60 focus:rounded-md focus:bg-background focus:px-4 focus:py-2 focus:text-sm focus:font-medium focus:text-foreground focus:shadow-md focus:outline-none focus:ring-2 focus:ring-ring"
