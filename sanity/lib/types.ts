@@ -65,6 +65,12 @@ export type CategoryWithProducts = {
   description?: string;
   image?: SanityImage;
   seo?: Seo;
+  // Rich template fields
+  overview?: PortableText;
+  moqPackaging?: SpecRow[];
+  applications?: FeatureItem[];
+  qualityCompliance?: string;
+  specSheet?: SanityFile;
   productCount: number;
   products: ProductListItem[];
 };

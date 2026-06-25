@@ -41,7 +41,9 @@ export async function ProductsHub() {
           labels={{
             all: t('hub.all'),
             product: t('product'),
-            products: t('products')
+            products: t('products'),
+            search: t('hub.search'),
+            noResults: t('hub.noResults')
           }}
         />
       </Container>

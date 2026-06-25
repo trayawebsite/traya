@@ -5,6 +5,8 @@ import {AboutHero} from '@/components/sections/about/about-hero';
 import {FounderLetter} from '@/components/sections/about/founder-letter';
 import {WhyAbout} from '@/components/sections/about/why-about';
 import {VisionMission} from '@/components/sections/about/vision-mission';
+import {ContactForm} from '@/components/sections/contact/contact-form';
+import {Container} from '@/components/ui/container';
 import {Reveal} from '@/components/ui/reveal';
 
 export async function generateMetadata({
@@ -38,6 +40,15 @@ export default async function AboutPage({params}: {params: Promise<{locale: stri
       </Reveal>
       <Reveal>
         <VisionMission data={about} />
+      </Reveal>
+      <Reveal>
+        <section className="border-b border-traya-border bg-traya-surface">
+          <Container className="py-section">
+            <div className="mx-auto max-w-2xl">
+              <ContactForm />
+            </div>
+          </Container>
+        </section>
       </Reveal>
     </>
   );

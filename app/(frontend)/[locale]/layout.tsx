@@ -3,6 +3,7 @@ import {Lora, Figtree, DM_Mono} from 'next/font/google';
 import {notFound} from 'next/navigation';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
+import {headers} from 'next/headers';
 import {routing} from '@/i18n/routing';
 import {getSiteSettings} from '@/lib/site-settings';
 import {TopBar} from '@/components/layout/top-bar';
@@ -90,6 +91,11 @@ export default async function LocaleLayout({
   const t = await getTranslations('Header');
   const settings = await getSiteSettings();
 
+  // Get current pathname to conditionally hide EnquirySection on pages with their own forms
+  const headersList = await headers();
+  const pathname = headersList.get('x-nextjs-pathname') || headersList.get('x-invoke-path') || '';
+  const hideEnquirySection = pathname.includes('/contact') || pathname.includes('/about');
+
   return (
     <html
       lang={locale}
@@ -116,7 +122,7 @@ export default async function LocaleLayout({
           <main id="main" className="flex-1">
             {children}
           </main>
-          <EnquirySection founderPhoto={settings.founderPhoto} />
+          {!hideEnquirySection && <EnquirySection founderPhoto={settings.founderPhoto} />}
           <SiteFooter />
           <EnquireTab />
           <FloatingActions />

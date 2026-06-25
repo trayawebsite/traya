@@ -447,7 +447,17 @@
       "enquireCta": "Enquire about this category",
       "viewProduct": "View",
       "search": "Search products...",
-      "noResults": "No products match your search."
+      "noResults": "No products match your search.",
+      "sourcingHeading": "Sourcing & origin",
+      "sourcingBody": "We source products directly from established manufacturers and processing facilities across India. Each batch is reviewed for quality, specifications, and compliance before dispatch.",
+      "specsHeading": "Specifications & packaging",
+      "specsNote": "Grades, MOQ, packaging formats, Incoterms, and documentation are confirmed per order. Share your requirements for a detailed quotation.",
+      "certsHeading": "Quality & compliance",
+      "certsNote": "Products are supported by relevant certifications and documentation. Specific requirements are confirmed during quotation.",
+      "siblingHeading": "Related categories",
+      "downloadCta": "Download category spec sheet",
+      "closingCta": "Ready to source from this category?",
+      "closingSub": "Share your product requirement, quantity, and destination. Our team will review and respond with available options, specifications, and pricing."
     },
     "detail": {
       "eyebrow": "Product",

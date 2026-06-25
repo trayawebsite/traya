@@ -26,6 +26,11 @@ export const categoryBySlugQuery = groq`
     description,
     image,
     seo,
+    overview,
+    moqPackaging,
+    applications,
+    qualityCompliance,
+    specSheet,
     "productCount": count(*[_type == "product" && references(^._id)]),
     "products": *[_type == "product" && references(^._id)] | order(title asc) {
       _id,

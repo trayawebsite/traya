@@ -5,7 +5,7 @@
 // Return shapes stay identical, so NO caller changes needed.
 // ─────────────────────────────────────────────────────────────────────────
 import catalogueData from '@/content/product-catalogue.json';
-import type {SanityImage, SpecRow, ProductForm} from '@/sanity/lib/types';
+import type {SanityImage, SpecRow, ProductForm, FeatureItem} from '@/sanity/lib/types';
 
 // The 6 browse groups (mirror the home ProductGroups tiles + i18n Home.groups).
 export const GROUP_KEYS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
@@ -49,6 +49,11 @@ export type CatalogueCategory = {
   group: GroupKey;
   description?: string;
   image?: SanityImage;
+  // Rich template fields
+  moqPackaging?: SpecRow[];
+  applications?: FeatureItem[];
+  qualityCompliance?: string;
+  specSheetUrl?: string;
   products: CatalogueProduct[];
 };
 
@@ -96,6 +101,11 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
             const detail = await getCategoryBySlug(cat.slug);
             return {
               ...cat,
+              // Rich template fields from detail
+              moqPackaging: detail?.moqPackaging,
+              applications: detail?.applications,
+              qualityCompliance: detail?.qualityCompliance,
+              specSheetUrl: detail?.specSheet?.asset?._ref,
               products: (detail?.products ?? []).map((p, j) => ({
                 n: j + 1,
                 name: p.title,

@@ -36,7 +36,43 @@ export const category = defineType({
     }),
     defineField({name: 'description', type: 'text', rows: 3}),
     defineField({name: 'image', type: 'image', options: {hotspot: true}}),
-    defineField({name: 'seo', type: 'seo'})
+    defineField({name: 'seo', type: 'seo'}),
+    // Rich template fields (Kanegrade pattern)
+    defineField({
+      name: 'overview',
+      title: 'Category overview',
+      type: 'array',
+      of: [{type: 'block'}],
+      description: 'Detailed overview of this category for the rich template page'
+    }),
+    defineField({
+      name: 'moqPackaging',
+      title: 'MOQ & Packaging details',
+      type: 'array',
+      of: [{type: 'specRow'}],
+      description: 'MOQ, packaging formats, Incoterms, etc.'
+    }),
+    defineField({
+      name: 'applications',
+      title: 'Applications',
+      type: 'array',
+      of: [{type: 'featureItem'}],
+      description: 'Common applications for products in this category (e.g., Bakery, Beverages, Snacks)'
+    }),
+    defineField({
+      name: 'qualityCompliance',
+      title: 'Quality & compliance notes',
+      type: 'text',
+      rows: 4,
+      description: 'Quality standards, certifications, and compliance information for this category'
+    }),
+    defineField({
+      name: 'specSheet',
+      title: 'Category spec sheet (PDF)',
+      type: 'file',
+      options: {accept: '.pdf'},
+      description: 'Downloadable spec sheet for the entire category'
+    })
   ],
   orderings: [
     {
