@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import type {FeatureItem} from '@/sanity/lib/types';
 
 // The 5 core capabilities — an editorial list (gold icon chip + DM-Mono index on
 // the left, title + description on the right). Reads as "considered", not a card
@@ -54,8 +55,19 @@ const CAPS: {key: string; icon: React.ReactNode}[] = [
   }
 ];
 
-export async function CoreCapabilities() {
+export async function CoreCapabilities({data}: {data?: FeatureItem[]}) {
   const t = await getTranslations('Capabilities.core');
+  const items = data && data.length > 0
+    ? data.map((item, i) => ({
+        title: item.title,
+        description: item.description ?? '',
+        icon: CAPS[i]?.icon ?? CAPS[0].icon
+      }))
+    : CAPS.map((c) => ({
+        title: t(`${c.key}Title`),
+        description: t(`${c.key}Body`),
+        icon: c.icon
+      }));
 
   return (
     <section className="border-b border-traya-border bg-traya-surface">
@@ -68,21 +80,21 @@ export async function CoreCapabilities() {
         </div>
 
         <ul className="mt-12">
-          {CAPS.map((c, i) => (
+          {items.map((item, i) => (
             <li
-              key={c.key}
+              key={i}
               data-stagger
               className="grid gap-x-12 gap-y-4 border-t border-traya-border py-8 first:border-t-0 md:grid-cols-[auto_1fr]"
             >
               <div className="flex items-center gap-4">
                 <span className="grid size-12 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                  {c.icon}
+                  {item.icon}
                 </span>
                 <span className="font-mono text-sm text-muted-foreground">0{i + 1}</span>
               </div>
               <div className="md:max-w-2xl">
-                <h3 className="font-display text-xl text-foreground">{t(`${c.key}Title`)}</h3>
-                <p className="mt-2 leading-relaxed text-muted-foreground">{t(`${c.key}Body`)}</p>
+                <h3 className="font-display text-xl text-foreground">{item.title}</h3>
+                <p className="mt-2 leading-relaxed text-muted-foreground">{item.description}</p>
               </div>
             </li>
           ))}

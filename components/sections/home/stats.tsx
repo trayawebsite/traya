@@ -1,21 +1,18 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
-import {totalCategories} from '@/lib/catalogue';
+import {getTotalCategories} from '@/lib/catalogue';
 import type {HomePage, Stat} from '@/sanity/lib/types';
 
 type StatsData = HomePage['stats'];
 
-// Dark proof band: the four headline numbers. Uses Sanity stats when available,
-// falls back to hardcoded values + i18n labels.
 export async function Stats({data}: {data?: StatsData}) {
   const t = await getTranslations('Home');
 
-  // Use Sanity stats if provided and non-empty, otherwise fall back
   const stats = data && data.length > 0
     ? data.map((s: Stat) => ({value: s.value, label: s.label}))
     : [
         {value: '150+', label: t('stats.products')},
-        {value: String(totalCategories), label: t('stats.categories')},
+        {value: String(await getTotalCategories()), label: t('stats.categories')},
         {value: '100%', label: t('stats.origin')},
         {value: '4', label: t('stats.sectors')}
       ];

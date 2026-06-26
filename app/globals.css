@@ -46,7 +46,7 @@
   --traya-forest:      #1C4230;
   --traya-forest-mid:  #2D5E42;
   /* Slate — secondary text, captions, metadata */
-  --traya-slate:       #655B4D;  /* darkened for AA margin on white cards (~5.2:1) */
+  --traya-slate:       #6E6456;  /* spec value — warm mid-tone for captions/metadata */
   /* Clay — warm tan/oak: dividers, icon strokes, decorative accents, text on
      DARK sections (~4.8:1 on deep). NOT body text on ivory (~3.6:1). */
   --traya-clay:        #A67B5B;

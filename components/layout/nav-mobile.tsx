@@ -1,6 +1,7 @@
 'use client';
 
 import {useEffect, useRef} from 'react';
+import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {cn} from '@/lib/utils';
 import {primaryButton} from '@/lib/button-styles';
@@ -27,12 +28,16 @@ export function NavMobile({
   ctaHref: string;
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
+  const th = useTranslations('Header');
 
   useEffect(() => {
     if (!open) return;
     const panel = panelRef.current;
     const previouslyFocused = document.activeElement as HTMLElement | null;
-    document.body.style.overflow = 'hidden';
+    const scrollY = window.scrollY;
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
 
     const focusables = () =>
       Array.from(
@@ -65,7 +70,10 @@ export function NavMobile({
     document.addEventListener('keydown', onKey);
     return () => {
       document.removeEventListener('keydown', onKey);
-      document.body.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.width = '';
+      window.scrollTo(0, scrollY);
       previouslyFocused?.focus?.();
     };
   }, [open, onClose]);
@@ -74,15 +82,15 @@ export function NavMobile({
     <div id={id} className="md:hidden">
       {open && (
         <>
-          <div onClick={onClose} aria-hidden className="fixed inset-0 z-40 bg-foreground/40" />
+          <div onClick={onClose} aria-hidden className="fixed inset-0 z-[45] bg-foreground/40" />
           <div
             ref={panelRef}
             role="dialog"
             aria-modal="true"
-            aria-label="Menu"
+            aria-label={th('menuAria')}
             className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background px-6 pb-6 pt-20 shadow-lg"
           >
-            <nav aria-label="Mobile">
+            <nav aria-label={th('navAria')}>
               <ul className="flex flex-col gap-1">
                 {items.map((item) => {
                   const active =

@@ -12,6 +12,14 @@ type ProductsData = HomePage['productsSection'];
 // The 6 groups as photo tiles (name overlaid on a real product shot) — the
 // browsable catalogue is Traya's edge, so it gets the most visual weight.
 const GROUPS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
+const GROUP_IMAGES: Record<(typeof GROUPS)[number], string> = {
+  alliums: '/p-1.jpg',
+  powders: '/p-2.jpg',
+  spices: '/p-3.png',
+  herbs: '/p-4.png',
+  nutraceutical: '/p-5.png',
+  wellness: '/p-6.png'
+};
 
 // The premium retail line gets a saffron highlight tag (demo of the Badge).
 const FEATURED: (typeof GROUPS)[number] = 'wellness';
@@ -50,10 +58,10 @@ export async function ProductGroups({data}: {data?: ProductsData}) {
                 className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-traya-surface"
               >
                 <Photo
-                  src={`/home/group-${g}.png`}
+                  src={GROUP_IMAGES[g]}
                   alt={t(g)}
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="aspect-4/5 w-full transition-transform duration-500 ease-expo group-hover:scale-105 motion-reduce:transition-none"
+                  className="aspect-5/4 w-full transition-transform duration-500 ease-expo motion-reduce:transition-none"
                 />
                 <span
                   aria-hidden

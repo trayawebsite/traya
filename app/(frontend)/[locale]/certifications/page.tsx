@@ -1,23 +1,26 @@
 import type {Metadata} from 'next';
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {getHomePage} from '@/sanity/lib/fetch';
 import {CertHero} from '@/components/sections/certifications/cert-hero';
 import {WhyTrust} from '@/components/sections/certifications/why-trust';
 import {CertList} from '@/components/sections/certifications/cert-list';
 import {Traceability} from '@/components/sections/certifications/traceability';
 import {Reveal} from '@/components/ui/reveal';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'Certifications.meta'});
   return {
-    title: 'Certifications & Quality | FSSAI, APEDA, FIEO, Spice Board',
-    description: 'Traya International Exim holds FSSAI, APEDA, FIEO, Spice Board & MSME certifications. See our registrations and quality documentation for food ingredient exports.',
-    alternates: {canonical: '/certifications'},
-    keywords: ['FSSAI certified exporter', 'APEDA registered', 'Indian food export certifications', 'spice board registration']
+    title: t('title'),
+    description: t('description'),
+    alternates: {canonical: '/certifications'}
   };
 }
 
-// Certifications & Quality — the trust page. Thesis → why trust us (the key
-// message) → each cert explained for the buyer → the documentation/traceability
-// proof. Global Enquiry + Footer come from the layout.
 export default async function CertificationsPage({
   params
 }: {
@@ -25,10 +28,11 @@ export default async function CertificationsPage({
 }) {
   const {locale} = await params;
   setRequestLocale(locale);
+  const home = await getHomePage();
 
   return (
     <>
-      <CertHero />
+      <CertHero data={home?.certsSection} />
       <Reveal>
         <CertList />
       </Reveal>

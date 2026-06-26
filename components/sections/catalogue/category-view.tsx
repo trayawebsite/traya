@@ -5,6 +5,7 @@ import {Breadcrumb} from '@/components/ui/breadcrumb';
 import {Reveal} from '@/components/ui/reveal';
 import {primaryButton} from '@/lib/button-styles';
 import {CategoryProductList} from './category-products';
+import {Download} from 'lucide-react';
 import {getCategories, type CatalogueCategory} from '@/lib/catalogue';
 import {getSiteSettings} from '@/lib/site-settings';
 import {CertMark} from '@/components/layout/cert-mark';
@@ -119,31 +120,42 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                   ) : (
                     <>
                       <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">Origin</dt>
-                        <dd className="text-sm font-medium text-foreground">India</dd>
+                        <dt className="text-sm text-muted-foreground">{t('category.specOrigin')}</dt>
+                        <dd className="text-sm font-medium text-foreground">{t('category.specOriginVal')}</dd>
                       </div>
                       <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">MOQ</dt>
-                        <dd className="text-sm font-medium text-foreground">On request</dd>
+                        <dt className="text-sm text-muted-foreground">{t('category.specMoq')}</dt>
+                        <dd className="text-sm font-medium text-foreground">{t('category.specMoqVal')}</dd>
                       </div>
                       <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">Packaging</dt>
-                        <dd className="text-sm font-medium text-foreground">Customizable</dd>
+                        <dt className="text-sm text-muted-foreground">{t('category.specPackaging')}</dt>
+                        <dd className="text-sm font-medium text-foreground">{t('category.specPackagingVal')}</dd>
                       </div>
                       <div className="flex justify-between">
-                        <dt className="text-sm text-muted-foreground">Incoterms</dt>
-                        <dd className="text-sm font-medium text-foreground">FOB / CIF</dd>
+                        <dt className="text-sm text-muted-foreground">{t('category.specIncoterms')}</dt>
+                        <dd className="text-sm font-medium text-foreground">{t('category.specIncotermsVal')}</dd>
                       </div>
                     </>
                   )}
                 </dl>
+                {category.specSheetUrl && (
+                  <a
+                    href={category.specSheetUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-traya-red-deep hover:underline"
+                  >
+                    <Download className="size-4" aria-hidden="true" />
+                    {t('category.downloadCta')}
+                  </a>
+                )}
               </div>
             </div>
 
             {/* Applications from Sanity */}
             {category.applications && category.applications.length > 0 && (
               <div className="mt-12">
-                <h3 className="font-display text-lg text-foreground">Applications</h3>
+                <h3 className="font-display text-lg text-foreground">{t('category.applicationsHeading')}</h3>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {category.applications.map((app, i) => (
                     <div key={i} className="rounded-xl border border-traya-border bg-card p-4">

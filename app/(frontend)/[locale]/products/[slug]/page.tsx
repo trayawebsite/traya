@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import {ProductView} from '@/components/sections/catalogue/product-view';
 import {getProductBySlug, getProductSlugs} from '@/lib/catalogue';
@@ -21,16 +21,17 @@ export async function generateMetadata({
 }: {
   params: Promise<{locale: string; slug: string}>;
 }): Promise<Metadata> {
-  const {slug} = await params;
+  const {locale, slug} = await params;
+  const t = await getTranslations({locale, namespace: 'Catalogue'});
   const found = await getProductBySlug(slug);
   if (!found) return {};
   return {
-    title: `${found.product.name} | ${found.category.title}`,
-    description: `${found.product.name} from India in the ${found.category.title} category. Specifications, MOQ, packaging, documents, and pricing are confirmed on enquiry. Traya International Exim LLP.`,
+    title: t('productMeta.title', {product: found.product.name, category: found.category.title}),
+    description: t('productMeta.description', {product: found.product.name, category: found.category.title}),
     alternates: {canonical: `/products/${slug}`},
     openGraph: {
       title: `${found.product.name} | Traya International Exim`,
-      description: `${found.product.name} from India in the ${found.category.title} category. Specs, MOQ, packaging, documents, and pricing are confirmed on enquiry.`
+      description: t('productMeta.ogDescription', {product: found.product.name, category: found.category.title})
     }
   };
 }

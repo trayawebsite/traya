@@ -1,5 +1,5 @@
 import type {Metadata} from 'next';
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {getAboutPage} from '@/sanity/lib/fetch';
 import {AboutHero} from '@/components/sections/about/about-hero';
 import {FounderLetter} from '@/components/sections/about/founder-letter';
@@ -9,12 +9,17 @@ import {ContactForm} from '@/components/sections/contact/contact-form';
 import {Container} from '@/components/ui/container';
 import {Reveal} from '@/components/ui/reveal';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'About.meta'});
   return {
-    title: 'About Us | Indian Food Export Company | Founder-Led EXIM Partner',
-    description: 'Learn about Traya International Exim LLP, a founder-led Indian export company helping global buyers source dehydrated products, spices, powders & herbs. FSSAI & APEDA certified.',
-    alternates: {canonical: '/about'},
-    keywords: ['Indian export company', 'food ingredient exporter', 'Traya International Exim', 'FSSAI certified exporter']
+    title: t('title'),
+    description: t('description'),
+    alternates: {canonical: '/about'}
   };
 }
 

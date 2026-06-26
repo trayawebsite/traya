@@ -35,13 +35,13 @@ export function SiteHeader() {
       <Container className="flex h-16 items-center justify-between gap-4">
         <Link
           href="/"
-          aria-label="Traya International Exim — home"
+          aria-label={th('siteLabel')}
           className="rounded-sm font-display text-lg font-semibold tracking-wide text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           TRAYA
         </Link>
 
-        <NavDesktop items={items} pathname={pathname} />
+        <NavDesktop items={items} pathname={pathname} ariaLabel={th('navPrimary')} />
 
         <div className="flex items-center gap-2">
           <EnquiryBadge className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />

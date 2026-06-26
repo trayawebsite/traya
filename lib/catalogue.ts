@@ -6,6 +6,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 import catalogueData from '@/content/product-catalogue.json';
 import type {SanityImage, SpecRow, ProductForm, FeatureItem} from '@/sanity/lib/types';
+import {fileUrlForRef} from '@/sanity/lib/image';
 
 // The 6 browse groups (mirror the home ProductGroups tiles + i18n Home.groups).
 export const GROUP_KEYS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
@@ -73,62 +74,49 @@ const jsonCategories: CatalogueCategory[] = (
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const useSanity = !!projectId;
 
-let sanityCategories: CatalogueCategory[] | null = null;
-let sanityFetchPromise: Promise<CatalogueCategory[]> | null = null;
-
 async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
-  if (sanityCategories) return sanityCategories;
+  try {
+    const {getAllCategories, getCategoryBySlug} = await import('@/sanity/lib/fetch');
+    const cats = await getAllCategories();
 
-  if (!sanityFetchPromise) {
-    sanityFetchPromise = (async () => {
-      try {
-        const {getAllCategories, getCategoryBySlug} = await import('@/sanity/lib/fetch');
-        const cats = await getAllCategories();
+    const mapped: CatalogueCategory[] = cats.map((c, i) => ({
+      title: c.title,
+      slug: c.slug,
+      order: i,
+      group: (c.group as GroupKey) ?? 'wellness',
+      description: c.description,
+      image: c.image,
+      products: []
+    }));
 
-        const mapped: CatalogueCategory[] = cats.map((c, i) => ({
-          title: c.title,
-          slug: c.slug,
-          order: i,
-          group: (c.group as GroupKey) ?? 'wellness',
-          description: c.description,
-          image: c.image,
-          products: [] // products loaded on demand via getCategoryBySlug
-        }));
+    const withProducts = await Promise.all(
+      mapped.map(async (cat) => {
+        const detail = await getCategoryBySlug(cat.slug);
+        return {
+          ...cat,
+          moqPackaging: detail?.moqPackaging,
+          applications: detail?.applications,
+          qualityCompliance: detail?.qualityCompliance,
+          specSheetUrl: detail?.specSheet?.asset?._ref
+            ? fileUrlForRef(detail.specSheet.asset._ref) ?? undefined
+            : undefined,
+          products: (detail?.products ?? []).map((p, j) => ({
+            n: j + 1,
+            name: p.title,
+            slug: p.slug,
+            shortDescription: p.shortDescription,
+            images: p.images,
+            forms: p.forms
+          }))
+        };
+      })
+    );
 
-        // Fetch products for each category
-        const withProducts = await Promise.all(
-          mapped.map(async (cat) => {
-            const detail = await getCategoryBySlug(cat.slug);
-            return {
-              ...cat,
-              // Rich template fields from detail
-              moqPackaging: detail?.moqPackaging,
-              applications: detail?.applications,
-              qualityCompliance: detail?.qualityCompliance,
-              specSheetUrl: detail?.specSheet?.asset?._ref,
-              products: (detail?.products ?? []).map((p, j) => ({
-                n: j + 1,
-                name: p.title,
-                slug: p.slug,
-                shortDescription: p.shortDescription,
-                images: p.images,
-                forms: p.forms
-              }))
-            };
-          })
-        );
-
-        sanityCategories = withProducts;
-        return withProducts;
-      } catch (err) {
-        console.error('[catalogue] Sanity fetch failed, falling back to JSON:', err);
-        sanityCategories = jsonCategories;
-        return jsonCategories;
-      }
-    })();
+    return withProducts;
+  } catch (err) {
+    console.error('[catalogue] Sanity fetch failed, falling back to JSON:', err);
+    return jsonCategories;
   }
-
-  return sanityFetchPromise;
 }
 
 // ── Public API ──────────────────────────────────────────────────────────
@@ -182,6 +170,8 @@ export async function getProductBySlug(
           hsCode: fullProduct.hsCode,
           origin: fullProduct.origin,
           brochureUrl: fullProduct.brochure?.asset?._ref
+            ? fileUrlForRef(fullProduct.brochure.asset._ref) ?? undefined
+            : undefined
         },
         category: category ?? {title: fullProduct.category?.title ?? '', slug: '', order: 0, group: 'wellness', products: []}
       };
@@ -238,5 +228,12 @@ export async function getRelatedProducts(
   return full.products.filter((p) => p.slug !== currentSlug).slice(0, limit);
 }
 
-export const totalCategories = jsonCategories.length;
-export const totalProducts = jsonCategories.reduce((n, c) => n + c.products.length, 0);
+export async function getTotalCategories(): Promise<number> {
+  const cats = await getCategories();
+  return cats.length;
+}
+
+export async function getTotalProducts(): Promise<number> {
+  const cats = await getCategories();
+  return cats.reduce((n, c) => n + c.products.length, 0);
+}

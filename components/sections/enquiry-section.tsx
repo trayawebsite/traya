@@ -48,7 +48,7 @@ export function EnquirySection({founderPhoto}: {founderPhoto: string}) {
 
   async function onSubmit(values: FormValues) {
     const {shipment, ...rest} = values;
-    const message = shipment ? `Shipment mode: ${shipment}\n\n${rest.message}` : rest.message;
+    const message = shipment ? `${t('shipmentPrefix')} ${shipment}\n\n${rest.message}` : rest.message;
     try {
       const res = await fetch('/api/inquiry', {
         method: 'POST',

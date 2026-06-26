@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {getAboutPage} from '@/sanity/lib/fetch';
 import {CapabilitiesHero} from '@/components/sections/capabilities/capabilities-hero';
 import {CoreCapabilities} from '@/components/sections/capabilities/core-capabilities';
 import {Foundations} from '@/components/sections/capabilities/foundations';
@@ -19,8 +20,6 @@ export async function generateMetadata({
   };
 }
 
-// Capabilities — the "solutions house" page: hero → the 5 core capabilities →
-// the operating foundations (dark closer). Global Enquiry + Footer from layout.
 export default async function CapabilitiesPage({
   params
 }: {
@@ -28,15 +27,16 @@ export default async function CapabilitiesPage({
 }) {
   const {locale} = await params;
   setRequestLocale(locale);
+  const about = await getAboutPage();
 
   return (
     <>
       <CapabilitiesHero />
       <Reveal>
-        <CoreCapabilities />
+        <CoreCapabilities data={about?.capabilities} />
       </Reveal>
       <Reveal>
-        <Foundations />
+        <Foundations data={about?.philosophy} />
       </Reveal>
     </>
   );

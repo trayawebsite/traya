@@ -10,6 +10,7 @@ import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
 import {QuoteForm} from '@/components/sections/quote-form';
 import {ProductImages} from './product-images';
 import {ProductSchema, BreadcrumbSchema} from '@/components/seo/product-schema';
+import {Download} from 'lucide-react';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
@@ -86,7 +87,7 @@ export async function ProductView({
               </Fact>
               <Fact label={t('detail.pricingLabel')}>{t('detail.pricing')}</Fact>
               {product.hsCode && (
-                <Fact label="HS Code">{product.hsCode}</Fact>
+                <Fact label={t('detail.hsCode')}>{product.hsCode}</Fact>
               )}
             </dl>
 
@@ -105,10 +106,24 @@ export async function ProductView({
               </div>
             )}
 
+            {product.brochureUrl && (
+              <div className="mt-6">
+                <a
+                  href={product.brochureUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-xl border border-traya-border bg-traya-surface px-4 py-3 text-sm font-medium text-foreground transition-colors hover:border-traya-saffron/40 hover:bg-traya-saffron-soft"
+                >
+                  <Download className="size-4 text-traya-saffron-lo" aria-hidden="true" />
+                  {t('detail.downloadSpecSheet')}
+                </a>
+              </div>
+            )}
+
             {/* Forms / Variants */}
             {hasForms && (
               <div className="mt-8 space-y-4">
-                <h2 className="font-display text-lg text-foreground">Available Forms</h2>
+                <h2 className="font-display text-lg text-foreground">{t('detail.availableForms')}</h2>
                 {product.forms!.map((form) => (
                   <div key={form._key} className="rounded-xl border border-traya-border bg-traya-surface p-4">
                     <p className="font-display text-base text-foreground">{form.name}</p>

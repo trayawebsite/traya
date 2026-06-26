@@ -19,7 +19,12 @@
     "whatsapp": "Chat on WhatsApp",
     "chat": "Chat with us",
     "enquireNow": "Enquire Now",
-    "topNote": "Multi-sector exports from India"
+    "topNote": "Multi-sector exports from India",
+    "siteLabel": "Traya International Exim — home",
+    "menuAria": "Menu",
+    "navAria": "Mobile",
+    "dismissAria": "Dismiss",
+    "navPrimary": "Primary"
   },
   "Footer": {
     "tagline": "Building Partnerships Across Continents",
@@ -54,6 +59,7 @@
     "shipment": "Shipment mode",
     "shipmentPlaceholder": "Select a mode",
     "shipmentModes": "Sea (FCL / LCL) · Air · Road · Courier · Not sure yet",
+    "shipmentPrefix": "Shipment mode:",
     "requirements": "Your requirement",
     "requirementsPlaceholder": "Specifications, quantity, packaging, destination, and timeline",
     "submit": "Send enquiry",
@@ -119,6 +125,10 @@
     "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp."
   },
   "Home": {
+    "meta": {
+      "title": "Traya International Exim LLP — Indian Export Company",
+      "description": "Traya International Exim is a multi-sector Indian export house helping global buyers source food ingredients, spices, dehydrated products, powders, and herbs from India."
+    },
     "hero": {
       "eyebrow": "Exports from India across key sectors",
       "heading": "A reliable export partner for products made in India.",
@@ -440,7 +450,13 @@
     "product": "product",
     "products": "products",
     "viewRange": "View range",
+    "productMeta": {
+      "title": "{product} | {category}",
+      "description": "{product} from India in the {category} category. Specifications, MOQ, packaging, documents, and pricing are confirmed on enquiry. Traya International Exim LLP.",
+      "ogDescription": "{product} from India in the {category} category. Specs, MOQ, packaging, documents, and pricing are confirmed on enquiry."
+    },
     "category": {
+      "metaDescription": "{title} from India. {count} {products} available. Specifications, MOQ, packaging, documents, and pricing are confirmed on enquiry. Traya International Exim LLP.",
       "eyebrow": "Category",
       "rangeHeading": "The full range",
       "note": "Specifications, grades, MOQ, packaging, documents, and pricing are confirmed after we review your requirement. Share the quantity and destination for a more accurate response.",
@@ -452,6 +468,15 @@
       "sourcingBody": "We source products directly from established manufacturers and processing facilities across India. Each batch is reviewed for quality, specifications, and compliance before dispatch.",
       "specsHeading": "Specifications & packaging",
       "specsNote": "Grades, MOQ, packaging formats, Incoterms, and documentation are confirmed per order. Share your requirements for a detailed quotation.",
+      "specOrigin": "Origin",
+      "specOriginVal": "India",
+      "specMoq": "MOQ",
+      "specMoqVal": "On request",
+      "specPackaging": "Packaging",
+      "specPackagingVal": "Customizable",
+      "specIncoterms": "Incoterms",
+      "specIncotermsVal": "FOB / CIF",
+      "applicationsHeading": "Applications",
       "certsHeading": "Quality & compliance",
       "certsNote": "Products are supported by relevant certifications and documentation. Specific requirements are confirmed during quotation.",
       "siblingHeading": "Related categories",
@@ -470,7 +495,10 @@
       "docsNote": "Product specifications, grades, packaging options, certificates, test reports, and export documents depend on the product and destination. Share your quantity, packaging needs, and destination so we can confirm the right details.",
       "sampleCta": "Ask about sample availability",
       "enquireCta": "Enquire about this product",
-      "relatedHeading": "More in this category"
+      "relatedHeading": "More in this category",
+      "downloadSpecSheet": "Download product spec sheet",
+      "hsCode": "HS Code",
+      "availableForms": "Available Forms"
     }
   },
   "NotFound": {

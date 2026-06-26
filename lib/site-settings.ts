@@ -6,6 +6,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 
 import {projectId} from '@/sanity/env';
+import {fileUrlForRef} from '@/sanity/lib/image';
 
 export type SiteSettings = {
   contact: {email: string; phone: string; address: string};
@@ -33,10 +34,7 @@ const DEFAULT_CERTS = [
 
 const useSanity = !!projectId;
 
-let cached: SiteSettings | null = null;
-
 async function fetchFromSanity(): Promise<SiteSettings | null> {
-  if (cached) return cached;
   try {
     const {getSiteSettings: getSanitySettings, getCertifications, getTestimonials} = await import('@/sanity/lib/fetch');
     const {urlForImage} = await import('@/sanity/lib/image');
@@ -54,7 +52,7 @@ async function fetchFromSanity(): Promise<SiteSettings | null> {
       : process.env.NEXT_PUBLIC_FOUNDER_PHOTO ?? '/team/neha-pardeshi.jpg';
 
     const catalogueUrl = settings.catalogueFile?.asset?._ref
-      ? urlForImage(settings.catalogueFile).url()
+      ? (fileUrlForRef(settings.catalogueFile.asset._ref) ?? process.env.NEXT_PUBLIC_CATALOGUE_URL ?? '')
       : process.env.NEXT_PUBLIC_CATALOGUE_URL ?? '';
 
     // Map Sanity certification titles to i18n keys
@@ -99,7 +97,7 @@ async function fetchFromSanity(): Promise<SiteSettings | null> {
           })
       : DEFAULT_CERTS;
 
-    cached = {
+    return {
       contact: {
         email: settings.emails?.[0] || process.env.NEXT_PUBLIC_CONTACT_EMAIL || DEFAULT_CONTACT.email,
         phone: settings.phone || process.env.NEXT_PUBLIC_CONTACT_PHONE || DEFAULT_CONTACT.phone,
@@ -123,8 +121,6 @@ async function fetchFromSanity(): Promise<SiteSettings | null> {
         location: t.location
       }))
     };
-
-    return cached;
   } catch (err) {
     console.error('[site-settings] Sanity fetch failed, falling back to env:', err);
     return null;

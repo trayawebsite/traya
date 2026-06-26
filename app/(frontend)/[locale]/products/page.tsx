@@ -1,13 +1,18 @@
 import type {Metadata} from 'next';
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {ProductsHub} from '@/components/sections/catalogue/products-hub';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'Catalogue.meta'});
   return {
-    title: 'Food Ingredient Catalogue | 150+ Products from India',
-    description: 'Browse our catalogue of dehydrated onions, garlic, spices, spray-dried powders, herbs & nutraceuticals. 150+ products across 18 categories. B2B wholesale from India.',
-    alternates: {canonical: '/products'},
-    keywords: ['dehydrated products India', 'spice catalogue', 'food ingredient supplier', 'Indian food export products']
+    title: t('title'),
+    description: t('description'),
+    alternates: {canonical: '/products'}
   };
 }
 

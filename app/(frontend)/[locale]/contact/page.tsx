@@ -1,16 +1,21 @@
 import type {Metadata} from 'next';
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {ContactInfo} from '@/components/sections/contact/contact-info';
 import {ContactForm} from '@/components/sections/contact/contact-form';
 import {Container} from '@/components/ui/container';
 import {Reveal} from '@/components/ui/reveal';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'Contact.meta'});
   return {
-    title: 'Contact Us | Get Quote for Indian Food Ingredients',
-    description: 'Contact Traya International Exim for dehydrated onions, garlic, spices, powders & herbs. Request a quote, sample, or catalogue. WhatsApp, email, or enquiry form.',
-    alternates: {canonical: '/contact'},
-    keywords: ['contact Indian food exporter', 'get quote food ingredients', 'request sample', 'food supplier enquiry']
+    title: t('title'),
+    description: t('description'),
+    alternates: {canonical: '/contact'}
   };
 }
 

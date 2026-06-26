@@ -1,6 +1,5 @@
 import type {Metadata} from 'next';
-import {setRequestLocale} from 'next-intl/server';
-import {getSiteSettings} from '@/lib/site-settings';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {getHomePage} from '@/sanity/lib/fetch';
 import {Hero} from '@/components/sections/home/hero';
 import {Intro} from '@/components/sections/home/intro';
@@ -15,17 +14,17 @@ import {FinalCta} from '@/components/sections/home/final-cta';
 import {Reveal} from '@/components/ui/reveal';
 import {OrganizationSchema, WebsiteSchema} from '@/components/seo/organization-schema';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
-
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const {locale} = await params;
+  const t = await getTranslations({locale, namespace: 'Home.meta'});
   return {
-    title: 'Indian Food Ingredient Exporter | Dehydrated Products, Spices & Powders',
-    description: 'Leading Indian exporter of dehydrated onions, garlic, spices, spray-dried powders, herbs & nutraceuticals. 150+ products across 18 categories. FSSAI & APEDA certified B2B supplier.',
-    alternates: {canonical: '/'},
-    openGraph: {
-      title: 'Traya International Exim | Indian Food Ingredient Exporter',
-      description: 'B2B supplier of dehydrated products, spices, powders & herbs from India. 150+ products, FSSAI certified, global shipping.'
-    }
+    title: t('title'),
+    description: t('description'),
+    alternates: {canonical: '/'}
   };
 }
 
@@ -34,34 +33,12 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const [s, home] = await Promise.all([getSiteSettings(), getHomePage()]);
-
-  const orgSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: 'Traya International Exim LLP',
-    url: siteUrl,
-    description:
-      'Indian food ingredient exporter specializing in dehydrated products, spices, spray-dried powders, herbs & nutraceuticals. FSSAI & APEDA certified B2B supplier.',
-    founder: {'@type': 'Person', name: 'Neha Pardeshi'},
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Ahmedabad',
-      addressRegion: 'Gujarat',
-      addressCountry: 'IN'
-    },
-    ...(s.contact.email ? {email: s.contact.email} : {}),
-    ...(s.contact.phone ? {telephone: s.contact.phone} : {})
-  };
+  const home = await getHomePage();
 
   return (
     <>
       <OrganizationSchema />
       <WebsiteSchema />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html: JSON.stringify(orgSchema)}}
-      />
       <Hero data={home?.hero} />
       <Reveal>
         <Intro data={home?.intro} />

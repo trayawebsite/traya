@@ -1,13 +1,11 @@
 import {Link} from '@/i18n/navigation';
 import {cn} from '@/lib/utils';
 
-type Item = {key: string; href: string; label: string};
+type Item = {key: string; href: string; label: string; ariaLabel?: string};
 
-// PRESENTATION — pure, prop-driven. Semantic nav > ul > li. No animation;
-// colours come only from semantic tokens. A redesign rewrites this file only.
-export function NavDesktop({items, pathname}: {items: Item[]; pathname: string}) {
+export function NavDesktop({items, pathname, ariaLabel}: {items: Item[]; pathname: string; ariaLabel?: string}) {
   return (
-    <nav aria-label="Primary" className="hidden md:block">
+    <nav aria-label={ariaLabel} className="hidden md:block">
       <ul className="flex items-center gap-8">
         {items.map((item) => {
           const active = pathname === item.href || pathname.startsWith(item.href + '/');

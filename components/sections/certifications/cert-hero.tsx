@@ -1,10 +1,16 @@
 import {getTranslations} from 'next-intl/server';
 import {PageHero} from '@/components/ui/page-hero';
 
-// Certifications header — centered "trust is documented, not claimed" thesis.
-// Shared PageHero recipe.
-export async function CertHero() {
+type CertsSection = {eyebrow?: string; heading?: string; sub?: string};
+
+export async function CertHero({data}: {data?: CertsSection} = {}) {
   const t = await getTranslations('Certifications.hero');
 
-  return <PageHero eyebrow={t('eyebrow')} heading={t('heading')} sub={t('body')} />;
+  return (
+    <PageHero
+      eyebrow={data?.eyebrow || t('eyebrow')}
+      heading={data?.heading || t('heading')}
+      sub={data?.sub || t('body')}
+    />
+  );
 }

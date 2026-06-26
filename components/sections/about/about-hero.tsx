@@ -17,7 +17,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
       <Container className="py-section-sm lg:py-section">
         <div className="grid items-center gap-10 lg:grid-cols-[0.55fr_0.45fr] lg:gap-16">
           {/* Left — editorial text */}
-          <div className="order-2 lg:order-1">
+          <div className="order-1 lg:order-1">
             <p className="section-label">{t('eyebrow')}</p>
             <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
               {heading}
@@ -35,7 +35,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
           </div>
 
           {/* Right — photograph, full-bleed to the right edge */}
-          <div className="order-1 lg:order-2">
+          <div className="order-2 lg:order-2">
             <Photo
               src="/exim.jpg"
               alt="Container ships and cranes at an international shipping port"

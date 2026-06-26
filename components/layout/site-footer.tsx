@@ -12,7 +12,7 @@ import {CertMark} from './cert-mark';
 // for the faint line-grid texture only (kept it from reading muddy as text).
 const headingCls = 'text-xs font-semibold uppercase tracking-[0.16em] text-traya-cream/90';
 const linkCls =
-  'rounded-sm text-sm text-traya-cream/65 transition-colors duration-150 hover:text-traya-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi';
+  'rounded-sm text-sm text-traya-cream/70 transition-colors duration-150 hover:text-traya-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi';
 
 // Faint architectural line-grid (the wine-bar "rack" texture), masked to fade.
 const gridStyle: React.CSSProperties = {
@@ -68,7 +68,7 @@ export async function SiteFooter() {
           <div className="max-w-xs">
             <p className="font-display text-lg leading-snug text-traya-cream/90">{t('tagline')}</p>
             {s.contact.address && (
-              <address className="mt-4 text-sm not-italic leading-relaxed text-traya-cream/65">
+              <address className="mt-4 text-sm not-italic leading-relaxed text-traya-cream/70">
                 {s.contact.address}
               </address>
             )}
@@ -115,7 +115,7 @@ export async function SiteFooter() {
             <h2 id="footer-contact" className={headingCls}>
               {t('getInTouch')}
             </h2>
-            <p className="mt-5 text-sm leading-relaxed text-traya-cream/65">{t('reachOut')}</p>
+            <p className="mt-5 text-sm leading-relaxed text-traya-cream/70">{t('reachOut')}</p>
             <div className="mt-4 space-y-2 text-sm">
               {s.contact.phone && (
                 <a href={`tel:${s.contact.phone.replace(/\s+/g, '')}`} className={`block ${linkCls}`}>
@@ -164,7 +164,7 @@ export async function SiteFooter() {
 
       {/* Bottom bar — distinct, slightly-lighter sub-band; compact legal row */}
       <div className="relative border-t border-traya-clay/20 bg-traya-deep-mid">
-        <Container className="flex flex-col gap-3 py-5 text-xs text-traya-cream/60 sm:flex-row sm:items-center sm:justify-between">
+        <Container className="flex flex-col gap-3 py-5 text-xs text-traya-cream/70 sm:flex-row sm:items-center sm:justify-between">
           <p>
             © <CurrentYear /> {siteConfig.name}. {t('rights')}
           </p>

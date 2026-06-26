@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {FaqSchema} from '@/components/seo/faq-schema';
 import type {HomePage} from '@/sanity/lib/types';
 
 type FaqData = HomePage['faq'];
@@ -20,6 +21,7 @@ export async function Faq({data}: {data?: FaqData}) {
 
   return (
     <section className="border-b border-traya-border bg-background">
+      <FaqSchema items={items} />
       <Container className="py-section">
         <div className="mx-auto max-w-2xl text-center">
           <p className="section-label">{eyebrow}</p>

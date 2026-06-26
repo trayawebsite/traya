@@ -19,7 +19,12 @@
     "whatsapp": "Discuter sur WhatsApp",
     "chat": "Discuter avec nous",
     "enquireNow": "Renseignez-vous maintenant",
-    "topNote": "Exportations multi-sectorielles depuis l'Inde"
+    "topNote": "Exportations multi-sectorielles depuis l'Inde",
+    "siteLabel": "Traya International Exim — accueil",
+    "menuAria": "Menu",
+    "navAria": "Mobile",
+    "dismissAria": "Fermer",
+    "navPrimary": "Principal"
   },
   "Footer": {
     "tagline": "Bâtir des partenariats à travers les continents",
@@ -54,6 +59,7 @@
     "shipment": "Mode d'expédition",
     "shipmentPlaceholder": "Sélectionnez un mode",
     "shipmentModes": "Maritime (FCL / LCL) · Aérien · Routier · Courrier · Pas encore décidé",
+    "shipmentPrefix": "Mode d'expédition :",
     "requirements": "Votre demande",
     "requirementsPlaceholder": "Spécifications, quantité, emballage, destination et calendrier",
     "submit": "Envoyer la demande",
@@ -119,6 +125,10 @@
     "rateLimited": "Vous avez atteint la limite quotidienne. Veuillez nous envoyer un e-mail ou un message sur WhatsApp."
   },
   "Home": {
+    "meta": {
+      "title": "Traya International Exim LLP — Société d'exportation indienne",
+      "description": "Traya International Exim est une maison d'exportation indienne multi-sectorielle aidant les acheteurs mondiaux à s'approvisionner en ingrédients alimentaires, épices, produits déshydratés et poudres depuis l'Inde."
+    },
     "hero": {
       "eyebrow": "Exportations depuis l'Inde dans des secteurs clés",
       "heading": "Un partenaire d'exportation fiable pour les produits fabriqués en Inde.",
@@ -440,7 +450,13 @@
     "product": "produit",
     "products": "produits",
     "viewRange": "Voir la gamme",
+    "productMeta": {
+      "title": "{product} | {category}",
+      "description": "{product} de l'Inde dans la catégorie {category}. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande. Traya International Exim LLP.",
+      "ogDescription": "{product} de l'Inde dans la catégorie {category}. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande."
+    },
     "category": {
+      "metaDescription": "{title} depuis l'Inde. {count} {products} disponibles. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande. Traya International Exim LLP.",
       "eyebrow": "Catégorie",
       "rangeHeading": "La gamme complète",
       "note": "Les spécifications, qualités, quantités minimales de commande, emballages, documents et prix sont confirmés après examen de vos exigences. Partagez la quantité et la destination pour une réponse plus précise.",
@@ -452,6 +468,15 @@
       "sourcingBody": "Nous sourçons nos produits directement auprès de fabricants et d'installations de traitement établis à travers l'Inde. Chaque lot est examiné pour la qualité, les spécifications et la conformité avant l'expédition.",
       "specsHeading": "Spécifications et emballage",
       "specsNote": "Les qualités, les quantités minimales de commande, les formats d'emballage, les Incoterms et la documentation sont confirmés par commande. Partagez vos exigences pour un devis détaillé.",
+      "specOrigin": "Origine",
+      "specOriginVal": "Inde",
+      "specMoq": "QMC",
+      "specMoqVal": "Sur demande",
+      "specPackaging": "Emballage",
+      "specPackagingVal": "Personnalisable",
+      "specIncoterms": "Incoterms",
+      "specIncotermsVal": "FOB / CIF",
+      "applicationsHeading": "Applications",
       "certsHeading": "Qualité et conformité",
       "certsNote": "Les produits sont soutenus par des certifications et une documentation pertinentes. Les exigences spécifiques sont confirmées lors du devis.",
       "siblingHeading": "Catégories associées",
@@ -470,7 +495,10 @@
       "docsNote": "Les spécifications du produit, les qualités, les options d'emballage, les certificats, les rapports d'essai et les documents d'exportation dépendent du produit et de la destination. Partagez votre quantité, vos besoins d'emballage et votre destination afin que nous puissions confirmer les bons détails.",
       "sampleCta": "Se renseigner sur la disponibilité d'échantillons",
       "enquireCta": "Se renseigner sur ce produit",
-      "relatedHeading": "Plus dans cette catégorie"
+      "relatedHeading": "Plus dans cette catégorie",
+      "downloadSpecSheet": "Télécharger la fiche technique du produit",
+      "hsCode": "Code SH",
+      "availableForms": "Formes disponibles"
     }
   },
   "NotFound": {

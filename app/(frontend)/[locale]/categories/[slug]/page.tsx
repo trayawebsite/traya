@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
-import {setRequestLocale} from 'next-intl/server';
+import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import {CategoryView} from '@/components/sections/catalogue/category-view';
 import {getCategoryBySlug, getCategorySlugs} from '@/lib/catalogue';
@@ -21,17 +21,16 @@ export async function generateMetadata({
 }: {
   params: Promise<{locale: string; slug: string}>;
 }): Promise<Metadata> {
-  const {slug} = await params;
+  const {locale, slug} = await params;
+  const t = await getTranslations({locale, namespace: 'Catalogue'});
   const category = await getCategoryBySlug(slug);
   if (!category) return {};
+  const count = category.products.length;
+  const productWord = count === 1 ? t('product') : t('products');
   return {
-    title: `${category.title} | ${category.products.length} products`,
-    description: `${category.title} from India. ${category.products.length} Food & Agro products available. Specifications, MOQ, packaging, documents, and pricing are confirmed on enquiry. Traya International Exim LLP.`,
-    alternates: {canonical: `/categories/${slug}`},
-    openGraph: {
-      title: `${category.title} | Traya International Exim`,
-      description: `${category.title} from India. ${category.products.length} Food & Agro products available. Specs, MOQ, packaging, documents, and pricing are confirmed on enquiry.`
-    }
+    title: `${category.title} | ${count} ${productWord}`,
+    description: t('category.metaDescription', {title: category.title, count, products: productWord}),
+    alternates: {canonical: `/categories/${slug}`}
   };
 }
 
