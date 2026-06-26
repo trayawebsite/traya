@@ -19,5 +19,9 @@ export async function generateMetadata({
 export default async function EnquiryPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  return <EnquiryListView />;
+  return (
+    <div id="enquiry">
+      <EnquiryListView />
+    </div>
+  );
 }

@@ -447,7 +447,17 @@
       "enquireCta": "Se renseigner sur cette catégorie",
       "viewProduct": "Voir",
       "search": "Rechercher des produits...",
-      "noResults": "Aucun produit ne correspond à votre recherche."
+      "noResults": "Aucun produit ne correspond à votre recherche.",
+      "sourcingHeading": "Approvisionnement et origine",
+      "sourcingBody": "Nous sourçons nos produits directement auprès de fabricants et d'installations de traitement établis à travers l'Inde. Chaque lot est examiné pour la qualité, les spécifications et la conformité avant l'expédition.",
+      "specsHeading": "Spécifications et emballage",
+      "specsNote": "Les qualités, les quantités minimales de commande, les formats d'emballage, les Incoterms et la documentation sont confirmés par commande. Partagez vos exigences pour un devis détaillé.",
+      "certsHeading": "Qualité et conformité",
+      "certsNote": "Les produits sont soutenus par des certifications et une documentation pertinentes. Les exigences spécifiques sont confirmées lors du devis.",
+      "siblingHeading": "Catégories associées",
+      "downloadCta": "Télécharger la fiche technique de la catégorie",
+      "closingCta": "Prêt à vous approvisionner dans cette catégorie ?",
+      "closingSub": "Partagez votre exigence de produit, la quantité et la destination. Notre équipe examinera et répondra avec les options, spécifications et prix disponibles."
     },
     "detail": {
       "eyebrow": "Produit",

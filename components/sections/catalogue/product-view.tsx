@@ -5,9 +5,13 @@ import {Breadcrumb} from '@/components/ui/breadcrumb';
 import {primaryButton} from '@/lib/button-styles';
 import {secondaryBtn} from '@/components/sections/home/styles';
 import {getRelatedProducts, type CatalogueCategory, type CatalogueProduct} from '@/lib/catalogue';
+import {getSiteSettings} from '@/lib/site-settings';
 import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
 import {QuoteForm} from '@/components/sections/quote-form';
 import {ProductImages} from './product-images';
+import {ProductSchema, BreadcrumbSchema} from '@/components/seo/product-schema';
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
 // Product detail — renders rich Sanity data when available (images, description,
 // specs, forms), with i18n fallback for fields not in CMS.
@@ -21,27 +25,7 @@ export async function ProductView({
   const t = await getTranslations('Catalogue');
   const tl = await getTranslations('Links');
   const related = await getRelatedProducts(category, product.slug, 6);
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
-
-  const productSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: product.name,
-    url: `${siteUrl}/products/${product.slug}`,
-    category: category.title,
-    brand: {'@type': 'Brand', name: 'Traya International Exim LLP'},
-    manufacturer: {'@type': 'Organization', name: 'Traya International Exim LLP'},
-    offers: {
-      '@type': 'Offer',
-      availability: 'https://schema.org/InStock',
-      priceCurrency: 'USD',
-      price: '0',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        description: 'Price on request. Contact for FOB/CIF pricing'
-      }
-    }
-  };
+  const s = await getSiteSettings();
 
   const hasImages = product.images && product.images.length > 0;
   const hasSpecs = product.specifications && product.specifications.length > 0;
@@ -50,9 +34,14 @@ export async function ProductView({
 
   return (
     <section className="bg-background">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{__html: JSON.stringify(productSchema)}}
+      <ProductSchema product={product} category={category} />
+      <BreadcrumbSchema
+        items={[
+          {name: tl('home'), url: siteUrl},
+          {name: tl('products'), url: `${siteUrl}/products`},
+          {name: category.title, url: `${siteUrl}/categories/${category.slug}`},
+          {name: product.name, url: `${siteUrl}/products/${product.slug}`}
+        ]}
       />
       <Container className="py-section-lg">
         <Breadcrumb
@@ -169,11 +158,13 @@ export async function ProductView({
           </aside>
         </div>
 
-        {/* Quote request form */}
+        {/* Quote request form with testimonials */}
         <div className="mt-16 border-t border-traya-border pt-10">
-          <div className="mx-auto max-w-2xl">
-            <QuoteForm productName={product.name} productSlug={product.slug} />
-          </div>
+          <QuoteForm
+            productName={product.name}
+            productSlug={product.slug}
+            testimonials={s.testimonials}
+          />
         </div>
 
         {related.length > 0 && (

@@ -7,16 +7,25 @@ import {useTranslations} from 'next-intl';
 import {toast} from 'sonner';
 import {quoteSchema, type QuoteInput} from '@/lib/validations';
 import {primaryButton} from '@/lib/button-styles';
+import {TestimonialCarousel} from '@/components/ui/testimonial-carousel';
 
-// Quote request form — wired to /api/quote (validation → email → Sheets → rate
-// limit). Uses the same react-hook-form + Zod pattern as EnquirySection.
-// Optionally pre-filled with productName/productSlug from the product page.
+type Testimonial = {
+  quote: string;
+  name: string;
+  role?: string;
+  location?: string;
+};
+
+// Quote request form — wired to /api/quote. Shows animated testimonials
+// on the left for social proof. Form width stays consistent.
 export function QuoteForm({
   productName,
-  productSlug
+  productSlug,
+  testimonials = []
 }: {
   productName?: string;
   productSlug?: string;
+  testimonials?: Testimonial[];
 }) {
   const t = useTranslations('Quote');
   const {
@@ -59,66 +68,78 @@ export function QuoteForm({
     }
   }
 
+  const hasTestimonials = testimonials.length > 0;
+
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit, onInvalid)}
-      noValidate
-      className="rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
-    >
-      <p className="section-label">{t('eyebrow')}</p>
-      <h2 className="mt-3 font-display text-display-sm text-foreground">
-        {t('heading')}
-      </h2>
-      <p className="mt-3 leading-relaxed text-muted-foreground">{t('sub')}</p>
+    <div className={`mx-auto grid items-start gap-12 ${hasTestimonials ? 'max-w-5xl lg:grid-cols-[minmax(0,1.2fr)_2.5fr] lg:gap-24' : 'max-w-2xl'}`}>
+      {/* Left — animated testimonials (hidden on mobile, shrinks on desktop) */}
+      {hasTestimonials && (
+        <div className="hidden lg:block lg:sticky lg:top-24">
+          <TestimonialCarousel testimonials={testimonials} />
+        </div>
+      )}
 
-      <div className="mt-8 grid gap-x-5 gap-y-6 sm:grid-cols-2">
-        <Field id="name" label={t('name')} required error={errors.name?.message}>
-          <input id="name" type="text" autoComplete="name" {...register('name')} className={inputCls} />
-        </Field>
-        <Field id="email" label={t('email')} required error={errors.email?.message}>
-          <input id="email" type="email" autoComplete="email" {...register('email')} className={inputCls} />
-        </Field>
-        <Field id="company" label={t('company')} error={errors.company?.message}>
-          <input id="company" type="text" autoComplete="organization" {...register('company')} className={inputCls} />
-        </Field>
-        <Field id="phone" label={t('phone')} error={errors.phone?.message}>
-          <input id="phone" type="tel" autoComplete="tel" {...register('phone')} className={inputCls} />
-        </Field>
-        <Field id="country" label={t('country')} error={errors.country?.message}>
-          <input id="country" type="text" autoComplete="country-name" {...register('country')} className={inputCls} />
-        </Field>
-        <Field id="quantity" label={t('quantity')} error={errors.quantity?.message}>
-          <input
-            id="quantity"
-            type="text"
-            placeholder={t('quantityPlaceholder')}
-            {...register('quantity')}
-            className={inputCls}
-          />
-        </Field>
-        <input type="hidden" {...register('productName')} />
-        <input type="hidden" {...register('productSlug')} />
-        <Field id="message" label={t('message')} error={errors.message?.message} full>
-          <textarea
-            id="message"
-            rows={4}
-            placeholder={t('messagePlaceholder')}
-            {...register('message')}
-            className={`${inputCls} resize-y`}
-          />
-        </Field>
-      </div>
+      {/* Right — form (consistent width, max constrained) */}
+      <form
+        onSubmit={handleSubmit(onSubmit, onInvalid)}
+        noValidate
+        className="max-w-2xl rounded-2xl border border-traya-border bg-card px-5 py-6 shadow-sm sm:px-6 sm:py-8"
+      >
+        <p className="section-label">{t('eyebrow')}</p>
+        <h2 className="mt-3 font-display text-display-sm text-foreground">
+          {t('heading')}
+        </h2>
+        <p className="mt-3 leading-relaxed text-muted-foreground">{t('sub')}</p>
 
-      <div className="mt-7 flex justify-end">
-        <button
-          type="submit"
-          disabled={isSubmitting}
-          className={`${primaryButton} disabled:cursor-not-allowed disabled:opacity-60`}
-        >
-          {isSubmitting ? t('sending') : t('submit')}
-        </button>
-      </div>
-    </form>
+        <div className="mt-8 grid gap-x-5 gap-y-6 sm:grid-cols-2">
+          <Field id="name" label={t('name')} required error={errors.name?.message}>
+            <input id="name" type="text" autoComplete="name" {...register('name')} className={inputCls} />
+          </Field>
+          <Field id="email" label={t('email')} required error={errors.email?.message}>
+            <input id="email" type="email" autoComplete="email" {...register('email')} className={inputCls} />
+          </Field>
+          <Field id="company" label={t('company')} error={errors.company?.message}>
+            <input id="company" type="text" autoComplete="organization" {...register('company')} className={inputCls} />
+          </Field>
+          <Field id="phone" label={t('phone')} error={errors.phone?.message}>
+            <input id="phone" type="tel" autoComplete="tel" {...register('phone')} className={inputCls} />
+          </Field>
+          <Field id="country" label={t('country')} error={errors.country?.message}>
+            <input id="country" type="text" autoComplete="country-name" {...register('country')} className={inputCls} />
+          </Field>
+          <Field id="quantity" label={t('quantity')} error={errors.quantity?.message}>
+            <input
+              id="quantity"
+              type="text"
+              placeholder={t('quantityPlaceholder')}
+              {...register('quantity')}
+              className={inputCls}
+            />
+          </Field>
+          <input type="hidden" {...register('productName')} />
+          <input type="hidden" {...register('productSlug')} />
+          <Field id="message" label={t('message')} error={errors.message?.message} full>
+            <textarea
+              id="message"
+              rows={4}
+              placeholder={t('messagePlaceholder')}
+              {...register('message')}
+              className={`${inputCls} resize-y`}
+            />
+          </Field>
+        </div>
+
+        <div className="mt-7 flex justify-end">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className={`${primaryButton} disabled:cursor-not-allowed disabled:opacity-60`}
+          >
+            {isSubmitting ? t('sending') : t('submit')}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
 

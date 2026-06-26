@@ -3,7 +3,6 @@ import {Lora, Figtree, DM_Mono} from 'next/font/google';
 import {notFound} from 'next/navigation';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
-import {headers} from 'next/headers';
 import {routing} from '@/i18n/routing';
 import {getSiteSettings} from '@/lib/site-settings';
 import {TopBar} from '@/components/layout/top-bar';
@@ -12,7 +11,7 @@ import {SiteFooter} from '@/components/layout/site-footer';
 import {FloatingActions} from '@/components/layout/floating-actions';
 import {EnquiryProvider} from '@/lib/enquiry-context';
 import {EnquireTab} from '@/components/layout/enquire-tab';
-import {EnquirySection} from '@/components/sections/enquiry-section';
+import {EnquirySectionWrapper} from '@/components/layout/enquiry-section-wrapper';
 import {LanguagePrompt} from '@/components/layout/language-prompt';
 import {Toaster} from '@/components/ui/sonner';
 import '../../globals.css';
@@ -45,24 +44,57 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Traya International Exim LLP | Multi-Sector Exports from India',
-    template: '%s | Traya International Exim LLP'
+    default: 'Traya International Exim LLP | Indian Food Ingredient Exporter | B2B Supplier India',
+    template: '%s | Traya International Exim'
   },
   description:
-    'Source food and agricultural products, chemicals, mechanical and engineering goods, and paper from India through one accountable export partner.',
+    'Leading Indian food ingredient exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs & nutraceuticals. FSSAI & APEDA certified. 150+ products across 18 categories. B2B wholesale supplier from India.',
+  keywords: [
+    'Indian food exporter',
+    'dehydrated onion supplier India',
+    'garlic powder exporter',
+    'spice manufacturer India',
+    'spray dried powder supplier',
+    'food ingredient B2B',
+    'Indian spice wholesale',
+    'FSSAI certified exporter',
+    'APEDA registered',
+    'dehydrated vegetables supplier',
+    'moringa powder exporter',
+    'Indian food export company'
+  ],
   openGraph: {
     type: 'website',
     siteName: 'Traya International Exim LLP',
-    title: 'Traya International Exim LLP | Multi-Sector Exports from India',
+    title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
     description:
-      'Multi-sector sourcing, export documentation, and shipment coordination for global buyers sourcing from India.',
+      'B2B food ingredient supplier from India. Dehydrated onions, garlic, spices, powders, herbs & more. 150+ products, FSSAI certified, global shipping.',
     url: siteUrl,
-    locale: 'en'
+    locale: 'en',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Traya International Exim - Indian Food Ingredient Exporter'
+      }
+    ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Traya International Exim LLP | Multi-Sector Exports from India',
-    description: 'One accountable export partner for buyers sourcing across sectors from India.'
+    title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
+    description: 'B2B food ingredient supplier from India. 150+ products, FSSAI certified, global shipping.'
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
   }
 };
 
@@ -91,11 +123,6 @@ export default async function LocaleLayout({
   const t = await getTranslations('Header');
   const settings = await getSiteSettings();
 
-  // Get current pathname to conditionally hide EnquirySection on pages with their own forms
-  const headersList = await headers();
-  const pathname = headersList.get('x-nextjs-pathname') || headersList.get('x-invoke-path') || '';
-  const hideEnquirySection = pathname.includes('/contact') || pathname.includes('/about');
-
   return (
     <html
       lang={locale}
@@ -122,7 +149,7 @@ export default async function LocaleLayout({
           <main id="main" className="flex-1">
             {children}
           </main>
-          {!hideEnquirySection && <EnquirySection founderPhoto={settings.founderPhoto} />}
+          <EnquirySectionWrapper founderPhoto={settings.founderPhoto} />
           <SiteFooter />
           <EnquireTab />
           <FloatingActions />
