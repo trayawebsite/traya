@@ -14,6 +14,7 @@ import {EnquireTab} from '@/components/layout/enquire-tab';
 import {EnquirySectionWrapper} from '@/components/layout/enquiry-section-wrapper';
 import {LanguagePrompt} from '@/components/layout/language-prompt';
 import {Toaster} from '@/components/ui/sonner';
+import {CrispScript} from '@/components/layout/crisp-script';
 import '../../globals.css';
 
 // Display: Lora (calligraphic serif, warm & editorial). Headlines only.
@@ -153,6 +154,7 @@ export default async function LocaleLayout({
           <SiteFooter />
           <EnquireTab />
           <FloatingActions />
+          <CrispScript />
           <Toaster richColors position="top-center" />
           </EnquiryProvider>
         </NextIntlClientProvider>

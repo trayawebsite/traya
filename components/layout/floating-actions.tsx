@@ -16,7 +16,11 @@ export function FloatingActions() {
   const waHref = number ? `https://wa.me/${number}?text=${encodeURIComponent(message)}` : null;
 
   function openChat() {
-    document.getElementById('enquiry')?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    if (window.$crisp) {
+      window.$crisp.push(['do', 'chat:open']);
+    } else {
+      document.getElementById('enquiry')?.scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   }
 
   return (

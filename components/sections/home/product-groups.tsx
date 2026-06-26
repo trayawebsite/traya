@@ -52,23 +52,23 @@ export async function ProductGroups({data}: {data?: ProductsData}) {
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {GROUPS.map((g) => (
-            <li key={g} data-stagger className="group relative overflow-hidden rounded-2xl">
+            <li key={g} data-stagger className="group relative overflow-hidden rounded-2xl bg-traya-surface p-2">
               <Link
                 href="/products"
-                className="block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-traya-surface"
+                className="relative block overflow-hidden rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-traya-surface"
               >
                 <Photo
                   src={GROUP_IMAGES[g]}
                   alt={t(g)}
                   sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                  className="aspect-5/4 w-full transition-transform duration-500 ease-expo motion-reduce:transition-none"
+                  className="aspect-square w-full transition-transform duration-500 ease-expo group-hover:scale-[1.02] motion-reduce:transition-none"
                 />
                 <span
                   aria-hidden
                   className="pointer-events-none absolute inset-0 bg-linear-to-t from-traya-deep/85 via-traya-deep/20 to-transparent"
                 />
                 {g === FEATURED && (
-                  <span className="absolute left-4 top-4">
+                  <span className="absolute left-4 top-4 z-10">
                     <Badge>{t('badgePremium')}</Badge>
                   </span>
                 )}
