@@ -5,9 +5,9 @@ import {routing} from '@/i18n/routing';
 import {CategoryView} from '@/components/sections/catalogue/category-view';
 import {getCategoryBySlug, getCategorySlugs} from '@/lib/catalogue';
 
-// The catalogue is a fixed, known set. A slug outside generateStaticParams is a
-// real 404, not an on-demand render.
-export const dynamicParams = false;
+// If a slug is outside generateStaticParams (e.g., fallback JSON data when Sanity is partially populated),
+// we allow on-demand render so it doesn't hard 404.
+export const dynamicParams = true;
 
 export async function generateStaticParams() {
   const slugs = await getCategorySlugs();

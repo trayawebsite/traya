@@ -106,6 +106,8 @@
     "fr": "Français"
   },
   "Quote": {
+    "contactDetails": "Contact Details",
+    "requestDetails": "Request Details",
     "eyebrow": "Request a quote",
     "heading": "Get pricing for this product.",
     "sub": "Share your details and requirements. Our team will review and respond with pricing, MOQ, packaging, and commercial terms.",
@@ -131,8 +133,8 @@
     },
     "hero": {
       "eyebrow": "Exports from India across key sectors",
-      "heading": "A reliable export partner for products made in India.",
-      "sub": "We help buyers source Food & Agro, Chemicals, Mechanical products, and Paper from India. Share your requirement and we will coordinate suppliers, specifications, documents, packaging, and shipment.",
+      "heading": "Your strategic export partner for sourcing from India.",
+      "sub": "We facilitate global trade by sourcing premium Food & Agro, Chemicals, Mechanical products, and Paper. From stringent supplier vetting and quality compliance to end-to-end shipment logistics, we manage your entire export lifecycle.",
       "ctaPrimary": "Send your requirement",
       "ctaSecondary": "View Food & Agro products",
       "stat": "Food & Agro catalogue · 150+ products · 18 categories",
@@ -140,12 +142,12 @@
     },
     "intro": {
       "eyebrow": "How Traya helps",
-      "heading": "One team to manage your sourcing and export requirements.",
-      "body": "Tell us what you need and where it needs to go. We identify suitable suppliers, confirm product details, arrange the required documents, and coordinate the shipment. You receive clear updates and have one team to contact throughout the order.",
+      "heading": "End-to-end global sourcing and export management.",
+      "body": "Share your product requirements and destination. We identify vetted suppliers, verify specifications, secure regulatory documentation, and coordinate global logistics. Experience transparent updates and a single point of contact throughout your entire supply chain.",
       "visionLabel": "Our vision",
-      "vision": "To become a trusted long-term EXIM partner for businesses that source from India and trade across global markets. We aim to make cross-border buying clearer, more reliable, and easier to manage.",
+      "vision": "To be the definitive EXIM partner for global enterprises sourcing from India. We are dedicated to making cross-border trade transparent, reliable, and frictionless.",
       "missionLabel": "Our mission",
-      "mission": "To support buyers with reliable product sourcing, careful supplier coordination, required export documents, suitable packaging, and clear shipment updates from enquiry to dispatch.",
+      "mission": "To empower international buyers through strategic sourcing, meticulous supplier coordination, comprehensive documentation, and proactive shipment management from initial enquiry to final dispatch.",
       "spec": "Product sourcing · Export documents · Shipment support"
     },
     "stats": {
@@ -239,9 +241,9 @@
     },
     "hero": {
       "eyebrow": "About Traya",
-      "heading": "An Indian EXIM partner for buyers across sectors.",
-      "tagline": "Sourcing, documents, packaging, and shipment support from one team.",
-      "body": "Traya International Exim LLP helps international buyers source products from India across Food & Agro, Chemicals, Mechanical products, and Paper. Our Food & Agro catalogue currently includes 150+ products across 18 categories. For every requirement, we focus on clear product details, reliable coordination, required documentation, and practical shipment support."
+      "heading": "A trusted Indian EXIM partner across global sectors.",
+      "tagline": "Sourcing, documentation, packaging, and shipment support managed by one dedicated team.",
+      "body": "Traya International Exim LLP empowers international buyers to strategically source from India across the Food & Agro, Chemicals, Mechanical, and Paper sectors. With an expansive catalogue of over 150 meticulously categorized products, we deliver uncompromising quality, rigorous documentation, and seamless global shipment support."
     },
     "founder": {
       "eyebrow": "From the founder",
@@ -249,9 +251,9 @@
       "name": "Neha Pardeshi",
       "role": "Founder & CEO",
       "p1": "The world didn't open up to me through textbooks. It opened up through travel. Exploring different cultures, meeting people from all walks of life, and seeing the world through different perspectives shaped not only who I am, but also what I chose to build.",
-      "p2": "I believe global trade works best when people communicate clearly and treat each order with responsibility. Behind every shipment is a buyer, a supplier, and a relationship that needs trust.",
-      "p3": "At Traya International EXIM, our goal is to make global sourcing easier and more dependable for buyers who need clear communication, careful coordination, and a team they can reach when it matters.",
-      "p4": "What began as a passion for exploring the world has evolved into a business driven by commitment, integrity, and a truly global vision. And we are only just getting started."
+      "p2": "I believe that successful international commerce relies on transparent communication and treating every order with profound responsibility. Behind every shipment is a buyer, a supplier, and a partnership built on trust.",
+      "p3": "At Traya International EXIM, our mandate is to make global sourcing secure and dependable. We serve buyers who require absolute clarity, meticulous coordination, and a dedicated team they can rely on at every stage.",
+      "p4": "What began as a passion for global exploration has evolved into an enterprise driven by commitment, integrity, and a steadfast vision for international trade. And we are only just getting started."
     },
     "principles": {
       "eyebrow": "Who we are",
@@ -302,8 +304,8 @@
     },
     "hero": {
       "eyebrow": "Contact",
-      "heading": "Send your sourcing or export requirement.",
-      "body": "Reach us by email, phone, WhatsApp, or the enquiry form. Share the product name, specifications, quantity, destination, and timeline so our team can review it properly."
+      "heading": "Submit your global sourcing requirements.",
+      "body": "Connect with our export specialists via email, phone, WhatsApp, or our secure enquiry form. Please detail your product specifications, required quantities, destination port, and delivery timelines to ensure a comprehensive and prompt commercial response."
     },
     "emailLabel": "Email us",
     "phoneLabel": "Call us",
@@ -317,7 +319,7 @@
     "form": {
       "eyebrow": "Send us a message",
       "heading": "Share your requirement.",
-      "sub": "Fill in the details below and our team will review your requirement and get back to you.",
+      "sub": "Fill in the details below and our team will review your requirement to provide a comprehensive commercial response.",
       "name": "Your name",
       "email": "Email address",
       "company": "Organisation",

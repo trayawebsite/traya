@@ -1,53 +1,41 @@
 'use client';
 
 import {useTranslations} from 'next-intl';
+import {Crisp} from 'crisp-sdk-web';
 import {siteConfig} from '@/lib/site-config';
 
-// Floating launcher cluster — WhatsApp + chat bot, side by side, matched 56px
-// circles. Both are white discs with a coloured ring + a same-size (28px) mark,
-// so they read as a deliberate pair, not two stray buttons.
-//
-// The bot is a placeholder action for now (scrolls to the on-page enquiry form);
-// once Crisp/Tidio is chosen it becomes the chatbot trigger — only this handler
-// changes.
+// Floating launcher cluster — chat bot + WhatsApp, side by side, matched 56px
+// circles. Bot opens Crisp chat (falls back to scrolling to enquiry form if
+// Crisp isn't loaded). WhatsApp opens wa.me with prefilled message.
 export function FloatingActions() {
   const t = useTranslations('Header');
   const {number, message} = siteConfig.whatsapp;
   const waHref = number ? `https://wa.me/${number}?text=${encodeURIComponent(message)}` : null;
 
   function openChat() {
-    if (window.$crisp) {
-      window.$crisp.push(['do', 'chat:open']);
-    } else {
+    try {
+      Crisp.chat.open();
+    } catch {
       document.getElementById('enquiry')?.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   }
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
-      {/* Bot / chat */}
+      {/* Bot / chat (Golden Crisp style) */}
       <button
         type="button"
         onClick={openChat}
         aria-label={t('chat')}
-        className="inline-flex h-14 w-14 items-center justify-center rounded-full border-2 border-traya-clay bg-white shadow-lg transition-[box-shadow,transform] duration-150 ease-out hover:shadow-xl active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-clay focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:transition-none"
+        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#CAA828] shadow-lg transition-[box-shadow,transform] duration-150 ease-out hover:shadow-xl active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CAA828] focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:transition-none"
       >
         <svg
           viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.75"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="bot-icon h-7 w-7 text-traya-clay"
+          fill="white"
+          className="bot-icon h-7 w-7"
           aria-hidden="true"
         >
-          <path d="M12 8V4H8" />
-          <rect width="16" height="12" x="4" y="8" rx="2" />
-          <path d="M2 14h2" />
-          <path d="M20 14h2" />
-          <path d="M15 13v2" />
-          <path d="M9 13v2" />
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
         </svg>
       </button>
 

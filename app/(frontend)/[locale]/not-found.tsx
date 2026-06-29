@@ -13,10 +13,12 @@ export default async function NotFound() {
 
   return (
     <Container className="flex min-h-[72vh] flex-col items-center justify-center py-section text-center">
-      <p className="font-mono text-xs font-semibold uppercase tracking-[0.3em] text-traya-saffron-lo">
-        {t('code')}
-      </p>
-      <h1 className="mt-5 text-balance font-display text-display-xl text-foreground">{t('title')}</h1>
+      <h1 className="text-[6rem] leading-none font-display font-bold text-traya-saffron-lo/30 select-none md:text-[10rem]">
+        404
+      </h1>
+      <h2 className="mt-4 max-w-2xl text-balance font-display text-4xl text-foreground md:text-5xl">
+        {t('title')}
+      </h2>
       <p className="mt-5 max-w-md text-lg leading-relaxed text-muted-foreground">{t('description')}</p>
 
       <Link href="/" className={`${primaryButton} mt-9`}>

@@ -78,6 +78,7 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
   try {
     const {getAllCategories, getCategoryBySlug} = await import('@/sanity/lib/fetch');
     const cats = await getAllCategories();
+    if (!cats || cats.length === 0) return jsonCategories;
 
     const mapped: CatalogueCategory[] = cats.map((c, i) => ({
       title: c.title,
@@ -138,7 +139,8 @@ export async function getGroups(): Promise<{key: GroupKey; categories: Catalogue
 export async function getCategoryBySlug(slug: string): Promise<CatalogueCategory | undefined> {
   if (useSanity) {
     const cats = await getCategories();
-    return cats.find((c) => c.slug === slug);
+    const found = cats.find((c) => c.slug === slug);
+    if (found) return found;
   }
   return jsonCategories.find((c) => c.slug === slug);
 }
@@ -150,31 +152,31 @@ export async function getProductBySlug(
     try {
       const {getProductBySlug: getSanityProduct} = await import('@/sanity/lib/fetch');
       const fullProduct = await getSanityProduct(slug);
-      if (!fullProduct) return undefined;
+      if (fullProduct) {
+        // Find the category from cached categories
+        const cats = await getCategories();
+        const category = cats.find((c) =>
+          c.products.some((p) => p.slug === slug)
+        );
 
-      // Find the category from cached categories
-      const cats = await getCategories();
-      const category = cats.find((c) =>
-        c.products.some((p) => p.slug === slug)
-      );
-
-      return {
-        product: {
-          n: 1,
-          name: fullProduct.title,
-          slug: fullProduct.slug,
-          shortDescription: fullProduct.shortDescription,
-          images: fullProduct.images,
-          forms: fullProduct.forms,
-          specifications: fullProduct.specifications,
-          hsCode: fullProduct.hsCode,
-          origin: fullProduct.origin,
-          brochureUrl: fullProduct.brochure?.asset?._ref
-            ? fileUrlForRef(fullProduct.brochure.asset._ref) ?? undefined
-            : undefined
-        },
-        category: category ?? {title: fullProduct.category?.title ?? '', slug: '', order: 0, group: 'wellness', products: []}
-      };
+        return {
+          product: {
+            n: 1,
+            name: fullProduct.title,
+            slug: fullProduct.slug,
+            shortDescription: fullProduct.shortDescription,
+            images: fullProduct.images,
+            forms: fullProduct.forms,
+            specifications: fullProduct.specifications,
+            hsCode: fullProduct.hsCode,
+            origin: fullProduct.origin,
+            brochureUrl: fullProduct.brochure?.asset?._ref
+              ? fileUrlForRef(fullProduct.brochure.asset._ref) ?? undefined
+              : undefined
+          },
+          category: category ?? {title: fullProduct.category?.title ?? '', slug: '', order: 0, group: 'wellness', products: []}
+        };
+      }
     } catch (err) {
       console.error('[catalogue] Sanity product fetch failed:', err);
     }
@@ -193,9 +195,10 @@ export async function getCategorySlugs(): Promise<string[]> {
   if (useSanity) {
     try {
       const {getCategorySlugs: getSanitySlugs} = await import('@/sanity/lib/fetch');
-      return getSanitySlugs();
+      const slugs = await getSanitySlugs();
+      if (slugs && slugs.length > 0) return slugs;
     } catch {
-      return jsonCategories.map((c) => c.slug);
+      // fall through
     }
   }
   return jsonCategories.map((c) => c.slug);
@@ -205,9 +208,10 @@ export async function getProductSlugs(): Promise<string[]> {
   if (useSanity) {
     try {
       const {getProductSlugs: getSanitySlugs} = await import('@/sanity/lib/fetch');
-      return getSanitySlugs();
+      const slugs = await getSanitySlugs();
+      if (slugs && slugs.length > 0) return slugs;
     } catch {
-      return jsonCategories.flatMap((c) => c.products.map((p) => p.slug));
+      // fall through
     }
   }
   return jsonCategories.flatMap((c) => c.products.map((p) => p.slug));

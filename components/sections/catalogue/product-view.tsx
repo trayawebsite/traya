@@ -6,11 +6,10 @@ import {primaryButton} from '@/lib/button-styles';
 import {secondaryBtn} from '@/components/sections/home/styles';
 import {getRelatedProducts, type CatalogueCategory, type CatalogueProduct} from '@/lib/catalogue';
 import {getSiteSettings} from '@/lib/site-settings';
-import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
 import {QuoteForm} from '@/components/sections/quote-form';
 import {ProductImages} from './product-images';
 import {ProductSchema, BreadcrumbSchema} from '@/components/seo/product-schema';
-import {Download} from 'lucide-react';
+import {Download, ArrowRight} from 'lucide-react';
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
@@ -106,8 +105,8 @@ export async function ProductView({
               </div>
             )}
 
-            {product.brochureUrl && (
-              <div className="mt-6">
+            <div className="mt-6">
+              {product.brochureUrl ? (
                 <a
                   href={product.brochureUrl}
                   target="_blank"
@@ -117,8 +116,16 @@ export async function ProductView({
                   <Download className="size-4 text-traya-saffron-lo" aria-hidden="true" />
                   {t('detail.downloadSpecSheet')}
                 </a>
-              </div>
-            )}
+              ) : (
+                <button
+                  disabled
+                  className="inline-flex items-center gap-2 rounded-xl border border-traya-border bg-traya-surface/50 px-4 py-3 text-sm font-medium text-muted-foreground cursor-not-allowed"
+                >
+                  <Download className="size-4 opacity-50" aria-hidden="true" />
+                  {t('detail.downloadSpecSheet')}
+                </button>
+              )}
+            </div>
 
             {/* Forms / Variants */}
             {hasForms && (
@@ -156,17 +163,11 @@ export async function ProductView({
               <p className="font-display text-lg leading-snug text-foreground">{product.name}</p>
               <p className="mt-1 text-sm text-muted-foreground">{category.title}</p>
               <div className="mt-6 flex flex-col gap-3">
-                <AddToEnquiryButton
-                  slug={product.slug}
-                  name={product.name}
-                  category={category.title}
-                  className={secondaryBtn}
-                />
                 <a href={`?product=${encodeURIComponent(product.name)}#enquiry`} className={primaryButton}>
-                  {t('detail.sampleCta')}
+                  {t('detail.enquireCta')}
                 </a>
                 <a href={`?product=${encodeURIComponent(product.name)}#enquiry`} className={secondaryBtn}>
-                  {t('detail.enquireCta')}
+                  {t('detail.sampleCta')}
                 </a>
               </div>
             </div>
@@ -174,7 +175,7 @@ export async function ProductView({
         </div>
 
         {/* Quote request form with testimonials */}
-        <div className="mt-16 border-t border-traya-border pt-10">
+        <div id="enquiry" className="mt-16 border-t border-traya-border pt-10 scroll-mt-24">
           <QuoteForm
             productName={product.name}
             productSlug={product.slug}
@@ -183,28 +184,32 @@ export async function ProductView({
         </div>
 
         {related.length > 0 && (
-          <div className="mt-16 border-t border-traya-border pt-10">
-            <h2 className="font-display text-display-sm text-foreground">{t('detail.relatedHeading')}</h2>
-            <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-24 border-t border-traya-border pt-12">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+              <div>
+                <p className="text-sm font-medium text-traya-red-deep mb-2">{category.title}</p>
+                <h2 className="font-display text-display-sm text-foreground">{t('detail.relatedHeading')}</h2>
+              </div>
+              <Link 
+                href={`/categories/${category.slug}`} 
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2 group"
+              >
+                {t('detail.categoryLabel')} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+              </Link>
+            </div>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {related.map((p) => (
                 <li key={p.slug}>
                   <Link
                     href={`/products/${p.slug}`}
-                    className="group flex items-center justify-between gap-3 rounded-2xl border border-traya-border bg-card p-4 shadow-sm transition-shadow duration-300 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                    className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-traya-border bg-card p-6 transition-all duration-300 hover:border-traya-red/30 hover:bg-traya-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30"
                   >
-                    <span className="text-sm font-medium text-foreground">{p.name}</span>
-                    <svg
-                      className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 motion-reduce:transition-none"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="1.8"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      aria-hidden="true"
-                    >
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
+                    <div className="flex items-start justify-between gap-4">
+                      <span className="font-display text-lg leading-snug text-foreground transition-colors group-hover:text-traya-red-deep">{p.name}</span>
+                      <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-background border border-traya-border text-muted-foreground transition-all duration-300 group-hover:translate-x-1 group-hover:border-traya-red/20 group-hover:bg-traya-red/5 group-hover:text-traya-red-deep">
+                        <ArrowRight className="size-4" aria-hidden="true" />
+                      </div>
+                    </div>
                   </Link>
                 </li>
               ))}
@@ -219,7 +224,7 @@ export async function ProductView({
 function Fact({label, children}: {label: string; children: React.ReactNode}) {
   return (
     <div>
-      <dt className="font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground">{label}</dt>
+      <dt className="text-sm font-medium text-muted-foreground">{label}</dt>
       <dd className="mt-1 text-sm text-foreground">{children}</dd>
     </div>
   );

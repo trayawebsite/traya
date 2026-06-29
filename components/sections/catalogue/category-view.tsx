@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server';
+import Image from 'next/image';
 import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
 import {Breadcrumb} from '@/components/ui/breadcrumb';
@@ -27,6 +28,10 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
   // Fetch certifications
   const s = await getSiteSettings();
 
+  // Deterministic image assignment (t1.png to t5.png)
+  const imageIndex = (category.title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 5) + 1;
+  const heroImageSrc = `/t${imageIndex}.png`;
+
   return (
     <>
       {/* 1. Category Hero */}
@@ -39,19 +44,32 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
               {label: category.title}
             ]}
           />
-          <div className="mt-8 max-w-3xl">
-            <p className="section-label">{tg(category.group)}</p>
-            <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
-              {category.title}
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground">
-              {count} {count === 1 ? t('product') : t('products')}
-            </p>
-            {category.description && (
-              <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                {category.description}
+          <div className="mt-8 grid gap-12 lg:grid-cols-12 lg:items-center">
+            <div className="max-w-3xl lg:col-span-7 xl:col-span-8">
+              <p className="section-label">{tg(category.group)}</p>
+              <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
+                {category.title}
+              </h1>
+              <p className="mt-4 text-lg text-muted-foreground">
+                {count} {count === 1 ? t('product') : t('products')}
               </p>
-            )}
+              {category.description && (
+                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+                  {category.description}
+                </p>
+              )}
+            </div>
+            
+            <div className="relative hidden aspect-square w-full lg:block lg:col-span-5 xl:col-span-4">
+              <Image
+                src={heroImageSrc}
+                alt={category.title}
+                fill
+                priority
+                sizes="(min-width: 1024px) 33vw, 100vw"
+                className="object-contain transition-transform duration-700 ease-expo hover:scale-105"
+              />
+            </div>
           </div>
         </Container>
       </section>
@@ -138,7 +156,7 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                     </>
                   )}
                 </dl>
-                {category.specSheetUrl && (
+                {category.specSheetUrl ? (
                   <a
                     href={category.specSheetUrl}
                     target="_blank"
@@ -148,6 +166,11 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                     <Download className="size-4" aria-hidden="true" />
                     {t('category.downloadCta')}
                   </a>
+                ) : (
+                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground cursor-not-allowed">
+                    <Download className="size-4 opacity-50" aria-hidden="true" />
+                    {t('category.downloadCta')}
+                  </span>
                 )}
               </div>
             </div>

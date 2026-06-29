@@ -8,6 +8,7 @@ import {toast} from 'sonner';
 import {quoteSchema, type QuoteInput} from '@/lib/validations';
 import {primaryButton} from '@/lib/button-styles';
 import {TestimonialCarousel} from '@/components/ui/testimonial-carousel';
+import {User, Mail, Building2, Phone, MapPin, Package, MessageSquare} from 'lucide-react';
 
 type Testimonial = {
   quote: string;
@@ -85,48 +86,61 @@ export function QuoteForm({
         noValidate
         className="max-w-2xl rounded-2xl border border-traya-border bg-card px-5 py-6 shadow-sm sm:px-6 sm:py-8"
       >
-        <p className="section-label">{t('eyebrow')}</p>
+        <p className="text-sm font-medium text-traya-red-deep">{t('eyebrow')}</p>
         <h2 className="mt-3 font-display text-display-sm text-foreground">
           {t('heading')}
         </h2>
         <p className="mt-3 leading-relaxed text-muted-foreground">{t('sub')}</p>
 
-        <div className="mt-8 grid gap-x-5 gap-y-6 sm:grid-cols-2">
-          <Field id="name" label={t('name')} required error={errors.name?.message}>
-            <input id="name" type="text" autoComplete="name" {...register('name')} className={inputCls} />
-          </Field>
-          <Field id="email" label={t('email')} required error={errors.email?.message}>
-            <input id="email" type="email" autoComplete="email" {...register('email')} className={inputCls} />
-          </Field>
-          <Field id="company" label={t('company')} error={errors.company?.message}>
-            <input id="company" type="text" autoComplete="organization" {...register('company')} className={inputCls} />
-          </Field>
-          <Field id="phone" label={t('phone')} error={errors.phone?.message}>
-            <input id="phone" type="tel" autoComplete="tel" {...register('phone')} className={inputCls} />
-          </Field>
-          <Field id="country" label={t('country')} error={errors.country?.message}>
-            <input id="country" type="text" autoComplete="country-name" {...register('country')} className={inputCls} />
-          </Field>
-          <Field id="quantity" label={t('quantity')} error={errors.quantity?.message}>
-            <input
-              id="quantity"
-              type="text"
-              placeholder={t('quantityPlaceholder')}
-              {...register('quantity')}
-              className={inputCls}
-            />
-          </Field>
-          <input type="hidden" {...register('productName')} />
-          <input type="hidden" {...register('productSlug')} />
-          <Field id="message" label={t('message')} error={errors.message?.message} full>
-            <textarea
-              id="message"
-              rows={4}
-              placeholder={t('messagePlaceholder')}
-              {...register('message')}
-              className={`${inputCls} resize-y`}
-            />
-          </Field>
+        <div className="mt-8 space-y-8">
+          {/* Contact Details Group */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold text-foreground">{t('contactDetails')}</h3>
+            <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
+              <Field id="name" label={t('name')} icon={<User className="size-4" />} required error={errors.name?.message}>
+                <input id="name" type="text" autoComplete="name" {...register('name')} className={inputCls} />
+              </Field>
+              <Field id="email" label={t('email')} icon={<Mail className="size-4" />} required error={errors.email?.message}>
+                <input id="email" type="email" autoComplete="email" {...register('email')} className={inputCls} />
+              </Field>
+              <Field id="company" label={t('company')} icon={<Building2 className="size-4" />} error={errors.company?.message}>
+                <input id="company" type="text" autoComplete="organization" {...register('company')} className={inputCls} />
+              </Field>
+              <Field id="phone" label={t('phone')} icon={<Phone className="size-4" />} error={errors.phone?.message}>
+                <input id="phone" type="tel" autoComplete="tel" {...register('phone')} className={inputCls} />
+              </Field>
+              <Field id="country" label={t('country')} icon={<MapPin className="size-4" />} error={errors.country?.message} full>
+                <input id="country" type="text" autoComplete="country-name" {...register('country')} className={inputCls} />
+              </Field>
+            </div>
+          </div>
+
+          {/* Request Details Group */}
+          <div>
+            <h3 className="mb-4 text-sm font-semibold text-foreground">{t('requestDetails')}</h3>
+            <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
+              <Field id="quantity" label={t('quantity')} icon={<Package className="size-4" />} error={errors.quantity?.message} full>
+                <input
+                  id="quantity"
+                  type="text"
+                  placeholder={t('quantityPlaceholder')}
+                  {...register('quantity')}
+                  className={inputCls}
+                />
+              </Field>
+              <input type="hidden" {...register('productName')} />
+              <input type="hidden" {...register('productSlug')} />
+              <Field id="message" label={t('message')} icon={<MessageSquare className="size-4" />} error={errors.message?.message} full>
+                <textarea
+                  id="message"
+                  rows={4}
+                  placeholder={t('messagePlaceholder')}
+                  {...register('message')}
+                  className={`${inputCls} resize-y`}
+                />
+              </Field>
+            </div>
+          </div>
         </div>
 
         <div className="mt-7 flex justify-end">
@@ -144,7 +158,7 @@ export function QuoteForm({
 }
 
 const inputCls =
-  'w-full rounded-md border border-traya-border bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30 aria-[invalid=true]:border-destructive';
+  'w-full rounded-md border border-traya-border bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30 aria-[invalid=true]:border-destructive transition-colors';
 
 function Field({
   id,
@@ -152,6 +166,7 @@ function Field({
   required,
   error,
   full,
+  icon,
   children
 }: {
   id: string;
@@ -159,7 +174,8 @@ function Field({
   required?: boolean;
   error?: string;
   full?: boolean;
-  children: ReactElement;
+  icon?: ReactElement;
+  children: ReactElement<{className?: string}>;
 }) {
   const errorId = error ? `${id}-error` : undefined;
   return (
@@ -168,11 +184,19 @@ function Field({
         {label}
         {required && <span aria-hidden="true" className="text-destructive"> *</span>}
       </label>
-      {cloneElement(children as ReactElement<Record<string, unknown>>, {
-        'aria-required': required ? true : undefined,
-        'aria-invalid': error ? true : undefined,
-        'aria-describedby': errorId
-      })}
+      <div className="relative">
+        {icon && (
+          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-muted-foreground/60">
+            {icon}
+          </div>
+        )}
+        {cloneElement(children as ReactElement<Record<string, unknown>>, {
+          'aria-required': required ? true : undefined,
+          'aria-invalid': error ? true : undefined,
+          'aria-describedby': errorId,
+          className: `${children.props.className || ''} ${icon ? 'pl-10' : ''}`
+        })}
+      </div>
       {error && (
         <p id={errorId} role="alert" className="mt-1.5 text-xs text-destructive">
           {error}

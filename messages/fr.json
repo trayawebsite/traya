@@ -106,6 +106,8 @@
     "fr": "Français"
   },
   "Quote": {
+    "contactDetails": "Détails du contact",
+    "requestDetails": "Détails de la demande",
     "eyebrow": "Demander un devis",
     "heading": "Obtenez un prix pour ce produit.",
     "sub": "Partagez vos coordonnées et exigences. Notre équipe examinera et répondra avec le prix, la quantité minimale de commande, l'emballage et les conditions commerciales.",
@@ -131,8 +133,8 @@
     },
     "hero": {
       "eyebrow": "Exportations depuis l'Inde dans des secteurs clés",
-      "heading": "Un partenaire d'exportation fiable pour les produits fabriqués en Inde.",
-      "sub": "Nous aidons les acheteurs à s'approvisionner en produits alimentaires et agricoles, produits chimiques, produits mécaniques et papier depuis l'Inde. Partagez vos exigences et nous coordonnerons les fournisseurs, les spécifications, les documents, l'emballage et l'expédition.",
+      "heading": "Votre partenaire d'exportation stratégique pour l'approvisionnement depuis l'Inde.",
+      "sub": "Nous facilitons le commerce mondial en nous approvisionnant en produits agroalimentaires, chimiques, mécaniques et papiers de première qualité. De la sélection rigoureuse des fournisseurs et la conformité de la qualité jusqu'à la logistique d'expédition complète, nous gérons l'ensemble de votre cycle d'exportation.",
       "ctaPrimary": "Envoyez vos exigences",
       "ctaSecondary": "Voir les produits alimentaires et agricoles",
       "stat": "Catalogue alimentaire et agricole · Plus de 150 produits · 18 catégories",
@@ -140,12 +142,12 @@
     },
     "intro": {
       "eyebrow": "Comment Traya vous aide",
-      "heading": "Une équipe pour gérer vos exigences d'approvisionnement et d'exportation.",
-      "body": "Dites-nous ce dont vous avez besoin et où cela doit aller. Nous identifions les fournisseurs appropriés, confirmons les détails du produit, organisons les documents requis et coordonnons l'expédition. Vous recevez des mises à jour claires et avez une équipe de contact tout au long de la commande.",
+      "heading": "Gestion de bout en bout de l'approvisionnement mondial et de l'exportation.",
+      "body": "Partagez vos exigences de produits et votre destination. Nous identifions des fournisseurs de confiance, vérifions les spécifications, obtenons la documentation réglementaire et coordonnons la logistique mondiale. Profitez de mises à jour transparentes et d'un point de contact unique tout au long de votre chaîne d'approvisionnement.",
       "visionLabel": "Notre vision",
-      "vision": "Devenir un partenaire EXIM de confiance à long terme pour les entreprises qui s'approvisionnent en Inde et commercent sur les marchés mondiaux. Nous visons à rendre les achats transfrontaliers plus clairs, plus fiables et plus faciles à gérer.",
+      "vision": "Être le partenaire EXIM de référence pour les entreprises mondiales s'approvisionnant en Inde. Nous nous engageons à rendre le commerce transfrontalier transparent, fiable et sans friction.",
       "missionLabel": "Notre mission",
-      "mission": "Soutenir les acheteurs avec un approvisionnement fiable, une coordination attentive des fournisseurs, les documents d'exportation requis, un emballage adapté et des mises à jour claires sur l'expédition, de la demande à l'envoi.",
+      "mission": "Habiliter les acheteurs internationaux par un approvisionnement stratégique, une coordination méticuleuse avec les fournisseurs, une documentation complète et une gestion proactive des expéditions de la demande initiale jusqu'à l'expédition finale.",
       "spec": "Approvisionnement · Documents d'exportation · Support logistique"
     },
     "stats": {
@@ -239,9 +241,9 @@
     },
     "hero": {
       "eyebrow": "À propos de Traya",
-      "heading": "Un partenaire indien d'import-export pour les acheteurs de tous secteurs.",
-      "tagline": "Approvisionnement, documents, emballage et soutien logistique par une seule équipe.",
-      "body": "Traya International Exim LLP aide les acheteurs internationaux à s'approvisionner en produits depuis l'Inde dans les domaines de l'alimentaire et de l'agricole, des produits chimiques, des produits mécaniques et du papier. Notre catalogue alimentaire et agricole comprend actuellement plus de 150 produits répartis en 18 catégories. Pour chaque exigence, nous nous concentrons sur des détails produit clairs, une coordination fiable, la documentation requise et un soutien logistique pratique."
+      "heading": "Un partenaire EXIM indien de confiance à travers les secteurs mondiaux.",
+      "tagline": "Approvisionnement, documentation, emballage et soutien à l'expédition gérés par une seule équipe dévouée.",
+      "body": "Traya International Exim LLP permet aux acheteurs internationaux de s'approvisionner stratégiquement en Inde dans les secteurs agroalimentaire, chimique, mécanique et papier. Avec un vaste catalogue de plus de 150 produits méticuleusement classés, nous offrons une qualité sans compromis, une documentation rigoureuse et un soutien logistique mondial transparent."
     },
     "founder": {
       "eyebrow": "De la fondatrice",
@@ -249,9 +251,9 @@
       "name": "Neha Pardeshi",
       "role": "Fondatrice et PDG",
       "p1": "Le monde ne s'est pas ouvert à moi à travers les manuels scolaires. Il s'est ouvert à travers les voyages. Explorer différentes cultures, rencontrer des personnes de tous horizons et voir le monde à travers différents prismes ont façonné non seulement qui je suis, mais aussi ce que j'ai choisi de construire.",
-      "p2": "Je crois que le commerce mondial fonctionne mieux lorsque les gens communiquent clairement et traitent chaque commande avec responsabilité. Derrière chaque expédition se trouvent un acheteur, un fournisseur et une relation qui a besoin de confiance.",
-      "p3": "Chez Traya International EXIM, notre objectif est de rendre l'approvisionnement mondial plus facile et plus fiable pour les acheteurs qui ont besoin d'une communication claire, d'une coordination attentive et d'une équipe accessible quand cela compte.",
-      "p4": "Ce qui a commencé comme une passion pour l'exploration du monde est devenu une entreprise animée par l'engagement, l'intégrité et une vision véritablement mondiale. Et nous ne faisons que commencer."
+      "p2": "Je crois que le succès du commerce international repose sur une communication transparente et le traitement de chaque commande avec une profonde responsabilité. Derrière chaque expédition, il y a un acheteur, un fournisseur et un partenariat fondé sur la confiance.",
+      "p3": "Chez Traya International EXIM, notre mission est de rendre l'approvisionnement mondial sûr et fiable. Nous servons les acheteurs qui exigent une clarté absolue, une coordination minutieuse et une équipe dévouée sur laquelle ils peuvent compter à chaque étape.",
+      "p4": "Ce qui a commencé comme une passion pour l'exploration mondiale a évolué vers une entreprise motivée par l'engagement, l'intégrité et une vision inébranlable du commerce international. Et ce n'est que le début."
     },
     "principles": {
       "eyebrow": "Qui nous sommes",
@@ -302,8 +304,8 @@
     },
     "hero": {
       "eyebrow": "Contact",
-      "heading": "Envoyez vos exigences d'approvisionnement ou d'exportation.",
-      "body": "Contactez-nous par e-mail, téléphone, WhatsApp ou le formulaire de demande. Partagez le nom du produit, les spécifications, la quantité, la destination et le calendrier afin que notre équipe puisse les examiner correctement."
+      "heading": "Soumettez vos exigences d'approvisionnement mondial.",
+      "body": "Connectez-vous avec nos spécialistes de l'exportation par e-mail, téléphone, WhatsApp ou notre formulaire de demande sécurisé. Veuillez détailler les spécifications de vos produits, les quantités requises, le port de destination et les délais de livraison pour assurer une réponse commerciale complète et rapide."
     },
     "emailLabel": "Envoyez-nous un e-mail",
     "phoneLabel": "Appelez-nous",
@@ -316,8 +318,8 @@
     "socialLabel": "Suivez-nous",
     "form": {
       "eyebrow": "Envoyez-nous un message",
-      "heading": "Partagez votre demande.",
-      "sub": "Remplissez les détails ci-dessous et notre équipe examinera votre demande et vous répondra.",
+      "heading": "Partagez votre exigence.",
+      "sub": "Remplissez les détails ci-dessous et notre équipe examinera votre demande pour fournir une réponse commerciale complète.",
       "name": "Votre nom",
       "email": "Adresse e-mail",
       "company": "Organisation",
