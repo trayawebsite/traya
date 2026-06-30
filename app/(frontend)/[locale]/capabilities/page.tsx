@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
-import {getAboutPage} from '@/sanity/lib/fetch';
+import {localeAlternates} from '@/lib/seo';
 import {CapabilitiesHero} from '@/components/sections/capabilities/capabilities-hero';
 import {CoreCapabilities} from '@/components/sections/capabilities/core-capabilities';
 import {Foundations} from '@/components/sections/capabilities/foundations';
@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/capabilities'}
+    alternates: localeAlternates(locale, '/capabilities')
   };
 }
 
@@ -27,16 +27,15 @@ export default async function CapabilitiesPage({
 }) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const about = await getAboutPage();
 
   return (
     <>
       <CapabilitiesHero />
       <Reveal>
-        <CoreCapabilities data={about?.capabilities} />
+        <CoreCapabilities />
       </Reveal>
       <Reveal>
-        <Foundations data={about?.philosophy} />
+        <Foundations />
       </Reveal>
     </>
   );

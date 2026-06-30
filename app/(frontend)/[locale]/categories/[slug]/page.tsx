@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {localeAlternates} from '@/lib/seo';
 import {routing} from '@/i18n/routing';
 import {CategoryView} from '@/components/sections/catalogue/category-view';
 import {getCategoryBySlug, getCategorySlugs} from '@/lib/catalogue';
@@ -30,7 +31,7 @@ export async function generateMetadata({
   return {
     title: `${category.title} | ${count} ${productWord}`,
     description: t('category.metaDescription', {title: category.title, count, products: productWord}),
-    alternates: {canonical: `/categories/${slug}`}
+    alternates: localeAlternates(locale, `/categories/${slug}`)
   };
 }
 

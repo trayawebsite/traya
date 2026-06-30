@@ -49,7 +49,7 @@ export function ProductsInteractive({
         {/* Search field */}
         <div className="relative mx-auto max-w-md">
           <svg
-            className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground/50"
+            className="pointer-events-none absolute start-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground/50"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -66,7 +66,7 @@ export function ProductsInteractive({
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder={labels.search}
-            className="w-full rounded-full border border-traya-border bg-card py-2.5 pl-10 pr-4 text-sm text-foreground shadow-xs placeholder:text-muted-foreground/50 focus:border-traya-red/30 focus:outline-none focus:ring-2 focus:ring-traya-red/10"
+            className="w-full rounded-full border border-traya-border bg-card py-2.5 ps-10 pe-4 text-sm text-foreground shadow-xs placeholder:text-muted-foreground/50 focus:border-traya-red/30 focus:outline-none focus:ring-2 focus:ring-traya-red/10"
           />
         </div>
 
@@ -115,7 +115,7 @@ export function ProductsInteractive({
                           aria-hidden
                           className="absolute inset-0 bg-linear-to-t from-black/50 via-black/10 to-transparent opacity-60 transition-opacity duration-300 group-hover:opacity-80"
                         />
-                        <span className="absolute top-3 right-3 inline-flex items-center rounded-full bg-traya-cream/90 px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-[0.1em] text-traya-forest backdrop-blur-sm">
+                        <span className="absolute top-3 end-3 inline-flex items-center rounded-full bg-traya-cream/90 px-2.5 py-1 font-mono text-[11px] font-medium uppercase tracking-[0.1em] text-traya-forest backdrop-blur-sm">
                           {cat.products.length}{' '}
                           {cat.products.length === 1 ? labels.product : labels.products}
                         </span>
@@ -126,7 +126,7 @@ export function ProductsInteractive({
                             {cat.title}
                           </span>
                           <svg
-                            className="size-5 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 motion-reduce:transition-none"
+                            className="size-5 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 rtl:-scale-x-100 motion-reduce:transition-none"
                             viewBox="0 0 24 24"
                             fill="none"
                             stroke="currentColor"

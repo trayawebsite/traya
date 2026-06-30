@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
-import {getHomePage} from '@/sanity/lib/fetch';
+import {localeAlternates} from '@/lib/seo';
 import {Hero} from '@/components/sections/home/hero';
 import {Intro} from '@/components/sections/home/intro';
 import {Stats} from '@/components/sections/home/stats';
@@ -24,48 +24,48 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/'}
+    alternates: localeAlternates(locale, '/')
   };
 }
 
-// Home flow (Who → What → Why → Proof → Act). Content comes from Sanity
-// homePage singleton with i18n fallback for fields not yet in CMS.
+// Home flow (Who → What → Why → Proof → Act). Page COPY comes from i18n
+// (messages/*.json) so it scales to many locales; product/cert/settings DATA
+// comes from the catalogue + site-settings seams the sections fetch themselves.
 export default async function HomePage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const home = await getHomePage();
 
   return (
     <>
       <OrganizationSchema />
       <WebsiteSchema />
-      <Hero data={home?.hero} />
+      <Hero />
       <Reveal>
-        <Intro data={home?.intro} />
+        <Intro />
       </Reveal>
       <Reveal>
-        <Stats data={home?.stats} />
+        <Stats />
       </Reveal>
       <Reveal>
-        <ProductGroups data={home?.productsSection} />
+        <ProductGroups />
       </Reveal>
       <Reveal>
-        <WhyTraya data={home?.why} />
+        <WhyTraya />
       </Reveal>
       <Reveal>
-        <Testimonials data={home?.testimonialsSection} />
+        <Testimonials />
       </Reveal>
       <Reveal>
-        <CertBand data={home?.certsSection} />
+        <CertBand />
       </Reveal>
       <Reveal>
-        <HowItWorks data={home?.process} />
+        <HowItWorks />
       </Reveal>
       <Reveal>
-        <Faq data={home?.faq} />
+        <Faq />
       </Reveal>
       <Reveal>
-        <FinalCta data={home?.finalCta} />
+        <FinalCta />
       </Reveal>
     </>
   );

@@ -1,41 +1,46 @@
 'use client';
 
 import {useTranslations} from 'next-intl';
-import {Crisp} from 'crisp-sdk-web';
 import {siteConfig} from '@/lib/site-config';
 
-// Floating launcher cluster — chat bot + WhatsApp, side by side, matched 56px
-// circles. Bot opens Crisp chat (falls back to scrolling to enquiry form if
-// Crisp isn't loaded). WhatsApp opens wa.me with prefilled message.
+// Floating launcher cluster — assistant + WhatsApp, side by side, matched 56px
+// white circles. The assistant button scrolls to the enquiry form for now (the
+// in-house AI chat is a pending build). WhatsApp opens wa.me with a prefilled
+// message.
 export function FloatingActions() {
   const t = useTranslations('Header');
-  const {number, message} = siteConfig.whatsapp;
-  const waHref = number ? `https://wa.me/${number}?text=${encodeURIComponent(message)}` : null;
+  const {number} = siteConfig.whatsapp;
+  const waHref = number ? `https://wa.me/${number}?text=${encodeURIComponent(t('whatsappMessage'))}` : null;
 
   function openChat() {
-    try {
-      Crisp.chat.open();
-    } catch {
-      document.getElementById('enquiry')?.scrollIntoView({behavior: 'smooth', block: 'start'});
-    }
+    document.getElementById('enquiry')?.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
-      {/* Bot / chat (Golden Crisp style) */}
+    <div className="fixed bottom-6 end-6 z-50 flex items-center gap-3">
+      {/* Assistant — scrolls to the enquiry form for now (AI chat pending) */}
       <button
         type="button"
         onClick={openChat}
         aria-label={t('chat')}
-        className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#CAA828] shadow-lg transition-[box-shadow,transform] duration-150 ease-out hover:shadow-xl active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#CAA828] focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:transition-none"
+        className="inline-flex h-14 w-14 items-center justify-center rounded-full border-2 border-traya-clay bg-white shadow-lg transition-[box-shadow,transform] duration-150 ease-out hover:shadow-xl active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-clay focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:transition-none"
       >
         <svg
           viewBox="0 0 24 24"
-          fill="white"
-          className="bot-icon h-7 w-7"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.75"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="bot-icon h-7 w-7 text-traya-clay"
           aria-hidden="true"
         >
-          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" />
+          <path d="M12 8V4H8" />
+          <rect width="16" height="12" x="4" y="8" rx="2" />
+          <path d="M2 14h2" />
+          <path d="M20 14h2" />
+          <path d="M15 13v2" />
+          <path d="M9 13v2" />
         </svg>
       </button>
 

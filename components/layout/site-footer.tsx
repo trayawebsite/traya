@@ -96,17 +96,18 @@ export async function SiteFooter() {
               {t('actions')}
             </h2>
             <ul className="mt-5 space-y-3">
-              {siteConfig.footer.actions.map((item) => {
-                const href =
-                  item.key === 'downloadCatalogue' && s.catalogueUrl ? s.catalogueUrl : item.href;
-                return (
-                  <li key={item.key}>
-                    <Link href={href} className={linkCls}>
-                      {t(item.key)}
-                    </Link>
-                  </li>
-                );
-              })}
+              {siteConfig.footer.actions
+                .filter((item) => item.key !== 'downloadCatalogue' || s.catalogueUrl)
+                .map((item) => {
+                  const href = item.key === 'downloadCatalogue' ? s.catalogueUrl : item.href;
+                  return (
+                    <li key={item.key}>
+                      <Link href={href} className={linkCls}>
+                        {t(item.key)}
+                      </Link>
+                    </li>
+                  );
+                })}
             </ul>
           </nav>
 

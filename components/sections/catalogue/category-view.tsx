@@ -10,6 +10,7 @@ import {Download} from 'lucide-react';
 import {getCategories, type CatalogueCategory} from '@/lib/catalogue';
 import {getSiteSettings} from '@/lib/site-settings';
 import {CertMark} from '@/components/layout/cert-mark';
+import {QuoteForm} from '@/components/sections/quote-form';
 
 // Rich category template — follows the playbook's Kanegrade pattern:
 // Hero · Product grid · Sourcing story · Specs & packaging · Certs · Sibling links · CTA
@@ -93,7 +94,7 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
               }}
             />
             <div className="mt-10">
-              <a href={`?product=${encodeURIComponent(category.title)}#enquiry`} className={primaryButton}>
+              <a href="#enquiry" className={primaryButton}>
                 {t('category.enquireCta')}
               </a>
             </div>
@@ -240,7 +241,7 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                         </span>
                       </div>
                       <svg
-                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1"
+                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 rtl:-scale-x-100"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -260,23 +261,11 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
         </Reveal>
       )}
 
-      {/* 6. Closing CTA */}
+      {/* 6. Quote request form (icon form — self-contained heading + trust panel) */}
       <Reveal>
-        <section className="bg-traya-deep text-traya-cream">
+        <section id="enquiry" className="border-t border-traya-border bg-background scroll-mt-24">
           <Container className="py-section">
-            <div className="mx-auto max-w-xl text-center">
-              <h2 className="font-display text-display-sm lg:text-display">
-                {t('category.closingCta')}
-              </h2>
-              <p className="mt-4 leading-relaxed text-traya-cream/75">
-                {t('category.closingSub')}
-              </p>
-              <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                <a href={`?product=${encodeURIComponent(category.title)}#enquiry`} className={primaryButton}>
-                  {t('category.enquireCta')}
-                </a>
-              </div>
-            </div>
+            <QuoteForm productName={category.title} testimonials={s.testimonials} />
           </Container>
         </section>
       </Reveal>

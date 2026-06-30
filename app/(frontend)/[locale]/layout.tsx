@@ -14,7 +14,6 @@ import {EnquireTab} from '@/components/layout/enquire-tab';
 import {EnquirySectionWrapper} from '@/components/layout/enquiry-section-wrapper';
 import {LanguagePrompt} from '@/components/layout/language-prompt';
 import {Toaster} from '@/components/ui/sonner';
-import {CrispScript} from '@/components/layout/crisp-script';
 import '../../globals.css';
 
 // Display: Lora (calligraphic serif, warm & editorial). Headlines only.
@@ -49,7 +48,7 @@ export const metadata: Metadata = {
     template: '%s | Traya International Exim'
   },
   description:
-    'Leading Indian food ingredient exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs & nutraceuticals. FSSAI & APEDA certified. 150+ products across 18 categories. B2B wholesale supplier from India.',
+    'Leading Indian food ingredient exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs & nutraceuticals. FSSAI-licensed & APEDA-registered. 150+ products across 18 categories. B2B wholesale supplier from India.',
   keywords: [
     'Indian food exporter',
     'dehydrated onion supplier India',
@@ -58,7 +57,7 @@ export const metadata: Metadata = {
     'spray dried powder supplier',
     'food ingredient B2B',
     'Indian spice wholesale',
-    'FSSAI certified exporter',
+    'FSSAI licensed exporter',
     'APEDA registered',
     'dehydrated vegetables supplier',
     'moringa powder exporter',
@@ -69,7 +68,7 @@ export const metadata: Metadata = {
     siteName: 'Traya International Exim LLP',
     title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
     description:
-      'B2B food ingredient supplier from India. Dehydrated onions, garlic, spices, powders, herbs & more. 150+ products, FSSAI certified, global shipping.',
+      'B2B food ingredient supplier from India. Dehydrated onions, garlic, spices, powders, herbs & more. 150+ products, FSSAI-licensed, global shipping.',
     url: siteUrl,
     locale: 'en',
     images: [
@@ -84,7 +83,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
-    description: 'B2B food ingredient supplier from India. 150+ products, FSSAI certified, global shipping.'
+    description: 'B2B food ingredient supplier from India. 150+ products, FSSAI-licensed, global shipping.'
   },
   robots: {
     index: true,
@@ -154,7 +153,6 @@ export default async function LocaleLayout({
           <SiteFooter />
           <EnquireTab />
           <FloatingActions />
-          <CrispScript />
           <Toaster richColors position="top-center" />
           </EnquiryProvider>
         </NextIntlClientProvider>

@@ -14,7 +14,7 @@ export type SiteSettings = {
   socials: {linkedin: string; instagram: string};
   catalogueUrl: string;
   founderPhoto: string;
-  certifications: {key: string; name: string; file?: string; boost?: boolean}[];
+  certifications: {key: string; name: string; file?: string; boost?: boolean; issuedBy?: string; meaning?: string}[];
   testimonials: {quote: string; name: string; role: string; location?: string}[];
 };
 
@@ -87,7 +87,12 @@ async function fetchFromSanity(): Promise<SiteSettings | null> {
               file: c.image
                 ? urlForImage(c.image).url()
                 : certImageFallbacks[c.title.toLowerCase()] ?? certImageFallbacks[key],
-              boost: key === 'msme'
+              boost: key === 'msme',
+              // Carried through so a client-added cert (whose key isn't in the
+              // i18n `marks` map) still renders its Studio copy; known certs
+              // continue to render the translated i18n strings (see cert-list).
+              issuedBy: c.issuedBy,
+              meaning: c.description
             };
           })
           .filter((c) => {

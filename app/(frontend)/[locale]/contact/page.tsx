@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {localeAlternates} from '@/lib/seo';
 import {ContactInfo} from '@/components/sections/contact/contact-info';
 import {ContactForm} from '@/components/sections/contact/contact-form';
 import {Container} from '@/components/ui/container';
@@ -15,7 +16,7 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/contact'}
+    alternates: localeAlternates(locale, '/contact')
   };
 }
 
@@ -30,9 +31,7 @@ export default async function ContactPage({params}: {params: Promise<{locale: st
       <ContactInfo />
       <section id="enquiry" className="border-b border-traya-border bg-traya-surface">
         <Container className="py-section">
-          <div className="mx-auto max-w-2xl">
-            <ContactForm />
-          </div>
+          <ContactForm />
         </Container>
       </section>
     </Reveal>

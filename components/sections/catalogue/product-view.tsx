@@ -6,6 +6,7 @@ import {primaryButton} from '@/lib/button-styles';
 import {secondaryBtn} from '@/components/sections/home/styles';
 import {getRelatedProducts, type CatalogueCategory, type CatalogueProduct} from '@/lib/catalogue';
 import {getSiteSettings} from '@/lib/site-settings';
+import {AddToEnquiryButton} from '@/components/enquiry/add-to-enquiry';
 import {QuoteForm} from '@/components/sections/quote-form';
 import {ProductImages} from './product-images';
 import {ProductSchema, BreadcrumbSchema} from '@/components/seo/product-schema';
@@ -163,9 +164,12 @@ export async function ProductView({
               <p className="font-display text-lg leading-snug text-foreground">{product.name}</p>
               <p className="mt-1 text-sm text-muted-foreground">{category.title}</p>
               <div className="mt-6 flex flex-col gap-3">
-                <a href={`?product=${encodeURIComponent(product.name)}#enquiry`} className={primaryButton}>
-                  {t('detail.enquireCta')}
-                </a>
+                <AddToEnquiryButton
+                  slug={product.slug}
+                  name={product.name}
+                  category={category.title}
+                  className={primaryButton}
+                />
                 <a href={`?product=${encodeURIComponent(product.name)}#enquiry`} className={secondaryBtn}>
                   {t('detail.sampleCta')}
                 </a>
@@ -194,7 +198,7 @@ export async function ProductView({
                 href={`/categories/${category.slug}`} 
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2 group"
               >
-                {t('detail.categoryLabel')} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+                {t('detail.categoryLabel')} <ArrowRight className="size-4 transition-transform group-hover:translate-x-1 rtl:-scale-x-100" aria-hidden="true" />
               </Link>
             </div>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -207,7 +211,7 @@ export async function ProductView({
                     <div className="flex items-start justify-between gap-4">
                       <span className="font-display text-lg leading-snug text-foreground transition-colors group-hover:text-traya-red-deep">{p.name}</span>
                       <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-background border border-traya-border text-muted-foreground transition-all duration-300 group-hover:translate-x-1 group-hover:border-traya-red/20 group-hover:bg-traya-red/5 group-hover:text-traya-red-deep">
-                        <ArrowRight className="size-4" aria-hidden="true" />
+                        <ArrowRight className="size-4 rtl:-scale-x-100" aria-hidden="true" />
                       </div>
                     </div>
                   </Link>

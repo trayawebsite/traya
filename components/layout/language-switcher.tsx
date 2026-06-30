@@ -81,7 +81,7 @@ export function LanguageSwitcher() {
       {open && (
         <ul
           role="listbox"
-          className="absolute right-0 z-50 mt-1 min-w-[140px] overflow-hidden rounded-lg border border-border bg-card py-1 shadow-lg"
+          className="absolute end-0 z-50 mt-1 min-w-[140px] overflow-hidden rounded-lg border border-border bg-card py-1 shadow-lg"
         >
           {routing.locales.map((l) => {
             const config = LOCALE_CONFIG[l];

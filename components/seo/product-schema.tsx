@@ -30,21 +30,9 @@ export function ProductSchema({
       '@type': 'Country',
       name: 'India'
     },
-    offers: {
-      '@type': 'Offer',
-      url: `${siteUrl}/products/${product.slug}`,
-      priceCurrency: 'USD',
-      price: '0',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
-        description: 'Price on request. Contact for FOB/CIF pricing.'
-      },
-      availability: 'https://schema.org/InStock',
-      seller: {
-        '@type': 'Organization',
-        name: 'Traya International Exim LLP'
-      }
-    },
+    // No `offers` block: this is a quote-only (RFQ) B2B export catalogue with no
+    // listed price. A literal price:"0" reads as "Free" and is rejected by
+    // Google's Product rich-result validation — so we omit Offer entirely.
     additionalProperty: [
       ...(product.hsCode
         ? [{

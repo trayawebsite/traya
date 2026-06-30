@@ -37,7 +37,7 @@ export function CategoryProductList({
       {/* Search */}
       <div className="relative mt-8 max-w-md">
         <svg
-          className="pointer-events-none absolute left-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground/50"
+          className="pointer-events-none absolute start-3.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground/50"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -54,7 +54,7 @@ export function CategoryProductList({
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={labels.search}
-          className="w-full rounded-full border border-traya-border bg-card py-2.5 pl-10 pr-4 text-sm text-foreground shadow-xs placeholder:text-muted-foreground/50 focus:border-traya-red/30 focus:outline-none focus:ring-2 focus:ring-traya-red/10"
+          className="w-full rounded-full border border-traya-border bg-card py-2.5 ps-10 pe-4 text-sm text-foreground shadow-xs placeholder:text-muted-foreground/50 focus:border-traya-red/30 focus:outline-none focus:ring-2 focus:ring-traya-red/10"
         />
       </div>
 
@@ -107,7 +107,7 @@ export function CategoryProductList({
                         {p.name}
                       </span>
                       <svg
-                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 motion-reduce:transition-none"
+                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 rtl:-scale-x-100 motion-reduce:transition-none"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"

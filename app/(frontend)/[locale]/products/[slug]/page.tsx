@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import {notFound} from 'next/navigation';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {localeAlternates} from '@/lib/seo';
 import {routing} from '@/i18n/routing';
 import {ProductView} from '@/components/sections/catalogue/product-view';
 import {getProductBySlug, getProductSlugs} from '@/lib/catalogue';
@@ -28,7 +29,7 @@ export async function generateMetadata({
   return {
     title: t('productMeta.title', {product: found.product.name, category: found.category.title}),
     description: t('productMeta.description', {product: found.product.name, category: found.category.title}),
-    alternates: {canonical: `/products/${slug}`},
+    alternates: localeAlternates(locale, `/products/${slug}`),
     openGraph: {
       title: `${found.product.name} | Traya International Exim`,
       description: t('productMeta.ogDescription', {product: found.product.name, category: found.category.title})

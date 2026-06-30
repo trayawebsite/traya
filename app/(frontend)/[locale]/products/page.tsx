@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {localeAlternates} from '@/lib/seo';
 import {ProductsHub} from '@/components/sections/catalogue/products-hub';
 
 export async function generateMetadata({
@@ -12,7 +13,7 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/products'}
+    alternates: localeAlternates(locale, '/products')
   };
 }
 

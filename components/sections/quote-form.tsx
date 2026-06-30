@@ -1,14 +1,14 @@
 'use client';
 
-import {cloneElement, type ReactElement} from 'react';
+import {useState, cloneElement, useMemo, type ReactElement} from 'react';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {useTranslations} from 'next-intl';
 import {toast} from 'sonner';
-import {quoteSchema, type QuoteInput} from '@/lib/validations';
+import {makeQuoteSchema, type QuoteInput} from '@/lib/validations';
 import {primaryButton} from '@/lib/button-styles';
 import {TestimonialCarousel} from '@/components/ui/testimonial-carousel';
-import {User, Mail, Building2, Phone, MapPin, Package, MessageSquare} from 'lucide-react';
+import {User, Mail, Building2, Phone, MapPin, Package, MessageSquare, Check} from 'lucide-react';
 
 type Testimonial = {
   quote: string;
@@ -17,8 +17,9 @@ type Testimonial = {
   location?: string;
 };
 
-// Quote request form — wired to /api/quote. Shows animated testimonials
-// on the left for social proof. Form width stays consistent.
+// Quote request form — wired to /api/quote. Left column carries social proof
+// (testimonials) when available, else a "what to expect" trust panel so the
+// section never looks bare. Form prefills the product/category being quoted.
 export function QuoteForm({
   productName,
   productSlug,
@@ -29,6 +30,9 @@ export function QuoteForm({
   testimonials?: Testimonial[];
 }) {
   const t = useTranslations('Quote');
+  const tv = useTranslations('Validation');
+  const schema = useMemo(() => makeQuoteSchema(tv), [tv]);
+  const [submitted, setSubmitted] = useState(false);
   const {
     register,
     handleSubmit,
@@ -36,7 +40,7 @@ export function QuoteForm({
     setFocus,
     formState: {errors, isSubmitting}
   } = useForm<QuoteInput>({
-    resolver: zodResolver(quoteSchema),
+    resolver: zodResolver(schema),
     defaultValues: {
       productName: productName || '',
       productSlug: productSlug || ''
@@ -57,7 +61,7 @@ export function QuoteForm({
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
-        toast.success(t('success'));
+        setSubmitted(true);
         reset();
       } else if (res.status === 429) {
         toast.error(t('rateLimited'));
@@ -69,26 +73,44 @@ export function QuoteForm({
     }
   }
 
+  // Inline confirmation — a B2B buyer who just submitted wants a clear receipt,
+  // not a toast that vanishes.
+  if (submitted) {
+    return (
+      <div className="mx-auto max-w-2xl rounded-2xl border border-traya-border bg-card px-6 py-12 text-center shadow-sm sm:px-8">
+        <div className="mx-auto mb-5 flex size-14 items-center justify-center rounded-full bg-traya-forest/10 text-traya-forest">
+          <Check className="size-7" aria-hidden="true" />
+        </div>
+        <h3 className="font-display text-display-sm text-foreground">{t('successHeading')}</h3>
+        <p className="mt-3 leading-relaxed text-muted-foreground">{t('successBody')}</p>
+      </div>
+    );
+  }
+
   const hasTestimonials = testimonials.length > 0;
 
   return (
-    <div className={`mx-auto grid items-start gap-12 ${hasTestimonials ? 'max-w-5xl lg:grid-cols-[minmax(0,1.2fr)_2.5fr] lg:gap-24' : 'max-w-2xl'}`}>
-      {/* Left — animated testimonials (hidden on mobile, shrinks on desktop) */}
-      {hasTestimonials && (
-        <div className="hidden lg:block lg:sticky lg:top-24">
-          <TestimonialCarousel testimonials={testimonials} />
-        </div>
-      )}
+    <div className="mx-auto grid max-w-5xl items-start gap-12 lg:grid-cols-[minmax(0,1fr)_1.6fr] lg:gap-16">
+      {/* Left — social proof if we have it, else a "what to expect" trust panel */}
+      <div className="hidden lg:block lg:sticky lg:top-24">
+        {hasTestimonials ? <TestimonialCarousel testimonials={testimonials} /> : <QuoteTrust />}
+      </div>
 
-      {/* Right — form (consistent width, max constrained) */}
+      {/* Right — form */}
       <form
         onSubmit={handleSubmit(onSubmit, onInvalid)}
         noValidate
         className="max-w-2xl rounded-2xl border border-traya-border bg-card px-5 py-6 shadow-sm sm:px-6 sm:py-8"
       >
+        {productName && (
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-traya-border bg-traya-surface px-3.5 py-1.5 text-xs font-medium text-foreground/80">
+            <Package className="size-3.5 text-traya-saffron-lo" aria-hidden="true" />
+            {t('quotingFor')} <span className="font-semibold text-foreground">{productName}</span>
+          </div>
+        )}
         <p className="text-sm font-medium text-traya-red-deep">{t('eyebrow')}</p>
         <h2 className="mt-3 font-display text-display-sm text-foreground">
-          {t('heading')}
+          {productName ? t('headingFor', {name: productName}) : t('heading')}
         </h2>
         <p className="mt-3 leading-relaxed text-muted-foreground">{t('sub')}</p>
 
@@ -143,16 +165,42 @@ export function QuoteForm({
           </div>
         </div>
 
-        <div className="mt-7 flex justify-end">
+        <div className="mt-7 flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-xs leading-relaxed text-muted-foreground">{t('reassurance')}</p>
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`${primaryButton} disabled:cursor-not-allowed disabled:opacity-60`}
+            className={`${primaryButton} shrink-0 disabled:cursor-not-allowed disabled:opacity-60`}
           >
             {isSubmitting ? t('sending') : t('submit')}
           </button>
         </div>
       </form>
+    </div>
+  );
+}
+
+// Default left column when there are no testimonials yet — tells the buyer what
+// they get and that it's no-obligation, so the section reads as complete.
+function QuoteTrust() {
+  const t = useTranslations('Quote');
+  const includes = ['pricing', 'moq', 'packaging', 'leadTime', 'docs'] as const;
+  return (
+    <div className="rounded-2xl border border-traya-border bg-traya-surface p-6 sm:p-7">
+      <p className="section-label">{t('trust.eyebrow')}</p>
+      <h3 className="mt-3 font-display text-xl leading-snug text-foreground">{t('trust.heading')}</h3>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{t('trust.sub')}</p>
+      <ul className="mt-6 space-y-3">
+        {includes.map((k) => (
+          <li key={k} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/85">
+            <Check className="mt-0.5 size-4 shrink-0 text-traya-forest" aria-hidden="true" />
+            {t(`trust.${k}`)}
+          </li>
+        ))}
+      </ul>
+      <p className="mt-6 border-t border-traya-border pt-4 text-xs leading-relaxed text-muted-foreground">
+        {t('trust.note')}
+      </p>
     </div>
   );
 }
@@ -186,7 +234,7 @@ function Field({
       </label>
       <div className="relative">
         {icon && (
-          <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3.5 text-muted-foreground/60">
+          <div className="pointer-events-none absolute inset-y-0 start-0 flex items-center ps-3.5 text-muted-foreground/60">
             {icon}
           </div>
         )}
@@ -194,7 +242,7 @@ function Field({
           'aria-required': required ? true : undefined,
           'aria-invalid': error ? true : undefined,
           'aria-describedby': errorId,
-          className: `${children.props.className || ''} ${icon ? 'pl-10' : ''}`
+          className: `${children.props.className || ''} ${icon ? 'ps-10' : ''}`
         })}
       </div>
       {error && (

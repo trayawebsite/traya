@@ -68,7 +68,7 @@ export async function ProductGroups({data}: {data?: ProductsData}) {
                   className="pointer-events-none absolute inset-0 bg-linear-to-t from-traya-deep/85 via-traya-deep/20 to-transparent"
                 />
                 {g === FEATURED && (
-                  <span className="absolute left-4 top-4 z-10">
+                  <span className="absolute start-4 top-4 z-10">
                     <Badge>{t('badgePremium')}</Badge>
                   </span>
                 )}
@@ -76,7 +76,7 @@ export async function ProductGroups({data}: {data?: ProductsData}) {
                   <span className="block font-display text-xl text-traya-cream">{t(g)}</span>
                   <span
                     aria-hidden
-                    className="mt-2 block h-0.5 w-10 origin-left scale-x-0 bg-traya-saffron transition-transform duration-300 ease-expo group-hover:scale-x-100 motion-reduce:transition-none"
+                    className="mt-2 block h-0.5 w-10 origin-left rtl:origin-right scale-x-0 bg-traya-saffron transition-transform duration-300 ease-expo group-hover:scale-x-100 motion-reduce:transition-none"
                   />
                   <span className="mt-2 block text-sm leading-snug text-traya-cream/75 line-clamp-2">
                     {t(`${g}Blurb`)}

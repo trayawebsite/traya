@@ -1,5 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
+import {localeAlternates} from '@/lib/seo';
 import {EnquiryListView} from '@/components/sections/enquiry-list';
 
 export async function generateMetadata({
@@ -12,7 +13,9 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/enquiry'}
+    alternates: localeAlternates(locale, '/enquiry'),
+    // Thin client-side RFQ utility page — keep it out of the index.
+    robots: {index: false, follow: true}
   };
 }
 

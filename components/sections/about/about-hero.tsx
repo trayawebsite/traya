@@ -41,7 +41,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
               alt="Container ships and cranes at an international shipping port"
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"
-              className="aspect-4/5 w-full rounded-2xl lg:rounded-l-2xl lg:rounded-r-none"
+              className="aspect-4/5 w-full rounded-2xl lg:rounded-s-2xl lg:rounded-e-none"
             />
           </div>
         </div>

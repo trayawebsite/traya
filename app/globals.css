@@ -70,7 +70,7 @@
   --popover:               var(--traya-card);
   --popover-foreground:    var(--traya-ink);
   --primary:               var(--traya-red);       /* primary button: vermilion */
-  --primary-foreground:    #FFFFFF;                 /* white text on red (~6:1) */
+  --primary-foreground:    #FFFFFF;                 /* white text on vermilion (~6:1) */
   --secondary:             var(--traya-surface);
   --secondary-foreground:  var(--traya-ink);
   --muted:                 var(--traya-surface);
@@ -226,42 +226,10 @@
   }
 }
 
-/* WhatsApp launcher — a smooth, rotation-only "wave" every ~5s, applied to the
-   ICON only (the green-bordered circle frame stays static). No scaling. The
-   icon rests ~72% of the cycle, then a damped pendulum swing settles to rest.
-   ease-in-out = slow at the extremes, fast through centre (real pendulum). */
-@keyframes wa-swing {
-  0%, 72%, 100% { transform: rotate(0deg); }
-  78%           { transform: rotate(10deg); }
-  84%           { transform: rotate(-8deg); }
-  89%           { transform: rotate(5deg); }
-  94%           { transform: rotate(-3deg); }
-  97%           { transform: rotate(1deg); }
-}
-.wa-icon {
-  transform-origin: center;
-  animation: wa-swing 5s ease-in-out infinite;
-}
-
-/* Bot idle — a gentle bob + head-tilt, placed in the EARLY part of the cycle so
-   it never moves in unison with the WhatsApp swing (which lives at 72-100%).
-   Shares the 5s period, so the two read as a choreographed call-and-response. */
-@keyframes bot-idle {
-  0%   { transform: translateY(0)     rotate(0deg); }
-  5%   { transform: translateY(-1.5px) rotate(-8deg); }
-  11%  { transform: translateY(0)     rotate(6deg); }
-  17%  { transform: translateY(-1px)  rotate(-4deg); }
-  22%  { transform: translateY(0)     rotate(2deg); }
-  27%, 100% { transform: translateY(0) rotate(0deg); }
-}
-.bot-icon {
-  transform-origin: center;
-  animation: bot-idle 5s ease-in-out infinite;
-}
-@media (prefers-reduced-motion: reduce) {
-  .wa-icon,
-  .bot-icon { animation: none; }
-}
+/* Floating launcher icons (WhatsApp + chat) sit STILL — restraint = premium.
+   Idle animation on fixed UI reads as "look at me"; interaction feedback comes
+   from the buttons' hover/active states instead. (.wa-icon / .bot-icon remain
+   as element hooks for sizing; no motion attached.) */
 
 /* Hero background image carousel — pure CSS crossfade, no JS.
    10 images × 3.5s = 35s total cycle. Each image fades in, holds, fades out.
@@ -299,29 +267,22 @@
   .marquee-track { animation: none; }
 }
 
-/* Soft drifting glow on the closing CTA band — a gentle living gradient. */
-@keyframes glow-drift {
-  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
-  50%      { transform: translate3d(-2.5rem, 1.5rem, 0) scale(1.15); }
-}
-.glow-drift {
-  animation: glow-drift 16s ease-in-out infinite;
-  will-change: transform;
-}
-@media (prefers-reduced-motion: reduce) {
-  .glow-drift { animation: none; }
-}
+/* Soft glow on the closing CTA band — now STATIC (no drift). The glow itself is
+   the element's blurred radial background (see final-cta); .glow-drift is left
+   inert so the markup needn't change. Restraint = premium: no constant ambient
+   motion competing with the marquee. */
 
-/* Scroll-reveal entrance signature — the site's one motion signature: a fade +
-   24px rise, played once when JS toggles [data-shown] on intersection (see
-   components/ui/reveal.tsx). Static under reduced-motion; the <noscript>
-   override in the layout keeps content visible with no JS. */
+/* Scroll-reveal entrance signature — the site's one motion signature, kept
+   QUIET: a soft fade + 8px rise (~500ms), played once when JS toggles
+   [data-shown] on intersection (see components/ui/reveal.tsx). Subtle on purpose
+   so repeated per-section reveals read as a settle, not a slideshow. Static
+   under reduced-motion; the <noscript> override keeps content visible with no JS. */
 [data-reveal] {
   opacity: 0;
-  transform: translateY(24px);
+  transform: translateY(8px);
   transition:
-    opacity var(--duration-slow) var(--ease-expo),
-    transform var(--duration-slow) var(--ease-expo);
+    opacity 500ms var(--ease-expo),
+    transform 500ms var(--ease-expo);
 }
 [data-reveal][data-shown] {
   opacity: 1;
@@ -400,7 +361,7 @@
      `.on-dark` on the deep band. The fill must match the local background. */
   .btn-ring {
     /* Soft vermilion blush fill — same colour family as the glow border, so the
-       pill reads as a warm echo of the solid-red primary (no gold/border clash)
+       pill reads as a warm echo of the solid-vermilion primary (no gold/border clash)
        and still has presence on the ivory page. */
     --btn-ring-fill: color-mix(in srgb, var(--traya-red) 5%, var(--card));
     border: 1px solid transparent;

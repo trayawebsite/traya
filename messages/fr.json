@@ -1,4 +1,10 @@
 {
+  "Error": {
+    "eyebrow": "Une erreur s'est produite",
+    "heading": "Un incident est survenu.",
+    "body": "La page n'a pas pu être chargée. Veuillez réessayer ou nous contacter directement si le problème persiste.",
+    "retry": "Réessayer"
+  },
   "Links": {
     "home": "Accueil",
     "about": "À propos",
@@ -20,6 +26,7 @@
     "chat": "Discuter avec nous",
     "enquireNow": "Renseignez-vous maintenant",
     "topNote": "Exportations multi-sectorielles depuis l'Inde",
+    "whatsappMessage": "Bonjour Traya International Exim, je souhaite me renseigner sur vos exportations d'ingrédients alimentaires.\n\nProduit(s) : \nQuantité / qualité : \nPays de destination : \nEntreprise : ",
     "siteLabel": "Traya International Exim — accueil",
     "menuAria": "Menu",
     "navAria": "Mobile",
@@ -99,6 +106,11 @@
       "description": "Examinez et soumettez votre demande produit. Partagez les spécifications, la quantité, la destination et le calendrier afin que notre équipe puisse répondre avec les détails appropriés."
     }
   },
+  "Validation": {
+    "name": "Veuillez saisir votre nom",
+    "email": "Veuillez saisir une adresse e-mail valide",
+    "message": "Veuillez ajouter quelques détails supplémentaires"
+  },
   "Language": {
     "label": "Langue",
     "en": "English",
@@ -124,7 +136,23 @@
     "sending": "Envoi en cours...",
     "success": "Merci. Votre demande de devis a été envoyée. Nous vous répondrons avec les détails sous peu.",
     "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par e-mail.",
-    "rateLimited": "Vous avez atteint la limite quotidienne. Veuillez nous envoyer un e-mail ou un message sur WhatsApp."
+    "rateLimited": "Vous avez atteint la limite quotidienne. Veuillez nous envoyer un e-mail ou un message sur WhatsApp.",
+    "quotingFor": "Devis pour",
+    "headingFor": "Obtenez un prix pour {name}.",
+    "reassurance": "Réponse généralement sous 1 jour ouvré · Sans engagement.",
+    "successHeading": "Demande reçue.",
+    "successBody": "Merci. Notre équipe examinera votre demande et répondra avec le prix, la quantité minimale, l'emballage et les délais — généralement sous un jour ouvré.",
+    "trust": {
+      "eyebrow": "À quoi s'attendre",
+      "heading": "Un devis clair et complet.",
+      "sub": "Partagez votre besoin et notre service commercial prépare un devis sur mesure.",
+      "pricing": "Prix FOB / CIF pour votre destination",
+      "moq": "Quantité minimale de commande et qualités disponibles",
+      "packaging": "Options d'emballage et de marque blanche",
+      "leadTime": "Délais de production et d'expédition",
+      "docs": "Spécifications, COA et documents d'exportation",
+      "note": "Sans engagement. Vos informations vont uniquement à notre service commercial."
+    }
   },
   "Home": {
     "meta": {
@@ -329,7 +357,13 @@
       "sending": "Envoi en cours...",
       "success": "Merci. Votre message a été envoyé. Nous vous contacterons sous peu.",
       "error": "Une erreur s'est produite. Veuillez réessayer ou nous contacter directement par e-mail.",
-      "rateLimited": "Vous avez atteint la limite quotidienne. Veuillez nous envoyer un e-mail ou un message sur WhatsApp."
+      "rateLimited": "Vous avez atteint la limite quotidienne. Veuillez nous envoyer un e-mail ou un message sur WhatsApp.",
+      "point1": "Nous répondons sous un jour ouvré",
+      "point2": "Approvisionnement, échantillons, prix et documents — demandez-nous tout",
+      "point3": "Une ligne directe avec notre service commercial",
+      "reassurance": "Réponse généralement sous 1 jour ouvré · Sans engagement.",
+      "successHeading": "Message envoyé.",
+      "successBody": "Merci. Notre équipe examinera votre message et vous recontactera — généralement sous un jour ouvré."
     }
   },
   "Certifications": {
@@ -509,5 +543,53 @@
     "description": "La page que vous recherchez n'existe pas ou a peut-être été déplacée. Remettons-vous sur la bonne voie.",
     "back": "Retour à l'accueil",
     "popular": "Ou dirigez-vous vers l'une de celles-ci"
+  },
+  "Legal": {
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "description": "Comment nous traitons et protégeons vos données.",
+      "lastUpdated": "Dernière mise à jour : juin 2026",
+      "sections": {
+        "dataCollection": {
+          "title": "1. Informations que nous collectons",
+          "content": "Nous collectons les informations que vous nous fournissez directement lorsque vous demandez un devis, ajoutez des produits à une liste de demande ou nous contactez. Cela comprend généralement votre nom, votre adresse e-mail, votre numéro de téléphone, les coordonnées de votre entreprise et les besoins produit ou le message que vous choisissez de partager."
+        },
+        "dataUsage": {
+          "title": "2. Utilisation de vos données",
+          "content": "Nous utilisons les informations collectées pour répondre à vos demandes, préparer et envoyer des devis, et traiter vos demandes d'exportation B2B. Vos envois nous parviennent par e-mail (via Resend) et sont enregistrés dans une feuille de calcul Google sécurisée afin d'en assurer le suivi. Nous ne vendons pas vos données personnelles."
+        },
+        "cookies": {
+          "title": "3. Cookies et suivi",
+          "content": "Notre site utilise les cookies essentiels nécessaires à son fonctionnement. Nous utilisons également un outil de chat en direct tiers (Crisp), qui peut déposer ses propres cookies pour assurer les conversations ; nous n'utilisons aucun traceur publicitaire ni analytique. Vous pouvez configurer votre navigateur pour refuser les cookies, mais certaines fonctionnalités, comme le chat en direct, pourraient alors cesser de fonctionner."
+        },
+        "contact": {
+          "title": "4. Nous contacter",
+          "content": "Pour toute question concernant cette politique de confidentialité, veuillez nous contacter à l'adresse info@trayaexim.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Conditions générales",
+      "description": "Conditions de service et de commerce.",
+      "lastUpdated": "Dernière mise à jour : juin 2026",
+      "sections": {
+        "general": {
+          "title": "1. Conditions générales",
+          "content": "En accédant à ce site web et en l'utilisant, vous acceptez d'être lié par les conditions et dispositions du présent accord. Toute utilisation de ce service vaut acceptation du présent accord."
+        },
+        "orders": {
+          "title": "2. Devis et commandes",
+          "content": "Tous les devis fournis via ce site web sont soumis à confirmation finale et peuvent évoluer en fonction des conditions du marché, de la disponibilité des matières premières et de la logistique d'expédition."
+        },
+        "shipping": {
+          "title": "3. Expédition et livraison",
+          "content": "Les délais de livraison sont des estimations et commencent à la date d'expédition, et non à la date de commande. Nous ne sommes pas responsables des retards causés par les procédures de dédouanement."
+        },
+        "liability": {
+          "title": "4. Limitation de responsabilité",
+          "content": "Traya International Exim ne saurait être tenue responsable des dommages spéciaux ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser les éléments de ce site ou de la performance des produits."
+        }
+      }
+    }
   }
 }

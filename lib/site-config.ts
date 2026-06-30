@@ -35,16 +35,19 @@ export const siteConfig = {
       {key: 'certifications', href: '/certifications'},
       {key: 'contact', href: '/contact'}
     ] as NavItem[],
-    // Conversion column. Repoint sample/quote → /enquiry once the RFQ page exists.
+    // Conversion column. Sample/quote route to the cart-style Enquiry List (RFQ).
+    // downloadCatalogue is only rendered when a catalogue file is configured
+    // (site-settings.catalogueUrl) — the footer filters it out otherwise, so the
+    // '#' here is never shipped as a live link.
     actions: [
-      {key: 'requestSample', href: '/contact'},
-      {key: 'requestQuote', href: '/contact'},
+      {key: 'requestSample', href: '/enquiry'},
+      {key: 'requestQuote', href: '/enquiry'},
       {key: 'downloadCatalogue', href: '#'}
     ] as NavItem[],
-    // Bottom-bar legal. Anchors until /privacy + /terms are built (no 404s).
+    // Bottom-bar legal.
     legal: [
-      {key: 'privacy', href: '#'},
-      {key: 'terms', href: '#'}
+      {key: 'privacy', href: '/privacy'},
+      {key: 'terms', href: '/terms'}
     ] as NavItem[]
   },
 
@@ -55,13 +58,11 @@ export const siteConfig = {
   ],
 
   // WhatsApp — number from env (NEXT_PUBLIC_WHATSAPP_NUMBER), digits only,
-  // with the business line as the default. The prefilled message primes the
-  // buyer to include what we need to respond fast (product, quantity, market).
+  // with the business line as the default. The prefilled message is localized
+  // per-locale via i18n (`Header.whatsappMessage`), not stored here.
   whatsapp: {
     // `||` (not `??`) so an empty env value in production also falls back to the
     // real number — the button must never disappear from a misconfigured var.
-    number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919972422424',
-    message:
-      'Hello Traya International Exim, I would like to enquire about your food-ingredient exports.\n\nProduct(s): \nQuantity / grade: \nDestination country: \nCompany: '
+    number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919998916679'
   }
 } as const;

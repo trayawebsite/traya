@@ -96,7 +96,7 @@ export async function TopBar() {
 
   const wa = siteConfig.whatsapp.number;
   const waHref = wa
-    ? `https://wa.me/${wa}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`
+    ? `https://wa.me/${wa}?text=${encodeURIComponent(th('whatsappMessage'))}`
     : null;
 
   const divider = <span aria-hidden className="h-3 w-px bg-traya-cream/20" />;

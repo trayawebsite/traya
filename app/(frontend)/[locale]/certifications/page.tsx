@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
-import {getHomePage} from '@/sanity/lib/fetch';
+import {localeAlternates} from '@/lib/seo';
 import {CertHero} from '@/components/sections/certifications/cert-hero';
 import {WhyTrust} from '@/components/sections/certifications/why-trust';
 import {CertList} from '@/components/sections/certifications/cert-list';
@@ -17,7 +17,7 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/certifications'}
+    alternates: localeAlternates(locale, '/certifications')
   };
 }
 
@@ -28,11 +28,10 @@ export default async function CertificationsPage({
 }) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const home = await getHomePage();
 
   return (
     <>
-      <CertHero data={home?.certsSection} />
+      <CertHero />
       <Reveal>
         <CertList />
       </Reveal>

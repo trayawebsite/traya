@@ -8,9 +8,15 @@ import {EnquirySection} from '@/components/sections/enquiry-section';
 export function EnquirySectionWrapper({founderPhoto}: {founderPhoto: string}) {
   const pathname = usePathname();
 
-  // Only hide on pages that have their own dedicated forms (like product pages with QuoteForm)
+  // Hide only on pages that ship their OWN #enquiry form: the listed pages, and
+  // product DETAIL + category pages (which embed QuoteForm). NOTE the trailing
+  // slash — `/products/` matches detail pages only, NOT the `/products` hub, so
+  // the hub keeps the global enquiry section and its #enquiry anchor stays live.
   const hideOnPaths = ['/contact', '/about', '/enquiry'];
-  const shouldHide = hideOnPaths.some((p) => pathname.endsWith(p)) || pathname.includes('/products');
+  const shouldHide =
+    hideOnPaths.some((p) => pathname.endsWith(p)) ||
+    pathname.includes('/products/') ||
+    pathname.includes('/categories/');
 
   if (shouldHide) return null;
 

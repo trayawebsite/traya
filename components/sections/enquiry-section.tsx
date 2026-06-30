@@ -1,20 +1,19 @@
 'use client';
 
-import {useState, useEffect, cloneElement, type ReactElement} from 'react';
+import {useState, useEffect, useMemo, cloneElement, type ReactElement} from 'react';
 import Image from 'next/image';
 import {z} from 'zod';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {useTranslations} from 'next-intl';
 import {toast} from 'sonner';
-import {inquirySchema} from '@/lib/validations';
+import {makeInquirySchema, type InquiryInput} from '@/lib/validations';
 import {Container} from '@/components/ui/container';
 import {primaryButton} from '@/lib/button-styles';
 
 // Shipment isn't on the API schema, so extend locally; it's folded into the
 // message before POSTing to /api/inquiry.
-const formSchema = inquirySchema.extend({shipment: z.string().optional()});
-type FormValues = z.infer<typeof formSchema>;
+type FormValues = InquiryInput & {shipment?: string};
 
 // Pre-footer enquiry section (site-wide). Light ivory band + lifted white form
 // card → strong contrast against the dark footer below. Vermilion only on the
@@ -22,7 +21,12 @@ type FormValues = z.infer<typeof formSchema>;
 // limit all already behind it). Real <label>s, not placeholder-as-label.
 export function EnquirySection({founderPhoto}: {founderPhoto: string}) {
   const t = useTranslations('Enquiry');
+  const tv = useTranslations('Validation');
   const shipmentModes = t('shipmentModes').split(' · ');
+  const formSchema = useMemo(
+    () => makeInquirySchema(tv).extend({shipment: z.string().optional()}),
+    [tv]
+  );
   const {
     register,
     handleSubmit,

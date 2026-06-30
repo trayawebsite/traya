@@ -1,6 +1,6 @@
 'use client';
 
-import {useState, cloneElement, type ReactElement} from 'react';
+import {useState, useMemo, cloneElement, type ReactElement} from 'react';
 import {z} from 'zod';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
@@ -13,19 +13,30 @@ import {toast} from 'sonner';
 
 // Local schema for the enquiry-list form fields. productName and message are
 // constructed from the cart items before POSTing, so they aren't form inputs.
-const formSchema = z.object({
-  name: z.string().min(2, 'Please enter your name').max(100),
-  email: z.string().email('Please enter a valid email'),
-  company: z.string().max(150).optional().or(z.literal('')),
-  phone: z.string().max(30).optional().or(z.literal('')),
-  notes: z.string().max(2000).optional().or(z.literal(''))
-});
-type FormValues = z.infer<typeof formSchema>;
+type FormValues = {
+  name: string;
+  email: string;
+  company?: string;
+  phone?: string;
+  notes?: string;
+};
 
 export function EnquiryListView() {
   const t = useTranslations('Enquiry.list');
+  const tv = useTranslations('Validation');
   const {items, remove, clear} = useEnquiry();
   const [submitted, setSubmitted] = useState(false);
+  const formSchema = useMemo(
+    () =>
+      z.object({
+        name: z.string().min(2, tv('name')).max(100),
+        email: z.string().email(tv('email')),
+        company: z.string().max(150).optional().or(z.literal('')),
+        phone: z.string().max(30).optional().or(z.literal('')),
+        notes: z.string().max(2000).optional().or(z.literal(''))
+      }),
+    [tv]
+  );
   const {
     register,
     handleSubmit,

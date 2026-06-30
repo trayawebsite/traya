@@ -25,34 +25,45 @@ export async function CertList() {
         </div>
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {s.certifications.map((c, i) => (
-            <li
-              key={`${c.name}-${i}`}
-              data-stagger
-              className="flex flex-col rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
-            >
-              <div className="flex items-start gap-4">
-                <span className="inline-flex h-16 w-20 shrink-0 items-center justify-center rounded-xl border border-traya-border bg-white px-3">
-                  <CertMark name={c.name} src={c.file} boost={c.boost} />
-                </span>
-                <div className="min-w-0">
-                  <h3 className="font-display text-lg leading-tight text-foreground">{c.name}</h3>
-                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                    {td(`marks.${c.key}.issuedBy`)}
-                  </p>
+          {s.certifications.map((c, i) => {
+            // Prefer translated i18n copy for the known certs (so ar/fr stay
+            // localized); fall back to the CMS-provided values for any
+            // client-added cert whose key isn't in the `marks` map.
+            const issuedBy = td.has(`marks.${c.key}.issuedBy`)
+              ? td(`marks.${c.key}.issuedBy`)
+              : c.issuedBy;
+            const meaning = td.has(`marks.${c.key}.meaning`)
+              ? td(`marks.${c.key}.meaning`)
+              : c.meaning;
+            return (
+              <li
+                key={`${c.name}-${i}`}
+                data-stagger
+                className="flex flex-col rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+              >
+                <div className="flex items-start gap-4">
+                  <span className="inline-flex h-16 w-20 shrink-0 items-center justify-center rounded-xl border border-traya-border bg-white px-3">
+                    <CertMark name={c.name} src={c.file} boost={c.boost} />
+                  </span>
+                  <div className="min-w-0">
+                    <h3 className="font-display text-lg leading-tight text-foreground">{c.name}</h3>
+                    {issuedBy && (
+                      <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{issuedBy}</p>
+                    )}
+                  </div>
                 </div>
-              </div>
 
-              <div className="mt-5 flex-1 rounded-xl bg-traya-forest/5 p-4">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-traya-forest">
-                  {t('meaningLabel')}
-                </p>
-                <p className="mt-1.5 text-sm leading-relaxed text-foreground/85">
-                  {td(`marks.${c.key}.meaning`)}
-                </p>
-              </div>
-            </li>
-          ))}
+                {meaning && (
+                  <div className="mt-5 flex-1 rounded-xl bg-traya-forest/5 p-4">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-traya-forest">
+                      {t('meaningLabel')}
+                    </p>
+                    <p className="mt-1.5 text-sm leading-relaxed text-foreground/85">{meaning}</p>
+                  </div>
+                )}
+              </li>
+            );
+          })}
         </ul>
 
         <p className="mt-8 max-w-3xl text-xs leading-relaxed text-muted-foreground">{td('disclaimer')}</p>

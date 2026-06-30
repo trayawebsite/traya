@@ -66,7 +66,7 @@ export function LanguagePrompt() {
       <button
         onClick={dismiss}
         aria-label={suggested === 'ar' ? 'إغلاق' : suggested === 'fr' ? 'Fermer' : 'Dismiss'}
-        className="ml-1 rounded-md p-1 text-traya-cream/60 transition-colors hover:text-traya-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-cream"
+        className="ms-1 rounded-md p-1 text-traya-cream/60 transition-colors hover:text-traya-cream focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-cream"
       >
         <svg className="size-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <line x1="18" y1="6" x2="6" y2="18" />

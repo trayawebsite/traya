@@ -47,11 +47,12 @@ const linkCls =
 
 export async function ContactInfo() {
   const t = await getTranslations('Contact');
+  const th = await getTranslations('Header');
   const s = await getSiteSettings();
 
   const wa = siteConfig.whatsapp.number;
   const waHref = wa
-    ? `https://wa.me/${wa}?text=${encodeURIComponent(siteConfig.whatsapp.message)}`
+    ? `https://wa.me/${wa}?text=${encodeURIComponent(th('whatsappMessage'))}`
     : null;
 
   const socialUrl: Record<string, string> = {

@@ -50,7 +50,7 @@ export async function CertBand({data}: {data?: CertsData}) {
             <li
               key={i}
               aria-hidden={i >= s.certifications.length}
-              className="mr-5 flex w-44 shrink-0 flex-col items-center justify-center gap-4 rounded-2xl border border-traya-border bg-card px-6 py-6 shadow-sm"
+              className="me-5 flex w-44 shrink-0 flex-col items-center justify-center gap-4 rounded-2xl border border-traya-border bg-card px-6 py-6 shadow-sm"
             >
               <span className="flex h-12 items-center justify-center">
                 <CertMark name={c.name} src={c.file} boost={c.boost} />

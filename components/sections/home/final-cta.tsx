@@ -11,9 +11,10 @@ type FinalCtaData = HomePage['finalCta'];
 // Uses Sanity data when available, falls back to i18n.
 export async function FinalCta({data}: {data?: FinalCtaData}) {
   const t = await getTranslations('Home.finalCta');
-  const {number, message} = siteConfig.whatsapp;
+  const th = await getTranslations('Header');
+  const {number} = siteConfig.whatsapp;
   const waHref = number
-    ? `https://wa.me/${number}?text=${encodeURIComponent(message)}`
+    ? `https://wa.me/${number}?text=${encodeURIComponent(th('whatsappMessage'))}`
     : null;
 
   const heading = data?.heading || t('heading');
@@ -23,10 +24,10 @@ export async function FinalCta({data}: {data?: FinalCtaData}) {
 
   return (
     <section className="relative isolate overflow-hidden bg-traya-deep text-traya-cream">
-      {/* Vermilion glow — half visible from the right */}
+      {/* Soft drifting vermilion glow */}
       <div
         aria-hidden
-        className="pointer-events-none absolute right-0 top-1/2 h-64 w-80 -translate-y-1/2 translate-x-1/2 rounded-full bg-traya-red/25 blur-xl"
+        className="glow-drift pointer-events-none absolute top-1/4 right-[-8rem] size-128 rounded-full bg-traya-red/25 blur-3xl"
       />
       <Container className="relative z-10 py-section">
         <div className="mx-auto max-w-xl text-center">

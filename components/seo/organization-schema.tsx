@@ -12,8 +12,7 @@ export async function OrganizationSchema() {
     name: 'Traya International Exim LLP',
     url: siteUrl,
     logo: `${siteUrl}/logo.png`,
-    description: 'Indian food ingredient exporter specializing in dehydrated products, spices, spray-dried powders, herbs & nutraceuticals. FSSAI & APEDA certified B2B supplier.',
-    foundingDate: '2024',
+    description: 'Indian food ingredient exporter specializing in dehydrated products, spices, spray-dried powders, herbs & nutraceuticals. FSSAI-licensed and APEDA-registered B2B supplier.',
     founder: {
       '@type': 'Person',
       name: 'Neha Pardeshi',
@@ -39,15 +38,8 @@ export async function OrganizationSchema() {
       s.socials.linkedin,
       s.socials.instagram
     ].filter(Boolean),
-    areaServed: [
-      {'@type': 'Country', name: 'United Arab Emirates'},
-      {'@type': 'Country', name: 'Saudi Arabia'},
-      {'@type': 'Country', name: 'Nigeria'},
-      {'@type': 'Country', name: 'Kenya'},
-      {'@type': 'Country', name: 'Germany'},
-      {'@type': 'Country', name: 'United Kingdom'},
-      {'@type': 'Country', name: 'United States'}
-    ],
+    // `areaServed` intentionally omitted: no specific export-country list is
+    // client-confirmed yet (honesty rule — do not assert unverified geography).
     knowsAbout: [
       'Dehydrated onions',
       'Dehydrated garlic',
@@ -75,22 +67,17 @@ export async function OrganizationSchema() {
   );
 }
 
-// Website structured data with search action
+// Website structured data.
+// NOTE: no `potentialAction`/SearchAction — the products hub filters client-side
+// and has no `?q=` URL entry point, so declaring a sitelinks searchbox would be
+// invalid. Re-add once the catalogue search reads a `q` query param.
 export function WebsiteSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
     name: 'Traya International Exim LLP',
     url: siteUrl,
-    description: 'Indian food ingredient exporter. Dehydrated products, spices, powders, herbs & more.',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${siteUrl}/products?q={search_term_string}`
-      },
-      'query-input': 'required name=search_term_string'
-    }
+    description: 'Indian food ingredient exporter. Dehydrated products, spices, powders, herbs & more.'
   };
 
   return (

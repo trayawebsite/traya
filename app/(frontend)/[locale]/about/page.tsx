@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
-import {getAboutPage} from '@/sanity/lib/fetch';
+import {localeAlternates} from '@/lib/seo';
 import {AboutHero} from '@/components/sections/about/about-hero';
 import {FounderLetter} from '@/components/sections/about/founder-letter';
 import {WhyAbout} from '@/components/sections/about/why-about';
@@ -19,34 +19,31 @@ export async function generateMetadata({
   return {
     title: t('title'),
     description: t('description'),
-    alternates: {canonical: '/about'}
+    alternates: localeAlternates(locale, '/about')
   };
 }
 
-// About page — content from Sanity aboutPage singleton with i18n fallback.
+// About page — COPY from i18n (messages/*.json) so it scales to many locales.
 export default async function AboutPage({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   setRequestLocale(locale);
-  const about = await getAboutPage();
 
   return (
     <>
-      <AboutHero data={about} />
+      <AboutHero />
       <Reveal>
-        <FounderLetter data={about?.founder} />
+        <FounderLetter />
       </Reveal>
       <Reveal>
-        <WhyAbout data={about?.whyTraya} />
+        <WhyAbout />
       </Reveal>
       <Reveal>
-        <VisionMission data={about} />
+        <VisionMission />
       </Reveal>
       <Reveal>
         <section id="enquiry" className="border-b border-traya-border bg-traya-surface">
           <Container className="py-section">
-            <div className="mx-auto max-w-2xl">
-              <ContactForm />
-            </div>
+            <ContactForm />
           </Container>
         </section>
       </Reveal>

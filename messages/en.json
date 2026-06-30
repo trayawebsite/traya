@@ -1,4 +1,10 @@
 {
+  "Error": {
+    "eyebrow": "Something went wrong",
+    "heading": "We hit a bump.",
+    "body": "The page couldn't be loaded. Please try again, or contact us directly if it persists.",
+    "retry": "Try again"
+  },
   "Links": {
     "home": "Home",
     "about": "About",
@@ -20,6 +26,7 @@
     "chat": "Chat with us",
     "enquireNow": "Enquire Now",
     "topNote": "Multi-sector exports from India",
+    "whatsappMessage": "Hello Traya International Exim, I would like to enquire about your food-ingredient exports.\n\nProduct(s): \nQuantity / grade: \nDestination country: \nCompany: ",
     "siteLabel": "Traya International Exim — home",
     "menuAria": "Menu",
     "navAria": "Mobile",
@@ -99,6 +106,11 @@
       "description": "Review and submit your product enquiry. Share the specifications, quantity, destination, and timeline so our team can respond with the right details."
     }
   },
+  "Validation": {
+    "name": "Please enter your name",
+    "email": "Please enter a valid email",
+    "message": "Please add a few more details"
+  },
   "Language": {
     "label": "Language",
     "en": "English",
@@ -124,7 +136,23 @@
     "sending": "Sending...",
     "success": "Thank you. Your quote request has been sent. We'll respond with the details shortly.",
     "error": "Something went wrong. Please try again, or email us directly.",
-    "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp."
+    "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp.",
+    "quotingFor": "Quote for",
+    "headingFor": "Get pricing for {name}.",
+    "reassurance": "Typically replies within 1 business day · No obligation.",
+    "successHeading": "Request received.",
+    "successBody": "Thank you. Our team will review your requirement and reply with pricing, MOQ, packaging and lead time — usually within one business day.",
+    "trust": {
+      "eyebrow": "What to expect",
+      "heading": "A clear, complete quote.",
+      "sub": "Share your requirement and our trade desk prepares a tailored quotation.",
+      "pricing": "FOB / CIF pricing for your destination",
+      "moq": "Minimum order quantity and available grades",
+      "packaging": "Packaging and private-label options",
+      "leadTime": "Production and shipping lead time",
+      "docs": "Specifications, COA and export documents",
+      "note": "No obligation. Your details go only to our trade desk."
+    }
   },
   "Home": {
     "meta": {
@@ -329,7 +357,13 @@
       "sending": "Sending...",
       "success": "Thank you. Your message has been sent. We'll be in touch shortly.",
       "error": "Something went wrong. Please try again, or email us directly.",
-      "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp."
+      "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp.",
+      "point1": "We reply within one business day",
+      "point2": "Sourcing, samples, pricing and documentation — ask us anything",
+      "point3": "A direct line to our trade desk",
+      "reassurance": "Typically replies within 1 business day · No obligation.",
+      "successHeading": "Message sent.",
+      "successBody": "Thank you. Our team will review your message and get back to you — usually within one business day."
     }
   },
   "Certifications": {
@@ -509,5 +543,53 @@
     "description": "The page you're looking for doesn't exist or may have moved. Let's get you back on track.",
     "back": "Back to home",
     "popular": "Or head to one of these"
+  },
+  "Legal": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How we handle and protect your data.",
+      "lastUpdated": "Last updated: June 2026",
+      "sections": {
+        "dataCollection": {
+          "title": "1. Information We Collect",
+          "content": "We collect the information you provide directly to us when you request a quote, add products to an enquiry list, or contact us. This typically includes your name, email address, phone number, company details, and the product requirements or message you choose to share."
+        },
+        "dataUsage": {
+          "title": "2. How We Use Your Data",
+          "content": "We use the information we collect to respond to your enquiries, prepare and send quotations, and fulfil B2B export requests. Your submissions are delivered to our team by email (through Resend) and recorded in a secure Google Sheet so we can follow up. We do not sell your personal data."
+        },
+        "cookies": {
+          "title": "3. Cookies and Tracking",
+          "content": "Our site uses essential cookies needed for it to function. We also use a third-party live-chat tool (Crisp), which may set its own cookies to support conversations; we do not run advertising or analytics trackers. You can instruct your browser to refuse cookies, though some features such as live chat may then stop working."
+        },
+        "contact": {
+          "title": "4. Contact Us",
+          "content": "If you have any questions about this Privacy Policy, please contact us at info@trayaexim.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Terms and Conditions",
+      "description": "Terms of service and trade.",
+      "lastUpdated": "Last updated: June 2026",
+      "sections": {
+        "general": {
+          "title": "1. General Terms",
+          "content": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. Any participation in this service will constitute acceptance of this agreement."
+        },
+        "orders": {
+          "title": "2. Quotes and Orders",
+          "content": "All quotes provided through this website are subject to final confirmation and may change based on market conditions, raw material availability, and shipping logistics."
+        },
+        "shipping": {
+          "title": "3. Shipping and Delivery",
+          "content": "Delivery timelines are estimates and commence from the date of shipping, rather than the date of order. We are not responsible for delays caused by customs clearance processes."
+        },
+        "liability": {
+          "title": "4. Limitation of Liability",
+          "content": "Traya International Exim shall not be liable for any special or consequential damages that result from the use of, or the inability to use, the materials on this site or the performance of the products."
+        }
+      }
+    }
   }
 }
