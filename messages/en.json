@@ -55,7 +55,7 @@
     "trust1": "Food, chemicals, mechanical products, and paper",
     "trust2": "Specifications and required documents confirmed",
     "trust3": "Packaging and shipment requirements reviewed",
-    "founderNote": "Share the details you have. We will help you clarify the rest.",
+    "founderNote": "Behind every shipment is a relationship built on trust and understanding.",
     "founderName": "Neha Pardeshi",
     "founderRole": "Founder & CEO",
     "name": "Your name",
@@ -139,6 +139,18 @@
     "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp.",
     "quotingFor": "Quote for",
     "headingFor": "Get pricing for {name}.",
+    "purposeLabel": "What do you need?",
+    "purposeQuote": "A quote",
+    "purposeSample": "A paid sample",
+    "sampleHeading": "Request a sample.",
+    "sampleHeadingFor": "Request a sample of {name}.",
+    "sampleSub": "Tell us where to ship and how much you need. We'll confirm the sample cost and shipping before anything is charged.",
+    "sampleNote": "Samples are chargeable. Share your requirement and we'll confirm the sample cost and shipping before you pay.",
+    "sampleQuantity": "Sample size needed",
+    "sampleQuantityPlaceholder": "e.g. 100 g, 500 g, 1 kg",
+    "sampleSubmit": "Request sample",
+    "messageQuote": "Request: Price quote",
+    "messageSample": "Request: Paid sample (buyer to pay sample cost + shipping)",
     "reassurance": "Typically replies within 1 business day · No obligation.",
     "successHeading": "Request received.",
     "successBody": "Thank you. Our team will review your requirement and reply with pricing, MOQ, packaging and lead time — usually within one business day.",
@@ -274,14 +286,15 @@
       "body": "Traya International Exim LLP empowers international buyers to strategically source from India across the Food & Agro, Chemicals, Mechanical, and Paper sectors. With an expansive catalogue of over 150 meticulously categorized products, we deliver uncompromising quality, rigorous documentation, and seamless global shipment support."
     },
     "founder": {
-      "eyebrow": "From the founder",
+      "eyebrow": "A note from the founder",
       "heading": "Trade is, first, a relationship.",
       "name": "Neha Pardeshi",
       "role": "Founder & CEO",
-      "p1": "The world didn't open up to me through textbooks. It opened up through travel. Exploring different cultures, meeting people from all walks of life, and seeing the world through different perspectives shaped not only who I am, but also what I chose to build.",
-      "p2": "I believe that successful international commerce relies on transparent communication and treating every order with profound responsibility. Behind every shipment is a buyer, a supplier, and a partnership built on trust.",
-      "p3": "At Traya International EXIM, our mandate is to make global sourcing secure and dependable. We serve buyers who require absolute clarity, meticulous coordination, and a dedicated team they can rely on at every stage.",
-      "p4": "What began as a passion for global exploration has evolved into an enterprise driven by commitment, integrity, and a steadfast vision for international trade. And we are only just getting started."
+      "p1": "The world didn't open up to me through textbooks — it opened up through travel. Exploring different cultures, meeting people from all walks of life, and seeing the world through different perspectives shaped not only who I am, but also what I chose to build.",
+      "p2": "I've always believed that global trade is ultimately about human connection. Behind every shipment, every product, and every partnership is a relationship built on trust and understanding — something no algorithm or automation can truly replace.",
+      "p3": "At Traya International EXIM, our goal is not simply to facilitate trade, but to build meaningful and lasting relationships across borders — relationships that grow stronger with every transaction and every conversation.",
+      "p4": "What began as a passion for exploring the world has evolved into a business driven by commitment, integrity, and a truly global vision. And we are only just getting started.",
+      "p5": "Thank you for trusting us and choosing to be a part of this journey."
     },
     "principles": {
       "eyebrow": "Who we are",
@@ -481,7 +494,18 @@
       "spec": "6 groups · 18 categories · 150+ listed products",
       "search": "Search products or categories...",
       "all": "All",
-      "noResults": "No products match your search."
+      "noResults": "No products match your search.",
+      "downloadCatalogue": "Download full catalogue (PDF)"
+    },
+    "list": {
+      "form": "Form",
+      "grade": "Grade",
+      "gradeValue": "Food Grade",
+      "add": "Add to Enquiry",
+      "added": "In your enquiry",
+      "addedToast": "Added to your enquiry list",
+      "quote": "Request a quote",
+      "sample": "Request a sample"
     },
     "product": "product",
     "products": "products",
@@ -529,7 +553,7 @@
       "pricing": "On request (RFQ)",
       "docsHeading": "Specifications & documentation",
       "docsNote": "Product specifications, grades, packaging options, certificates, test reports, and export documents depend on the product and destination. Share your quantity, packaging needs, and destination so we can confirm the right details.",
-      "sampleCta": "Ask about sample availability",
+      "sampleCta": "Request a sample",
       "enquireCta": "Enquire about this product",
       "relatedHeading": "More in this category",
       "downloadSpecSheet": "Download product spec sheet",
@@ -549,22 +573,43 @@
       "title": "Privacy Policy",
       "description": "How we handle and protect your data.",
       "lastUpdated": "Last updated: June 2026",
+      "intro": "We respect your privacy and are committed to protecting your personal and business information.",
       "sections": {
         "dataCollection": {
-          "title": "1. Information We Collect",
-          "content": "We collect the information you provide directly to us when you request a quote, add products to an enquiry list, or contact us. This typically includes your name, email address, phone number, company details, and the product requirements or message you choose to share."
+          "title": "Information We Collect",
+          "items": [
+            "Name and contact details",
+            "Company information",
+            "Shipping and billing details",
+            "Product enquiries and quotations",
+            "Website usage information"
+          ]
         },
         "dataUsage": {
-          "title": "2. How We Use Your Data",
-          "content": "We use the information we collect to respond to your enquiries, prepare and send quotations, and fulfil B2B export requests. Your submissions are delivered to our team by email (through Resend) and recorded in a secure Google Sheet so we can follow up. We do not sell your personal data."
+          "title": "How We Use Information",
+          "items": [
+            "Respond to enquiries and quotations",
+            "Process domestic and export orders",
+            "Coordinate logistics and shipping",
+            "Improve customer experience",
+            "Comply with legal obligations"
+          ]
+        },
+        "dataSecurity": {
+          "title": "Data Security",
+          "content": "We use commercially reasonable security measures to protect customer information. Payment information is handled through secure third-party payment providers and is never stored on our servers."
+        },
+        "thirdParty": {
+          "title": "Third-Party Services",
+          "content": "Information may be shared with logistics providers, shipping partners, customs agents, and payment processors strictly for fulfilling orders and export requirements."
         },
         "cookies": {
-          "title": "3. Cookies and Tracking",
-          "content": "Our site uses essential cookies needed for it to function. We also use a third-party live-chat tool (Crisp), which may set its own cookies to support conversations; we do not run advertising or analytics trackers. You can instruct your browser to refuse cookies, though some features such as live chat may then stop working."
+          "title": "Cookies",
+          "content": "Our website uses essential cookies to function and a third-party live-chat tool (Crisp) that may set its own cookies. We do not run advertising trackers. You can refuse cookies in your browser, though some features such as live chat may stop working."
         },
         "contact": {
-          "title": "4. Contact Us",
-          "content": "If you have any questions about this Privacy Policy, please contact us at info@trayaexim.com."
+          "title": "Contact Us",
+          "content": "If you have any questions about this Privacy Policy or your information, please contact us at info@trayaexim.com."
         }
       }
     },
@@ -574,19 +619,19 @@
       "lastUpdated": "Last updated: June 2026",
       "sections": {
         "general": {
-          "title": "1. General Terms",
+          "title": "General Terms",
           "content": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement. Any participation in this service will constitute acceptance of this agreement."
         },
         "orders": {
-          "title": "2. Quotes and Orders",
+          "title": "Quotes and Orders",
           "content": "All quotes provided through this website are subject to final confirmation and may change based on market conditions, raw material availability, and shipping logistics."
         },
         "shipping": {
-          "title": "3. Shipping and Delivery",
+          "title": "Shipping and Delivery",
           "content": "Delivery timelines are estimates and commence from the date of shipping, rather than the date of order. We are not responsible for delays caused by customs clearance processes."
         },
         "liability": {
-          "title": "4. Limitation of Liability",
+          "title": "Limitation of Liability",
           "content": "Traya International Exim shall not be liable for any special or consequential damages that result from the use of, or the inability to use, the materials on this site or the performance of the products."
         }
       }

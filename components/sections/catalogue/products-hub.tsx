@@ -3,11 +3,14 @@ import {Container} from '@/components/ui/container';
 import {SpecLine} from '@/components/sections/home/spec-line';
 import {ProductsInteractive} from './products-interactive';
 import {getGroups} from '@/lib/catalogue';
+import {getSiteSettings} from '@/lib/site-settings';
+import {Download} from 'lucide-react';
 
 export async function ProductsHub() {
   const t = await getTranslations('Catalogue');
   const tg = await getTranslations('Home.groups');
   const groups = await getGroups();
+  const s = await getSiteSettings();
 
   const serialized = groups.map((g) => ({
     key: g.key,
@@ -34,6 +37,17 @@ export async function ProductsHub() {
             {t('hub.sub')}
           </p>
           <SpecLine items={t('hub.spec').split(' · ')} className="mt-5 justify-center" />
+          {s.catalogueUrl && (
+            <a
+              href={s.catalogueUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex items-center gap-2 rounded-lg border border-traya-border bg-card px-4 py-2.5 text-sm font-medium text-foreground shadow-sm transition-colors hover:border-traya-saffron/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            >
+              <Download className="size-4 text-traya-saffron-lo" aria-hidden="true" />
+              {t('hub.downloadCatalogue')}
+            </a>
+          )}
         </div>
 
         <ProductsInteractive

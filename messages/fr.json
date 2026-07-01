@@ -55,7 +55,7 @@
     "trust1": "Alimentation, produits chimiques, produits mécaniques et papier",
     "trust2": "Spécifications et documents requis confirmés",
     "trust3": "Exigences d'emballage et d'expédition examinées",
-    "founderNote": "Partagez les détails dont vous disposez. Nous vous aiderons à clarifier le reste.",
+    "founderNote": "Derrière chaque expédition se trouve une relation fondée sur la confiance et la compréhension.",
     "founderName": "Neha Pardeshi",
     "founderRole": "Fondatrice et PDG",
     "name": "Votre nom",
@@ -139,6 +139,18 @@
     "rateLimited": "Vous avez atteint la limite quotidienne. Veuillez nous envoyer un e-mail ou un message sur WhatsApp.",
     "quotingFor": "Devis pour",
     "headingFor": "Obtenez un prix pour {name}.",
+    "purposeLabel": "De quoi avez-vous besoin ?",
+    "purposeQuote": "Un devis",
+    "purposeSample": "Un échantillon payant",
+    "sampleHeading": "Demander un échantillon.",
+    "sampleHeadingFor": "Demander un échantillon de {name}.",
+    "sampleSub": "Indiquez-nous la destination et la quantité souhaitée. Nous confirmerons le coût de l'échantillon et l'expédition avant tout paiement.",
+    "sampleNote": "Les échantillons sont payants. Partagez votre besoin et nous confirmerons le coût de l'échantillon et l'expédition avant paiement.",
+    "sampleQuantity": "Taille d'échantillon souhaitée",
+    "sampleQuantityPlaceholder": "ex. 100 g, 500 g, 1 kg",
+    "sampleSubmit": "Demander un échantillon",
+    "messageQuote": "Demande : Devis",
+    "messageSample": "Demande : Échantillon payant (l'acheteur paie le coût de l'échantillon et l'expédition)",
     "reassurance": "Réponse généralement sous 1 jour ouvré · Sans engagement.",
     "successHeading": "Demande reçue.",
     "successBody": "Merci. Notre équipe examinera votre demande et répondra avec le prix, la quantité minimale, l'emballage et les délais — généralement sous un jour ouvré.",
@@ -274,14 +286,15 @@
       "body": "Traya International Exim LLP permet aux acheteurs internationaux de s'approvisionner stratégiquement en Inde dans les secteurs agroalimentaire, chimique, mécanique et papier. Avec un vaste catalogue de plus de 150 produits méticuleusement classés, nous offrons une qualité sans compromis, une documentation rigoureuse et un soutien logistique mondial transparent."
     },
     "founder": {
-      "eyebrow": "De la fondatrice",
+      "eyebrow": "Un mot de la fondatrice",
       "heading": "Le commerce est, avant tout, une relation.",
       "name": "Neha Pardeshi",
       "role": "Fondatrice et PDG",
-      "p1": "Le monde ne s'est pas ouvert à moi à travers les manuels scolaires. Il s'est ouvert à travers les voyages. Explorer différentes cultures, rencontrer des personnes de tous horizons et voir le monde à travers différents prismes ont façonné non seulement qui je suis, mais aussi ce que j'ai choisi de construire.",
-      "p2": "Je crois que le succès du commerce international repose sur une communication transparente et le traitement de chaque commande avec une profonde responsabilité. Derrière chaque expédition, il y a un acheteur, un fournisseur et un partenariat fondé sur la confiance.",
-      "p3": "Chez Traya International EXIM, notre mission est de rendre l'approvisionnement mondial sûr et fiable. Nous servons les acheteurs qui exigent une clarté absolue, une coordination minutieuse et une équipe dévouée sur laquelle ils peuvent compter à chaque étape.",
-      "p4": "Ce qui a commencé comme une passion pour l'exploration mondiale a évolué vers une entreprise motivée par l'engagement, l'intégrité et une vision inébranlable du commerce international. Et ce n'est que le début."
+      "p1": "Le monde ne s'est pas ouvert à moi à travers les manuels scolaires — il s'est ouvert à travers les voyages. Explorer différentes cultures, rencontrer des personnes de tous horizons et voir le monde sous différents angles ont façonné non seulement qui je suis, mais aussi ce que j'ai choisi de construire.",
+      "p2": "J'ai toujours cru que le commerce mondial est avant tout une affaire de connexion humaine. Derrière chaque expédition, chaque produit et chaque partenariat se trouve une relation fondée sur la confiance et la compréhension — quelque chose qu'aucun algorithme ni aucune automatisation ne pourra véritablement remplacer.",
+      "p3": "Chez Traya International EXIM, notre objectif n'est pas simplement de faciliter le commerce, mais de bâtir des relations significatives et durables au-delà des frontières — des relations qui se renforcent à chaque transaction et à chaque conversation.",
+      "p4": "Ce qui a commencé comme une passion pour l'exploration du monde est devenu une entreprise animée par l'engagement, l'intégrité et une vision véritablement mondiale. Et nous ne faisons que commencer.",
+      "p5": "Merci de votre confiance et d'avoir choisi de faire partie de ce voyage."
     },
     "principles": {
       "eyebrow": "Qui nous sommes",
@@ -481,7 +494,18 @@
       "spec": "6 groupes · 18 catégories · Plus de 150 produits listés",
       "search": "Rechercher des produits ou catégories...",
       "all": "Tous",
-      "noResults": "Aucun produit ne correspond à votre recherche."
+      "noResults": "Aucun produit ne correspond à votre recherche.",
+      "downloadCatalogue": "Télécharger le catalogue complet (PDF)"
+    },
+    "list": {
+      "form": "Forme",
+      "grade": "Grade",
+      "gradeValue": "Qualité alimentaire",
+      "add": "Ajouter à la demande",
+      "added": "Dans votre demande",
+      "addedToast": "Ajouté à votre liste de demande",
+      "quote": "Demander un devis",
+      "sample": "Demander un échantillon"
     },
     "product": "produit",
     "products": "produits",
@@ -529,7 +553,7 @@
       "pricing": "Sur demande (RFQ)",
       "docsHeading": "Spécifications et documentation",
       "docsNote": "Les spécifications du produit, les qualités, les options d'emballage, les certificats, les rapports d'essai et les documents d'exportation dépendent du produit et de la destination. Partagez votre quantité, vos besoins d'emballage et votre destination afin que nous puissions confirmer les bons détails.",
-      "sampleCta": "Se renseigner sur la disponibilité d'échantillons",
+      "sampleCta": "Demander un échantillon",
       "enquireCta": "Se renseigner sur ce produit",
       "relatedHeading": "Plus dans cette catégorie",
       "downloadSpecSheet": "Télécharger la fiche technique du produit",
@@ -549,22 +573,43 @@
       "title": "Politique de confidentialité",
       "description": "Comment nous traitons et protégeons vos données.",
       "lastUpdated": "Dernière mise à jour : juin 2026",
+      "intro": "Nous respectons votre vie privée et nous engageons à protéger vos informations personnelles et professionnelles.",
       "sections": {
         "dataCollection": {
-          "title": "1. Informations que nous collectons",
-          "content": "Nous collectons les informations que vous nous fournissez directement lorsque vous demandez un devis, ajoutez des produits à une liste de demande ou nous contactez. Cela comprend généralement votre nom, votre adresse e-mail, votre numéro de téléphone, les coordonnées de votre entreprise et les besoins produit ou le message que vous choisissez de partager."
+          "title": "Informations que nous collectons",
+          "items": [
+            "Nom et coordonnées",
+            "Informations sur l'entreprise",
+            "Détails d'expédition et de facturation",
+            "Demandes de produits et devis",
+            "Informations d'utilisation du site"
+          ]
         },
         "dataUsage": {
-          "title": "2. Utilisation de vos données",
-          "content": "Nous utilisons les informations collectées pour répondre à vos demandes, préparer et envoyer des devis, et traiter vos demandes d'exportation B2B. Vos envois nous parviennent par e-mail (via Resend) et sont enregistrés dans une feuille de calcul Google sécurisée afin d'en assurer le suivi. Nous ne vendons pas vos données personnelles."
+          "title": "Utilisation des informations",
+          "items": [
+            "Répondre aux demandes et aux devis",
+            "Traiter les commandes nationales et à l'export",
+            "Coordonner la logistique et l'expédition",
+            "Améliorer l'expérience client",
+            "Respecter les obligations légales"
+          ]
+        },
+        "dataSecurity": {
+          "title": "Sécurité des données",
+          "content": "Nous utilisons des mesures de sécurité commercialement raisonnables pour protéger les informations des clients. Les informations de paiement sont traitées par des prestataires de paiement tiers sécurisés et ne sont jamais stockées sur nos serveurs."
+        },
+        "thirdParty": {
+          "title": "Services tiers",
+          "content": "Les informations peuvent être partagées avec des prestataires logistiques, des partenaires d'expédition, des agents en douane et des processeurs de paiement, strictement pour l'exécution des commandes et les exigences d'exportation."
         },
         "cookies": {
-          "title": "3. Cookies et suivi",
-          "content": "Notre site utilise les cookies essentiels nécessaires à son fonctionnement. Nous utilisons également un outil de chat en direct tiers (Crisp), qui peut déposer ses propres cookies pour assurer les conversations ; nous n'utilisons aucun traceur publicitaire ni analytique. Vous pouvez configurer votre navigateur pour refuser les cookies, mais certaines fonctionnalités, comme le chat en direct, pourraient alors cesser de fonctionner."
+          "title": "Cookies",
+          "content": "Notre site utilise des cookies essentiels à son fonctionnement ainsi qu'un outil de chat en direct tiers (Crisp) susceptible de déposer ses propres cookies. Nous n'utilisons aucun traceur publicitaire. Vous pouvez refuser les cookies dans votre navigateur, mais certaines fonctionnalités comme le chat en direct pourraient cesser de fonctionner."
         },
         "contact": {
-          "title": "4. Nous contacter",
-          "content": "Pour toute question concernant cette politique de confidentialité, veuillez nous contacter à l'adresse info@trayaexim.com."
+          "title": "Nous contacter",
+          "content": "Pour toute question concernant cette politique de confidentialité ou vos informations, veuillez nous contacter à l'adresse info@trayaexim.com."
         }
       }
     },
@@ -574,19 +619,19 @@
       "lastUpdated": "Dernière mise à jour : juin 2026",
       "sections": {
         "general": {
-          "title": "1. Conditions générales",
+          "title": "Conditions générales",
           "content": "En accédant à ce site web et en l'utilisant, vous acceptez d'être lié par les conditions et dispositions du présent accord. Toute utilisation de ce service vaut acceptation du présent accord."
         },
         "orders": {
-          "title": "2. Devis et commandes",
+          "title": "Devis et commandes",
           "content": "Tous les devis fournis via ce site web sont soumis à confirmation finale et peuvent évoluer en fonction des conditions du marché, de la disponibilité des matières premières et de la logistique d'expédition."
         },
         "shipping": {
-          "title": "3. Expédition et livraison",
+          "title": "Expédition et livraison",
           "content": "Les délais de livraison sont des estimations et commencent à la date d'expédition, et non à la date de commande. Nous ne sommes pas responsables des retards causés par les procédures de dédouanement."
         },
         "liability": {
-          "title": "4. Limitation de responsabilité",
+          "title": "Limitation de responsabilité",
           "content": "Traya International Exim ne saurait être tenue responsable des dommages spéciaux ou indirects résultant de l'utilisation ou de l'impossibilité d'utiliser les éléments de ce site ou de la performance des produits."
         }
       }

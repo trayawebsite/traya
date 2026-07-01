@@ -12,8 +12,10 @@ export async function FounderLetter({data}: {data?: Founder}) {
 
   const name = data?.name || t('name');
   const title = data?.title || t('role');
-  const letter = data?.letter || [t('p2'), t('p3'), t('p4')].join('\n\n');
-  const paragraphs = data?.letter ? letter.split('\n\n').filter(Boolean) : [t('p2'), t('p3'), t('p4')];
+  const letter = data?.letter || [t('p1'), t('p2'), t('p3'), t('p4'), t('p5')].join('\n\n');
+  const paragraphs = data?.letter
+    ? letter.split('\n\n').filter(Boolean)
+    : [t('p1'), t('p2'), t('p3'), t('p4'), t('p5')];
 
   // Photo: use site-settings founderPhoto (already a URL string), or fallback
   const photoSrc = s.founderPhoto || '/team/neha-pardeshi.jpg';

@@ -1,18 +1,20 @@
+import {Check} from 'lucide-react';
 import {Container} from '@/components/ui/container';
 
 // Shared legal-page scaffold (Privacy, Terms) — ONE structure so the two stay
 // consistent with each other and with the site's centered inner-page headers.
-// Header: centered title + a small last-updated meta, on the same `section-sm`
-// rhythm as the other pages. Body: a left-aligned, numbered document at a
-// readable measure. All content is data (i18n), passed in.
+// Each section renders EITHER a paragraph (`content`) or a ✓ bullet list
+// (`items`). All content is data (i18n), passed in.
 export function LegalLayout({
   title,
   lastUpdated,
+  intro,
   sections
 }: {
   title: string;
   lastUpdated: string;
-  sections: {title: string; content: string}[];
+  intro?: string;
+  sections: {title: string; content?: string; items?: string[]}[];
 }) {
   return (
     <>
@@ -21,6 +23,11 @@ export function LegalLayout({
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-balance font-display text-display-lg text-foreground">{title}</h1>
             <p className="mt-4 text-sm text-muted-foreground">{lastUpdated}</p>
+            {intro && (
+              <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+                {intro}
+              </p>
+            )}
           </div>
         </Container>
       </section>
@@ -36,7 +43,22 @@ export function LegalLayout({
                   </span>
                   {s.title}
                 </h2>
-                <p className="mt-3 text-[15px] leading-relaxed text-foreground/80">{s.content}</p>
+                {s.content && (
+                  <p className="mt-3 text-[15px] leading-relaxed text-foreground/80">{s.content}</p>
+                )}
+                {s.items && s.items.length > 0 && (
+                  <ul className="mt-4 space-y-2.5">
+                    {s.items.map((item) => (
+                      <li
+                        key={item}
+                        className="flex items-start gap-3 text-[15px] leading-relaxed text-foreground/80"
+                      >
+                        <Check className="mt-1 size-4 shrink-0 text-traya-forest" aria-hidden="true" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </section>
             ))}
           </div>

@@ -6,7 +6,6 @@ import {Breadcrumb} from '@/components/ui/breadcrumb';
 import {Reveal} from '@/components/ui/reveal';
 import {primaryButton} from '@/lib/button-styles';
 import {CategoryProductList} from './category-products';
-import {Download} from 'lucide-react';
 import {getCategories, type CatalogueCategory} from '@/lib/catalogue';
 import {getSiteSettings} from '@/lib/site-settings';
 import {CertMark} from '@/components/layout/cert-mark';
@@ -89,9 +88,19 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
               }))}
               labels={{
                 search: t('category.search'),
-                noResults: t('category.noResults'),
-                view: t('category.viewProduct')
+                noResults: t('category.noResults')
               }}
+              categoryTitle={category.title}
+              specs={
+                category.moqPackaging && category.moqPackaging.length > 0
+                  ? category.moqPackaging.map((s) => ({label: s.label, value: s.value}))
+                  : [
+                      {label: t('category.specOrigin'), value: t('category.specOriginVal')},
+                      {label: t('category.specMoq'), value: t('category.specMoqVal')},
+                      {label: t('category.specPackaging'), value: t('category.specPackagingVal')},
+                      {label: t('category.specIncoterms'), value: t('category.specIncotermsVal')}
+                    ]
+              }
             />
             <div className="mt-10">
               <a href="#enquiry" className={primaryButton}>
@@ -157,22 +166,6 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                     </>
                   )}
                 </dl>
-                {category.specSheetUrl ? (
-                  <a
-                    href={category.specSheetUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-traya-red-deep hover:underline"
-                  >
-                    <Download className="size-4" aria-hidden="true" />
-                    {t('category.downloadCta')}
-                  </a>
-                ) : (
-                  <span className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground cursor-not-allowed">
-                    <Download className="size-4 opacity-50" aria-hidden="true" />
-                    {t('category.downloadCta')}
-                  </span>
-                )}
               </div>
             </div>
 

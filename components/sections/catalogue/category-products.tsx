@@ -1,9 +1,10 @@
 'use client';
 
-import {useState, useMemo} from 'react';
-import Image from 'next/image';
-import {Link} from '@/i18n/navigation';
-import {urlForImage} from '@/sanity/lib/image';
+import {useState, useMemo, Fragment} from 'react';
+import {useTranslations} from 'next-intl';
+import {toast} from 'sonner';
+import {ChevronDown, Check, Plus} from 'lucide-react';
+import {useEnquiry} from '@/lib/enquiry-context';
 import type {SanityImage} from '@/sanity/lib/types';
 
 type Product = {
@@ -13,24 +14,51 @@ type Product = {
   images?: SanityImage[];
 };
 
+type Spec = {label: string; value: string};
+
+// Derive the product "form" from its name so the row can show it at a glance
+// (Kibbled, Powder, Flakes, …) — the main thing that varies between variants.
+const FORM_WORDS = [
+  'Kibbled', 'Chopped', 'Minced', 'Granules', 'Powder', 'Flakes', 'Cloves', 'Cubes',
+  'Whole Leaves', 'Seeds', 'Split', 'Broken', 'Husk', 'Roll', 'Crushed', 'Crispy', 'Blend', 'Stem', 'Whole'
+];
+function detectForm(name: string) {
+  return FORM_WORDS.find((w) => name.includes(w)) ?? null;
+}
+
+// Products expand IN PLACE — clicking a row reveals its details inline instead
+// of navigating to a separate page, so a whole category can be browsed and
+// compared without leaving the page.
 export function CategoryProductList({
   products,
-  labels
+  labels,
+  specs,
+  categoryTitle
 }: {
   products: Product[];
-  labels: {search: string; noResults: string; view: string};
+  labels: {search: string; noResults: string};
+  specs: Spec[];
+  categoryTitle: string;
 }) {
+  const t = useTranslations('Catalogue.list');
+  const {add, has} = useEnquiry();
   const [query, setQuery] = useState('');
+  const [open, setOpen] = useState<Set<string>>(new Set());
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
     if (!q) return products;
     return products.filter(
-      (p) =>
-        p.name.toLowerCase().includes(q) ||
-        p.shortDescription?.toLowerCase().includes(q)
+      (p) => p.name.toLowerCase().includes(q) || p.shortDescription?.toLowerCase().includes(q)
     );
   }, [products, query]);
+
+  const toggle = (slug: string) =>
+    setOpen((s) => {
+      const next = new Set(s);
+      next.has(slug) ? next.delete(slug) : next.add(slug);
+      return next;
+    });
 
   return (
     <>
@@ -58,74 +86,100 @@ export function CategoryProductList({
         />
       </div>
 
-      {/* Product grid */}
+      {/* Expandable product rows */}
       {filtered.length > 0 ? (
-        <ul className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-6 max-w-3xl space-y-2.5">
           {filtered.map((p) => {
-            const imageUrl = p.images && p.images.length > 0
-              ? urlForImage(p.images[0]).width(400).height(300).url()
-              : null;
-
+            const isOpen = open.has(p.slug);
+            const form = detectForm(p.name);
+            const added = has(p.slug);
             return (
-              <li key={p.slug}>
-                <Link
-                  href={`/products/${p.slug}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-2xl border border-traya-border bg-card shadow-sm transition-all duration-300 hover:border-traya-saffron/40 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+              <li
+                key={p.slug}
+                className={`overflow-hidden rounded-xl border bg-card transition-colors ${
+                  isOpen ? 'border-traya-red/30' : 'border-traya-border'
+                }`}
+              >
+                <button
+                  type="button"
+                  aria-expanded={isOpen}
+                  onClick={() => toggle(p.slug)}
+                  className="flex w-full items-center gap-3 px-4 py-3.5 text-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
-                  {/* Product image */}
-                  {imageUrl ? (
-                    <div className="relative aspect-[4/3] overflow-hidden bg-traya-surface">
-                      <Image
-                        src={imageUrl}
-                        alt={p.name}
-                        fill
-                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        className="object-cover transition-transform duration-500 ease-expo group-hover:scale-105 motion-reduce:transition-none"
-                      />
-                    </div>
-                  ) : (
-                    <div className="flex aspect-[4/3] items-center justify-center bg-traya-surface">
-                      <svg
-                        className="size-12 text-muted-foreground/20"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        aria-hidden="true"
-                      >
-                        <rect x="3" y="3" width="18" height="18" rx="2" />
-                        <circle cx="8.5" cy="8.5" r="1.5" />
-                        <path d="m21 15-5-5L5 21" />
-                      </svg>
-                    </div>
-                  )}
-
-                  {/* Product info */}
-                  <span className="flex flex-1 flex-col gap-1 px-5 py-4">
-                    <span className="flex items-center justify-between gap-3">
-                      <span className="font-display text-base leading-snug text-foreground">
-                        {p.name}
+                  <span className="min-w-0 flex-1">
+                    <span className="block text-sm font-medium text-foreground">{p.name}</span>
+                    <span className="mt-1.5 flex flex-wrap gap-1.5">
+                      {form && (
+                        <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
+                          {form}
+                        </span>
+                      )}
+                      <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
+                        {t('gradeValue')}
                       </span>
-                      <svg
-                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 rtl:-scale-x-100 motion-reduce:transition-none"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.8"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        aria-hidden="true"
-                      >
-                        <path d="M5 12h14M13 6l6 6-6 6" />
-                      </svg>
                     </span>
-                    {p.shortDescription && (
-                      <span className="line-clamp-2 text-sm leading-relaxed text-muted-foreground">
-                        {p.shortDescription}
-                      </span>
-                    )}
                   </span>
-                </Link>
+                  <ChevronDown
+                    className={`size-4 shrink-0 text-muted-foreground transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
+                    aria-hidden="true"
+                  />
+                </button>
+
+                {isOpen && (
+                  <div className="border-t border-traya-border px-4 pb-4 pt-3">
+                    {p.shortDescription && (
+                      <p className="mb-3 text-sm leading-relaxed text-muted-foreground">{p.shortDescription}</p>
+                    )}
+                    <dl className="grid grid-cols-[104px_1fr] gap-x-4 gap-y-1.5 text-sm">
+                      {form && (
+                        <Fragment>
+                          <dt className="text-muted-foreground">{t('form')}</dt>
+                          <dd className="text-foreground">{form}</dd>
+                        </Fragment>
+                      )}
+                      <dt className="text-muted-foreground">{t('grade')}</dt>
+                      <dd className="text-foreground">{t('gradeValue')}</dd>
+                      {specs.map((s) => (
+                        <Fragment key={s.label}>
+                          <dt className="text-muted-foreground">{s.label}</dt>
+                          <dd className="text-foreground">{s.value}</dd>
+                        </Fragment>
+                      ))}
+                    </dl>
+
+                    <div className="mt-5 flex flex-wrap gap-2.5">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (!added) {
+                            add({slug: p.slug, name: p.name, category: categoryTitle});
+                            toast.success(t('addedToast'));
+                          }
+                        }}
+                        className={`inline-flex items-center gap-1.5 rounded-md px-3.5 py-2 text-xs font-medium transition-colors ${
+                          added
+                            ? 'border border-traya-forest/30 bg-traya-forest/10 text-traya-forest'
+                            : 'border border-traya-border bg-background text-foreground hover:border-traya-red/30'
+                        }`}
+                      >
+                        {added ? <Check className="size-3.5" aria-hidden="true" /> : <Plus className="size-3.5" aria-hidden="true" />}
+                        {added ? t('added') : t('add')}
+                      </button>
+                      <a
+                        href="#enquiry"
+                        className="inline-flex items-center justify-center rounded-md bg-traya-red px-3.5 py-2 text-xs font-medium text-white transition-colors hover:bg-traya-red-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                      >
+                        {t('quote')}
+                      </a>
+                      <a
+                        href="?intent=sample#enquiry"
+                        className="rounded-md border border-traya-border bg-background px-3.5 py-2 text-xs font-medium text-foreground transition-colors hover:border-traya-red/30"
+                      >
+                        {t('sample')}
+                      </a>
+                    </div>
+                  </div>
+                )}
               </li>
             );
           })}

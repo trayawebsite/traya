@@ -1,6 +1,7 @@
 'use client';
 
-import {useState, cloneElement, useMemo, type ReactElement} from 'react';
+import {useState, useEffect, cloneElement, useMemo, type ReactElement} from 'react';
+import {z} from 'zod';
 import {useForm} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {useTranslations} from 'next-intl';
@@ -17,9 +18,13 @@ type Testimonial = {
   location?: string;
 };
 
-// Quote request form — wired to /api/quote. Left column carries social proof
-// (testimonials) when available, else a "what to expect" trust panel so the
-// section never looks bare. Form prefills the product/category being quoted.
+type Purpose = 'quote' | 'sample';
+type FormValues = QuoteInput & {purpose: Purpose};
+
+// Quote / paid-sample request — wired to /api/quote. A purpose toggle switches
+// between a price quote and a (chargeable) sample request; the choice is folded
+// into the message so the trade desk sees it clearly. Left column carries a
+// trust panel (or testimonials when available) so it never looks bare.
 export function QuoteForm({
   productName,
   productSlug,
@@ -31,33 +36,52 @@ export function QuoteForm({
 }) {
   const t = useTranslations('Quote');
   const tv = useTranslations('Validation');
-  const schema = useMemo(() => makeQuoteSchema(tv), [tv]);
+  const schema = useMemo(
+    () => makeQuoteSchema(tv).extend({purpose: z.enum(['quote', 'sample'])}),
+    [tv]
+  );
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
     handleSubmit,
     reset,
     setFocus,
+    setValue,
+    watch,
     formState: {errors, isSubmitting}
-  } = useForm<QuoteInput>({
+  } = useForm<FormValues>({
     resolver: zodResolver(schema),
     defaultValues: {
       productName: productName || '',
-      productSlug: productSlug || ''
+      productSlug: productSlug || '',
+      purpose: 'quote'
     }
   });
 
+  // Preselect "sample" when arrived via a Request-a-Sample link (?intent=sample).
+  useEffect(() => {
+    const intent = new URLSearchParams(window.location.search).get('intent');
+    if (intent === 'sample') setValue('purpose', 'sample');
+  }, [setValue]);
+
+  const purpose = watch('purpose');
+  const isSample = purpose === 'sample';
+
   function onInvalid(errs: Record<string, unknown>) {
     const first = Object.keys(errs)[0];
-    if (first) setFocus(first as keyof QuoteInput);
+    if (first) setFocus(first as keyof FormValues);
   }
 
-  async function onSubmit(values: QuoteInput) {
+  async function onSubmit(values: FormValues) {
+    const {purpose: p, ...rest} = values;
+    // Fold the request type into the message so it reaches the lead email/sheet
+    // (the API's quote schema doesn't carry a purpose field).
+    const message = `${p === 'sample' ? t('messageSample') : t('messageQuote')}\n\n${rest.message}`;
     try {
       const res = await fetch('/api/quote', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(values)
+        body: JSON.stringify({...rest, message})
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
@@ -73,8 +97,6 @@ export function QuoteForm({
     }
   }
 
-  // Inline confirmation — a B2B buyer who just submitted wants a clear receipt,
-  // not a toast that vanishes.
   if (submitted) {
     return (
       <div className="mx-auto max-w-2xl rounded-2xl border border-traya-border bg-card px-6 py-12 text-center shadow-sm sm:px-8">
@@ -108,11 +130,51 @@ export function QuoteForm({
             {t('quotingFor')} <span className="font-semibold text-foreground">{productName}</span>
           </div>
         )}
-        <p className="text-sm font-medium text-traya-red-deep">{t('eyebrow')}</p>
-        <h2 className="mt-3 font-display text-display-sm text-foreground">
-          {productName ? t('headingFor', {name: productName}) : t('heading')}
+
+        {/* Purpose toggle — price quote vs paid sample */}
+        <div>
+          <span className="text-xs font-medium text-foreground/70">{t('purposeLabel')}</span>
+          <div
+            role="radiogroup"
+            aria-label={t('purposeLabel')}
+            className="mt-2 inline-flex rounded-full border border-traya-border bg-traya-surface p-1 text-sm"
+          >
+            {(['quote', 'sample'] as const).map((p) => (
+              <button
+                key={p}
+                type="button"
+                role="radio"
+                aria-checked={purpose === p}
+                onClick={() => setValue('purpose', p)}
+                className={`rounded-full px-4 py-1.5 transition-colors ${
+                  purpose === p
+                    ? 'bg-card font-medium text-foreground shadow-sm'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {p === 'quote' ? t('purposeQuote') : t('purposeSample')}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <h2 className="mt-5 font-display text-display-sm text-foreground">
+          {isSample
+            ? productName
+              ? t('sampleHeadingFor', {name: productName})
+              : t('sampleHeading')
+            : productName
+              ? t('headingFor', {name: productName})
+              : t('heading')}
         </h2>
-        <p className="mt-3 leading-relaxed text-muted-foreground">{t('sub')}</p>
+        <p className="mt-3 leading-relaxed text-muted-foreground">{isSample ? t('sampleSub') : t('sub')}</p>
+
+        {isSample && (
+          <p className="mt-4 flex items-start gap-2 rounded-xl bg-traya-saffron-soft/60 px-4 py-3 text-xs leading-relaxed text-foreground/80">
+            <Package className="mt-0.5 size-4 shrink-0 text-traya-saffron-lo" aria-hidden="true" />
+            {t('sampleNote')}
+          </p>
+        )}
 
         <div className="mt-8 space-y-8">
           {/* Contact Details Group */}
@@ -141,11 +203,11 @@ export function QuoteForm({
           <div>
             <h3 className="mb-4 text-sm font-semibold text-foreground">{t('requestDetails')}</h3>
             <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
-              <Field id="quantity" label={t('quantity')} icon={<Package className="size-4" />} error={errors.quantity?.message} full>
+              <Field id="quantity" label={isSample ? t('sampleQuantity') : t('quantity')} icon={<Package className="size-4" />} error={errors.quantity?.message} full>
                 <input
                   id="quantity"
                   type="text"
-                  placeholder={t('quantityPlaceholder')}
+                  placeholder={isSample ? t('sampleQuantityPlaceholder') : t('quantityPlaceholder')}
                   {...register('quantity')}
                   className={inputCls}
                 />
@@ -172,7 +234,7 @@ export function QuoteForm({
             disabled={isSubmitting}
             className={`${primaryButton} shrink-0 disabled:cursor-not-allowed disabled:opacity-60`}
           >
-            {isSubmitting ? t('sending') : t('submit')}
+            {isSubmitting ? t('sending') : isSample ? t('sampleSubmit') : t('submit')}
           </button>
         </div>
       </form>

@@ -170,7 +170,7 @@ export async function ProductView({
                   category={category.title}
                   className={primaryButton}
                 />
-                <a href={`?product=${encodeURIComponent(product.name)}#enquiry`} className={secondaryBtn}>
+                <a href="?intent=sample#enquiry" className={secondaryBtn}>
                   {t('detail.sampleCta')}
                 </a>
               </div>
