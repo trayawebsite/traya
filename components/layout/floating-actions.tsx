@@ -1,28 +1,34 @@
 'use client';
 
+import {useState} from 'react';
 import {useTranslations} from 'next-intl';
+import {usePathname} from '@/i18n/navigation';
 import {siteConfig} from '@/lib/site-config';
+import {ChatPanel} from '@/components/chatbot/chat-panel';
 
-// Floating launcher cluster — assistant + WhatsApp, side by side, matched 56px
-// white circles. The assistant button scrolls to the enquiry form for now (the
-// in-house AI chat is a pending build). WhatsApp opens wa.me with a prefilled
-// message.
+// Floating launcher cluster — AI assistant + WhatsApp, side by side, matched 56px
+// white circles. The assistant button opens the in-house AI chat panel; WhatsApp
+// opens wa.me with a prefilled message.
 export function FloatingActions() {
   const t = useTranslations('Header');
+  const pathname = usePathname();
+  // Open state is keyed to the path it was opened on, so navigating away derives
+  // it shut (fresh each visit) — no setState-in-effect.
+  const [openedAt, setOpenedAt] = useState<string | null>(null);
+  const chatOpen = openedAt === pathname;
   const {number} = siteConfig.whatsapp;
   const waHref = number ? `https://wa.me/${number}?text=${encodeURIComponent(t('whatsappMessage'))}` : null;
 
-  function openChat() {
-    document.getElementById('enquiry')?.scrollIntoView({behavior: 'smooth', block: 'start'});
-  }
-
   return (
-    <div className="fixed bottom-6 end-6 z-50 flex items-center gap-3">
-      {/* Assistant — scrolls to the enquiry form for now (AI chat pending) */}
-      <button
-        type="button"
-        onClick={openChat}
-        aria-label={t('chat')}
+    <>
+      <ChatPanel open={chatOpen} onClose={() => setOpenedAt(null)} />
+      <div className="fixed bottom-6 end-6 z-50 flex items-center gap-3">
+        {/* AI assistant — opens the chat panel */}
+        <button
+          type="button"
+          onClick={() => setOpenedAt(chatOpen ? null : pathname)}
+          aria-label={t('chat')}
+          aria-expanded={chatOpen}
         className="inline-flex h-14 w-14 items-center justify-center rounded-full border-2 border-traya-clay bg-white shadow-lg transition-[box-shadow,transform] duration-150 ease-out hover:shadow-xl active:scale-[0.96] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-clay focus-visible:ring-offset-2 focus-visible:ring-offset-background motion-reduce:transition-none"
       >
         <svg
@@ -90,6 +96,7 @@ export function FloatingActions() {
           </svg>
         </a>
       )}
-    </div>
+      </div>
+    </>
   );
 }

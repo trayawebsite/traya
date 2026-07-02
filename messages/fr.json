@@ -1,4 +1,21 @@
 {
+  "Chatbot": {
+    "title": "Assistant Traya",
+    "subtitle": "Questions sur nos produits & notre fonctionnement",
+    "greeting": "Bonjour ! Je suis l'assistant Traya. Posez-moi vos questions sur nos produits, catégories, échantillons ou notre façon de travailler — je suis là pour vous aider.",
+    "chip1": "Qu'exportez-vous ?",
+    "chip2": "Comment fonctionnent les échantillons ?",
+    "chip3": "Comment passer une commande ?",
+    "placeholder": "Posez une question…",
+    "send": "Envoyer",
+    "close": "Fermer le chat",
+    "whatsappAction": "Discuter sur WhatsApp",
+    "enquiryAction": "Formulaire de demande",
+    "offline": "Notre assistant fait une courte pause. Écrivez-nous sur WhatsApp et nous vous aiderons tout de suite.",
+    "rateLimited": "Vous avez atteint la limite de chat du jour. Écrivez-nous sur WhatsApp et nous vous aiderons tout de suite.",
+    "limitReached": "Continuons sur WhatsApp pour une réponse plus rapide.",
+    "disclaimer": "Assistant IA. Pour les prix, spécifications et commandes exacts, veuillez utiliser le formulaire de demande."
+  },
   "Error": {
     "eyebrow": "Une erreur s'est produite",
     "heading": "Un incident est survenu.",

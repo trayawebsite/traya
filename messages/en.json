@@ -1,4 +1,21 @@
 {
+  "Chatbot": {
+    "title": "Traya Assistant",
+    "subtitle": "Ask about our products & how we work",
+    "greeting": "Hi! I'm the Traya assistant. Ask me about our products, categories, samples, or how to work with us — I'm here to help.",
+    "chip1": "What do you export?",
+    "chip2": "How do samples work?",
+    "chip3": "How do I place an order?",
+    "placeholder": "Ask a question…",
+    "send": "Send",
+    "close": "Close chat",
+    "whatsappAction": "Chat on WhatsApp",
+    "enquiryAction": "Enquiry form",
+    "offline": "Our assistant is taking a short break. Message us on WhatsApp and we'll help you right away.",
+    "rateLimited": "You've reached today's chat limit. Message us on WhatsApp and we'll help you right away.",
+    "limitReached": "Let's continue on WhatsApp for a faster answer.",
+    "disclaimer": "AI assistant. For exact prices, specs, and orders, please use the enquiry form."
+  },
   "Error": {
     "eyebrow": "Something went wrong",
     "heading": "We hit a bump.",
