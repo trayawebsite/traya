@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
 import {Badge} from '@/components/ui/badge';
 import {secondaryBtn} from './styles';
 import {Photo} from './photo';
@@ -11,18 +12,18 @@ type ProductsData = HomePage['productsSection'];
 
 // The 6 groups as photo tiles (name overlaid on a real product shot) — the
 // browsable catalogue is Traya's edge, so it gets the most visual weight.
-const GROUPS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
+const GROUPS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'chemicals'] as const;
 const GROUP_IMAGES: Record<(typeof GROUPS)[number], string> = {
   alliums: '/p-1.jpg',
   powders: '/p-2.jpg',
   spices: '/p-3.png',
   herbs: '/p-4.png',
   nutraceutical: '/p-5.png',
-  wellness: '/p-6.png'
+  chemicals: '/p-6.png'
 };
 
-// The premium retail line gets a saffron highlight tag (demo of the Badge).
-const FEATURED: (typeof GROUPS)[number] = 'wellness';
+// The flagship dehydrated line gets a saffron highlight tag (demo of the Badge).
+const FEATURED: (typeof GROUPS)[number] = 'alliums';
 
 export async function ProductGroups({data}: {data?: ProductsData}) {
   const t = await getTranslations('Home.groups');
@@ -38,11 +39,7 @@ export async function ProductGroups({data}: {data?: ProductsData}) {
       <Container className="py-section">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <p className="section-label">{eyebrow}</p>
-            <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-              {heading}
-            </h2>
-            <p className="mt-4 leading-relaxed text-muted-foreground">{sub}</p>
+            <SectionHeader eyebrow={eyebrow} heading={heading} sub={sub} />
             <SpecLine items={specLine.split(' · ')} className="mt-5" />
           </div>
           <Link href="/products" className={`${secondaryBtn} hidden sm:inline-flex`}>

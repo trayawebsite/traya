@@ -37,6 +37,9 @@ export type ProductListItem = {
   shortDescription?: string;
   images?: SanityImage[];
   forms?: ProductForm[];
+  series?: string;
+  colourIndex?: string;
+  packSizes?: string;
   category?: CategoryRef;
 };
 
@@ -51,6 +54,9 @@ export type Product = {
   specifications?: SpecRow[];
   hsCode?: string;
   origin?: string;
+  series?: string;
+  colourIndex?: string;
+  packSizes?: string;
   brochure?: SanityFile;
   featured?: boolean;
   category?: CategoryRef;

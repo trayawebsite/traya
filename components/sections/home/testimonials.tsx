@@ -5,24 +5,18 @@ import type {HomePage} from '@/sanity/lib/types';
 
 type TestimonialsData = HomePage['testimonialsSection'];
 
-// Social proof — editorial quote cards. Uses Sanity heading data when available.
+// Social proof — editorial quote cards under a small "What buyers say" label.
 export async function Testimonials({data}: {data?: TestimonialsData}) {
   const t = await getTranslations('Home.testimonials');
   const s = await getSiteSettings();
   if (s.testimonials.length === 0) return null;
 
   const eyebrow = data?.eyebrow || t('eyebrow');
-  const heading = data?.heading || t('heading');
 
   return (
     <section className="border-b border-traya-border bg-background">
       <Container className="py-section">
-        <div className="max-w-2xl">
-          <p className="section-label">{eyebrow}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
-          </h2>
-        </div>
+        <p className="section-label">{eyebrow}</p>
 
         <ul className="mt-12 grid gap-5 md:grid-cols-3">
           {s.testimonials.map((q, i) => (

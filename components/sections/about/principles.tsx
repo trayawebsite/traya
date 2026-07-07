@@ -1,5 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
+import {IconChip} from '@/components/ui/icon-chip';
 
 // "Who we are" + the 3 founding principles — an editorial numbered list
 // (gold index + icon chip on the left, title + description on the right).
@@ -45,11 +47,7 @@ export async function Principles() {
     <section className="border-b border-traya-border bg-traya-surface">
       <Container className="py-section">
         <div className="max-w-2xl">
-          <p className="section-label">{t('eyebrow')}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {t('heading')}
-          </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{t('body')}</p>
+          <SectionHeader eyebrow={t('eyebrow')} heading={t('heading')} sub={t('body')} lead />
         </div>
 
         <ul className="mt-12">
@@ -60,9 +58,7 @@ export async function Principles() {
               className="grid gap-x-12 gap-y-4 border-t border-traya-border py-8 first:border-t-0 md:grid-cols-[auto_1fr]"
             >
               <div className="flex items-center gap-4">
-                <span className="grid size-12 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                  {p.icon}
-                </span>
+                <IconChip className="size-12">{p.icon}</IconChip>
                 <span className="font-mono text-sm text-muted-foreground">0{i + 1}</span>
               </div>
               <div className="md:max-w-xl">

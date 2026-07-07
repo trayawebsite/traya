@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {getSiteSettings} from '@/lib/site-settings';
 import {siteConfig} from '@/lib/site-config';
+import {whatsAppHref} from '@/lib/whatsapp';
 import {Container} from '@/components/ui/container';
 
 const linkCls =
@@ -95,9 +96,7 @@ export async function TopBar() {
   const socials = siteConfig.socials.filter((soc) => socialUrl[soc.key]);
 
   const wa = siteConfig.whatsapp.number;
-  const waHref = wa
-    ? `https://wa.me/${wa}?text=${encodeURIComponent(th('whatsappMessage'))}`
-    : null;
+  const waHref = whatsAppHref(th('whatsappMessage'));
 
   const divider = <span aria-hidden className="h-3 w-px bg-traya-cream/20" />;
 

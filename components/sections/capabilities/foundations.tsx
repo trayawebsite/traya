@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
 import type {FeatureItem} from '@/sanity/lib/types';
 
 // The 4 operating foundations on a dark espresso band — "the standards behind
@@ -17,11 +18,7 @@ export async function Foundations({data}: {data?: FeatureItem[]}) {
     <section className="bg-traya-deep text-traya-cream">
       <Container className="py-section-lg">
         <div className="max-w-2xl">
-          <p className="section-label on-dark">{t('eyebrow')}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm lg:text-display">
-            {t('heading')}
-          </h2>
-          <p className="mt-4 leading-relaxed text-traya-cream/75">{t('body')}</p>
+          <SectionHeader eyebrow={t('eyebrow')} heading={t('heading')} sub={t('body')} dark />
         </div>
 
         <div className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">

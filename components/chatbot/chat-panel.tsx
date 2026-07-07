@@ -3,7 +3,7 @@
 import {useEffect, useRef, useState, type ReactNode} from 'react';
 import {useTranslations, useLocale} from 'next-intl';
 import {usePathname} from '@/i18n/navigation';
-import {siteConfig} from '@/lib/site-config';
+import {whatsAppHref} from '@/lib/whatsapp';
 
 type Msg = {role: 'user' | 'assistant'; content: string};
 type Status = 'idle' | 'streaming' | 'offline' | 'rate' | 'limit';
@@ -26,8 +26,7 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const wa = siteConfig.whatsapp.number;
-  const waHref = wa ? `https://wa.me/${wa}?text=${encodeURIComponent(th('whatsappMessage'))}` : null;
+  const waHref = whatsAppHref(th('whatsappMessage'));
 
   const userCount = messages.filter((m) => m.role === 'user').length;
   const atLimit = userCount >= MAX_USER;

@@ -1,5 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
+import {IconChip} from '@/components/ui/icon-chip';
 import type {FeatureItem} from '@/sanity/lib/types';
 
 // The 5 core capabilities — an editorial list (gold icon chip + DM-Mono index on
@@ -73,10 +75,7 @@ export async function CoreCapabilities({data}: {data?: FeatureItem[]}) {
     <section className="border-b border-traya-border bg-traya-surface">
       <Container className="py-section">
         <div className="max-w-2xl">
-          <p className="section-label">{t('eyebrow')}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {t('heading')}
-          </h2>
+          <SectionHeader eyebrow={t('eyebrow')} heading={t('heading')} />
         </div>
 
         <ul className="mt-12">
@@ -87,9 +86,7 @@ export async function CoreCapabilities({data}: {data?: FeatureItem[]}) {
               className="grid gap-x-12 gap-y-4 border-t border-traya-border py-8 first:border-t-0 md:grid-cols-[auto_1fr]"
             >
               <div className="flex items-center gap-4">
-                <span className="grid size-12 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                  {item.icon}
-                </span>
+                <IconChip className="size-12">{item.icon}</IconChip>
                 <span className="font-mono text-sm text-muted-foreground">0{i + 1}</span>
               </div>
               <div className="md:max-w-2xl">

@@ -86,9 +86,6 @@ export async function ProductView({
                 {product.origin || t('detail.origin')}
               </Fact>
               <Fact label={t('detail.pricingLabel')}>{t('detail.pricing')}</Fact>
-              {product.hsCode && (
-                <Fact label={t('detail.hsCode')}>{product.hsCode}</Fact>
-              )}
             </dl>
 
             {/* Specifications */}

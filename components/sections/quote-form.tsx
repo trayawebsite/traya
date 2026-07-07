@@ -2,7 +2,7 @@
 
 import {useState, useEffect, cloneElement, useMemo, type ReactElement} from 'react';
 import {z} from 'zod';
-import {useForm} from 'react-hook-form';
+import {useForm, useWatch} from 'react-hook-form';
 import {zodResolver} from '@hookform/resolvers/zod';
 import {useTranslations} from 'next-intl';
 import {toast} from 'sonner';
@@ -47,7 +47,7 @@ export function QuoteForm({
     reset,
     setFocus,
     setValue,
-    watch,
+    control,
     formState: {errors, isSubmitting}
   } = useForm<FormValues>({
     resolver: zodResolver(schema),
@@ -64,7 +64,7 @@ export function QuoteForm({
     if (intent === 'sample') setValue('purpose', 'sample');
   }, [setValue]);
 
-  const purpose = watch('purpose');
+  const purpose = useWatch({control, name: 'purpose'});
   const isSample = purpose === 'sample';
 
   function onInvalid(errs: Record<string, unknown>) {

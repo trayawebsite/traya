@@ -3,7 +3,7 @@
 import {useState} from 'react';
 import {useTranslations} from 'next-intl';
 import {usePathname} from '@/i18n/navigation';
-import {siteConfig} from '@/lib/site-config';
+import {whatsAppHref} from '@/lib/whatsapp';
 import {ChatPanel} from '@/components/chatbot/chat-panel';
 
 // Floating launcher cluster — AI assistant + WhatsApp, side by side, matched 56px
@@ -16,8 +16,7 @@ export function FloatingActions() {
   // it shut (fresh each visit) — no setState-in-effect.
   const [openedAt, setOpenedAt] = useState<string | null>(null);
   const chatOpen = openedAt === pathname;
-  const {number} = siteConfig.whatsapp;
-  const waHref = number ? `https://wa.me/${number}?text=${encodeURIComponent(t('whatsappMessage'))}` : null;
+  const waHref = whatsAppHref(t('whatsappMessage'));
 
   return (
     <>

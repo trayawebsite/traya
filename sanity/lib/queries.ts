@@ -38,7 +38,10 @@ export const categoryBySlugQuery = groq`
       "slug": slug.current,
       shortDescription,
       images,
-      forms
+      forms,
+      series,
+      colourIndex,
+      packSizes
     }
   }
 `;
@@ -91,6 +94,9 @@ export const productBySlugQuery = groq`
     specifications,
     hsCode,
     origin,
+    series,
+    colourIndex,
+    packSizes,
     brochure,
     featured,
     seo,

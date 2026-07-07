@@ -1,4 +1,87 @@
 {
+  "HowWeWork": {
+    "meta": {
+      "title": "Notre méthode — Traya International Exim",
+      "description": "Comment Traya gère votre exportation de la demande à la livraison : sourcing, vérification qualité, documentation, logistique et expédition par mer, air ou courrier."
+    },
+    "hero": {
+      "eyebrow": "Notre approche & portée mondiale",
+      "heading": "Un processus structuré, conçu autour de vous.",
+      "sub": "Chaque transaction internationale a ses propres exigences : spécifications, conformité, documentation et logistique. Chez Traya, nous gérons tout cela, pour que vous puissiez vous concentrer sur votre activité pendant que nous nous occupons du reste."
+    },
+    "manage": {
+      "eyebrow": "Ce que nous gérons pour vous",
+      "heading": "Tout, de la demande à la livraison",
+      "sub": "Avec Traya, vous n'obtenez pas seulement un produit. Vous obtenez une équipe qui gère chaque rouage de votre commerce, pour que rien ne passe entre les mailles du filet.",
+      "i1Title": "Opérations d'export & import",
+      "i1Body": "Gestion de bout en bout de votre commerce, du sourcing du produit à l'expédition finale. Un seul partenaire, un seul processus, aucune faille.",
+      "i2Title": "Sourcing & vérification de la qualité",
+      "i2Body": "Nous trouvons le bon produit pour votre besoin et vérifions qu'il respecte vos spécifications avant tout envoi. Vous obtenez ce que vous avez demandé, à chaque fois.",
+      "i3Title": "Documentation commerciale",
+      "i3Body": "Chaque document dont votre expédition a besoin : factures, listes de colisage, certificats et documents de conformité, préparés avec précision et dans les délais.",
+      "i4Title": "Coordination logistique",
+      "i4Body": "Nous coordonnons le transport de vos marchandises par mer, air ou courrier, selon votre calendrier, votre volume et votre destination. Vous restez informé à chaque étape.",
+      "i5Title": "Accompagnement dédié de l'acheteur",
+      "i5Body": "Un interlocuteur unique et constant, de la première demande à la livraison. Communication claire, réponses rapides, aucun transfert.",
+      "quote": "Nous simplifions la complexité du sourcing en Inde, pour que vous puissiez vous concentrer sur votre activité."
+    },
+    "process": {
+      "eyebrow": "Notre méthode",
+      "heading": "De la demande à la livraison",
+      "sub": "Huit étapes claires. Une seule norme d'exécution.",
+      "step": "Étape",
+      "s1Title": "Demande",
+      "s1Body": "Vous partagez votre besoin produit, la quantité et le pays de destination.",
+      "s2Title": "Discussion du besoin",
+      "s2Body": "Nous clarifions les spécifications, les délais, l'emballage et les exigences de conformité.",
+      "s3Title": "Devis",
+      "s3Body": "Un devis détaillé et transparent couvrant le prix du produit, le fret, les conditions de paiement et les modalités. Aucun coût caché, aucune surprise.",
+      "s4Title": "Confirmation de commande",
+      "s4Body": "Une fois l'accord conclu, la commande est confirmée et la production commence. Votre calendrier est fixé dès ce moment.",
+      "s5Title": "Assurance qualité",
+      "s5Body": "La qualité du produit est vérifiée selon les spécifications convenues avant l'expédition.",
+      "s6Title": "Documentation",
+      "s6Body": "Tous les documents d'exportation (factures, listes de colisage, certificats) sont préparés et vérifiés.",
+      "s7Title": "Expédition",
+      "s7Body": "Les marchandises sont expédiées selon votre mode de fret préféré, avec les détails de suivi complets.",
+      "s8Title": "Livraison",
+      "s8Body": "L'expédition atteint sa destination. Nous restons disponibles pour tout accompagnement après livraison.",
+      "note": "Chaque étape est suivie, communiquée et exécutée avec le même niveau de professionnalisme, quels que soient la taille de la commande, le type de produit ou la destination. Avec Traya, vous ne vous demandez jamais où en sont les choses."
+    },
+    "ship": {
+      "eyebrow": "Fret & expédition",
+      "heading": "Comment nous expédions",
+      "sub": "Nous coordonnons les expéditions internationales selon trois modes, adaptés à la taille de votre commande, à l'urgence et à la destination.",
+      "seaTitle": "Fret maritime",
+      "seaBody": "Idéal pour les commandes de gros volume où l'efficacité des coûts compte. Nous coordonnons les envois FCL (conteneur complet) et LCL (groupage).",
+      "seaTag": "FCL & LCL disponibles",
+      "airTitle": "Fret aérien",
+      "airBody": "Pour les marchandises sensibles au temps ou de grande valeur qui doivent circuler rapidement et en sécurité au-delà des frontières, avec un temps de transit minimal.",
+      "airTag": "Aérien prioritaire & standard",
+      "courierTitle": "Courrier pour échantillons",
+      "courierBody": "Envoi par courrier international pour les échantillons de produits, afin que les acheteurs évaluent la qualité, les spécifications et l'adéquation avant de s'engager sur une commande complète.",
+      "courierTag": "Évaluation avant commande",
+      "incoterms": "Incoterms : les expéditions sont gérées selon des conditions qui vous conviennent. Nous prenons en charge FOB, CIF et d'autres conditions commerciales standard, convenues à l'avance, sans ambiguïté sur les responsabilités ou les coûts. Parlez-nous de ce qui convient le mieux à votre besoin."
+    },
+    "reach": {
+      "eyebrow": "Portée mondiale",
+      "heading": "Où que vous soyez, nous pouvons vous atteindre",
+      "p1": "L'Inde est l'une des destinations de sourcing les plus performantes au monde, et Ahmedabad en est le cœur. Nous y sommes implantés délibérément, avec un accès direct à des produits de qualité dans de multiples catégories et l'infrastructure pour les acheminer partout dans le monde.",
+      "p2": "Que vous soyez un importateur établi aux besoins définis ou une entreprise qui s'approvisionne en Inde pour la première fois, Traya est conçue pour vous servir, avec la même structure, le même soin et la même fiabilité à toutes les échelles.",
+      "pillar1": "S'adapter aux réglementations commerciales et aux exigences d'importation de votre pays de destination.",
+      "pillar2": "Veiller à ce que les produits respectent les normes de conformité des marchés où vous opérez.",
+      "pillar3": "Traiter chaque commande comme le fondement d'une relation durable, et non comme une transaction unique.",
+      "pillar4": "Rester flexible et réactif à mesure que vos besoins et les conditions du marché évoluent.",
+      "mapCaption": "Nous servons des acheteurs internationaux dans le monde entier",
+      "mapLabel": "Ahmedabad, Inde"
+    },
+    "cta": {
+      "heading": "Un besoin en tête ?",
+      "sub": "Partagez vos besoins produits et votre destination, et nous prenons le relais.",
+      "primary": "Envoyer une demande",
+      "secondary": "Voir nos produits"
+    }
+  },
   "Chatbot": {
     "title": "Assistant Traya",
     "subtitle": "Questions sur nos produits & notre fonctionnement",
@@ -27,6 +110,7 @@
     "about": "À propos",
     "capabilities": "Capacités",
     "products": "Produits",
+    "howWeWork": "Notre méthode",
     "certifications": "Certifications",
     "contact": "Contactez-nous",
     "enquiry": "Demande de renseignements",
@@ -41,8 +125,7 @@
     "skip": "Aller au contenu",
     "whatsapp": "Discuter sur WhatsApp",
     "chat": "Discuter avec nous",
-    "enquireNow": "Renseignez-vous maintenant",
-    "topNote": "Exportations multi-sectorielles depuis l'Inde",
+    "topNote": "Élargir les horizons par le commerce.",
     "whatsappMessage": "Bonjour Traya International Exim, je souhaite me renseigner sur vos exportations d'ingrédients alimentaires.\n\nProduit(s) : \nQuantité / qualité : \nPays de destination : \nEntreprise : ",
     "siteLabel": "Traya International Exim — accueil",
     "menuAria": "Menu",
@@ -190,11 +273,11 @@
     },
     "hero": {
       "eyebrow": "Exportations depuis l'Inde dans des secteurs clés",
-      "heading": "Votre partenaire d'exportation stratégique pour l'approvisionnement depuis l'Inde.",
-      "sub": "Nous facilitons le commerce mondial en nous approvisionnant en produits agroalimentaires, chimiques, mécaniques et papiers de première qualité. De la sélection rigoureuse des fournisseurs et la conformité de la qualité jusqu'à la logistique d'expédition complète, nous gérons l'ensemble de votre cycle d'exportation.",
-      "ctaPrimary": "Envoyez vos exigences",
-      "ctaSecondary": "Voir les produits alimentaires et agricoles",
-      "stat": "Catalogue alimentaire et agricole · Plus de 150 produits · 18 catégories",
+      "heading": "Votre partenaire de confiance pour l'approvisionnement en Inde.",
+      "sub": "Traya s'engage à bâtir des partenariats mondiaux durables fondés sur la confiance, la fiabilité et une exécution professionnelle. Avec un portefeuille croissant de produits de qualité et une approche centrée sur le client, nous aidons les entreprises à naviguer dans le commerce international en toute confiance.",
+      "cta": "Explorer les produits",
+      "ctaEnquiry": "Partagez votre besoin",
+      "stat": "Alimentaire, agricole & chimique · Plus de 500 produits · 30 catégories",
       "certified": "Certifié"
     },
     "intro": {
@@ -214,10 +297,10 @@
       "sectors": "Secteurs de produits"
     },
     "groups": {
-      "eyebrow": "Catalogue alimentaire et agricole",
-      "heading": "Découvrez nos produits alimentaires et agricoles.",
-      "sub": "Notre catalogue en ligne couvre actuellement les produits alimentaires et agricoles. Si vous avez besoin de produits chimiques, de produits mécaniques, de papier ou d'un produit non listé, envoyez-nous vos exigences.",
-      "spec": "Plus de 150 produits listés · 18 catégories · 6 groupes de produits",
+      "eyebrow": "Catalogue alimentaire, agricole et chimique",
+      "heading": "Découvrez notre gamme alimentaire, agricole et chimique.",
+      "sub": "Notre catalogue en ligne couvre les produits alimentaires et agricoles ainsi que les produits chimiques. Si vous avez besoin de produits mécaniques, de papier ou d’un produit non listé, envoyez-nous vos exigences.",
+      "spec": "Plus de 500 produits listés · 30 catégories · 6 groupes de produits",
       "cta": "Voir tous les produits alimentaires et agricoles",
       "badgePremium": "Alimentaire et agricole",
       "alliums": "Alliums et légumes déshydratés",
@@ -231,14 +314,16 @@
       "nutraceutical": "Plantes et nutraceutiques",
       "nutraceuticalBlurb": "Moringa, spiruline, ashwagandha, amla et autres poudres végétales.",
       "wellness": "Produits laitiers et bien-être premium",
-      "wellnessBlurb": "Poudres laitières, graines comestibles, jaggery, ghee A2, huiles pressées à froid et millets."
+      "wellnessBlurb": "Poudres laitières, graines comestibles, jaggery, ghee A2, huiles pressées à froid et millets.",
+      "chemicals": "Produits chimiques et colorants",
+      "chemicalsBlurb": "Colorants réactifs, acides et directs, colorants alimentaires, pigments et résines pour les industries du textile, de l’alimentaire et des revêtements."
     },
     "why": {
       "eyebrow": "Travailler avec Traya",
       "heading": "Ce que vous pouvez attendre en travaillant avec nous.",
       "cta": "Découvrez nos capacités",
       "catalogue": "Produits dans plusieurs secteurs",
-      "catalogueBody": "Parcourez notre catalogue alimentaire et agricole en ligne. Pour les produits chimiques, les produits mécaniques, le papier ou d'autres exigences, envoyez les spécifications à notre équipe.",
+      "catalogueBody": "Parcourez notre catalogue alimentaire, agricole et chimique en ligne. Pour les produits mécaniques, le papier ou d’autres exigences, envoyez les spécifications à notre équipe.",
       "founder": "Communication directe",
       "founderBody": "Notre équipe dirigée par la fondatrice prend le temps de comprendre vos exigences et vous tient informé à chaque étape de la commande.",
       "docs": "Les documents dont votre commande a besoin",
@@ -247,8 +332,7 @@
       "logisticsBody": "Nous confirmons la qualité, la quantité, l'emballage, la destination, le calendrier et les conditions commerciales avant que la commande ne progresse."
     },
     "testimonials": {
-      "eyebrow": "Ce que disent les acheteurs",
-      "heading": "Les relations à long terme se construent par un travail fiable."
+      "eyebrow": "Ce que disent les acheteurs"
     },
     "certs": {
       "eyebrow": "Enregistrements d'exportation",
@@ -298,13 +382,12 @@
     },
     "hero": {
       "eyebrow": "À propos de Traya",
-      "heading": "Un partenaire EXIM indien de confiance à travers les secteurs mondiaux.",
+      "heading": "Une approche raffinée du commerce mondial",
       "tagline": "Approvisionnement, documentation, emballage et soutien à l'expédition gérés par une seule équipe dévouée.",
-      "body": "Traya International Exim LLP permet aux acheteurs internationaux de s'approvisionner stratégiquement en Inde dans les secteurs agroalimentaire, chimique, mécanique et papier. Avec un vaste catalogue de plus de 150 produits méticuleusement classés, nous offrons une qualité sans compromis, une documentation rigoureuse et un soutien logistique mondial transparent."
+      "body": "TRAYA est une entreprise de commerce mondial dédiée à bâtir des partenariats de confiance sur les marchés internationaux. Grâce à une exécution professionnelle et une approche centrée sur le client, nous aidons les entreprises à naviguer dans le commerce mondial en toute confiance.\n\nGuidée par la transparence, le souci du détail et un engagement envers la qualité, chaque interaction est gérée avec soin, garantissant fiabilité, cohérence et une expérience professionnelle sur laquelle les entreprises peuvent compter.\n\nAvec un portefeuille croissant et une vision de croissance durable, TRAYA continue d'évoluer au rythme des besoins changeants des marchés mondiaux, créant des partenariats durables fondés sur la confiance, la qualité et la réussite partagée."
     },
     "founder": {
       "eyebrow": "Un mot de la fondatrice",
-      "heading": "Le commerce est, avant tout, une relation.",
       "name": "Neha Pardeshi",
       "role": "Fondatrice et PDG",
       "p1": "Le monde ne s'est pas ouvert à moi à travers les manuels scolaires — il s'est ouvert à travers les voyages. Explorer différentes cultures, rencontrer des personnes de tous horizons et voir le monde sous différents angles ont façonné non seulement qui je suis, mais aussi ce que j'ai choisi de construire.",
@@ -347,11 +430,12 @@
     "vision": {
       "eyebrow": "Vision et mission",
       "visionLabel": "Notre vision",
-      "vision": "Devenir un partenaire commercial de confiance à long terme pour les entreprises qui s'approvisionnent depuis l'Inde et commercent sur les marchés mondiaux.",
+      "vision": "Devenir le partenaire commercial le plus fiable et le plus important pour les entreprises qui se développent au-delà des frontières.",
       "missionLabel": "Notre mission",
-      "m1": "Aider les acheteurs à s'approvisionner en bons produits depuis l'Inde avec des spécifications claires et une coordination des fournisseurs.",
-      "m2": "Soutenir le commerce international avec une documentation pratique, un emballage et une coordination logistique.",
-      "m3": "Bâtir des relations commerciales durables grâce à une communication fiable, des pratiques équitables et un suivi constant.",
+      "m1": "Faciliter des opérations d'exportation et d'importation efficaces et bien structurées sur les marchés mondiaux.",
+      "m2": "Bâtir et renforcer des partenariats commerciaux internationaux durables et proposer des solutions pérennes.",
+      "m3": "Assurer une exécution fluide grâce à des systèmes rigoureux et une clarté opérationnelle.",
+      "m4": "Élargir notre présence mondiale par un engagement stratégique sur les marchés.",
       "commitment": "Nous ne construisons pas une firme de transactions ponctuelles. Nous construisons un partenaire commercial vers lequel les acheteurs peuvent revenir pour un soutien clair à travers les produits, les secteurs et les marchés."
     }
   },
@@ -502,13 +586,13 @@
   "Catalogue": {
     "meta": {
       "title": "Produits",
-      "description": "Parcourez le catalogue alimentaire et agricole de Traya avec plus de 150 produits répartis en 18 catégories. Pour les produits chimiques, les produits mécaniques, le papier ou d'autres exigences d'exportation, envoyez-nous vos spécifications."
+      "description": "Parcourez le catalogue alimentaire, agricole et chimique de Traya — plus de 500 produits répartis en 30 catégories, des ingrédients déshydratés et épices aux colorants réactifs, colorants alimentaires et pigments. Pour les produits mécaniques, le papier ou d’autres exigences d’exportation, envoyez-nous vos spécifications."
     },
     "hub": {
       "eyebrow": "Catalogue alimentaire et agricole",
-      "heading": "Trouvez les produits alimentaires et agricoles que vous souhaitez sourcer depuis l'Inde.",
-      "sub": "Parcourez nos produits alimentaires et agricoles listés par catégorie. Pour les produits chimiques, les produits mécaniques, le papier ou tout produit non affiché ici, envoyez-nous vos exigences et nous examinerons les options d'approvisionnement disponibles.",
-      "spec": "6 groupes · 18 catégories · Plus de 150 produits listés",
+      "heading": "Trouvez les produits que vous souhaitez sourcer depuis l’Inde.",
+      "sub": "Parcourez nos produits alimentaires, agricoles et chimiques listés par catégorie. Pour les produits mécaniques, le papier ou tout produit non affiché ici, envoyez-nous vos exigences et nous examinerons les options d’approvisionnement disponibles.",
+      "spec": "6 groupes · 30 catégories · Plus de 500 produits listés",
       "search": "Rechercher des produits ou catégories...",
       "all": "Tous",
       "noResults": "Aucun produit ne correspond à votre recherche.",
@@ -522,7 +606,10 @@
       "added": "Dans votre demande",
       "addedToast": "Ajouté à votre liste de demande",
       "quote": "Demander un devis",
-      "sample": "Demander un échantillon"
+      "sample": "Demander un échantillon",
+      "series": "Série",
+      "colourIndex": "Indice de couleur",
+      "packSizes": "Conditionnements"
     },
     "product": "produit",
     "products": "produits",

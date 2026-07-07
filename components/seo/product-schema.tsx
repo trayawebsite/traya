@@ -34,13 +34,6 @@ export function ProductSchema({
     // listed price. A literal price:"0" reads as "Free" and is rejected by
     // Google's Product rich-result validation — so we omit Offer entirely.
     additionalProperty: [
-      ...(product.hsCode
-        ? [{
-            '@type': 'PropertyValue',
-            name: 'HS Code',
-            value: product.hsCode
-          }]
-        : []),
       ...(product.origin
         ? [{
             '@type': 'PropertyValue',

@@ -10,7 +10,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
 
   const heading = data?.heading || t('heading');
   const tagline = data?.tagline || t('tagline');
-  const body = t('body'); // Body stays i18n until Sanity has a dedicated field
+  const bodyParas = t('body').split('\n\n'); // Body stays i18n until Sanity has a dedicated field
 
   return (
     <section className="relative overflow-hidden border-b border-traya-border bg-background">
@@ -25,11 +25,13 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
             <p className="mt-3 font-display text-lg italic text-traya-saffron-lo">
               {tagline}
             </p>
-            <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              {body}
-            </p>
+            <div className="mt-6 max-w-lg space-y-4 text-lg leading-relaxed text-muted-foreground">
+              {bodyParas.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
             <SpecLine
-              items={['150+ products', '18 categories', 'India origin']}
+              items={['500+ products', '30 categories', 'India origin']}
               className="mt-8"
             />
           </div>

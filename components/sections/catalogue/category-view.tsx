@@ -84,7 +84,10 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                 name: p.name,
                 slug: p.slug,
                 shortDescription: p.shortDescription,
-                images: p.images
+                images: p.images,
+                series: p.series,
+                colourIndex: p.colourIndex,
+                packSizes: p.packSizes
               }))}
               labels={{
                 search: t('category.search'),

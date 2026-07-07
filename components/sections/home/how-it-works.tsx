@@ -1,5 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
+import {IconChip} from '@/components/ui/icon-chip';
 import type {HomePage, FeatureItem} from '@/sanity/lib/types';
 
 type ProcessData = HomePage['process'];
@@ -36,11 +38,7 @@ export async function HowItWorks({data}: {data?: ProcessData}) {
     <section className="border-b border-traya-border bg-traya-surface">
       <Container className="py-section">
         <div className="max-w-2xl">
-          <p className="section-label">{eyebrow}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
-          </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">{sub}</p>
+          <SectionHeader eyebrow={eyebrow} heading={heading} sub={sub} />
         </div>
 
         <ol className="mt-12 grid gap-5 md:grid-cols-3">
@@ -51,9 +49,7 @@ export async function HowItWorks({data}: {data?: ProcessData}) {
               className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
               <div className="flex items-center gap-3">
-                <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                  {s.icon}
-                </span>
+                <IconChip className="size-10">{s.icon}</IconChip>
                 <span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
                   {stepLabel} {i + 1}
                 </span>

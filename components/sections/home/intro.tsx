@@ -1,5 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
+import {IconChip} from '@/components/ui/icon-chip';
 import {SpecLine} from './spec-line';
 import type {HomePage} from '@/sanity/lib/types';
 
@@ -40,11 +42,7 @@ export async function Intro({data}: {data?: IntroData}) {
       <Container className="py-section">
         {/* Narrative */}
         <div className="max-w-3xl">
-          <p className="section-label">{eyebrow}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
-          </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{body}</p>
+          <SectionHeader eyebrow={eyebrow} heading={heading} sub={body} lead />
           <SpecLine items={specLine.split(' · ')} className="mt-6" />
         </div>
 
@@ -55,9 +53,7 @@ export async function Intro({data}: {data?: IntroData}) {
             className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
           >
             <div className="flex items-center gap-3">
-              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                {VM_ICONS.vision}
-              </span>
+              <IconChip className="size-10">{VM_ICONS.vision}</IconChip>
               <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
                 {visionLabel}
               </h3>
@@ -71,9 +67,7 @@ export async function Intro({data}: {data?: IntroData}) {
             className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
           >
             <div className="flex items-center gap-3">
-              <span className="grid size-10 shrink-0 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                {VM_ICONS.mission}
-              </span>
+              <IconChip className="size-10">{VM_ICONS.mission}</IconChip>
               <h3 className="text-xs font-semibold uppercase tracking-[0.18em] text-traya-saffron-lo">
                 {missionLabel}
               </h3>

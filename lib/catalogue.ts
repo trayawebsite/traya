@@ -9,26 +9,8 @@ import type {SanityImage, SpecRow, ProductForm, FeatureItem} from '@/sanity/lib/
 import {fileUrlForRef} from '@/sanity/lib/image';
 
 // The 6 browse groups (mirror the home ProductGroups tiles + i18n Home.groups).
-export const GROUP_KEYS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'wellness'] as const;
+export const GROUP_KEYS = ['alliums', 'powders', 'spices', 'herbs', 'nutraceutical', 'chemicals'] as const;
 export type GroupKey = (typeof GROUP_KEYS)[number];
-
-// Which categories belong to each group. Becomes `category.group` in Sanity.
-const GROUP_CATEGORIES: Record<GroupKey, string[]> = {
-  alliums: [
-    'dehydrated-white-onion',
-    'dehydrated-red-onion',
-    'dehydrated-pink-onion',
-    'fresh-onion',
-    'dehydrated-garlic',
-    'special-dehydrated-products',
-    'dehydrated-vegetables'
-  ],
-  powders: ['spray-dried-products'],
-  spices: ['spices-powders', 'chilli-flakes', 'seasonings', 'taste-enhancers'],
-  herbs: ['herbs'],
-  nutraceutical: ['herbal-powders'],
-  wellness: ['dairy-powders', 'sweeteners-oils', 'edible-seeds-sesame', 'millets-specialty']
-};
 
 export type CatalogueProduct = {
   n: number;
@@ -41,6 +23,10 @@ export type CatalogueProduct = {
   hsCode?: string;
   origin?: string;
   brochureUrl?: string;
+  // Chemicals catalogue fields (undefined for food products)
+  series?: string;
+  colourIndex?: string;
+  packSizes?: string;
 };
 
 export type CatalogueCategory = {
@@ -59,15 +45,10 @@ export type CatalogueCategory = {
 };
 
 // ── JSON fallback (synchronous) ─────────────────────────────────────────
-const slugToGroup = new Map<string, GroupKey>();
-for (const key of GROUP_KEYS) {
-  for (const catSlug of GROUP_CATEGORIES[key]) slugToGroup.set(catSlug, key);
-}
-
-const jsonCategories: CatalogueCategory[] = (
-  catalogueData.categories as Omit<CatalogueCategory, 'group'>[]
-)
-  .map((c) => ({...c, group: slugToGroup.get(c.slug) ?? 'wellness'}))
+// `group` + `description` + per-product `hsCode` live in the JSON, generated
+// from the client's master catalogue (public/Traya_Food Product_List_By_Category.xlsx).
+const jsonCategories: CatalogueCategory[] = (catalogueData.categories as CatalogueCategory[])
+  .slice()
   .sort((a, b) => a.order - b.order);
 
 // ── Sanity fetcher (async) ──────────────────────────────────────────────
@@ -84,7 +65,7 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
       title: c.title,
       slug: c.slug,
       order: i,
-      group: (c.group as GroupKey) ?? 'wellness',
+      group: (c.group as GroupKey) ?? 'spices',
       description: c.description,
       image: c.image,
       products: []
@@ -107,7 +88,10 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
             slug: p.slug,
             shortDescription: p.shortDescription,
             images: p.images,
-            forms: p.forms
+            forms: p.forms,
+            series: p.series,
+            colourIndex: p.colourIndex,
+            packSizes: p.packSizes
           }))
         };
       })
@@ -170,11 +154,14 @@ export async function getProductBySlug(
             specifications: fullProduct.specifications,
             hsCode: fullProduct.hsCode,
             origin: fullProduct.origin,
+            series: fullProduct.series,
+            colourIndex: fullProduct.colourIndex,
+            packSizes: fullProduct.packSizes,
             brochureUrl: fullProduct.brochure?.asset?._ref
               ? fileUrlForRef(fullProduct.brochure.asset._ref) ?? undefined
               : undefined
           },
-          category: category ?? {title: fullProduct.category?.title ?? '', slug: '', order: 0, group: 'wellness', products: []}
+          category: category ?? {title: fullProduct.category?.title ?? '', slug: '', order: 0, group: 'spices', products: []}
         };
       }
     } catch (err) {

@@ -30,7 +30,7 @@ export const category = defineType({
           {title: 'Spices & Seasonings', value: 'spices'},
           {title: 'Culinary Herbs', value: 'herbs'},
           {title: 'Herbal & Nutraceutical', value: 'nutraceutical'},
-          {title: 'Dairy & Premium Wellness', value: 'wellness'}
+          {title: 'Chemicals & Dyes', value: 'chemicals'}
         ]
       }
     }),

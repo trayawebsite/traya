@@ -34,9 +34,6 @@ export async function FounderLetter({data}: {data?: Founder}) {
 
           <div>
             <p className="section-label on-dark">{t('eyebrow')}</p>
-            <h2 className="mt-4 font-display text-display-sm lg:text-display">
-              {t('heading')}
-            </h2>
 
             <div className="mt-6 space-y-4 leading-relaxed text-traya-cream/75">
               {paragraphs.map((p, i) => (

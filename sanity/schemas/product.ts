@@ -46,8 +46,27 @@ export const product = defineType({
       of: [{type: 'specRow'}],
       description: 'Moisture, mesh size, packaging, shelf life, etc.'
     }),
-    defineField({name: 'hsCode', title: 'HS Code', type: 'string'}),
+    defineField({name: 'hsCode', title: 'HS Code', type: 'string', description: 'Internal reference — not shown on the public site'}),
     defineField({name: 'origin', type: 'string', initialValue: 'India'}),
+    // Chemicals catalogue fields (leave empty for food products)
+    defineField({
+      name: 'series',
+      title: 'Series / Range',
+      type: 'string',
+      description: 'Chemicals only — e.g. "VS Based", "1:2 Metal Complex", "Lake Colours"'
+    }),
+    defineField({
+      name: 'colourIndex',
+      title: 'Colour Index / Reference',
+      type: 'string',
+      description: 'Chemicals only — e.g. "Reactive Blue 25", "C.I. 19140 / E102"'
+    }),
+    defineField({
+      name: 'packSizes',
+      title: 'Pack sizes',
+      type: 'string',
+      description: 'Chemicals only — e.g. "1 kg / 5 kg / 25 kg"'
+    }),
     defineField({
       name: 'brochure',
       title: 'Brochure / Spec sheet (PDF)',

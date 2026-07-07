@@ -6,7 +6,10 @@ import {visionTool} from '@sanity/vision';
 import {schemaTypes} from './sanity/schemas';
 import {apiVersion, dataset, projectId} from './sanity/env';
 
-// siteSettings + aboutPage are singletons — one fixed document each.
+// siteSettings is the live singleton. homePage/aboutPage remain registered
+// (kept in SINGLETONS so they can't be duplicated) but are NOT shown in the desk
+// below — page copy is managed via i18n (messages/*.json), so surfacing those
+// editors would let a client edit content that the site doesn't render.
 const SINGLETONS = new Set(['siteSettings', 'aboutPage', 'homePage']);
 
 export default defineConfig({
@@ -32,17 +35,9 @@ export default defineConfig({
           .title('Content')
           .items([
             S.listItem()
-              .title('Home Page')
-              .id('homePage')
-              .child(S.document().schemaType('homePage').documentId('homePage')),
-            S.listItem()
               .title('Site Settings')
               .id('siteSettings')
               .child(S.document().schemaType('siteSettings').documentId('siteSettings')),
-            S.listItem()
-              .title('About Page')
-              .id('aboutPage')
-              .child(S.document().schemaType('aboutPage').documentId('aboutPage')),
             S.divider(),
             S.documentTypeListItem('category').title('Categories'),
             S.documentTypeListItem('product').title('Products'),

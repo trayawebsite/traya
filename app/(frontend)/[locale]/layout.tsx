@@ -10,7 +10,6 @@ import {SiteHeader} from '@/components/layout/site-header';
 import {SiteFooter} from '@/components/layout/site-footer';
 import {FloatingActions} from '@/components/layout/floating-actions';
 import {EnquiryProvider} from '@/lib/enquiry-context';
-import {EnquireTab} from '@/components/layout/enquire-tab';
 import {EnquirySectionWrapper} from '@/components/layout/enquiry-section-wrapper';
 import {LanguagePrompt} from '@/components/layout/language-prompt';
 import {Toaster} from '@/components/ui/sonner';
@@ -48,7 +47,7 @@ export const metadata: Metadata = {
     template: '%s | Traya International Exim'
   },
   description:
-    'Leading Indian food ingredient exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs & nutraceuticals. FSSAI-licensed & APEDA-registered. 150+ products across 18 categories. B2B wholesale supplier from India.',
+    'Leading Indian food ingredient & chemicals exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs, nutraceuticals, dyes, food colours & pigments. FSSAI-licensed & APEDA-registered. 500+ products across 30 categories. B2B wholesale supplier from India.',
   keywords: [
     'Indian food exporter',
     'dehydrated onion supplier India',
@@ -61,14 +60,18 @@ export const metadata: Metadata = {
     'APEDA registered',
     'dehydrated vegetables supplier',
     'moringa powder exporter',
-    'Indian food export company'
+    'Indian food export company',
+    'reactive dyes exporter India',
+    'acid dyes supplier',
+    'food colours manufacturer India',
+    'pigments supplier India'
   ],
   openGraph: {
     type: 'website',
     siteName: 'Traya International Exim LLP',
     title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
     description:
-      'B2B food ingredient supplier from India. Dehydrated onions, garlic, spices, powders, herbs & more. 150+ products, FSSAI-licensed, global shipping.',
+      'B2B food ingredient & chemicals supplier from India. Dehydrated onions, garlic, spices, powders, herbs, dyes, food colours & more. 500+ products, FSSAI-licensed, global shipping.',
     url: siteUrl,
     locale: 'en',
     images: [
@@ -83,7 +86,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
-    description: 'B2B food ingredient supplier from India. 150+ products, FSSAI-licensed, global shipping.'
+    description: 'B2B food ingredient & chemicals supplier from India. 500+ products, FSSAI-licensed, global shipping.'
   },
   robots: {
     index: true,
@@ -151,7 +154,6 @@ export default async function LocaleLayout({
           </main>
           <EnquirySectionWrapper founderPhoto={settings.founderPhoto} />
           <SiteFooter />
-          <EnquireTab />
           <FloatingActions />
           <Toaster richColors position="top-center" />
           </EnquiryProvider>

@@ -11,7 +11,7 @@ export async function Stats({data}: {data?: StatsData}) {
   const stats = data && data.length > 0
     ? data.map((s: Stat) => ({value: s.value, label: s.label}))
     : [
-        {value: '150+', label: t('stats.products')},
+        {value: '500+', label: t('stats.products')},
         {value: String(await getTotalCategories()), label: t('stats.categories')},
         {value: '100%', label: t('stats.origin')},
         {value: '4', label: t('stats.sectors')}

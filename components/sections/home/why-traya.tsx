@@ -1,6 +1,8 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
+import {IconChip} from '@/components/ui/icon-chip';
 import {secondaryBtn} from './styles';
 import type {HomePage, FeatureItem} from '@/sanity/lib/types';
 
@@ -40,10 +42,7 @@ export async function WhyTraya({data}: {data?: WhyData}) {
     <section className="border-b border-traya-border bg-traya-surface">
       <Container className="py-section">
         <div className="max-w-2xl">
-          <p className="section-label">{eyebrow}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
-          </h2>
+          <SectionHeader eyebrow={eyebrow} heading={heading} />
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2">
@@ -53,9 +52,7 @@ export async function WhyTraya({data}: {data?: WhyData}) {
               data-stagger
               className="rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
             >
-              <span className="grid size-11 place-items-center rounded-full bg-traya-saffron-soft text-traya-saffron-lo">
-                {item.icon}
-              </span>
+              <IconChip>{item.icon}</IconChip>
               <h3 className="mt-4 font-display text-lg text-foreground">{item.title}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">
                 {item.description}

@@ -1,303 +1,3995 @@
 {
-  "company": "Traya International Exim LLP",
-  "source": "Traya_Consolidated_Product_Catalogue.pdf",
-  "totalCategories": 18,
-  "totalProducts": 151,
-  "note": "Flat product model — each item is its own product document referencing a category. Best for SEO (buyers search exact product names). Doubles as the Sanity seed source.",
   "categories": [
     {
-      "title": "Dehydrated White Onion",
-      "slug": "dehydrated-white-onion",
+      "title": "Dehydrated Onion",
+      "slug": "dehydrated-onion",
       "order": 1,
-      "description": "Kibbled, chopped, minced, granules, and powder — all from Indian white onion.",
+      "group": "alliums",
+      "description": "White, red and pink onion in kibbled, chopped, minced, granule and powder cuts — dried from Indian onion for consistent colour and pungency.",
       "products": [
-        {"n": 1, "name": "Dehydrated White Onion Kibbled", "slug": "dehydrated-white-onion-kibbled"},
-        {"n": 2, "name": "Dehydrated White Onion Chopped", "slug": "dehydrated-white-onion-chopped"},
-        {"n": 3, "name": "Dehydrated White Onion Minced", "slug": "dehydrated-white-onion-minced"},
-        {"n": 4, "name": "Dehydrated White Onion Granules", "slug": "dehydrated-white-onion-granules"},
-        {"n": 5, "name": "Dehydrated White Onion Powder", "slug": "dehydrated-white-onion-powder"}
-      ]
-    },
-    {
-      "title": "Dehydrated Red Onion",
-      "slug": "dehydrated-red-onion",
-      "order": 2,
-      "description": "Full range of cuts and grades from Indian red onion varieties.",
-      "products": [
-        {"n": 6, "name": "Dehydrated Red Onion Kibbled", "slug": "dehydrated-red-onion-kibbled"},
-        {"n": 7, "name": "Dehydrated Red Onion Chopped", "slug": "dehydrated-red-onion-chopped"},
-        {"n": 8, "name": "Dehydrated Red Onion Minced", "slug": "dehydrated-red-onion-minced"},
-        {"n": 9, "name": "Dehydrated Red Onion Granules", "slug": "dehydrated-red-onion-granules"},
-        {"n": 10, "name": "Dehydrated Red Onion Powder", "slug": "dehydrated-red-onion-powder"}
-      ]
-    },
-    {
-      "title": "Dehydrated Pink Onion",
-      "slug": "dehydrated-pink-onion",
-      "order": 3,
-      "description": "Premium pink onion in every dehydrated form, known for milder flavour.",
-      "products": [
-        {"n": 11, "name": "Dehydrated Pink Onion Kibbled", "slug": "dehydrated-pink-onion-kibbled"},
-        {"n": 12, "name": "Dehydrated Pink Onion Chopped", "slug": "dehydrated-pink-onion-chopped"},
-        {"n": 13, "name": "Dehydrated Pink Onion Minced", "slug": "dehydrated-pink-onion-minced"},
-        {"n": 14, "name": "Dehydrated Pink Onion Granules", "slug": "dehydrated-pink-onion-granules"},
-        {"n": 15, "name": "Dehydrated Pink Onion Powder", "slug": "dehydrated-pink-onion-powder"}
-      ]
-    },
-    {
-      "title": "Fresh Onion",
-      "slug": "fresh-onion",
-      "order": 4,
-      "description": "Fresh white, red, and pink onion sourced directly from Indian farms.",
-      "products": [
-        {"n": 16, "name": "Fresh White Onion", "slug": "fresh-white-onion"},
-        {"n": 17, "name": "Fresh Red Onion", "slug": "fresh-red-onion"},
-        {"n": 18, "name": "Fresh Pink Onion", "slug": "fresh-pink-onion"}
+        {
+          "n": 1,
+          "name": "Dehydrated White Onion Kibbled",
+          "slug": "dehydrated-white-onion-kibbled",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 2,
+          "name": "Dehydrated White Onion Chopped",
+          "slug": "dehydrated-white-onion-chopped",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 3,
+          "name": "Dehydrated White Onion Minced",
+          "slug": "dehydrated-white-onion-minced",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 4,
+          "name": "Dehydrated White Onion Granules",
+          "slug": "dehydrated-white-onion-granules",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 5,
+          "name": "Dehydrated White Onion Powder",
+          "slug": "dehydrated-white-onion-powder",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 6,
+          "name": "Dehydrated Red Onion Kibbled",
+          "slug": "dehydrated-red-onion-kibbled",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 7,
+          "name": "Dehydrated Red Onion Chopped",
+          "slug": "dehydrated-red-onion-chopped",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 8,
+          "name": "Dehydrated Red Onion Minced",
+          "slug": "dehydrated-red-onion-minced",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 9,
+          "name": "Dehydrated Red Onion Granules",
+          "slug": "dehydrated-red-onion-granules",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 10,
+          "name": "Dehydrated Red Onion Powder",
+          "slug": "dehydrated-red-onion-powder",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 11,
+          "name": "Dehydrated Pink Onion Kibbled",
+          "slug": "dehydrated-pink-onion-kibbled",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 12,
+          "name": "Dehydrated Pink Onion Chopped",
+          "slug": "dehydrated-pink-onion-chopped",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 13,
+          "name": "Dehydrated Pink Onion Minced",
+          "slug": "dehydrated-pink-onion-minced",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 14,
+          "name": "Dehydrated Pink Onion Granules",
+          "slug": "dehydrated-pink-onion-granules",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 15,
+          "name": "Dehydrated Pink Onion Powder",
+          "slug": "dehydrated-pink-onion-powder",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 16,
+          "name": "Dehydrated Onion Flakes",
+          "slug": "dehydrated-onion-flakes",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 17,
+          "name": "White Onion Powder",
+          "slug": "white-onion-powder",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 18,
+          "name": "Dehydrated Onion Powder",
+          "slug": "dehydrated-onion-powder",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 19,
+          "name": "Dehydrated Onion Flake",
+          "slug": "dehydrated-onion-flake",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 20,
+          "name": "Dried Red Onion Powder",
+          "slug": "dried-red-onion-powder",
+          "hsCode": "07122000"
+        },
+        {
+          "n": 21,
+          "name": "Red Onion Powder",
+          "slug": "red-onion-powder",
+          "hsCode": "07122000"
+        }
       ]
     },
     {
       "title": "Dehydrated Garlic",
       "slug": "dehydrated-garlic",
-      "order": 5,
-      "description": "Cloves, kibbled, chopped, minced, granules, and powder from Indian garlic.",
+      "order": 2,
+      "group": "alliums",
+      "description": "Dried Indian garlic in flakes, cloves, chopped, minced, granules and powder for seasoning, blends and industrial use.",
       "products": [
-        {"n": 19, "name": "Dehydrated Garlic Cloves / Kibbled (Flakes)", "slug": "dehydrated-garlic-cloves-kibbled"},
-        {"n": 20, "name": "Dehydrated Garlic Chopped", "slug": "dehydrated-garlic-chopped"},
-        {"n": 21, "name": "Dehydrated Garlic Minced", "slug": "dehydrated-garlic-minced"},
-        {"n": 22, "name": "Dehydrated Garlic Granules", "slug": "dehydrated-garlic-granules"},
-        {"n": 23, "name": "Dehydrated Garlic Powder", "slug": "dehydrated-garlic-powder"}
-      ]
-    },
-    {
-      "title": "Special Dehydrated Products",
-      "slug": "special-dehydrated-products",
-      "order": 6,
-      "description": "Crispy fried onion, toasted onion flakes, and dehydrated potato products.",
-      "products": [
-        {"n": 24, "name": "Crispy Fried Onion", "slug": "crispy-fried-onion"},
-        {"n": 25, "name": "Toasted Onion Flakes / Kibbled", "slug": "toasted-onion-flakes-kibbled"},
-        {"n": 26, "name": "Toasted Onion Powder", "slug": "toasted-onion-powder"},
-        {"n": 27, "name": "Dehydrated Potato Flakes", "slug": "dehydrated-potato-flakes"},
-        {"n": 28, "name": "Dehydrated Potato Powder", "slug": "dehydrated-potato-powder"}
+        {
+          "n": 1,
+          "name": "Dehydrated Garlic Powder",
+          "slug": "dehydrated-garlic-powder",
+          "hsCode": "07129020"
+        },
+        {
+          "n": 2,
+          "name": "Dehydrated Garlic Flakes / Cloves",
+          "slug": "dehydrated-garlic-flakes-cloves",
+          "hsCode": "07129030"
+        },
+        {
+          "n": 3,
+          "name": "Dehydrated Garlic Chopped",
+          "slug": "dehydrated-garlic-chopped",
+          "hsCode": "07129040"
+        },
+        {
+          "n": 4,
+          "name": "Dehydrated Garlic Minced",
+          "slug": "dehydrated-garlic-minced",
+          "hsCode": "07129040"
+        },
+        {
+          "n": 5,
+          "name": "Dehydrated Garlic Granules",
+          "slug": "dehydrated-garlic-granules",
+          "hsCode": "07129040"
+        },
+        {
+          "n": 6,
+          "name": "Dehydrated Sorting Garlic Flakes",
+          "slug": "dehydrated-sorting-garlic-flakes",
+          "hsCode": "07129030"
+        },
+        {
+          "n": 7,
+          "name": "Garlic Powder Commercial",
+          "slug": "garlic-powder-commercial",
+          "hsCode": "07129020"
+        },
+        {
+          "n": 8,
+          "name": "Dehydrated Garlic Cloves / Flakes",
+          "slug": "dehydrated-garlic-cloves-flakes",
+          "hsCode": "07129030"
+        },
+        {
+          "n": 9,
+          "name": "Dehydrated Garlic Flakes",
+          "slug": "dehydrated-garlic-flakes",
+          "hsCode": "07129030"
+        },
+        {
+          "n": 10,
+          "name": "Dried Garlic Flakes",
+          "slug": "dried-garlic-flakes",
+          "hsCode": "07129030"
+        },
+        {
+          "n": 11,
+          "name": "Dried Garlic Granules",
+          "slug": "dried-garlic-granules",
+          "hsCode": "07129040"
+        }
       ]
     },
     {
       "title": "Dehydrated Vegetables",
       "slug": "dehydrated-vegetables",
+      "order": 3,
+      "group": "alliums",
+      "description": "A broad range of dehydrated vegetables — tomato, beetroot, carrot, spinach, capsicum and more — in flakes, granules and powders.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Dehydrated Carrot Powder",
+          "slug": "dehydrated-carrot-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 2,
+          "name": "Dehydrated Carrot Flakes",
+          "slug": "dehydrated-carrot-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 3,
+          "name": "Dehydrated Carrot Cubes (Air Dried)",
+          "slug": "dehydrated-carrot-cubes-air-dried",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 4,
+          "name": "Dehydrated Beetroot Powder",
+          "slug": "dehydrated-beetroot-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 5,
+          "name": "Dehydrated Beetroot Flakes",
+          "slug": "dehydrated-beetroot-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 6,
+          "name": "Dehydrated Spinach Powder",
+          "slug": "dehydrated-spinach-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 7,
+          "name": "Dehydrated Spinach Leaves",
+          "slug": "dehydrated-spinach-leaves",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 8,
+          "name": "Dehydrated Cabbage Flakes",
+          "slug": "dehydrated-cabbage-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 9,
+          "name": "Dehydrated Cabbage Powder",
+          "slug": "dehydrated-cabbage-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 10,
+          "name": "Dehydrated Potato Flakes",
+          "slug": "dehydrated-potato-flakes",
+          "hsCode": "07129060"
+        },
+        {
+          "n": 11,
+          "name": "Dehydrated Potato Powder",
+          "slug": "dehydrated-potato-powder",
+          "hsCode": "07129060"
+        },
+        {
+          "n": 12,
+          "name": "Dehydrated Coriander Leaves",
+          "slug": "dehydrated-coriander-leaves",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 13,
+          "name": "Dehydrated Coriander Leaves Powder",
+          "slug": "dehydrated-coriander-leaves-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 14,
+          "name": "Dehydrated Green Chilli Flakes",
+          "slug": "dehydrated-green-chilli-flakes",
+          "hsCode": "09042211"
+        },
+        {
+          "n": 15,
+          "name": "Dehydrated Green Chilli Powder",
+          "slug": "dehydrated-green-chilli-powder",
+          "hsCode": "09042211"
+        },
+        {
+          "n": 16,
+          "name": "Dry Green Chilli (Whole)",
+          "slug": "dry-green-chilli-whole",
+          "hsCode": "09042110"
+        },
+        {
+          "n": 17,
+          "name": "Sun Dried Tomato",
+          "slug": "sun-dried-tomato",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 18,
+          "name": "Sun Dried Tomato Flakes",
+          "slug": "sun-dried-tomato-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 19,
+          "name": "Dehydrated Ginger Powder",
+          "slug": "dehydrated-ginger-powder",
+          "hsCode": "09101210"
+        },
+        {
+          "n": 20,
+          "name": "Dehydrated Tamarind Powder",
+          "slug": "dehydrated-tamarind-powder",
+          "hsCode": "20089990"
+        },
+        {
+          "n": 21,
+          "name": "Bitter Gourd Powder",
+          "slug": "bitter-gourd-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 22,
+          "name": "Bitter Gourd Flakes",
+          "slug": "bitter-gourd-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 23,
+          "name": "Bottle Gourd Powder (Lauki)",
+          "slug": "bottle-gourd-powder-lauki",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 24,
+          "name": "Dehydrated Curry Leaf Powder",
+          "slug": "dehydrated-curry-leaf-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 25,
+          "name": "Moringa Leaves Powder",
+          "slug": "moringa-leaves-powder",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 26,
+          "name": "Barley Grass Powder",
+          "slug": "barley-grass-powder",
+          "hsCode": "11031990"
+        },
+        {
+          "n": 27,
+          "name": "Dehydrated Amchur Powder",
+          "slug": "dehydrated-amchur-powder",
+          "hsCode": "08133000"
+        },
+        {
+          "n": 28,
+          "name": "Dehydrated Spinach Leaves Powder",
+          "slug": "dehydrated-spinach-leaves-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 29,
+          "name": "Dried Potato Flakes",
+          "slug": "dried-potato-flakes",
+          "hsCode": "07129060"
+        },
+        {
+          "n": 30,
+          "name": "Dried Green Chilli Powder",
+          "slug": "dried-green-chilli-powder",
+          "hsCode": "09042211"
+        },
+        {
+          "n": 31,
+          "name": "Green Chilli Flakes",
+          "slug": "green-chilli-flakes",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 32,
+          "name": "Dehydrated Green Chili Flakes",
+          "slug": "dehydrated-green-chili-flakes",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 33,
+          "name": "Green Chili Powder",
+          "slug": "green-chili-powder",
+          "hsCode": "09042211"
+        },
+        {
+          "n": 34,
+          "name": "Dry Green Chilli",
+          "slug": "dry-green-chilli",
+          "hsCode": "09042110"
+        },
+        {
+          "n": 35,
+          "name": "Dried Carrot Flakes",
+          "slug": "dried-carrot-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 36,
+          "name": "Dehydrated Carrot Flake (Air Dried)",
+          "slug": "dehydrated-carrot-flake-air-dried",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 37,
+          "name": "Dehydrated Cabbage Flake",
+          "slug": "dehydrated-cabbage-flake",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 38,
+          "name": "Dried Cabbage Flakes (Air Dried)",
+          "slug": "dried-cabbage-flakes-air-dried",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 39,
+          "name": "Dried Spinach Powder",
+          "slug": "dried-spinach-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 40,
+          "name": "Dried Bitter Gourd Flakes",
+          "slug": "dried-bitter-gourd-flakes",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 41,
+          "name": "Dehydrated Bottle Gourd Powder",
+          "slug": "dehydrated-bottle-gourd-powder",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 42,
+          "name": "Dehydrated Coriander Powder",
+          "slug": "dehydrated-coriander-powder",
+          "hsCode": "07129090"
+        }
+      ]
+    },
+    {
+      "title": "Fried Onion",
+      "slug": "fried-onion",
+      "order": 4,
+      "group": "alliums",
+      "description": "Crispy fried onion in golden and brown shades, ready for garnishes, biryani and convenience foods.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Crispy Fried Onion",
+          "slug": "crispy-fried-onion",
+          "hsCode": "20059990"
+        },
+        {
+          "n": 2,
+          "name": "Fresh Fried Onion",
+          "slug": "fresh-fried-onion",
+          "hsCode": "20059990"
+        },
+        {
+          "n": 3,
+          "name": "Dehydrated Fried Onions",
+          "slug": "dehydrated-fried-onions",
+          "hsCode": "20059990"
+        },
+        {
+          "n": 4,
+          "name": "Toasted Onion Flakes/Kibbled",
+          "slug": "toasted-onion-flakes-kibbled",
+          "hsCode": "20059990"
+        },
+        {
+          "n": 5,
+          "name": "Toasted Onion Powder",
+          "slug": "toasted-onion-powder",
+          "hsCode": "20059990"
+        }
+      ]
+    },
+    {
+      "title": "Black Pepper",
+      "slug": "black-pepper",
+      "order": 5,
+      "group": "spices",
+      "description": "Whole and ground black pepper in export grades, valued for aroma and piperine strength.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Black Pepper Extra Bold",
+          "slug": "black-pepper-extra-bold",
+          "hsCode": "09041130"
+        },
+        {
+          "n": 2,
+          "name": "Black Pepper Medium Bold",
+          "slug": "black-pepper-medium-bold",
+          "hsCode": "09041130"
+        },
+        {
+          "n": 3,
+          "name": "Black Pepper Bulk (Garbled)",
+          "slug": "black-pepper-bulk-garbled",
+          "hsCode": "09041130"
+        },
+        {
+          "n": 4,
+          "name": "Black Pepper Bulk (Ungarbled)",
+          "slug": "black-pepper-bulk-ungarbled",
+          "hsCode": "09041140"
+        },
+        {
+          "n": 5,
+          "name": "Black Pepper Lite Berries",
+          "slug": "black-pepper-lite-berries",
+          "hsCode": "09041120"
+        },
+        {
+          "n": 6,
+          "name": "Black Pepper Pinhead",
+          "slug": "black-pepper-pinhead",
+          "hsCode": "09041160"
+        },
+        {
+          "n": 7,
+          "name": "Black Pepper Husk",
+          "slug": "black-pepper-husk",
+          "hsCode": "09041190"
+        },
+        {
+          "n": 8,
+          "name": "White Pepper",
+          "slug": "white-pepper",
+          "hsCode": "09041200"
+        },
+        {
+          "n": 9,
+          "name": "Black Pepper Powder",
+          "slug": "black-pepper-powder",
+          "hsCode": "09041200"
+        }
+      ]
+    },
+    {
+      "title": "Cloves",
+      "slug": "cloves",
+      "order": 6,
+      "group": "spices",
+      "description": "Whole and powdered cloves with high oil content, hand-sorted for size and colour.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Clove Kerala Special",
+          "slug": "clove-kerala-special",
+          "hsCode": "09071010"
+        },
+        {
+          "n": 2,
+          "name": "Clove Clean",
+          "slug": "clove-clean",
+          "hsCode": "09071020"
+        },
+        {
+          "n": 3,
+          "name": "Clove Unclean",
+          "slug": "clove-unclean",
+          "hsCode": "09071020"
+        },
+        {
+          "n": 4,
+          "name": "Clove Stem",
+          "slug": "clove-stem",
+          "hsCode": "09071030"
+        },
+        {
+          "n": 5,
+          "name": "Dried Clove Powder",
+          "slug": "dried-clove-powder",
+          "hsCode": "09072000"
+        }
+      ]
+    },
+    {
+      "title": "Cassia",
+      "slug": "cassia",
       "order": 7,
-      "description": "Carrot, ginger, coriander, mint, spinach, curry leaves, beetroot, and more.",
+      "group": "spices",
+      "description": "Cassia bark and powder — warm, sweet and robust, for blends, beverages and bakery.",
       "products": [
-        {"n": 29, "name": "Dehydrated Carrot Flakes", "slug": "dehydrated-carrot-flakes"},
-        {"n": 30, "name": "Dehydrated Green Chili Flakes", "slug": "dehydrated-green-chili-flakes"},
-        {"n": 31, "name": "Green Chili Powder", "slug": "green-chili-powder"},
-        {"n": 32, "name": "Dehydrated Coriander Leaves", "slug": "dehydrated-coriander-leaves"},
-        {"n": 33, "name": "Dehydrated Coriander Powder", "slug": "dehydrated-coriander-powder"},
-        {"n": 34, "name": "Dehydrated Ginger Powder", "slug": "dehydrated-ginger-powder"},
-        {"n": 35, "name": "Onion Flakes (Dried)", "slug": "onion-flakes-dried"},
-        {"n": 36, "name": "Mint Leaves and Powder", "slug": "mint-leaves-and-powder"},
-        {"n": 37, "name": "Spinach Leaves and Powder", "slug": "spinach-leaves-and-powder"},
-        {"n": 38, "name": "Curry Leaves and Powder", "slug": "curry-leaves-and-powder"},
-        {"n": 39, "name": "Cabbage Flakes and Powder", "slug": "cabbage-flakes-and-powder"},
-        {"n": 40, "name": "Beetroot Flakes and Powder", "slug": "beetroot-flakes-and-powder"},
-        {"n": 41, "name": "Bitter Gourd Flakes and Powder", "slug": "bitter-gourd-flakes-and-powder"},
-        {"n": 42, "name": "Bottle Gourd Flakes and Powder", "slug": "bottle-gourd-flakes-and-powder"},
-        {"n": 43, "name": "Tamarind Powder", "slug": "tamarind-powder"}
+        {
+          "n": 1,
+          "name": "Cassia Split Premium",
+          "slug": "cassia-split-premium",
+          "hsCode": "09061910"
+        },
+        {
+          "n": 2,
+          "name": "Cassia Broken",
+          "slug": "cassia-broken",
+          "hsCode": "09061910"
+        },
+        {
+          "n": 3,
+          "name": "Cassia Roll Premium",
+          "slug": "cassia-roll-premium",
+          "hsCode": "09061910"
+        }
       ]
     },
     {
-      "title": "Spray Dried Products",
-      "slug": "spray-dried-products",
+      "title": "Cinnamon",
+      "slug": "cinnamon",
       "order": 8,
-      "description": "Mango, tomato, banana, coconut milk, pomegranate — fruit and vegetable powders.",
+      "group": "spices",
+      "description": "True cinnamon quills and powder with a delicate, refined aroma.",
       "products": [
-        {"n": 44, "name": "Spray Dried Green Chilli Powder", "slug": "spray-dried-green-chilli-powder"},
-        {"n": 45, "name": "Spray Dried Mango Powder", "slug": "spray-dried-mango-powder"},
-        {"n": 46, "name": "Spray Dried Tomato Powder", "slug": "spray-dried-tomato-powder"},
-        {"n": 47, "name": "Spray Dried Lemon Powder", "slug": "spray-dried-lemon-powder"},
-        {"n": 48, "name": "Spray Dried Pineapple Powder", "slug": "spray-dried-pineapple-powder"},
-        {"n": 49, "name": "Spray Dried Tamarind Powder", "slug": "spray-dried-tamarind-powder"},
-        {"n": 50, "name": "Spray Dried Green Banana Powder", "slug": "spray-dried-green-banana-powder"},
-        {"n": 51, "name": "Spray Dried Orange Powder", "slug": "spray-dried-orange-powder"},
-        {"n": 52, "name": "Spray Dried Banana Powder", "slug": "spray-dried-banana-powder"},
-        {"n": 53, "name": "Spray Dried Apple Powder", "slug": "spray-dried-apple-powder"},
-        {"n": 54, "name": "Spray Dried Chickoo Powder", "slug": "spray-dried-chickoo-powder"},
-        {"n": 55, "name": "Spray Dried Guava Powder", "slug": "spray-dried-guava-powder"},
-        {"n": 56, "name": "Spray Dried Papaya Powder", "slug": "spray-dried-papaya-powder"},
-        {"n": 57, "name": "Spray Dried Litchi Powder", "slug": "spray-dried-litchi-powder"},
-        {"n": 58, "name": "Spray Dried Coconut Milk Powder", "slug": "spray-dried-coconut-milk-powder"},
-        {"n": 59, "name": "Spray Dried Strawberry Powder", "slug": "spray-dried-strawberry-powder"},
-        {"n": 60, "name": "Spray Dried Sugarcane Powder", "slug": "spray-dried-sugarcane-powder"},
-        {"n": 61, "name": "Spray Dried Pomegranate Powder", "slug": "spray-dried-pomegranate-powder"},
-        {"n": 62, "name": "Spray Dried Custard Apple Powder", "slug": "spray-dried-custard-apple-powder"},
-        {"n": 63, "name": "Spray Dried Carrot Powder", "slug": "spray-dried-carrot-powder"},
-        {"n": 64, "name": "Spray Dried Mint Powder", "slug": "spray-dried-mint-powder"},
-        {"n": 65, "name": "Spray Dried Spinach Powder", "slug": "spray-dried-spinach-powder"},
-        {"n": 66, "name": "Spray Dried Beetroot Powder", "slug": "spray-dried-beetroot-powder"}
+        {
+          "n": 1,
+          "name": "Cinnamon / Dalchini Powder",
+          "slug": "cinnamon-dalchini-powder",
+          "hsCode": "09062000"
+        }
       ]
     },
     {
-      "title": "Dairy Powders",
-      "slug": "dairy-powders",
+      "title": "Nutmeg (Jaiphal)",
+      "slug": "nutmeg",
       "order": 9,
-      "description": "Cheese, butter, curd, cream, and ghee powders for food processing and bakery.",
+      "group": "spices",
+      "description": "Whole and ground nutmeg, carefully graded for oil content and flavour.",
       "products": [
-        {"n": 67, "name": "Cheese Powder", "slug": "cheese-powder"},
-        {"n": 68, "name": "Butter Powder", "slug": "butter-powder"},
-        {"n": 69, "name": "Curd Powder", "slug": "curd-powder"},
-        {"n": 70, "name": "Cream Powder", "slug": "cream-powder"},
-        {"n": 71, "name": "Ghee Powder", "slug": "ghee-powder"}
+        {
+          "n": 1,
+          "name": "Nutmeg Tiger Grade",
+          "slug": "nutmeg-tiger-grade",
+          "hsCode": "09081120"
+        },
+        {
+          "n": 2,
+          "name": "Nutmeg ABCD Grade",
+          "slug": "nutmeg-abcd-grade",
+          "hsCode": "09081120"
+        },
+        {
+          "n": 3,
+          "name": "Nutmeg Pooja Grade",
+          "slug": "nutmeg-pooja-grade",
+          "hsCode": "09081110"
+        },
+        {
+          "n": 4,
+          "name": "Nutmeg Broken",
+          "slug": "nutmeg-broken",
+          "hsCode": "09081200"
+        }
       ]
     },
     {
-      "title": "Taste Enhancers",
-      "slug": "taste-enhancers",
+      "title": "Mace (Javitri)",
+      "slug": "mace",
       "order": 10,
-      "description": "Vinegar powder, soyasauce powder, and HVP for industrial flavour formulation.",
+      "group": "spices",
+      "description": "Bright mace blades and powder — the aromatic outer aril of nutmeg.",
       "products": [
-        {"n": 72, "name": "Vinegar Powder", "slug": "vinegar-powder"},
-        {"n": 73, "name": "Soyasauce Powder", "slug": "soyasauce-powder"},
-        {"n": 74, "name": "HVP (Hydrolysed Vegetable Protein)", "slug": "hvp-hydrolysed-vegetable-protein"}
+        {
+          "n": 1,
+          "name": "Mace Full Flower Hand Picked",
+          "slug": "mace-full-flower-hand-picked",
+          "hsCode": "09082100"
+        },
+        {
+          "n": 2,
+          "name": "Mace Full Flower Normal",
+          "slug": "mace-full-flower-normal",
+          "hsCode": "09082100"
+        },
+        {
+          "n": 3,
+          "name": "Mace Split",
+          "slug": "mace-split",
+          "hsCode": "09082100"
+        },
+        {
+          "n": 4,
+          "name": "Mace Broken",
+          "slug": "mace-broken",
+          "hsCode": "09082200"
+        }
+      ]
+    },
+    {
+      "title": "Green Cardamom",
+      "slug": "green-cardamom",
+      "order": 11,
+      "group": "spices",
+      "description": "Green cardamom in multiple bold sizes plus seeds and powder, prized for its sweet, floral aroma.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Green Cardamom 8 Bold",
+          "slug": "green-cardamom-8-bold",
+          "hsCode": "09083120"
+        },
+        {
+          "n": 2,
+          "name": "Green Cardamom 8MM",
+          "slug": "green-cardamom-8mm",
+          "hsCode": "09083120"
+        },
+        {
+          "n": 3,
+          "name": "Green Cardamom 7.5-8MM",
+          "slug": "green-cardamom-7-5-8mm",
+          "hsCode": "09083120"
+        },
+        {
+          "n": 4,
+          "name": "Green Cardamom 7-8MM",
+          "slug": "green-cardamom-7-8mm",
+          "hsCode": "09083120"
+        },
+        {
+          "n": 5,
+          "name": "Green Cardamom 6-7MM",
+          "slug": "green-cardamom-6-7mm",
+          "hsCode": "09083120"
+        },
+        {
+          "n": 6,
+          "name": "Green Cardamom 5-6MM (Pan)",
+          "slug": "green-cardamom-5-6mm-pan",
+          "hsCode": "09083150"
+        },
+        {
+          "n": 7,
+          "name": "Cardamom Rejections",
+          "slug": "cardamom-rejections",
+          "hsCode": "09083190"
+        },
+        {
+          "n": 8,
+          "name": "Green Cardamom Husk",
+          "slug": "green-cardamom-husk",
+          "hsCode": "09083230"
+        },
+        {
+          "n": 9,
+          "name": "Green Cardamom Single Seed",
+          "slug": "green-cardamom-single-seed",
+          "hsCode": "09083220"
+        },
+        {
+          "n": 10,
+          "name": "Green Cardamom Joint Seed",
+          "slug": "green-cardamom-joint-seed",
+          "hsCode": "09083220"
+        }
+      ]
+    },
+    {
+      "title": "Star Anise",
+      "slug": "star-anise",
+      "order": 12,
+      "group": "spices",
+      "description": "Whole star anise with a distinctive liquorice note, for spice blends and beverages.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Star Anise Premium",
+          "slug": "star-anise-premium",
+          "hsCode": "09096129"
+        },
+        {
+          "n": 2,
+          "name": "Star Anise Normal",
+          "slug": "star-anise-normal",
+          "hsCode": "09096129"
+        }
+      ]
+    },
+    {
+      "title": "Dry Ginger",
+      "slug": "dry-ginger",
+      "order": 13,
+      "group": "spices",
+      "description": "Dried ginger — whole, split and powder — pungent and warming for culinary and wellness use.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Dry Ginger Premium",
+          "slug": "dry-ginger-premium",
+          "hsCode": "09101120"
+        },
+        {
+          "n": 2,
+          "name": "Dry Ginger Normal",
+          "slug": "dry-ginger-normal",
+          "hsCode": "09101120"
+        },
+        {
+          "n": 3,
+          "name": "Dry Ginger Grinding Grade",
+          "slug": "dry-ginger-grinding-grade",
+          "hsCode": "09101120"
+        }
+      ]
+    },
+    {
+      "title": "Seeds",
+      "slug": "seeds",
+      "order": 14,
+      "group": "spices",
+      "description": "Cumin, fennel, coriander, mustard, sesame, flax, ajwain, chia and fenugreek — whole seeds and select powders.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Whole Cumin Seeds",
+          "slug": "whole-cumin-seeds",
+          "hsCode": "09093129"
+        },
+        {
+          "n": 2,
+          "name": "Cumin Seeds",
+          "slug": "cumin-seeds",
+          "hsCode": "09093129"
+        },
+        {
+          "n": 3,
+          "name": "Cumin Powder",
+          "slug": "cumin-powder",
+          "hsCode": "09093200"
+        },
+        {
+          "n": 4,
+          "name": "Whole Fennel Seeds",
+          "slug": "whole-fennel-seeds",
+          "hsCode": "09096139"
+        },
+        {
+          "n": 5,
+          "name": "Fennel Powder",
+          "slug": "fennel-powder",
+          "hsCode": "09096230"
+        },
+        {
+          "n": 6,
+          "name": "Whole Coriander Seeds",
+          "slug": "whole-coriander-seeds",
+          "hsCode": "09092190"
+        },
+        {
+          "n": 7,
+          "name": "Coriander Split / Jiri",
+          "slug": "coriander-split-jiri",
+          "hsCode": "09092190"
+        },
+        {
+          "n": 8,
+          "name": "Coriander & Cumin Powder (Dhana-Jeera)",
+          "slug": "coriander-cumin-powder-dhana-jeera",
+          "hsCode": "09092200"
+        },
+        {
+          "n": 9,
+          "name": "Whole Mustard Seeds",
+          "slug": "whole-mustard-seeds",
+          "hsCode": "12075000"
+        },
+        {
+          "n": 10,
+          "name": "Natural White Sesame Seeds",
+          "slug": "natural-white-sesame-seeds",
+          "hsCode": "12074010"
+        },
+        {
+          "n": 11,
+          "name": "Black Sesame Seeds",
+          "slug": "black-sesame-seeds",
+          "hsCode": "12074010"
+        },
+        {
+          "n": 12,
+          "name": "Hulled Sesame Seeds",
+          "slug": "hulled-sesame-seeds",
+          "hsCode": "12074010"
+        },
+        {
+          "n": 13,
+          "name": "Flax Seeds (Alsi / Linseed)",
+          "slug": "flax-seeds-alsi-linseed",
+          "hsCode": "12040010"
+        },
+        {
+          "n": 14,
+          "name": "Carom Seeds (Ajwain)",
+          "slug": "carom-seeds-ajwain",
+          "hsCode": "09109914"
+        },
+        {
+          "n": 15,
+          "name": "Chia Seeds",
+          "slug": "chia-seeds",
+          "hsCode": "12099990"
+        },
+        {
+          "n": 16,
+          "name": "Whole Fenugreek Seeds",
+          "slug": "whole-fenugreek-seeds",
+          "hsCode": "12079920"
+        }
+      ]
+    },
+    {
+      "title": "Spice Powders",
+      "slug": "spice-powders",
+      "order": 15,
+      "group": "spices",
+      "description": "Single-origin ground spices, milled to a fine, consistent particle size and colour.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Red Chilli Powder",
+          "slug": "red-chilli-powder",
+          "hsCode": "09042211"
+        },
+        {
+          "n": 2,
+          "name": "Kashmiri Chilli Powder",
+          "slug": "kashmiri-chilli-powder",
+          "hsCode": "09042211"
+        },
+        {
+          "n": 3,
+          "name": "Red Chilli Flakes (Crushed)",
+          "slug": "red-chilli-flakes-crushed",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 4,
+          "name": "Red Chilli Whole",
+          "slug": "red-chilli-whole",
+          "hsCode": "09042110"
+        },
+        {
+          "n": 5,
+          "name": "Turmeric Whole",
+          "slug": "turmeric-whole",
+          "hsCode": "09103020"
+        },
+        {
+          "n": 6,
+          "name": "Turmeric Powder",
+          "slug": "turmeric-powder",
+          "hsCode": "09103030"
+        },
+        {
+          "n": 7,
+          "name": "Black Pepper Powder",
+          "slug": "black-pepper-powder-2",
+          "hsCode": "09041200"
+        },
+        {
+          "n": 8,
+          "name": "Fenugreek Seed Powder (Methi Powder)",
+          "slug": "fenugreek-seed-powder-methi-powder",
+          "hsCode": "09109924"
+        },
+        {
+          "n": 9,
+          "name": "Dry Mango / Amchur Powder",
+          "slug": "dry-mango-amchur-powder",
+          "hsCode": "08131000"
+        },
+        {
+          "n": 10,
+          "name": "Black Salt Powder (Kala Namak)",
+          "slug": "black-salt-powder-kala-namak",
+          "hsCode": "25010010"
+        },
+        {
+          "n": 11,
+          "name": "Rock Salt / Sendha Namak Powder",
+          "slug": "rock-salt-sendha-namak-powder",
+          "hsCode": "25010010"
+        },
+        {
+          "n": 12,
+          "name": "Cumin Seed Powder",
+          "slug": "cumin-seed-powder",
+          "hsCode": "09093200"
+        },
+        {
+          "n": 13,
+          "name": "Cinnamon Powder Dalchini Powder",
+          "slug": "cinnamon-powder-dalchini-powder",
+          "hsCode": "09062000"
+        },
+        {
+          "n": 14,
+          "name": "Methi Seed Powder",
+          "slug": "methi-seed-powder",
+          "hsCode": "09109924"
+        },
+        {
+          "n": 15,
+          "name": "Fenugreek Seed Powder",
+          "slug": "fenugreek-seed-powder",
+          "hsCode": "09109924"
+        },
+        {
+          "n": 16,
+          "name": "Black Salt Powder",
+          "slug": "black-salt-powder",
+          "hsCode": "25010010"
+        },
+        {
+          "n": 17,
+          "name": "Dry Mango Amchur Powder",
+          "slug": "dry-mango-amchur-powder-2",
+          "hsCode": "08133000"
+        },
+        {
+          "n": 18,
+          "name": "Pure Ginger Powder",
+          "slug": "pure-ginger-powder",
+          "hsCode": "09101210"
+        },
+        {
+          "n": 19,
+          "name": "Dry Ginger Powder",
+          "slug": "dry-ginger-powder",
+          "hsCode": "09101210"
+        },
+        {
+          "n": 20,
+          "name": "Coriander & Cumin Powder",
+          "slug": "coriander-cumin-powder",
+          "hsCode": "09092200"
+        }
+      ]
+    },
+    {
+      "title": "Spice Leaves & Herbs",
+      "slug": "spice-leaves-herbs",
+      "order": 16,
+      "group": "herbs",
+      "description": "Dried culinary herbs and leaves — mint, curry leaf, kasuri methi, basil, oregano, thyme, rosemary and mixed blends.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Dried Mint Leaves",
+          "slug": "dried-mint-leaves",
+          "hsCode": "12119070"
+        },
+        {
+          "n": 2,
+          "name": "Dehydrated Mint Powder",
+          "slug": "dehydrated-mint-powder",
+          "hsCode": "12119070"
+        },
+        {
+          "n": 3,
+          "name": "Dehydrated Curry Leaves",
+          "slug": "dehydrated-curry-leaves",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 4,
+          "name": "Kasuri Methi (Dried Fenugreek Leaves)",
+          "slug": "kasuri-methi-dried-fenugreek-leaves",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 5,
+          "name": "Sweet Basil Leaves (Sun Dried)",
+          "slug": "sweet-basil-leaves-sun-dried",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 6,
+          "name": "Oregano Leaves (Dried)",
+          "slug": "oregano-leaves-dried",
+          "hsCode": "07129050"
+        },
+        {
+          "n": 7,
+          "name": "Thyme Leaves (Dried)",
+          "slug": "thyme-leaves-dried",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 8,
+          "name": "Rosemary Herbs (Sun Dried)",
+          "slug": "rosemary-herbs-sun-dried",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 9,
+          "name": "Parsley Leaves (Dried)",
+          "slug": "parsley-leaves-dried",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 10,
+          "name": "Lemongrass Leaves (Sun Dried)",
+          "slug": "lemongrass-leaves-sun-dried",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 11,
+          "name": "Italian Mix Herbs",
+          "slug": "italian-mix-herbs",
+          "hsCode": "09109100"
+        },
+        {
+          "n": 12,
+          "name": "Pizza Mixed Herbs",
+          "slug": "pizza-mixed-herbs",
+          "hsCode": "09109100"
+        },
+        {
+          "n": 13,
+          "name": "Dried Coriander Leaves",
+          "slug": "dried-coriander-leaves",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 14,
+          "name": "Dry Herb Oregano",
+          "slug": "dry-herb-oregano",
+          "hsCode": "07129050"
+        },
+        {
+          "n": 15,
+          "name": "Sun Dried Oregano Leaves",
+          "slug": "sun-dried-oregano-leaves",
+          "hsCode": "07129050"
+        },
+        {
+          "n": 16,
+          "name": "Sun Dried Peppermint Leaves",
+          "slug": "sun-dried-peppermint-leaves",
+          "hsCode": "12119070"
+        },
+        {
+          "n": 17,
+          "name": "Dry Thyme Leaves",
+          "slug": "dry-thyme-leaves",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 18,
+          "name": "Thyme Dried Herbs",
+          "slug": "thyme-dried-herbs",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 19,
+          "name": "Sun Dried Rosemary Herbs",
+          "slug": "sun-dried-rosemary-herbs",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 20,
+          "name": "Dry Parsley Leaves",
+          "slug": "dry-parsley-leaves",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 21,
+          "name": "Sun Dried Lemongrass Leaves",
+          "slug": "sun-dried-lemongrass-leaves",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 22,
+          "name": "Dehydrated Mint Leaves",
+          "slug": "dehydrated-mint-leaves",
+          "hsCode": "12119070"
+        },
+        {
+          "n": 23,
+          "name": "Dehydrated Mint Leaves Powder",
+          "slug": "dehydrated-mint-leaves-powder",
+          "hsCode": "12119070"
+        },
+        {
+          "n": 24,
+          "name": "Dehydrated Pudina Powder",
+          "slug": "dehydrated-pudina-powder",
+          "hsCode": "12119070"
+        },
+        {
+          "n": 25,
+          "name": "Dry Kasuri Methi",
+          "slug": "dry-kasuri-methi",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 26,
+          "name": "Dried Fenugreek Leaves (Kasuri Methi)",
+          "slug": "dried-fenugreek-leaves-kasuri-methi",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 27,
+          "name": "Dried Curry Leaves (Sun Dried)",
+          "slug": "dried-curry-leaves-sun-dried",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 28,
+          "name": "Dried Coriander Leaves (Sun Dried)",
+          "slug": "dried-coriander-leaves-sun-dried",
+          "hsCode": "07129090"
+        },
+        {
+          "n": 29,
+          "name": "Curry Leaf Powder",
+          "slug": "curry-leaf-powder",
+          "hsCode": "07129090"
+        }
       ]
     },
     {
       "title": "Herbal Powders",
       "slug": "herbal-powders",
-      "order": 11,
-      "description": "Moringa, spirulina, ashwagandha, amla, sprouted moong, and superfood powders.",
-      "products": [
-        {"n": 75, "name": "Moringa Leaves Powder", "slug": "moringa-leaves-powder"},
-        {"n": 76, "name": "Moringa Powder", "slug": "moringa-powder"},
-        {"n": 77, "name": "Spirulina Powder", "slug": "spirulina-powder"},
-        {"n": 78, "name": "Ashwagandha Powder", "slug": "ashwagandha-powder"},
-        {"n": 79, "name": "Amla Powder", "slug": "amla-powder"},
-        {"n": 80, "name": "Dehydrated Beetroot Powder", "slug": "dehydrated-beetroot-powder"},
-        {"n": 81, "name": "Spinach Leaves Powder", "slug": "spinach-leaves-powder"},
-        {"n": 82, "name": "Coriander Leaves Powder", "slug": "coriander-leaves-powder"},
-        {"n": 83, "name": "Fenugreek Leaves Powder", "slug": "fenugreek-leaves-powder"},
-        {"n": 84, "name": "Curry Leaves Powder", "slug": "curry-leaves-powder"},
-        {"n": 85, "name": "Carrot Powder", "slug": "carrot-powder"},
-        {"n": 86, "name": "Tomato Powder", "slug": "tomato-powder"},
-        {"n": 87, "name": "Bottle Gourd Powder", "slug": "bottle-gourd-powder"},
-        {"n": 88, "name": "Pomegranate Powder", "slug": "pomegranate-powder"},
-        {"n": 89, "name": "Sprouted Moong Powder", "slug": "sprouted-moong-powder"},
-        {"n": 90, "name": "Onion Powder", "slug": "onion-powder"},
-        {"n": 91, "name": "Beetroot Chips", "slug": "beetroot-chips"}
-      ]
-    },
-    {
-      "title": "Spices & Powders",
-      "slug": "spices-powders",
-      "order": 12,
-      "description": "Turmeric, cumin, coriander, pepper, cinnamon, and whole spice seeds.",
-      "products": [
-        {"n": 92, "name": "Turmeric Powder", "slug": "turmeric-powder"},
-        {"n": 93, "name": "Red Chilli Powder", "slug": "red-chilli-powder"},
-        {"n": 94, "name": "Coriander Powder", "slug": "coriander-powder"},
-        {"n": 95, "name": "Dried Cumin Seed Powder", "slug": "dried-cumin-seed-powder"},
-        {"n": 96, "name": "Jeera Powder", "slug": "jeera-powder"},
-        {"n": 97, "name": "Whole Jeera (Cumin Seeds)", "slug": "whole-jeera-cumin-seeds"},
-        {"n": 98, "name": "Ginger Powder", "slug": "ginger-powder"},
-        {"n": 99, "name": "Methi Seeds (Fenugreek Seeds)", "slug": "methi-seeds-fenugreek-seeds"},
-        {"n": 100, "name": "Lemon Powder", "slug": "lemon-powder"},
-        {"n": 101, "name": "Dried Pomegranate Seeds", "slug": "dried-pomegranate-seeds"},
-        {"n": 102, "name": "Black Pepper Powder", "slug": "black-pepper-powder"},
-        {"n": 103, "name": "Black Salt Powder", "slug": "black-salt-powder"},
-        {"n": 104, "name": "Rock Salt Powder", "slug": "rock-salt-powder"},
-        {"n": 105, "name": "Cinnamon Powder", "slug": "cinnamon-powder"},
-        {"n": 106, "name": "Clove Powder", "slug": "clove-powder"},
-        {"n": 107, "name": "Cumin Powder", "slug": "cumin-powder"},
-        {"n": 108, "name": "Fenugreek Powder", "slug": "fenugreek-powder"}
-      ]
-    },
-    {
-      "title": "Chilli Flakes",
-      "slug": "chilli-flakes",
-      "order": 13,
-      "description": "Guntur and Sannam varieties — crushed, deluxe, and seedless grades.",
-      "products": [
-        {"n": 109, "name": "Red Chili Flakes (Crushed)", "slug": "red-chili-flakes-crushed"},
-        {"n": 110, "name": "Deluxe Chilli Flakes (Sannam)", "slug": "deluxe-chilli-flakes-sannam"},
-        {"n": 111, "name": "Seedless Chilli Flakes", "slug": "seedless-chilli-flakes"},
-        {"n": 112, "name": "Dried Red Chilli Flakes (Guntur)", "slug": "dried-red-chilli-flakes-guntur"}
-      ]
-    },
-    {
-      "title": "Seasonings",
-      "slug": "seasonings",
-      "order": 14,
-      "description": "Peri peri, schezwan, BBQ, pizza, kurkure, and ready-to-use snack blends.",
-      "products": [
-        {"n": 113, "name": "Spanish Tomato Seasoning", "slug": "spanish-tomato-seasoning"},
-        {"n": 114, "name": "Cream and Onion Seasoning", "slug": "cream-and-onion-seasoning"},
-        {"n": 115, "name": "Oregano Pizza Seasoning", "slug": "oregano-pizza-seasoning"},
-        {"n": 116, "name": "Barbecue Seasoning Powder", "slug": "barbecue-seasoning-powder"},
-        {"n": 117, "name": "Noodles Seasoning", "slug": "noodles-seasoning"},
-        {"n": 118, "name": "Kurkure Seasoning", "slug": "kurkure-seasoning"},
-        {"n": 119, "name": "Tangy Tomato Seasoning", "slug": "tangy-tomato-seasoning"},
-        {"n": 120, "name": "Soyastick Seasoning", "slug": "soyastick-seasoning"},
-        {"n": 121, "name": "Manchurian Seasoning", "slug": "manchurian-seasoning"},
-        {"n": 122, "name": "Tikha Tadka Seasoning", "slug": "tikha-tadka-seasoning"},
-        {"n": 123, "name": "Mint Seasoning", "slug": "mint-seasoning"},
-        {"n": 124, "name": "Garlic Seasoning", "slug": "garlic-seasoning"},
-        {"n": 125, "name": "Peri Peri Seasoning", "slug": "peri-peri-seasoning"},
-        {"n": 126, "name": "Cheese Peri Peri Seasoning", "slug": "cheese-peri-peri-seasoning"},
-        {"n": 127, "name": "Cheese Seasoning", "slug": "cheese-seasoning"},
-        {"n": 128, "name": "Schezwan Seasoning", "slug": "schezwan-seasoning"},
-        {"n": 129, "name": "Mexican Seasoning", "slug": "mexican-seasoning"},
-        {"n": 130, "name": "Chinese Seasoning", "slug": "chinese-seasoning"},
-        {"n": 131, "name": "Oregano Seasoning", "slug": "oregano-seasoning"}
-      ]
-    },
-    {
-      "title": "Herbs",
-      "slug": "herbs",
-      "order": 15,
-      "description": "Oregano, basil, thyme, rosemary, kasuri methi, and mixed herb blends.",
-      "products": [
-        {"n": 132, "name": "Dried Oregano Leaves", "slug": "dried-oregano-leaves"},
-        {"n": 133, "name": "Dry Parsley Leaves", "slug": "dry-parsley-leaves"},
-        {"n": 134, "name": "Kasuri Methi (Dried Fenugreek Leaves)", "slug": "kasuri-methi-dried-fenugreek-leaves"},
-        {"n": 135, "name": "Basil", "slug": "basil"},
-        {"n": 136, "name": "Thyme", "slug": "thyme"},
-        {"n": 137, "name": "Rosemary", "slug": "rosemary"},
-        {"n": 138, "name": "Mix Herbs", "slug": "mix-herbs"}
-      ]
-    },
-    {
-      "title": "Edible Seeds & Sesame",
-      "slug": "edible-seeds-sesame",
-      "order": 16,
-      "description": "Black chia seeds, hulled and natural sesame, and black sesame seeds.",
-      "products": [
-        {"n": 139, "name": "Black Chia Seeds", "slug": "black-chia-seeds"},
-        {"n": 140, "name": "Hulled Sesame Seeds", "slug": "hulled-sesame-seeds"},
-        {"n": 141, "name": "Natural Sesame Seeds", "slug": "natural-sesame-seeds"},
-        {"n": 142, "name": "Black Sesame Seeds", "slug": "black-sesame-seeds"}
-      ]
-    },
-    {
-      "title": "Sweeteners & Oils",
-      "slug": "sweeteners-oils",
       "order": 17,
-      "description": "A2 cow ghee, cold-pressed oils, jaggery, pink salt, and brown sugar.",
+      "group": "nutraceutical",
+      "description": "Plant-based herbal powders — ashwagandha, moringa, spirulina, amla, triphala and more — for nutraceutical and personal-care use.",
       "products": [
-        {"n": 143, "name": "Jaggery Cubes", "slug": "jaggery-cubes"},
-        {"n": 144, "name": "Jaggery Powder", "slug": "jaggery-powder"},
-        {"n": 145, "name": "Brown Sugar (Khandsari)", "slug": "brown-sugar-khandsari"},
-        {"n": 146, "name": "Pink Salt", "slug": "pink-salt"},
-        {"n": 147, "name": "A2 Cow Ghee", "slug": "a2-cow-ghee"},
-        {"n": 148, "name": "Cold Pressed Groundnut Oil", "slug": "cold-pressed-groundnut-oil"},
-        {"n": 149, "name": "Cold Pressed Sesame Oil", "slug": "cold-pressed-sesame-oil"}
+        {
+          "n": 1,
+          "name": "Ashwagandha Powder",
+          "slug": "ashwagandha-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 2,
+          "name": "Red Sandalwood Powder",
+          "slug": "red-sandalwood-powder",
+          "hsCode": "12119050"
+        },
+        {
+          "n": 3,
+          "name": "Neem Leaf Powder",
+          "slug": "neem-leaf-powder",
+          "hsCode": "12119023"
+        },
+        {
+          "n": 4,
+          "name": "Moringa Leaf Powder",
+          "slug": "moringa-leaf-powder",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 5,
+          "name": "Spirulina Powder",
+          "slug": "spirulina-powder",
+          "hsCode": "12122100"
+        },
+        {
+          "n": 6,
+          "name": "Wheatgrass Powder",
+          "slug": "wheatgrass-powder",
+          "hsCode": "12129990"
+        },
+        {
+          "n": 7,
+          "name": "Shatavari Powder",
+          "slug": "shatavari-powder",
+          "hsCode": "12119049"
+        },
+        {
+          "n": 8,
+          "name": "Shatavari Roots Powder",
+          "slug": "shatavari-roots-powder",
+          "hsCode": "12119049"
+        },
+        {
+          "n": 9,
+          "name": "Triphala Powder",
+          "slug": "triphala-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 10,
+          "name": "Jamun Seed Powder",
+          "slug": "jamun-seed-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 11,
+          "name": "Aritha / Reetha Powder",
+          "slug": "aritha-reetha-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 12,
+          "name": "Organic Reetha Powder",
+          "slug": "organic-reetha-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 13,
+          "name": "Giloy / Guduchi Powder",
+          "slug": "giloy-guduchi-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 14,
+          "name": "Hibiscus Flower Powder",
+          "slug": "hibiscus-flower-powder",
+          "hsCode": "12119029"
+        },
+        {
+          "n": 15,
+          "name": "Tulsi Leaf Powder",
+          "slug": "tulsi-leaf-powder",
+          "hsCode": "12119094"
+        },
+        {
+          "n": 16,
+          "name": "Herbal Bhringraj Powder",
+          "slug": "herbal-bhringraj-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 17,
+          "name": "Amla Powder",
+          "slug": "amla-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 18,
+          "name": "Aritha Powder",
+          "slug": "aritha-powder",
+          "hsCode": "12119099"
+        },
+        {
+          "n": 19,
+          "name": "Giloy Guduchi Powder",
+          "slug": "giloy-guduchi-powder-2",
+          "hsCode": "12119099"
+        }
       ]
     },
     {
-      "title": "Millets & Specialty",
-      "slug": "millets-specialty",
+      "title": "Dehydrated Fruit Powders",
+      "slug": "dehydrated-fruit-powders",
       "order": 18,
-      "description": "Mixed millets and organic tomato ketchup — premium wellness retail lines.",
+      "group": "powders",
+      "description": "Air-dried fruit powders that retain natural colour and flavour for beverages, bakery and blends.",
       "products": [
-        {"n": 150, "name": "All Millets (Mixed)", "slug": "all-millets-mixed"},
-        {"n": 151, "name": "Tomato Ketchup (Organic, No Preservatives)", "slug": "tomato-ketchup-organic"}
+        {
+          "n": 1,
+          "name": "Amla Powder Food Grade",
+          "slug": "amla-powder-food-grade",
+          "hsCode": "08134090"
+        },
+        {
+          "n": 2,
+          "name": "Dried Amla Powder",
+          "slug": "dried-amla-powder",
+          "hsCode": "08134090"
+        },
+        {
+          "n": 3,
+          "name": "Sun Dried Raw Banana Powder",
+          "slug": "sun-dried-raw-banana-powder",
+          "hsCode": "08134090"
+        },
+        {
+          "n": 4,
+          "name": "Dehydrated Raw Banana Powder",
+          "slug": "dehydrated-raw-banana-powder",
+          "hsCode": "08134090"
+        },
+        {
+          "n": 5,
+          "name": "Natural Papaya Leaves Powder",
+          "slug": "natural-papaya-leaves-powder",
+          "hsCode": "12119029"
+        }
+      ]
+    },
+    {
+      "title": "Spray-Dried Fruit Powders",
+      "slug": "spray-dried-fruit-powders",
+      "order": 19,
+      "group": "powders",
+      "description": "Free-flowing spray-dried fruit powders for instant beverages, dairy, bakery and confectionery.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Spray Dried Apple Powder",
+          "slug": "spray-dried-apple-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 2,
+          "name": "Spray Dried Beetroot Powder",
+          "slug": "spray-dried-beetroot-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 3,
+          "name": "Spray Dried Banana Powder",
+          "slug": "spray-dried-banana-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 4,
+          "name": "Spray Dried Ripe Banana Pulp Powder",
+          "slug": "spray-dried-ripe-banana-pulp-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 5,
+          "name": "Spray Dried Guava Powder",
+          "slug": "spray-dried-guava-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 6,
+          "name": "Spray Dried Pink Guava Powder",
+          "slug": "spray-dried-pink-guava-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 7,
+          "name": "Spray Dried Pomegranate Powder",
+          "slug": "spray-dried-pomegranate-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 8,
+          "name": "Spray Dried Pomegranate Seed Powder",
+          "slug": "spray-dried-pomegranate-seed-powder",
+          "hsCode": "08134090"
+        },
+        {
+          "n": 9,
+          "name": "Spray Dried Strawberry Powder",
+          "slug": "spray-dried-strawberry-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 10,
+          "name": "Spray Dried Ripe Mango Powder",
+          "slug": "spray-dried-ripe-mango-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 11,
+          "name": "Spray Dried Tamarind Powder",
+          "slug": "spray-dried-tamarind-powder",
+          "hsCode": "20089990"
+        },
+        {
+          "n": 12,
+          "name": "Spray Dried Lemon Powder",
+          "slug": "spray-dried-lemon-powder",
+          "hsCode": "20093190"
+        },
+        {
+          "n": 13,
+          "name": "Spray Dried Orange Powder",
+          "slug": "spray-dried-orange-powder",
+          "hsCode": "20091990"
+        },
+        {
+          "n": 14,
+          "name": "Spray Dried Pineapple Powder",
+          "slug": "spray-dried-pineapple-powder",
+          "hsCode": "20094990"
+        },
+        {
+          "n": 15,
+          "name": "Spray Dried Papaya Powder",
+          "slug": "spray-dried-papaya-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 16,
+          "name": "Spray Dried Litchi Powder",
+          "slug": "spray-dried-litchi-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 17,
+          "name": "Spray Dried Sapota (Chikoo) Powder",
+          "slug": "spray-dried-sapota-chikoo-powder",
+          "hsCode": "20098990"
+        },
+        {
+          "n": 18,
+          "name": "Orange Peel Powder",
+          "slug": "orange-peel-powder",
+          "hsCode": "08140000"
+        },
+        {
+          "n": 19,
+          "name": "Spray Dried Sapota Powder",
+          "slug": "spray-dried-sapota-powder",
+          "hsCode": "20098990"
+        }
+      ]
+    },
+    {
+      "title": "Spray-Dried Vegetables",
+      "slug": "spray-dried-vegetables",
+      "order": 20,
+      "group": "powders",
+      "description": "Spray-dried vegetable powders — tomato and more — for soups, sauces, snacks and seasonings.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Spray Dried Tomato Powder",
+          "slug": "spray-dried-tomato-powder",
+          "hsCode": "20029090"
+        },
+        {
+          "n": 2,
+          "name": "Spray Dried Mango Powder",
+          "slug": "spray-dried-mango-powder",
+          "hsCode": "21069099"
+        },
+        {
+          "n": 3,
+          "name": "Spray Dried Green Chilli Powder",
+          "slug": "spray-dried-green-chilli-powder",
+          "hsCode": "21039090"
+        }
+      ]
+    },
+    {
+      "title": "Psyllium Husk",
+      "slug": "psyllium-husk",
+      "order": 21,
+      "group": "nutraceutical",
+      "description": "Psyllium husk and powder in export grades, valued for high fibre and mucilage content.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Psyllium Seeds (Isabgol Seeds)",
+          "slug": "psyllium-seeds-isabgol-seeds",
+          "hsCode": "12119013"
+        },
+        {
+          "n": 2,
+          "name": "Psyllium Husk (85%, 95%, 98%, 99%)",
+          "slug": "psyllium-husk-85-95-98-99",
+          "hsCode": "12119032"
+        },
+        {
+          "n": 3,
+          "name": "Psyllium Husk Powder (85%-99%)",
+          "slug": "psyllium-husk-powder-85-99",
+          "hsCode": "12119032"
+        },
+        {
+          "n": 4,
+          "name": "Organic Psyllium Husk",
+          "slug": "organic-psyllium-husk",
+          "hsCode": "12119032"
+        },
+        {
+          "n": 5,
+          "name": "Organic Psyllium Husk Powder",
+          "slug": "organic-psyllium-husk-powder",
+          "hsCode": "12119032"
+        },
+        {
+          "n": 6,
+          "name": "Psyllium Kha-Kha Powder",
+          "slug": "psyllium-kha-kha-powder",
+          "hsCode": "12119032"
+        },
+        {
+          "n": 7,
+          "name": "Psyllium Husk (Isabgol Bhusi)",
+          "slug": "psyllium-husk-isabgol-bhusi",
+          "hsCode": "12119032"
+        }
+      ]
+    },
+    {
+      "title": "Red Chilli Flakes",
+      "slug": "red-chilli-flakes",
+      "order": 22,
+      "group": "spices",
+      "description": "Crushed red chilli and flakes in varying heat and colour for pizzerias, snacks and blends.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Deluxe Chilli Flakes",
+          "slug": "deluxe-chilli-flakes",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 2,
+          "name": "Crushed Chilli Flakes",
+          "slug": "crushed-chilli-flakes",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 3,
+          "name": "Dried Red Chilli Flakes",
+          "slug": "dried-red-chilli-flakes",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 4,
+          "name": "Seedless Chilli Flakes",
+          "slug": "seedless-chilli-flakes",
+          "hsCode": "09042219"
+        },
+        {
+          "n": 5,
+          "name": "Crushed Red Chilli",
+          "slug": "crushed-red-chilli",
+          "hsCode": "09042219"
+        }
+      ]
+    },
+    {
+      "title": "Indian Spices",
+      "slug": "indian-spices",
+      "order": 23,
+      "group": "spices",
+      "description": "Everyday Indian spices — chilli, turmeric, cumin, mustard, coriander and pepper — whole and ground.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Red Chili Whole/Powder",
+          "slug": "red-chili-whole-powder",
+          "hsCode": "09042110"
+        },
+        {
+          "n": 2,
+          "name": "Turmeric Whole/Powder",
+          "slug": "turmeric-whole-powder",
+          "hsCode": "09103020"
+        },
+        {
+          "n": 3,
+          "name": "Cumin Seeds",
+          "slug": "cumin-seeds-2",
+          "hsCode": "09093129"
+        },
+        {
+          "n": 4,
+          "name": "Mustard Seeds",
+          "slug": "mustard-seeds",
+          "hsCode": "12075000"
+        },
+        {
+          "n": 5,
+          "name": "Coriander Seeds",
+          "slug": "coriander-seeds",
+          "hsCode": "09092190"
+        },
+        {
+          "n": 6,
+          "name": "Black Pepper",
+          "slug": "black-pepper",
+          "hsCode": "09041130"
+        }
+      ]
+    },
+    {
+      "title": "Coriander",
+      "slug": "coriander",
+      "order": 24,
+      "group": "spices",
+      "description": "Whole and split coriander seed with a fresh, citrusy aroma.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Coriander Seeds (Dhania)",
+          "slug": "coriander-seeds-dhania",
+          "hsCode": "09092190"
+        },
+        {
+          "n": 2,
+          "name": "Coriander Split",
+          "slug": "coriander-split",
+          "hsCode": "09092190"
+        },
+        {
+          "n": 3,
+          "name": "Coriander Jiri",
+          "slug": "coriander-jiri",
+          "hsCode": "09092190"
+        }
+      ]
+    },
+    {
+      "title": "Reactive Dyes",
+      "slug": "reactive-dyes",
+      "order": 25,
+      "group": "chemicals",
+      "description": "Reactive dyes for cotton, viscose and cellulosic fibres — P series, VS, bi-functional, cold-brand and high-exhaust ranges.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Lemon Yellow PX4G",
+          "slug": "lemon-yellow-px4g",
+          "series": "P Series",
+          "colourIndex": "Yellow 18",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 2,
+          "name": "Golden Yellow PXR",
+          "slug": "golden-yellow-pxr",
+          "series": "P Series",
+          "colourIndex": "Yellow 12",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 3,
+          "name": "Orange PX2R",
+          "slug": "orange-px2r",
+          "series": "P Series",
+          "colourIndex": "Orange 13",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 4,
+          "name": "Red PX8B",
+          "slug": "red-px8b",
+          "series": "P Series",
+          "colourIndex": "Red 31",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 5,
+          "name": "Red PX6B",
+          "slug": "red-px6b",
+          "series": "P Series",
+          "colourIndex": "Red 76",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 6,
+          "name": "Red Brown PXR",
+          "slug": "red-brown-pxr",
+          "series": "P Series",
+          "colourIndex": "Brown 9",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 7,
+          "name": "Blue PX5R",
+          "slug": "blue-px5r",
+          "series": "P Series",
+          "colourIndex": "Blue 13",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 8,
+          "name": "Turq. Blue P5G",
+          "slug": "turq-blue-p5g",
+          "series": "P Series",
+          "colourIndex": "Blue 25",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 9,
+          "name": "Black PN",
+          "slug": "black-pn",
+          "series": "P Series",
+          "colourIndex": "Black 8",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 10,
+          "name": "Purple P3R",
+          "slug": "purple-p3r",
+          "series": "P Series",
+          "colourIndex": "Violet 1",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 11,
+          "name": "Magenta PB",
+          "slug": "magenta-pb",
+          "series": "P Series",
+          "colourIndex": "Violet 26",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 12,
+          "name": "Blue PX3R",
+          "slug": "blue-px3r",
+          "series": "P Series",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 13,
+          "name": "Yellow FG",
+          "slug": "yellow-fg",
+          "series": "VS Based",
+          "colourIndex": "Yellow 42",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 14,
+          "name": "Yellow GR",
+          "slug": "yellow-gr",
+          "series": "VS Based",
+          "colourIndex": "Yellow 15",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 15,
+          "name": "Yellow GL",
+          "slug": "yellow-gl",
+          "series": "VS Based",
+          "colourIndex": "Yellow 37",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 16,
+          "name": "Golden Yellow R",
+          "slug": "golden-yellow-r",
+          "series": "VS Based",
+          "colourIndex": "Yellow 77",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 17,
+          "name": "Golden Yellow RNL",
+          "slug": "golden-yellow-rnl",
+          "series": "VS Based",
+          "colourIndex": "Orange 107",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 18,
+          "name": "Orange 2R",
+          "slug": "orange-2r",
+          "series": "VS Based",
+          "colourIndex": "Orange 7",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 19,
+          "name": "Orange 3R",
+          "slug": "orange-3r",
+          "series": "VS Based",
+          "colourIndex": "Orange 16",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 20,
+          "name": "Red C2G",
+          "slug": "red-c2g",
+          "series": "VS Based",
+          "colourIndex": "Red 106",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 21,
+          "name": "Red 5B",
+          "slug": "red-5b",
+          "series": "VS Based",
+          "colourIndex": "Red 35",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 22,
+          "name": "Red RB",
+          "slug": "red-rb",
+          "series": "VS Based",
+          "colourIndex": "Red 198",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 23,
+          "name": "Red BSID",
+          "slug": "red-bsid",
+          "series": "VS Based",
+          "colourIndex": "Red 111",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 24,
+          "name": "Brown GR",
+          "slug": "brown-gr",
+          "series": "VS Based",
+          "colourIndex": "Brown Mix",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 25,
+          "name": "Blue 3R",
+          "slug": "blue-3r",
+          "series": "VS Based",
+          "colourIndex": "Blue 28",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 26,
+          "name": "Blue BB",
+          "slug": "blue-bb",
+          "series": "VS Based",
+          "colourIndex": "Blue 220",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 27,
+          "name": "Blue R SPL",
+          "slug": "blue-r-spl",
+          "series": "VS Based",
+          "colourIndex": "Blue 19",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 28,
+          "name": "Black B",
+          "slug": "black-b",
+          "series": "VS Based",
+          "colourIndex": "Black 5",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 29,
+          "name": "Black RL",
+          "slug": "black-rl",
+          "series": "VS Based",
+          "colourIndex": "Black 31",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 30,
+          "name": "Violet 5R",
+          "slug": "violet-5r",
+          "series": "VS Based",
+          "colourIndex": "Violet 5",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 31,
+          "name": "Yellow ME4GL",
+          "slug": "yellow-me4gl",
+          "series": "Bi-Functional",
+          "colourIndex": "Yellow 160A",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 32,
+          "name": "Golden Yellow MERL",
+          "slug": "golden-yellow-merl",
+          "series": "Bi-Functional",
+          "colourIndex": "Yellow 145",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 33,
+          "name": "Orange ME2RL",
+          "slug": "orange-me2rl",
+          "series": "Bi-Functional",
+          "colourIndex": "Orange 122",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 34,
+          "name": "Red ME4BL",
+          "slug": "red-me4bl",
+          "series": "Bi-Functional",
+          "colourIndex": "Red 195",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 35,
+          "name": "Red ME6BL",
+          "slug": "red-me6bl",
+          "series": "Bi-Functional",
+          "colourIndex": "Red 250",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 36,
+          "name": "Blue ME2RL",
+          "slug": "blue-me2rl",
+          "series": "Bi-Functional",
+          "colourIndex": "Blue 158",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 37,
+          "name": "Blue BFN",
+          "slug": "blue-bfn",
+          "series": "Bi-Functional",
+          "colourIndex": "Blue 222",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 38,
+          "name": "Navy Blue ME2GL",
+          "slug": "navy-blue-me2gl",
+          "series": "Bi-Functional",
+          "colourIndex": "Blue 194",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 39,
+          "name": "Black WNN",
+          "slug": "black-wnn",
+          "series": "Bi-Functional",
+          "colourIndex": "Black Mix",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 40,
+          "name": "Green ME4BL",
+          "slug": "green-me4bl",
+          "series": "Bi-Functional",
+          "colourIndex": "Green 27",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 41,
+          "name": "Lemon Yellow M4G",
+          "slug": "lemon-yellow-m4g",
+          "series": "Cold Brand",
+          "colourIndex": "Yellow 22",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 42,
+          "name": "Yellow M8G",
+          "slug": "yellow-m8g",
+          "series": "Cold Brand",
+          "colourIndex": "Yellow 86",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 43,
+          "name": "Yellow MGR",
+          "slug": "yellow-mgr",
+          "series": "Cold Brand",
+          "colourIndex": "Yellow 7",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 44,
+          "name": "Golden Yellow MR",
+          "slug": "golden-yellow-mr",
+          "series": "Cold Brand",
+          "colourIndex": "Yellow 44",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 45,
+          "name": "Orange M2R",
+          "slug": "orange-m2r",
+          "series": "Cold Brand",
+          "colourIndex": "Orange 4",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 46,
+          "name": "Red M5B",
+          "slug": "red-m5b",
+          "series": "Cold Brand",
+          "colourIndex": "Red 2",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 47,
+          "name": "Red M8B",
+          "slug": "red-m8b",
+          "series": "Cold Brand",
+          "colourIndex": "Red 11",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 48,
+          "name": "Pink MB",
+          "slug": "pink-mb",
+          "series": "Cold Brand",
+          "colourIndex": "Red 74",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 49,
+          "name": "Blue MR",
+          "slug": "blue-mr",
+          "series": "Cold Brand",
+          "colourIndex": "Blue 4",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 50,
+          "name": "Blue M2R",
+          "slug": "blue-m2r",
+          "series": "Cold Brand",
+          "colourIndex": "Blue 81",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 51,
+          "name": "Blue M4GD",
+          "slug": "blue-m4gd",
+          "series": "Cold Brand",
+          "colourIndex": "Blue 168",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 52,
+          "name": "Magenta MB",
+          "slug": "magenta-mb",
+          "series": "Cold Brand",
+          "colourIndex": "Violet 13",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 53,
+          "name": "Violet C4R",
+          "slug": "violet-c4r",
+          "series": "Cold Brand",
+          "colourIndex": "Violet 12",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 54,
+          "name": "Lemon Yellow HE4G",
+          "slug": "lemon-yellow-he4g",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Yellow 81",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 55,
+          "name": "Yellow HE4R",
+          "slug": "yellow-he4r",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Yellow 84",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 56,
+          "name": "Yellow HE6G",
+          "slug": "yellow-he6g",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Yellow 135",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 57,
+          "name": "Golden Yellow HER",
+          "slug": "golden-yellow-her",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Yellow 84",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 58,
+          "name": "Orange HE2R",
+          "slug": "orange-he2r",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Orange 84",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 59,
+          "name": "Red HE3B",
+          "slug": "red-he3b",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Red 120",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 60,
+          "name": "Red HE7B",
+          "slug": "red-he7b",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Red 141",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 61,
+          "name": "Red HE8B",
+          "slug": "red-he8b",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Red 152",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 62,
+          "name": "Navy Blue HER",
+          "slug": "navy-blue-her",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Blue 171",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 63,
+          "name": "Navy Blue HE2R",
+          "slug": "navy-blue-he2r",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Blue 172",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 64,
+          "name": "Black HEBL",
+          "slug": "black-hebl",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Black 160",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 65,
+          "name": "Black HFGR",
+          "slug": "black-hfgr",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Black Mix",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        },
+        {
+          "n": 66,
+          "name": "Green HE4BD",
+          "slug": "green-he4bd",
+          "series": "High Exhaust (HE)",
+          "colourIndex": "Green 19A",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041600"
+        }
+      ]
+    },
+    {
+      "title": "Direct Dyes",
+      "slug": "direct-dyes",
+      "order": 26,
+      "group": "chemicals",
+      "description": "Non-benzidine direct dyes for cotton, paper and leather across a full shade range.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Fast Yellow PG",
+          "slug": "fast-yellow-pg",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Yellow 142",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 2,
+          "name": "Fast Lemon Yellow 5GLL",
+          "slug": "fast-lemon-yellow-5gll",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Yellow 44",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 3,
+          "name": "Fast Yellow 3GX",
+          "slug": "fast-yellow-3gx",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Yellow 6",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 4,
+          "name": "Sun Yellow RCH",
+          "slug": "sun-yellow-rch",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Yellow 99",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 5,
+          "name": "Fast Yellow RL",
+          "slug": "fast-yellow-rl",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Yellow 86",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 6,
+          "name": "Fast Yellow ARL",
+          "slug": "fast-yellow-arl",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Yellow 106",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 7,
+          "name": "Fast Orange TGLL (Y)",
+          "slug": "fast-orange-tgll-y",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Orange 34",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 8,
+          "name": "Fast Orange TGLL (R)",
+          "slug": "fast-orange-tgll-r",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Orange 39",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 9,
+          "name": "Viscose Orange A",
+          "slug": "viscose-orange-a",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Orange 108",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 10,
+          "name": "Fast Orange SE",
+          "slug": "fast-orange-se",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Orange 26",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 11,
+          "name": "Fast Scarlet 4BS",
+          "slug": "fast-scarlet-4bs",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Red 23",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 12,
+          "name": "Fast Red BLN",
+          "slug": "fast-red-bln",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Red 80",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 13,
+          "name": "Fast Red 5BL",
+          "slug": "fast-red-5bl",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Red 81",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 14,
+          "name": "Fast Red 12B",
+          "slug": "fast-red-12b",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Red 31",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 15,
+          "name": "Brilliant Helio 2R",
+          "slug": "brilliant-helio-2r",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Violet 7",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 16,
+          "name": "Brilliant Helio B",
+          "slug": "brilliant-helio-b",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Violet 51",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 17,
+          "name": "Fast Violet MB",
+          "slug": "fast-violet-mb",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Violet 9",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 18,
+          "name": "Fast Turquoise Blue GL",
+          "slug": "fast-turquoise-blue-gl",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Blue 86",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 19,
+          "name": "Fast Turquoise FBL",
+          "slug": "fast-turquoise-fbl",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Blue 199",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 20,
+          "name": "Fast Blue GLL",
+          "slug": "fast-blue-gll",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Blue 71",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 21,
+          "name": "Fast Green BLL",
+          "slug": "fast-green-bll",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Green 26",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 22,
+          "name": "Paper Brown SD",
+          "slug": "paper-brown-sd",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Brown 44",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        },
+        {
+          "n": 23,
+          "name": "Fast Black VSF 600",
+          "slug": "fast-black-vsf-600",
+          "series": "Non-Benzidine Range",
+          "colourIndex": "Black 22",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041490"
+        }
+      ]
+    },
+    {
+      "title": "Acid Dyes",
+      "slug": "acid-dyes",
+      "order": 27,
+      "group": "chemicals",
+      "description": "Acid, acid-milling, 1:2 metal-complex and chrome (mordant) dyes for wool, silk, nylon and leather.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Yellow 5GN",
+          "slug": "yellow-5gn",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Yellow 110",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 2,
+          "name": "Red RS",
+          "slug": "red-rs",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 114",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 3,
+          "name": "Red G",
+          "slug": "red-g",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 85",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 4,
+          "name": "Red GRS",
+          "slug": "red-grs",
+          "series": "Acid & Acid Milling",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 5,
+          "name": "Red 3BN",
+          "slug": "red-3bn",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 31",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 6,
+          "name": "Red 10B",
+          "slug": "red-10b",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Violet 54",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 7,
+          "name": "Maroon V",
+          "slug": "maroon-v",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 119",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 8,
+          "name": "Fast Blue S5R",
+          "slug": "fast-blue-s5r",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Blue 113",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 9,
+          "name": "Red B",
+          "slug": "red-b",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 249",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 10,
+          "name": "Red F2R",
+          "slug": "red-f2r",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 151",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 11,
+          "name": "Geranine 2G",
+          "slug": "geranine-2g",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 1",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 12,
+          "name": "Orange II",
+          "slug": "orange-ii",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Orange 7",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 13,
+          "name": "Orange 2G",
+          "slug": "orange-2g",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Orange 10",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 14,
+          "name": "Fast Red A",
+          "slug": "fast-red-a",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 88",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 15,
+          "name": "Green V",
+          "slug": "green-v",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Green 16",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 16,
+          "name": "Black 10BX",
+          "slug": "black-10bx",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Black 1",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 17,
+          "name": "Scarlet 3R",
+          "slug": "scarlet-3r",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 18",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 18,
+          "name": "Scarlet MOO",
+          "slug": "scarlet-moo",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 73",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 19,
+          "name": "Yellow G",
+          "slug": "yellow-g",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Yellow 1",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 20,
+          "name": "Yellow PF",
+          "slug": "yellow-pf",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Yellow 23",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 21,
+          "name": "Yellow 2G",
+          "slug": "yellow-2g",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Yellow 17",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 22,
+          "name": "Yellow MR",
+          "slug": "yellow-mr",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Yellow 42",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 23,
+          "name": "Metanil Yellow",
+          "slug": "metanil-yellow",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Yellow 36",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 24,
+          "name": "Red CG",
+          "slug": "red-cg",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 97",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 25,
+          "name": "Blue PR",
+          "slug": "blue-pr",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Blue 129",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 26,
+          "name": "Blue 25",
+          "slug": "blue-25",
+          "series": "Acid & Acid Milling",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 27,
+          "name": "Blue 324",
+          "slug": "blue-324",
+          "series": "Acid & Acid Milling",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 28,
+          "name": "Carmosine Red",
+          "slug": "carmosine-red",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Red 14",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 29,
+          "name": "Brown RD",
+          "slug": "brown-rd",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 14",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 30,
+          "name": "Brown CGG",
+          "slug": "brown-cgg",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 83",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 31,
+          "name": "Brown HEGT",
+          "slug": "brown-hegt",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 106",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 32,
+          "name": "Brown SP",
+          "slug": "brown-sp",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 121",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 33,
+          "name": "Brown RT",
+          "slug": "brown-rt",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 214",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 34,
+          "name": "Brown SR",
+          "slug": "brown-sr",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 344",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 35,
+          "name": "Brown SG",
+          "slug": "brown-sg",
+          "series": "Acid & Acid Milling",
+          "colourIndex": "Brown 349",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 36,
+          "name": "Yellow GL",
+          "slug": "yellow-gl-2",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Yellow 114",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 37,
+          "name": "Yellow 2GLN Supra",
+          "slug": "yellow-2gln-supra",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Yellow 129",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 38,
+          "name": "Orange RL",
+          "slug": "orange-rl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Orange 86",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 39,
+          "name": "Brown 2RL",
+          "slug": "brown-2rl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Brown 45",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 40,
+          "name": "Dark Brown 5R",
+          "slug": "dark-brown-5r",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Brown 48",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 41,
+          "name": "Grey BL",
+          "slug": "grey-bl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Black 58",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 42,
+          "name": "Yellow GR",
+          "slug": "yellow-gr-2",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Yellow 99",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 43,
+          "name": "Yellow 2GL",
+          "slug": "yellow-2gl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Yellow 151",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 44,
+          "name": "Yellow RL",
+          "slug": "yellow-rl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Orange 80",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 45,
+          "name": "Yellow M5RL",
+          "slug": "yellow-m5rl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Yellow 204",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 46,
+          "name": "Orange G",
+          "slug": "orange-g",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Orange 74",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 47,
+          "name": "Orange MRL",
+          "slug": "orange-mrl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Orange 142",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 48,
+          "name": "Red MBR",
+          "slug": "red-mbr",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Red 362",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 49,
+          "name": "Bordeaux MB",
+          "slug": "bordeaux-mb",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Violet 90",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 50,
+          "name": "Blue 2G",
+          "slug": "blue-2g",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Blue 158",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 51,
+          "name": "Dark Blue MTR",
+          "slug": "dark-blue-mtr",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Blue 193",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 52,
+          "name": "Brown MBL",
+          "slug": "brown-mbl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Brown 355",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 53,
+          "name": "Brown 365",
+          "slug": "brown-365",
+          "series": "1:2 Metal Complex",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 54,
+          "name": "Brown 402",
+          "slug": "brown-402",
+          "series": "1:2 Metal Complex",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 55,
+          "name": "Black MSRL",
+          "slug": "black-msrl",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Black 194",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 56,
+          "name": "Black WA",
+          "slug": "black-wa",
+          "series": "1:2 Metal Complex",
+          "colourIndex": "Black 52",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 57,
+          "name": "Chrome Black T",
+          "slug": "chrome-black-t",
+          "series": "Chrome (Mordant) Dyes",
+          "colourIndex": "Black 11",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 58,
+          "name": "Chrome Red B",
+          "slug": "chrome-red-b",
+          "series": "Chrome (Mordant) Dyes",
+          "colourIndex": "Red 7",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 59,
+          "name": "Chrome Yellow",
+          "slug": "chrome-yellow",
+          "series": "Chrome (Mordant) Dyes",
+          "colourIndex": "Yellow 10",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        },
+        {
+          "n": 60,
+          "name": "Chrome Green",
+          "slug": "chrome-green",
+          "series": "Chrome (Mordant) Dyes",
+          "colourIndex": "Green 17",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041200"
+        }
+      ]
+    },
+    {
+      "title": "Food Colours",
+      "slug": "food-colours",
+      "order": 28,
+      "group": "chemicals",
+      "description": "Synthetic, blended, lake, natural and D&C colours for food, beverage, pharmaceutical and cosmetic use.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Tartrazine",
+          "slug": "tartrazine",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 19140 / E102 / FD&C Yellow 5",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 2,
+          "name": "Quinoline Yellow",
+          "slug": "quinoline-yellow",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 47005 / E104",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 3,
+          "name": "Sunset Yellow",
+          "slug": "sunset-yellow",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 15985 / E110 / FD&C Yellow 6",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 4,
+          "name": "Erythrosine",
+          "slug": "erythrosine",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 45430 / E127 / FD&C Red 3",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 5,
+          "name": "Allura Red",
+          "slug": "allura-red",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 16035 / E129 / FD&C Red 40",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 6,
+          "name": "Red 2G",
+          "slug": "red-2g",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 18050 / E128",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 7,
+          "name": "Phloxine B",
+          "slug": "phloxine-b",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 45410 / Acid Red 92",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 8,
+          "name": "Ponceau 4R",
+          "slug": "ponceau-4r",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 6255 / E124",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 9,
+          "name": "Carmoisine",
+          "slug": "carmoisine",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 14720 / E122",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 10,
+          "name": "Amaranth",
+          "slug": "amaranth",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 16185 / E123 / FD&C Red 2",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 11,
+          "name": "Brilliant Blue FCF",
+          "slug": "brilliant-blue-fcf",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 42090 / E133 / FD&C Blue 1",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 12,
+          "name": "Indigo Carmine",
+          "slug": "indigo-carmine",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 73015 / E132 / FD&C Blue 2",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 13,
+          "name": "Patent Blue V",
+          "slug": "patent-blue-v",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 42051 / E131",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 14,
+          "name": "Fast Green FCF",
+          "slug": "fast-green-fcf",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 42053 / E143 / FD&C Green 3",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 15,
+          "name": "Green S",
+          "slug": "green-s",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 44090 / E142",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 16,
+          "name": "Chocolate Brown HT",
+          "slug": "chocolate-brown-ht",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 20285 / E155",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 17,
+          "name": "Black PN",
+          "slug": "black-pn-2",
+          "series": "Synthetic Food Colours",
+          "colourIndex": "C.I. 28440 / E151",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 18,
+          "name": "Lemon Yellow",
+          "slug": "lemon-yellow",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 19,
+          "name": "Egg Yellow",
+          "slug": "egg-yellow",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 20,
+          "name": "Orange Red",
+          "slug": "orange-red",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 21,
+          "name": "Strawberry Red",
+          "slug": "strawberry-red",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 22,
+          "name": "Rose Pink",
+          "slug": "rose-pink",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 23,
+          "name": "Raspberry Red",
+          "slug": "raspberry-red",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 24,
+          "name": "Grape",
+          "slug": "grape",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 25,
+          "name": "Falsa",
+          "slug": "falsa",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 26,
+          "name": "Cola Chocolate",
+          "slug": "cola-chocolate",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 27,
+          "name": "Chocolate Brown",
+          "slug": "chocolate-brown",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 28,
+          "name": "Dark Chocolate",
+          "slug": "dark-chocolate",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 29,
+          "name": "Lime Green",
+          "slug": "lime-green",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 30,
+          "name": "Apple Green",
+          "slug": "apple-green",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 31,
+          "name": "Pea Green",
+          "slug": "pea-green",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 32,
+          "name": "Black Currant",
+          "slug": "black-currant",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 33,
+          "name": "Approved Black",
+          "slug": "approved-black",
+          "series": "Blended Food Colours",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 34,
+          "name": "Quinoline Yellow",
+          "slug": "quinoline-yellow-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 47005:1 / E104 / FD&C Yellow 13",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 35,
+          "name": "Tartrazine",
+          "slug": "tartrazine-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 19140:1 / E102 / FD&C Yellow 5",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 36,
+          "name": "Sunset Yellow FCF",
+          "slug": "sunset-yellow-fcf",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 15985:1 / E110 / FD&C Yellow 3",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 37,
+          "name": "Erythrosine",
+          "slug": "erythrosine-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 45430:1 / E127 / FD&C Red 14",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 38,
+          "name": "Allura Red",
+          "slug": "allura-red-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 16035:1 / E129 / FD&C Red 17",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 39,
+          "name": "Ponceau 4R",
+          "slug": "ponceau-4r-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 16255:1 / E124 / FD&C Red 7",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 40,
+          "name": "Phloxine B",
+          "slug": "phloxine-b-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 45410:1 / FD&C Red 28",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 41,
+          "name": "Amaranth",
+          "slug": "amaranth-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 16185:1 / E123 / FD&C Red 9",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 42,
+          "name": "Carmoisine",
+          "slug": "carmoisine-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 14720:1 / E122 / FD&C Red 3",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 43,
+          "name": "Chocolate Brown HT",
+          "slug": "chocolate-brown-ht-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 20285:1 / E155 / FD&C Brown 3",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 44,
+          "name": "Brilliant Blue FCF",
+          "slug": "brilliant-blue-fcf-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 42090:1 / E133 / FD&C Blue 2",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 45,
+          "name": "Green S",
+          "slug": "green-s-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 44090:1 / E142 / FD&C Green 4",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 46,
+          "name": "Indigo Carmine",
+          "slug": "indigo-carmine-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 173015:1 / E132 / FD&C Blue 2",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 47,
+          "name": "Patent Blue V",
+          "slug": "patent-blue-v-2",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 42051:1 / E131 / FD&C Blue 5",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 48,
+          "name": "Black PN",
+          "slug": "black-pn-3",
+          "series": "Lake Colours",
+          "colourIndex": "C.I. 28440:1 / E151 / FD&C Black 1",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 49,
+          "name": "Plain Scotch Grade (Caramel)",
+          "slug": "plain-scotch-grade-caramel",
+          "series": "Natural Food Colours",
+          "colourIndex": "E150a — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 50,
+          "name": "Caustic Sulphite Grade (Caramel)",
+          "slug": "caustic-sulphite-grade-caramel",
+          "series": "Natural Food Colours",
+          "colourIndex": "E150b — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 51,
+          "name": "Beer Grade (Caramel)",
+          "slug": "beer-grade-caramel",
+          "series": "Natural Food Colours",
+          "colourIndex": "E150c — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 52,
+          "name": "Single Strength (Caramel)",
+          "slug": "single-strength-caramel",
+          "series": "Natural Food Colours",
+          "colourIndex": "E150d — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 53,
+          "name": "Double Strength (Caramel)",
+          "slug": "double-strength-caramel",
+          "series": "Natural Food Colours",
+          "colourIndex": "E150d — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 54,
+          "name": "Caramel Powder",
+          "slug": "caramel-powder",
+          "series": "Natural Food Colours",
+          "colourIndex": "E150 — Powder",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 55,
+          "name": "Annatto Oil Soluble (10.5% & Bixin)",
+          "slug": "annatto-oil-soluble-10-5-bixin",
+          "series": "Natural Food Colours",
+          "colourIndex": "E160b — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 56,
+          "name": "Annatto Water Soluble (1.5% Non-Bixin)",
+          "slug": "annatto-water-soluble-1-5-non-bixin",
+          "series": "Natural Food Colours",
+          "colourIndex": "E160b — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 57,
+          "name": "Curcumin Colour",
+          "slug": "curcumin-colour",
+          "series": "Natural Food Colours",
+          "colourIndex": "E100 — Powder",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 58,
+          "name": "Red Beet Root (0.3%–0.45% Betanine)",
+          "slug": "red-beet-root-0-3-0-45-betanine",
+          "series": "Natural Food Colours",
+          "colourIndex": "E162 — Powder",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 59,
+          "name": "Paprika Colour, Water Soluble 40,000 I.U.",
+          "slug": "paprika-colour-water-soluble-40-000-i-u",
+          "series": "Natural Food Colours",
+          "colourIndex": "E160c — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 60,
+          "name": "Paprika Colour, Water Soluble 40,000 I.U., Powder",
+          "slug": "paprika-colour-water-soluble-40-000-i-u-powder",
+          "series": "Natural Food Colours",
+          "colourIndex": "E160c — Powder",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 61,
+          "name": "Chlorophyll Green",
+          "slug": "chlorophyll-green",
+          "series": "Natural Food Colours",
+          "colourIndex": "E141 — Liquid",
+          "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 62,
+          "name": "Yellow 8",
+          "slug": "yellow-8",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 45350",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 63,
+          "name": "Yellow 10",
+          "slug": "yellow-10",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 47005",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 64,
+          "name": "Yellow 11",
+          "slug": "yellow-11",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 47000",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 65,
+          "name": "Yellow 7",
+          "slug": "yellow-7",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 45350",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 66,
+          "name": "Yellow 33",
+          "slug": "yellow-33",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 47005",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 67,
+          "name": "Orange",
+          "slug": "orange",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 15570",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 68,
+          "name": "Red 6",
+          "slug": "red-6",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 15850",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 69,
+          "name": "Red 7",
+          "slug": "red-7",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 15850:1",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 70,
+          "name": "Red 21",
+          "slug": "red-21",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 45380",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 71,
+          "name": "Red 22",
+          "slug": "red-22",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 45380",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 72,
+          "name": "Red 27",
+          "slug": "red-27",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 45410",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 73,
+          "name": "Red 28",
+          "slug": "red-28",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 45410",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 74,
+          "name": "Red 30",
+          "slug": "red-30",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 73360",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 75,
+          "name": "Red 33",
+          "slug": "red-33",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 17200",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 76,
+          "name": "Green 5",
+          "slug": "green-5",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 61570",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 77,
+          "name": "Green 6",
+          "slug": "green-6",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 61565",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 78,
+          "name": "Blue 1",
+          "slug": "blue-1",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 42090",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        },
+        {
+          "n": 79,
+          "name": "Violet 2",
+          "slug": "violet-2",
+          "series": "D&C Colours",
+          "colourIndex": "C.I. 60725",
+          "packSizes": "1 kg / 5 kg / 25 kg",
+          "hsCode": "32041990"
+        }
+      ]
+    },
+    {
+      "title": "Pigments",
+      "slug": "pigments",
+      "order": 29,
+      "group": "chemicals",
+      "description": "Organic and inorganic pigments and emulsions for inks, paints, plastics and textiles.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Toludine Red",
+          "slug": "toludine-red",
+          "series": "Organic Pigments",
+          "colourIndex": "Pigment Red 3",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 2,
+          "name": "Rubine Toner",
+          "slug": "rubine-toner",
+          "series": "Organic Pigments",
+          "colourIndex": "Pigment Red 57:1",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 3,
+          "name": "Beta Blue",
+          "slug": "beta-blue",
+          "series": "Organic Pigments",
+          "colourIndex": "Pigment Blue 15:3",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 4,
+          "name": "Ph. Green",
+          "slug": "ph-green",
+          "series": "Organic Pigments",
+          "colourIndex": "Pigment Green 7",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 5,
+          "name": "Violet",
+          "slug": "violet",
+          "series": "Organic Pigments",
+          "colourIndex": "Pigment Violet 23",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32041700"
+        },
+        {
+          "n": 6,
+          "name": "Carbon Black",
+          "slug": "carbon-black",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Black 7  |  HS 28030010",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 7,
+          "name": "Lemon Chrome",
+          "slug": "lemon-chrome",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Yellow 34  |  HS 32062010",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 8,
+          "name": "Middle Chrome",
+          "slug": "middle-chrome",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Yellow 34  |  HS 32062010",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 9,
+          "name": "Prime Rose Chrome",
+          "slug": "prime-rose-chrome",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Yellow 34  |  HS 32062010",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 10,
+          "name": "Scarlet Chrome",
+          "slug": "scarlet-chrome",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Red 104  |  HS 32062010",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 11,
+          "name": "Prussian Blue",
+          "slug": "prussian-blue",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Blue 27  |  HS 32064900",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 12,
+          "name": "Iron Oxide Yellow",
+          "slug": "iron-oxide-yellow",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Yellow 42  |  HS 28211000",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 13,
+          "name": "Iron Oxide Red",
+          "slug": "iron-oxide-red",
+          "series": "Inorganic Pigments",
+          "colourIndex": "Pigment Red 101  |  HS 28211000",
+          "packSizes": "25 kg bags / drums"
+        },
+        {
+          "n": 14,
+          "name": "Range details to be finalized",
+          "slug": "range-details-to-be-finalized",
+          "series": "Pigment Emulsions",
+          "packSizes": "25 kg drums (indicative)"
+        }
+      ]
+    },
+    {
+      "title": "Paint Resins",
+      "slug": "paint-resins",
+      "order": 30,
+      "group": "chemicals",
+      "description": "Alkyd and maleic resins for paints, coatings and printing inks.",
+      "products": [
+        {
+          "n": 1,
+          "name": "Alkyd Resin DCO 70%",
+          "slug": "alkyd-resin-dco-70",
+          "series": "Alkyd Resins",
+          "packSizes": "50 kg / 200 kg drums; 1 MT",
+          "hsCode": "39075000"
+        },
+        {
+          "n": 2,
+          "name": "Alkyd Resin Soya 70%",
+          "slug": "alkyd-resin-soya-70",
+          "series": "Alkyd Resins",
+          "packSizes": "50 kg / 200 kg drums; 1 MT",
+          "hsCode": "39075000"
+        },
+        {
+          "n": 3,
+          "name": "Alkyd Resin Linseed 70%",
+          "slug": "alkyd-resin-linseed-70",
+          "series": "Alkyd Resins",
+          "packSizes": "50 kg / 200 kg drums; 1 MT",
+          "hsCode": "39075000"
+        },
+        {
+          "n": 4,
+          "name": "Fast Drying Alkyd Resin",
+          "slug": "fast-drying-alkyd-resin",
+          "series": "Alkyd Resins",
+          "packSizes": "50 kg / 200 kg drums; 1 MT",
+          "hsCode": "39075000"
+        },
+        {
+          "n": 5,
+          "name": "Maleic Resin Lump",
+          "slug": "maleic-resin-lump",
+          "series": "Maleic Resins",
+          "packSizes": "50 kg / 200 kg drums",
+          "hsCode": "38061000"
+        },
+        {
+          "n": 6,
+          "name": "Maleic Medium 70%",
+          "slug": "maleic-medium-70",
+          "series": "Maleic Resins",
+          "packSizes": "50 kg / 200 kg drums",
+          "hsCode": "38061000"
+        },
+        {
+          "n": 7,
+          "name": "Bulk and Custom quantities available on request across all categories.",
+          "slug": "bulk-and-custom-quantities-available-on-request-across-all-categories",
+          "series": "Maleic Resins",
+          "packSizes": "50 kg / 200 kg drums",
+          "hsCode": "38061000"
+        },
+        {
+          "n": 8,
+          "name": "Note: HS codes are indicative 8-digit ITC-HS references at category/sub-category level (or per item where chemistry differs within a group, e.g. Inorganic Pigments). Please confirm exact classification with your customs broker before filing shipping documents.",
+          "slug": "note-hs-codes-are-indicative-8-digit-itc-hs-references-at-category-sub-category-level-or-per-item-where-chemistry-differs-within-a-group-e-g-inorganic-pigments-please-confirm-exact-classification-with-your-customs-broker-before-filing-shipping-documents",
+          "series": "Maleic Resins",
+          "packSizes": "50 kg / 200 kg drums",
+          "hsCode": "38061000"
+        }
       ]
     }
   ]

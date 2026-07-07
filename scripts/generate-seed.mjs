@@ -3,9 +3,10 @@
 // Import later (once the project is connected):
 //   pnpm dlx sanity@latest dataset import content/seed.ndjson production
 //
-// Grouping rule: the onion/garlic families collapse into ONE product with a
-// `forms[]` array (Kibbled, Chopped, ...). Every other item stays standalone.
-// Edit GROUPED_CATEGORIES to change which categories collapse into variants.
+// Every product is seeded as its own document — the category page lists each one
+// as an expand-in-place accordion row, so no collapsing into forms[]. Category
+// `group` + `description` and per-product `hsCode` come straight from the JSON
+// (generated from public/Traya_Food Product_List_By_Category.xlsx).
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
@@ -15,52 +16,6 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogue = JSON.parse(
   readFileSync(join(root, "content/product-catalogue.json"), "utf8"),
 );
-
-// Categories whose items are forms of one base product.
-const GROUPED_CATEGORIES = new Set([
-  "dehydrated-white-onion",
-  "dehydrated-red-onion",
-  "dehydrated-pink-onion",
-  "dehydrated-garlic",
-]);
-
-// Browse group per category — mirrors lib/catalogue.ts GROUP_CATEGORIES (drives
-// the 6-group /products hub). KEEP IN SYNC with that file.
-const GROUP_OF = {
-  "dehydrated-white-onion": "alliums",
-  "dehydrated-red-onion": "alliums",
-  "dehydrated-pink-onion": "alliums",
-  "fresh-onion": "alliums",
-  "dehydrated-garlic": "alliums",
-  "special-dehydrated-products": "alliums",
-  "dehydrated-vegetables": "alliums",
-  "spray-dried-products": "powders",
-  "spices-powders": "spices",
-  "chilli-flakes": "spices",
-  seasonings: "spices",
-  "taste-enhancers": "spices",
-  herbs: "herbs",
-  "herbal-powders": "nutraceutical",
-  "dairy-powders": "wellness",
-  "sweeteners-oils": "wellness",
-  "edible-seeds-sesame": "wellness",
-  "millets-specialty": "wellness",
-};
-
-const FORM_WORDS = [
-  "Kibbled",
-  "Chopped",
-  "Minced",
-  "Granules",
-  "Powder",
-  "Flakes",
-  "Cloves",
-];
-
-function detectForm(name) {
-  const match = FORM_WORDS.find((w) => name.includes(w));
-  return match ?? name;
-}
 
 const docs = [];
 
@@ -75,37 +30,26 @@ for (const cat of catalogue.categories) {
     title: cat.title,
     slug: { _type: "slug", current: cat.slug },
     order: cat.order,
-    group: GROUP_OF[cat.slug] ?? "wellness",
+    group: cat.group ?? "spices",
+    ...(cat.description ? { description: cat.description } : {}),
   });
 
   const categoryRef = { _type: "reference", _ref: categoryId };
 
-  if (GROUPED_CATEGORIES.has(cat.slug)) {
+  for (const p of cat.products) {
     docs.push({
-      _id: `product-${cat.slug}`,
+      _id: `product-${p.slug}`,
       _type: "product",
-      title: cat.title,
-      slug: { _type: "slug", current: cat.slug },
+      title: p.name,
+      slug: { _type: "slug", current: p.slug },
       category: categoryRef,
       origin: "India",
-      forms: cat.products.map((p) => ({
-        _type: "productForm",
-        _key: p.slug,
-        name: detectForm(p.name),
-      })),
+      forms: [],
+      ...(p.hsCode ? { hsCode: p.hsCode } : {}),
+      ...(p.series ? { series: p.series } : {}),
+      ...(p.colourIndex ? { colourIndex: p.colourIndex } : {}),
+      ...(p.packSizes ? { packSizes: p.packSizes } : {}),
     });
-  } else {
-    for (const p of cat.products) {
-      docs.push({
-        _id: `product-${p.slug}`,
-        _type: "product",
-        title: p.name,
-        slug: { _type: "slug", current: p.slug },
-        category: categoryRef,
-        origin: "India",
-        forms: [],
-      });
-    }
   }
 }
 
@@ -214,7 +158,7 @@ docs.push({
     sub: "Premium agricultural and food ingredients, sourced and processed in India, exported with the documentation and care global trade demands.",
     ctaPrimaryLabel: "Request a sample",
     ctaSecondaryLabel: "Browse the range",
-    statLine: "150+ products · 18 categories · India origin",
+    statLine: "500+ products · 30 categories · India origin",
   },
   intro: {
     _type: "object",
@@ -227,13 +171,13 @@ docs.push({
     {
       _type: "stat",
       _key: "products",
-      value: "150+",
+      value: "500+",
       label: "Products in the catalogue",
     },
     {
       _type: "stat",
       _key: "categories",
-      value: "18",
+      value: "30",
       label: "Browsable categories",
     },
     {
@@ -252,9 +196,9 @@ docs.push({
   productsSection: {
     _type: "object",
     eyebrow: "What we export",
-    heading: "Eighteen categories, one accountable partner.",
-    sub: "From dehydrated alliums to spray-dried powders, spices, herbs, and premium wellness lines. Browse by what you make.",
-    specLine: "6 groups · 18 categories · 150+ SKUs",
+    heading: "Thirty categories, one accountable partner.",
+    sub: "From dehydrated alliums to spray-dried powders, whole and ground spices, culinary herbs, herbal & nutraceutical powders, and industrial chemicals, dyes and colours. Browse by what you make.",
+    specLine: "6 groups · 30 categories · 500+ SKUs",
   },
   why: {
     _type: "object",

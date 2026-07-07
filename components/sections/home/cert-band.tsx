@@ -1,6 +1,7 @@
 import {getTranslations} from 'next-intl/server';
 import {Link} from '@/i18n/navigation';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
 import {getSiteSettings} from '@/lib/site-settings';
 import {CertMark} from '@/components/layout/cert-mark';
 import {secondaryBtn} from './styles';
@@ -32,11 +33,7 @@ export async function CertBand({data}: {data?: CertsData}) {
     <section className="border-b border-traya-border bg-background py-section">
       <Container>
         <div className="max-w-2xl">
-          <p className="section-label">{eyebrow}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
-          </h2>
-          <p className="mt-4 leading-relaxed text-muted-foreground">{sub}</p>
+          <SectionHeader eyebrow={eyebrow} heading={heading} sub={sub} />
           <Link href="/certifications" className={`${secondaryBtn} mt-6`}>
             {cta}
           </Link>

@@ -2,6 +2,7 @@ import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {getSiteSettings} from '@/lib/site-settings';
 import {siteConfig} from '@/lib/site-config';
+import {whatsAppHref} from '@/lib/whatsapp';
 
 const ICON = 'size-5';
 
@@ -50,10 +51,7 @@ export async function ContactInfo() {
   const th = await getTranslations('Header');
   const s = await getSiteSettings();
 
-  const wa = siteConfig.whatsapp.number;
-  const waHref = wa
-    ? `https://wa.me/${wa}?text=${encodeURIComponent(th('whatsappMessage'))}`
-    : null;
+  const waHref = whatsAppHref(th('whatsappMessage'));
 
   const socialUrl: Record<string, string> = {
     linkedin: s.socials.linkedin,

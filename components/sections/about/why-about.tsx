@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
 import {Link} from '@/i18n/navigation';
 import {secondaryBtn} from '@/components/sections/home/styles';
 import type {FeatureItem, AboutPage} from '@/sanity/lib/types';
@@ -23,11 +24,7 @@ export async function WhyAbout({data}: {data?: WhyData}) {
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
           {/* Left — sticky heading + CTA */}
           <div className="lg:sticky lg:top-24 lg:self-start">
-            <p className="section-label">{t('eyebrow')}</p>
-            <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-              {t('heading')}
-            </h2>
-            <p className="mt-5 leading-relaxed text-muted-foreground">{t('body')}</p>
+            <SectionHeader eyebrow={t('eyebrow')} heading={t('heading')} sub={t('body')} />
             <div className="mt-8">
               <Link href="/capabilities" className={secondaryBtn}>
                 {t('cta')}

@@ -12,6 +12,10 @@ type Product = {
   slug: string;
   shortDescription?: string;
   images?: SanityImage[];
+  // Chemicals catalogue fields (undefined for food products)
+  series?: string;
+  colourIndex?: string;
+  packSizes?: string;
 };
 
 type Spec = {label: string; value: string};
@@ -56,7 +60,8 @@ export function CategoryProductList({
   const toggle = (slug: string) =>
     setOpen((s) => {
       const next = new Set(s);
-      next.has(slug) ? next.delete(slug) : next.add(slug);
+      if (next.has(slug)) next.delete(slug);
+      else next.add(slug);
       return next;
     });
 
@@ -91,6 +96,7 @@ export function CategoryProductList({
         <ul className="mt-6 max-w-3xl space-y-2.5">
           {filtered.map((p) => {
             const isOpen = open.has(p.slug);
+            const isChem = !!(p.series || p.colourIndex || p.packSizes);
             const form = detectForm(p.name);
             const added = has(p.slug);
             return (
@@ -109,14 +115,31 @@ export function CategoryProductList({
                   <span className="min-w-0 flex-1">
                     <span className="block text-sm font-medium text-foreground">{p.name}</span>
                     <span className="mt-1.5 flex flex-wrap gap-1.5">
-                      {form && (
-                        <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
-                          {form}
-                        </span>
+                      {isChem ? (
+                        <>
+                          {p.series && (
+                            <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
+                              {p.series}
+                            </span>
+                          )}
+                          {p.colourIndex && (
+                            <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
+                              {p.colourIndex}
+                            </span>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          {form && (
+                            <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
+                              {form}
+                            </span>
+                          )}
+                          <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
+                            {t('gradeValue')}
+                          </span>
+                        </>
                       )}
-                      <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
-                        {t('gradeValue')}
-                      </span>
                     </span>
                   </span>
                   <ChevronDown
@@ -131,14 +154,39 @@ export function CategoryProductList({
                       <p className="mb-3 text-sm leading-relaxed text-muted-foreground">{p.shortDescription}</p>
                     )}
                     <dl className="grid grid-cols-[104px_1fr] gap-x-4 gap-y-1.5 text-sm">
-                      {form && (
-                        <Fragment>
-                          <dt className="text-muted-foreground">{t('form')}</dt>
-                          <dd className="text-foreground">{form}</dd>
-                        </Fragment>
+                      {isChem ? (
+                        <>
+                          {p.series && (
+                            <Fragment>
+                              <dt className="text-muted-foreground">{t('series')}</dt>
+                              <dd className="text-foreground">{p.series}</dd>
+                            </Fragment>
+                          )}
+                          {p.colourIndex && (
+                            <Fragment>
+                              <dt className="text-muted-foreground">{t('colourIndex')}</dt>
+                              <dd className="text-foreground">{p.colourIndex}</dd>
+                            </Fragment>
+                          )}
+                          {p.packSizes && (
+                            <Fragment>
+                              <dt className="text-muted-foreground">{t('packSizes')}</dt>
+                              <dd className="text-foreground">{p.packSizes}</dd>
+                            </Fragment>
+                          )}
+                        </>
+                      ) : (
+                        <>
+                          {form && (
+                            <Fragment>
+                              <dt className="text-muted-foreground">{t('form')}</dt>
+                              <dd className="text-foreground">{form}</dd>
+                            </Fragment>
+                          )}
+                          <dt className="text-muted-foreground">{t('grade')}</dt>
+                          <dd className="text-foreground">{t('gradeValue')}</dd>
+                        </>
                       )}
-                      <dt className="text-muted-foreground">{t('grade')}</dt>
-                      <dd className="text-foreground">{t('gradeValue')}</dd>
                       {specs.map((s) => (
                         <Fragment key={s.label}>
                           <dt className="text-muted-foreground">{s.label}</dt>

@@ -16,9 +16,9 @@ export const siteConfig = {
   nav: [
     {key: 'home', href: '/'},
     {key: 'about', href: '/about'},
-    {key: 'capabilities', href: '/capabilities'},
     {key: 'products', href: '/products'},
-    {key: 'certifications', href: '/certifications'},
+    {key: 'howWeWork', href: '/how-we-work'},
+    {key: 'capabilities', href: '/capabilities'},
     {key: 'contact', href: '/contact'}
   ] as NavItem[],
 

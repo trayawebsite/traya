@@ -2,7 +2,7 @@ import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import type {AboutPage} from '@/sanity/lib/types';
 
-const MISSION_KEYS = ['m1', 'm2', 'm3'] as const;
+const MISSION_KEYS = ['m1', 'm2', 'm3', 'm4'] as const;
 
 // Vision & Mission section. Uses Sanity data when available.
 export async function VisionMission({data}: {data?: AboutPage | null}) {

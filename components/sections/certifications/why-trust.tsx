@@ -1,5 +1,6 @@
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
+import {SectionHeader} from '@/components/ui/section-header';
 
 // "Why trust Traya" — the trust rationale (the most important message on the
 // page): confidence comes from controls + documentation a buyer can check, not
@@ -51,11 +52,7 @@ export async function WhyTrust() {
     <section className="border-b border-traya-border bg-background">
       <Container className="py-section">
         <div className="max-w-2xl">
-          <p className="section-label">{t('eyebrow')}</p>
-          <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {t('heading')}
-          </h2>
-          <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{t('body')}</p>
+          <SectionHeader eyebrow={t('eyebrow')} heading={t('heading')} sub={t('body')} lead />
         </div>
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

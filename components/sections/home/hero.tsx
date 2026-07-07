@@ -16,8 +16,8 @@ export async function Hero({data}: {data?: HeroData}) {
   const eyebrow = data?.eyebrow || t('eyebrow');
   const heading = data?.heading || t('heading');
   const sub = data?.sub || t('sub');
-  const ctaPrimary = data?.ctaPrimaryLabel || t('ctaPrimary');
-  const ctaSecondary = data?.ctaSecondaryLabel || t('ctaSecondary');
+  const cta = data?.ctaPrimaryLabel || t('cta');
+  const ctaEnquiry = data?.ctaSecondaryLabel || t('ctaEnquiry');
   const statLine = data?.statLine || t('stat');
 
   return (
@@ -39,12 +39,12 @@ export async function Hero({data}: {data?: HeroData}) {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{sub}</p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
-            <a href="#enquiry" className={primaryBtn}>
-              {ctaPrimary}
-            </a>
-            <Link href="/products" className={secondaryBtn}>
-              {ctaSecondary}
+            <Link href="/products" className={primaryBtn}>
+              {cta}
             </Link>
+            <a href="#enquiry" className={secondaryBtn}>
+              {ctaEnquiry}
+            </a>
           </div>
 
           <div className="mt-10 border-t border-traya-border pt-6">
