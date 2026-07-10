@@ -1,0 +1,784 @@
+{
+  "HowWeWork": {
+    "meta": {
+      "title": "Wie wir arbeiten — Traya International Exim",
+      "description": "Wie Traya Ihren Export von der Anfrage bis zur Lieferung abwickelt: Beschaffung, Qualitätsprüfung, Dokumentation, Logistik und Versand per See-, Luft- oder Kurierfracht."
+    },
+    "hero": {
+      "eyebrow": "Unser Ansatz & unsere globale Reichweite",
+      "heading": "Ein strukturierter Prozess, ganz auf Sie zugeschnitten.",
+      "sub": "Jedes internationale Geschäft hat seine eigenen Anforderungen: Spezifikationen, Compliance, Dokumentation und Logistik. Bei Traya kümmern wir uns um all das, damit Sie sich auf Ihr Geschäft konzentrieren können, während wir den Rest übernehmen."
+    },
+    "manage": {
+      "eyebrow": "Was wir für Sie übernehmen",
+      "heading": "Alles zwischen Anfrage und Lieferung",
+      "sub": "Wenn Sie mit Traya zusammenarbeiten, erhalten Sie nicht nur ein Produkt. Sie erhalten ein Team, das jeden Schritt Ihres Handels abwickelt, damit nichts durchs Raster fällt.",
+      "i1Title": "Export- und Importabwicklung",
+      "i1Body": "Durchgängige Abwicklung Ihres Handelsgeschäfts, von der Produktbeschaffung bis zum finalen Versand. Ein Partner, ein Prozess, keine Lücken.",
+      "i2Title": "Produktbeschaffung & Qualitätsprüfung",
+      "i2Body": "Wir beschaffen das passende Produkt für Ihren Bedarf und prüfen, ob es Ihren Spezifikationen entspricht, bevor es versendet wird. Sie erhalten, was Sie bestellt haben, jedes Mal.",
+      "i3Title": "Handelsdokumentation",
+      "i3Body": "Jedes Dokument, das Ihre Sendung benötigt: Rechnungen, Packlisten, Zertifikate und Compliance-Unterlagen, präzise und termingerecht erstellt.",
+      "i4Title": "Logistikkoordination",
+      "i4Body": "Wir koordinieren den Transport Ihrer Waren per See-, Luft- oder Kurierfracht, abgestimmt auf Ihren Zeitplan, Ihr Volumen und Ihr Zielland. Sie bleiben dabei stets informiert.",
+      "i5Title": "Persönliche Betreuung",
+      "i5Body": "Ein durchgehender Ansprechpartner von der ersten Anfrage bis zur Lieferung. Klare Kommunikation, schnelle Antworten, keine Übergaben.",
+      "quote": "Wir vereinfachen die Komplexität der Beschaffung aus Indien, damit Sie sich auf Ihr Geschäft konzentrieren können."
+    },
+    "process": {
+      "eyebrow": "Wie wir arbeiten",
+      "heading": "Von der Anfrage bis zur Lieferung",
+      "sub": "Acht klare Schritte. Ein einheitlicher Ausführungsstandard.",
+      "step": "Schritt",
+      "s1Title": "Anfrage",
+      "s1Body": "Sie teilen uns Ihren Produktbedarf, die Menge und das Zielland mit.",
+      "s2Title": "Bedarfsklärung",
+      "s2Body": "Wir klären Spezifikationen, Zeitpläne, Verpackung und Compliance-Anforderungen.",
+      "s3Title": "Angebot",
+      "s3Body": "Ein detailliertes, transparentes Angebot, das Produktpreise, Fracht, Zahlungsbedingungen und Konditionen umfasst. Keine versteckten Kosten, keine Überraschungen.",
+      "s4Title": "Auftragsbestätigung",
+      "s4Body": "Nach Einigung wird der Auftrag bestätigt und die Produktion beginnt. Ihr Zeitplan steht ab diesem Zeitpunkt fest.",
+      "s5Title": "Qualitätssicherung",
+      "s5Body": "Die Produktqualität wird vor dem Versand anhand der vereinbarten Spezifikationen geprüft.",
+      "s6Title": "Dokumentation",
+      "s6Body": "Alle Exportdokumente (Rechnungen, Packlisten, Zertifikate) werden erstellt und geprüft.",
+      "s7Title": "Versand",
+      "s7Body": "Die Waren werden über die von Ihnen bevorzugte Frachtart versendet, mit vollständig geteilten Sendungsverfolgungsdaten.",
+      "s8Title": "Lieferung",
+      "s8Body": "Die Sendung erreicht ihr Ziel. Wir stehen auch nach der Lieferung für weitere Unterstützung zur Verfügung.",
+      "note": "Jeder Schritt wird nachverfolgt, kommuniziert und mit demselben professionellen Standard ausgeführt, unabhängig von Auftragsgröße, Produkttyp oder Zielland. Wenn Sie mit Traya arbeiten, wissen Sie jederzeit, woran Sie sind."
+    },
+    "ship": {
+      "eyebrow": "Fracht & Versand",
+      "heading": "Wie wir versenden",
+      "sub": "Wir koordinieren internationale Sendungen über drei Versandarten, abgestimmt auf Auftragsgröße, Dringlichkeit und Zielland.",
+      "seaTitle": "Seefracht",
+      "seaBody": "Am besten geeignet für Aufträge mit großem Volumen, bei denen Kosteneffizienz zählt. Wir koordinieren sowohl FCL- (Full Container Load) als auch LCL-Sendungen (Less than Container Load).",
+      "seaTag": "FCL & LCL verfügbar",
+      "airTitle": "Luftfracht",
+      "airBody": "Für zeitkritische oder hochwertige Fracht, die schnell und sicher über Grenzen hinweg mit minimaler Transitzeit transportiert werden muss.",
+      "airTag": "Priority- und Standard-Luftfracht",
+      "courierTitle": "Kurierversand für Muster",
+      "courierBody": "Internationaler Kurierversand für Produktmuster, damit Käufer Qualität, Spezifikationen und Eignung prüfen können, bevor sie sich für einen vollständigen Auftrag entscheiden.",
+      "courierTag": "Prüfung vor Bestellung",
+      "incoterms": "Incoterms: Sendungen werden zu den für Sie passenden Bedingungen abgewickelt. Wir unterstützen FOB, CIF und andere Standard-Handelsbedingungen, im Voraus vereinbart, ohne Unklarheiten bei Verantwortlichkeiten oder Kosten. Sprechen Sie mit uns darüber, was für Ihren Bedarf am besten passt."
+    },
+    "reach": {
+      "eyebrow": "Globale Reichweite",
+      "heading": "Wo auch immer Sie sind, wir erreichen Sie",
+      "p1": "Indien ist eines der leistungsfähigsten Beschaffungsländer der Welt, und Ahmedabad liegt in seinem Zentrum. Wir haben uns hier bewusst positioniert, mit direktem Zugang zu Qualitätsprodukten in mehreren Kategorien und der Infrastruktur, um sie weltweit zu transportieren.",
+      "p2": "Ob Sie ein etablierter Importeur mit klar definierten Anforderungen sind oder zum ersten Mal aus Indien beschaffen, Traya ist darauf ausgelegt, Sie mit derselben Struktur, Sorgfalt und Zuverlässigkeit auf jeder Ebene zu betreuen.",
+      "pillar1": "Anpassung an die Handelsvorschriften und Importanforderungen Ihres Ziellandes.",
+      "pillar2": "Sicherstellung, dass Produkte den Compliance-Standards der Märkte entsprechen, in denen Sie tätig sind.",
+      "pillar3": "Jeder Auftrag wird als Grundlage einer längerfristigen Beziehung behandelt, nicht als einmalige Transaktion.",
+      "pillar4": "Flexibilität und Reaktionsfähigkeit, wenn sich Ihre Geschäftsanforderungen und Marktbedingungen ändern.",
+      "mapCaption": "Wir betreuen internationale Käufer weltweit",
+      "mapLabel": "Ahmedabad, Indien"
+    },
+    "cta": {
+      "heading": "Haben Sie einen Bedarf im Kopf?",
+      "sub": "Teilen Sie uns Ihren Produktbedarf und Ihr Zielland mit, und wir übernehmen den Rest.",
+      "primary": "Anfrage senden",
+      "secondary": "Unsere Produkte ansehen"
+    }
+  },
+  "Chatbot": {
+    "title": "Traya Assistent",
+    "subtitle": "Fragen Sie zu unseren Produkten & unserer Arbeitsweise",
+    "greeting": "Hallo! Ich bin der Traya-Assistent. Fragen Sie mich zu unseren Produkten, Kategorien, Mustern oder zur Zusammenarbeit mit uns — ich helfe Ihnen gerne.",
+    "chip1": "Was exportieren Sie?",
+    "chip2": "Wie funktionieren Muster?",
+    "chip3": "Wie gebe ich eine Bestellung auf?",
+    "placeholder": "Stellen Sie eine Frage…",
+    "send": "Senden",
+    "close": "Chat schließen",
+    "whatsappAction": "Auf WhatsApp chatten",
+    "enquiryAction": "Anfrageformular",
+    "offline": "Unser Assistent macht gerade eine kurze Pause. Schreiben Sie uns auf WhatsApp, wir helfen Ihnen sofort weiter.",
+    "rateLimited": "Sie haben das heutige Chat-Limit erreicht. Schreiben Sie uns auf WhatsApp, wir helfen Ihnen sofort weiter.",
+    "limitReached": "Lassen Sie uns für eine schnellere Antwort auf WhatsApp weitermachen.",
+    "disclaimer": "KI-Assistent. Für genaue Preise, Spezifikationen und Bestellungen nutzen Sie bitte das Anfrageformular."
+  },
+  "Error": {
+    "eyebrow": "Es ist etwas schiefgelaufen",
+    "heading": "Wir sind auf ein Problem gestoßen.",
+    "body": "Die Seite konnte nicht geladen werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt, falls das Problem weiterhin besteht.",
+    "retry": "Erneut versuchen"
+  },
+  "Links": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "capabilities": "Leistungen",
+    "products": "Produkte",
+    "howWeWork": "Wie wir arbeiten",
+    "certifications": "Zertifizierungen",
+    "contact": "Kontakt",
+    "enquiry": "Anfrage",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "breadcrumb": "Brotkrümelnavigation"
+  },
+  "Header": {
+    "getQuote": "Angebot anfordern",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "skip": "Zum Inhalt springen",
+    "whatsapp": "Auf WhatsApp chatten",
+    "chat": "Mit uns chatten",
+    "whatsappMessage": "Hallo Traya International Exim, ich möchte mich nach Ihren Lebensmittelzutaten-Exporten erkundigen.\n\nProdukt(e): \nMenge / Güteklasse: \nZielland: \nUnternehmen: ",
+    "siteLabel": "Traya International Exim — Startseite",
+    "menuAria": "Menü",
+    "navAria": "Mobil",
+    "dismissAria": "Schließen",
+    "navPrimary": "Primär"
+  },
+  "Footer": {
+    "tagline": "Partnerschaften über Kontinente hinweg aufbauen",
+    "reachOut": "Haben Sie eine Frage zur Beschaffung? Sprechen Sie mit unserem Team. Wir helfen Ihnen gerne.",
+    "explore": "Entdecken",
+    "actions": "Schnellzugriff",
+    "getInTouch": "Kontakt aufnehmen",
+    "social": "Folgen Sie uns",
+    "certified": "Zertifiziert",
+    "requestSample": "Muster anfordern",
+    "requestQuote": "Angebot anfordern",
+    "downloadCatalogue": "Katalog herunterladen",
+    "rights": "Alle Rechte vorbehalten.",
+    "builtBy": "Entwickelt von Studio Morpheus",
+    "toTop": "Nach oben"
+  },
+  "Enquiry": {
+    "eyebrow": "Anfrage senden",
+    "heading": "Lassen Sie uns ins Gespräch kommen.",
+    "sub": "Teilen Sie uns Ihre Anforderungen mit – um den Rest kümmern wir uns.",
+    "trust1": "Schnelle Reaktion",
+    "trust2": "Verlässliche Unterstützung",
+    "trust3": "Globale Lösungen",
+    "founderNote": "Hinter jeder Sendung steht eine Beziehung, die auf Vertrauen und Verständnis aufbaut.",
+    "founderName": "Neha Pardeshi",
+    "founderRole": "Gründerin & CEO",
+    "name": "Ihr Name",
+    "email": "E-Mail-Adresse",
+    "phone": "Telefon / WhatsApp",
+    "company": "Unternehmen",
+    "product": "Produkt / HS-Code",
+    "shipment": "Versandart",
+    "shipmentPlaceholder": "Versandart auswählen",
+    "shipmentModes": "See (FCL / LCL) · Luft · Straße · Kurier · Noch unsicher",
+    "shipmentPrefix": "Versandart:",
+    "requirements": "Ihr Bedarf",
+    "requirementsPlaceholder": "Spezifikationen, Menge, Verpackung, Zielland und Zeitrahmen",
+    "submit": "Anfrage senden",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank. Ihre Anfrage ist eingegangen. Wir melden uns in Kürze bei Ihnen.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
+    "rateLimited": "Sie haben das heutige Anfragelimit erreicht. Bitte schreiben Sie uns eine E-Mail oder eine Nachricht auf WhatsApp.",
+    "addToList": "Zur Anfrage hinzufügen",
+    "removeFromList": "Aus Anfrage entfernen",
+    "list": {
+      "eyebrow": "Anfrageliste",
+      "heading": "Prüfen Sie Ihre Anfrage.",
+      "sub": "Sie haben diese Produkte ausgewählt. Prüfen Sie die Liste, ergänzen Sie Ihre Angaben und senden Sie die Anfrage ab.",
+      "empty": "Ihre Anfrageliste ist leer. Durchstöbern Sie unsere Produkte und fügen Sie Artikel hinzu, um loszulegen.",
+      "browseProducts": "Produkte durchstöbern",
+      "remove": "Entfernen",
+      "clearAll": "Alle löschen",
+      "contactHeading": "Ihre Angaben",
+      "contactSub": "Wir verwenden diese Angaben, um auf Ihre Anfrage zu antworten.",
+      "name": "Ihr Name",
+      "email": "E-Mail-Adresse",
+      "company": "Unternehmen",
+      "phone": "Telefon / WhatsApp",
+      "notes": "Anmerkungen (optional)",
+      "notesPlaceholder": "Mengen, Güteklassen, Zielland, Zeitrahmen",
+      "submit": "Anfrage absenden",
+      "sending": "Wird übermittelt...",
+      "success": "Ihre Anfrage wurde übermittelt. Wir melden uns in Kürze bei Ihnen.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
+      "rateLimited": "Sie haben das heutige Anfragelimit erreicht. Bitte schreiben Sie uns eine E-Mail oder eine Nachricht auf WhatsApp.",
+      "submittedHeading": "Anfrage übermittelt.",
+      "submittedBody": "Vielen Dank. Unser Team prüft Ihren Bedarf und kontaktiert Sie mit den verfügbaren Produktdetails, Dokumenten, Preisen und nächsten Schritten.",
+      "browseMore": "Weiter durchstöbern"
+    },
+    "meta": {
+      "title": "Anfrageliste",
+      "description": "Prüfen und übermitteln Sie Ihre Produktanfrage. Teilen Sie uns die Spezifikationen, Menge, das Zielland und den Zeitrahmen mit, damit unser Team mit den passenden Details antworten kann."
+    }
+  },
+  "Validation": {
+    "name": "Bitte geben Sie Ihren Namen ein",
+    "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "message": "Bitte ergänzen Sie ein paar weitere Details"
+  },
+  "Language": {
+    "label": "Sprache",
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "Quote": {
+    "contactDetails": "Kontaktdaten",
+    "requestDetails": "Details der Anfrage",
+    "eyebrow": "Angebot anfordern",
+    "heading": "Preis für dieses Produkt anfordern.",
+    "sub": "Teilen Sie uns Ihre Angaben und Anforderungen mit. Unser Team prüft diese und antwortet mit Preisen, Mindestbestellmenge, Verpackung und kommerziellen Konditionen.",
+    "name": "Ihr Name",
+    "email": "E-Mail-Adresse",
+    "company": "Unternehmen",
+    "phone": "Telefon / WhatsApp",
+    "country": "Zielland",
+    "quantity": "Menge / Güteklasse",
+    "quantityPlaceholder": "z. B. 5 MT, 1 Container, Muster",
+    "message": "Zusätzliche Anforderungen",
+    "messagePlaceholder": "Verpackung, Zertifizierungen, Zeitrahmen oder weitere Details",
+    "submit": "Angebot anfordern",
+    "sending": "Wird gesendet...",
+    "success": "Vielen Dank. Ihre Angebotsanfrage wurde gesendet. Wir antworten Ihnen in Kürze mit den Details.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
+    "rateLimited": "Sie haben das heutige Limit erreicht. Bitte schreiben Sie uns eine E-Mail oder eine Nachricht auf WhatsApp.",
+    "quotingFor": "Angebot für",
+    "headingFor": "Preis für {name} anfordern.",
+    "purposeLabel": "Was benötigen Sie?",
+    "purposeQuote": "Ein Angebot",
+    "purposeSample": "Ein kostenpflichtiges Muster",
+    "sampleHeading": "Muster anfordern.",
+    "sampleHeadingFor": "Muster von {name} anfordern.",
+    "sampleSub": "Teilen Sie uns mit, wohin wir versenden sollen und wie viel Sie benötigen. Wir bestätigen die Musterkosten und den Versand, bevor etwas berechnet wird.",
+    "sampleNote": "Muster sind kostenpflichtig. Teilen Sie uns Ihren Bedarf mit, wir bestätigen die Musterkosten und den Versand, bevor Sie bezahlen.",
+    "sampleQuantity": "Benötigte Mustermenge",
+    "sampleQuantityPlaceholder": "z. B. 100 g, 500 g, 1 kg",
+    "sampleSubmit": "Muster anfordern",
+    "messageQuote": "Anfrage: Preisangebot",
+    "messageSample": "Anfrage: Kostenpflichtiges Muster (Käufer trägt Musterkosten + Versand)",
+    "reassurance": "In der Regel innerhalb eines Werktags · Unverbindlich.",
+    "successHeading": "Anfrage erhalten.",
+    "successBody": "Vielen Dank. Unser Team prüft Ihren Bedarf und antwortet mit Preisen, Mindestbestellmenge, Verpackung und Lieferzeit — in der Regel innerhalb eines Werktags.",
+    "trust": {
+      "eyebrow": "Was Sie erwartet",
+      "heading": "Ein klares, vollständiges Angebot.",
+      "sub": "Teilen Sie uns Ihren Bedarf mit, und unser Handelsteam erstellt ein maßgeschneidertes Angebot.",
+      "pricing": "FOB-/CIF-Preise für Ihr Zielland",
+      "moq": "Mindestbestellmenge und verfügbare Güteklassen",
+      "packaging": "Verpackungs- und Eigenmarken-Optionen",
+      "leadTime": "Produktions- und Versandzeit",
+      "docs": "Spezifikationen, COA und Exportdokumente",
+      "note": "Unverbindlich. Ihre Angaben gehen ausschließlich an unser Handelsteam."
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "Traya International Exim LLP — Indisches Exportunternehmen",
+      "description": "Traya International Exim ist ein branchenübergreifendes indisches Exporthaus, das globalen Käufern hilft, Lebensmittelzutaten, Gewürze, dehydrierte Produkte, Pulver und Kräuter aus Indien zu beziehen."
+    },
+    "hero": {
+      "eyebrow": "Horizonte durch Handel erweitern.",
+      "heading": "Ihr vertrauensvoller Partner für die Beschaffung aus Indien.",
+      "sub": "Traya setzt sich für den Aufbau dauerhafter globaler Partnerschaften durch Vertrauen, Zuverlässigkeit und professionelle Umsetzung ein. Mit einem wachsenden Produktportfolio und einem kundenorientierten Ansatz helfen wir Unternehmen, den internationalen Handel mit Zuversicht zu meistern.",
+      "cta": "Produkte entdecken",
+      "ctaEnquiry": "Ihren Bedarf mitteilen",
+      "stat": "Lebensmittel, Agrar & Chemikalien · 500+ Produkte · 30 Kategorien",
+      "certified": "Zertifiziert"
+    },
+    "intro": {
+      "eyebrow": "Wie Traya hilft",
+      "heading": "Globale Chancen mit",
+      "headingAccent": "verlässlicher Umsetzung verbinden.",
+      "body": "Von der Identifizierung der richtigen Produkte bis zur Lieferung an Ihr Ziel steuern wir jeden Schritt mit Sorgfalt, Compliance und Engagement. Bleiben Sie informiert, bleiben Sie zuversichtlich — mit nur einem Ansprechpartner.",
+      "f1Title": "Produktbeschaffung",
+      "f1Body": "Wir arbeiten mit einem Netzwerk qualitätsorientierter Partner zusammen, um Ihnen zuverlässige Produkte zu bieten.",
+      "f2Title": "Exportdokumentation",
+      "f2Body": "Präzise Dokumentation und regulatorische Compliance, mit größter Sorgfalt abgewickelt.",
+      "f3Title": "Versandunterstützung",
+      "f3Body": "Zuverlässige Logistik und pünktliche Lieferung weltweit."
+    },
+    "stats": {
+      "s1": "Global",
+      "s1Sub": "Handelspartner",
+      "s2": "Vertrauensvoll",
+      "s2Sub": "Partnerschaften",
+      "s3": "Wachsendes",
+      "s3Sub": "Portfolio",
+      "s4": "100%",
+      "s4Sub": "Aus Indien bezogen"
+    },
+    "groups": {
+      "eyebrow": "Unser Produktportfolio",
+      "heading": "Was wir exportieren",
+      "sub": "Unser Portfolio ist darauf ausgelegt, Unternehmen in zahlreichen Branchen zu unterstützen. Mit unserem Wachstum wächst auch unser Angebot.",
+      "foodTitle": "Lebensmittel & Agrarprodukte",
+      "foodBody": "Hochwertige Agrarprodukte von vertrauenswürdigen indischen Herstellern, ausgerichtet an internationalen Qualitäts- und Sicherheitsstandards.",
+      "foodCta": "Lebensmittel & Agrarprodukte ansehen",
+      "chemTitle": "Chemikalien",
+      "chemBody": "Industrie- und Spezialchemikalien für vielfältige Fertigungsanwendungen auf globalen Märkten.",
+      "chemCta": "Chemikalien ansehen",
+      "selection": "Eine Auswahl aus unserem Lebensmittel- & Agrarsortiment",
+      "note": "Unser Portfolio wächst weiter, während wir Partnerschaften in neuen Branchen und internationalen Märkten stärken.",
+      "noteAsk": "Nicht gefunden, was Sie suchen? Kontaktieren Sie uns, wir können möglicherweise trotzdem helfen.",
+      "spec": "500+ gelistete Produkte · 30 Kategorien · 6 Produktgruppen",
+      "cta": "Bedarf mitteilen",
+      "badgePremium": "Lebensmittel & Agrar",
+      "alliums": "Dehydrierte Zwiebelgewächse & Gemüse",
+      "alliumsBlurb": "Zwiebeln, Knoblauch und Gemüse in verschiedenen Schnitten und Formen für die Lebensmittelproduktion.",
+      "powders": "Sprühgetrocknete Pulver",
+      "powdersBlurb": "Obst- und Gemüsepulver für Getränke, Backwaren, Mischungen und Instant-Lebensmittel.",
+      "spices": "Gewürze & Würzmittel",
+      "spicesBlurb": "Ganze und gemahlene Gewürze, Chiliflocken, Geschmacksverstärker und Würzmischungen.",
+      "herbs": "Küchenkräuter",
+      "herbsBlurb": "Oregano, Basilikum, Thymian, Rosmarin, Kasuri Methi und Kräutermischungen.",
+      "nutraceutical": "Kräuter & Nutrazeutika",
+      "nutraceuticalBlurb": "Moringa, Spirulina, Ashwagandha, Amla und weitere pflanzliche Pulver.",
+      "wellness": "Milchprodukte & Premium-Wellness",
+      "wellnessBlurb": "Milchpulver, essbare Samen, Jaggery, A2-Ghee, kaltgepresste Öle und Hirse.",
+      "chemicals": "Chemikalien & Farbstoffe",
+      "chemicalsBlurb": "Reaktiv-, Säure- und Direktfarbstoffe, Lebensmittelfarben, Pigmente und Lackharze für die Textil-, Lebensmittel- und Beschichtungsindustrie."
+    },
+    "why": {
+      "eyebrow": "Warum Traya",
+      "heading": "Für langfristige Partnerschaften gebaut.",
+      "sub": "Wir gehen über reine Transaktionen hinaus, um Vertrauen aufzubauen, Qualität zu liefern und gemeinsam zu wachsen.",
+      "cta": "Unsere Leistungen ansehen",
+      "trusted": "Vertrauensvolle Beziehungen",
+      "trustedBody": "Ein von der Gründerin geführtes Team, direkter Kontakt und Zusagen, die wir einhalten, Auftrag für Auftrag.",
+      "quality": "Qualitätsversprechen",
+      "qualityBody": "Produkte werden vor dem Versand anhand Ihrer Spezifikationen geprüft, ausgerichtet an internationalen Qualitäts- und Sicherheitsstandards.",
+      "execution": "Professionelle Umsetzung",
+      "executionBody": "Ein klar definierter Ablauf von der Anfrage bis zum Versand: Spezifikationen, Dokumente, Verpackung und Sendung, jeweils der Reihe nach abgewickelt.",
+      "communication": "Reaktionsschnelle Kommunikation",
+      "communicationBody": "Ein Ansprechpartner und schnelle Antworten, mit klaren Updates in jeder Phase Ihrer Bestellung.",
+      "global": "Globale Perspektive",
+      "globalBody": "Beschaffung aus Indien für Käufer auf verschiedenen Märkten, mit Dokumenten und Konditionen passend zu Ihrem Zielland.",
+      "growth": "Gemeinsam wachsen",
+      "growthBody": "Ein wachsendes Portfolio und wiederkehrende Partnerschaften — wir skalieren mit Ihren Anforderungen."
+    },
+    "testimonials": {
+      "eyebrow": "Was Käufer sagen"
+    },
+    "certs": {
+      "eyebrow": "Exportregistrierungen",
+      "heading": "Die Registrierungen hinter unseren Exporten.",
+      "sub": "Jede Registrierung wird mit ausstellender Behörde und ihrer Bedeutung für den Käufer angezeigt. Dokumente für ein bestimmtes Produkt oder Zielland werden während der Angebotserstellung bestätigt.",
+      "cta": "Unsere Registrierungen ansehen"
+    },
+    "process": {
+      "eyebrow": "Der Exportprozess",
+      "heading": "So funktioniert ein Exportauftrag mit Traya.",
+      "sub": "Sie erhalten die Produkt- und kommerziellen Details, bevor Sie den Auftrag freigeben.",
+      "step": "Schritt",
+      "step1Title": "Bedarf mitteilen",
+      "step1Body": "Teilen Sie uns Produktname, Spezifikation, Menge, Verpackung, Zielland und gewünschten Zeitrahmen mit. Fehlende Angaben fragen wir nach.",
+      "step2Title": "Angebot prüfen",
+      "step2Body": "Wir bestätigen das Produkt, verfügbare Spezifikationen, Dokumente, Musteroptionen, Preise und kommerzielle Konditionen.",
+      "step3Title": "Bestätigen und versenden",
+      "step3Body": "Nach Freigabe koordinieren wir Auftrag, Verpackung, Dokumente und Versand. Wir halten Sie über den Fortschritt der Bestellung auf dem Laufenden."
+    },
+    "faq": {
+      "eyebrow": "Käuferfragen",
+      "heading": "Wichtige Details vor Ihrer Bestellung.",
+      "moqQ": "Wie hoch sind Ihre Mindestbestellmengen?",
+      "moqA": "Die Mindestbestellmengen hängen von Produkt, Güteklasse, Lieferant und Verpackungsformat ab. Teilen Sie uns Ihre Zielmenge und Ihr Zielland mit, und wir bestätigen die machbare Mindestmenge mit dem Angebot.",
+      "samplesQ": "Kann ich vor der Bestellung ein Muster erhalten?",
+      "samplesA": "Die Musterverfügbarkeit hängt von Produkt und Zielland ab. Wo Muster verfügbar sind, bestätigen wir Format, Dokumentation, Kurierkosten und Versandzeitpunkt, bevor wir fortfahren.",
+      "leadtimeQ": "Wie lange sind Ihre üblichen Lieferzeiten?",
+      "leadtimeA": "Die Lieferzeit variiert je nach Produkt, Menge, Verpackung, Dokumentation und Zielland. Wir liefern einen realistischen Zeitplan, nachdem wir den vollständigen Bedarf geprüft haben.",
+      "paymentQ": "Welche Incoterms und Zahlungsbedingungen bieten Sie an?",
+      "paymentA": "Die verfügbaren Incoterms und Zahlungsbedingungen hängen von Produkt, Sendungsgröße und Zielland ab. Wir listen die zutreffenden Optionen im Angebot auf.",
+      "packagingQ": "Bieten Sie individuelle oder Eigenmarken-Verpackung an?",
+      "packagingA": "Je nach Produkt und Auftragsvolumen können Massenware-, individuelle und Eigenmarken-Optionen verfügbar sein. Teilen Sie uns Packungsgröße, Material, Kennzeichnung und Zielland-Anforderungen zur Bestätigung mit.",
+      "certsQ": "Welche Zertifizierungen und Dokumente stellen Sie bereit?",
+      "certsA": "Die Dokumentenanforderungen variieren je nach Produkt und Importland. Wir bestätigen die zutreffenden Registrierungen, Spezifikationen, Zertifikate, Prüfberichte und Exportdokumente während der Angebotserstellung."
+    },
+    "finalCta": {
+      "heading": "Aus Indien beschaffen, mit Traya.",
+      "sub": "Von der ersten Anfrage bis zur finalen Lieferung kümmern wir uns um jedes Detail, damit Ihr Handel mit Klarheit, Konsistenz und Sorgfalt abläuft.",
+      "cta": "Ihren Bedarf mitteilen",
+      "whatsapp": "Nachricht auf WhatsApp"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "Über uns",
+      "description": "Erfahren Sie mehr über Traya International Exim LLP, ein branchenübergreifendes indisches EXIM-Unternehmen, das Käufern hilft, Produkte aus Indien mit klarer Koordination und zuverlässiger Handelsunterstützung zu beziehen."
+    },
+    "hero": {
+      "eyebrow": "Über Traya",
+      "heading": "Ein raffinierter Ansatz für globalen Handel",
+      "tagline": "Beschaffung, Dokumentation, Verpackung und Versandunterstützung, gesteuert von einem engagierten Team.",
+      "body": "TRAYA ist ein globales Handelsunternehmen, das sich dem Aufbau vertrauensvoller Partnerschaften auf internationalen Märkten widmet. Durch professionelle Umsetzung und einen kundenorientierten Ansatz helfen wir Unternehmen, den globalen Handel mit Zuversicht zu meistern.\n\nGetragen von Transparenz, Liebe zum Detail und einem Bekenntnis zu Qualität wird jede Interaktion mit Sorgfalt gesteuert, um Zuverlässigkeit, Konsistenz und ein professionelles Erlebnis zu gewährleisten, auf das sich Unternehmen verlassen können.\n\nMit einem wachsenden Portfolio und einer Vision für nachhaltiges Wachstum entwickelt sich TRAYA stetig mit den sich wandelnden Bedürfnissen globaler Märkte weiter und schafft dauerhafte Partnerschaften, die auf Vertrauen, Qualität und gemeinsamem Erfolg beruhen."
+    },
+    "founder": {
+      "eyebrow": "Ein Wort der Gründerin",
+      "name": "Neha Pardeshi",
+      "role": "Gründerin & CEO",
+      "p1": "Die Welt hat sich mir nicht durch Lehrbücher eröffnet — sie hat sich mir durch das Reisen eröffnet. Das Erkunden verschiedener Kulturen, das Kennenlernen von Menschen aus allen Lebensbereichen und der Blick auf die Welt aus unterschiedlichen Perspektiven haben nicht nur geprägt, wer ich bin, sondern auch, was ich aufbauen wollte.",
+      "p2": "Ich habe immer geglaubt, dass es im globalen Handel letztlich um menschliche Verbindung geht. Hinter jeder Sendung, jedem Produkt und jeder Partnerschaft steht eine Beziehung, die auf Vertrauen und Verständnis aufbaut — etwas, das kein Algorithmus und keine Automatisierung wirklich ersetzen kann.",
+      "p3": "Bei Traya International EXIM besteht unser Ziel nicht nur darin, Handel zu ermöglichen, sondern bedeutungsvolle und dauerhafte Beziehungen über Grenzen hinweg aufzubauen — Beziehungen, die mit jeder Transaktion und jedem Gespräch stärker werden.",
+      "p4": "Was als Leidenschaft für das Erkunden der Welt begann, hat sich zu einem Unternehmen entwickelt, das von Engagement, Integrität und einer wahrhaft globalen Vision getragen wird. Und wir stehen erst am Anfang.",
+      "p5": "Vielen Dank, dass Sie uns vertrauen und sich entschieden haben, Teil dieser Reise zu sein."
+    },
+    "principles": {
+      "eyebrow": "Wer wir sind",
+      "heading": "Disziplin und Sorgfalt, bei jedem Engagement.",
+      "body": "Was uns ausmacht, ist die Art und Weise, wie wir jede Anfrage, jedes Lieferantengespräch und jedes Sendungsdetail handhaben. Unsere Arbeit orientiert sich an drei praktischen Standards.",
+      "p1Title": "Präzision",
+      "p1Body": "Produktdetails, Dokumente, Verpackung, kommerzielle Konditionen und Versandanforderungen werden geprüft, bevor ein Auftrag fortgeführt wird.",
+      "p2Title": "Konsistenz",
+      "p2Body": "Wir halten Kommunikation, Nachverfolgung und Koordination von der ersten Anfrage bis zum Versand konstant.",
+      "p3Title": "Integrität",
+      "p3Body": "Wir kommunizieren klar darüber, was verfügbar ist, was noch bestätigt werden muss und was der nächste Schritt sein sollte."
+    },
+    "why": {
+      "eyebrow": "Warum Traya",
+      "heading": "Ein praktischer Partner für die internationale Beschaffung.",
+      "body": "Traya wurde aufgebaut, um Käufern zu helfen, Unklarheiten im internationalen Handel zu reduzieren. Wir bündeln Produktbeschaffung, Lieferantenkoordination, Dokumentation, Verpackung und Versandunterstützung in einem klaren Arbeitsablauf.",
+      "cta": "Unsere Leistungen ansehen",
+      "w1Title": "Von der Gründerin geprägte Standards",
+      "w1Body": "Sie arbeiten mit einem Team, das Verantwortung für den Bedarf übernimmt und die Details konsequent verfolgt.",
+      "w2Title": "Strukturierte Umsetzung",
+      "w2Body": "Wir bestätigen Spezifikationen, Mengen, Verpackung, Dokumente, kommerzielle Konditionen und Zeitpläne, bevor der Auftrag fortgeführt wird.",
+      "w3Title": "Beziehungsorientiertes Denken",
+      "w3Body": "Wir möchten Stammkäufer mit klaren Antworten, stetigen Updates und verlässlicher Koordination unterstützen.",
+      "w4Title": "Globaler Blick, persönliche Note",
+      "w4Body": "Sie sprechen mit einem echten Team, das den Bedarf versteht und mit praktischen nächsten Schritten reagiert.",
+      "w5Title": "Mehrere Branchen, ein Partner",
+      "w5Body": "Wir unterstützen Anfragen in den Bereichen Lebensmittel & Agrar, Chemikalien, mechanische Produkte, Papier und weitere Handelsanfragen.",
+      "w6Title": "Dokumentation, die mitreist",
+      "w6Body": "Wir bestätigen die Spezifikationen, Zertifikate, kommerziellen Dokumente und Exportdokumente, die für das Produkt und das Zielland erforderlich sind.",
+      "w7Title": "Durchgehend transparent",
+      "w7Body": "Wir teilen Preise, Zeitpläne, Auftragsstatus und ausstehende Anforderungen klar mit, damit Sie wissen, was in jeder Phase passiert."
+    },
+    "vision": {
+      "eyebrow": "Vision & Mission",
+      "visionLabel": "Unsere Vision",
+      "vision": "Der vertrauenswürdigste und größte Handelspartner für Unternehmen zu werden, die über Grenzen hinweg expandieren.",
+      "missionLabel": "Unsere Mission",
+      "m1": "Effiziente und gut strukturierte Export- und Importabläufe auf globalen Märkten zu ermöglichen.",
+      "m2": "Langfristige internationale Handelspartnerschaften aufzubauen und zu stärken und nachhaltige Lösungen bereitzustellen.",
+      "m3": "Eine reibungslose Umsetzung durch disziplinierte Systeme und operative Klarheit zu gewährleisten.",
+      "m4": "Unsere globale Präsenz durch strategisches Engagement auf den Märkten auszubauen.",
+      "commitment": "Wir bauen kein Unternehmen für einmalige Transaktionen auf. Wir bauen einen Handelspartner auf, zu dem Käufer für klare Unterstützung über Produkte, Branchen und Märkte hinweg zurückkehren können."
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie Traya International Exim per E-Mail, Telefon, WhatsApp oder Anfrageformular. Teilen Sie uns Ihren Produktbedarf, die Menge, das Zielland und den Zeitrahmen mit."
+    },
+    "hero": {
+      "eyebrow": "Kontakt",
+      "heading": "Reichen Sie Ihre globalen Beschaffungsanforderungen ein.",
+      "body": "Nehmen Sie Kontakt zu unseren Handelsexperten auf, per E-Mail, Telefon, WhatsApp oder über unser sicheres Anfrageformular. Bitte geben Sie Ihre Produktspezifikationen, benötigten Mengen, den Zielhafen und die Lieferzeiten an, damit wir umfassend und zügig kommerziell antworten können."
+    },
+    "emailLabel": "Schreiben Sie uns",
+    "phoneLabel": "Rufen Sie uns an",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Nachricht auf WhatsApp",
+    "addressLabel": "Besuchen Sie uns",
+    "mapCta": "Auf Karte ansehen",
+    "hoursLabel": "Antwortzeit",
+    "hours": "Wir antworten nach Prüfung Ihres Bedarfs",
+    "socialLabel": "Folgen Sie uns",
+    "form": {
+      "eyebrow": "Senden Sie uns eine Nachricht",
+      "heading": "Teilen Sie uns Ihren Bedarf mit.",
+      "sub": "Füllen Sie die untenstehenden Angaben aus, und unser Team prüft Ihren Bedarf, um umfassend kommerziell zu antworten.",
+      "name": "Ihr Name",
+      "email": "E-Mail-Adresse",
+      "company": "Unternehmen",
+      "message": "Ihre Nachricht",
+      "messagePlaceholder": "Produkt, Spezifikationen, Menge, Zielland und Zeitrahmen",
+      "submit": "Nachricht senden",
+      "sending": "Wird gesendet...",
+      "success": "Vielen Dank. Ihre Nachricht wurde gesendet. Wir melden uns in Kürze bei Ihnen.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
+      "rateLimited": "Sie haben das heutige Limit erreicht. Bitte schreiben Sie uns eine E-Mail oder eine Nachricht auf WhatsApp.",
+      "point1": "Wir antworten innerhalb eines Werktags",
+      "point2": "Beschaffung, Muster, Preise und Dokumentation — fragen Sie uns alles",
+      "point3": "Eine direkte Verbindung zu unserem Handelsteam",
+      "reassurance": "In der Regel innerhalb eines Werktags · Unverbindlich.",
+      "successHeading": "Nachricht gesendet.",
+      "successBody": "Vielen Dank. Unser Team prüft Ihre Nachricht und meldet sich bei Ihnen zurück — in der Regel innerhalb eines Werktags."
+    }
+  },
+  "Certifications": {
+    "meta": {
+      "title": "Zertifizierungen & Qualität",
+      "description": "Erfahren Sie mehr über die Registrierungen von Traya International Exim und den Dokumentationsansatz, der das Vertrauen der Käufer und die Exportkonformität unterstützt."
+    },
+    "hero": {
+      "eyebrow": "Registrierungen & Dokumentation",
+      "heading": "Dokumente sind im internationalen Handel entscheidend.",
+      "body": "Traya arbeitet mit den Registrierungen und Dokumenten, die Käufer üblicherweise vor Auftragsbeginn prüfen möchten. Für jedes Produkt und Zielland bestätigen wir die zutreffenden Spezifikationen, Zertifikate, kommerziellen Dokumente und Exportunterlagen während der Angebotserstellung.",
+      "recognisedBy": "Anerkannt von"
+    },
+    "why": {
+      "eyebrow": "Warum Traya vertrauen",
+      "heading": "Vertrauen, das auf Prozessen basiert, nicht auf Versprechen.",
+      "body": "Wir gewinnen das Vertrauen der Käufer durch klare Anforderungen, sorgfältige Lieferantenkoordination und Dokumente, die vor dem Versand geprüft werden können.",
+      "t1Title": "Registrierungen & Zertifizierungen",
+      "t1Body": "Unsere Exportarbeit wird durch für indische Exporte relevante Registrierungen und Mitgliedschaften unterstützt.",
+      "t2Title": "Lieferanten- und Produktprüfungen",
+      "t2Body": "Wir prüfen den Produktbedarf, verfügbare Güteklassen, Verpackungsanforderungen und Lieferantenfähigkeit, bevor wir ein Angebot bestätigen.",
+      "t3Title": "Dokumente werden je Auftrag bestätigt",
+      "t3Body": "Spezifikationen, Zertifikate, Prüfberichte, kommerzielle Dokumente und Exportunterlagen werden je nach Produkt und Zielland bestätigt.",
+      "t4Title": "Klare Auftragsunterlagen",
+      "t4Body": "Produktdetails, Menge, Verpackung, Zielland, kommerzielle Konditionen und Zeitrahmen werden klar gehalten, damit Käufer den Auftrag ordnungsgemäß prüfen können."
+    },
+    "certs": {
+      "eyebrow": "Registrierungen & Zertifizierungen",
+      "heading": "Registrierungen & Zertifizierungen, die Käufer prüfen können.",
+      "sub": "Jede Registrierung wird mit ausstellender Behörde und ihrer Relevanz für Exporte aufgeführt.",
+      "issuedByLabel": "Ausgestellt von",
+      "meaningLabel": "Was das für Sie bedeutet"
+    },
+    "marks": {
+      "fssai": {
+        "issuedBy": "Food Safety & Standards Authority of India",
+        "meaning": "Unterstützt die Einhaltung des gesetzlichen Lebensmittelsicherheitsrahmens Indiens für die betreffenden Produkte."
+      },
+      "apeda": {
+        "issuedBy": "Agricultural & Processed Food Products Export Development Authority",
+        "meaning": "Zeigt die Registrierung bei der indischen Behörde für den Export landwirtschaftlicher und verarbeiteter Lebensmittelprodukte für die zutreffenden Exportaktivitäten."
+      },
+      "fieo": {
+        "issuedBy": "Federation of Indian Export Organisations",
+        "meaning": "Zeigt die Mitgliedschaft im nationalen Exportförderungs-Ökosystem Indiens."
+      },
+      "spiceBoard": {
+        "issuedBy": "Spices Board of India",
+        "meaning": "Relevant für Gewürzexporte und die damit verbundene Compliance nach dem Spices Board of India."
+      },
+      "msme": {
+        "issuedBy": "Micro, Small & Medium Enterprises",
+        "meaning": "Weist Traya als registriertes indisches Unternehmen für Geschäfts- und Handelstätigkeiten aus."
+      }
+    },
+    "trace": {
+      "eyebrow": "Die Dokumentenspur",
+      "heading": "Die richtigen Dokumente werden vor dem Versand bestätigt.",
+      "body": "Die Dokumentenanforderungen unterscheiden sich je nach Produkt und Importland. Wir bestätigen, was für Ihren Auftrag vor dem Versand gilt.",
+      "d1": "Analysezertifikat (COA), soweit zutreffend",
+      "d2": "Produktspezifikationsblätter",
+      "d3": "Phytosanitätszertifikat (falls erforderlich)",
+      "d4": "Ursprungszeugnis",
+      "d5": "Handelsrechnung, Packliste und Exportunterlagen"
+    },
+    "disclaimer": "Die gezeigten Registrierungen und Mitgliedschaften können für Traya International Exim oder Produktionsstätten von Partnern gelten. Der genaue Umfang, die Verfügbarkeit von Zertifikaten und die Anforderungen des Ziellandes werden während der Angebotserstellung bestätigt."
+  },
+  "Capabilities": {
+    "meta": {
+      "title": "Leistungen",
+      "description": "Traya International Exim unterstützt Käufer bei Produktbeschaffung, Lieferantenkoordination, Exportdokumentation, Verpackung und Versandkoordination in Schlüsselbranchen."
+    },
+    "hero": {
+      "eyebrow": "Leistungen",
+      "heading": "Handelsunterstützung vom Bedarf bis zum Versand.",
+      "body": "Traya hilft Käufern, Produkte aus Indien zu beziehen, und koordiniert die Schritte, die einen Exportauftrag erfolgreich machen: Lieferantengespräche, Spezifikationen, Verpackung, Dokumente, kommerzielle Konditionen und Versand-Updates."
+    },
+    "industries": {
+      "eyebrow": "Branchen, die wir bedienen",
+      "heading": "Branchen weltweit stärken",
+      "sub": "Unser wachsendes Portfolio ermöglicht es uns, ein breites Spektrum an Branchen mit Produkten zu bedienen, die sich wandelnden Marktanforderungen und internationalen Qualitätserwartungen entsprechen.",
+      "i1Title": "Pharma & Nutrazeutika",
+      "i1Body": "Funktionale Inhaltsstoffe, Hilfsstoffe und gesundheitsorientierte Rohstoffe.",
+      "i2Title": "Lebensmittel & Getränke",
+      "i2Body": "Gewürze, Lebensmittelzutaten, Würzmittel und Spezialpulver.",
+      "i3Title": "Lebensmittelverarbeitung",
+      "i3Body": "Dehydrierte Produkte und Zutatenlösungen für die Fertigung.",
+      "i4Title": "Textil & Färberei",
+      "i4Body": "Reaktivfarbstoffe, Direktfarbstoffe und spezielle Farbstofflösungen.",
+      "i5Title": "Farben & Beschichtungen",
+      "i5Body": "Pigmente, Harze und industrielle Chemikalienlösungen.",
+      "i6Title": "Wasseraufbereitung",
+      "i6Body": "Industriechemikalien für Anwendungen der Wasseraufbereitung.",
+      "i7Title": "Gesundheit & Wohlbefinden",
+      "i7Body": "Inhaltsstoffe für Ernährungs- und Wellness-Formulierungen.",
+      "i8Title": "Industrielle Fertigung",
+      "i8Body": "Spezialchemikalien für vielfältige industrielle Prozesse."
+    },
+    "core": {
+      "eyebrow": "Was wir tun",
+      "heading": "Kernleistungen für internationale Käufer.",
+      "c1Title": "Produktbeschaffung",
+      "c1Body": "Wir helfen Käufern, Lebensmittel & Agrarprodukte, Chemikalien, mechanische Produkte, Papier und weitere Exportanforderungen aus Indien zu beziehen, basierend auf Spezifikationen, Menge und Zielland.",
+      "c2Title": "Lieferantenkoordination",
+      "c2Body": "Wir koordinieren mit geeigneten Lieferanten, um Verfügbarkeit, Güteklasse, Verpackung, Produktionsbereitschaft und Machbarkeit des Auftrags zu prüfen.",
+      "c3Title": "Unterstützung bei Spezifikation und Dokumentation",
+      "c3Body": "Wir helfen, die Spezifikationen, Zertifikate, Prüfberichte, kommerziellen Dokumente und Exportdokumente zu bestätigen, die für Produkt und Zielland erforderlich sind.",
+      "c4Title": "Verpackungs- und Versandkoordination",
+      "c4Body": "Wir prüfen Verpackungsanforderungen, Versandart, Anforderungen des Ziellandes und Versandzeitpunkte, damit der Auftrag mit weniger Überraschungen abläuft.",
+      "c5Title": "Klare Käuferkommunikation",
+      "c5Body": "Wir halten den Käufer über verfügbare Optionen, ausstehende Details, Angebotsbedingungen, Auftragsstatus und nächste Schritte informiert."
+    },
+    "foundations": {
+      "eyebrow": "Wie wir arbeiten",
+      "heading": "Die Standards hinter jeder Leistung.",
+      "body": "Diese Standards erleichtern Käufern das Verständnis und die Steuerung des Beschaffungs- und Exportprozesses.",
+      "f1Title": "Klarheit",
+      "f1Body": "Klare Produktanforderungen, klare kommerzielle Konditionen und klare nächste Schritte.",
+      "f2Title": "Struktur",
+      "f2Body": "Ein klar definierter Ablauf für Anfrageprüfung, Lieferantenkoordination, Dokumentation und Versandnachverfolgung.",
+      "f3Title": "Zuverlässigkeit",
+      "f3Body": "Stetige Kommunikation und praktische Nachverfolgung von der Anfrage bis zum Versand.",
+      "f4Title": "Skalierbarkeit",
+      "f4Body": "Unterstützung für Stammkäufer über mehrere Produktbranchen und Märkte hinweg."
+    }
+  },
+  "Catalogue": {
+    "meta": {
+      "title": "Produkte",
+      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya — 500+ Produkte in 30 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
+    },
+    "hub": {
+      "eyebrow": "Lebensmittel- & Agrarkatalog",
+      "heading": "Finden Sie die Produkte, die Sie aus Indien beziehen möchten.",
+      "sub": "Durchstöbern Sie unsere gelisteten Lebensmittel-, Agrar- und Chemikalienprodukte nach Kategorie. Für mechanische Produkte, Papier oder Produkte, die hier nicht aufgeführt sind, senden Sie uns Ihren Bedarf, und wir prüfen die verfügbaren Beschaffungsoptionen.",
+      "spec": "6 Gruppen · 30 Kategorien · 500+ gelistete Produkte",
+      "search": "Produkte oder Kategorien suchen...",
+      "all": "Alle",
+      "noResults": "Keine Produkte entsprechen Ihrer Suche.",
+      "downloadCatalogue": "Vollständigen Katalog herunterladen (PDF)"
+    },
+    "list": {
+      "form": "Form",
+      "grade": "Güteklasse",
+      "gradeValue": "Lebensmittelqualität",
+      "add": "Zur Anfrage hinzufügen",
+      "added": "In Ihrer Anfrage",
+      "addedToast": "Zu Ihrer Anfrageliste hinzugefügt",
+      "quote": "Angebot anfordern",
+      "sample": "Muster anfordern",
+      "series": "Serie",
+      "colourIndex": "Colour Index",
+      "packSizes": "Packungsgrößen"
+    },
+    "product": "Produkt",
+    "products": "Produkte",
+    "viewRange": "Sortiment ansehen",
+    "productMeta": {
+      "title": "{product} | {category}",
+      "description": "{product} aus Indien in der Kategorie {category}. Spezifikationen, Mindestbestellmenge, Verpackung, Dokumente und Preise werden auf Anfrage bestätigt. Traya International Exim LLP.",
+      "ogDescription": "{product} aus Indien in der Kategorie {category}. Spezifikationen, Mindestbestellmenge, Verpackung, Dokumente und Preise werden auf Anfrage bestätigt."
+    },
+    "category": {
+      "metaDescription": "{title} aus Indien. {count} {products} verfügbar. Spezifikationen, Mindestbestellmenge, Verpackung, Dokumente und Preise werden auf Anfrage bestätigt. Traya International Exim LLP.",
+      "eyebrow": "Kategorie",
+      "rangeHeading": "Das vollständige Sortiment",
+      "note": "Spezifikationen, Güteklassen, Mindestbestellmenge, Verpackung, Dokumente und Preise werden bestätigt, nachdem wir Ihren Bedarf geprüft haben. Teilen Sie uns die Menge und das Zielland für eine genauere Antwort mit.",
+      "enquireCta": "Nach dieser Kategorie fragen",
+      "viewProduct": "Ansehen",
+      "search": "Produkte suchen...",
+      "noResults": "Keine Produkte entsprechen Ihrer Suche.",
+      "sourcingHeading": "Beschaffung & Herkunft",
+      "sourcingBody": "Wir beziehen Produkte direkt von etablierten Herstellern und Verarbeitungsbetrieben in ganz Indien. Jede Charge wird vor dem Versand auf Qualität, Spezifikationen und Compliance geprüft.",
+      "specsHeading": "Spezifikationen & Verpackung",
+      "specsNote": "Güteklassen, Mindestbestellmenge, Verpackungsformate, Incoterms und Dokumentation werden je Auftrag bestätigt. Teilen Sie uns Ihre Anforderungen für ein detailliertes Angebot mit.",
+      "specOrigin": "Herkunft",
+      "specOriginVal": "Indien",
+      "specMoq": "Mindestbestellmenge",
+      "specMoqVal": "Auf Anfrage",
+      "specPackaging": "Verpackung",
+      "specPackagingVal": "Anpassbar",
+      "specIncoterms": "Incoterms",
+      "specIncotermsVal": "FOB / CIF",
+      "applicationsHeading": "Anwendungen",
+      "certsHeading": "Qualität & Compliance",
+      "certsNote": "Produkte werden durch relevante Zertifizierungen und Dokumentation unterstützt. Spezifische Anforderungen werden während der Angebotserstellung bestätigt.",
+      "siblingHeading": "Verwandte Kategorien",
+      "downloadCta": "Kategorie-Datenblatt herunterladen",
+      "closingCta": "Bereit, aus dieser Kategorie zu beziehen?",
+      "closingSub": "Teilen Sie uns Ihren Produktbedarf, die Menge und das Zielland mit. Unser Team prüft dies und antwortet mit verfügbaren Optionen, Spezifikationen und Preisen."
+    },
+    "detail": {
+      "eyebrow": "Produkt",
+      "originLabel": "Herkunft",
+      "origin": "Indien",
+      "categoryLabel": "Kategorie",
+      "pricingLabel": "Preise",
+      "pricing": "Auf Anfrage (RFQ)",
+      "docsHeading": "Spezifikationen & Dokumentation",
+      "docsNote": "Produktspezifikationen, Güteklassen, Verpackungsoptionen, Zertifikate, Prüfberichte und Exportdokumente hängen von Produkt und Zielland ab. Teilen Sie uns Ihre Menge, Verpackungsanforderungen und Ihr Zielland mit, damit wir die passenden Details bestätigen können.",
+      "sampleCta": "Muster anfordern",
+      "enquireCta": "Nach diesem Produkt fragen",
+      "relatedHeading": "Mehr aus dieser Kategorie",
+      "downloadSpecSheet": "Produktdatenblatt herunterladen",
+      "hsCode": "HS-Code",
+      "availableForms": "Verfügbare Formen"
+    }
+  },
+  "NotFound": {
+    "code": "Fehler 404",
+    "title": "Diese Seite hat einen anderen Weg genommen.",
+    "description": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben. Wir bringen Sie zurück auf Kurs.",
+    "back": "Zurück zur Startseite",
+    "popular": "Oder besuchen Sie eine dieser Seiten"
+  },
+  "Legal": {
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "description": "Wie wir mit Ihren Daten umgehen und sie schützen.",
+      "lastUpdated": "Zuletzt aktualisiert: Juni 2026",
+      "intro": "Wir respektieren Ihre Privatsphäre und setzen uns für den Schutz Ihrer persönlichen und geschäftlichen Informationen ein.",
+      "sections": {
+        "dataCollection": {
+          "title": "Informationen, die wir erheben",
+          "items": [
+            "Name und Kontaktdaten",
+            "Unternehmensinformationen",
+            "Versand- und Rechnungsdetails",
+            "Produktanfragen und Angebote",
+            "Informationen zur Website-Nutzung"
+          ]
+        },
+        "dataUsage": {
+          "title": "Wie wir Informationen verwenden",
+          "items": [
+            "Beantwortung von Anfragen und Angeboten",
+            "Abwicklung von Inlands- und Exportaufträgen",
+            "Koordination von Logistik und Versand",
+            "Verbesserung des Kundenerlebnisses",
+            "Erfüllung gesetzlicher Verpflichtungen"
+          ]
+        },
+        "dataSecurity": {
+          "title": "Datensicherheit",
+          "content": "Wir verwenden wirtschaftlich angemessene Sicherheitsmaßnahmen zum Schutz der Kundeninformationen. Zahlungsinformationen werden über sichere externe Zahlungsdienstleister abgewickelt und niemals auf unseren Servern gespeichert."
+        },
+        "thirdParty": {
+          "title": "Dienste Dritter",
+          "content": "Informationen können mit Logistikdienstleistern, Versandpartnern, Zollagenten und Zahlungsabwicklern geteilt werden, ausschließlich zur Abwicklung von Aufträgen und Exportanforderungen."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "content": "Unsere Website verwendet essenzielle Cookies für ihre Funktion sowie ein Live-Chat-Tool eines Drittanbieters (Crisp), das eigene Cookies setzen kann. Wir setzen keine Werbe-Tracker ein. Sie können Cookies in Ihrem Browser ablehnen, allerdings funktionieren dann einige Funktionen wie der Live-Chat möglicherweise nicht mehr."
+        },
+        "contact": {
+          "title": "Kontaktieren Sie uns",
+          "content": "Wenn Sie Fragen zu dieser Datenschutzerklärung oder Ihren Informationen haben, kontaktieren Sie uns bitte unter info@trayaexim.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "description": "Nutzungs- und Handelsbedingungen.",
+      "lastUpdated": "Zuletzt aktualisiert: Juni 2026",
+      "sections": {
+        "general": {
+          "title": "Allgemeine Bedingungen",
+          "content": "Durch den Zugriff auf und die Nutzung dieser Website akzeptieren Sie die Bedingungen und Bestimmungen dieser Vereinbarung und erklären sich damit einverstanden, an sie gebunden zu sein. Jede Nutzung dieses Dienstes stellt eine Annahme dieser Vereinbarung dar."
+        },
+        "orders": {
+          "title": "Angebote und Bestellungen",
+          "content": "Alle über diese Website bereitgestellten Angebote unterliegen der endgültigen Bestätigung und können sich je nach Marktbedingungen, Verfügbarkeit von Rohstoffen und Versandlogistik ändern."
+        },
+        "shipping": {
+          "title": "Versand und Lieferung",
+          "content": "Lieferzeiten sind Schätzungen und beginnen ab dem Versanddatum, nicht ab dem Bestelldatum. Wir sind nicht verantwortlich für Verzögerungen, die durch Zollabfertigungsprozesse verursacht werden."
+        },
+        "liability": {
+          "title": "Haftungsbeschränkung",
+          "content": "Traya International Exim haftet nicht für besondere Schäden oder Folgeschäden, die aus der Nutzung oder der Unfähigkeit zur Nutzung der Materialien auf dieser Website oder der Leistung der Produkte resultieren."
+        }
+      }
+    }
+  }
+}

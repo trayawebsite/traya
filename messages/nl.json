@@ -1,0 +1,784 @@
+{
+  "HowWeWork": {
+    "meta": {
+      "title": "Hoe Wij Werken — Traya International Exim",
+      "description": "Hoe Traya uw export beheert van aanvraag tot levering: sourcing, kwaliteitscontrole, documentatie, logistiek en verzending per zee, lucht of koerier."
+    },
+    "hero": {
+      "eyebrow": "Onze aanpak & wereldwijd bereik",
+      "heading": "Een gestructureerd proces, opgebouwd rond u.",
+      "sub": "Elke internationale transactie heeft haar eigen vereisten: specificaties, compliance, documentatie en logistiek. Bij Traya beheren wij dit allemaal, zodat u zich kunt richten op uw bedrijf terwijl wij de rest regelen."
+    },
+    "manage": {
+      "eyebrow": "Wat wij voor u regelen",
+      "heading": "Alles tussen aanvraag en levering",
+      "sub": "Wanneer u met Traya werkt, krijgt u niet alleen een product. U krijgt een team dat elk onderdeel van uw handel beheert, zodat niets aan de aandacht ontsnapt.",
+      "i1Title": "Export- en importactiviteiten",
+      "i1Body": "Volledig beheer van uw handel, van productsourcing tot definitieve verzending. Eén partner, één proces, geen hiaten.",
+      "i2Title": "Productsourcing & kwaliteitscontrole",
+      "i2Body": "Wij sourcen het juiste product voor uw behoefte en controleren of het aan uw specificaties voldoet voordat het wordt verzonden. U krijgt telkens precies wat u heeft gevraagd.",
+      "i3Title": "Handelsdocumentatie",
+      "i3Body": "Alle documenten die uw zending nodig heeft: facturen, paklijsten, certificaten en compliance-documentatie, nauwkeurig en op tijd opgesteld.",
+      "i4Title": "Logistieke coördinatie",
+      "i4Body": "Wij coördineren het transport van uw goederen per zee, lucht of koerier, afgestemd op uw tijdlijn, volume en bestemming. U blijft continu op de hoogte.",
+      "i5Title": "Toegewijde klantondersteuning",
+      "i5Body": "Eén vast aanspreekpunt van de eerste aanvraag tot de levering. Heldere communicatie, snelle reacties, geen overdrachten.",
+      "quote": "Wij vereenvoudigen de complexiteit van sourcen uit India, zodat u zich kunt richten op uw bedrijf."
+    },
+    "process": {
+      "eyebrow": "Hoe wij werken",
+      "heading": "Van aanvraag tot levering",
+      "sub": "Acht duidelijke stappen. Eén consistente uitvoeringsstandaard.",
+      "step": "Stap",
+      "s1Title": "Aanvraag",
+      "s1Body": "U deelt uw productbehoefte, hoeveelheid en bestemmingsland.",
+      "s2Title": "Bespreking van de behoefte",
+      "s2Body": "Wij verduidelijken specificaties, tijdlijnen, verpakking en compliance-vereisten.",
+      "s3Title": "Offerte",
+      "s3Body": "Een gedetailleerde, transparante offerte met productprijzen, vracht, betalingsvoorwaarden en condities. Geen verborgen kosten, geen verrassingen.",
+      "s4Title": "Orderbevestiging",
+      "s4Body": "Zodra overeenstemming is bereikt, wordt de order bevestigd en start de productie. Vanaf dit moment ligt uw tijdlijn vast.",
+      "s5Title": "Kwaliteitsborging",
+      "s5Body": "De productkwaliteit wordt vóór verzending getoetst aan de overeengekomen specificaties.",
+      "s6Title": "Documentatie",
+      "s6Body": "Alle exportdocumenten (facturen, paklijsten, certificaten) worden opgesteld en gecontroleerd.",
+      "s7Title": "Verzending",
+      "s7Body": "Goederen worden verzonden via uw voorkeursvervoerswijze, met volledige track-and-trace-gegevens.",
+      "s8Title": "Levering",
+      "s8Body": "De zending bereikt haar bestemming. Wij blijven beschikbaar voor ondersteuning na levering.",
+      "note": "Elke stap wordt gevolgd, gecommuniceerd en uitgevoerd volgens dezelfde professionele standaard, ongeacht de ordergrootte, het producttype of de bestemming. Wanneer u met Traya werkt, weet u altijd waar u aan toe bent."
+    },
+    "ship": {
+      "eyebrow": "Vracht & verzending",
+      "heading": "Hoe wij verzenden",
+      "sub": "Wij coördineren internationale zendingen via drie vervoerswijzen, afgestemd op uw ordergrootte, urgentie en bestemming.",
+      "seaTitle": "Zeevracht",
+      "seaBody": "Het meest geschikt voor grote orders waarbij kostenefficiëntie belangrijk is. Wij coördineren zowel FCL- (Full Container Load) als LCL-zendingen (Less than Container Load).",
+      "seaTag": "FCL & LCL beschikbaar",
+      "airTitle": "Luchtvracht",
+      "airBody": "Voor tijdsgevoelige of hoogwaardige lading die snel en veilig grenzen moet overschrijden met minimale transittijd.",
+      "airTag": "Priority & standaard luchtvracht",
+      "courierTitle": "Koeriersdienst voor monsters",
+      "courierBody": "Internationale koeriersverzending voor productmonsters, zodat kopers kwaliteit, specificaties en geschiktheid kunnen beoordelen voordat zij een volledige order plaatsen.",
+      "courierTag": "Beoordeling vóór bestelling",
+      "incoterms": "Incoterms: zendingen worden afgehandeld op voorwaarden die voor u werken. Wij ondersteunen FOB, CIF en andere standaard handelsvoorwaarden, vooraf overeengekomen, zonder onduidelijkheid over verantwoordelijkheden of kosten. Neem contact met ons op om te bespreken wat het beste bij uw behoefte past."
+    },
+    "reach": {
+      "eyebrow": "Wereldwijd bereik",
+      "heading": "Waar u ook bent, wij bereiken u",
+      "p1": "India is een van de meest capabele sourcingbestemmingen ter wereld, en Ahmedabad ligt in het hart daarvan. Wij zijn hier bewust gevestigd, met directe toegang tot kwaliteitsproducten in meerdere categorieën en de infrastructuur om deze wereldwijd te vervoeren.",
+      "p2": "Of u nu een gevestigde importeur bent met vastomlijnde vereisten of een bedrijf dat voor het eerst uit India sourcet, Traya is gebouwd om u te bedienen, met dezelfde structuur, zorg en betrouwbaarheid op elke schaal.",
+      "pillar1": "Aanpassen aan de handelsregelgeving en importvereisten van uw bestemmingsland.",
+      "pillar2": "Ervoor zorgen dat producten voldoen aan de compliance-normen van de markten waarin u actief bent.",
+      "pillar3": "Elke order behandelen als de basis van een langdurige relatie, niet als een eenmalige transactie.",
+      "pillar4": "Flexibel en responsief blijven naarmate uw zakelijke behoeften en marktomstandigheden veranderen.",
+      "mapCaption": "Wij bedienen internationale kopers wereldwijd",
+      "mapLabel": "Ahmedabad, India"
+    },
+    "cta": {
+      "heading": "Heeft u een behoefte in gedachten?",
+      "sub": "Deel uw productbehoefte en bestemming, en wij nemen het vanaf daar over.",
+      "primary": "Stuur een aanvraag",
+      "secondary": "Bekijk onze producten"
+    }
+  },
+  "Chatbot": {
+    "title": "Traya-assistent",
+    "subtitle": "Vraag naar onze producten & werkwijze",
+    "greeting": "Hallo! Ik ben de Traya-assistent. Vraag mij gerust naar onze producten, categorieën, monsters, of hoe u met ons kunt samenwerken — ik help u graag verder.",
+    "chip1": "Wat exporteert u?",
+    "chip2": "Hoe werken monsters?",
+    "chip3": "Hoe plaats ik een bestelling?",
+    "placeholder": "Stel een vraag…",
+    "send": "Verstuur",
+    "close": "Chat sluiten",
+    "whatsappAction": "Chat via WhatsApp",
+    "enquiryAction": "Aanvraagformulier",
+    "offline": "Onze assistent neemt even pauze. Stuur ons een bericht via WhatsApp en wij helpen u direct verder.",
+    "rateLimited": "U heeft de daglimiet voor chatberichten bereikt. Stuur ons een bericht via WhatsApp en wij helpen u direct verder.",
+    "limitReached": "Laten we verdergaan via WhatsApp voor een sneller antwoord.",
+    "disclaimer": "AI-assistent. Gebruik voor exacte prijzen, specificaties en bestellingen het aanvraagformulier."
+  },
+  "Error": {
+    "eyebrow": "Er is iets misgegaan",
+    "heading": "We zijn een obstakel tegengekomen.",
+    "body": "De pagina kon niet worden geladen. Probeer het opnieuw, of neem rechtstreeks contact met ons op als het probleem aanhoudt.",
+    "retry": "Probeer opnieuw"
+  },
+  "Links": {
+    "home": "Home",
+    "about": "Over Ons",
+    "capabilities": "Mogelijkheden",
+    "products": "Producten",
+    "howWeWork": "Hoe Wij Werken",
+    "certifications": "Certificeringen",
+    "contact": "Contact",
+    "enquiry": "Aanvraag",
+    "privacy": "Privacybeleid",
+    "terms": "Gebruiksvoorwaarden",
+    "breadcrumb": "Kruimelpad"
+  },
+  "Header": {
+    "getQuote": "Offerte Aanvragen",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten",
+    "skip": "Naar de inhoud",
+    "whatsapp": "Chat via WhatsApp",
+    "chat": "Chat met ons",
+    "whatsappMessage": "Hallo Traya International Exim, ik zou graag meer informatie willen over uw export van voedingsingrediënten.\n\nProduct(en): \nHoeveelheid / kwaliteit: \nBestemmingsland: \nBedrijf: ",
+    "siteLabel": "Traya International Exim — home",
+    "menuAria": "Menu",
+    "navAria": "Mobiel",
+    "dismissAria": "Sluiten",
+    "navPrimary": "Primair"
+  },
+  "Footer": {
+    "tagline": "Partnerschappen Bouwen Over Continenten Heen",
+    "reachOut": "Heeft u een vraag over sourcing? Praat met ons team. Wij helpen u graag verder.",
+    "explore": "Ontdekken",
+    "actions": "Snelle Acties",
+    "getInTouch": "Neem Contact Op",
+    "social": "Volg ons",
+    "certified": "Gecertificeerd",
+    "requestSample": "Monster Aanvragen",
+    "requestQuote": "Offerte Aanvragen",
+    "downloadCatalogue": "Catalogus Downloaden",
+    "rights": "Alle rechten voorbehouden.",
+    "builtBy": "Gebouwd door Studio Morpheus",
+    "toTop": "Terug naar boven"
+  },
+  "Enquiry": {
+    "eyebrow": "Stuur een aanvraag",
+    "heading": "Laten we een gesprek beginnen.",
+    "sub": "Deel uw wensen, wij regelen de rest.",
+    "trust1": "Snelle reactie",
+    "trust2": "Betrouwbare ondersteuning",
+    "trust3": "Wereldwijde oplossingen",
+    "founderNote": "Achter elke zending schuilt een relatie die is opgebouwd op vertrouwen en begrip.",
+    "founderName": "Neha Pardeshi",
+    "founderRole": "Oprichter & CEO",
+    "name": "Uw naam",
+    "email": "E-mailadres",
+    "phone": "Telefoon / WhatsApp",
+    "company": "Organisatie",
+    "product": "Product / HS-code",
+    "shipment": "Verzendwijze",
+    "shipmentPlaceholder": "Selecteer een verzendwijze",
+    "shipmentModes": "Zee (FCL / LCL) · Lucht · Weg · Koerier · Nog niet zeker",
+    "shipmentPrefix": "Verzendwijze:",
+    "requirements": "Uw behoefte",
+    "requirementsPlaceholder": "Specificaties, hoeveelheid, verpakking, bestemming en tijdlijn",
+    "submit": "Aanvraag versturen",
+    "sending": "Versturen...",
+    "success": "Dank u. Uw aanvraag is ontvangen. Wij nemen binnenkort contact met u op.",
+    "error": "Er is iets misgegaan. Probeer het opnieuw, of e-mail ons rechtstreeks.",
+    "rateLimited": "U heeft de daglimiet voor aanvragen bereikt. E-mail ons of stuur ons een bericht via WhatsApp.",
+    "addToList": "Toevoegen aan aanvraag",
+    "removeFromList": "Verwijderen uit aanvraag",
+    "list": {
+      "eyebrow": "Aanvraaglijst",
+      "heading": "Controleer uw aanvraag.",
+      "sub": "U heeft deze producten geselecteerd. Controleer de lijst, vul uw gegevens in en verstuur de aanvraag.",
+      "empty": "Uw aanvraaglijst is leeg. Blader door onze producten en voeg items toe om te beginnen.",
+      "browseProducts": "Bekijk producten",
+      "remove": "Verwijderen",
+      "clearAll": "Alles wissen",
+      "contactHeading": "Uw gegevens",
+      "contactSub": "Wij gebruiken deze gegevens om te reageren op uw aanvraag.",
+      "name": "Uw naam",
+      "email": "E-mailadres",
+      "company": "Organisatie",
+      "phone": "Telefoon / WhatsApp",
+      "notes": "Opmerkingen (optioneel)",
+      "notesPlaceholder": "Hoeveelheden, kwaliteiten, bestemming, tijdlijn",
+      "submit": "Aanvraag indienen",
+      "sending": "Indienen...",
+      "success": "Uw aanvraag is ingediend. Wij nemen binnenkort contact met u op.",
+      "error": "Er is iets misgegaan. Probeer het opnieuw, of e-mail ons rechtstreeks.",
+      "rateLimited": "U heeft de daglimiet voor aanvragen bereikt. E-mail ons of stuur ons een bericht via WhatsApp.",
+      "submittedHeading": "Aanvraag ingediend.",
+      "submittedBody": "Dank u. Ons team beoordeelt uw behoefte en neemt contact met u op met de beschikbare productgegevens, documenten, prijzen en volgende stappen.",
+      "browseMore": "Verder bladeren"
+    },
+    "meta": {
+      "title": "Aanvraaglijst",
+      "description": "Bekijk en verstuur uw productaanvraag. Deel de specificaties, hoeveelheid, bestemming en tijdlijn, zodat ons team met de juiste details kan reageren."
+    }
+  },
+  "Validation": {
+    "name": "Vul uw naam in",
+    "email": "Vul een geldig e-mailadres in",
+    "message": "Voeg iets meer details toe"
+  },
+  "Language": {
+    "label": "Taal",
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "Quote": {
+    "contactDetails": "Contactgegevens",
+    "requestDetails": "Aanvraagdetails",
+    "eyebrow": "Offerte aanvragen",
+    "heading": "Ontvang een prijsopgave voor dit product.",
+    "sub": "Deel uw gegevens en vereisten. Ons team beoordeelt dit en reageert met prijzen, MOQ, verpakking en commerciële voorwaarden.",
+    "name": "Uw naam",
+    "email": "E-mailadres",
+    "company": "Organisatie",
+    "phone": "Telefoon / WhatsApp",
+    "country": "Bestemmingsland",
+    "quantity": "Hoeveelheid / kwaliteit",
+    "quantityPlaceholder": "bijv. 5 MT, 1 container, monster",
+    "message": "Aanvullende vereisten",
+    "messagePlaceholder": "Verpakking, certificeringen, tijdlijn of andere details",
+    "submit": "Offerte aanvragen",
+    "sending": "Versturen...",
+    "success": "Dank u. Uw offerteaanvraag is verzonden. Wij reageren binnenkort met de details.",
+    "error": "Er is iets misgegaan. Probeer het opnieuw, of e-mail ons rechtstreeks.",
+    "rateLimited": "U heeft de daglimiet bereikt. E-mail ons of stuur ons een bericht via WhatsApp.",
+    "quotingFor": "Offerte voor",
+    "headingFor": "Ontvang een prijsopgave voor {name}.",
+    "purposeLabel": "Wat heeft u nodig?",
+    "purposeQuote": "Een offerte",
+    "purposeSample": "Een betaald monster",
+    "sampleHeading": "Monster aanvragen.",
+    "sampleHeadingFor": "Vraag een monster aan van {name}.",
+    "sampleSub": "Laat ons weten waarheen wij moeten verzenden en hoeveel u nodig heeft. Wij bevestigen de kosten voor het monster en de verzending voordat er iets in rekening wordt gebracht.",
+    "sampleNote": "Monsters zijn betaald. Deel uw behoefte en wij bevestigen de kosten voor het monster en de verzending voordat u betaalt.",
+    "sampleQuantity": "Benodigde monstergrootte",
+    "sampleQuantityPlaceholder": "bijv. 100 g, 500 g, 1 kg",
+    "sampleSubmit": "Monster aanvragen",
+    "messageQuote": "Aanvraag: Prijsofferte",
+    "messageSample": "Aanvraag: Betaald monster (koper betaalt monsterkosten + verzending)",
+    "reassurance": "Doorgaans reactie binnen 1 werkdag · Geheel vrijblijvend.",
+    "successHeading": "Aanvraag ontvangen.",
+    "successBody": "Dank u. Ons team beoordeelt uw behoefte en reageert met prijzen, MOQ, verpakking en levertijd — meestal binnen één werkdag.",
+    "trust": {
+      "eyebrow": "Wat u kunt verwachten",
+      "heading": "Een duidelijke, volledige offerte.",
+      "sub": "Deel uw behoefte en onze trade desk stelt een offerte op maat samen.",
+      "pricing": "FOB / CIF-prijzen voor uw bestemming",
+      "moq": "Minimale orderhoeveelheid en beschikbare kwaliteiten",
+      "packaging": "Verpakkings- en private-label-opties",
+      "leadTime": "Productie- en verzendtijd",
+      "docs": "Specificaties, COA en exportdocumenten",
+      "note": "Geheel vrijblijvend. Uw gegevens gaan uitsluitend naar onze trade desk."
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "Traya International Exim LLP — Indiaas Exportbedrijf",
+      "description": "Traya International Exim is een multisectoraal Indiaas exporthuis dat internationale kopers helpt bij het sourcen van voedingsingrediënten, specerijen, gedroogde producten, poeders en kruiden uit India."
+    },
+    "hero": {
+      "eyebrow": "Horizonnen Verbreden Door Handel.",
+      "heading": "Uw betrouwbare partner voor sourcing uit India.",
+      "sub": "Traya zet zich in voor het opbouwen van duurzame, wereldwijde partnerschappen door middel van vertrouwen, betrouwbaarheid en professionele uitvoering. Met een groeiend portfolio aan kwaliteitsproducten en een klantgerichte aanpak helpen wij bedrijven met vertrouwen internationale handel te voeren.",
+      "cta": "Ontdek Producten",
+      "ctaEnquiry": "Deel uw behoefte",
+      "stat": "Voeding, Agro & Chemicaliën · 500+ producten · 30 categorieën",
+      "certified": "Gecertificeerd"
+    },
+    "intro": {
+      "eyebrow": "Hoe Traya helpt",
+      "heading": "Wereldwijde kansen verbinden met",
+      "headingAccent": "betrouwbare uitvoering.",
+      "body": "Van het identificeren van de juiste producten tot de levering op uw bestemming: wij beheren elke stap met zorg, compliance en toewijding. Blijf geïnformeerd, blijf vol vertrouwen — met één aanspreekpunt.",
+      "f1Title": "Productsourcing",
+      "f1Body": "Wij werken samen met een netwerk van kwaliteitsgerichte partners om u betrouwbare producten te leveren.",
+      "f2Title": "Exportdocumentatie",
+      "f2Body": "Nauwkeurige documentatie en naleving van regelgeving, met precisie afgehandeld.",
+      "f3Title": "Verzendondersteuning",
+      "f3Body": "Betrouwbare logistiek en tijdige levering wereldwijd."
+    },
+    "stats": {
+      "s1": "Wereldwijd",
+      "s1Sub": "Handelspartner",
+      "s2": "Betrouwbare",
+      "s2Sub": "Partnerschappen",
+      "s3": "Groeiend",
+      "s3Sub": "Portfolio",
+      "s4": "100%",
+      "s4Sub": "Gesourcet uit India"
+    },
+    "groups": {
+      "eyebrow": "Ons Productportfolio",
+      "heading": "Wat Wij Exporteren",
+      "sub": "Ons portfolio is ontworpen om bedrijven in meerdere sectoren te ondersteunen. Naarmate wij groeien, groeit ook ons assortiment.",
+      "foodTitle": "Voeding & Agroproducten",
+      "foodBody": "Premium landbouwproducten, gesourcet van betrouwbare Indiase fabrikanten en afgestemd op internationale kwaliteits- en veiligheidsnormen.",
+      "foodCta": "Bekijk Voeding & Agroproducten",
+      "chemTitle": "Chemicaliën",
+      "chemBody": "Industriële en speciale chemicaliën voor uiteenlopende productietoepassingen op wereldwijde markten.",
+      "chemCta": "Bekijk Chemicaliën",
+      "selection": "Een selectie uit ons assortiment Voeding & Agro",
+      "note": "Ons portfolio blijft groeien naarmate wij partnerschappen versterken in nieuwe sectoren en internationale markten.",
+      "noteAsk": "Vindt u niet wat u zoekt? Neem contact op, wij kunnen mogelijk toch helpen.",
+      "spec": "500+ vermelde producten · 30 categorieën · 6 productgroepen",
+      "cta": "Stuur Een Behoefte",
+      "badgePremium": "Voeding & Agro",
+      "alliums": "Gedroogde Alliums & Groenten",
+      "alliumsBlurb": "Ui, knoflook en groenten in meerdere snitten en vormen voor voedselproductie.",
+      "powders": "Sproeigedroogde Poeders",
+      "powdersBlurb": "Fruit- en groentepoeders voor dranken, bakkerij, mengsels en instantvoeding.",
+      "spices": "Specerijen & Kruidenmengsels",
+      "spicesBlurb": "Hele en gemalen specerijen, chilivlokken, smaakversterkers en kruidenmengsels.",
+      "herbs": "Culinaire Kruiden",
+      "herbsBlurb": "Oregano, basilicum, tijm, rozemarijn, kasuri methi en kruidenmengsels.",
+      "nutraceutical": "Kruiden & Nutraceutica",
+      "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla en andere plantaardige poeders.",
+      "wellness": "Zuivel & Premium Wellness",
+      "wellnessBlurb": "Zuivelpoeders, eetbare zaden, jaggery, A2-ghee, koudgeperste oliën en millet.",
+      "chemicals": "Chemicaliën & Kleurstoffen",
+      "chemicalsBlurb": "Reactieve, zure en directe kleurstoffen, voedingskleurstoffen, pigmenten en verfharsen voor de textiel-, voedings- en coatingindustrie."
+    },
+    "why": {
+      "eyebrow": "Waarom Traya",
+      "heading": "Gebouwd voor langdurige partnerschappen.",
+      "sub": "Wij gaan verder dan transacties om vertrouwen op te bouwen, kwaliteit te leveren en samen te groeien.",
+      "cta": "Bekijk onze mogelijkheden",
+      "trusted": "Betrouwbare Relaties",
+      "trustedBody": "Een door de oprichter geleid team, direct contact en toezeggingen die wij nakomen, order na order.",
+      "quality": "Toewijding aan Kwaliteit",
+      "qualityBody": "Producten worden vóór verzending gecontroleerd aan uw specificaties, afgestemd op internationale kwaliteits- en veiligheidsnormen.",
+      "execution": "Professionele Uitvoering",
+      "executionBody": "Een vastomlijnd proces van aanvraag tot verzending: specificaties, documenten, verpakking en verzending, elk in de juiste volgorde afgehandeld.",
+      "communication": "Responsieve Communicatie",
+      "communicationBody": "Eén aanspreekpunt en snelle reacties, met duidelijke updates in elke fase van uw order.",
+      "global": "Wereldwijd Perspectief",
+      "globalBody": "Sourcing uit India voor kopers op verschillende markten, met documenten en voorwaarden afgestemd op uw bestemming.",
+      "growth": "Samen Groeien",
+      "growthBody": "Een groeiend portfolio en terugkerende partnerschappen — wij schalen mee naarmate uw behoeften groeien."
+    },
+    "testimonials": {
+      "eyebrow": "Wat kopers zeggen"
+    },
+    "certs": {
+      "eyebrow": "Exportregistraties",
+      "heading": "Bekijk de registraties achter onze export.",
+      "sub": "Elke registratie wordt getoond met de uitgevende instantie en wat dit betekent voor de koper. Documenten voor een specifiek product of bestemming worden bevestigd tijdens de offerteaanvraag.",
+      "cta": "Bekijk onze registraties"
+    },
+    "process": {
+      "eyebrow": "Het exportproces",
+      "heading": "Hoe een exportorder verloopt bij Traya.",
+      "sub": "U ontvangt de product- en commerciële details voordat u de order goedkeurt.",
+      "step": "Stap",
+      "step1Title": "Stuur uw behoefte",
+      "step1Body": "Deel de productnaam, specificatie, hoeveelheid, verpakking, bestemming en gewenste tijdlijn. Wij vragen naar eventuele ontbrekende details.",
+      "step2Title": "Beoordeel het aanbod",
+      "step2Body": "Wij bevestigen het product, de beschikbare specificaties, documenten, monsteropties, prijzen en commerciële voorwaarden.",
+      "step3Title": "Bevestig en verzend",
+      "step3Body": "Na goedkeuring coördineren wij de order, verpakking, documenten en verzending. Wij houden u op de hoogte naarmate de order vordert."
+    },
+    "faq": {
+      "eyebrow": "Vragen van kopers",
+      "heading": "Belangrijke details voordat u een bestelling plaatst.",
+      "moqQ": "Wat zijn uw minimale orderhoeveelheden?",
+      "moqA": "MOQ's zijn afhankelijk van het product, de kwaliteit, de leverancier en het verpakkingsformaat. Deel uw beoogde hoeveelheid en bestemming, en wij bevestigen het haalbare minimum bij de offerte.",
+      "samplesQ": "Kan ik een monster ontvangen voordat ik bestel?",
+      "samplesA": "De beschikbaarheid van monsters is afhankelijk van het product en de bestemming. Waar monsters beschikbaar zijn, bevestigen wij vooraf het formaat, de documentatie, de koerierskosten en de verzendtermijn.",
+      "leadtimeQ": "Wat zijn uw gebruikelijke levertijden?",
+      "leadtimeA": "De levertijd varieert per product, hoeveelheid, verpakking, documentatie en bestemming. Wij geven een realistische planning na beoordeling van de volledige behoefte.",
+      "paymentQ": "Welke Incoterms en betalingsvoorwaarden biedt u aan?",
+      "paymentA": "De beschikbare Incoterms en betalingsvoorwaarden zijn afhankelijk van het product, de zendingsgrootte en de bestemming. Wij vermelden de toepasselijke opties in de offerte.",
+      "packagingQ": "Biedt u aangepaste of private-label verpakking aan?",
+      "packagingA": "Bulk-, aangepaste en private-label-opties kunnen beschikbaar zijn, afhankelijk van het product en het ordervolume. Deel uw verpakkingsgrootte, materiaal, etikettering en bestemmingsvereisten voor bevestiging.",
+      "certsQ": "Welke certificeringen en documenten levert u?",
+      "certsA": "De documentvereisten variëren per product en land van invoer. Wij bevestigen de toepasselijke registraties, specificaties, certificaten, testrapporten en exportdocumenten tijdens de offerteaanvraag."
+    },
+    "finalCta": {
+      "heading": "Source uit India met Traya.",
+      "sub": "Van de eerste aanvraag tot de uiteindelijke levering beheren wij elk detail, zodat uw handel verloopt met duidelijkheid, consistentie en zorg.",
+      "cta": "Stuur uw behoefte",
+      "whatsapp": "Bericht via WhatsApp"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "Over Ons",
+      "description": "Maak kennis met Traya International Exim LLP, een multisectoraal Indiaas EXIM-bedrijf dat kopers helpt producten uit India te sourcen met heldere coördinatie en betrouwbare handelsondersteuning."
+    },
+    "hero": {
+      "eyebrow": "Over Traya",
+      "heading": "Een Verfijnde Aanpak van Wereldhandel",
+      "tagline": "Sourcing, documentatie, verpakking en verzendondersteuning, beheerd door één toegewijd team.",
+      "body": "TRAYA is een internationaal handelsbedrijf dat zich inzet voor het opbouwen van betrouwbare partnerschappen op internationale markten. Door professionele uitvoering en een klantgerichte aanpak helpen wij bedrijven met vertrouwen wereldhandel te voeren.\n\nGedreven door transparantie, aandacht voor detail en toewijding aan kwaliteit, wordt elke interactie met zorg beheerd, wat zorgt voor betrouwbaarheid, consistentie en een professionele ervaring waarop bedrijven kunnen rekenen.\n\nMet een groeiend portfolio en een visie op duurzame groei blijft TRAYA zich ontwikkelen in lijn met de veranderende behoeften van wereldwijde markten, en bouwt het duurzame partnerschappen op basis van vertrouwen, kwaliteit en gedeeld succes."
+    },
+    "founder": {
+      "eyebrow": "Een woord van de oprichter",
+      "name": "Neha Pardeshi",
+      "role": "Oprichter & CEO",
+      "p1": "De wereld ging voor mij niet open door schoolboeken, maar door reizen. Het verkennen van verschillende culturen, het ontmoeten van mensen uit alle lagen van de bevolking en het bekijken van de wereld vanuit verschillende perspectieven hebben niet alleen gevormd wie ik ben, maar ook wat ik heb gekozen om op te bouwen.",
+      "p2": "Ik heb altijd geloofd dat wereldhandel uiteindelijk draait om menselijke verbinding. Achter elke zending, elk product en elk partnerschap schuilt een relatie die is opgebouwd op vertrouwen en begrip — iets wat geen enkel algoritme of automatisering ooit werkelijk kan vervangen.",
+      "p3": "Bij Traya International EXIM is ons doel niet alleen om handel te faciliteren, maar om betekenisvolle en duurzame relaties over grenzen heen op te bouwen — relaties die met elke transactie en elk gesprek sterker worden.",
+      "p4": "Wat begon als een passie voor het ontdekken van de wereld, is uitgegroeid tot een onderneming gedreven door toewijding, integriteit en een werkelijk mondiale visie. En we staan nog maar aan het begin.",
+      "p5": "Dank u voor uw vertrouwen en voor uw keuze om deel uit te maken van deze reis."
+    },
+    "principles": {
+      "eyebrow": "Wie wij zijn",
+      "heading": "Discipline en zorg, in elke samenwerking.",
+      "body": "Wat ons kenmerkt, is de manier waarop wij elke aanvraag, elk gesprek met leveranciers en elk detail van een zending behandelen. Ons werk wordt geleid door drie praktische standaarden.",
+      "p1Title": "Precisie",
+      "p1Body": "Productdetails, documenten, verpakking, commerciële voorwaarden en verzendbehoeften worden gecontroleerd voordat een order wordt voortgezet.",
+      "p2Title": "Consistentie",
+      "p2Body": "Wij houden communicatie, opvolging en coördinatie constant, van de eerste aanvraag tot de verzending.",
+      "p3Title": "Integriteit",
+      "p3Body": "Wij communiceren duidelijk over wat beschikbaar is, wat nog bevestigd moet worden en wat de volgende stap is."
+    },
+    "why": {
+      "eyebrow": "Waarom Traya",
+      "heading": "Een praktische partner voor internationale sourcing.",
+      "body": "Traya is opgericht om kopers te helpen onduidelijkheid in internationale handel te verminderen. Wij brengen productsourcing, leverancierscoördinatie, documentatie, verpakking en verzendondersteuning samen in één helder proces.",
+      "cta": "Bekijk onze mogelijkheden",
+      "w1Title": "Door de oprichter gedreven standaarden",
+      "w1Body": "U werkt met een team dat verantwoordelijkheid neemt voor uw behoefte en de details tot in de puntjes afhandelt.",
+      "w2Title": "Gestructureerde uitvoering",
+      "w2Body": "Wij bevestigen specificaties, hoeveelheden, verpakking, documenten, commerciële voorwaarden en tijdlijnen voordat de order wordt voortgezet.",
+      "w3Title": "Relatie op de eerste plaats",
+      "w3Body": "Wij streven ernaar terugkerende kopers te ondersteunen met duidelijke antwoorden, constante updates en betrouwbare coördinatie.",
+      "w4Title": "Wereldwijde blik, persoonlijke aanpak",
+      "w4Body": "U spreekt met een echt team dat uw behoefte begrijpt en reageert met praktische vervolgstappen.",
+      "w5Title": "Meerdere sectoren, één partner",
+      "w5Body": "Wij ondersteunen behoeften op het gebied van Voeding & Agro, Chemicaliën, Mechanische producten, Papier en andere handelsaanvragen.",
+      "w6Title": "Documentatie die meereist",
+      "w6Body": "Wij bevestigen de specificaties, certificaten, commerciële documenten en exportdocumenten die vereist zijn voor het product en de bestemming.",
+      "w7Title": "Transparant van begin tot eind",
+      "w7Body": "Wij delen prijzen, tijdlijnen, orderstatus en openstaande zaken duidelijk, zodat u weet wat er in elke fase gebeurt."
+    },
+    "vision": {
+      "eyebrow": "Visie & missie",
+      "visionLabel": "Onze Visie",
+      "vision": "Om de meest vertrouwde en grootste handelspartner te worden voor bedrijven die over grenzen heen groeien.",
+      "missionLabel": "Onze Missie",
+      "m1": "Efficiënte en goed gestructureerde export- en importactiviteiten faciliteren op wereldwijde markten.",
+      "m2": "Langdurige internationale handelspartnerschappen opbouwen en versterken en duurzame oplossingen bieden.",
+      "m3": "Naadloze uitvoering waarborgen door middel van gedisciplineerde systemen en operationele duidelijkheid.",
+      "m4": "Onze wereldwijde aanwezigheid uitbreiden door strategische marktbenadering.",
+      "commitment": "Wij bouwen geen bedrijf voor eenmalige transacties. Wij bouwen een handelspartner waar kopers op kunnen terugvallen voor duidelijke ondersteuning, ongeacht product, sector of markt."
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Contact",
+      "description": "Neem contact op met Traya International Exim per e-mail, telefoon, WhatsApp of via het aanvraagformulier. Deel uw productbehoefte, hoeveelheid, bestemming en tijdlijn."
+    },
+    "hero": {
+      "eyebrow": "Contact",
+      "heading": "Dien uw internationale sourcingbehoefte in.",
+      "body": "Neem contact op met onze exportspecialisten via e-mail, telefoon, WhatsApp of ons beveiligde aanvraagformulier. Vermeld uw productspecificaties, benodigde hoeveelheden, bestemmingshaven en levertijden, zodat wij snel en volledig commercieel kunnen reageren."
+    },
+    "emailLabel": "E-mail ons",
+    "phoneLabel": "Bel ons",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Bericht via WhatsApp",
+    "addressLabel": "Bezoek ons",
+    "mapCta": "Bekijk op kaart",
+    "hoursLabel": "Reactietijd",
+    "hours": "Wij reageren na beoordeling van uw behoefte",
+    "socialLabel": "Volg ons",
+    "form": {
+      "eyebrow": "Stuur ons een bericht",
+      "heading": "Deel uw behoefte.",
+      "sub": "Vul onderstaande gegevens in en ons team beoordeelt uw behoefte om een volledige commerciële reactie te geven.",
+      "name": "Uw naam",
+      "email": "E-mailadres",
+      "company": "Organisatie",
+      "message": "Uw bericht",
+      "messagePlaceholder": "Product, specificaties, hoeveelheid, bestemming en tijdlijn",
+      "submit": "Bericht versturen",
+      "sending": "Versturen...",
+      "success": "Dank u. Uw bericht is verzonden. Wij nemen binnenkort contact met u op.",
+      "error": "Er is iets misgegaan. Probeer het opnieuw, of e-mail ons rechtstreeks.",
+      "rateLimited": "U heeft de daglimiet bereikt. E-mail ons of stuur ons een bericht via WhatsApp.",
+      "point1": "Wij reageren binnen één werkdag",
+      "point2": "Sourcing, monsters, prijzen en documentatie — stel ons al uw vragen",
+      "point3": "Een directe lijn naar onze trade desk",
+      "reassurance": "Doorgaans reactie binnen 1 werkdag · Geheel vrijblijvend.",
+      "successHeading": "Bericht verzonden.",
+      "successBody": "Dank u. Ons team beoordeelt uw bericht en neemt contact met u op — meestal binnen één werkdag."
+    }
+  },
+  "Certifications": {
+    "meta": {
+      "title": "Certificeringen & Kwaliteit",
+      "description": "Bekijk de registraties van Traya International Exim en de documentatiebenadering die het vertrouwen van kopers en exportcompliance ondersteunt."
+    },
+    "hero": {
+      "eyebrow": "Registraties & documentatie",
+      "heading": "Documenten zijn essentieel in internationale handel.",
+      "body": "Traya werkt met de registraties en documenten die kopers doorgaans moeten beoordelen voordat een order wordt voortgezet. Voor elk product en elke bestemming bevestigen wij de toepasselijke specificaties, certificaten, commerciële documenten en exportdocumentatie tijdens de offerteaanvraag.",
+      "recognisedBy": "Erkend door"
+    },
+    "why": {
+      "eyebrow": "Waarom vertrouwen op Traya",
+      "heading": "Vertrouwen, gebaseerd op proces, niet op beloftes.",
+      "body": "Wij verdienen het vertrouwen van kopers door duidelijke vereisten, zorgvuldige leverancierscoördinatie en documenten die vóór verzending kunnen worden beoordeeld.",
+      "t1Title": "Registraties & certificeringen",
+      "t1Body": "Ons exportwerk wordt ondersteund door registraties en lidmaatschappen die relevant zijn voor Indiase export.",
+      "t2Title": "Leveranciers- en productcontroles",
+      "t2Body": "Wij beoordelen de productbehoefte, beschikbare kwaliteiten, verpakkingsbehoeften en leveranciersvermogen voordat wij een aanbod bevestigen.",
+      "t3Title": "Documenten per order bevestigd",
+      "t3Body": "Specificaties, certificaten, testrapporten, commerciële documenten en exportdocumentatie worden bevestigd op basis van het product en de bestemming.",
+      "t4Title": "Heldere orderregistratie",
+      "t4Body": "Productdetails, hoeveelheid, verpakking, bestemming, commerciële voorwaarden en tijdlijn worden duidelijk vastgelegd, zodat kopers de order goed kunnen beoordelen."
+    },
+    "certs": {
+      "eyebrow": "Registraties & Certificeringen",
+      "heading": "Registraties & certificeringen die kopers kunnen inzien.",
+      "sub": "Elke registratie wordt vermeld met de uitgevende instantie en het belang ervan voor export.",
+      "issuedByLabel": "Uitgegeven door",
+      "meaningLabel": "Wat het voor u betekent"
+    },
+    "marks": {
+      "fssai": {
+        "issuedBy": "Food Safety & Standards Authority of India",
+        "meaning": "Ondersteunt de naleving van India's wettelijke voedselveiligheidskader voor toepasselijke producten."
+      },
+      "apeda": {
+        "issuedBy": "Agricultural & Processed Food Products Export Development Authority",
+        "meaning": "Toont registratie bij India's autoriteit voor de export van landbouw- en verwerkte voedingsproducten voor toepasselijke exportactiviteiten."
+      },
+      "fieo": {
+        "issuedBy": "Federation of Indian Export Organisations",
+        "meaning": "Toont lidmaatschap van India's nationale ecosysteem voor exportbevordering."
+      },
+      "spiceBoard": {
+        "issuedBy": "Spices Board of India",
+        "meaning": "Relevant voor specerij-export en bijbehorende compliance onder de Spices Board of India."
+      },
+      "msme": {
+        "issuedBy": "Micro, Small & Medium Enterprises",
+        "meaning": "Toont Traya als geregistreerde Indiase onderneming voor zakelijke en handelsactiviteiten."
+      }
+    },
+    "trace": {
+      "eyebrow": "Het papierspoor",
+      "heading": "De juiste documenten worden vóór verzending bevestigd.",
+      "body": "De documentvereisten verschillen per product en land van invoer. Wij bevestigen vóór verzending wat van toepassing is op uw order.",
+      "d1": "Certificate of Analysis (COA), indien van toepassing",
+      "d2": "Productspecificatiebladen",
+      "d3": "Fytosanitair certificaat (indien vereist)",
+      "d4": "Certificaat van Oorsprong",
+      "d5": "Handelsfactuur, paklijst en exportdocumentatie"
+    },
+    "disclaimer": "De getoonde registraties en lidmaatschappen kunnen van toepassing zijn op Traya International Exim of op productiefaciliteiten van partners. De exacte reikwijdte, beschikbaarheid van certificaten en bestemmingsvereisten worden bevestigd tijdens de offerteaanvraag."
+  },
+  "Capabilities": {
+    "meta": {
+      "title": "Mogelijkheden",
+      "description": "Traya International Exim ondersteunt kopers bij productsourcing, leverancierscoördinatie, exportdocumentatie, verpakking en verzendcoördinatie in belangrijke sectoren."
+    },
+    "hero": {
+      "eyebrow": "Mogelijkheden",
+      "heading": "Handelsondersteuning van behoefte tot verzending.",
+      "body": "Traya helpt kopers producten uit India te sourcen en coördineert de stappen die een exportorder laten werken: gesprekken met leveranciers, specificaties, verpakking, documenten, commerciële voorwaarden en verzendupdates."
+    },
+    "industries": {
+      "eyebrow": "Sectoren Die Wij Bedienen",
+      "heading": "Sectoren Wereldwijd Versterken",
+      "sub": "Ons groeiende portfolio stelt ons in staat een breed scala aan sectoren te bedienen met producten die voldoen aan veranderende marktvereisten en internationale kwaliteitsverwachtingen.",
+      "i1Title": "Farmaceutica & Nutraceutica",
+      "i1Body": "Functionele ingrediënten, hulpstoffen en gezondheidsgerichte grondstoffen.",
+      "i2Title": "Voeding & Dranken",
+      "i2Body": "Specerijen, voedingsingrediënten, kruidenmengsels en speciale poeders.",
+      "i3Title": "Voedselverwerking",
+      "i3Body": "Gedroogde producten en ingrediëntoplossingen voor de productie-industrie.",
+      "i4Title": "Textiel & Verven",
+      "i4Body": "Reactieve kleurstoffen, directe kleurstoffen en speciale kleuroplossingen.",
+      "i5Title": "Verf & Coatings",
+      "i5Body": "Pigmenten, harsen en industriële chemische oplossingen.",
+      "i6Title": "Waterzuivering",
+      "i6Body": "Industriële chemicaliën ter ondersteuning van waterzuiveringstoepassingen.",
+      "i7Title": "Gezondheid & Welzijn",
+      "i7Body": "Ingrediënten voor voedings- en welzijnsformuleringen.",
+      "i8Title": "Industriële Productie",
+      "i8Body": "Speciale chemicaliën ter ondersteuning van uiteenlopende industriële processen."
+    },
+    "core": {
+      "eyebrow": "Wat wij doen",
+      "heading": "Kernmogelijkheden voor internationale kopers.",
+      "c1Title": "Productsourcing",
+      "c1Body": "Wij helpen kopers bij het sourcen van Voeding & Agro, Chemicaliën, Mechanische producten, Papier en andere exportbehoeften uit India, op basis van specificaties, hoeveelheid en bestemming.",
+      "c2Title": "Leverancierscoördinatie",
+      "c2Body": "Wij coördineren met geschikte leveranciers om beschikbaarheid, kwaliteit, verpakking, productiegereedheid en haalbaarheid van de order te controleren.",
+      "c3Title": "Ondersteuning bij specificaties en documentatie",
+      "c3Body": "Wij helpen bij het bevestigen van de specificaties, certificaten, testrapporten, commerciële documenten en exportdocumenten die vereist zijn voor het product en de bestemming.",
+      "c4Title": "Coördinatie van verpakking en verzending",
+      "c4Body": "Wij beoordelen verpakkingsbehoeften, verzendwijze, bestemmingsvereisten en verzendtermijnen, zodat de order met minder verrassingen kan verlopen.",
+      "c5Title": "Heldere communicatie met kopers",
+      "c5Body": "Wij houden de koper op de hoogte van beschikbare opties, openstaande details, offertevoorwaarden, orderstatus en volgende stappen."
+    },
+    "foundations": {
+      "eyebrow": "Hoe wij werken",
+      "heading": "De standaarden achter elke mogelijkheid.",
+      "body": "Deze standaarden maken het sourcing- en exportproces gemakkelijker te begrijpen en te beheren voor kopers.",
+      "f1Title": "Duidelijkheid",
+      "f1Body": "Duidelijke productvereisten, duidelijke commerciële voorwaarden en duidelijke vervolgstappen.",
+      "f2Title": "Structuur",
+      "f2Body": "Een vastomlijnd proces voor de beoordeling van aanvragen, leverancierscoördinatie, documentatie en opvolging van verzendingen.",
+      "f3Title": "Betrouwbaarheid",
+      "f3Body": "Consistente communicatie en praktische opvolging van aanvraag tot verzending.",
+      "f4Title": "Schaalbaarheid",
+      "f4Body": "Ondersteuning voor terugkerende kopers in meerdere productsectoren en markten."
+    }
+  },
+  "Catalogue": {
+    "meta": {
+      "title": "Producten",
+      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën — 500+ producten in 30 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
+    },
+    "hub": {
+      "eyebrow": "Catalogus Voeding & Agro",
+      "heading": "Vind de producten die u uit India wilt sourcen.",
+      "sub": "Blader door onze vermelde Voeding & Agro- en Chemicaliënproducten per categorie. Stuur ons uw behoefte voor mechanische producten, papier of andere producten die hier niet worden getoond, en wij beoordelen de beschikbare sourcingopties.",
+      "spec": "6 groepen · 30 categorieën · 500+ vermelde producten",
+      "search": "Zoek producten of categorieën...",
+      "all": "Alle",
+      "noResults": "Geen producten komen overeen met uw zoekopdracht.",
+      "downloadCatalogue": "Download volledige catalogus (PDF)"
+    },
+    "list": {
+      "form": "Vorm",
+      "grade": "Kwaliteit",
+      "gradeValue": "Voedselkwaliteit",
+      "add": "Toevoegen aan Aanvraag",
+      "added": "In uw aanvraag",
+      "addedToast": "Toegevoegd aan uw aanvraaglijst",
+      "quote": "Offerte aanvragen",
+      "sample": "Monster aanvragen",
+      "series": "Serie",
+      "colourIndex": "Colour Index",
+      "packSizes": "Verpakkingsgroottes"
+    },
+    "product": "product",
+    "products": "producten",
+    "viewRange": "Bekijk assortiment",
+    "productMeta": {
+      "title": "{product} | {category}",
+      "description": "{product} uit India in de categorie {category}. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag. Traya International Exim LLP.",
+      "ogDescription": "{product} uit India in de categorie {category}. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag."
+    },
+    "category": {
+      "metaDescription": "{title} uit India. {count} {products} beschikbaar. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag. Traya International Exim LLP.",
+      "eyebrow": "Categorie",
+      "rangeHeading": "Het volledige assortiment",
+      "note": "Specificaties, kwaliteiten, MOQ, verpakking, documenten en prijzen worden bevestigd nadat wij uw behoefte hebben beoordeeld. Deel de hoeveelheid en bestemming voor een nauwkeuriger antwoord.",
+      "enquireCta": "Vraag naar deze categorie",
+      "viewProduct": "Bekijk",
+      "search": "Zoek producten...",
+      "noResults": "Geen producten komen overeen met uw zoekopdracht.",
+      "sourcingHeading": "Sourcing & herkomst",
+      "sourcingBody": "Wij sourcen producten rechtstreeks van gevestigde fabrikanten en verwerkingsfaciliteiten in heel India. Elke partij wordt vóór verzending gecontroleerd op kwaliteit, specificaties en compliance.",
+      "specsHeading": "Specificaties & verpakking",
+      "specsNote": "Kwaliteiten, MOQ, verpakkingsformaten, Incoterms en documentatie worden per order bevestigd. Deel uw vereisten voor een gedetailleerde offerte.",
+      "specOrigin": "Herkomst",
+      "specOriginVal": "India",
+      "specMoq": "MOQ",
+      "specMoqVal": "Op aanvraag",
+      "specPackaging": "Verpakking",
+      "specPackagingVal": "Aanpasbaar",
+      "specIncoterms": "Incoterms",
+      "specIncotermsVal": "FOB / CIF",
+      "applicationsHeading": "Toepassingen",
+      "certsHeading": "Kwaliteit & compliance",
+      "certsNote": "Producten worden ondersteund door relevante certificeringen en documentatie. Specifieke vereisten worden bevestigd tijdens de offerteaanvraag.",
+      "siblingHeading": "Gerelateerde categorieën",
+      "downloadCta": "Download specificatieblad categorie",
+      "closingCta": "Klaar om te sourcen uit deze categorie?",
+      "closingSub": "Deel uw productbehoefte, hoeveelheid en bestemming. Ons team beoordeelt dit en reageert met beschikbare opties, specificaties en prijzen."
+    },
+    "detail": {
+      "eyebrow": "Product",
+      "originLabel": "Herkomst",
+      "origin": "India",
+      "categoryLabel": "Categorie",
+      "pricingLabel": "Prijzen",
+      "pricing": "Op aanvraag (RFQ)",
+      "docsHeading": "Specificaties & documentatie",
+      "docsNote": "Productspecificaties, kwaliteiten, verpakkingsopties, certificaten, testrapporten en exportdocumenten zijn afhankelijk van het product en de bestemming. Deel uw hoeveelheid, verpakkingsbehoeften en bestemming, zodat wij de juiste details kunnen bevestigen.",
+      "sampleCta": "Monster aanvragen",
+      "enquireCta": "Vraag naar dit product",
+      "relatedHeading": "Meer in deze categorie",
+      "downloadSpecSheet": "Download productspecificatieblad",
+      "hsCode": "HS-code",
+      "availableForms": "Beschikbare Vormen"
+    }
+  },
+  "NotFound": {
+    "code": "Fout 404",
+    "title": "Deze pagina heeft een andere route genomen.",
+    "description": "De pagina die u zoekt, bestaat niet of is mogelijk verplaatst. Laten we u weer op het juiste spoor zetten.",
+    "back": "Terug naar home",
+    "popular": "Of ga naar een van deze pagina's"
+  },
+  "Legal": {
+    "privacy": {
+      "title": "Privacybeleid",
+      "description": "Hoe wij uw gegevens behandelen en beschermen.",
+      "lastUpdated": "Laatst bijgewerkt: juni 2026",
+      "intro": "Wij respecteren uw privacy en zetten ons in voor de bescherming van uw persoonlijke en zakelijke gegevens.",
+      "sections": {
+        "dataCollection": {
+          "title": "Informatie Die Wij Verzamelen",
+          "items": [
+            "Naam en contactgegevens",
+            "Bedrijfsinformatie",
+            "Verzend- en factuurgegevens",
+            "Productaanvragen en offertes",
+            "Informatie over websitegebruik"
+          ]
+        },
+        "dataUsage": {
+          "title": "Hoe Wij Informatie Gebruiken",
+          "items": [
+            "Reageren op aanvragen en offertes",
+            "Verwerken van binnenlandse en exportorders",
+            "Coördineren van logistiek en verzending",
+            "Verbeteren van de klantervaring",
+            "Voldoen aan wettelijke verplichtingen"
+          ]
+        },
+        "dataSecurity": {
+          "title": "Gegevensbeveiliging",
+          "content": "Wij gebruiken commercieel redelijke beveiligingsmaatregelen om klantinformatie te beschermen. Betalingsgegevens worden verwerkt via beveiligde externe betalingsproviders en worden nooit opgeslagen op onze servers."
+        },
+        "thirdParty": {
+          "title": "Diensten van Derden",
+          "content": "Informatie kan worden gedeeld met logistieke dienstverleners, verzendpartners, douaneagenten en betalingsverwerkers, uitsluitend voor het uitvoeren van orders en exportvereisten."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "content": "Onze website gebruikt essentiële cookies om te functioneren en een livechattool van een derde partij (Crisp) die mogelijk eigen cookies plaatst. Wij gebruiken geen advertentietrackers. U kunt cookies weigeren in uw browser, al kunnen bepaalde functies zoals livechat dan niet meer werken."
+        },
+        "contact": {
+          "title": "Neem Contact Op",
+          "content": "Als u vragen heeft over dit privacybeleid of over uw gegevens, neem dan contact met ons op via info@trayaexim.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Algemene Voorwaarden",
+      "description": "Dienst- en handelsvoorwaarden.",
+      "lastUpdated": "Laatst bijgewerkt: juni 2026",
+      "sections": {
+        "general": {
+          "title": "Algemene Bepalingen",
+          "content": "Door deze website te bezoeken en te gebruiken, aanvaardt u de voorwaarden en bepalingen van deze overeenkomst en gaat u ermee akkoord hieraan gebonden te zijn. Elke deelname aan deze dienst geldt als aanvaarding van deze overeenkomst."
+        },
+        "orders": {
+          "title": "Offertes en Orders",
+          "content": "Alle via deze website verstrekte offertes zijn onder voorbehoud van definitieve bevestiging en kunnen wijzigen op basis van marktomstandigheden, beschikbaarheid van grondstoffen en verzendlogistiek."
+        },
+        "shipping": {
+          "title": "Verzending en Levering",
+          "content": "Levertijden zijn schattingen en gaan in vanaf de verzenddatum, niet vanaf de besteldatum. Wij zijn niet verantwoordelijk voor vertragingen als gevolg van douaneprocedures."
+        },
+        "liability": {
+          "title": "Beperking van Aansprakelijkheid",
+          "content": "Traya International Exim is niet aansprakelijk voor enige bijzondere of gevolgschade die voortvloeit uit het gebruik van, of het onvermogen om gebruik te maken van, het materiaal op deze site of de prestaties van de producten."
+        }
+      }
+    }
+  }
+}

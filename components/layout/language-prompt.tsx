@@ -3,15 +3,20 @@
 import {useState, useCallback, useMemo} from 'react';
 import {useLocale} from 'next-intl';
 import {usePathname, useRouter} from '@/i18n/navigation';
-import {routing, localeNames, type Locale} from '@/i18n/routing';
+import {localeNames, type Locale} from '@/i18n/routing';
 
 const COOKIE_NAME = 'NEXT_LOCALE';
 const PROMPT_DISMISSED = 'locale-prompt-dismissed';
 
+// Locales with real translations (not English stubs). Only these are offered by
+// the auto-suggest prompt, so we never nudge a visitor into an untranslated
+// locale. Add codes here as translations are completed.
+const PROMPT_LOCALES: Locale[] = ['ar', 'fr'];
+
 function getBrowserLocale(): Locale | null {
   if (typeof navigator === 'undefined') return null;
   const browserLang = navigator.language.split('-')[0].toLowerCase();
-  return routing.locales.find((l) => l === browserLang && l !== routing.defaultLocale) ?? null;
+  return PROMPT_LOCALES.find((l) => l === browserLang) ?? null;
 }
 
 function isDismissed(): boolean {

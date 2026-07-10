@@ -1,11 +1,12 @@
 import {getTranslations} from 'next-intl/server';
+import Image from 'next/image';
 import {Container} from '@/components/ui/container';
 import {Reveal} from '@/components/ui/reveal';
 import {SectionHeader} from '@/components/ui/section-header';
 
 // How We Work — built from the client's skeleton, in the Traya design system.
 // Sections: What we manage · 8-step process · How we ship · Global reach.
-// The closing CTA reuses the shared <FinalCta> band (see the page).
+// The closing ask is the global enquiry form (rendered site-wide in the layout).
 
 // ── 1. What we manage for you ──────────────────────────────────────────
 export async function WhatWeManage() {
@@ -58,10 +59,10 @@ export async function Process() {
           <ol className="mt-12 grid gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
             {steps.map((k, i) => (
               <li key={k} data-stagger className="relative">
-                <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-traya-saffron-lo">
+                <p className="flex items-center gap-2 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-traya-saffron-lo">
+                  <span className="size-2 rounded-full bg-traya-red" aria-hidden />
                   {t('step')} {String(i + 1).padStart(2, '0')}
                 </p>
-                <span className="mt-3 block size-2.5 rounded-full bg-traya-red" aria-hidden />
                 <h3 className="mt-4 font-display text-lg text-foreground">{t(`${k}Title`)}</h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{t(`${k}Body`)}</p>
               </li>
@@ -152,10 +153,15 @@ export async function GlobalReach() {
               </ul>
             </div>
 
-            <div>
-              <div className="rounded-2xl border border-traya-border bg-traya-surface p-6 sm:p-8">
-                <WorldMap label={t('mapLabel')} />
-              </div>
+            <div className="mx-auto w-full max-w-lg lg:self-center">
+              <Image
+                src="/home/global-reach.webp"
+                alt={t('mapLabel')}
+                width={1200}
+                height={800}
+                sizes="(min-width: 1024px) 40vw, 80vw"
+                className="h-auto w-full"
+              />
               <p className="mt-4 text-center font-mono text-[11px] uppercase tracking-[0.14em] text-muted-foreground/70">
                 {t('mapCaption')}
               </p>
@@ -181,9 +187,8 @@ function SeaIcon() {
 }
 function AirIcon() {
   return (
-    <svg viewBox="0 0 44 44" fill="none" className="size-7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <path d="M6 28l6-12 10-4 16-4-4 16-10 4-6 6-8-2-4-4z" />
-      <path d="M22 12l4 12M12 16l8 4" strokeWidth="1.3" opacity="0.6" />
+    <svg viewBox="0 0 24 24" fill="none" className="size-7" stroke="currentColor" strokeWidth="0.9" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
     </svg>
   );
 }
@@ -194,43 +199,6 @@ function CourierIcon() {
       <path d="M30 20h4l4 4v6h-8V20z" />
       <circle cx="14" cy="33" r="2.5" strokeWidth="1.4" />
       <circle cx="34" cy="33" r="2.5" strokeWidth="1.4" />
-    </svg>
-  );
-}
-
-// World map — India highlighted in vermilion, dashed routes to buyer regions.
-function WorldMap({label}: {label: string}) {
-  const land = 'rgb(20 18 14 / 0.10)';
-  const landStroke = 'rgb(20 18 14 / 0.18)';
-  const red = '#B5341A';
-  return (
-    <svg viewBox="0 0 600 340" fill="none" className="block w-full" role="img" aria-label={label}>
-      <path d="M55 70 L130 62 L165 80 L178 108 L168 140 L150 160 L128 180 L105 196 L84 185 L62 155 L44 124 L48 95Z" fill={land} stroke={landStroke} />
-      <path d="M118 205 L152 200 L172 218 L176 250 L164 288 L148 308 L128 318 L112 304 L104 270 L106 232Z" fill={land} stroke={landStroke} />
-      <path d="M252 52 L298 46 L318 62 L326 82 L308 96 L282 100 L260 94 L248 76 L250 60Z" fill={land} stroke={landStroke} />
-      <path d="M258 112 L304 106 L328 120 L338 155 L332 198 L316 232 L294 248 L268 248 L252 230 L244 194 L246 152 L250 128Z" fill={land} stroke={landStroke} />
-      <path d="M330 48 L450 42 L490 62 L508 94 L496 126 L466 140 L426 136 L390 148 L358 136 L334 110 L326 80Z" fill={land} stroke={landStroke} />
-      <path d="M454 220 L514 212 L540 230 L544 266 L528 294 L498 304 L468 296 L450 272 L446 244Z" fill={land} stroke={landStroke} />
-      {/* India */}
-      <path d="M390 130 L414 124 L428 138 L424 166 L410 192 L394 200 L378 186 L372 162 L376 144Z" fill="rgb(181 52 26 / 0.4)" stroke={red} strokeWidth="1.5" />
-      <circle cx="400" cy="158" r="5" fill={red} />
-      <circle cx="400" cy="158" r="11" stroke={red} strokeWidth="1" opacity="0.3" />
-      <circle cx="400" cy="158" r="18" stroke={red} strokeWidth="0.8" opacity="0.15" />
-      {[
-        [105, 120],
-        [140, 250],
-        [280, 78],
-        [498, 258],
-        [550, 110]
-      ].map(([x, y]) => (
-        <g key={`${x}-${y}`}>
-          <line x1="400" y1="158" x2={x} y2={y} stroke={red} strokeWidth="1" strokeDasharray="5 5" opacity="0.4" />
-          <circle cx={x} cy={y} r="3.5" fill="rgb(20 18 14 / 0.45)" />
-        </g>
-      ))}
-      <text x="400" y="214" textAnchor="middle" fontSize="9" fill={red} fontFamily="var(--font-mono)" letterSpacing="2" opacity="0.85">
-        {label.toUpperCase()}
-      </text>
     </svg>
   );
 }

@@ -15,12 +15,15 @@ export async function FinalCta({
   data,
   heading: headingProp,
   sub: subProp,
-  ctaLabel: ctaLabelProp
+  ctaLabel: ctaLabelProp,
+  actions = true
 }: {
   data?: FinalCtaData;
   heading?: string;
   sub?: string;
   ctaLabel?: string;
+  // When false, renders as a text-only statement band (no CTA buttons).
+  actions?: boolean;
 }) {
   const t = await getTranslations('Home.finalCta');
   const th = await getTranslations('Header');
@@ -44,21 +47,23 @@ export async function FinalCta({
             {heading}
           </h2>
           <p className="mt-5 leading-relaxed text-traya-cream/75">{sub}</p>
-          <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-            <a href="#enquiry" className={primaryButtonDark}>
-              {ctaLabel}
-            </a>
-            {waHref && (
-              <a
-                href={waHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={secondaryBtnDark}
-              >
-                {whatsappLabel}
+          {actions && (
+            <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
+              <a href="#enquiry" className={primaryButtonDark}>
+                {ctaLabel}
               </a>
-            )}
-          </div>
+              {waHref && (
+                <a
+                  href={waHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={secondaryBtnDark}
+                >
+                  {whatsappLabel}
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </Container>
     </section>

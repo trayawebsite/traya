@@ -5,7 +5,7 @@ import {EnquirySection} from '@/components/sections/enquiry-section';
 
 // Wrapper that conditionally hides EnquirySection on pages with their own forms.
 // Product and category pages KEEP the global enquiry section (high-intent buyer pages).
-export function EnquirySectionWrapper({founderPhoto}: {founderPhoto: string}) {
+export function EnquirySectionWrapper() {
   const pathname = usePathname();
 
   // Hide only on pages that ship their OWN #enquiry form: the listed pages, and
@@ -20,5 +20,5 @@ export function EnquirySectionWrapper({founderPhoto}: {founderPhoto: string}) {
 
   if (shouldHide) return null;
 
-  return <EnquirySection founderPhoto={founderPhoto} />;
+  return <EnquirySection />;
 }

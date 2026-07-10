@@ -4,7 +4,6 @@ import {notFound} from 'next/navigation';
 import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {getMessages, getTranslations, setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
-import {getSiteSettings} from '@/lib/site-settings';
 import {TopBar} from '@/components/layout/top-bar';
 import {SiteHeader} from '@/components/layout/site-header';
 import {SiteFooter} from '@/components/layout/site-footer';
@@ -124,7 +123,6 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
   const t = await getTranslations('Header');
-  const settings = await getSiteSettings();
 
   return (
     <html
@@ -152,7 +150,7 @@ export default async function LocaleLayout({
           <main id="main" className="flex-1">
             {children}
           </main>
-          <EnquirySectionWrapper founderPhoto={settings.founderPhoto} />
+          <EnquirySectionWrapper />
           <SiteFooter />
           <FloatingActions />
           <Toaster richColors position="top-center" />

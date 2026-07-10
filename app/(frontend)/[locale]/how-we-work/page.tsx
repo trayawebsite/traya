@@ -2,7 +2,6 @@ import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {localeAlternates} from '@/lib/seo';
 import {PageHero} from '@/components/ui/page-hero';
-import {FinalCta} from '@/components/sections/home/final-cta';
 import {
   WhatWeManage,
   Process,
@@ -36,8 +35,8 @@ export default async function HowWeWorkPage({params}: {params: Promise<{locale: 
       <Process />
       <HowWeShip />
       <GlobalReach />
-      {/* Reuses the shared closing CTA band, with this page's copy. */}
-      <FinalCta heading={t('cta.heading')} sub={t('cta.sub')} ctaLabel={t('cta.primary')} />
+      {/* Closing ask is the global enquiry form (rendered site-wide in the layout);
+          no separate CTA band here, to avoid stacking duplicate requirement asks. */}
     </>
   );
 }

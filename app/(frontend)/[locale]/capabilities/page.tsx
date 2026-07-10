@@ -2,8 +2,8 @@ import type {Metadata} from 'next';
 import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {localeAlternates} from '@/lib/seo';
 import {CapabilitiesHero} from '@/components/sections/capabilities/capabilities-hero';
+import {IndustriesWeServe} from '@/components/sections/capabilities/industries';
 import {CoreCapabilities} from '@/components/sections/capabilities/core-capabilities';
-import {Foundations} from '@/components/sections/capabilities/foundations';
 import {Reveal} from '@/components/ui/reveal';
 
 export async function generateMetadata({
@@ -32,10 +32,10 @@ export default async function CapabilitiesPage({
     <>
       <CapabilitiesHero />
       <Reveal>
-        <CoreCapabilities />
+        <IndustriesWeServe />
       </Reveal>
       <Reveal>
-        <Foundations />
+        <CoreCapabilities />
       </Reveal>
     </>
   );

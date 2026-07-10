@@ -47,7 +47,11 @@ export function CategoryProductList({
   const t = useTranslations('Catalogue.list');
   const {add, has} = useEnquiry();
   const [query, setQuery] = useState('');
-  const [open, setOpen] = useState<Set<string>>(new Set());
+  // First two products start expanded (just one when the category has a single
+  // product) so the page never opens as a wall of closed rows.
+  const [open, setOpen] = useState<Set<string>>(
+    () => new Set(products.slice(0, 2).map((p) => p.slug))
+  );
 
   const filtered = useMemo(() => {
     const q = query.toLowerCase().trim();
@@ -93,7 +97,7 @@ export function CategoryProductList({
 
       {/* Expandable product rows */}
       {filtered.length > 0 ? (
-        <ul className="mt-6 max-w-3xl space-y-2.5">
+        <ul className="mt-6 grid items-start gap-2.5 md:grid-cols-2">
           {filtered.map((p) => {
             const isOpen = open.has(p.slug);
             const isChem = !!(p.series || p.colourIndex || p.packSizes);

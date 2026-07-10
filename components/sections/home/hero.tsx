@@ -8,8 +8,9 @@ import type {HomePage} from '@/sanity/lib/types';
 
 type HeroData = HomePage['hero'];
 
-// Full-bleed hero on a light ingredient photograph (visual weight on the right).
-// Uses Sanity data when available, falls back to i18n.
+// Full-bleed hero on a light ingredient photograph (visual weight on the right,
+// filling the section's full height). Uses Sanity data when available, falls
+// back to i18n.
 export async function Hero({data}: {data?: HeroData}) {
   const t = await getTranslations('Home.hero');
 
@@ -22,15 +23,15 @@ export async function Hero({data}: {data?: HeroData}) {
 
   return (
     <section className="relative isolate overflow-hidden border-b border-traya-border bg-background">
-      {/* Background image carousel */}
+      {/* Background image carousel — fills the hero's full height */}
       <HeroCarousel />
       {/* Left ivory gradient — keeps the left-side headline legible over the image */}
       <div
         aria-hidden
-        className="absolute inset-0 bg-linear-to-r from-background from-[0%] via-background/95 via-[48%] to-background/10 lg:via-background/80 lg:via-[58%] lg:to-transparent"
+        className="absolute inset-0 bg-linear-to-r from-background from-0% via-background/95 via-48% to-background/10 lg:via-background/80 lg:via-58% lg:to-transparent"
       />
 
-      <Container className="relative z-20 flex min-h-112 flex-col justify-center py-12 lg:min-h-[34rem] lg:py-14">
+      <Container className="relative z-20 flex min-h-112 flex-col justify-center py-12 lg:min-h-120 lg:py-14">
         <div className="max-w-2xl">
           <p className="section-label">{eyebrow}</p>
           <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">

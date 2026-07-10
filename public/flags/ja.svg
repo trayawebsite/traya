@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Circle-style Japan flag to match the set (white disc + red sun). -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<circle style="fill:#F0F0F0;" cx="256" cy="256" r="256"/>
+<circle style="fill:#D80027;" cx="256" cy="256" r="111.3"/>
+</svg>

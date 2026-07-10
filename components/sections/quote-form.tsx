@@ -132,12 +132,12 @@ export function QuoteForm({
         )}
 
         {/* Purpose toggle — price quote vs paid sample */}
-        <div>
+        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
           <span className="text-xs font-medium text-foreground/70">{t('purposeLabel')}</span>
           <div
             role="radiogroup"
             aria-label={t('purposeLabel')}
-            className="mt-2 inline-flex rounded-full border border-traya-border bg-traya-surface p-1 text-sm"
+            className="inline-flex rounded-full border border-traya-border bg-traya-surface p-1 text-sm"
           >
             {(['quote', 'sample'] as const).map((p) => (
               <button

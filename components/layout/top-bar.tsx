@@ -47,7 +47,7 @@ const WhatsAppIcon = (
   </svg>
 );
 
-// Light formatter for the WhatsApp line (digits-only in config) → "+91 99724 22424".
+// Light formatter for the WhatsApp line (digits-only in config) → "+91 99989 16679".
 function formatWa(num: string): string {
   const d = num.replace(/\D/g, '');
   if (d.length === 12 && d.startsWith('91')) {
@@ -102,8 +102,7 @@ export async function TopBar() {
 
   return (
     <div className="hidden border-b border-traya-deep-mid bg-traya-deep lg:block">
-      <Container className="flex h-11 items-center justify-between gap-6 text-[13px]">
-        <p className="font-medium tracking-wide text-traya-cream/70">{th('topNote')}</p>
+      <Container className="flex h-11 items-center justify-end gap-6 text-[13px]">
 
         <address className="flex items-center gap-4 not-italic">
           {s.contact.phone && (

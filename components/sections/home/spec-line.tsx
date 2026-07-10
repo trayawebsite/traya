@@ -24,7 +24,7 @@ export function SpecLine({
           {i > 0 && (
             <span
               aria-hidden
-              className={`size-1 rounded-full ${dark ? 'bg-traya-saffron' : 'bg-traya-forest/70'}`}
+              className={`size-1 rounded-full ${dark ? 'bg-traya-saffron-hi' : 'bg-traya-forest/70'}`}
             />
           )}
           <span>{item}</span>

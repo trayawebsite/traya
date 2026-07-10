@@ -1,0 +1,784 @@
+{
+  "HowWeWork": {
+    "meta": {
+      "title": "Jinsi Tunavyofanya Kazi — Traya International Exim",
+      "description": "Jinsi Traya inavyosimamia usafirishaji wako wa bidhaa kutoka ombi hadi uwasilishaji: utafutaji wa bidhaa, uhakiki wa ubora, hati, huduma za usafirishaji, na usafirishaji kwa njia ya bahari, anga, au kurier."
+    },
+    "hero": {
+      "eyebrow": "Mbinu yetu na wigo wetu wa kimataifa",
+      "heading": "Mchakato uliopangwa vizuri, ulioundwa kwa ajili yako.",
+      "sub": "Kila muamala wa kimataifa una mahitaji yake: vipimo, uzingatiaji wa kanuni, hati, na huduma za usafirishaji. Traya tunasimamia yote haya, ili uweze kuzingatia biashara yako huku sisi tukishughulikia mengine yote."
+    },
+    "manage": {
+      "eyebrow": "Tunachokusimamia",
+      "heading": "Kila kitu kati ya ombi na uwasilishaji",
+      "sub": "Unapofanya kazi na Traya, hupati bidhaa tu. Unapata timu inayoshughulikia kila hatua ya biashara yako, ili hakuna kinachopotea njiani.",
+      "i1Title": "Shughuli za uuzaji nje na uagizaji",
+      "i1Body": "Usimamizi kamili wa biashara yako, kutoka utafutaji wa bidhaa hadi usafirishaji wa mwisho. Mshirika mmoja, mchakato mmoja, hakuna pengo.",
+      "i2Title": "Utafutaji wa bidhaa na uhakiki wa ubora",
+      "i2Body": "Tunatafuta bidhaa sahihi kulingana na mahitaji yako na kuhakikisha inakidhi vipimo vyako kabla ya kusafirishwa. Unapata ulichoomba, kila wakati.",
+      "i3Title": "Hati za biashara",
+      "i3Body": "Kila hati inayohitajika kwa shehena yako: ankara, orodha za ufungashaji, vyeti, na hati za uzingatiaji wa kanuni, zinazotayarishwa kwa usahihi na kwa wakati.",
+      "i4Title": "Uratibu wa usafirishaji",
+      "i4Body": "Tunaratibu usafirishaji wa bidhaa zako kwa njia ya bahari, anga, au kurier, kulingana na muda wako, wingi wa bidhaa, na eneo lengwa. Unaendelea kupata taarifa katika kila hatua.",
+      "i5Title": "Msaada maalum kwa wanunuzi",
+      "i5Body": "Mtu mmoja wa kuwasiliana naye kutoka ombi la kwanza hadi uwasilishaji. Mawasiliano wazi, majibu ya haraka, hakuna kukabidhiana.",
+      "quote": "Tunarahisisha utata wa kutafuta bidhaa kutoka India, ili uweze kuzingatia biashara yako."
+    },
+    "process": {
+      "eyebrow": "Jinsi tunavyofanya kazi",
+      "heading": "Kutoka ombi hadi uwasilishaji",
+      "sub": "Hatua nane wazi. Kiwango kimoja thabiti cha utekelezaji.",
+      "step": "Hatua",
+      "s1Title": "Ombi",
+      "s1Body": "Unatushirikisha mahitaji ya bidhaa yako, kiasi, na nchi lengwa.",
+      "s2Title": "Majadiliano ya mahitaji",
+      "s2Body": "Tunafafanua vipimo, muda, ufungashaji, na mahitaji ya uzingatiaji wa kanuni.",
+      "s3Title": "Nukuu ya bei",
+      "s3Body": "Nukuu ya bei ya kina na wazi inayohusisha bei ya bidhaa, usafirishaji, masharti ya malipo, na masharti mengine. Hakuna gharama zilizofichwa, hakuna mshangao.",
+      "s4Title": "Uthibitisho wa oda",
+      "s4Body": "Baada ya makubaliano, oda inathibitishwa na uzalishaji unaanza. Ratiba yako ya muda inawekwa rasmi kuanzia hatua hii.",
+      "s5Title": "Uhakiki wa ubora",
+      "s5Body": "Ubora wa bidhaa unahakikiwa dhidi ya vipimo vilivyokubaliwa kabla ya kusafirishwa.",
+      "s6Title": "Hati",
+      "s6Body": "Hati zote za usafirishaji (ankara, orodha za ufungashaji, vyeti) zinatayarishwa na kukaguliwa.",
+      "s7Title": "Usafirishaji",
+      "s7Body": "Bidhaa zinasafirishwa kupitia njia uliyochagua, huku taarifa kamili za ufuatiliaji zikishirikishwa.",
+      "s8Title": "Uwasilishaji",
+      "s8Body": "Shehena inafika eneo lengwa. Tunabaki tayari kwa msaada wowote baada ya uwasilishaji.",
+      "note": "Kila hatua inafuatiliwa, inaelezwa, na kutekelezwa kwa kiwango kile kile cha weledi, bila kujali ukubwa wa oda, aina ya bidhaa, au eneo lengwa. Unapofanya kazi na Traya, huachwi kamwe ukijiuliza mambo yamefikia wapi."
+    },
+    "ship": {
+      "eyebrow": "Usafirishaji wa mizigo",
+      "heading": "Jinsi tunavyosafirisha",
+      "sub": "Tunaratibu usafirishaji wa kimataifa kwa njia tatu, zinazolingana na ukubwa wa oda yako, uharaka, na eneo lengwa.",
+      "seaTitle": "Usafirishaji wa baharini",
+      "seaBody": "Inafaa zaidi kwa oda kubwa ambapo ufanisi wa gharama ni muhimu. Tunaratibu shehena za FCL (Kontena Kamili) na LCL (Chini ya Kontena Kamili).",
+      "seaTag": "FCL na LCL zinapatikana",
+      "airTitle": "Usafirishaji wa anga",
+      "airBody": "Kwa mizigo yenye uharaka wa muda au thamani kubwa inayohitaji kusafirishwa haraka na kwa usalama kuvuka mipaka kwa muda mfupi zaidi.",
+      "airTag": "Anga ya kipaumbele na ya kawaida",
+      "courierTitle": "Kurier kwa sampuli",
+      "courierBody": "Usafirishaji wa kimataifa kwa njia ya kurier kwa sampuli za bidhaa, ili wanunuzi waweze kutathmini ubora, vipimo, na ufaafu kabla ya kuweka oda kamili.",
+      "courierTag": "Tathmini kabla ya oda",
+      "incoterms": "Incoterms: shehena zinashughulikiwa kwa masharti yanayokufaa. Tunatumia FOB, CIF, na masharti mengine ya kawaida ya kibiashara, yanayokubaliwa mapema, bila utata kuhusu majukumu au gharama. Wasiliana nasi kujua yapi yanayofaa zaidi mahitaji yako."
+    },
+    "reach": {
+      "eyebrow": "Wigo wa kimataifa",
+      "heading": "Popote ulipo, tunaweza kukufikia",
+      "p1": "India ni mojawapo ya maeneo yenye uwezo mkubwa zaidi duniani kwa utafutaji wa bidhaa, na Ahmedabad iko katikati yake. Tumejiweka hapa kwa makusudi, tukiwa na upatikanaji wa moja kwa moja wa bidhaa bora katika kategoria mbalimbali pamoja na miundombinu ya kuzisafirisha duniani kote.",
+      "p2": "Iwe wewe ni muagizaji aliyethibitika mwenye mahitaji maalum au biashara inayotafuta bidhaa kutoka India kwa mara ya kwanza, Traya imeundwa kukuhudumia, kwa muundo ule ule, uangalifu, na kuaminika katika kila kiwango.",
+      "pillar1": "Kuzoea kanuni za kibiashara na mahitaji ya uagizaji ya nchi yako lengwa.",
+      "pillar2": "Kuhakikisha bidhaa zinakidhi viwango vya uzingatiaji wa kanuni za masoko unayofanyia kazi.",
+      "pillar3": "Kuchukulia kila oda kama msingi wa uhusiano wa muda mrefu, si muamala wa mara moja.",
+      "pillar4": "Kubaki tayari kubadilika na kujibu haraka mahitaji ya biashara yako na mabadiliko ya soko yanapobadilika.",
+      "mapCaption": "Tunahudumia wanunuzi wa kimataifa duniani kote",
+      "mapLabel": "Ahmedabad, India"
+    },
+    "cta": {
+      "heading": "Una mahitaji akilini?",
+      "sub": "Tushirikishe mahitaji yako ya bidhaa na eneo lengwa, na tutaendelea kutoka hapo.",
+      "primary": "Tuma ombi",
+      "secondary": "Angalia bidhaa zetu"
+    }
+  },
+  "Chatbot": {
+    "title": "Msaidizi wa Traya",
+    "subtitle": "Uliza kuhusu bidhaa zetu na jinsi tunavyofanya kazi",
+    "greeting": "Habari! Mimi ni msaidizi wa Traya. Niulize kuhusu bidhaa zetu, kategoria, sampuli, au jinsi ya kufanya kazi nasi — niko hapa kusaidia.",
+    "chip1": "Mnauza nini nje?",
+    "chip2": "Sampuli zinafanyaje kazi?",
+    "chip3": "Nawezaje kuweka oda?",
+    "placeholder": "Uliza swali…",
+    "send": "Tuma",
+    "close": "Funga mazungumzo",
+    "whatsappAction": "Zungumza kwenye WhatsApp",
+    "enquiryAction": "Fomu ya ombi",
+    "offline": "Msaidizi wetu amepumzika kidogo. Tutumie ujumbe kwenye WhatsApp na tutakusaidia mara moja.",
+    "rateLimited": "Umefikia kikomo cha mazungumzo cha leo. Tutumie ujumbe kwenye WhatsApp na tutakusaidia mara moja.",
+    "limitReached": "Hebu tuendelee kwenye WhatsApp kwa jibu la haraka zaidi.",
+    "disclaimer": "Msaidizi wa AI. Kwa bei kamili, vipimo, na oda, tafadhali tumia fomu ya ombi."
+  },
+  "Error": {
+    "eyebrow": "Hitilafu imetokea",
+    "heading": "Tumekutana na tatizo dogo.",
+    "body": "Ukurasa haukuweza kupakiwa. Tafadhali jaribu tena, au wasiliana nasi moja kwa moja kama tatizo litaendelea.",
+    "retry": "Jaribu tena"
+  },
+  "Links": {
+    "home": "Nyumbani",
+    "about": "Kuhusu Sisi",
+    "capabilities": "Uwezo Wetu",
+    "products": "Bidhaa",
+    "howWeWork": "Jinsi Tunavyofanya Kazi",
+    "certifications": "Vyeti",
+    "contact": "Wasiliana Nasi",
+    "enquiry": "Ombi",
+    "privacy": "Sera ya Faragha",
+    "terms": "Masharti ya Matumizi",
+    "breadcrumb": "Njia ya Ukurasa"
+  },
+  "Header": {
+    "getQuote": "Pata Nukuu ya Bei",
+    "openMenu": "Fungua menyu",
+    "closeMenu": "Funga menyu",
+    "skip": "Ruka hadi maudhui",
+    "whatsapp": "Zungumza kwenye WhatsApp",
+    "chat": "Zungumza nasi",
+    "whatsappMessage": "Habari Traya International Exim, ningependa kuuliza kuhusu usafirishaji wenu wa viungo vya chakula.\n\nBidhaa: \nKiasi / daraja: \nNchi lengwa: \nKampuni: ",
+    "siteLabel": "Traya International Exim — nyumbani",
+    "menuAria": "Menyu",
+    "navAria": "Simu",
+    "dismissAria": "Ondoa",
+    "navPrimary": "Kuu"
+  },
+  "Footer": {
+    "tagline": "Kujenga Ushirikiano Katika Mabara",
+    "reachOut": "Una swali kuhusu utafutaji wa bidhaa? Zungumza na timu yetu. Tutafurahi kukusaidia.",
+    "explore": "Gundua",
+    "actions": "Vitendo vya Haraka",
+    "getInTouch": "Wasiliana Nasi",
+    "social": "Tufuate",
+    "certified": "Imethibitishwa",
+    "requestSample": "Omba Sampuli",
+    "requestQuote": "Omba Nukuu ya Bei",
+    "downloadCatalogue": "Pakua Katalogi",
+    "rights": "Haki zote zimehifadhiwa.",
+    "builtBy": "Imejengwa na Studio Morpheus",
+    "toTop": "Rudi juu"
+  },
+  "Enquiry": {
+    "eyebrow": "Tuma ombi",
+    "heading": "Tuanze mazungumzo.",
+    "sub": "Shiriki mahitaji yako, na sisi tutashughulikia yaliyobaki.",
+    "trust1": "Mwitikio wa haraka",
+    "trust2": "Msaada wa kuaminika",
+    "trust3": "Suluhisho za kimataifa",
+    "founderNote": "Nyuma ya kila shehena kuna uhusiano uliojengwa juu ya imani na uelewano.",
+    "founderName": "Neha Pardeshi",
+    "founderRole": "Mwanzilishi na Mkurugenzi Mtendaji",
+    "name": "Jina lako",
+    "email": "Anwani ya barua pepe",
+    "phone": "Simu / WhatsApp",
+    "company": "Shirika",
+    "product": "Bidhaa / Msimbo wa HS",
+    "shipment": "Aina ya usafirishaji",
+    "shipmentPlaceholder": "Chagua aina",
+    "shipmentModes": "Bahari (FCL / LCL) · Anga · Barabara · Kurier · Bado sina uhakika",
+    "shipmentPrefix": "Aina ya usafirishaji:",
+    "requirements": "Mahitaji yako",
+    "requirementsPlaceholder": "Vipimo, kiasi, ufungashaji, eneo lengwa, na muda",
+    "submit": "Tuma ombi",
+    "sending": "Inatuma...",
+    "success": "Asante. Ombi lako limepokelewa. Tutawasiliana nawe hivi karibuni.",
+    "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
+    "rateLimited": "Umefikia kikomo cha maombi cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
+    "addToList": "Ongeza kwenye ombi",
+    "removeFromList": "Ondoa kwenye ombi",
+    "list": {
+      "eyebrow": "Orodha ya Maombi",
+      "heading": "Pitia ombi lako.",
+      "sub": "Umechagua bidhaa hizi. Pitia orodha, ongeza maelezo yako, na wasilisha ombi.",
+      "empty": "Orodha yako ya maombi ni tupu. Vinjari bidhaa zetu na uongeze vitu ili kuanza.",
+      "browseProducts": "Vinjari bidhaa",
+      "remove": "Ondoa",
+      "clearAll": "Futa yote",
+      "contactHeading": "Maelezo yako",
+      "contactSub": "Tutatumia haya kujibu ombi lako.",
+      "name": "Jina lako",
+      "email": "Anwani ya barua pepe",
+      "company": "Shirika",
+      "phone": "Simu / WhatsApp",
+      "notes": "Maelezo ya ziada (si lazima)",
+      "notesPlaceholder": "Kiasi, madaraja, eneo lengwa, muda",
+      "submit": "Wasilisha ombi",
+      "sending": "Inawasilisha...",
+      "success": "Ombi lako limewasilishwa. Tutawasiliana nawe hivi karibuni.",
+      "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
+      "rateLimited": "Umefikia kikomo cha maombi cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
+      "submittedHeading": "Ombi limewasilishwa.",
+      "submittedBody": "Asante. Timu yetu itapitia mahitaji yako na kuwasiliana nawe ikiwa na maelezo ya bidhaa yanayopatikana, hati, bei, na hatua zinazofuata.",
+      "browseMore": "Endelea kuvinjari"
+    },
+    "meta": {
+      "title": "Orodha ya Maombi",
+      "description": "Pitia na wasilisha ombi lako la bidhaa. Shirikisha vipimo, kiasi, eneo lengwa, na muda ili timu yetu iweze kujibu kwa maelezo sahihi."
+    }
+  },
+  "Validation": {
+    "name": "Tafadhali weka jina lako",
+    "email": "Tafadhali weka barua pepe sahihi",
+    "message": "Tafadhali ongeza maelezo zaidi"
+  },
+  "Language": {
+    "label": "Lugha",
+    "en": "English",
+    "ar": "العربية",
+    "fr": "Français"
+  },
+  "Quote": {
+    "contactDetails": "Maelezo ya Mawasiliano",
+    "requestDetails": "Maelezo ya Ombi",
+    "eyebrow": "Omba nukuu ya bei",
+    "heading": "Pata bei ya bidhaa hii.",
+    "sub": "Shirikisha maelezo yako na mahitaji. Timu yetu itapitia na kujibu na bei, MOQ, ufungashaji, na masharti ya kibiashara.",
+    "name": "Jina lako",
+    "email": "Anwani ya barua pepe",
+    "company": "Shirika",
+    "phone": "Simu / WhatsApp",
+    "country": "Nchi lengwa",
+    "quantity": "Kiasi / daraja",
+    "quantityPlaceholder": "mfano: MT 5, kontena 1, sampuli",
+    "message": "Mahitaji ya ziada",
+    "messagePlaceholder": "Ufungashaji, vyeti, muda, au maelezo mengine yoyote",
+    "submit": "Omba nukuu ya bei",
+    "sending": "Inatuma...",
+    "success": "Asante. Ombi lako la nukuu ya bei limetumwa. Tutajibu na maelezo hivi karibuni.",
+    "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
+    "rateLimited": "Umefikia kikomo cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
+    "quotingFor": "Nukuu ya bei kwa ajili ya",
+    "headingFor": "Pata bei ya {name}.",
+    "purposeLabel": "Unahitaji nini?",
+    "purposeQuote": "Nukuu ya bei",
+    "purposeSample": "Sampuli ya kulipia",
+    "sampleHeading": "Omba sampuli.",
+    "sampleHeadingFor": "Omba sampuli ya {name}.",
+    "sampleSub": "Tuambie mahali pa kusafirisha na kiasi unachohitaji. Tutathibitisha gharama ya sampuli na usafirishaji kabla ya malipo yoyote.",
+    "sampleNote": "Sampuli zinalipiwa. Shirikisha mahitaji yako na tutathibitisha gharama ya sampuli na usafirishaji kabla ya kulipa.",
+    "sampleQuantity": "Kiasi cha sampuli kinachohitajika",
+    "sampleQuantityPlaceholder": "mfano: 100 g, 500 g, 1 kg",
+    "sampleSubmit": "Omba sampuli",
+    "messageQuote": "Ombi: Nukuu ya bei",
+    "messageSample": "Ombi: Sampuli ya kulipia (mnunuzi atalipa gharama ya sampuli + usafirishaji)",
+    "reassurance": "Kwa kawaida hujibu ndani ya siku 1 ya kazi · Hakuna wajibu.",
+    "successHeading": "Ombi limepokelewa.",
+    "successBody": "Asante. Timu yetu itapitia mahitaji yako na kujibu na bei, MOQ, ufungashaji, na muda wa utekelezaji — kwa kawaida ndani ya siku moja ya kazi.",
+    "trust": {
+      "eyebrow": "Nini cha kutarajia",
+      "heading": "Nukuu ya bei iliyo wazi na kamili.",
+      "sub": "Shirikisha mahitaji yako na dawati letu la biashara litaandaa nukuu ya bei iliyobinafsishwa.",
+      "pricing": "Bei ya FOB / CIF kwa eneo lako lengwa",
+      "moq": "Kiasi cha chini cha oda na madaraja yanayopatikana",
+      "packaging": "Chaguzi za ufungashaji na chapa binafsi",
+      "leadTime": "Muda wa uzalishaji na usafirishaji",
+      "docs": "Vipimo, COA na hati za usafirishaji",
+      "note": "Hakuna wajibu. Maelezo yako yanaenda kwa dawati letu la biashara pekee."
+    }
+  },
+  "Home": {
+    "meta": {
+      "title": "Traya International Exim LLP — Kampuni ya Usafirishaji ya India",
+      "description": "Traya International Exim ni kampuni ya usafirishaji ya India yenye sekta mbalimbali inayosaidia wanunuzi wa kimataifa kutafuta viungo vya chakula, viungo vya kupikia, bidhaa zilizokaushwa, unga, na mimea kutoka India."
+    },
+    "hero": {
+      "eyebrow": "Kupanua Upeo Kupitia Biashara.",
+      "heading": "Mshirika wako wa kuaminika wa kutafuta bidhaa kutoka India.",
+      "sub": "Traya imejitolea kujenga ushirikiano wa kimataifa wa kudumu kupitia imani, kuaminika, na utekelezaji wa kitaalamu. Kwa wigo unaokua wa bidhaa bora na mtazamo unaomlenga mteja, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.",
+      "cta": "Gundua Bidhaa",
+      "ctaEnquiry": "Shirikisha mahitaji yako",
+      "stat": "Chakula, Kilimo na Kemikali · Bidhaa 500+ · Kategoria 30",
+      "certified": "Imethibitishwa"
+    },
+    "intro": {
+      "eyebrow": "Jinsi Traya inavyosaidia",
+      "heading": "Kuunganisha fursa za kimataifa na",
+      "headingAccent": "utekelezaji wa kuaminika.",
+      "body": "Kutoka kutambua bidhaa sahihi hadi kuzisafirisha eneo lako lengwa, tunasimamia kila hatua kwa uangalifu, uzingatiaji wa kanuni, na dhamira. Baki na taarifa, baki na ujasiri — kupitia mtu mmoja wa kuwasiliana naye.",
+      "f1Title": "Utafutaji wa Bidhaa",
+      "f1Body": "Tunafanya kazi na mtandao wa washirika wanaozingatia ubora ili kukuletea bidhaa za kuaminika.",
+      "f2Title": "Hati za Usafirishaji",
+      "f2Body": "Hati sahihi na uzingatiaji wa kanuni, unaoshughulikiwa kwa usahihi.",
+      "f3Title": "Msaada wa Usafirishaji",
+      "f3Body": "Huduma za usafirishaji za kuaminika na uwasilishaji kwa wakati duniani kote."
+    },
+    "stats": {
+      "s1": "Kimataifa",
+      "s1Sub": "Mshirika wa Biashara",
+      "s2": "Anayeaminika",
+      "s2Sub": "Ushirikiano",
+      "s3": "Unaokua",
+      "s3Sub": "Wigo wa Bidhaa",
+      "s4": "100%",
+      "s4Sub": "Inayotafutwa kutoka India"
+    },
+    "groups": {
+      "eyebrow": "Wigo Wetu wa Bidhaa",
+      "heading": "Tunachouza Nje",
+      "sub": "Wigo wetu umeundwa kusaidia biashara katika viwanda mbalimbali. Tunavyokua, ndivyo wigo wetu unavyoongezeka.",
+      "foodTitle": "Bidhaa za Chakula na Kilimo",
+      "foodBody": "Bidhaa bora za kilimo zinazotafutwa kutoka kwa watengenezaji wa India wanaoaminika, zinazolingana na viwango vya kimataifa vya ubora na usalama.",
+      "foodCta": "Angalia Bidhaa za Chakula na Kilimo",
+      "chemTitle": "Kemikali",
+      "chemBody": "Kemikali za viwandani na maalum zinazohudumia matumizi mbalimbali ya utengenezaji katika masoko ya kimataifa.",
+      "chemCta": "Angalia Kemikali",
+      "selection": "Uteuzi kutoka kwa wigo wetu wa Chakula na Kilimo",
+      "note": "Wigo wetu unaendelea kupanuka tunapoimarisha ushirikiano katika viwanda vipya na masoko ya kimataifa.",
+      "noteAsk": "Huoni unachohitaji? Wasiliana nasi, huenda bado tukaweza kusaidia.",
+      "spec": "Bidhaa 500+ zilizoorodheshwa · Kategoria 30 · Makundi 6 ya bidhaa",
+      "cta": "Tuma Mahitaji",
+      "badgePremium": "Chakula na Kilimo",
+      "alliums": "Vitunguu na Mboga Zilizokaushwa",
+      "alliumsBlurb": "Vitunguu, kitunguu saumu, na mboga katika ukataji na maumbo mbalimbali kwa uzalishaji wa chakula.",
+      "powders": "Unga Uliokaushwa kwa Kunyunyizia",
+      "powdersBlurb": "Unga wa matunda na mboga kwa vinywaji, mikate, michanganyiko, na vyakula vya papo hapo.",
+      "spices": "Viungo na Vionjo",
+      "spicesBlurb": "Viungo vizima na vya unga, vipande vya pilipili, viboreshaji vya ladha, na michanganyiko ya vionjo.",
+      "herbs": "Mimea ya Kupikia",
+      "herbsBlurb": "Oregano, basil, thyme, rosemary, kasuri methi, na mchanganyiko wa mimea.",
+      "nutraceutical": "Mimea na Bidhaa za Kinutraceutical",
+      "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, na unga mwingine unaotokana na mimea.",
+      "wellness": "Maziwa na Ustawi wa Hali ya Juu",
+      "wellnessBlurb": "Unga wa maziwa, mbegu zinazoliwa, sukari ya asili (jaggery), samli ya A2, mafuta yaliyokamuliwa baridi, na mtama.",
+      "chemicals": "Kemikali na Rangi",
+      "chemicalsBlurb": "Rangi za reactive, acid na direct, rangi za chakula, pigmenti na resini za rangi kwa ajili ya viwanda vya nguo, chakula na mipako."
+    },
+    "why": {
+      "eyebrow": "Kwa Nini Traya",
+      "heading": "Imeundwa kwa ushirikiano wa muda mrefu.",
+      "sub": "Tunaenda mbali zaidi ya miamala ili kujenga imani, kutoa ubora, na kukua pamoja.",
+      "cta": "Angalia uwezo wetu",
+      "trusted": "Mahusiano ya Kuaminika",
+      "trustedBody": "Timu inayoongozwa na mwanzilishi, mawasiliano ya moja kwa moja, na ahadi tunazozitimiza, oda baada ya oda.",
+      "quality": "Dhamira ya Ubora",
+      "qualityBody": "Bidhaa zinakaguliwa dhidi ya vipimo vyako kabla ya kusafirishwa, zinazolingana na viwango vya kimataifa vya ubora na usalama.",
+      "execution": "Utekelezaji wa Kitaalamu",
+      "executionBody": "Mtiririko maalum kutoka ombi hadi usafirishaji: vipimo, hati, ufungashaji, na usafirishaji, kila kimoja kikishughulikiwa kwa mpangilio.",
+      "communication": "Mawasiliano ya Haraka",
+      "communicationBody": "Mtu mmoja wa kuwasiliana naye na majibu ya haraka, huku taarifa wazi zikitolewa katika kila hatua ya oda yako.",
+      "global": "Mtazamo wa Kimataifa",
+      "globalBody": "Kutafuta bidhaa kutoka India kwa wanunuzi katika masoko mbalimbali, huku hati na masharti yakilingana na eneo lako lengwa.",
+      "growth": "Kukua Pamoja",
+      "growthBody": "Wigo unaokua na ushirikiano wa kurudia, tunakua kadri mahitaji yako yanavyoongezeka."
+    },
+    "testimonials": {
+      "eyebrow": "Wanunuzi Wanasema Nini"
+    },
+    "certs": {
+      "eyebrow": "Usajili wa Usafirishaji",
+      "heading": "Angalia usajili ulio nyuma ya usafirishaji wetu.",
+      "sub": "Kila usajili unaonyeshwa pamoja na mamlaka iliyotoa na maana yake kwa mnunuzi. Hati za bidhaa au eneo maalum zinathibitishwa wakati wa nukuu ya bei.",
+      "cta": "Angalia usajili wetu"
+    },
+    "process": {
+      "eyebrow": "Mchakato wa Usafirishaji",
+      "heading": "Jinsi oda ya usafirishaji inavyofanya kazi na Traya.",
+      "sub": "Unapokea maelezo ya bidhaa na ya kibiashara kabla ya kuidhinisha oda.",
+      "step": "Hatua",
+      "step1Title": "Tuma mahitaji yako",
+      "step1Body": "Shirikisha jina la bidhaa, vipimo, kiasi, ufungashaji, eneo lengwa, na muda unaohitajika. Tutauliza maelezo yoyote yanayokosekana.",
+      "step2Title": "Pitia ofa",
+      "step2Body": "Tunathibitisha bidhaa, vipimo vinavyopatikana, hati, chaguzi za sampuli, bei, na masharti ya kibiashara.",
+      "step3Title": "Thibitisha na Usafirishe",
+      "step3Body": "Baada ya idhini, tunaratibu oda, ufungashaji, hati, na usafirishaji. Tunakuweka na taarifa oda inavyoendelea."
+    },
+    "faq": {
+      "eyebrow": "Maswali ya Wanunuzi",
+      "heading": "Maelezo muhimu kabla ya kuweka oda.",
+      "moqQ": "Kiasi chenu cha chini cha oda ni kipi?",
+      "moqA": "MOQ hutegemea bidhaa, daraja, muuzaji, na aina ya ufungashaji. Shirikisha kiasi unachotarajia na eneo lengwa, na tutathibitisha kiwango cha chini kinachowezekana pamoja na nukuu ya bei.",
+      "samplesQ": "Naweza kupata sampuli kabla ya kuagiza?",
+      "samplesA": "Upatikanaji wa sampuli hutegemea bidhaa na eneo lengwa. Pale sampuli zinapopatikana, tutathibitisha muundo, hati, gharama ya kurier, na muda wa usafirishaji kabla ya kuendelea.",
+      "leadtimeQ": "Muda wenu wa kawaida wa utekelezaji ni upi?",
+      "leadtimeA": "Muda wa utekelezaji hutofautiana kulingana na bidhaa, kiasi, ufungashaji, hati, na eneo lengwa. Tunatoa ratiba halisi baada ya kupitia mahitaji kamili.",
+      "paymentQ": "Ni Incoterms na masharti gani ya malipo mnayotoa?",
+      "paymentA": "Incoterms na masharti ya malipo yanayopatikana hutegemea bidhaa, ukubwa wa shehena, na eneo lengwa. Tunaorodhesha chaguzi zinazohusika katika nukuu ya bei.",
+      "packagingQ": "Je, mnatoa ufungashaji maalum au wa chapa binafsi?",
+      "packagingA": "Chaguzi za jumla, maalum, na chapa binafsi zinaweza kupatikana kutegemea bidhaa na wingi wa oda. Shirikisha ukubwa wa kifungashio, aina ya nyenzo, uwekaji lebo, na mahitaji ya eneo lengwa kwa uthibitisho.",
+      "certsQ": "Ni vyeti na hati gani mnazotoa?",
+      "certsA": "Mahitaji ya hati hutofautiana kulingana na bidhaa na nchi inayoagiza. Tunathibitisha usajili, vipimo, vyeti, ripoti za vipimo, na hati za usafirishaji zinazohusika wakati wa nukuu ya bei."
+    },
+    "finalCta": {
+      "heading": "Tafuta Bidhaa Kutoka India na Traya.",
+      "sub": "Kutoka ombi la kwanza hadi uwasilishaji wa mwisho, tunasimamia kila undani, ili biashara yako iende kwa uwazi, uthabiti, na uangalifu.",
+      "cta": "Tuma mahitaji yako",
+      "whatsapp": "Tuma ujumbe kwenye WhatsApp"
+    }
+  },
+  "About": {
+    "meta": {
+      "title": "Kuhusu",
+      "description": "Jifunze kuhusu Traya International Exim LLP, kampuni ya EXIM ya India yenye sekta mbalimbali inayosaidia wanunuzi kutafuta bidhaa kutoka India kwa uratibu wazi na msaada wa kibiashara wa kuaminika."
+    },
+    "hero": {
+      "eyebrow": "Kuhusu Traya",
+      "heading": "Mbinu Iliyosafishwa ya Biashara ya Kimataifa",
+      "tagline": "Utafutaji wa bidhaa, hati, ufungashaji, na msaada wa usafirishaji unasimamiwa na timu moja maalum.",
+      "body": "TRAYA ni kampuni ya biashara ya kimataifa iliyojitolea kujenga ushirikiano wa kuaminika katika masoko ya kimataifa. Kupitia utekelezaji wa kitaalamu na mtazamo unaomlenga mteja, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.\n\nTukiongozwa na uwazi, umakini kwa undani, na dhamira ya ubora, kila mwingiliano unasimamiwa kwa uangalifu, tukihakikisha kuaminika, uthabiti, na uzoefu wa kitaalamu ambao biashara zinaweza kutegemea.\n\nKwa wigo unaopanuka na maono ya ukuaji endelevu, TRAYA inaendelea kubadilika sambamba na mahitaji yanayobadilika ya masoko ya kimataifa, ikijenga ushirikiano wa kudumu uliojengwa juu ya imani, ubora, na mafanikio ya pamoja."
+    },
+    "founder": {
+      "eyebrow": "Neno kutoka kwa mwanzilishi",
+      "name": "Neha Pardeshi",
+      "role": "Mwanzilishi na Mkurugenzi Mtendaji",
+      "p1": "Dunia haikunifungukia kupitia vitabu — ilinifungukia kupitia safari. Kuchunguza tamaduni mbalimbali, kukutana na watu wa hali tofauti za maisha, na kuona dunia kupitia mitazamo tofauti kuliunda si tu nilivyo, bali pia nilichochagua kujenga.",
+      "p2": "Nimekuwa nikiamini kwamba biashara ya kimataifa hatimaye inahusu uhusiano wa kibinadamu. Nyuma ya kila shehena, kila bidhaa, na kila ushirikiano kuna uhusiano uliojengwa juu ya imani na uelewano — kitu ambacho hakuna algoriti au automesheni inayoweza kukibadilisha kikamilifu.",
+      "p3": "Katika Traya International EXIM, lengo letu si tu kuwezesha biashara, bali kujenga mahusiano yenye maana na ya kudumu kuvuka mipaka — mahusiano yanayozidi kuimarika kwa kila muamala na kila mazungumzo.",
+      "p4": "Kilichoanza kama shauku ya kuchunguza dunia kimebadilika na kuwa biashara inayoongozwa na dhamira, uadilifu, na maono ya kweli ya kimataifa. Na bado tunaanza tu.",
+      "p5": "Asante kwa kutuamini na kuchagua kuwa sehemu ya safari hii."
+    },
+    "principles": {
+      "eyebrow": "Sisi ni Nani",
+      "heading": "Nidhamu na uangalifu, katika kila mwingiliano.",
+      "body": "Kinachotutambulisha ni jinsi tunavyoshughulikia kila ombi, kila mazungumzo na muuzaji, na kila undani wa shehena. Kazi yetu inaongozwa na viwango vitatu vya vitendo.",
+      "p1Title": "Usahihi",
+      "p1Body": "Maelezo ya bidhaa, hati, ufungashaji, masharti ya kibiashara, na mahitaji ya usafirishaji yanakaguliwa kabla oda haijaendelea.",
+      "p2Title": "Uthabiti",
+      "p2Body": "Tunadumisha mawasiliano, ufuatiliaji, na uratibu thabiti kutoka ombi la kwanza hadi usafirishaji.",
+      "p3Title": "Uadilifu",
+      "p3Body": "Tunawasiliana kwa uwazi kuhusu kinachopatikana, kinachohitaji uthibitisho, na hatua inayofuata inapaswa kuwa nini."
+    },
+    "why": {
+      "eyebrow": "Kwa Nini Traya",
+      "heading": "Mshirika wa vitendo kwa utafutaji wa kimataifa wa bidhaa.",
+      "body": "Traya ilijengwa kusaidia wanunuzi kupunguza mkanganyiko katika biashara ya kimataifa. Tunaunganisha utafutaji wa bidhaa, uratibu wa wauzaji, hati, ufungashaji, na msaada wa usafirishaji katika mtiririko mmoja wazi wa kazi.",
+      "cta": "Angalia uwezo wetu",
+      "w1Title": "Viwango Vinavyoongozwa na Mwanzilishi",
+      "w1Body": "Unafanya kazi na timu inayochukua umiliki wa mahitaji na kufuatilia undani hadi mwisho.",
+      "w2Title": "Utekelezaji Uliopangwa",
+      "w2Body": "Tunathibitisha vipimo, kiasi, ufungashaji, hati, masharti ya kibiashara, na muda kabla oda haijaendelea.",
+      "w3Title": "Mtazamo Unaotanguliza Mahusiano",
+      "w3Body": "Tunalenga kusaidia wanunuzi wanaorudi kwa majibu wazi, taarifa za mara kwa mara, na uratibu wa kuaminika.",
+      "w4Title": "Mtazamo wa Kimataifa, Mguso wa Kibinafsi",
+      "w4Body": "Unaweza kuzungumza na timu halisi inayoelewa mahitaji na kujibu kwa hatua za vitendo zinazofuata.",
+      "w5Title": "Sekta Mbalimbali, Mshirika Mmoja",
+      "w5Body": "Tunasaidia mahitaji katika Chakula na Kilimo, Kemikali, Bidhaa za Mitambo, Karatasi, na maombi mengine ya kibiashara.",
+      "w6Title": "Hati Zinazosafiri",
+      "w6Body": "Tunathibitisha vipimo, vyeti, hati za kibiashara, na hati za usafirishaji zinazohitajika kwa bidhaa na eneo lengwa.",
+      "w7Title": "Uwazi Katika Kila Hatua",
+      "w7Body": "Tunashirikisha bei, muda, hali ya oda, na mahitaji yanayosubiri kwa uwazi, ili ujue kinachoendelea katika kila hatua."
+    },
+    "vision": {
+      "eyebrow": "Maono na Dhamira",
+      "visionLabel": "Maono Yetu",
+      "vision": "Kuwa mshirika wa biashara anayeaminika zaidi na mkubwa zaidi kwa biashara zinazopanuka kuvuka mipaka.",
+      "missionLabel": "Dhamira Yetu",
+      "m1": "Kuwezesha shughuli za usafirishaji na uagizaji zenye ufanisi na muundo mzuri katika masoko ya kimataifa.",
+      "m2": "Kujenga na kuimarisha ushirikiano wa muda mrefu wa biashara ya kimataifa na kutoa suluhisho endelevu.",
+      "m3": "Kuhakikisha utekelezaji usio na vikwazo kupitia mifumo yenye nidhamu na uwazi wa kiutendaji.",
+      "m4": "Kupanua uwepo wetu wa kimataifa kupitia ushirikiano wa kimkakati wa kisoko.",
+      "commitment": "Hatujengi kampuni ya miamala ya mara moja. Tunajenga mshirika wa biashara ambaye wanunuzi wanaweza kurejea kwa msaada wazi katika bidhaa, sekta, na masoko."
+    }
+  },
+  "Contact": {
+    "meta": {
+      "title": "Wasiliana",
+      "description": "Wasiliana na Traya International Exim kwa barua pepe, simu, WhatsApp, au fomu ya ombi. Shirikisha mahitaji yako ya bidhaa, kiasi, eneo lengwa, na muda."
+    },
+    "hero": {
+      "eyebrow": "Wasiliana",
+      "heading": "Wasilisha mahitaji yako ya utafutaji wa bidhaa wa kimataifa.",
+      "body": "Wasiliana na wataalamu wetu wa usafirishaji kupitia barua pepe, simu, WhatsApp, au fomu yetu salama ya ombi. Tafadhali eleza kwa undani vipimo vya bidhaa yako, kiasi kinachohitajika, bandari lengwa, na muda wa uwasilishaji ili kuhakikisha jibu kamili na la haraka la kibiashara."
+    },
+    "emailLabel": "Tutumie Barua Pepe",
+    "phoneLabel": "Tupigie Simu",
+    "whatsappLabel": "WhatsApp",
+    "whatsappCta": "Tuma Ujumbe kwenye WhatsApp",
+    "addressLabel": "Tutembelee",
+    "mapCta": "Angalia kwenye ramani",
+    "hoursLabel": "Muda wa Kujibu",
+    "hours": "Tunajibu baada ya kupitia mahitaji yako",
+    "socialLabel": "Tufuate",
+    "form": {
+      "eyebrow": "Tutumie Ujumbe",
+      "heading": "Shirikisha mahitaji yako.",
+      "sub": "Jaza maelezo hapa chini na timu yetu itapitia mahitaji yako ili kutoa jibu kamili la kibiashara.",
+      "name": "Jina lako",
+      "email": "Anwani ya barua pepe",
+      "company": "Shirika",
+      "message": "Ujumbe wako",
+      "messagePlaceholder": "Bidhaa, vipimo, kiasi, eneo lengwa, na muda",
+      "submit": "Tuma ujumbe",
+      "sending": "Inatuma...",
+      "success": "Asante. Ujumbe wako umetumwa. Tutawasiliana nawe hivi karibuni.",
+      "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
+      "rateLimited": "Umefikia kikomo cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
+      "point1": "Tunajibu ndani ya siku moja ya kazi",
+      "point2": "Utafutaji wa bidhaa, sampuli, bei na hati — tuulize chochote",
+      "point3": "Njia ya moja kwa moja kwa dawati letu la biashara",
+      "reassurance": "Kwa kawaida hujibu ndani ya siku 1 ya kazi · Hakuna wajibu.",
+      "successHeading": "Ujumbe umetumwa.",
+      "successBody": "Asante. Timu yetu itapitia ujumbe wako na kukujibu — kwa kawaida ndani ya siku moja ya kazi."
+    }
+  },
+  "Certifications": {
+    "meta": {
+      "title": "Vyeti na Ubora",
+      "description": "Angalia usajili wa Traya International Exim na mbinu ya hati inayotumika kusaidia imani ya mnunuzi na uzingatiaji wa kanuni za usafirishaji."
+    },
+    "hero": {
+      "eyebrow": "Usajili na Hati",
+      "heading": "Hati ni muhimu katika biashara ya kimataifa.",
+      "body": "Traya inafanya kazi na usajili na hati ambazo wanunuzi kwa kawaida wanahitaji kupitia kabla oda haijaendelea. Kwa kila bidhaa na eneo lengwa, tunathibitisha vipimo, vyeti, hati za kibiashara, na karatasi za usafirishaji zinazohusika wakati wa nukuu ya bei.",
+      "recognisedBy": "Inayotambuliwa na"
+    },
+    "why": {
+      "eyebrow": "Kwa Nini Kuiamini Traya",
+      "heading": "Imani, inayoungwa mkono na mchakato, si ahadi.",
+      "body": "Tunapata imani ya mnunuzi kupitia mahitaji wazi, uratibu makini wa wauzaji, na hati zinazoweza kupitiwa kabla ya usafirishaji.",
+      "t1Title": "Usajili na Vyeti",
+      "t1Body": "Kazi yetu ya usafirishaji inaungwa mkono na usajili na uanachama unaohusiana na usafirishaji wa India.",
+      "t2Title": "Ukaguzi wa Wauzaji na Bidhaa",
+      "t2Body": "Tunapitia mahitaji ya bidhaa, madaraja yanayopatikana, mahitaji ya ufungashaji, na uwezo wa muuzaji kabla ya kuthibitisha ofa.",
+      "t3Title": "Hati Zinazothibitishwa kwa Kila Oda",
+      "t3Body": "Vipimo, vyeti, ripoti za vipimo, hati za kibiashara, na karatasi za usafirishaji zinathibitishwa kulingana na bidhaa na eneo lengwa.",
+      "t4Title": "Kumbukumbu Wazi za Oda",
+      "t4Body": "Maelezo ya bidhaa, kiasi, ufungashaji, eneo lengwa, masharti ya kibiashara, na muda vinawekwa wazi ili wanunuzi waweze kupitia oda ipasavyo."
+    },
+    "certs": {
+      "eyebrow": "Usajili na Vyeti",
+      "heading": "Usajili na vyeti ambavyo wanunuzi wanaweza kupitia.",
+      "sub": "Kila usajili umeorodheshwa pamoja na mamlaka iliyotoa na umuhimu wake kwa usafirishaji.",
+      "issuedByLabel": "Imetolewa na",
+      "meaningLabel": "Maana yake kwako"
+    },
+    "marks": {
+      "fssai": {
+        "issuedBy": "Mamlaka ya Usalama na Viwango vya Chakula ya India",
+        "meaning": "Inasaidia uzingatiaji wa mfumo wa kisheria wa usalama wa chakula wa India kwa bidhaa zinazohusika."
+      },
+      "apeda": {
+        "issuedBy": "Mamlaka ya Maendeleo ya Usafirishaji wa Bidhaa za Kilimo na Chakula Kilichosindikwa",
+        "meaning": "Inaonyesha usajili na mamlaka ya usafirishaji wa kilimo na chakula kilichosindikwa cha India kwa shughuli za usafirishaji zinazohusika."
+      },
+      "fieo": {
+        "issuedBy": "Shirikisho la Mashirika ya Usafirishaji ya India",
+        "meaning": "Inaonyesha uanachama katika mfumo wa kitaifa wa uendelezaji wa usafirishaji wa India."
+      },
+      "spiceBoard": {
+        "issuedBy": "Bodi ya Viungo ya India",
+        "meaning": "Inahusika na usafirishaji wa viungo na uzingatiaji unaohusiana chini ya Bodi ya Viungo ya India."
+      },
+      "msme": {
+        "issuedBy": "Biashara Ndogo Sana, Ndogo na za Kati",
+        "meaning": "Inaonyesha Traya kama biashara ya India iliyosajiliwa kwa shughuli za kibiashara na kiuchumi."
+      }
+    },
+    "trace": {
+      "eyebrow": "Mfuatano wa Hati",
+      "heading": "Hati sahihi zinathibitishwa kabla ya usafirishaji.",
+      "body": "Mahitaji ya hati hutofautiana kwa kila bidhaa na nchi inayoagiza. Tunathibitisha yanayohusika na oda yako kabla ya kusafirisha.",
+      "d1": "Cheti cha Uchambuzi (COA), pale kinapohusika",
+      "d2": "Karatasi za vipimo vya bidhaa",
+      "d3": "Cheti cha Phytosanitary (pale kinapohitajika)",
+      "d4": "Cheti cha Asili",
+      "d5": "Ankara ya kibiashara, orodha ya ufungashaji, na karatasi za usafirishaji"
+    },
+    "disclaimer": "Usajili na uanachama ulioonyeshwa unaweza kuhusika na Traya International Exim au vituo vya uzalishaji vya washirika. Wigo kamili, upatikanaji wa vyeti, na mahitaji ya eneo lengwa yanathibitishwa wakati wa nukuu ya bei."
+  },
+  "Capabilities": {
+    "meta": {
+      "title": "Uwezo Wetu",
+      "description": "Traya International Exim inasaidia wanunuzi kwa utafutaji wa bidhaa, uratibu wa wauzaji, hati za usafirishaji, ufungashaji, na uratibu wa usafirishaji katika sekta muhimu."
+    },
+    "hero": {
+      "eyebrow": "Uwezo Wetu",
+      "heading": "Msaada wa kibiashara kutoka mahitaji hadi usafirishaji.",
+      "body": "Traya inasaidia wanunuzi kutafuta bidhaa kutoka India na kuratibu hatua zinazofanya oda ya usafirishaji ifanikiwe: mazungumzo na wauzaji, vipimo, ufungashaji, hati, masharti ya kibiashara, na taarifa za usafirishaji."
+    },
+    "industries": {
+      "eyebrow": "Viwanda Tunavyohudumia",
+      "heading": "Kuwezesha Viwanda Duniani Kote",
+      "sub": "Wigo wetu unaokua unatuwezesha kuhudumia viwanda vingi kwa bidhaa zinazokidhi mahitaji ya soko yanayobadilika na matarajio ya kimataifa ya ubora.",
+      "i1Title": "Dawa na Bidhaa za Kinutraceutical",
+      "i1Body": "Viungo vya kiutendaji, excipients, na malighafi zinazolenga afya.",
+      "i2Title": "Chakula na Vinywaji",
+      "i2Body": "Viungo, viambato vya chakula, vionjo, na unga maalum.",
+      "i3Title": "Usindikaji wa Chakula",
+      "i3Body": "Bidhaa zilizokaushwa na suluhisho za viambato kwa utengenezaji.",
+      "i4Title": "Nguo na Urangaji",
+      "i4Body": "Rangi za reactive, rangi za direct, na suluhisho maalum za rangi.",
+      "i5Title": "Rangi na Mipako",
+      "i5Body": "Pigmenti, resini, na suluhisho za kemikali za viwandani.",
+      "i6Title": "Usafishaji wa Maji",
+      "i6Body": "Kemikali za viwandani zinazosaidia matumizi ya usafishaji wa maji.",
+      "i7Title": "Afya na Ustawi",
+      "i7Body": "Viambato kwa michanganyiko ya lishe na ustawi.",
+      "i8Title": "Utengenezaji wa Viwandani",
+      "i8Body": "Kemikali maalum zinazosaidia michakato mbalimbali ya viwandani."
+    },
+    "core": {
+      "eyebrow": "Tunachofanya",
+      "heading": "Uwezo mkuu kwa wanunuzi wa kimataifa.",
+      "c1Title": "Utafutaji wa Bidhaa",
+      "c1Body": "Tunasaidia wanunuzi kutafuta Chakula na Kilimo, Kemikali, Bidhaa za Mitambo, Karatasi, na mahitaji mengine ya usafirishaji kutoka India kulingana na vipimo, kiasi, na eneo lengwa.",
+      "c2Title": "Uratibu wa Wauzaji",
+      "c2Body": "Tunaratibu na wauzaji wanaofaa kuangalia upatikanaji, daraja, ufungashaji, utayari wa uzalishaji, na uwezekano wa oda.",
+      "c3Title": "Msaada wa Vipimo na Hati",
+      "c3Body": "Tunasaidia kuthibitisha vipimo, vyeti, ripoti za vipimo, hati za kibiashara, na hati za usafirishaji zinazohitajika kwa bidhaa na eneo lengwa.",
+      "c4Title": "Uratibu wa Ufungashaji na Usafirishaji",
+      "c4Body": "Tunapitia mahitaji ya ufungashaji, aina ya usafirishaji, mahitaji ya eneo lengwa, na muda wa usafirishaji ili oda iende bila mshangao mwingi.",
+      "c5Title": "Mawasiliano Wazi na Mnunuzi",
+      "c5Body": "Tunamweka mnunuzi na taarifa kuhusu chaguzi zinazopatikana, maelezo yanayosubiri, masharti ya nukuu ya bei, hali ya oda, na hatua zinazofuata."
+    },
+    "foundations": {
+      "eyebrow": "Jinsi Tunavyofanya Kazi",
+      "heading": "Viwango vilivyo nyuma ya kila uwezo.",
+      "body": "Viwango hivi vinafanya mchakato wa utafutaji wa bidhaa na usafirishaji kuwa rahisi kwa wanunuzi kuelewa na kusimamia.",
+      "f1Title": "Uwazi",
+      "f1Body": "Mahitaji wazi ya bidhaa, masharti wazi ya kibiashara, na hatua wazi zinazofuata.",
+      "f2Title": "Muundo",
+      "f2Body": "Mtiririko maalum wa kupitia maombi, uratibu wa wauzaji, hati, na ufuatiliaji wa usafirishaji.",
+      "f3Title": "Kuaminika",
+      "f3Body": "Mawasiliano thabiti na ufuatiliaji wa vitendo kutoka ombi hadi usafirishaji.",
+      "f4Title": "Uwezo wa Kukua",
+      "f4Body": "Msaada kwa wanunuzi wanaorudi katika sekta na masoko mbalimbali ya bidhaa."
+    }
+  },
+  "Catalogue": {
+    "meta": {
+      "title": "Bidhaa",
+      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali — bidhaa 500+ katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
+    },
+    "hub": {
+      "eyebrow": "Katalogi ya Chakula na Kilimo",
+      "heading": "Pata bidhaa unazotaka kuzitafuta kutoka India.",
+      "sub": "Vinjari bidhaa zetu za Chakula na Kilimo na Kemikali zilizoorodheshwa kwa kategoria. Kwa bidhaa za mitambo, karatasi, au bidhaa yoyote isiyoonyeshwa hapa, tutumie mahitaji yako na tutapitia chaguzi za utafutaji zinazopatikana.",
+      "spec": "Makundi 6 · Kategoria 30 · Bidhaa 500+ zilizoorodheshwa",
+      "search": "Tafuta bidhaa au kategoria...",
+      "all": "Zote",
+      "noResults": "Hakuna bidhaa zinazolingana na utafutaji wako.",
+      "downloadCatalogue": "Pakua katalogi kamili (PDF)"
+    },
+    "list": {
+      "form": "Aina",
+      "grade": "Daraja",
+      "gradeValue": "Daraja la Chakula",
+      "add": "Ongeza kwenye Ombi",
+      "added": "Katika ombi lako",
+      "addedToast": "Imeongezwa kwenye orodha yako ya maombi",
+      "quote": "Omba nukuu ya bei",
+      "sample": "Omba sampuli",
+      "series": "Mfululizo",
+      "colourIndex": "Faharasa ya Rangi",
+      "packSizes": "Ukubwa wa Vifurushi"
+    },
+    "product": "bidhaa",
+    "products": "bidhaa",
+    "viewRange": "Angalia wigo",
+    "productMeta": {
+      "title": "{product} | {category}",
+      "description": "{product} kutoka India katika kategoria ya {category}. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi. Traya International Exim LLP.",
+      "ogDescription": "{product} kutoka India katika kategoria ya {category}. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi."
+    },
+    "category": {
+      "metaDescription": "{title} kutoka India. {count} {products} zinapatikana. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi. Traya International Exim LLP.",
+      "eyebrow": "Kategoria",
+      "rangeHeading": "Wigo Kamili",
+      "note": "Vipimo, madaraja, MOQ, ufungashaji, hati, na bei vinathibitishwa baada ya kupitia mahitaji yako. Shirikisha kiasi na eneo lengwa kwa jibu sahihi zaidi.",
+      "enquireCta": "Uliza kuhusu kategoria hii",
+      "viewProduct": "Angalia",
+      "search": "Tafuta bidhaa...",
+      "noResults": "Hakuna bidhaa zinazolingana na utafutaji wako.",
+      "sourcingHeading": "Utafutaji na Asili",
+      "sourcingBody": "Tunatafuta bidhaa moja kwa moja kutoka kwa watengenezaji na vituo vya usindikaji vilivyothibitika kote India. Kila kundi la bidhaa linakaguliwa kwa ubora, vipimo, na uzingatiaji wa kanuni kabla ya kusafirishwa.",
+      "specsHeading": "Vipimo na Ufungashaji",
+      "specsNote": "Madaraja, MOQ, aina za ufungashaji, Incoterms, na hati vinathibitishwa kwa kila oda. Shirikisha mahitaji yako kwa nukuu ya bei ya kina.",
+      "specOrigin": "Asili",
+      "specOriginVal": "India",
+      "specMoq": "MOQ",
+      "specMoqVal": "Kwa ombi",
+      "specPackaging": "Ufungashaji",
+      "specPackagingVal": "Inaweza kubadilishwa",
+      "specIncoterms": "Incoterms",
+      "specIncotermsVal": "FOB / CIF",
+      "applicationsHeading": "Matumizi",
+      "certsHeading": "Ubora na Uzingatiaji wa Kanuni",
+      "certsNote": "Bidhaa zinaungwa mkono na vyeti na hati zinazohusika. Mahitaji maalum yanathibitishwa wakati wa nukuu ya bei.",
+      "siblingHeading": "Kategoria Zinazohusiana",
+      "downloadCta": "Pakua karatasi ya vipimo ya kategoria",
+      "closingCta": "Uko tayari kutafuta bidhaa kutoka kategoria hii?",
+      "closingSub": "Shirikisha mahitaji yako ya bidhaa, kiasi, na eneo lengwa. Timu yetu itapitia na kujibu na chaguzi zinazopatikana, vipimo, na bei."
+    },
+    "detail": {
+      "eyebrow": "Bidhaa",
+      "originLabel": "Asili",
+      "origin": "India",
+      "categoryLabel": "Kategoria",
+      "pricingLabel": "Bei",
+      "pricing": "Kwa ombi (RFQ)",
+      "docsHeading": "Vipimo na Hati",
+      "docsNote": "Vipimo vya bidhaa, madaraja, chaguzi za ufungashaji, vyeti, ripoti za vipimo, na hati za usafirishaji hutegemea bidhaa na eneo lengwa. Shirikisha kiasi chako, mahitaji ya ufungashaji, na eneo lengwa ili tuweze kuthibitisha maelezo sahihi.",
+      "sampleCta": "Omba sampuli",
+      "enquireCta": "Uliza kuhusu bidhaa hii",
+      "relatedHeading": "Zaidi katika Kategoria Hii",
+      "downloadSpecSheet": "Pakua karatasi ya vipimo ya bidhaa",
+      "hsCode": "Msimbo wa HS",
+      "availableForms": "Aina Zinazopatikana"
+    }
+  },
+  "NotFound": {
+    "code": "Hitilafu 404",
+    "title": "Ukurasa huu umefuata njia tofauti.",
+    "description": "Ukurasa unaoutafuta haupo au huenda umehamishwa. Hebu turudishe kwenye njia sahihi.",
+    "back": "Rudi Nyumbani",
+    "popular": "Au elekea kwenye mojawapo ya haya"
+  },
+  "Legal": {
+    "privacy": {
+      "title": "Sera ya Faragha",
+      "description": "Jinsi tunavyoshughulikia na kulinda data yako.",
+      "lastUpdated": "Ilisasishwa mwisho: Juni 2026",
+      "intro": "Tunaheshimu faragha yako na tumejitolea kulinda taarifa zako binafsi na za kibiashara.",
+      "sections": {
+        "dataCollection": {
+          "title": "Taarifa Tunazokusanya",
+          "items": [
+            "Jina na maelezo ya mawasiliano",
+            "Taarifa za kampuni",
+            "Maelezo ya usafirishaji na malipo",
+            "Maombi ya bidhaa na nukuu za bei",
+            "Taarifa za matumizi ya tovuti"
+          ]
+        },
+        "dataUsage": {
+          "title": "Jinsi Tunavyotumia Taarifa",
+          "items": [
+            "Kujibu maombi na nukuu za bei",
+            "Kuchakata oda za ndani na za usafirishaji",
+            "Kuratibu huduma za usafirishaji na uwasilishaji",
+            "Kuboresha uzoefu wa mteja",
+            "Kuzingatia wajibu wa kisheria"
+          ]
+        },
+        "dataSecurity": {
+          "title": "Usalama wa Data",
+          "content": "Tunatumia hatua za usalama zinazokubalika kibiashara kulinda taarifa za wateja. Taarifa za malipo zinashughulikiwa kupitia watoa huduma huru wa malipo walio salama na hazihifadhiwi kamwe kwenye seva zetu."
+        },
+        "thirdParty": {
+          "title": "Huduma za Wahusika Wengine",
+          "content": "Taarifa zinaweza kushirikishwa na watoa huduma za usafirishaji, washirika wa uwasilishaji, mawakala wa forodha, na wachakataji wa malipo kwa lengo la kutimiza oda na mahitaji ya usafirishaji pekee."
+        },
+        "cookies": {
+          "title": "Vidakuzi",
+          "content": "Tovuti yetu inatumia vidakuzi muhimu ili kufanya kazi na kifaa cha mazungumzo ya moja kwa moja cha mhusika mwingine (Crisp) ambacho kinaweza kuweka vidakuzi vyake. Hatuendeshi vifuatiliaji vya matangazo. Unaweza kukataa vidakuzi kwenye kivinjari chako, ingawa baadhi ya vipengele kama mazungumzo ya moja kwa moja vinaweza kuacha kufanya kazi."
+        },
+        "contact": {
+          "title": "Wasiliana Nasi",
+          "content": "Ikiwa una maswali yoyote kuhusu Sera hii ya Faragha au taarifa zako, tafadhali wasiliana nasi kupitia info@trayaexim.com."
+        }
+      }
+    },
+    "terms": {
+      "title": "Masharti na Vigezo",
+      "description": "Masharti ya huduma na biashara.",
+      "lastUpdated": "Ilisasishwa mwisho: Juni 2026",
+      "sections": {
+        "general": {
+          "title": "Masharti ya Jumla",
+          "content": "Kwa kufikia na kutumia tovuti hii, unakubali na kukubaliana kufungwa na masharti na vipengele vya makubaliano haya. Ushiriki wowote katika huduma hii utahesabika kama kukubali makubaliano haya."
+        },
+        "orders": {
+          "title": "Nukuu za Bei na Oda",
+          "content": "Nukuu zote za bei zinazotolewa kupitia tovuti hii zinategemea uthibitisho wa mwisho na zinaweza kubadilika kulingana na hali ya soko, upatikanaji wa malighafi, na huduma za usafirishaji."
+        },
+        "shipping": {
+          "title": "Usafirishaji na Uwasilishaji",
+          "content": "Muda wa uwasilishaji ni makadirio na huanza kuhesabika kutoka tarehe ya usafirishaji, si tarehe ya oda. Hatuwajibiki kwa ucheleweshaji unaosababishwa na taratibu za uhakiki wa forodha."
+        },
+        "liability": {
+          "title": "Kikomo cha Uwajibikaji",
+          "content": "Traya International Exim haitawajibika kwa hasara yoyote maalum au ya ziada inayotokana na matumizi, au kutokuwa na uwezo wa kutumia, vifaa vilivyo katika tovuti hii au utendaji wa bidhaa."
+        }
+      }
+    }
+  }
+}
