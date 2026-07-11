@@ -276,7 +276,7 @@
       "sub": "Traya setzt sich für den Aufbau dauerhafter globaler Partnerschaften durch Vertrauen, Zuverlässigkeit und professionelle Umsetzung ein. Mit einem wachsenden Produktportfolio und einem kundenorientierten Ansatz helfen wir Unternehmen, den internationalen Handel mit Zuversicht zu meistern.",
       "cta": "Produkte entdecken",
       "ctaEnquiry": "Ihren Bedarf mitteilen",
-      "stat": "Lebensmittel, Agrar & Chemikalien · 500+ Produkte · 30 Kategorien",
+      "stat": "Lebensmittel, Agrar & Chemikalien · 499 Produkte · 30 Kategorien",
       "certified": "Zertifiziert"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Eine Auswahl aus unserem Lebensmittel- & Agrarsortiment",
       "note": "Unser Portfolio wächst weiter, während wir Partnerschaften in neuen Branchen und internationalen Märkten stärken.",
       "noteAsk": "Nicht gefunden, was Sie suchen? Kontaktieren Sie uns, wir können möglicherweise trotzdem helfen.",
-      "spec": "500+ gelistete Produkte · 30 Kategorien · 6 Produktgruppen",
+      "spec": "499 gelistete Produkte · 30 Kategorien · 6 Produktgruppen",
       "cta": "Bedarf mitteilen",
       "badgePremium": "Lebensmittel & Agrar",
       "alliums": "Dehydrierte Zwiebelgewächse & Gemüse",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, Basilikum, Thymian, Rosmarin, Kasuri Methi und Kräutermischungen.",
       "nutraceutical": "Kräuter & Nutrazeutika",
       "nutraceuticalBlurb": "Moringa, Spirulina, Ashwagandha, Amla und weitere pflanzliche Pulver.",
-      "wellness": "Milchprodukte & Premium-Wellness",
-      "wellnessBlurb": "Milchpulver, essbare Samen, Jaggery, A2-Ghee, kaltgepresste Öle und Hirse.",
       "chemicals": "Chemikalien & Farbstoffe",
-      "chemicalsBlurb": "Reaktiv-, Säure- und Direktfarbstoffe, Lebensmittelfarben, Pigmente und Lackharze für die Textil-, Lebensmittel- und Beschichtungsindustrie."
+      "chemicalsBlurb": "Reaktiv-, Säure- und Direktfarbstoffe, Lebensmittelfarben, Pigmente und Lackharze für die Textil-, Lebensmittel- und Beschichtungsindustrie.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Warum Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Produkte",
-      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya — 500+ Produkte in 30 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
+      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya — 499 Produkte in 30 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
     },
     "hub": {
       "eyebrow": "Lebensmittel- & Agrarkatalog",
       "heading": "Finden Sie die Produkte, die Sie aus Indien beziehen möchten.",
       "sub": "Durchstöbern Sie unsere gelisteten Lebensmittel-, Agrar- und Chemikalienprodukte nach Kategorie. Für mechanische Produkte, Papier oder Produkte, die hier nicht aufgeführt sind, senden Sie uns Ihren Bedarf, und wir prüfen die verfügbaren Beschaffungsoptionen.",
-      "spec": "6 Gruppen · 30 Kategorien · 500+ gelistete Produkte",
+      "spec": "6 Gruppen · 30 Kategorien · 499 gelistete Produkte",
       "search": "Produkte oder Kategorien suchen...",
       "all": "Alle",
       "noResults": "Keine Produkte entsprechen Ihrer Suche.",

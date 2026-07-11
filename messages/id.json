@@ -276,7 +276,7 @@
       "sub": "Traya berkomitmen membangun kemitraan global yang langgeng melalui kepercayaan, keandalan, dan eksekusi profesional. Dengan portofolio produk berkualitas yang terus berkembang dan pendekatan yang berfokus pada pelanggan, kami membantu bisnis menavigasi perdagangan internasional dengan percaya diri.",
       "cta": "Jelajahi Produk",
       "ctaEnquiry": "Bagikan kebutuhan Anda",
-      "stat": "Pangan, Agro & Kimia · 500+ produk · 30 kategori",
+      "stat": "Pangan, Agro & Kimia · 499 produk · 30 kategori",
       "certified": "Bersertifikat"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Pilihan dari rangkaian Pangan & Agro kami",
       "note": "Portofolio kami terus berkembang seiring kami memperkuat kemitraan di berbagai industri dan pasar internasional baru.",
       "noteAsk": "Tidak menemukan yang Anda butuhkan? Hubungi kami, kami mungkin masih bisa membantu.",
-      "spec": "500+ produk terdaftar · 30 kategori · 6 kelompok produk",
+      "spec": "499 produk terdaftar · 30 kategori · 6 kelompok produk",
       "cta": "Kirim Kebutuhan",
       "badgePremium": "Pangan & Agro",
       "alliums": "Alium Dehidrasi & Sayuran",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, basil, timi, rosemary, kasuri methi, dan campuran herba.",
       "nutraceutical": "Herbal & Nutrasetikal",
       "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, dan bubuk nabati lainnya.",
-      "wellness": "Susu & Kesehatan Premium",
-      "wellnessBlurb": "Bubuk susu, biji-bijian yang dapat dimakan, gula aren, ghee A2, minyak perasan dingin, dan milet.",
       "chemicals": "Bahan Kimia & Pewarna",
-      "chemicalsBlurb": "Pewarna reaktif, asam, dan direct, pewarna makanan, pigmen, dan resin cat untuk industri tekstil, pangan, dan pelapisan."
+      "chemicalsBlurb": "Pewarna reaktif, asam, dan direct, pewarna makanan, pigmen, dan resin cat untuk industri tekstil, pangan, dan pelapisan.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Mengapa Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Produk",
-      "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya — 500+ produk di 30 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
+      "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya — 499 produk di 30 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
     },
     "hub": {
       "eyebrow": "Katalog Pangan & Agro",
       "heading": "Temukan produk yang ingin Anda adakan dari India.",
       "sub": "Jelajahi produk Pangan & Agro dan Bahan Kimia kami berdasarkan kategori. Untuk produk mekanis, kertas, atau produk apa pun yang tidak tercantum di sini, kirimkan kebutuhan Anda dan kami akan meninjau opsi pengadaan yang tersedia.",
-      "spec": "6 kelompok · 30 kategori · 500+ produk terdaftar",
+      "spec": "6 kelompok · 30 kategori · 499 produk terdaftar",
       "search": "Cari produk atau kategori...",
       "all": "Semua",
       "noResults": "Tidak ada produk yang cocok dengan pencarian Anda.",

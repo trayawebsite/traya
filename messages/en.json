@@ -276,7 +276,7 @@
       "sub": "Traya is committed to building lasting global partnerships through trust, reliability, and professional execution. With a growing portfolio of quality products and a customer-focused approach, we help businesses navigate international trade with confidence.",
       "cta": "Explore Products",
       "ctaEnquiry": "Share your requirement",
-      "stat": "Food, Agro & Chemicals · 500+ products · 30 categories",
+      "stat": "Food, Agro & Chemicals · 499 products · 30 categories",
       "certified": "Certified"
     },
     "intro": {
@@ -311,10 +311,10 @@
       "chemTitle": "Chemicals",
       "chemBody": "Industrial and specialty chemicals serving diverse manufacturing applications across global markets.",
       "chemCta": "View Chemicals",
-      "selection": "A selection from our Food & Agro range",
+      "selection": "A selection across our range",
       "note": "Our portfolio continues to expand as we strengthen partnerships across new industries and international markets.",
       "noteAsk": "Don't see what you need? Reach out, we may still be able to help.",
-      "spec": "500+ listed products · 30 categories · 6 product groups",
+      "spec": "499 listed products · 30 categories · 6 product groups",
       "cta": "Send a Requirement",
       "badgePremium": "Food & Agro",
       "alliums": "Dehydrated Alliums & Vegetables",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, basil, thyme, rosemary, kasuri methi, and mixed herbs.",
       "nutraceutical": "Herbal & Nutraceutical",
       "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, and other plant-based powders.",
-      "wellness": "Dairy & Premium Wellness",
-      "wellnessBlurb": "Dairy powders, edible seeds, jaggery, A2 ghee, cold-pressed oils, and millets.",
       "chemicals": "Chemicals & Dyes",
-      "chemicalsBlurb": "Reactive, acid and direct dyes, food colours, pigments and paint resins for textile, food and coatings industries."
+      "chemicalsBlurb": "Reactive, acid and direct dyes, food colours, pigments and paint resins for textile, food and coatings industries.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Why Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Products",
-      "description": "Browse Traya's Food, Agro & Chemicals catalogue — 500+ products across 30 categories, from dehydrated ingredients and spices to reactive dyes, food colours and pigments. For mechanical products, paper, or other export requirements, send us your specifications."
+      "description": "Browse Traya's Food, Agro & Chemicals catalogue — 499 products across 30 categories, from dehydrated ingredients and spices to reactive dyes, food colours and pigments. For mechanical products, paper, or other export requirements, send us your specifications."
     },
     "hub": {
       "eyebrow": "Food & Agro catalogue",
       "heading": "Find the products you want to source from India.",
       "sub": "Browse our listed Food & Agro and Chemicals products by category. For mechanical products, paper, or any product not shown here, send us your requirement and we will review the available sourcing options.",
-      "spec": "6 groups · 30 categories · 500+ listed products",
+      "spec": "6 groups · 30 categories · 499 listed products",
       "search": "Search products or categories...",
       "all": "All",
       "noResults": "No products match your search.",

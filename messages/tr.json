@@ -276,7 +276,7 @@
       "sub": "Traya, güven, güvenilirlik ve profesyonel uygulama yoluyla kalıcı küresel ortaklıklar kurmaya kararlıdır. Büyüyen kaliteli ürün portföyümüz ve müşteri odaklı yaklaşımımızla işletmelerin uluslararası ticarette güvenle ilerlemesine yardımcı oluyoruz.",
       "cta": "Ürünleri Keşfedin",
       "ctaEnquiry": "İhtiyacınızı paylaşın",
-      "stat": "Gıda, Tarım ve Kimyasallar · 500+ ürün · 30 kategori",
+      "stat": "Gıda, Tarım ve Kimyasallar · 499 ürün · 30 kategori",
       "certified": "Sertifikalı"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Gıda ve Tarım yelpazemizden bir seçki",
       "note": "Yeni sektörler ve uluslararası pazarlarda ortaklıklarımızı güçlendirdikçe portföyümüz genişlemeye devam ediyor.",
       "noteAsk": "Aradığınızı bulamadınız mı? Bize ulaşın, yine de yardımcı olabiliriz.",
-      "spec": "500+ listelenmiş ürün · 30 kategori · 6 ürün grubu",
+      "spec": "499 listelenmiş ürün · 30 kategori · 6 ürün grubu",
       "cta": "İhtiyacınızı Gönderin",
       "badgePremium": "Gıda ve Tarım",
       "alliums": "Dehidre Soğangiller ve Sebzeler",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, fesleğen, kekik, biberiye, kasuri methi ve karışık otlar.",
       "nutraceutical": "Bitkisel ve Nutrasötik",
       "nutraceuticalBlurb": "Moringa, spirulina, aşvaganda, amla ve diğer bitki bazlı tozlar.",
-      "wellness": "Süt Ürünleri ve Premium Sağlıklı Yaşam",
-      "wellnessBlurb": "Süt tozları, yenilebilir tohumlar, jaggery, A2 sadeyağ, soğuk sıkım yağlar ve darı çeşitleri.",
       "chemicals": "Kimyasallar ve Boyalar",
-      "chemicalsBlurb": "Tekstil, gıda ve kaplama endüstrileri için reaktif, asit ve direkt boyalar, gıda renklendiricileri, pigmentler ve boya reçineleri."
+      "chemicalsBlurb": "Tekstil, gıda ve kaplama endüstrileri için reaktif, asit ve direkt boyalar, gıda renklendiricileri, pigmentler ve boya reçineleri.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Neden Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Ürünler",
-      "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın — 30 kategoride 500'den fazla ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
+      "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın — 30 kategoride 499 ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
     },
     "hub": {
       "eyebrow": "Gıda ve Tarım kataloğu",
       "heading": "Hindistan'dan tedarik etmek istediğiniz ürünleri bulun.",
       "sub": "Listelenen Gıda ve Tarım ile Kimyasallar ürünlerimize kategoriye göre göz atın. Mekanik ürünler, kağıt veya burada gösterilmeyen herhangi bir ürün için ihtiyacınızı bize gönderin, mevcut tedarik seçeneklerini inceleyelim.",
-      "spec": "6 grup · 30 kategori · 500+ listelenmiş ürün",
+      "spec": "6 grup · 30 kategori · 499 listelenmiş ürün",
       "search": "Ürün veya kategori ara...",
       "all": "Tümü",
       "noResults": "Aramanızla eşleşen ürün bulunamadı.",

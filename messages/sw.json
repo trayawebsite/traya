@@ -276,7 +276,7 @@
       "sub": "Traya imejitolea kujenga ushirikiano wa kimataifa wa kudumu kupitia imani, kuaminika, na utekelezaji wa kitaalamu. Kwa wigo unaokua wa bidhaa bora na mtazamo unaomlenga mteja, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.",
       "cta": "Gundua Bidhaa",
       "ctaEnquiry": "Shirikisha mahitaji yako",
-      "stat": "Chakula, Kilimo na Kemikali · Bidhaa 500+ · Kategoria 30",
+      "stat": "Chakula, Kilimo na Kemikali · Bidhaa 499 · Kategoria 30",
       "certified": "Imethibitishwa"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Uteuzi kutoka kwa wigo wetu wa Chakula na Kilimo",
       "note": "Wigo wetu unaendelea kupanuka tunapoimarisha ushirikiano katika viwanda vipya na masoko ya kimataifa.",
       "noteAsk": "Huoni unachohitaji? Wasiliana nasi, huenda bado tukaweza kusaidia.",
-      "spec": "Bidhaa 500+ zilizoorodheshwa · Kategoria 30 · Makundi 6 ya bidhaa",
+      "spec": "Bidhaa 499 zilizoorodheshwa · Kategoria 30 · Makundi 6 ya bidhaa",
       "cta": "Tuma Mahitaji",
       "badgePremium": "Chakula na Kilimo",
       "alliums": "Vitunguu na Mboga Zilizokaushwa",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, basil, thyme, rosemary, kasuri methi, na mchanganyiko wa mimea.",
       "nutraceutical": "Mimea na Bidhaa za Kinutraceutical",
       "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla, na unga mwingine unaotokana na mimea.",
-      "wellness": "Maziwa na Ustawi wa Hali ya Juu",
-      "wellnessBlurb": "Unga wa maziwa, mbegu zinazoliwa, sukari ya asili (jaggery), samli ya A2, mafuta yaliyokamuliwa baridi, na mtama.",
       "chemicals": "Kemikali na Rangi",
-      "chemicalsBlurb": "Rangi za reactive, acid na direct, rangi za chakula, pigmenti na resini za rangi kwa ajili ya viwanda vya nguo, chakula na mipako."
+      "chemicalsBlurb": "Rangi za reactive, acid na direct, rangi za chakula, pigmenti na resini za rangi kwa ajili ya viwanda vya nguo, chakula na mipako.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Kwa Nini Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Bidhaa",
-      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali — bidhaa 500+ katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
+      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali — bidhaa 499 katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
     },
     "hub": {
       "eyebrow": "Katalogi ya Chakula na Kilimo",
       "heading": "Pata bidhaa unazotaka kuzitafuta kutoka India.",
       "sub": "Vinjari bidhaa zetu za Chakula na Kilimo na Kemikali zilizoorodheshwa kwa kategoria. Kwa bidhaa za mitambo, karatasi, au bidhaa yoyote isiyoonyeshwa hapa, tutumie mahitaji yako na tutapitia chaguzi za utafutaji zinazopatikana.",
-      "spec": "Makundi 6 · Kategoria 30 · Bidhaa 500+ zilizoorodheshwa",
+      "spec": "Makundi 6 · Kategoria 30 · Bidhaa 499 zilizoorodheshwa",
       "search": "Tafuta bidhaa au kategoria...",
       "all": "Zote",
       "noResults": "Hakuna bidhaa zinazolingana na utafutaji wako.",

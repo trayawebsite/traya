@@ -31,7 +31,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
               ))}
             </div>
             <SpecLine
-              items={['500+ products', '30 categories', 'India origin']}
+              items={['499 products', '30 categories', 'India origin']}
               className="mt-8"
             />
           </div>

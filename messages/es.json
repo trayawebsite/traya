@@ -276,7 +276,7 @@
       "sub": "Traya se compromete a construir alianzas globales duraderas a través de la confianza, la fiabilidad y la ejecución profesional. Con un portafolio de productos de calidad en constante crecimiento y un enfoque centrado en el cliente, ayudamos a las empresas a navegar el comercio internacional con confianza.",
       "cta": "Explorar Productos",
       "ctaEnquiry": "Comparta su necesidad",
-      "stat": "Alimentos, Agro y Químicos · más de 500 productos · 30 categorías",
+      "stat": "Alimentos, Agro y Químicos · 499 productos · 30 categorías",
       "certified": "Certificado"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Una selección de nuestra gama Alimentaria y Agro",
       "note": "Nuestro portafolio continúa expandiéndose a medida que fortalecemos alianzas en nuevas industrias y mercados internacionales.",
       "noteAsk": "¿No encuentra lo que necesita? Contáctenos, es posible que aún podamos ayudarle.",
-      "spec": "más de 500 productos listados · 30 categorías · 6 grupos de productos",
+      "spec": "499 productos listados · 30 categorías · 6 grupos de productos",
       "cta": "Enviar una Necesidad",
       "badgePremium": "Alimentos y Agro",
       "alliums": "Alliums Deshidratados y Vegetales",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Orégano, albahaca, tomillo, romero, kasuri methi y mezclas de hierbas.",
       "nutraceutical": "Herbal y Nutracéutico",
       "nutraceuticalBlurb": "Moringa, espirulina, ashwagandha, amla y otros polvos de origen vegetal.",
-      "wellness": "Lácteos y Bienestar Premium",
-      "wellnessBlurb": "Polvos lácteos, semillas comestibles, jaggery, ghee A2, aceites prensados en frío y mijos.",
       "chemicals": "Químicos y Colorantes",
-      "chemicalsBlurb": "Colorantes reactivos, ácidos y directos, colorantes alimentarios, pigmentos y resinas para pintura, destinados a las industrias textil, alimentaria y de recubrimientos."
+      "chemicalsBlurb": "Colorantes reactivos, ácidos y directos, colorantes alimentarios, pigmentos y resinas para pintura, destinados a las industrias textil, alimentaria y de recubrimientos.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Por qué Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Productos",
-      "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya — más de 500 productos en 30 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
+      "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya — 499 productos en 30 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
     },
     "hub": {
       "eyebrow": "Catálogo Alimentario y Agro",
       "heading": "Encuentre los productos que desea abastecer desde India.",
       "sub": "Explore nuestros productos Alimentarios, Agro y Químicos listados por categoría. Para productos mecánicos, papel, o cualquier producto que no aparezca aquí, envíenos su necesidad y revisaremos las opciones de abastecimiento disponibles.",
-      "spec": "6 grupos · 30 categorías · más de 500 productos listados",
+      "spec": "6 grupos · 30 categorías · 499 productos listados",
       "search": "Buscar productos o categorías...",
       "all": "Todos",
       "noResults": "Ningún producto coincide con su búsqueda.",

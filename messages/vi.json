@@ -276,7 +276,7 @@
       "sub": "Traya cam kết xây dựng những mối quan hệ đối tác toàn cầu bền vững thông qua sự tin tưởng, độ tin cậy và cách thực hiện chuyên nghiệp. Với danh mục sản phẩm chất lượng ngày càng mở rộng và cách tiếp cận lấy khách hàng làm trọng tâm, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại quốc tế.",
       "cta": "Khám phá sản phẩm",
       "ctaEnquiry": "Chia sẻ yêu cầu của bạn",
-      "stat": "Thực phẩm, Nông sản & Hóa chất · 500+ sản phẩm · 30 danh mục",
+      "stat": "Thực phẩm, Nông sản & Hóa chất · 499 sản phẩm · 30 danh mục",
       "certified": "Chứng nhận"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Một số sản phẩm tiêu biểu từ danh mục Thực phẩm & Nông sản của chúng tôi",
       "note": "Danh mục sản phẩm của chúng tôi tiếp tục mở rộng khi chúng tôi củng cố quan hệ đối tác trong các ngành và thị trường quốc tế mới.",
       "noteAsk": "Không tìm thấy sản phẩm bạn cần? Hãy liên hệ với chúng tôi, chúng tôi vẫn có thể hỗ trợ bạn.",
-      "spec": "500+ sản phẩm được niêm yết · 30 danh mục · 6 nhóm sản phẩm",
+      "spec": "499 sản phẩm được niêm yết · 30 danh mục · 6 nhóm sản phẩm",
       "cta": "Gửi yêu cầu",
       "badgePremium": "Thực phẩm & Nông sản",
       "alliums": "Hành, Tỏi Sấy Khô & Rau Củ",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, húng quế, cỏ xạ hương (thyme), hương thảo (rosemary), kasuri methi và các loại thảo mộc phối trộn.",
       "nutraceutical": "Thảo Dược & Thực Phẩm Chức Năng",
       "nutraceuticalBlurb": "Moringa (chùm ngây), tảo xoắn (spirulina), ashwagandha, amla và các loại bột có nguồn gốc thực vật khác.",
-      "wellness": "Sữa & Sản Phẩm Sức Khỏe Cao Cấp",
-      "wellnessBlurb": "Bột sữa, hạt ăn được, đường thốt nốt (jaggery), bơ A2 ghee, dầu ép lạnh và các loại kê (millets).",
       "chemicals": "Hóa Chất & Thuốc Nhuộm",
-      "chemicalsBlurb": "Thuốc nhuộm hoạt tính, thuốc nhuộm axit và thuốc nhuộm trực tiếp, phẩm màu thực phẩm, bột màu và nhựa sơn dành cho ngành dệt may, thực phẩm và sơn phủ."
+      "chemicalsBlurb": "Thuốc nhuộm hoạt tính, thuốc nhuộm axit và thuốc nhuộm trực tiếp, phẩm màu thực phẩm, bột màu và nhựa sơn dành cho ngành dệt may, thực phẩm và sơn phủ.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Vì sao chọn Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Sản phẩm",
-      "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya — 500+ sản phẩm trên 30 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
+      "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya — 499 sản phẩm trên 30 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
     },
     "hub": {
       "eyebrow": "Catalogue Thực phẩm & Nông sản",
       "heading": "Tìm sản phẩm bạn muốn tìm nguồn từ Ấn Độ.",
       "sub": "Duyệt các sản phẩm Thực phẩm & Nông sản và Hóa chất được niêm yết của chúng tôi theo danh mục. Đối với sản phẩm cơ khí, giấy, hoặc bất kỳ sản phẩm nào không hiển thị ở đây, hãy gửi cho chúng tôi yêu cầu của bạn và chúng tôi sẽ xem xét các phương án tìm nguồn khả dụng.",
-      "spec": "6 nhóm · 30 danh mục · 500+ sản phẩm được niêm yết",
+      "spec": "6 nhóm · 30 danh mục · 499 sản phẩm được niêm yết",
       "search": "Tìm kiếm sản phẩm hoặc danh mục...",
       "all": "Tất cả",
       "noResults": "Không có sản phẩm nào phù hợp với tìm kiếm của bạn.",

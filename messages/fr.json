@@ -276,7 +276,7 @@
       "sub": "Traya s'engage à bâtir des partenariats mondiaux durables fondés sur la confiance, la fiabilité et une exécution professionnelle. Avec un portefeuille croissant de produits de qualité et une approche centrée sur le client, nous aidons les entreprises à naviguer dans le commerce international en toute confiance.",
       "cta": "Explorer les produits",
       "ctaEnquiry": "Partagez votre besoin",
-      "stat": "Alimentaire, agricole & chimique · Plus de 500 produits · 30 catégories",
+      "stat": "Alimentaire, agricole & chimique · 499 produits · 30 catégories",
       "certified": "Certifié"
     },
     "intro": {
@@ -311,10 +311,10 @@
       "chemTitle": "Produits chimiques",
       "chemBody": "Produits chimiques industriels et spécialisés au service de diverses applications de fabrication sur les marchés mondiaux.",
       "chemCta": "Voir les produits chimiques",
-      "selection": "Une sélection de notre gamme alimentaire & agricole",
+      "selection": "Une sélection de notre gamme",
       "note": "Notre portefeuille continue de s'étendre à mesure que nous renforçons nos partenariats dans de nouveaux secteurs et marchés internationaux.",
       "noteAsk": "Vous ne trouvez pas ce qu'il vous faut ? Contactez-nous, nous pourrons peut-être vous aider.",
-      "spec": "Plus de 500 produits listés · 30 catégories · 6 groupes de produits",
+      "spec": "499 produits listés · 30 catégories · 6 groupes de produits",
       "cta": "Envoyer une demande",
       "badgePremium": "Alimentaire et agricole",
       "alliums": "Alliums et légumes déshydratés",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Origan, basilic, thym, romarin, kasuri methi et herbes mélangées.",
       "nutraceutical": "Plantes et nutraceutiques",
       "nutraceuticalBlurb": "Moringa, spiruline, ashwagandha, amla et autres poudres végétales.",
-      "wellness": "Produits laitiers et bien-être premium",
-      "wellnessBlurb": "Poudres laitières, graines comestibles, jaggery, ghee A2, huiles pressées à froid et millets.",
       "chemicals": "Produits chimiques et colorants",
-      "chemicalsBlurb": "Colorants réactifs, acides et directs, colorants alimentaires, pigments et résines pour peinture pour les industries du textile, de l’alimentaire et des revêtements."
+      "chemicalsBlurb": "Colorants réactifs, acides et directs, colorants alimentaires, pigments et résines pour peinture pour les industries du textile, de l’alimentaire et des revêtements.",
+      "catFoodColours": "Colorants alimentaires",
+      "catReactiveDyes": "Colorants réactifs"
     },
     "why": {
       "eyebrow": "Pourquoi Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Produits",
-      "description": "Parcourez le catalogue alimentaire, agricole et chimique de Traya — plus de 500 produits répartis en 30 catégories, des ingrédients déshydratés et épices aux colorants réactifs, colorants alimentaires et pigments. Pour les produits mécaniques, le papier ou d’autres exigences d’exportation, envoyez-nous vos spécifications."
+      "description": "Parcourez le catalogue alimentaire, agricole et chimique de Traya — 499 produits répartis en 30 catégories, des ingrédients déshydratés et épices aux colorants réactifs, colorants alimentaires et pigments. Pour les produits mécaniques, le papier ou d’autres exigences d’exportation, envoyez-nous vos spécifications."
     },
     "hub": {
       "eyebrow": "Catalogue alimentaire et agricole",
       "heading": "Trouvez les produits que vous souhaitez sourcer depuis l’Inde.",
       "sub": "Parcourez nos produits alimentaires, agricoles et chimiques listés par catégorie. Pour les produits mécaniques, le papier ou tout produit non affiché ici, envoyez-nous vos exigences et nous examinerons les options d’approvisionnement disponibles.",
-      "spec": "6 groupes · 30 catégories · Plus de 500 produits listés",
+      "spec": "6 groupes · 30 catégories · 499 produits listés",
       "search": "Rechercher des produits ou catégories...",
       "all": "Tous",
       "noResults": "Aucun produit ne correspond à votre recherche.",

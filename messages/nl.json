@@ -276,7 +276,7 @@
       "sub": "Traya zet zich in voor het opbouwen van duurzame, wereldwijde partnerschappen door middel van vertrouwen, betrouwbaarheid en professionele uitvoering. Met een groeiend portfolio aan kwaliteitsproducten en een klantgerichte aanpak helpen wij bedrijven met vertrouwen internationale handel te voeren.",
       "cta": "Ontdek Producten",
       "ctaEnquiry": "Deel uw behoefte",
-      "stat": "Voeding, Agro & Chemicaliën · 500+ producten · 30 categorieën",
+      "stat": "Voeding, Agro & Chemicaliën · 499 producten · 30 categorieën",
       "certified": "Gecertificeerd"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Een selectie uit ons assortiment Voeding & Agro",
       "note": "Ons portfolio blijft groeien naarmate wij partnerschappen versterken in nieuwe sectoren en internationale markten.",
       "noteAsk": "Vindt u niet wat u zoekt? Neem contact op, wij kunnen mogelijk toch helpen.",
-      "spec": "500+ vermelde producten · 30 categorieën · 6 productgroepen",
+      "spec": "499 vermelde producten · 30 categorieën · 6 productgroepen",
       "cta": "Stuur Een Behoefte",
       "badgePremium": "Voeding & Agro",
       "alliums": "Gedroogde Alliums & Groenten",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, basilicum, tijm, rozemarijn, kasuri methi en kruidenmengsels.",
       "nutraceutical": "Kruiden & Nutraceutica",
       "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla en andere plantaardige poeders.",
-      "wellness": "Zuivel & Premium Wellness",
-      "wellnessBlurb": "Zuivelpoeders, eetbare zaden, jaggery, A2-ghee, koudgeperste oliën en millet.",
       "chemicals": "Chemicaliën & Kleurstoffen",
-      "chemicalsBlurb": "Reactieve, zure en directe kleurstoffen, voedingskleurstoffen, pigmenten en verfharsen voor de textiel-, voedings- en coatingindustrie."
+      "chemicalsBlurb": "Reactieve, zure en directe kleurstoffen, voedingskleurstoffen, pigmenten en verfharsen voor de textiel-, voedings- en coatingindustrie.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Waarom Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Producten",
-      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën — 500+ producten in 30 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
+      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën — 499 producten in 30 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
     },
     "hub": {
       "eyebrow": "Catalogus Voeding & Agro",
       "heading": "Vind de producten die u uit India wilt sourcen.",
       "sub": "Blader door onze vermelde Voeding & Agro- en Chemicaliënproducten per categorie. Stuur ons uw behoefte voor mechanische producten, papier of andere producten die hier niet worden getoond, en wij beoordelen de beschikbare sourcingopties.",
-      "spec": "6 groepen · 30 categorieën · 500+ vermelde producten",
+      "spec": "6 groepen · 30 categorieën · 499 vermelde producten",
       "search": "Zoek producten of categorieën...",
       "all": "Alle",
       "noResults": "Geen producten komen overeen met uw zoekopdracht.",

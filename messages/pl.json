@@ -276,7 +276,7 @@
       "sub": "Traya dąży do budowania trwałych globalnych partnerstw opartych na zaufaniu, niezawodności i profesjonalnej realizacji. Dzięki rosnącej ofercie wysokiej jakości produktów oraz podejściu skoncentrowanym na kliencie pomagamy firmom pewnie poruszać się w handlu międzynarodowym.",
       "cta": "Poznaj nasze produkty",
       "ctaEnquiry": "Podziel się swoim zapotrzebowaniem",
-      "stat": "Żywność, produkty rolne i chemikalia · 500+ produktów · 30 kategorii",
+      "stat": "Żywność, produkty rolne i chemikalia · 499 produktów · 30 kategorii",
       "certified": "Certyfikowane"
     },
     "intro": {
@@ -314,7 +314,7 @@
       "selection": "Wybór z naszej oferty produktów spożywczych i rolnych",
       "note": "Nasze portfolio wciąż się poszerza w miarę wzmacniania partnerstw w nowych branżach i na nowych rynkach międzynarodowych.",
       "noteAsk": "Nie widzisz tego, czego szukasz? Napisz do nas — być może i tak będziemy w stanie pomóc.",
-      "spec": "500+ produktów w ofercie · 30 kategorii · 6 grup produktowych",
+      "spec": "499 produktów w ofercie · 30 kategorii · 6 grup produktowych",
       "cta": "Wyślij zapotrzebowanie",
       "badgePremium": "Żywność i produkty rolne",
       "alliums": "Suszone warzywa cebulowe i inne warzywa",
@@ -327,10 +327,10 @@
       "herbsBlurb": "Oregano, bazylia, tymianek, rozmaryn, kasuri methi oraz mieszanki ziołowe.",
       "nutraceutical": "Produkty ziołowe i nutraceutyczne",
       "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla oraz inne proszki roślinne.",
-      "wellness": "Nabiał i produkty premium wellness",
-      "wellnessBlurb": "Proszki mleczne, nasiona jadalne, jaggery, ghee A2, oleje tłoczone na zimno oraz proso.",
       "chemicals": "Chemikalia i barwniki",
-      "chemicalsBlurb": "Barwniki reaktywne, kwasowe i bezpośrednie, barwniki spożywcze, pigmenty oraz żywice do farb — dla przemysłu tekstylnego, spożywczego i lakierniczego."
+      "chemicalsBlurb": "Barwniki reaktywne, kwasowe i bezpośrednie, barwniki spożywcze, pigmenty oraz żywice do farb — dla przemysłu tekstylnego, spożywczego i lakierniczego.",
+      "catFoodColours": "Food Colours",
+      "catReactiveDyes": "Reactive Dyes"
     },
     "why": {
       "eyebrow": "Dlaczego Traya",
@@ -626,13 +626,13 @@
   "Catalogue": {
     "meta": {
       "title": "Produkty",
-      "description": "Przeglądaj katalog Traya obejmujący żywność, produkty rolne i chemikalia — ponad 500 produktów w 30 kategoriach, od suszonych składników i przypraw po barwniki reaktywne, barwniki spożywcze i pigmenty. W przypadku produktów mechanicznych, papieru lub innych zapytań eksportowych prześlij nam swoją specyfikację."
+      "description": "Przeglądaj katalog Traya obejmujący żywność, produkty rolne i chemikalia — 499 produktów w 30 kategoriach, od suszonych składników i przypraw po barwniki reaktywne, barwniki spożywcze i pigmenty. W przypadku produktów mechanicznych, papieru lub innych zapytań eksportowych prześlij nam swoją specyfikację."
     },
     "hub": {
       "eyebrow": "Katalog żywności i produktów rolnych",
       "heading": "Znajdź produkty, które chcesz pozyskać z Indii.",
       "sub": "Przeglądaj nasze produkty spożywcze, rolne i chemiczne według kategorii. W przypadku produktów mechanicznych, papieru lub jakiegokolwiek produktu, którego tu nie widać, prześlij nam swoje zapotrzebowanie, a przeanalizujemy dostępne możliwości pozyskania.",
-      "spec": "6 grup · 30 kategorii · 500+ produktów w ofercie",
+      "spec": "6 grup · 30 kategorii · 499 produktów w ofercie",
       "search": "Szukaj produktów lub kategorii...",
       "all": "Wszystkie",
       "noResults": "Brak produktów pasujących do wyszukiwania.",

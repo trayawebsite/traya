@@ -3851,71 +3851,72 @@
           "name": "Carbon Black",
           "slug": "carbon-black",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Black 7  |  HS 28030010",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Black 7",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "28030010"
         },
         {
           "n": 7,
           "name": "Lemon Chrome",
           "slug": "lemon-chrome",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Yellow 34  |  HS 32062010",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Yellow 34",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32062010"
         },
         {
           "n": 8,
           "name": "Middle Chrome",
           "slug": "middle-chrome",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Yellow 34  |  HS 32062010",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Yellow 34",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32062010"
         },
         {
           "n": 9,
           "name": "Prime Rose Chrome",
           "slug": "prime-rose-chrome",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Yellow 34  |  HS 32062010",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Yellow 34",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32062010"
         },
         {
           "n": 10,
           "name": "Scarlet Chrome",
           "slug": "scarlet-chrome",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Red 104  |  HS 32062010",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Red 104",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32062010"
         },
         {
           "n": 11,
           "name": "Prussian Blue",
           "slug": "prussian-blue",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Blue 27  |  HS 32064900",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Blue 27",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "32064900"
         },
         {
           "n": 12,
           "name": "Iron Oxide Yellow",
           "slug": "iron-oxide-yellow",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Yellow 42  |  HS 28211000",
-          "packSizes": "25 kg bags / drums"
+          "colourIndex": "Pigment Yellow 42",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "28211000"
         },
         {
           "n": 13,
           "name": "Iron Oxide Red",
           "slug": "iron-oxide-red",
           "series": "Inorganic Pigments",
-          "colourIndex": "Pigment Red 101  |  HS 28211000",
-          "packSizes": "25 kg bags / drums"
-        },
-        {
-          "n": 14,
-          "name": "Range details to be finalized",
-          "slug": "range-details-to-be-finalized",
-          "series": "Pigment Emulsions",
-          "packSizes": "25 kg drums (indicative)"
+          "colourIndex": "Pigment Red 101",
+          "packSizes": "25 kg bags / drums",
+          "hsCode": "28211000"
         }
       ]
     },
@@ -3970,14 +3971,6 @@
           "n": 6,
           "name": "Maleic Medium 70%",
           "slug": "maleic-medium-70",
-          "series": "Maleic Resins",
-          "packSizes": "50 kg / 200 kg drums",
-          "hsCode": "38061000"
-        },
-        {
-          "n": 7,
-          "name": "Bulk and Custom quantities available on request across all categories.",
-          "slug": "bulk-and-custom-quantities-available-on-request-across-all-categories",
           "series": "Maleic Resins",
           "packSizes": "50 kg / 200 kg drums",
           "hsCode": "38061000"

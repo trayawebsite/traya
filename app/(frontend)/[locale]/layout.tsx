@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     template: '%s | Traya International Exim'
   },
   description:
-    'Leading Indian food ingredient & chemicals exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs, nutraceuticals, dyes, food colours & pigments. FSSAI-licensed & APEDA-registered. 500+ products across 30 categories. B2B wholesale supplier from India.',
+    'Leading Indian food ingredient & chemicals exporter. Dehydrated onions, garlic, spices, spray-dried powders, herbs, nutraceuticals, dyes, food colours & pigments. FSSAI-licensed & APEDA-registered. 499 products across 30 categories. B2B wholesale supplier from India.',
   keywords: [
     'Indian food exporter',
     'dehydrated onion supplier India',
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     siteName: 'Traya International Exim LLP',
     title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
     description:
-      'B2B food ingredient & chemicals supplier from India. Dehydrated onions, garlic, spices, powders, herbs, dyes, food colours & more. 500+ products, FSSAI-licensed, global shipping.',
+      'B2B food ingredient & chemicals supplier from India. Dehydrated onions, garlic, spices, powders, herbs, dyes, food colours & more. 499 products, FSSAI-licensed, global shipping.',
     url: siteUrl,
     locale: 'en',
     images: [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Traya International Exim LLP | Indian Food Ingredient Exporter',
-    description: 'B2B food ingredient & chemicals supplier from India. 500+ products, FSSAI-licensed, global shipping.'
+    description: 'B2B food ingredient & chemicals supplier from India. 499 products, FSSAI-licensed, global shipping.'
   },
   robots: {
     index: true,

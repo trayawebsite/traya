@@ -28,7 +28,7 @@ export const homePage = defineType({
           name: 'statLine',
           title: 'Stat line',
           type: 'string',
-          description: 'e.g. "500+ products · 30 categories · India origin" (· separated)'
+          description: 'e.g. "499 products · 30 categories · India origin" (· separated)'
         }),
         defineField({name: 'image', type: 'image', options: {hotspot: true}})
       ]

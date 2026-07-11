@@ -158,7 +158,7 @@ docs.push({
     sub: "Premium agricultural and food ingredients, sourced and processed in India, exported with the documentation and care global trade demands.",
     ctaPrimaryLabel: "Request a sample",
     ctaSecondaryLabel: "Browse the range",
-    statLine: "500+ products · 30 categories · India origin",
+    statLine: "499 products · 30 categories · India origin",
   },
   intro: {
     _type: "object",
@@ -171,7 +171,7 @@ docs.push({
     {
       _type: "stat",
       _key: "products",
-      value: "500+",
+      value: "499",
       label: "Products in the catalogue",
     },
     {
@@ -198,7 +198,7 @@ docs.push({
     eyebrow: "What we export",
     heading: "Thirty categories, one accountable partner.",
     sub: "From dehydrated alliums to spray-dried powders, whole and ground spices, culinary herbs, herbal & nutraceutical powders, and industrial chemicals, dyes and colours. Browse by what you make.",
-    specLine: "6 groups · 30 categories · 500+ SKUs",
+    specLine: "6 groups · 30 categories · 499 SKUs",
   },
   why: {
     _type: "object",
