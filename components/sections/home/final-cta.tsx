@@ -1,13 +1,13 @@
-import {getTranslations} from 'next-intl/server';
-import {whatsAppHref} from '@/lib/whatsapp';
-import {Container} from '@/components/ui/container';
-import {primaryButtonDark} from '@/lib/button-styles';
-import {secondaryBtnDark} from './styles';
-import type {HomePage} from '@/sanity/lib/types';
+import { getTranslations } from "next-intl/server";
+import { whatsAppHref } from "@/lib/whatsapp";
+import { Container } from "@/components/ui/container";
+import { primaryButtonDark } from "@/lib/button-styles";
+import { secondaryBtnDark } from "./styles";
+import type { HomePage } from "@/sanity/lib/types";
 
-type FinalCtaData = HomePage['finalCta'];
+type FinalCtaData = HomePage["finalCta"];
 
-// Reusable closing CTA band — a drifting vermilion glow on the deep espresso.
+// Reusable closing CTA band   a drifting vermilion glow on the deep espresso.
 // Content precedence: explicit props > Sanity data > i18n (Home.finalCta).
 // Primary → enquiry form; the WhatsApp secondary is standard on every instance.
 // Reuse it on any page by passing heading/sub/ctaLabel.
@@ -16,7 +16,7 @@ export async function FinalCta({
   heading: headingProp,
   sub: subProp,
   ctaLabel: ctaLabelProp,
-  actions = true
+  actions = true,
 }: {
   data?: FinalCtaData;
   heading?: string;
@@ -25,14 +25,14 @@ export async function FinalCta({
   // When false, renders as a text-only statement band (no CTA buttons).
   actions?: boolean;
 }) {
-  const t = await getTranslations('Home.finalCta');
-  const th = await getTranslations('Header');
-  const waHref = whatsAppHref(th('whatsappMessage'));
+  const t = await getTranslations("Home.finalCta");
+  const th = await getTranslations("Header");
+  const waHref = whatsAppHref(th("whatsappMessage"));
 
-  const heading = headingProp || data?.heading || t('heading');
-  const sub = subProp || data?.sub || t('sub');
-  const ctaLabel = ctaLabelProp || data?.ctaLabel || t('cta');
-  const whatsappLabel = t('whatsapp');
+  const heading = headingProp || data?.heading || t("heading");
+  const sub = subProp || data?.sub || t("sub");
+  const ctaLabel = ctaLabelProp || data?.ctaLabel || t("cta");
+  const whatsappLabel = t("whatsapp");
 
   return (
     <section className="relative isolate overflow-hidden bg-traya-deep text-traya-cream">

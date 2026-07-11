@@ -1,6 +1,6 @@
 import {Resend} from 'resend';
 
-// Lazy singleton — NEVER instantiate at module load. A missing RESEND_API_KEY
+// Lazy singleton   NEVER instantiate at module load. A missing RESEND_API_KEY
 // must not crash the build (Vercel) or route data-collection. Returns null when
 // unconfigured; callers degrade gracefully.
 let client: Resend | null = null;

@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Cách Chúng Tôi Làm Việc — Traya International Exim",
+      "title": "Cách Chúng Tôi Làm Việc   Traya International Exim",
       "description": "Cách Traya quản lý hoạt động xuất khẩu của bạn từ khi hỏi hàng đến khi giao hàng: tìm nguồn cung ứng, kiểm định chất lượng, chứng từ, hậu cần và vận chuyển bằng đường biển, đường hàng không hoặc chuyển phát nhanh."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Trợ lý Traya",
     "subtitle": "Hỏi về sản phẩm & cách chúng tôi làm việc",
-    "greeting": "Xin chào! Tôi là trợ lý ảo của Traya. Hãy hỏi tôi về sản phẩm, danh mục, mẫu hàng, hoặc cách hợp tác với chúng tôi — tôi luôn sẵn sàng hỗ trợ.",
+    "greeting": "Xin chào! Tôi là trợ lý ảo của Traya. Hãy hỏi tôi về sản phẩm, danh mục, mẫu hàng, hoặc cách hợp tác với chúng tôi   tôi luôn sẵn sàng hỗ trợ.",
     "chip1": "Bạn xuất khẩu những gì?",
     "chip2": "Việc lấy mẫu hàng diễn ra như thế nào?",
     "chip3": "Làm sao để đặt hàng?",
@@ -126,7 +126,7 @@
     "whatsapp": "Nhắn tin qua WhatsApp",
     "chat": "Trò chuyện với chúng tôi",
     "whatsappMessage": "Xin chào Traya International Exim, tôi muốn hỏi về các sản phẩm nguyên liệu thực phẩm xuất khẩu của quý công ty.\n\nSản phẩm: \nSố lượng / phẩm cấp: \nQuốc gia điểm đến: \nCông ty: ",
-    "siteLabel": "Traya International Exim — trang chủ",
+    "siteLabel": "Traya International Exim   trang chủ",
     "menuAria": "Menu",
     "navAria": "Di động",
     "dismissAria": "Đóng",
@@ -252,7 +252,7 @@
     "messageSample": "Yêu cầu: Mẫu hàng có tính phí (người mua thanh toán chi phí mẫu + vận chuyển)",
     "reassurance": "Thường phản hồi trong vòng 1 ngày làm việc · Không ràng buộc.",
     "successHeading": "Đã nhận được yêu cầu.",
-    "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét yêu cầu của bạn và phản hồi với giá cả, số lượng đặt hàng tối thiểu, đóng gói và thời gian giao hàng — thường trong vòng một ngày làm việc.",
+    "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét yêu cầu của bạn và phản hồi với giá cả, số lượng đặt hàng tối thiểu, đóng gói và thời gian giao hàng   thường trong vòng một ngày làm việc.",
     "trust": {
       "eyebrow": "Những gì bạn có thể mong đợi",
       "heading": "Một báo giá rõ ràng, đầy đủ.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Công ty xuất khẩu Ấn Độ",
+      "title": "Traya International Exim LLP   Công ty xuất khẩu Ấn Độ",
       "description": "Traya International Exim là một công ty xuất khẩu đa lĩnh vực của Ấn Độ, giúp người mua toàn cầu tìm nguồn nguyên liệu thực phẩm, gia vị, sản phẩm sấy khô, bột và thảo dược từ Ấn Độ."
     },
     "hero": {
       "eyebrow": "Mở rộng chân trời thông qua thương mại.",
       "heading": "Đối tác đáng tin cậy của bạn trong việc tìm nguồn hàng từ Ấn Độ.",
-      "sub": "Traya cam kết xây dựng những mối quan hệ đối tác toàn cầu bền vững thông qua sự tin tưởng, độ tin cậy và cách thực hiện chuyên nghiệp. Với danh mục sản phẩm chất lượng ngày càng mở rộng và cách tiếp cận lấy khách hàng làm trọng tâm, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại quốc tế.",
+      "sub": "Traya cam kết xây dựng những mối quan hệ đối tác toàn cầu bền vững thông qua sự tin tưởng, độ tin cậy và cách thực hiện chuyên nghiệp. Với danh mục sản phẩm chất lượng ngày càng mở rộng, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại quốc tế.",
       "cta": "Khám phá sản phẩm",
       "ctaEnquiry": "Chia sẻ yêu cầu của bạn",
       "stat": "Thực phẩm, Nông sản & Hóa chất · 499 sản phẩm · 30 danh mục",
@@ -283,7 +283,7 @@
       "eyebrow": "Traya hỗ trợ như thế nào",
       "heading": "Kết nối cơ hội toàn cầu với",
       "headingAccent": "cách thực hiện đáng tin cậy.",
-      "body": "Từ việc xác định đúng sản phẩm đến giao hàng tới điểm đến của bạn, chúng tôi quản lý từng bước với sự chu đáo, tuân thủ và cam kết. Luôn được cập nhật, luôn tự tin — với một đầu mối liên hệ duy nhất.",
+      "body": "Từ việc xác định đúng sản phẩm đến giao hàng tới điểm đến của bạn, chúng tôi quản lý từng bước với sự chu đáo, tuân thủ và cam kết. Luôn được cập nhật, luôn tự tin   với một đầu mối liên hệ duy nhất.",
       "f1Title": "Tìm nguồn sản phẩm",
       "f1Body": "Chúng tôi hợp tác với mạng lưới đối tác chú trọng chất lượng để mang đến cho bạn những sản phẩm đáng tin cậy.",
       "f2Title": "Chứng từ xuất khẩu",
@@ -292,12 +292,12 @@
       "f3Body": "Hậu cần đáng tin cậy và giao hàng đúng hạn trên toàn thế giới."
     },
     "stats": {
-      "s1": "Toàn cầu",
-      "s1Sub": "Đối tác thương mại",
-      "s2": "Đáng tin cậy",
-      "s2Sub": "Quan hệ đối tác",
-      "s3": "Mở rộng",
-      "s3Sub": "Danh mục sản phẩm",
+      "s1": "499",
+      "s1Sub": "Sản phẩm niêm yết",
+      "s2": "30",
+      "s2Sub": "Danh mục",
+      "s3": "Đáng tin cậy",
+      "s3Sub": "Quan hệ đối tác",
       "s4": "100%",
       "s4Sub": "Nguồn hàng từ Ấn Độ"
     },
@@ -306,7 +306,7 @@
       "heading": "Chúng tôi xuất khẩu những gì",
       "sub": "Danh mục sản phẩm của chúng tôi được thiết kế để hỗ trợ các doanh nghiệp thuộc nhiều ngành khác nhau. Khi chúng tôi phát triển, danh mục sản phẩm cũng mở rộng theo.",
       "foodTitle": "Sản phẩm Thực phẩm & Nông sản",
-      "foodBody": "Các sản phẩm nông nghiệp cao cấp có nguồn gốc từ các nhà sản xuất Ấn Độ đáng tin cậy, phù hợp với các tiêu chuẩn chất lượng và an toàn quốc tế.",
+      "foodBody": "Các sản phẩm nông nghiệp cao cấp có nguồn gốc từ các nhà sản xuất Ấn Độ đáng tin cậy, phù hợp với các tiêu chuẩn chất lượng quốc tế.",
       "foodCta": "Xem sản phẩm Thực phẩm & Nông sản",
       "chemTitle": "Hóa chất",
       "chemBody": "Hóa chất công nghiệp và chuyên dụng phục vụ nhiều ứng dụng sản xuất trên các thị trường toàn cầu.",
@@ -409,9 +409,9 @@
       "eyebrow": "Đôi lời từ nhà sáng lập",
       "name": "Neha Pardeshi",
       "role": "Nhà sáng lập & Giám đốc điều hành",
-      "p1": "Thế giới không mở ra với tôi qua sách vở — mà mở ra qua những chuyến đi. Khám phá những nền văn hóa khác nhau, gặp gỡ những con người từ mọi tầng lớp, và nhìn thế giới qua nhiều góc nhìn khác nhau đã định hình không chỉ con người tôi, mà còn cả những gì tôi chọn để xây dựng.",
-      "p2": "Tôi luôn tin rằng thương mại toàn cầu, xét cho cùng, là về sự kết nối giữa con người với con người. Đằng sau mỗi lô hàng, mỗi sản phẩm và mỗi mối quan hệ đối tác là một mối quan hệ được xây dựng trên sự tin tưởng và thấu hiểu — điều mà không một thuật toán hay hệ thống tự động hóa nào có thể thực sự thay thế.",
-      "p3": "Tại Traya International EXIM, mục tiêu của chúng tôi không đơn thuần là tạo điều kiện cho thương mại, mà là xây dựng những mối quan hệ ý nghĩa và lâu dài xuyên biên giới — những mối quan hệ ngày càng bền chặt hơn qua mỗi giao dịch và mỗi cuộc trò chuyện.",
+      "p1": "Thế giới không mở ra với tôi qua sách vở   mà mở ra qua những chuyến đi. Khám phá những nền văn hóa khác nhau, gặp gỡ những con người từ mọi tầng lớp, và nhìn thế giới qua nhiều góc nhìn khác nhau đã định hình không chỉ con người tôi, mà còn cả những gì tôi chọn để xây dựng.",
+      "p2": "Tôi luôn tin rằng thương mại toàn cầu, xét cho cùng, là về sự kết nối giữa con người với con người. Đằng sau mỗi lô hàng, mỗi sản phẩm và mỗi mối quan hệ đối tác là một mối quan hệ được xây dựng trên sự tin tưởng và thấu hiểu   điều mà không một thuật toán hay hệ thống tự động hóa nào có thể thực sự thay thế.",
+      "p3": "Tại Traya International EXIM, mục tiêu của chúng tôi không đơn thuần là tạo điều kiện cho thương mại, mà là xây dựng những mối quan hệ ý nghĩa và lâu dài xuyên biên giới   những mối quan hệ ngày càng bền chặt hơn qua mỗi giao dịch và mỗi cuộc trò chuyện.",
       "p4": "Những gì bắt đầu như một niềm đam mê khám phá thế giới đã phát triển thành một doanh nghiệp được thúc đẩy bởi sự cam kết, chính trực và một tầm nhìn thực sự toàn cầu. Và chúng tôi mới chỉ bắt đầu.",
       "p5": "Cảm ơn bạn đã tin tưởng chúng tôi và chọn trở thành một phần của hành trình này."
     },
@@ -492,11 +492,11 @@
       "error": "Đã xảy ra sự cố. Vui lòng thử lại, hoặc gửi email trực tiếp cho chúng tôi.",
       "rateLimited": "Bạn đã đạt giới hạn hôm nay. Vui lòng gửi email hoặc nhắn tin cho chúng tôi qua WhatsApp.",
       "point1": "Chúng tôi phản hồi trong vòng một ngày làm việc",
-      "point2": "Tìm nguồn hàng, mẫu hàng, giá cả và chứng từ — hãy hỏi chúng tôi bất cứ điều gì",
+      "point2": "Tìm nguồn hàng, mẫu hàng, giá cả và chứng từ   hãy hỏi chúng tôi bất cứ điều gì",
       "point3": "Đường dây liên hệ trực tiếp với bộ phận thương mại của chúng tôi",
       "reassurance": "Thường phản hồi trong vòng 1 ngày làm việc · Không ràng buộc.",
       "successHeading": "Đã gửi tin nhắn.",
-      "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét tin nhắn của bạn và phản hồi lại — thường trong vòng một ngày làm việc."
+      "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét tin nhắn của bạn và phản hồi lại   thường trong vòng một ngày làm việc."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Sản phẩm",
-      "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya — 499 sản phẩm trên 30 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
+      "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya   499 sản phẩm trên 30 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
     },
     "hub": {
       "eyebrow": "Catalogue Thực phẩm & Nông sản",

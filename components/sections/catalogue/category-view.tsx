@@ -1,22 +1,26 @@
-import {getTranslations} from 'next-intl/server';
-import Image from 'next/image';
-import {Link} from '@/i18n/navigation';
-import {Container} from '@/components/ui/container';
-import {Breadcrumb} from '@/components/ui/breadcrumb';
-import {Reveal} from '@/components/ui/reveal';
-import {primaryButton} from '@/lib/button-styles';
-import {CategoryProductList} from './category-products';
-import {getCategories, type CatalogueCategory} from '@/lib/catalogue';
-import {getSiteSettings} from '@/lib/site-settings';
-import {CertMark} from '@/components/layout/cert-mark';
-import {QuoteForm} from '@/components/sections/quote-form';
+import { getTranslations } from "next-intl/server";
+import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import { Container } from "@/components/ui/container";
+import { Breadcrumb } from "@/components/ui/breadcrumb";
+import { Reveal } from "@/components/ui/reveal";
+import { primaryButton } from "@/lib/button-styles";
+import { CategoryProductList } from "./category-products";
+import { getCategories, type CatalogueCategory } from "@/lib/catalogue";
+import { getSiteSettings } from "@/lib/site-settings";
+import { CertMark } from "@/components/layout/cert-mark";
+import { QuoteForm } from "@/components/sections/quote-form";
 
-// Rich category template — follows the playbook's Kanegrade pattern:
+// Rich category template   follows the playbook's Kanegrade pattern:
 // Hero · Product grid · Sourcing story · Specs & packaging · Certs · Sibling links · CTA
-export async function CategoryView({category}: {category: CatalogueCategory}) {
-  const t = await getTranslations('Catalogue');
-  const tg = await getTranslations('Home.groups');
-  const tl = await getTranslations('Links');
+export async function CategoryView({
+  category,
+}: {
+  category: CatalogueCategory;
+}) {
+  const t = await getTranslations("Catalogue");
+  const tg = await getTranslations("Home.groups");
+  const tl = await getTranslations("Links");
   const count = category.products.length;
 
   // Fetch sibling categories (same group)
@@ -29,7 +33,12 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
   const s = await getSiteSettings();
 
   // Deterministic image assignment (t1.png to t5.png)
-  const imageIndex = (category.title.split('').reduce((acc, char) => acc + char.charCodeAt(0), 0) % 5) + 1;
+  const imageIndex =
+    (category.title
+      .split("")
+      .reduce((acc, char) => acc + char.charCodeAt(0), 0) %
+      5) +
+    1;
   const heroImageSrc = `/t${imageIndex}.png`;
 
   return (
@@ -39,9 +48,9 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
         <Container className="py-section-lg">
           <Breadcrumb
             items={[
-              {label: tl('home'), href: '/'},
-              {label: tl('products'), href: '/products'},
-              {label: category.title}
+              { label: tl("home"), href: "/" },
+              { label: tl("products"), href: "/products" },
+              { label: category.title },
             ]}
           />
           <div className="mt-8 grid gap-12 lg:grid-cols-12 lg:items-center">
@@ -51,7 +60,7 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                 {category.title}
               </h1>
               <p className="mt-4 text-lg text-muted-foreground">
-                {count} {count === 1 ? t('product') : t('products')}
+                {count} {count === 1 ? t("product") : t("products")}
               </p>
               {category.description && (
                 <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
@@ -59,7 +68,7 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                 </p>
               )}
             </div>
-            
+
             <div className="relative hidden aspect-square w-full lg:block lg:col-span-5 xl:col-span-4">
               <Image
                 src={heroImageSrc}
@@ -78,7 +87,9 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
       <Reveal>
         <section className="bg-traya-surface">
           <Container className="py-section">
-            <h2 className="font-display text-display-sm text-foreground">{t('category.rangeHeading')}</h2>
+            <h2 className="font-display text-display-sm text-foreground">
+              {t("category.rangeHeading")}
+            </h2>
             <CategoryProductList
               products={category.products.map((p) => ({
                 name: p.name,
@@ -87,27 +98,42 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                 images: p.images,
                 series: p.series,
                 colourIndex: p.colourIndex,
-                packSizes: p.packSizes
+                packSizes: p.packSizes,
               }))}
               labels={{
-                search: t('category.search'),
-                noResults: t('category.noResults')
+                search: t("category.search"),
+                noResults: t("category.noResults"),
               }}
               categoryTitle={category.title}
               specs={
                 category.moqPackaging && category.moqPackaging.length > 0
-                  ? category.moqPackaging.map((s) => ({label: s.label, value: s.value}))
+                  ? category.moqPackaging.map((s) => ({
+                      label: s.label,
+                      value: s.value,
+                    }))
                   : [
-                      {label: t('category.specOrigin'), value: t('category.specOriginVal')},
-                      {label: t('category.specMoq'), value: t('category.specMoqVal')},
-                      {label: t('category.specPackaging'), value: t('category.specPackagingVal')},
-                      {label: t('category.specIncoterms'), value: t('category.specIncotermsVal')}
+                      {
+                        label: t("category.specOrigin"),
+                        value: t("category.specOriginVal"),
+                      },
+                      {
+                        label: t("category.specMoq"),
+                        value: t("category.specMoqVal"),
+                      },
+                      {
+                        label: t("category.specPackaging"),
+                        value: t("category.specPackagingVal"),
+                      },
+                      {
+                        label: t("category.specIncoterms"),
+                        value: t("category.specIncotermsVal"),
+                      },
                     ]
               }
             />
             <div className="mt-10">
               <a href="#enquiry" className={primaryButton}>
-                {t('category.enquireCta')}
+                {t("category.enquireCta")}
               </a>
             </div>
           </Container>
@@ -120,14 +146,16 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
           <Container className="py-section">
             <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
               <div>
-                <p className="section-label">{t('category.sourcingHeading')}</p>
+                <p className="section-label">{t("category.sourcingHeading")}</p>
                 <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                  {t('category.sourcingBody')}
+                  {t("category.sourcingBody")}
                 </p>
                 {/* Quality & Compliance from Sanity */}
                 {category.qualityCompliance && (
                   <div className="mt-6 rounded-xl border border-traya-border bg-traya-surface p-4">
-                    <h3 className="font-display text-base text-foreground">{t('category.certsHeading')}</h3>
+                    <h3 className="font-display text-base text-foreground">
+                      {t("category.certsHeading")}
+                    </h3>
                     <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                       {category.qualityCompliance}
                     </p>
@@ -135,36 +163,61 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                 )}
               </div>
               <div className="rounded-2xl border border-traya-border bg-traya-surface p-6">
-                <h3 className="font-display text-lg text-foreground">{t('category.specsHeading')}</h3>
+                <h3 className="font-display text-lg text-foreground">
+                  {t("category.specsHeading")}
+                </h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {t('category.specsNote')}
+                  {t("category.specsNote")}
                 </p>
                 {/* MOQ & Packaging from Sanity or defaults */}
                 <dl className="mt-4 space-y-2">
                   {category.moqPackaging && category.moqPackaging.length > 0 ? (
                     category.moqPackaging.map((spec, i) => (
-                      <div key={i} className="flex justify-between border-b border-traya-border pb-2 last:border-0">
-                        <dt className="text-sm text-muted-foreground">{spec.label}</dt>
-                        <dd className="text-sm font-medium text-foreground">{spec.value}</dd>
+                      <div
+                        key={i}
+                        className="flex justify-between border-b border-traya-border pb-2 last:border-0"
+                      >
+                        <dt className="text-sm text-muted-foreground">
+                          {spec.label}
+                        </dt>
+                        <dd className="text-sm font-medium text-foreground">
+                          {spec.value}
+                        </dd>
                       </div>
                     ))
                   ) : (
                     <>
                       <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">{t('category.specOrigin')}</dt>
-                        <dd className="text-sm font-medium text-foreground">{t('category.specOriginVal')}</dd>
+                        <dt className="text-sm text-muted-foreground">
+                          {t("category.specOrigin")}
+                        </dt>
+                        <dd className="text-sm font-medium text-foreground">
+                          {t("category.specOriginVal")}
+                        </dd>
                       </div>
                       <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">{t('category.specMoq')}</dt>
-                        <dd className="text-sm font-medium text-foreground">{t('category.specMoqVal')}</dd>
+                        <dt className="text-sm text-muted-foreground">
+                          {t("category.specMoq")}
+                        </dt>
+                        <dd className="text-sm font-medium text-foreground">
+                          {t("category.specMoqVal")}
+                        </dd>
                       </div>
                       <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">{t('category.specPackaging')}</dt>
-                        <dd className="text-sm font-medium text-foreground">{t('category.specPackagingVal')}</dd>
+                        <dt className="text-sm text-muted-foreground">
+                          {t("category.specPackaging")}
+                        </dt>
+                        <dd className="text-sm font-medium text-foreground">
+                          {t("category.specPackagingVal")}
+                        </dd>
                       </div>
                       <div className="flex justify-between">
-                        <dt className="text-sm text-muted-foreground">{t('category.specIncoterms')}</dt>
-                        <dd className="text-sm font-medium text-foreground">{t('category.specIncotermsVal')}</dd>
+                        <dt className="text-sm text-muted-foreground">
+                          {t("category.specIncoterms")}
+                        </dt>
+                        <dd className="text-sm font-medium text-foreground">
+                          {t("category.specIncotermsVal")}
+                        </dd>
                       </div>
                     </>
                   )}
@@ -175,13 +228,22 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
             {/* Applications from Sanity */}
             {category.applications && category.applications.length > 0 && (
               <div className="mt-12">
-                <h3 className="font-display text-lg text-foreground">{t('category.applicationsHeading')}</h3>
+                <h3 className="font-display text-lg text-foreground">
+                  {t("category.applicationsHeading")}
+                </h3>
                 <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
                   {category.applications.map((app, i) => (
-                    <div key={i} className="rounded-xl border border-traya-border bg-card p-4">
-                      <p className="font-display text-base text-foreground">{app.title}</p>
+                    <div
+                      key={i}
+                      className="rounded-xl border border-traya-border bg-card p-4"
+                    >
+                      <p className="font-display text-base text-foreground">
+                        {app.title}
+                      </p>
                       {app.description && (
-                        <p className="mt-1 text-sm text-muted-foreground">{app.description}</p>
+                        <p className="mt-1 text-sm text-muted-foreground">
+                          {app.description}
+                        </p>
                       )}
                     </div>
                   ))}
@@ -197,8 +259,10 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
         <Reveal>
           <section className="bg-traya-surface">
             <Container className="py-section">
-              <p className="section-label">{t('category.certsHeading')}</p>
-              <p className="mt-4 max-w-2xl text-muted-foreground">{t('category.certsNote')}</p>
+              <p className="section-label">{t("category.certsHeading")}</p>
+              <p className="mt-4 max-w-2xl text-muted-foreground">
+                {t("category.certsNote")}
+              </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 {s.certifications.map((cert) => (
                   <div
@@ -206,9 +270,15 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                     className="flex items-center gap-3 rounded-xl border border-traya-border bg-card px-4 py-3"
                   >
                     <span className="flex h-10 w-12 items-center justify-center">
-                      <CertMark name={cert.name} src={cert.file} boost={cert.boost} />
+                      <CertMark
+                        name={cert.name}
+                        src={cert.file}
+                        boost={cert.boost}
+                      />
                     </span>
-                    <span className="text-sm font-medium text-foreground">{cert.name}</span>
+                    <span className="text-sm font-medium text-foreground">
+                      {cert.name}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -222,7 +292,9 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
         <Reveal>
           <section className="border-b border-traya-border bg-background">
             <Container className="py-section">
-              <h2 className="font-display text-display-sm text-foreground">{t('category.siblingHeading')}</h2>
+              <h2 className="font-display text-display-sm text-foreground">
+                {t("category.siblingHeading")}
+              </h2>
               <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {siblings.map((sib) => (
                   <li key={sib.slug}>
@@ -231,9 +303,14 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
                       className="group flex items-center justify-between gap-3 rounded-2xl border border-traya-border bg-card p-4 shadow-sm transition-all duration-300 hover:border-traya-saffron/40 hover:shadow-md"
                     >
                       <div>
-                        <span className="font-display text-base text-foreground">{sib.title}</span>
+                        <span className="font-display text-base text-foreground">
+                          {sib.title}
+                        </span>
                         <span className="mt-0.5 block text-xs text-muted-foreground">
-                          {sib.products.length} {sib.products.length === 1 ? t('product') : t('products')}
+                          {sib.products.length}{" "}
+                          {sib.products.length === 1
+                            ? t("product")
+                            : t("products")}
                         </span>
                       </div>
                       <svg
@@ -257,11 +334,17 @@ export async function CategoryView({category}: {category: CatalogueCategory}) {
         </Reveal>
       )}
 
-      {/* 6. Quote request form (icon form — self-contained heading + trust panel) */}
+      {/* 6. Quote request form (icon form   self-contained heading + trust panel) */}
       <Reveal>
-        <section id="enquiry" className="border-t border-traya-border bg-background scroll-mt-24">
+        <section
+          id="enquiry"
+          className="border-t border-traya-border bg-background scroll-mt-24"
+        >
           <Container className="py-section">
-            <QuoteForm productName={category.title} testimonials={s.testimonials} />
+            <QuoteForm
+              productName={category.title}
+              testimonials={s.testimonials}
+            />
           </Container>
         </section>
       </Reveal>

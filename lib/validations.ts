@@ -3,7 +3,7 @@ import {z} from 'zod';
 // A translator: maps a `Validation.*` message key to a localized string.
 type T = (key: string) => string;
 
-// Default (English) messages — used by the STATIC schemas below, which back the
+// Default (English) messages   used by the STATIC schemas below, which back the
 // server-side API re-validation and type inference. Server validation messages
 // are never shown to a user (the API returns a generic "Validation failed"), so
 // English here is fine. Client forms pass next-intl's t('Validation') instead,
@@ -66,7 +66,7 @@ export function makeQuoteSchema(t: T = en) {
   });
 }
 
-// Static (English) schemas — used by the API routes (server re-validation) and
+// Static (English) schemas   used by the API routes (server re-validation) and
 // for type inference. Client forms build localized schemas via the make* fns.
 export const contactSchema = makeContactSchema();
 export const inquirySchema = makeInquirySchema();

@@ -237,12 +237,14 @@
 @keyframes hero-slide {
   0%    { opacity: 0; }
   4%    { opacity: 1; }
-  10%   { opacity: 1; }
-  14%   { opacity: 0; }
+  14%   { opacity: 1; }
+  20%   { opacity: 0; }
   100%  { opacity: 0; }
 }
 .hero-slide {
-  animation: hero-slide 35s linear infinite;
+  /* Duration is overridden inline (image count × 3.5s); this is the fallback.
+     The 20% on-window overlaps the per-image slot so slides always crossfade. */
+  animation: hero-slide 21s linear infinite;
 }
 @media (prefers-reduced-motion: reduce) {
   .hero-slide { animation: none; opacity: 0; }

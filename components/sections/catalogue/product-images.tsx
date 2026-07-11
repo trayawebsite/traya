@@ -1,13 +1,19 @@
-'use client';
+"use client";
 
-import {useState} from 'react';
-import Image from 'next/image';
-import {urlForImage} from '@/sanity/lib/image';
-import type {SanityImage} from '@/sanity/lib/types';
+import { useState } from "react";
+import Image from "next/image";
+import { urlForImage } from "@/sanity/lib/image";
+import type { SanityImage } from "@/sanity/lib/types";
 
-// Product image gallery — main image + thumbnail strip. Gracefully handles
+// Product image gallery   main image + thumbnail strip. Gracefully handles
 // missing images with a placeholder.
-export function ProductImages({images, name}: {images: SanityImage[]; name: string}) {
+export function ProductImages({
+  images,
+  name,
+}: {
+  images: SanityImage[];
+  name: string;
+}) {
   const [active, setActive] = useState(0);
 
   if (images.length === 0) return null;
@@ -36,7 +42,9 @@ export function ProductImages({images, name}: {images: SanityImage[]; name: stri
               key={i}
               onClick={() => setActive(i)}
               className={`relative size-16 shrink-0 overflow-hidden rounded-lg border-2 transition-colors ${
-                i === active ? 'border-traya-red' : 'border-traya-border hover:border-traya-red/50'
+                i === active
+                  ? "border-traya-red"
+                  : "border-traya-border hover:border-traya-red/50"
               }`}
             >
               <Image

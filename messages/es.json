@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Cómo Trabajamos — Traya International Exim",
+      "title": "Cómo Trabajamos   Traya International Exim",
       "description": "Cómo gestiona Traya su exportación desde la consulta hasta la entrega: abastecimiento, verificación de calidad, documentación, logística y envío por mar, aire o mensajería."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Asistente Traya",
     "subtitle": "Pregunte sobre nuestros productos y cómo trabajamos",
-    "greeting": "¡Hola! Soy el asistente de Traya. Pregúnteme sobre nuestros productos, categorías, muestras, o cómo trabajar con nosotros — estoy aquí para ayudar.",
+    "greeting": "¡Hola! Soy el asistente de Traya. Pregúnteme sobre nuestros productos, categorías, muestras, o cómo trabajar con nosotros   estoy aquí para ayudar.",
     "chip1": "¿Qué exportan?",
     "chip2": "¿Cómo funcionan las muestras?",
     "chip3": "¿Cómo hago un pedido?",
@@ -126,7 +126,7 @@
     "whatsapp": "Chatear por WhatsApp",
     "chat": "Chatee con nosotros",
     "whatsappMessage": "Hola Traya International Exim, quisiera consultar sobre sus exportaciones de ingredientes alimentarios.\n\nProducto(s): \nCantidad / grado: \nPaís de destino: \nEmpresa: ",
-    "siteLabel": "Traya International Exim — inicio",
+    "siteLabel": "Traya International Exim   inicio",
     "menuAria": "Menú",
     "navAria": "Móvil",
     "dismissAria": "Cerrar",
@@ -252,7 +252,7 @@
     "messageSample": "Solicitud: Muestra paga (el comprador paga el costo de la muestra y el envío)",
     "reassurance": "Normalmente respondemos en 1 día hábil · Sin compromiso.",
     "successHeading": "Solicitud recibida.",
-    "successBody": "Gracias. Nuestro equipo revisará su necesidad y responderá con el precio, la cantidad mínima de pedido, el empaque y el plazo de entrega — habitualmente en un día hábil.",
+    "successBody": "Gracias. Nuestro equipo revisará su necesidad y responderá con el precio, la cantidad mínima de pedido, el empaque y el plazo de entrega   habitualmente en un día hábil.",
     "trust": {
       "eyebrow": "Qué esperar",
       "heading": "Una cotización clara y completa.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Empresa Exportadora India",
+      "title": "Traya International Exim LLP   Empresa Exportadora India",
       "description": "Traya International Exim es una casa exportadora india multisectorial que ayuda a compradores globales a abastecerse de ingredientes alimentarios, especias, productos deshidratados, polvos y hierbas desde India."
     },
     "hero": {
       "eyebrow": "Ampliando Horizontes a Través del Comercio.",
       "heading": "Su socio de confianza para abastecerse desde India.",
-      "sub": "Traya se compromete a construir alianzas globales duraderas a través de la confianza, la fiabilidad y la ejecución profesional. Con un portafolio de productos de calidad en constante crecimiento y un enfoque centrado en el cliente, ayudamos a las empresas a navegar el comercio internacional con confianza.",
+      "sub": "Traya se compromete a construir alianzas globales duraderas a través de la confianza, la fiabilidad y la ejecución profesional. Con un portafolio de productos de calidad en constante crecimiento, ayudamos a las empresas a navegar el comercio internacional con confianza.",
       "cta": "Explorar Productos",
       "ctaEnquiry": "Comparta su necesidad",
       "stat": "Alimentos, Agro y Químicos · 499 productos · 30 categorías",
@@ -283,7 +283,7 @@
       "eyebrow": "Cómo ayuda Traya",
       "heading": "Conectando oportunidades globales con una",
       "headingAccent": "ejecución de confianza.",
-      "body": "Desde identificar los productos correctos hasta entregarlos en su destino, gestionamos cada paso con cuidado, cumplimiento normativo y compromiso. Manténgase informado, manténgase seguro — con un único punto de contacto.",
+      "body": "Desde identificar los productos correctos hasta entregarlos en su destino, gestionamos cada paso con cuidado, cumplimiento normativo y compromiso. Manténgase informado, manténgase seguro   con un único punto de contacto.",
       "f1Title": "Abastecimiento de Productos",
       "f1Body": "Trabajamos con una red de socios centrados en la calidad para ofrecerle productos confiables.",
       "f2Title": "Documentación de Exportación",
@@ -292,12 +292,12 @@
       "f3Body": "Logística confiable y entrega puntual en todo el mundo."
     },
     "stats": {
-      "s1": "Global",
-      "s1Sub": "Socio Comercial",
-      "s2": "De Confianza",
-      "s2Sub": "Alianzas",
-      "s3": "En Expansión",
-      "s3Sub": "Portafolio",
+      "s1": "499",
+      "s1Sub": "Productos listados",
+      "s2": "30",
+      "s2Sub": "Categorías",
+      "s3": "De Confianza",
+      "s3Sub": "Alianzas",
       "s4": "100%",
       "s4Sub": "Abastecido desde India"
     },
@@ -306,7 +306,7 @@
       "heading": "Lo Que Exportamos",
       "sub": "Nuestro portafolio está diseñado para dar soporte a empresas de múltiples industrias. A medida que crecemos, también lo hace nuestra gama.",
       "foodTitle": "Productos Alimentarios y Agro",
-      "foodBody": "Productos agrícolas premium abastecidos de fabricantes indios de confianza, alineados con los estándares internacionales de calidad y seguridad.",
+      "foodBody": "Productos agrícolas premium abastecidos de fabricantes indios de confianza, alineados con los estándares internacionales de calidad.",
       "foodCta": "Ver Productos Alimentarios y Agro",
       "chemTitle": "Químicos",
       "chemBody": "Químicos industriales y especializados que dan servicio a diversas aplicaciones de manufactura en mercados globales.",
@@ -410,8 +410,8 @@
       "name": "Neha Pardeshi",
       "role": "Fundadora y CEO",
       "p1": "El mundo no se abrió ante mí a través de los libros de texto, sino a través de los viajes. Explorar diferentes culturas, conocer personas de toda condición, y ver el mundo desde perspectivas distintas moldeó no solo quién soy, sino también lo que decidí construir.",
-      "p2": "Siempre he creído que el comercio global es, en última instancia, una cuestión de conexión humana. Detrás de cada envío, cada producto y cada alianza hay una relación construida sobre confianza y entendimiento — algo que ningún algoritmo o automatización puede realmente reemplazar.",
-      "p3": "En Traya International EXIM, nuestro objetivo no es simplemente facilitar el comercio, sino construir relaciones significativas y duraderas a través de las fronteras — relaciones que se fortalecen con cada transacción y cada conversación.",
+      "p2": "Siempre he creído que el comercio global es, en última instancia, una cuestión de conexión humana. Detrás de cada envío, cada producto y cada alianza hay una relación construida sobre confianza y entendimiento   algo que ningún algoritmo o automatización puede realmente reemplazar.",
+      "p3": "En Traya International EXIM, nuestro objetivo no es simplemente facilitar el comercio, sino construir relaciones significativas y duraderas a través de las fronteras   relaciones que se fortalecen con cada transacción y cada conversación.",
       "p4": "Lo que comenzó como una pasión por explorar el mundo ha evolucionado hacia un negocio impulsado por el compromiso, la integridad y una visión verdaderamente global. Y apenas estamos comenzando.",
       "p5": "Gracias por confiar en nosotros y por elegir ser parte de este camino."
     },
@@ -492,11 +492,11 @@
       "error": "Algo salió mal. Inténtelo de nuevo o escríbanos directamente por correo electrónico.",
       "rateLimited": "Ha alcanzado el límite de hoy. Escríbanos por correo electrónico o por WhatsApp.",
       "point1": "Respondemos en un día hábil",
-      "point2": "Abastecimiento, muestras, precios y documentación — pregúntenos lo que necesite",
+      "point2": "Abastecimiento, muestras, precios y documentación   pregúntenos lo que necesite",
       "point3": "Una línea directa a nuestro equipo comercial",
       "reassurance": "Normalmente respondemos en 1 día hábil · Sin compromiso.",
       "successHeading": "Mensaje enviado.",
-      "successBody": "Gracias. Nuestro equipo revisará su mensaje y le responderá — habitualmente en un día hábil."
+      "successBody": "Gracias. Nuestro equipo revisará su mensaje y le responderá   habitualmente en un día hábil."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Productos",
-      "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya — 499 productos en 30 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
+      "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya   499 productos en 30 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
     },
     "hub": {
       "eyebrow": "Catálogo Alimentario y Agro",

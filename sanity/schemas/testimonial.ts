@@ -1,6 +1,6 @@
 import {defineField, defineType} from 'sanity';
 
-// Buyer testimonial — client-editable. The home Testimonials section renders
+// Buyer testimonial   client-editable. The home Testimonials section renders
 // these when present (and hides when there are none). Use real, verified quotes
 // only (honesty rule). Anonymised role + region is fine where a name can't be used.
 export const testimonial = defineType({
@@ -17,7 +17,7 @@ export const testimonial = defineType({
     defineField({
       name: 'name',
       type: 'string',
-      description: 'Attribution — a name, or an anonymised role (e.g. "Head of Procurement")',
+      description: 'Attribution   a name, or an anonymised role (e.g. "Head of Procurement")',
       validation: (r) => r.required()
     }),
     defineField({name: 'role', type: 'string', description: 'e.g. "Spice Importer"'}),

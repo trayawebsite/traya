@@ -1,9 +1,9 @@
 import {defineField, defineType} from 'sanity';
 
-// Singleton — the landing page content, fully editable by the client. Mirrors
+// Singleton   the landing page content, fully editable by the client. Mirrors
 // the sections in app/(frontend)/[locale]/page.tsx. The browsable category tiles
 // + testimonials + certifications are their own documents (category/testimonial/
-// certification) — this doc owns the marketing COPY + section headings + images.
+// certification)   this doc owns the marketing COPY + section headings + images.
 const sectionHeading = (collapsed = true) => ({
   options: {collapsible: true, collapsed}
 });

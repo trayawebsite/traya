@@ -1,8 +1,8 @@
-// Primary CTA — the single canonical button, shared site-wide. `primaryBtnDark`
+// Primary CTA   the single canonical button, shared site-wide. `primaryBtnDark`
 // is the same fill with a deep-band focus-ring offset (hero / dark sections).
 export {primaryButton as primaryBtn, primaryButtonDark as primaryBtnDark} from '@/lib/button-styles';
 
-// Gradient-ring secondary button — vermilion hairline that fills + glows on
+// Gradient-ring secondary button   vermilion hairline that fills + glows on
 // hover (see `.btn-ring` in globals.css). Pill shape to match the primary.
 // Used for "Browse the range / all products", "See our capabilities", etc.
 export const secondaryBtn =

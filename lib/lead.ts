@@ -34,7 +34,7 @@ export async function handleLead(
   // Rate limit AFTER validation, so the budget only counts real, well-formed
   // enquiries (a user fixing a typo isn't penalised; bad payloads are rejected
   // cheaply above and never consume the limit). Keyed by IP, shared across all
-  // three lead types — one device gets a few genuine enquiries per 24h.
+  // three lead types   one device gets a few genuine enquiries per 24h.
   const ip = getClientIp(req);
   const limit = rateLimit(`lead:${ip}`);
   if (!limit.ok) {
@@ -79,21 +79,21 @@ export async function handleLead(
     }
   }
 
-  // ── 2) Sheets log (best-effort — never blocks the response) ──────────
+  // ── 2) Sheets log (best-effort   never blocks the response) ──────────
   const sheet = await logLeadToSheet(type, data);
 
   // ── 3) Honest success ───────────────────────────────────────────────
   // A lead is only "delivered" if it reached at least one channel (email OR
-  // the sheet). If BOTH failed, NEVER report success — surface an error so the
+  // the sheet). If BOTH failed, NEVER report success   surface an error so the
   // user reaches out directly, and log the lost lead so it's recoverable.
   const delivered = email.sent || sheet.ok;
   if (!delivered) {
     console.error(
-      `[lead] NOT DELIVERED (${type}) — email: ${email.error ?? 'failed'}; ` +
+      `[lead] NOT DELIVERED (${type})   email: ${email.error ?? 'failed'}; ` +
         `sheet: ${sheet.error ?? (sheet.configured ? 'failed' : 'not configured')}. Payload:`,
       data
     );
-    // Body stays opaque — the failure detail (recipient emails, provider error
+    // Body stays opaque   the failure detail (recipient emails, provider error
     // strings) lives in the server log above, not in the client response.
     return NextResponse.json({ok: false, error: 'delivery_failed'}, {status: 502});
   }
@@ -101,19 +101,19 @@ export async function handleLead(
   // Delivered, but if a channel dropped (e.g. email down, sheet up), leave a
   // server trace instead of failing silently.
   if (!email.sent) {
-    console.warn(`[lead] email not sent (${type}): ${email.error ?? 'unknown'} — captured via sheet.`);
+    console.warn(`[lead] email not sent (${type}): ${email.error ?? 'unknown'}   captured via sheet.`);
   }
 
   // Don't echo `to` (internal recipient addresses) or provider ids to the
-  // client — the form only needs `ok`.
+  // client   the form only needs `ok`.
   return NextResponse.json({ok: true, type});
 }
 
 function subjectFor(type: LeadType, data: LeadData): string {
   const who = data.company ? `${data.name} (${data.company})` : data.name;
-  if (type === 'quote') return `Quote request — ${data.productName || 'general'} — ${who}`;
-  if (type === 'inquiry') return `Product inquiry — ${data.productName || 'general'} — ${who}`;
-  return `Contact form — ${who}`;
+  if (type === 'quote') return `Quote request   ${data.productName || 'general'}   ${who}`;
+  if (type === 'inquiry') return `Product inquiry   ${data.productName || 'general'}   ${who}`;
+  return `Contact form   ${who}`;
 }
 
 function textFor(type: LeadType, data: LeadData): string {

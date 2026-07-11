@@ -1,6 +1,6 @@
 import {defineField, defineType} from 'sanity';
 
-// Reusable title + description block — used for Philosophy, Capabilities, Why Traya.
+// Reusable title + description block   used for Philosophy, Capabilities, Why Traya.
 export const featureItem = defineType({
   name: 'featureItem',
   title: 'Item',

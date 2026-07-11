@@ -1,6 +1,6 @@
 import {defineField, defineType} from 'sanity';
 
-// Singleton — global company info editable by the client.
+// Singleton   global company info editable by the client.
 export const siteSettings = defineType({
   name: 'siteSettings',
   title: 'Site Settings',
@@ -14,12 +14,12 @@ export const siteSettings = defineType({
     defineField({
       name: 'tagline',
       type: 'string',
-      description: 'Primary tagline — e.g. "Building Partnerships Across Continents"'
+      description: 'Primary tagline   e.g. "Building Partnerships Across Continents"'
     }),
     defineField({
       name: 'secondaryTagline',
       type: 'string',
-      description: 'Secondary tagline — e.g. "A Refined Approach to Global Trade"'
+      description: 'Secondary tagline   e.g. "A Refined Approach to Global Trade"'
     }),
     defineField({name: 'about', title: 'About', type: 'array', of: [{type: 'block'}]}),
     defineField({

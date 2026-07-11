@@ -11,9 +11,9 @@ export const runtime = 'nodejs';
 
 export async function POST(req: NextRequest) {
   const secret = process.env.SANITY_REVALIDATE_SECRET;
-  // Hard-fail when unconfigured — never allow an unauthenticated cache purge.
+  // Hard-fail when unconfigured   never allow an unauthenticated cache purge.
   if (!secret) {
-    console.error('[revalidate] SANITY_REVALIDATE_SECRET not set — refusing to revalidate.');
+    console.error('[revalidate] SANITY_REVALIDATE_SECRET not set   refusing to revalidate.');
     return new Response('Revalidation not configured', {status: 401});
   }
 

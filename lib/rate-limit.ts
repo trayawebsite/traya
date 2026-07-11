@@ -1,14 +1,14 @@
 // Lightweight rate limiter for the lead routes (anti-spam / abuse).
 //
 // SERVERLESS NOTE: this store lives in module memory, which on Vercel is
-// per-instance and cleared on cold start — a solid first layer, but not a hard
+// per-instance and cleared on cold start   a solid first layer, but not a hard
 // global guarantee across many concurrent instances. For a strict global limit,
 // swap the Map for a durable store (Vercel KV / Upstash Redis) behind this same
-// `rateLimit()` signature — no caller changes needed.
+// `rateLimit()` signature   no caller changes needed.
 
 const WINDOW_MS = 24 * 60 * 60 * 1000; // 24 hours
 
-// Parse the env limit defensively — a non-numeric value must NOT silently
+// Parse the env limit defensively   a non-numeric value must NOT silently
 // disable the limiter (Number('foo') is NaN, and `>= NaN` is always false).
 function parseMax(raw: string | undefined, fallback: number): number {
   const n = Number(raw);

@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import {useState, useRef, useEffect, useTransition} from 'react';
-import Image from 'next/image';
-import {useLocale} from 'next-intl';
-import {usePathname, useRouter} from '@/i18n/navigation';
-import {routing, localeNames, type Locale} from '@/i18n/routing';
+import { useState, useRef, useEffect, useTransition } from "react";
+import Image from "next/image";
+import { useLocale } from "next-intl";
+import { usePathname, useRouter } from "@/i18n/navigation";
+import { routing, localeNames, type Locale } from "@/i18n/routing";
 
 // Flag chip with a graceful fallback: if /flags/<locale>.svg is missing, show a
 // small monogram of the locale code instead of a broken image. Lets us add all
 // languages now and drop in flag SVGs later without breaking the UI.
-function Flag({locale}: {locale: Locale}) {
+function Flag({ locale }: { locale: Locale }) {
   const [failed, setFailed] = useState(false);
   if (failed) {
     return (
@@ -32,7 +32,7 @@ function Flag({locale}: {locale: Locale}) {
   );
 }
 
-// Language switcher — flag + short code + dropdown of all supported locales.
+// Language switcher   flag + short code + dropdown of all supported locales.
 export function LanguageSwitcher() {
   const locale = useLocale() as Locale;
   const router = useRouter();
@@ -49,13 +49,13 @@ export function LanguageSwitcher() {
       }
     };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setOpen(false);
+      if (e.key === "Escape") setOpen(false);
     };
-    document.addEventListener('mousedown', handler);
-    document.addEventListener('keydown', onKey);
+    document.addEventListener("mousedown", handler);
+    document.addEventListener("keydown", onKey);
     return () => {
-      document.removeEventListener('mousedown', handler);
-      document.removeEventListener('keydown', onKey);
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("keydown", onKey);
     };
   }, [open]);
 
@@ -63,7 +63,7 @@ export function LanguageSwitcher() {
 
   function switchLocale(newLocale: Locale) {
     startTransition(() => {
-      router.replace(pathname, {locale: newLocale});
+      router.replace(pathname, { locale: newLocale });
       setOpen(false);
     });
   }
@@ -82,7 +82,7 @@ export function LanguageSwitcher() {
         <Flag locale={locale} />
         <span className="font-medium uppercase">{locale}</span>
         <svg
-          className={`size-3.5 shrink-0 text-muted-foreground transition-transform duration-150 ${open ? 'rotate-180' : ''}`}
+          className={`size-3.5 shrink-0 text-muted-foreground transition-transform duration-150 ${open ? "rotate-180" : ""}`}
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -108,7 +108,9 @@ export function LanguageSwitcher() {
                   type="button"
                   onClick={() => switchLocale(l)}
                   className={`flex w-full items-center gap-2.5 px-3 py-2 text-sm transition-colors hover:bg-muted ${
-                    isActive ? 'font-medium text-foreground' : 'text-muted-foreground'
+                    isActive
+                      ? "font-medium text-foreground"
+                      : "text-muted-foreground"
                   }`}
                 >
                   <Flag locale={l} />

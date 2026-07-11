@@ -1,22 +1,26 @@
-// FAQ structured data — helps AI systems extract Q&A content for citations
-export function FaqSchema({items}: {items: {question: string; answer: string}[]}) {
+// FAQ structured data   helps AI systems extract Q&A content for citations
+export function FaqSchema({
+  items,
+}: {
+  items: { question: string; answer: string }[];
+}) {
   const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
     mainEntity: items.map((item) => ({
-      '@type': 'Question',
+      "@type": "Question",
       name: item.question,
       acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer
-      }
-    }))
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
   };
 
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{__html: JSON.stringify(schema)}}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
     />
   );
 }

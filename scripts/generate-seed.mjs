@@ -3,7 +3,7 @@
 // Import later (once the project is connected):
 //   pnpm dlx sanity@latest dataset import content/seed.ndjson production
 //
-// Every product is seeded as its own document — the category page lists each one
+// Every product is seeded as its own document   the category page lists each one
 // as an expand-in-place accordion row, so no collapsing into forms[]. Category
 // `group` + `description` and per-product `hsCode` come straight from the JSON
 // (generated from public/Traya_Food Product_List_By_Category.xlsx).
@@ -20,7 +20,7 @@ const catalogue = JSON.parse(
 const docs = [];
 
 for (const cat of catalogue.categories) {
-  // NOTE: dashes, not dots — Sanity silently drops documents whose _id contains
+  // NOTE: dashes, not dots   Sanity silently drops documents whose _id contains
   // a dot (they import "ok" but aren't queryable). Learned the hard way.
   const categoryId = `category-${cat.slug}`;
 
@@ -226,7 +226,7 @@ docs.push({
   tagline: "A Refined Approach to Global Trade",
   intro: [
     block(
-      "Traya International EXIM is a global trade firm built on precision, structure, and disciplined execution. We operate across international markets with a clear focus — to facilitate seamless import and export operations while building long-term, high-value global relationships.",
+      "Traya International EXIM is a global trade firm built on precision, structure, and disciplined execution. We operate across international markets with a clear focus   to facilitate seamless import and export operations while building long-term, high-value global relationships.",
       1,
     ),
     block(
@@ -252,7 +252,7 @@ docs.push({
   capabilities: [
     feat(
       "Export & Import Operations",
-      "A comprehensive, end-to-end approach — from initial planning to final delivery, every stage handled with attention to detail and operational control.",
+      "A comprehensive, end-to-end approach   from initial planning to final delivery, every stage handled with attention to detail and operational control.",
     ),
     feat(
       "Global Market Positioning",
@@ -264,7 +264,7 @@ docs.push({
     ),
     feat(
       "Trade Execution & Coordination",
-      "Overseeing the entire execution cycle — documentation, regulatory alignment, and logistics coordination — so transactions move efficiently across borders.",
+      "Overseeing the entire execution cycle   documentation, regulatory alignment, and logistics coordination   so transactions move efficiently across borders.",
     ),
     feat(
       "Strategic Trade Direction",
@@ -294,5 +294,5 @@ writeFileSync(join(root, "content/seed.ndjson"), ndjson);
 const categories = docs.filter((d) => d._type === "category").length;
 const products = docs.filter((d) => d._type === "product").length;
 console.log(
-  `Wrote content/seed.ndjson — ${categories} categories, ${products} products, + siteSettings & aboutPage (${docs.length} docs total).`,
+  `Wrote content/seed.ndjson   ${categories} categories, ${products} products, + siteSettings & aboutPage (${docs.length} docs total).`,
 );

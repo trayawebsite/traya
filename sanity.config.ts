@@ -8,7 +8,7 @@ import {apiVersion, dataset, projectId} from './sanity/env';
 
 // siteSettings is the live singleton. homePage/aboutPage remain registered
 // (kept in SINGLETONS so they can't be duplicated) but are NOT shown in the desk
-// below — page copy is managed via i18n (messages/*.json), so surfacing those
+// below   page copy is managed via i18n (messages/*.json), so surfacing those
 // editors would let a client edit content that the site doesn't render.
 const SINGLETONS = new Set(['siteSettings', 'aboutPage', 'homePage']);
 

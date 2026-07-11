@@ -1,7 +1,7 @@
-import type {ReactNode} from 'react';
-import {Container} from '@/components/ui/container';
+import type { ReactNode } from "react";
+import { Container } from "@/components/ui/container";
 
-// Centered inner-page header — the ONE shared recipe for every sub-page
+// Centered inner-page header   the ONE shared recipe for every sub-page
 // (/about, /capabilities, /certifications, /contact, /products), so they read as
 // a consistent system that's deliberately distinct from the immersive, left-
 // aligned home hero. A centered header is self-balancing (no dead right half),
@@ -15,7 +15,7 @@ export function PageHero({
   heading,
   tagline,
   sub,
-  children
+  children,
 }: {
   eyebrow: string;
   heading: string;
@@ -32,7 +32,9 @@ export function PageHero({
             {heading}
           </h1>
           {tagline && (
-            <p className="mt-3 font-display text-lg italic text-traya-saffron-lo">{tagline}</p>
+            <p className="mt-3 font-display text-lg italic text-traya-saffron-lo">
+              {tagline}
+            </p>
           )}
           {sub && (
             <p className="mx-auto mt-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">

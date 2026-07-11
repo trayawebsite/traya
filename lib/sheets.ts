@@ -1,7 +1,7 @@
 // Logs a lead to a Google Sheet via a Google Apps Script web app.
 // Set up: create an Apps Script bound to the sheet, publish as a web app
 // (Execute as: Me, Access: Anyone), then put its URL in GOOGLE_SHEETS_WEBHOOK_URL.
-// This is best-effort — a Sheets failure must never block the email/response,
+// This is best-effort   a Sheets failure must never block the email/response,
 // so this never throws. The returned status is informational (used by the demo
 // and useful for debugging); production callers can ignore it.
 export type SheetLogResult = {
@@ -25,7 +25,7 @@ export async function logLeadToSheet(
       body: JSON.stringify({type, ...data, submittedAt: new Date().toISOString()})
     });
 
-    // A 200 only means Apps Script replied — the script can still report failure
+    // A 200 only means Apps Script replied   the script can still report failure
     // in its JSON body (e.g. it threw while writing the row). Trust the body's
     // `ok` when we can parse it, and fall back to the HTTP status otherwise.
     let ok = res.ok;
@@ -35,7 +35,7 @@ export async function logLeadToSheet(
       if (typeof json?.ok === 'boolean') ok = json.ok;
       if (json?.error) error = String(json.error);
     } catch {
-      // Non-JSON response — keep the HTTP-status verdict.
+      // Non-JSON response   keep the HTTP-status verdict.
     }
 
     return {ok, configured: true, status: res.status, error};

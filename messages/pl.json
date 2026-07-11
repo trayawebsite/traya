@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Jak pracujemy — Traya International Exim",
+      "title": "Jak pracujemy   Traya International Exim",
       "description": "Jak Traya zarządza Państwa eksportem od zapytania do dostawy: pozyskiwanie towaru, weryfikacja jakości, dokumentacja, logistyka oraz transport morski, lotniczy i kurierski."
     },
     "hero": {
@@ -14,11 +14,11 @@
       "heading": "Wszystko pomiędzy zapytaniem a dostawą",
       "sub": "Współpracując z Traya, nie otrzymują Państwo jedynie produktu. Otrzymują Państwo zespół, który dba o każdy element Państwa transakcji handlowej, tak aby nic nie zostało pominięte.",
       "i1Title": "Operacje eksportowe i importowe",
-      "i1Body": "Kompleksowe zarządzanie Państwa handlem — od pozyskania produktu po ostateczną wysyłkę. Jeden partner, jeden proces, zero luk.",
+      "i1Body": "Kompleksowe zarządzanie Państwa handlem   od pozyskania produktu po ostateczną wysyłkę. Jeden partner, jeden proces, zero luk.",
       "i2Title": "Pozyskiwanie produktów i weryfikacja jakości",
       "i2Body": "Pozyskujemy odpowiedni produkt zgodnie z Państwa wymaganiami i weryfikujemy jego zgodność ze specyfikacją, zanim trafi w drogę. Za każdym razem otrzymują Państwo dokładnie to, o co prosili.",
       "i3Title": "Dokumentacja handlowa",
-      "i3Body": "Każdy dokument potrzebny do Państwa przesyłki: faktury, listy przewozowe, certyfikaty i dokumentacja zgodności — przygotowane dokładnie i na czas.",
+      "i3Body": "Każdy dokument potrzebny do Państwa przesyłki: faktury, listy przewozowe, certyfikaty i dokumentacja zgodności   przygotowane dokładnie i na czas.",
       "i4Title": "Koordynacja logistyki",
       "i4Body": "Koordynujemy transport Państwa towarów drogą morską, lotniczą lub kurierską, w zależności od harmonogramu, wolumenu i miejsca docelowego. Są Państwo informowani na bieżąco.",
       "i5Title": "Dedykowane wsparcie dla kupującego",
@@ -77,7 +77,7 @@
     },
     "cta": {
       "heading": "Mają Państwo konkretne zapotrzebowanie?",
-      "sub": "Proszę podzielić się swoimi potrzebami produktowymi oraz miejscem docelowym — resztą zajmiemy się my.",
+      "sub": "Proszę podzielić się swoimi potrzebami produktowymi oraz miejscem docelowym   resztą zajmiemy się my.",
       "primary": "Wyślij zapytanie",
       "secondary": "Zobacz nasze produkty"
     }
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Asystent Traya",
     "subtitle": "Zapytaj o nasze produkty i sposób pracy",
-    "greeting": "Cześć! Jestem asystentem Traya. Zapytaj mnie o nasze produkty, kategorie, próbki lub o to, jak z nami współpracować — chętnie pomogę.",
+    "greeting": "Cześć! Jestem asystentem Traya. Zapytaj mnie o nasze produkty, kategorie, próbki lub o to, jak z nami współpracować   chętnie pomogę.",
     "chip1": "Co eksportujecie?",
     "chip2": "Jak działają próbki?",
     "chip3": "Jak złożyć zamówienie?",
@@ -126,7 +126,7 @@
     "whatsapp": "Czat na WhatsApp",
     "chat": "Porozmawiaj z nami",
     "whatsappMessage": "Dzień dobry, Traya International Exim, chciałbym/chciałabym zapytać o Państwa eksport surowców spożywczych.\n\nProdukt(y): \nIlość / gatunek: \nKraj docelowy: \nFirma: ",
-    "siteLabel": "Traya International Exim — strona główna",
+    "siteLabel": "Traya International Exim   strona główna",
     "menuAria": "Menu",
     "navAria": "Wersja mobilna",
     "dismissAria": "Zamknij",
@@ -252,7 +252,7 @@
     "messageSample": "Zapytanie: Płatna próbka (kupujący pokrywa koszt próbki + wysyłki)",
     "reassurance": "Zwykle odpowiadamy w ciągu 1 dnia roboczego · Bez zobowiązań.",
     "successHeading": "Zapytanie otrzymane.",
-    "successBody": "Dziękujemy. Nasz zespół przeanalizuje Twoje wymagania i odpowie z wyceną, MOQ, opakowaniem oraz czasem realizacji — zazwyczaj w ciągu jednego dnia roboczego.",
+    "successBody": "Dziękujemy. Nasz zespół przeanalizuje Twoje wymagania i odpowie z wyceną, MOQ, opakowaniem oraz czasem realizacji   zazwyczaj w ciągu jednego dnia roboczego.",
     "trust": {
       "eyebrow": "Czego się spodziewać",
       "heading": "Jasna, kompletna wycena.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Indyjska firma eksportowa",
+      "title": "Traya International Exim LLP   Indyjska firma eksportowa",
       "description": "Traya International Exim to wielobranżowy indyjski dom eksportowy, który pomaga kupującym z całego świata pozyskiwać z Indii surowce spożywcze, przyprawy, produkty odwodnione, proszki i zioła."
     },
     "hero": {
       "eyebrow": "Poszerzamy horyzonty poprzez handel.",
       "heading": "Twój zaufany partner w pozyskiwaniu towarów z Indii.",
-      "sub": "Traya dąży do budowania trwałych globalnych partnerstw opartych na zaufaniu, niezawodności i profesjonalnej realizacji. Dzięki rosnącej ofercie wysokiej jakości produktów oraz podejściu skoncentrowanym na kliencie pomagamy firmom pewnie poruszać się w handlu międzynarodowym.",
+      "sub": "Traya dąży do budowania trwałych globalnych partnerstw opartych na zaufaniu, niezawodności i profesjonalnej realizacji. Dzięki rosnącej ofercie wysokiej jakości produktów pomagamy firmom pewnie poruszać się w handlu międzynarodowym.",
       "cta": "Poznaj nasze produkty",
       "ctaEnquiry": "Podziel się swoim zapotrzebowaniem",
       "stat": "Żywność, produkty rolne i chemikalia · 499 produktów · 30 kategorii",
@@ -283,7 +283,7 @@
       "eyebrow": "Jak pomaga Traya",
       "heading": "Łączymy globalne możliwości z",
       "headingAccent": "zaufaną realizacją.",
-      "body": "Od identyfikacji odpowiednich produktów po ich dostarczenie do miejsca docelowego, zarządzamy każdym etapem z troską, zgodnością z przepisami i zaangażowaniem. Bądź na bieżąco, zachowaj pewność — dzięki jednemu punktowi kontaktu.",
+      "body": "Od identyfikacji odpowiednich produktów po ich dostarczenie do miejsca docelowego, zarządzamy każdym etapem z troską, zgodnością z przepisami i zaangażowaniem. Bądź na bieżąco, zachowaj pewność   dzięki jednemu punktowi kontaktu.",
       "f1Title": "Pozyskiwanie produktów",
       "f1Body": "Współpracujemy z siecią partnerów skoncentrowanych na jakości, aby dostarczać Ci niezawodne produkty.",
       "f2Title": "Dokumentacja eksportowa",
@@ -292,12 +292,12 @@
       "f3Body": "Niezawodna logistyka i terminowa dostawa na całym świecie."
     },
     "stats": {
-      "s1": "Globalny",
-      "s1Sub": "Partner handlowy",
-      "s2": "Zaufane",
-      "s2Sub": "Partnerstwa",
-      "s3": "Rosnące",
-      "s3Sub": "Portfolio",
+      "s1": "499",
+      "s1Sub": "Produktów w ofercie",
+      "s2": "30",
+      "s2Sub": "Kategorii",
+      "s3": "Zaufane",
+      "s3Sub": "Partnerstwa",
       "s4": "100%",
       "s4Sub": "Pozyskiwane z Indii"
     },
@@ -306,14 +306,14 @@
       "heading": "Co eksportujemy",
       "sub": "Nasze portfolio zostało zaprojektowane tak, aby wspierać firmy z wielu branż. W miarę naszego rozwoju rośnie także nasz asortyment.",
       "foodTitle": "Produkty spożywcze i rolne",
-      "foodBody": "Wysokiej jakości produkty rolne pozyskiwane od zaufanych indyjskich producentów, zgodne z międzynarodowymi standardami jakości i bezpieczeństwa.",
+      "foodBody": "Wysokiej jakości produkty rolne pozyskiwane od zaufanych indyjskich producentów, zgodne z międzynarodowymi standardami jakości.",
       "foodCta": "Zobacz produkty spożywcze i rolne",
       "chemTitle": "Chemikalia",
       "chemBody": "Chemikalia przemysłowe i specjalistyczne, stosowane w różnorodnych zastosowaniach produkcyjnych na rynkach całego świata.",
       "chemCta": "Zobacz chemikalia",
       "selection": "Wybór z naszej oferty produktów spożywczych i rolnych",
       "note": "Nasze portfolio wciąż się poszerza w miarę wzmacniania partnerstw w nowych branżach i na nowych rynkach międzynarodowych.",
-      "noteAsk": "Nie widzisz tego, czego szukasz? Napisz do nas — być może i tak będziemy w stanie pomóc.",
+      "noteAsk": "Nie widzisz tego, czego szukasz? Napisz do nas   być może i tak będziemy w stanie pomóc.",
       "spec": "499 produktów w ofercie · 30 kategorii · 6 grup produktowych",
       "cta": "Wyślij zapotrzebowanie",
       "badgePremium": "Żywność i produkty rolne",
@@ -328,7 +328,7 @@
       "nutraceutical": "Produkty ziołowe i nutraceutyczne",
       "nutraceuticalBlurb": "Moringa, spirulina, ashwagandha, amla oraz inne proszki roślinne.",
       "chemicals": "Chemikalia i barwniki",
-      "chemicalsBlurb": "Barwniki reaktywne, kwasowe i bezpośrednie, barwniki spożywcze, pigmenty oraz żywice do farb — dla przemysłu tekstylnego, spożywczego i lakierniczego.",
+      "chemicalsBlurb": "Barwniki reaktywne, kwasowe i bezpośrednie, barwniki spożywcze, pigmenty oraz żywice do farb   dla przemysłu tekstylnego, spożywczego i lakierniczego.",
       "catFoodColours": "Food Colours",
       "catReactiveDyes": "Reactive Dyes"
     },
@@ -342,13 +342,13 @@
       "quality": "Zaangażowanie w jakość",
       "qualityBody": "Produkty sprawdzane pod kątem Twoich specyfikacji przed wysyłką, zgodne z międzynarodowymi standardami jakości i bezpieczeństwa.",
       "execution": "Profesjonalna realizacja",
-      "executionBody": "Określony przebieg procesu od zapytania do wysyłki: specyfikacje, dokumenty, opakowanie i transport — każdy etap realizowany po kolei.",
+      "executionBody": "Określony przebieg procesu od zapytania do wysyłki: specyfikacje, dokumenty, opakowanie i transport   każdy etap realizowany po kolei.",
       "communication": "Sprawna komunikacja",
       "communicationBody": "Jeden punkt kontaktu i szybkie odpowiedzi, z jasnymi aktualizacjami na każdym etapie Twojego zamówienia.",
       "global": "Globalna perspektywa",
       "globalBody": "Pozyskiwanie towarów z Indii dla kupujących na różnych rynkach, z dokumentami i warunkami dopasowanymi do Twojego miejsca docelowego.",
       "growth": "Wspólny rozwój",
-      "growthBody": "Rozwijające się portfolio i powracający partnerzy — skalujemy się wraz z rosnącymi wymaganiami Twojej firmy."
+      "growthBody": "Rozwijające się portfolio i powracający partnerzy   skalujemy się wraz z rosnącymi wymaganiami Twojej firmy."
     },
     "testimonials": {
       "eyebrow": "Co mówią nasi kupujący"
@@ -397,21 +397,21 @@
   "About": {
     "meta": {
       "title": "O nas",
-      "description": "Poznaj Traya International Exim LLP — wielobranżową indyjską firmę EXIM, która pomaga kupującym pozyskiwać produkty z Indii dzięki przejrzystej koordynacji i niezawodnemu wsparciu handlowemu."
+      "description": "Poznaj Traya International Exim LLP   wielobranżową indyjską firmę EXIM, która pomaga kupującym pozyskiwać produkty z Indii dzięki przejrzystej koordynacji i niezawodnemu wsparciu handlowemu."
     },
     "hero": {
       "eyebrow": "O Traya",
       "heading": "Wyrafinowane podejście do handlu globalnego",
-      "tagline": "Pozyskiwanie towarów, dokumentacja, pakowanie i wsparcie w zakresie wysyłki — zarządzane przez jeden dedykowany zespół.",
+      "tagline": "Pozyskiwanie towarów, dokumentacja, pakowanie i wsparcie w zakresie wysyłki   zarządzane przez jeden dedykowany zespół.",
       "body": "TRAYA to firma zajmująca się handlem globalnym, oddana budowaniu zaufanych partnerstw na rynkach międzynarodowych. Dzięki profesjonalnej realizacji i podejściu skoncentrowanym na kliencie pomagamy firmom pewnie poruszać się w handlu globalnym.\n\nKierując się przejrzystością, dbałością o szczegóły oraz zaangażowaniem w jakość, każdą interakcję prowadzimy z troską, zapewniając niezawodność, spójność oraz profesjonalne doświadczenie, na którym firmy mogą polegać.\n\nDzięki rozwijającemu się portfolio i wizji zrównoważonego wzrostu TRAYA nieustannie ewoluuje wraz ze zmieniającymi się potrzebami rynków globalnych, budując trwałe partnerstwa oparte na zaufaniu, jakości i wspólnym sukcesie."
     },
     "founder": {
       "eyebrow": "Słowo od założycielki",
       "name": "Neha Pardeshi",
       "role": "Założycielka i CEO",
-      "p1": "Świat nie otworzył się przede mną dzięki podręcznikom — otworzył się dzięki podróżom. Poznawanie różnych kultur, spotykanie ludzi z każdego środowiska oraz patrzenie na świat z różnych perspektyw ukształtowały nie tylko to, kim jestem, ale też to, co postanowiłam zbudować.",
-      "p2": "Zawsze wierzyłam, że handel globalny to w istocie ludzka więź. Za każdą przesyłką, każdym produktem i każdym partnerstwem stoi relacja zbudowana na zaufaniu i zrozumieniu — coś, czego żaden algorytm ani automatyzacja nigdy naprawdę nie zastąpią.",
-      "p3": "W Traya International EXIM naszym celem nie jest jedynie ułatwianie handlu, lecz budowanie znaczących i trwałych relacji ponad granicami — relacji, które z każdą transakcją i każdą rozmową stają się coraz silniejsze.",
+      "p1": "Świat nie otworzył się przede mną dzięki podręcznikom   otworzył się dzięki podróżom. Poznawanie różnych kultur, spotykanie ludzi z każdego środowiska oraz patrzenie na świat z różnych perspektyw ukształtowały nie tylko to, kim jestem, ale też to, co postanowiłam zbudować.",
+      "p2": "Zawsze wierzyłam, że handel globalny to w istocie ludzka więź. Za każdą przesyłką, każdym produktem i każdym partnerstwem stoi relacja zbudowana na zaufaniu i zrozumieniu   coś, czego żaden algorytm ani automatyzacja nigdy naprawdę nie zastąpią.",
+      "p3": "W Traya International EXIM naszym celem nie jest jedynie ułatwianie handlu, lecz budowanie znaczących i trwałych relacji ponad granicami   relacji, które z każdą transakcją i każdą rozmową stają się coraz silniejsze.",
       "p4": "To, co zaczęło się jako pasja do poznawania świata, przekształciło się w biznes napędzany zaangażowaniem, uczciwością i prawdziwie globalną wizją. A to dopiero początek.",
       "p5": "Dziękuję za zaufanie i za to, że zdecydowali się Państwo być częścią tej podróży."
     },
@@ -492,11 +492,11 @@
       "error": "Coś poszło nie tak. Spróbuj ponownie lub napisz do nas bezpośrednio na e-mail.",
       "rateLimited": "Osiągnięto dzisiejszy limit. Napisz do nas na e-mail lub WhatsApp.",
       "point1": "Odpowiadamy w ciągu jednego dnia roboczego",
-      "point2": "Pozyskiwanie towarów, próbki, ceny i dokumentacja — zapytaj nas o cokolwiek",
+      "point2": "Pozyskiwanie towarów, próbki, ceny i dokumentacja   zapytaj nas o cokolwiek",
       "point3": "Bezpośrednia linia do naszego działu handlowego",
       "reassurance": "Zwykle odpowiadamy w ciągu 1 dnia roboczego · Bez zobowiązań.",
       "successHeading": "Wiadomość wysłana.",
-      "successBody": "Dziękujemy. Nasz zespół przeanalizuje Twoją wiadomość i odpowie — zazwyczaj w ciągu jednego dnia roboczego."
+      "successBody": "Dziękujemy. Nasz zespół przeanalizuje Twoją wiadomość i odpowie   zazwyczaj w ciągu jednego dnia roboczego."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produkty",
-      "description": "Przeglądaj katalog Traya obejmujący żywność, produkty rolne i chemikalia — 499 produktów w 30 kategoriach, od suszonych składników i przypraw po barwniki reaktywne, barwniki spożywcze i pigmenty. W przypadku produktów mechanicznych, papieru lub innych zapytań eksportowych prześlij nam swoją specyfikację."
+      "description": "Przeglądaj katalog Traya obejmujący żywność, produkty rolne i chemikalia   499 produktów w 30 kategoriach, od suszonych składników i przypraw po barwniki reaktywne, barwniki spożywcze i pigmenty. W przypadku produktów mechanicznych, papieru lub innych zapytań eksportowych prześlij nam swoją specyfikację."
     },
     "hub": {
       "eyebrow": "Katalog żywności i produktów rolnych",

@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────
-// CATALOGUE DATA LAYER — unified seam for catalogue data.
+// CATALOGUE DATA LAYER   unified seam for catalogue data.
 // When NEXT_PUBLIC_SANITY_PROJECT_ID is set → fetches from Sanity CMS.
 // Otherwise → falls back to content/product-catalogue.json.
 // Return shapes stay identical, so NO caller changes needed.

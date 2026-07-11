@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Wie wir arbeiten — Traya International Exim",
+      "title": "Wie wir arbeiten   Traya International Exim",
       "description": "Wie Traya Ihren Export von der Anfrage bis zur Lieferung abwickelt: Beschaffung, Qualitätsprüfung, Dokumentation, Logistik und Versand per See-, Luft- oder Kurierfracht."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Traya Assistent",
     "subtitle": "Fragen Sie zu unseren Produkten & unserer Arbeitsweise",
-    "greeting": "Hallo! Ich bin der Traya-Assistent. Fragen Sie mich zu unseren Produkten, Kategorien, Mustern oder zur Zusammenarbeit mit uns — ich helfe Ihnen gerne.",
+    "greeting": "Hallo! Ich bin der Traya-Assistent. Fragen Sie mich zu unseren Produkten, Kategorien, Mustern oder zur Zusammenarbeit mit uns   ich helfe Ihnen gerne.",
     "chip1": "Was exportieren Sie?",
     "chip2": "Wie funktionieren Muster?",
     "chip3": "Wie gebe ich eine Bestellung auf?",
@@ -126,7 +126,7 @@
     "whatsapp": "Auf WhatsApp chatten",
     "chat": "Mit uns chatten",
     "whatsappMessage": "Hallo Traya International Exim, ich möchte mich nach Ihren Lebensmittelzutaten-Exporten erkundigen.\n\nProdukt(e): \nMenge / Güteklasse: \nZielland: \nUnternehmen: ",
-    "siteLabel": "Traya International Exim — Startseite",
+    "siteLabel": "Traya International Exim   Startseite",
     "menuAria": "Menü",
     "navAria": "Mobil",
     "dismissAria": "Schließen",
@@ -252,7 +252,7 @@
     "messageSample": "Anfrage: Kostenpflichtiges Muster (Käufer trägt Musterkosten + Versand)",
     "reassurance": "In der Regel innerhalb eines Werktags · Unverbindlich.",
     "successHeading": "Anfrage erhalten.",
-    "successBody": "Vielen Dank. Unser Team prüft Ihren Bedarf und antwortet mit Preisen, Mindestbestellmenge, Verpackung und Lieferzeit — in der Regel innerhalb eines Werktags.",
+    "successBody": "Vielen Dank. Unser Team prüft Ihren Bedarf und antwortet mit Preisen, Mindestbestellmenge, Verpackung und Lieferzeit   in der Regel innerhalb eines Werktags.",
     "trust": {
       "eyebrow": "Was Sie erwartet",
       "heading": "Ein klares, vollständiges Angebot.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Indisches Exportunternehmen",
+      "title": "Traya International Exim LLP   Indisches Exportunternehmen",
       "description": "Traya International Exim ist ein branchenübergreifendes indisches Exporthaus, das globalen Käufern hilft, Lebensmittelzutaten, Gewürze, dehydrierte Produkte, Pulver und Kräuter aus Indien zu beziehen."
     },
     "hero": {
       "eyebrow": "Horizonte durch Handel erweitern.",
       "heading": "Ihr vertrauensvoller Partner für die Beschaffung aus Indien.",
-      "sub": "Traya setzt sich für den Aufbau dauerhafter globaler Partnerschaften durch Vertrauen, Zuverlässigkeit und professionelle Umsetzung ein. Mit einem wachsenden Produktportfolio und einem kundenorientierten Ansatz helfen wir Unternehmen, den internationalen Handel mit Zuversicht zu meistern.",
+      "sub": "Traya setzt sich für den Aufbau dauerhafter globaler Partnerschaften durch Vertrauen, Zuverlässigkeit und professionelle Umsetzung ein. Mit einem wachsenden Produktportfolio helfen wir Unternehmen, den internationalen Handel mit Zuversicht zu meistern.",
       "cta": "Produkte entdecken",
       "ctaEnquiry": "Ihren Bedarf mitteilen",
       "stat": "Lebensmittel, Agrar & Chemikalien · 499 Produkte · 30 Kategorien",
@@ -283,7 +283,7 @@
       "eyebrow": "Wie Traya hilft",
       "heading": "Globale Chancen mit",
       "headingAccent": "verlässlicher Umsetzung verbinden.",
-      "body": "Von der Identifizierung der richtigen Produkte bis zur Lieferung an Ihr Ziel steuern wir jeden Schritt mit Sorgfalt, Compliance und Engagement. Bleiben Sie informiert, bleiben Sie zuversichtlich — mit nur einem Ansprechpartner.",
+      "body": "Von der Identifizierung der richtigen Produkte bis zur Lieferung an Ihr Ziel steuern wir jeden Schritt mit Sorgfalt, Compliance und Engagement. Bleiben Sie informiert, bleiben Sie zuversichtlich   mit nur einem Ansprechpartner.",
       "f1Title": "Produktbeschaffung",
       "f1Body": "Wir arbeiten mit einem Netzwerk qualitätsorientierter Partner zusammen, um Ihnen zuverlässige Produkte zu bieten.",
       "f2Title": "Exportdokumentation",
@@ -292,12 +292,12 @@
       "f3Body": "Zuverlässige Logistik und pünktliche Lieferung weltweit."
     },
     "stats": {
-      "s1": "Global",
-      "s1Sub": "Handelspartner",
-      "s2": "Vertrauensvoll",
-      "s2Sub": "Partnerschaften",
-      "s3": "Wachsendes",
-      "s3Sub": "Portfolio",
+      "s1": "499",
+      "s1Sub": "Gelistete Produkte",
+      "s2": "30",
+      "s2Sub": "Kategorien",
+      "s3": "Vertrauensvoll",
+      "s3Sub": "Partnerschaften",
       "s4": "100%",
       "s4Sub": "Aus Indien bezogen"
     },
@@ -306,7 +306,7 @@
       "heading": "Was wir exportieren",
       "sub": "Unser Portfolio ist darauf ausgelegt, Unternehmen in zahlreichen Branchen zu unterstützen. Mit unserem Wachstum wächst auch unser Angebot.",
       "foodTitle": "Lebensmittel & Agrarprodukte",
-      "foodBody": "Hochwertige Agrarprodukte von vertrauenswürdigen indischen Herstellern, ausgerichtet an internationalen Qualitäts- und Sicherheitsstandards.",
+      "foodBody": "Hochwertige Agrarprodukte von vertrauenswürdigen indischen Herstellern, ausgerichtet an internationalen Qualitätsstandards.",
       "foodCta": "Lebensmittel & Agrarprodukte ansehen",
       "chemTitle": "Chemikalien",
       "chemBody": "Industrie- und Spezialchemikalien für vielfältige Fertigungsanwendungen auf globalen Märkten.",
@@ -348,7 +348,7 @@
       "global": "Globale Perspektive",
       "globalBody": "Beschaffung aus Indien für Käufer auf verschiedenen Märkten, mit Dokumenten und Konditionen passend zu Ihrem Zielland.",
       "growth": "Gemeinsam wachsen",
-      "growthBody": "Ein wachsendes Portfolio und wiederkehrende Partnerschaften — wir skalieren mit Ihren Anforderungen."
+      "growthBody": "Ein wachsendes Portfolio und wiederkehrende Partnerschaften   wir skalieren mit Ihren Anforderungen."
     },
     "testimonials": {
       "eyebrow": "Was Käufer sagen"
@@ -409,9 +409,9 @@
       "eyebrow": "Ein Wort der Gründerin",
       "name": "Neha Pardeshi",
       "role": "Gründerin & CEO",
-      "p1": "Die Welt hat sich mir nicht durch Lehrbücher eröffnet — sie hat sich mir durch das Reisen eröffnet. Das Erkunden verschiedener Kulturen, das Kennenlernen von Menschen aus allen Lebensbereichen und der Blick auf die Welt aus unterschiedlichen Perspektiven haben nicht nur geprägt, wer ich bin, sondern auch, was ich aufbauen wollte.",
-      "p2": "Ich habe immer geglaubt, dass es im globalen Handel letztlich um menschliche Verbindung geht. Hinter jeder Sendung, jedem Produkt und jeder Partnerschaft steht eine Beziehung, die auf Vertrauen und Verständnis aufbaut — etwas, das kein Algorithmus und keine Automatisierung wirklich ersetzen kann.",
-      "p3": "Bei Traya International EXIM besteht unser Ziel nicht nur darin, Handel zu ermöglichen, sondern bedeutungsvolle und dauerhafte Beziehungen über Grenzen hinweg aufzubauen — Beziehungen, die mit jeder Transaktion und jedem Gespräch stärker werden.",
+      "p1": "Die Welt hat sich mir nicht durch Lehrbücher eröffnet   sie hat sich mir durch das Reisen eröffnet. Das Erkunden verschiedener Kulturen, das Kennenlernen von Menschen aus allen Lebensbereichen und der Blick auf die Welt aus unterschiedlichen Perspektiven haben nicht nur geprägt, wer ich bin, sondern auch, was ich aufbauen wollte.",
+      "p2": "Ich habe immer geglaubt, dass es im globalen Handel letztlich um menschliche Verbindung geht. Hinter jeder Sendung, jedem Produkt und jeder Partnerschaft steht eine Beziehung, die auf Vertrauen und Verständnis aufbaut   etwas, das kein Algorithmus und keine Automatisierung wirklich ersetzen kann.",
+      "p3": "Bei Traya International EXIM besteht unser Ziel nicht nur darin, Handel zu ermöglichen, sondern bedeutungsvolle und dauerhafte Beziehungen über Grenzen hinweg aufzubauen   Beziehungen, die mit jeder Transaktion und jedem Gespräch stärker werden.",
       "p4": "Was als Leidenschaft für das Erkunden der Welt begann, hat sich zu einem Unternehmen entwickelt, das von Engagement, Integrität und einer wahrhaft globalen Vision getragen wird. Und wir stehen erst am Anfang.",
       "p5": "Vielen Dank, dass Sie uns vertrauen und sich entschieden haben, Teil dieser Reise zu sein."
     },
@@ -492,11 +492,11 @@
       "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
       "rateLimited": "Sie haben das heutige Limit erreicht. Bitte schreiben Sie uns eine E-Mail oder eine Nachricht auf WhatsApp.",
       "point1": "Wir antworten innerhalb eines Werktags",
-      "point2": "Beschaffung, Muster, Preise und Dokumentation — fragen Sie uns alles",
+      "point2": "Beschaffung, Muster, Preise und Dokumentation   fragen Sie uns alles",
       "point3": "Eine direkte Verbindung zu unserem Handelsteam",
       "reassurance": "In der Regel innerhalb eines Werktags · Unverbindlich.",
       "successHeading": "Nachricht gesendet.",
-      "successBody": "Vielen Dank. Unser Team prüft Ihre Nachricht und meldet sich bei Ihnen zurück — in der Regel innerhalb eines Werktags."
+      "successBody": "Vielen Dank. Unser Team prüft Ihre Nachricht und meldet sich bei Ihnen zurück   in der Regel innerhalb eines Werktags."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produkte",
-      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya — 499 Produkte in 30 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
+      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya   499 Produkte in 30 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
     },
     "hub": {
       "eyebrow": "Lebensmittel- & Agrarkatalog",

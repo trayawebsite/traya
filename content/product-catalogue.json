@@ -5,7 +5,7 @@
       "slug": "dehydrated-onion",
       "order": 1,
       "group": "alliums",
-      "description": "White, red and pink onion in kibbled, chopped, minced, granule and powder cuts — dried from Indian onion for consistent colour and pungency.",
+      "description": "White, red and pink onion in kibbled, chopped, minced, granule and powder cuts   dried from Indian onion for consistent colour and pungency.",
       "products": [
         {
           "n": 1,
@@ -215,7 +215,7 @@
       "slug": "dehydrated-vegetables",
       "order": 3,
       "group": "alliums",
-      "description": "A broad range of dehydrated vegetables — tomato, beetroot, carrot, spinach, capsicum and more — in flakes, granules and powders.",
+      "description": "A broad range of dehydrated vegetables   tomato, beetroot, carrot, spinach, capsicum and more   in flakes, granules and powders.",
       "products": [
         {
           "n": 1,
@@ -617,7 +617,7 @@
       "slug": "cassia",
       "order": 7,
       "group": "spices",
-      "description": "Cassia bark and powder — warm, sweet and robust, for blends, beverages and bakery.",
+      "description": "Cassia bark and powder   warm, sweet and robust, for blends, beverages and bakery.",
       "products": [
         {
           "n": 1,
@@ -692,7 +692,7 @@
       "slug": "mace",
       "order": 10,
       "group": "spices",
-      "description": "Bright mace blades and powder — the aromatic outer aril of nutmeg.",
+      "description": "Bright mace blades and powder   the aromatic outer aril of nutmeg.",
       "products": [
         {
           "n": 1,
@@ -815,7 +815,7 @@
       "slug": "dry-ginger",
       "order": 13,
       "group": "spices",
-      "description": "Dried ginger — whole, split and powder — pungent and warming for culinary and wellness use.",
+      "description": "Dried ginger   whole, split and powder   pungent and warming for culinary and wellness use.",
       "products": [
         {
           "n": 1,
@@ -842,7 +842,7 @@
       "slug": "seeds",
       "order": 14,
       "group": "spices",
-      "description": "Cumin, fennel, coriander, mustard, sesame, flax, ajwain, chia and fenugreek — whole seeds and select powders.",
+      "description": "Cumin, fennel, coriander, mustard, sesame, flax, ajwain, chia and fenugreek   whole seeds and select powders.",
       "products": [
         {
           "n": 1,
@@ -1076,7 +1076,7 @@
       "slug": "spice-leaves-herbs",
       "order": 16,
       "group": "herbs",
-      "description": "Dried culinary herbs and leaves — mint, curry leaf, kasuri methi, basil, oregano, thyme, rosemary and mixed blends.",
+      "description": "Dried culinary herbs and leaves   mint, curry leaf, kasuri methi, basil, oregano, thyme, rosemary and mixed blends.",
       "products": [
         {
           "n": 1,
@@ -1259,7 +1259,7 @@
       "slug": "herbal-powders",
       "order": 17,
       "group": "nutraceutical",
-      "description": "Plant-based herbal powders — ashwagandha, moringa, spirulina, amla, triphala and more — for nutraceutical and personal-care use.",
+      "description": "Plant-based herbal powders   ashwagandha, moringa, spirulina, amla, triphala and more   for nutraceutical and personal-care use.",
       "products": [
         {
           "n": 1,
@@ -1544,7 +1544,7 @@
       "slug": "spray-dried-vegetables",
       "order": 20,
       "group": "powders",
-      "description": "Spray-dried vegetable powders — tomato and more — for soups, sauces, snacks and seasonings.",
+      "description": "Spray-dried vegetable powders   tomato and more   for soups, sauces, snacks and seasonings.",
       "products": [
         {
           "n": 1,
@@ -1661,7 +1661,7 @@
       "slug": "indian-spices",
       "order": 23,
       "group": "spices",
-      "description": "Everyday Indian spices — chilli, turmeric, cumin, mustard, coriander and pepper — whole and ground.",
+      "description": "Everyday Indian spices   chilli, turmeric, cumin, mustard, coriander and pepper   whole and ground.",
       "products": [
         {
           "n": 1,
@@ -1733,7 +1733,7 @@
       "slug": "reactive-dyes",
       "order": 25,
       "group": "chemicals",
-      "description": "Reactive dyes for cotton, viscose and cellulosic fibres — P series, VS, bi-functional, cold-brand and high-exhaust ranges.",
+      "description": "Reactive dyes for cotton, viscose and cellulosic fibres   P series, VS, bi-functional, cold-brand and high-exhaust ranges.",
       "products": [
         {
           "n": 1,
@@ -3518,7 +3518,7 @@
           "name": "Plain Scotch Grade (Caramel)",
           "slug": "plain-scotch-grade-caramel",
           "series": "Natural Food Colours",
-          "colourIndex": "E150a — Liquid",
+          "colourIndex": "E150a   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3527,7 +3527,7 @@
           "name": "Caustic Sulphite Grade (Caramel)",
           "slug": "caustic-sulphite-grade-caramel",
           "series": "Natural Food Colours",
-          "colourIndex": "E150b — Liquid",
+          "colourIndex": "E150b   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3536,7 +3536,7 @@
           "name": "Beer Grade (Caramel)",
           "slug": "beer-grade-caramel",
           "series": "Natural Food Colours",
-          "colourIndex": "E150c — Liquid",
+          "colourIndex": "E150c   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3545,7 +3545,7 @@
           "name": "Single Strength (Caramel)",
           "slug": "single-strength-caramel",
           "series": "Natural Food Colours",
-          "colourIndex": "E150d — Liquid",
+          "colourIndex": "E150d   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3554,7 +3554,7 @@
           "name": "Double Strength (Caramel)",
           "slug": "double-strength-caramel",
           "series": "Natural Food Colours",
-          "colourIndex": "E150d — Liquid",
+          "colourIndex": "E150d   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3563,7 +3563,7 @@
           "name": "Caramel Powder",
           "slug": "caramel-powder",
           "series": "Natural Food Colours",
-          "colourIndex": "E150 — Powder",
+          "colourIndex": "E150   Powder",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3572,7 +3572,7 @@
           "name": "Annatto Oil Soluble (10.5% & Bixin)",
           "slug": "annatto-oil-soluble-10-5-bixin",
           "series": "Natural Food Colours",
-          "colourIndex": "E160b — Liquid",
+          "colourIndex": "E160b   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3581,7 +3581,7 @@
           "name": "Annatto Water Soluble (1.5% Non-Bixin)",
           "slug": "annatto-water-soluble-1-5-non-bixin",
           "series": "Natural Food Colours",
-          "colourIndex": "E160b — Liquid",
+          "colourIndex": "E160b   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3590,7 +3590,7 @@
           "name": "Curcumin Colour",
           "slug": "curcumin-colour",
           "series": "Natural Food Colours",
-          "colourIndex": "E100 — Powder",
+          "colourIndex": "E100   Powder",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3599,7 +3599,7 @@
           "name": "Red Beet Root (0.3%–0.45% Betanine)",
           "slug": "red-beet-root-0-3-0-45-betanine",
           "series": "Natural Food Colours",
-          "colourIndex": "E162 — Powder",
+          "colourIndex": "E162   Powder",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3608,7 +3608,7 @@
           "name": "Paprika Colour, Water Soluble 40,000 I.U.",
           "slug": "paprika-colour-water-soluble-40-000-i-u",
           "series": "Natural Food Colours",
-          "colourIndex": "E160c — Liquid",
+          "colourIndex": "E160c   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3617,7 +3617,7 @@
           "name": "Paprika Colour, Water Soluble 40,000 I.U., Powder",
           "slug": "paprika-colour-water-soluble-40-000-i-u-powder",
           "series": "Natural Food Colours",
-          "colourIndex": "E160c — Powder",
+          "colourIndex": "E160c   Powder",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },
@@ -3626,7 +3626,7 @@
           "name": "Chlorophyll Green",
           "slug": "chlorophyll-green",
           "series": "Natural Food Colours",
-          "colourIndex": "E141 — Liquid",
+          "colourIndex": "E141   Liquid",
           "packSizes": "25 kg / 50 kg drums (liquid); 25 kg bags (powder)",
           "hsCode": "32041990"
         },

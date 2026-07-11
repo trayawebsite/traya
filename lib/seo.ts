@@ -8,7 +8,7 @@ import {getPathname} from '@/i18n/navigation';
 // Problem this solves: with `localePrefix: 'as-needed'`, the same page renders
 // at `/about` (en), `/ar/about` (ar) and `/fr/about` (fr). A bare relative
 // `canonical: '/about'` resolves (against metadataBase, which has no locale
-// prefix) to the EN url for ALL locales — telling Google to de-index the ar/fr
+// prefix) to the EN url for ALL locales   telling Google to de-index the ar/fr
 // versions. We also emitted no hreflang at all.
 //
 // `localeAlternates` returns the correct self-referencing canonical for the

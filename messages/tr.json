@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Nasıl Çalışırız — Traya International Exim",
+      "title": "Nasıl Çalışırız   Traya International Exim",
       "description": "Traya'nın talebinizden teslimata kadar ihracat sürecinizi nasıl yönettiği: tedarik, kalite doğrulama, belgelendirme, lojistik ve deniz, hava veya kurye yoluyla nakliye."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Traya Asistanı",
     "subtitle": "Ürünlerimiz ve çalışma şeklimiz hakkında sorun",
-    "greeting": "Merhaba! Ben Traya asistanıyım. Ürünlerimiz, kategorilerimiz, numuneler veya bizimle nasıl çalışacağınız hakkında bana soru sorabilirsiniz — yardımcı olmak için buradayım.",
+    "greeting": "Merhaba! Ben Traya asistanıyım. Ürünlerimiz, kategorilerimiz, numuneler veya bizimle nasıl çalışacağınız hakkında bana soru sorabilirsiniz   yardımcı olmak için buradayım.",
     "chip1": "Neler ihraç ediyorsunuz?",
     "chip2": "Numuneler nasıl işliyor?",
     "chip3": "Nasıl sipariş verebilirim?",
@@ -126,7 +126,7 @@
     "whatsapp": "WhatsApp'tan sohbet edin",
     "chat": "Bizimle sohbet edin",
     "whatsappMessage": "Merhaba Traya International Exim, gıda bileşeni ihracatınız hakkında bilgi almak istiyorum.\n\nÜrün(ler): \nMiktar / kalite: \nVarış ülkesi: \nŞirket: ",
-    "siteLabel": "Traya International Exim — ana sayfa",
+    "siteLabel": "Traya International Exim   ana sayfa",
     "menuAria": "Menü",
     "navAria": "Mobil",
     "dismissAria": "Kapat",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Hindistan Menşeli İhracat Şirketi",
+      "title": "Traya International Exim LLP   Hindistan Menşeli İhracat Şirketi",
       "description": "Traya International Exim, küresel alıcıların Hindistan'dan gıda bileşenleri, baharatlar, dehidre ürünler, tozlar ve otlar tedarik etmesine yardımcı olan çok sektörlü bir Hint ihracat şirketidir."
     },
     "hero": {
       "eyebrow": "Ticaretle Ufukları Genişletiyoruz.",
       "heading": "Hindistan'dan tedarik için güvenilir iş ortağınız.",
-      "sub": "Traya, güven, güvenilirlik ve profesyonel uygulama yoluyla kalıcı küresel ortaklıklar kurmaya kararlıdır. Büyüyen kaliteli ürün portföyümüz ve müşteri odaklı yaklaşımımızla işletmelerin uluslararası ticarette güvenle ilerlemesine yardımcı oluyoruz.",
+      "sub": "Traya, güven, güvenilirlik ve profesyonel uygulama yoluyla kalıcı küresel ortaklıklar kurmaya kararlıdır. Büyüyen kaliteli ürün portföyümüzle işletmelerin uluslararası ticarette güvenle ilerlemesine yardımcı oluyoruz.",
       "cta": "Ürünleri Keşfedin",
       "ctaEnquiry": "İhtiyacınızı paylaşın",
       "stat": "Gıda, Tarım ve Kimyasallar · 499 ürün · 30 kategori",
@@ -292,12 +292,12 @@
       "f3Body": "Dünya genelinde güvenilir lojistik ve zamanında teslimat."
     },
     "stats": {
-      "s1": "Küresel",
-      "s1Sub": "Ticaret Ortağı",
-      "s2": "Güvenilir",
-      "s2Sub": "Ortaklıklar",
-      "s3": "Genişleyen",
-      "s3Sub": "Portföy",
+      "s1": "499",
+      "s1Sub": "Listelenen Ürün",
+      "s2": "30",
+      "s2Sub": "Kategori",
+      "s3": "Güvenilir",
+      "s3Sub": "Ortaklıklar",
       "s4": "100%",
       "s4Sub": "Hindistan'dan Tedarik Edilmiştir"
     },
@@ -306,7 +306,7 @@
       "heading": "Neler İhraç Ediyoruz",
       "sub": "Portföyümüz, birçok sektördeki işletmeleri desteklemek üzere tasarlanmıştır. Biz büyüdükçe ürün yelpazemiz de büyüyor.",
       "foodTitle": "Gıda ve Tarım Ürünleri",
-      "foodBody": "Güvenilir Hintli üreticilerden tedarik edilen, uluslararası kalite ve güvenlik standartlarına uygun premium tarım ürünleri.",
+      "foodBody": "Güvenilir Hintli üreticilerden tedarik edilen, uluslararası kalite standartlarına uygun premium tarım ürünleri.",
       "foodCta": "Gıda ve Tarım Ürünlerini Görüntüleyin",
       "chemTitle": "Kimyasallar",
       "chemBody": "Küresel pazarlarda çeşitli üretim uygulamalarına hizmet eden endüstriyel ve özel kimyasallar.",
@@ -410,8 +410,8 @@
       "name": "Neha Pardeshi",
       "role": "Kurucu ve CEO",
       "p1": "Dünya bana ders kitapları aracılığıyla değil, seyahat aracılığıyla açıldı. Farklı kültürleri keşfetmek, hayatın her kesiminden insanlarla tanışmak ve dünyayı farklı bakış açılarından görmek, yalnızca kim olduğumu değil, neyi inşa etmeyi seçtiğimi de şekillendirdi.",
-      "p2": "Küresel ticaretin nihayetinde insani bağlantıyla ilgili olduğuna her zaman inandım. Her sevkiyatın, her ürünün ve her ortaklığın arkasında güven ve anlayış üzerine kurulmuş bir ilişki vardır — hiçbir algoritmanın veya otomasyonun gerçekten yerini alamayacağı bir şey.",
-      "p3": "Traya International EXIM'de amacımız yalnızca ticareti kolaylaştırmak değil, sınırlar ötesinde anlamlı ve kalıcı ilişkiler kurmaktır — her işlemle ve her görüşmeyle daha da güçlenen ilişkiler.",
+      "p2": "Küresel ticaretin nihayetinde insani bağlantıyla ilgili olduğuna her zaman inandım. Her sevkiyatın, her ürünün ve her ortaklığın arkasında güven ve anlayış üzerine kurulmuş bir ilişki vardır   hiçbir algoritmanın veya otomasyonun gerçekten yerini alamayacağı bir şey.",
+      "p3": "Traya International EXIM'de amacımız yalnızca ticareti kolaylaştırmak değil, sınırlar ötesinde anlamlı ve kalıcı ilişkiler kurmaktır   her işlemle ve her görüşmeyle daha da güçlenen ilişkiler.",
       "p4": "Dünyayı keşfetme tutkusuyla başlayan şey, kararlılık, dürüstlük ve gerçekten küresel bir vizyonla yönlendirilen bir işe dönüştü. Ve daha yeni başlıyoruz.",
       "p5": "Bize güvendiğiniz ve bu yolculuğun bir parçası olmayı seçtiğiniz için teşekkür ederiz."
     },
@@ -492,7 +492,7 @@
       "error": "Bir şeyler ters gitti. Lütfen tekrar deneyin veya doğrudan bize e-posta gönderin.",
       "rateLimited": "Bugünkü limitinize ulaştınız. Lütfen bize e-posta gönderin veya WhatsApp'tan yazın.",
       "point1": "Bir iş günü içinde yanıt veriyoruz",
-      "point2": "Tedarik, numuneler, fiyatlandırma ve belgelendirme — bize her şeyi sorabilirsiniz",
+      "point2": "Tedarik, numuneler, fiyatlandırma ve belgelendirme   bize her şeyi sorabilirsiniz",
       "point3": "Ticaret masamıza doğrudan bir hat",
       "reassurance": "Genellikle 1 iş günü içinde yanıt verilir · Herhangi bir taahhüt gerektirmez.",
       "successHeading": "Mesaj gönderildi.",
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Ürünler",
-      "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın — 30 kategoride 499 ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
+      "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın   30 kategoride 499 ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
     },
     "hub": {
       "eyebrow": "Gıda ve Tarım kataloğu",

@@ -3,7 +3,7 @@ import {rateLimit, getClientIp} from '@/lib/rate-limit';
 import {buildKnowledgeBase, buildSystemPrompt} from '@/lib/chatbot/knowledge';
 import {getProductBySlug, getCategoryBySlug} from '@/lib/catalogue';
 
-// Node runtime — the knowledge base reads the catalogue/site-settings (fs + Sanity).
+// Node runtime   the knowledge base reads the catalogue/site-settings (fs + Sanity).
 export const runtime = 'nodejs';
 
 const MODEL_PRIMARY = 'gemini-2.5-flash'; // best quality; smaller free-tier quota
@@ -150,7 +150,7 @@ export async function POST(req: Request) {
           }
         }
       } catch {
-        // stream interrupted — end gracefully
+        // stream interrupted   end gracefully
       } finally {
         controller.close();
       }

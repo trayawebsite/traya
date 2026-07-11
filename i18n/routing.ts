@@ -29,7 +29,7 @@ export const routing = defineRouting({
 
 export type Locale = (typeof routing.locales)[number];
 
-// Right-to-left locales (only Arabic today) — used for the <html dir> attribute.
+// Right-to-left locales (only Arabic today)   used for the <html dir> attribute.
 export const rtlLocales: Locale[] = ['ar'];
 
 // Native display names for the switcher and the language prompt.

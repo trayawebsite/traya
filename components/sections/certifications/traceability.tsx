@@ -1,24 +1,26 @@
-import {getTranslations} from 'next-intl/server';
-import {Container} from '@/components/ui/container';
+import { getTranslations } from "next-intl/server";
+import { Container } from "@/components/ui/container";
 
-// The documentation/traceability closer — a dark espresso band listing the
+// The documentation/traceability closer   a dark espresso band listing the
 // paper trail that travels with every shipment. The concrete proof behind the
 // trust claims above.
-const DOCS = ['d1', 'd2', 'd3', 'd4', 'd5'] as const;
+const DOCS = ["d1", "d2", "d3", "d4", "d5"] as const;
 
 export async function Traceability() {
-  const t = await getTranslations('Certifications.trace');
+  const t = await getTranslations("Certifications.trace");
 
   return (
     <section className="bg-traya-deep text-traya-cream">
       <Container className="py-section-lg">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div>
-            <p className="section-label on-dark">{t('eyebrow')}</p>
+            <p className="section-label on-dark">{t("eyebrow")}</p>
             <h2 className="mt-4 text-balance font-display text-display-sm lg:text-display">
-              {t('heading')}
+              {t("heading")}
             </h2>
-            <p className="mt-5 leading-relaxed text-traya-cream/75">{t('body')}</p>
+            <p className="mt-5 leading-relaxed text-traya-cream/75">
+              {t("body")}
+            </p>
           </div>
 
           <ul className="lg:pt-2">

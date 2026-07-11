@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Cara Kami Bekerja — Traya International Exim",
+      "title": "Cara Kami Bekerja   Traya International Exim",
       "description": "Bagaimana Traya mengelola ekspor Anda mulai dari permintaan hingga pengiriman: pengadaan, verifikasi mutu, dokumentasi, logistik, dan pengiriman melalui laut, udara, atau kurir."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Asisten Traya",
     "subtitle": "Tanyakan tentang produk kami & cara kami bekerja",
-    "greeting": "Halo! Saya asisten Traya. Tanyakan kepada saya tentang produk, kategori, sampel, atau cara bekerja sama dengan kami — saya di sini untuk membantu.",
+    "greeting": "Halo! Saya asisten Traya. Tanyakan kepada saya tentang produk, kategori, sampel, atau cara bekerja sama dengan kami   saya di sini untuk membantu.",
     "chip1": "Apa yang Anda ekspor?",
     "chip2": "Bagaimana cara kerja sampel?",
     "chip3": "Bagaimana cara memesan?",
@@ -126,7 +126,7 @@
     "whatsapp": "Obrolan di WhatsApp",
     "chat": "Obrolan dengan kami",
     "whatsappMessage": "Halo Traya International Exim, saya ingin menanyakan tentang ekspor bahan pangan Anda.\n\nProduk: \nJumlah / grade: \nNegara tujuan: \nPerusahaan: ",
-    "siteLabel": "Traya International Exim — beranda",
+    "siteLabel": "Traya International Exim   beranda",
     "menuAria": "Menu",
     "navAria": "Seluler",
     "dismissAria": "Tutup",
@@ -252,7 +252,7 @@
     "messageSample": "Permintaan: Sampel berbayar (pembeli menanggung biaya sampel + pengiriman)",
     "reassurance": "Biasanya membalas dalam 1 hari kerja · Tanpa kewajiban.",
     "successHeading": "Permintaan diterima.",
-    "successBody": "Terima kasih. Tim kami akan meninjau kebutuhan Anda dan membalas dengan harga, MOQ, kemasan, dan waktu produksi — biasanya dalam satu hari kerja.",
+    "successBody": "Terima kasih. Tim kami akan meninjau kebutuhan Anda dan membalas dengan harga, MOQ, kemasan, dan waktu produksi   biasanya dalam satu hari kerja.",
     "trust": {
       "eyebrow": "Yang dapat Anda harapkan",
       "heading": "Penawaran yang jelas dan lengkap.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Perusahaan Ekspor India",
+      "title": "Traya International Exim LLP   Perusahaan Ekspor India",
       "description": "Traya International Exim adalah perusahaan ekspor India multisektor yang membantu pembeli global mengadakan bahan pangan, rempah, produk dehidrasi, bubuk, dan herbal dari India."
     },
     "hero": {
       "eyebrow": "Memperluas Cakrawala Melalui Perdagangan.",
       "heading": "Mitra tepercaya Anda untuk pengadaan dari India.",
-      "sub": "Traya berkomitmen membangun kemitraan global yang langgeng melalui kepercayaan, keandalan, dan eksekusi profesional. Dengan portofolio produk berkualitas yang terus berkembang dan pendekatan yang berfokus pada pelanggan, kami membantu bisnis menavigasi perdagangan internasional dengan percaya diri.",
+      "sub": "Traya berkomitmen membangun kemitraan global yang langgeng melalui kepercayaan, keandalan, dan eksekusi profesional. Dengan portofolio produk berkualitas yang terus berkembang, kami membantu bisnis menavigasi perdagangan internasional dengan percaya diri.",
       "cta": "Jelajahi Produk",
       "ctaEnquiry": "Bagikan kebutuhan Anda",
       "stat": "Pangan, Agro & Kimia · 499 produk · 30 kategori",
@@ -283,7 +283,7 @@
       "eyebrow": "Bagaimana Traya membantu",
       "heading": "Menghubungkan peluang global dengan",
       "headingAccent": "eksekusi yang tepercaya.",
-      "body": "Mulai dari mengidentifikasi produk yang tepat hingga mengirimkannya ke tujuan Anda, kami mengelola setiap langkah dengan cermat, patuh, dan berkomitmen. Tetap mendapat informasi, tetap percaya diri — dengan satu titik kontak.",
+      "body": "Mulai dari mengidentifikasi produk yang tepat hingga mengirimkannya ke tujuan Anda, kami mengelola setiap langkah dengan cermat, patuh, dan berkomitmen. Tetap mendapat informasi, tetap percaya diri   dengan satu titik kontak.",
       "f1Title": "Pengadaan Produk",
       "f1Body": "Kami bekerja sama dengan jaringan mitra yang berfokus pada mutu untuk menghadirkan produk yang andal bagi Anda.",
       "f2Title": "Dokumentasi Ekspor",
@@ -292,12 +292,12 @@
       "f3Body": "Logistik yang andal dan pengiriman tepat waktu ke seluruh dunia."
     },
     "stats": {
-      "s1": "Global",
-      "s1Sub": "Mitra Dagang",
-      "s2": "Tepercaya",
-      "s2Sub": "Kemitraan",
-      "s3": "Berkembang",
-      "s3Sub": "Portofolio",
+      "s1": "499",
+      "s1Sub": "Produk Terdaftar",
+      "s2": "30",
+      "s2Sub": "Kategori",
+      "s3": "Tepercaya",
+      "s3Sub": "Kemitraan",
       "s4": "100%",
       "s4Sub": "Diadakan dari India"
     },
@@ -306,7 +306,7 @@
       "heading": "Yang Kami Ekspor",
       "sub": "Portofolio kami dirancang untuk mendukung bisnis di berbagai industri. Seiring kami bertumbuh, begitu pula rangkaian produk kami.",
       "foodTitle": "Produk Pangan & Agro",
-      "foodBody": "Produk pertanian premium yang diadakan dari produsen India tepercaya, selaras dengan standar mutu dan keamanan internasional.",
+      "foodBody": "Produk pertanian premium yang diadakan dari produsen India tepercaya, selaras dengan standar mutu internasional.",
       "foodCta": "Lihat Produk Pangan & Agro",
       "chemTitle": "Bahan Kimia",
       "chemBody": "Bahan kimia industri dan khusus yang melayani beragam aplikasi manufaktur di pasar global.",
@@ -409,9 +409,9 @@
       "eyebrow": "Catatan dari pendiri",
       "name": "Neha Pardeshi",
       "role": "Pendiri & CEO",
-      "p1": "Dunia tidak terbuka bagi saya melalui buku pelajaran — dunia terbuka melalui perjalanan. Menjelajahi berbagai budaya, bertemu orang-orang dari segala latar belakang, dan melihat dunia melalui berbagai perspektif membentuk bukan hanya siapa saya, tetapi juga apa yang saya pilih untuk bangun.",
-      "p2": "Saya selalu percaya bahwa perdagangan global pada akhirnya adalah tentang hubungan antarmanusia. Di balik setiap pengiriman, setiap produk, dan setiap kemitraan ada hubungan yang dibangun atas kepercayaan dan saling pengertian — sesuatu yang tidak dapat benar-benar digantikan oleh algoritma atau otomatisasi apa pun.",
-      "p3": "Di Traya International EXIM, tujuan kami bukan sekadar memfasilitasi perdagangan, tetapi membangun hubungan yang bermakna dan langgeng lintas batas negara — hubungan yang semakin kuat dengan setiap transaksi dan setiap percakapan.",
+      "p1": "Dunia tidak terbuka bagi saya melalui buku pelajaran   dunia terbuka melalui perjalanan. Menjelajahi berbagai budaya, bertemu orang-orang dari segala latar belakang, dan melihat dunia melalui berbagai perspektif membentuk bukan hanya siapa saya, tetapi juga apa yang saya pilih untuk bangun.",
+      "p2": "Saya selalu percaya bahwa perdagangan global pada akhirnya adalah tentang hubungan antarmanusia. Di balik setiap pengiriman, setiap produk, dan setiap kemitraan ada hubungan yang dibangun atas kepercayaan dan saling pengertian   sesuatu yang tidak dapat benar-benar digantikan oleh algoritma atau otomatisasi apa pun.",
+      "p3": "Di Traya International EXIM, tujuan kami bukan sekadar memfasilitasi perdagangan, tetapi membangun hubungan yang bermakna dan langgeng lintas batas negara   hubungan yang semakin kuat dengan setiap transaksi dan setiap percakapan.",
       "p4": "Apa yang bermula sebagai kegemaran menjelajahi dunia telah berkembang menjadi bisnis yang didorong oleh komitmen, integritas, dan visi yang benar-benar global. Dan kami baru saja memulai.",
       "p5": "Terima kasih telah mempercayai kami dan memilih untuk menjadi bagian dari perjalanan ini."
     },
@@ -492,11 +492,11 @@
       "error": "Ada yang tidak beres. Silakan coba lagi, atau kirim email langsung kepada kami.",
       "rateLimited": "Anda telah mencapai batas hari ini. Silakan kirim email atau hubungi kami di WhatsApp.",
       "point1": "Kami membalas dalam satu hari kerja",
-      "point2": "Pengadaan, sampel, harga, dan dokumentasi — tanyakan apa saja kepada kami",
+      "point2": "Pengadaan, sampel, harga, dan dokumentasi   tanyakan apa saja kepada kami",
       "point3": "Jalur langsung ke tim perdagangan kami",
       "reassurance": "Biasanya membalas dalam 1 hari kerja · Tanpa kewajiban.",
       "successHeading": "Pesan terkirim.",
-      "successBody": "Terima kasih. Tim kami akan meninjau pesan Anda dan menghubungi Anda kembali — biasanya dalam satu hari kerja."
+      "successBody": "Terima kasih. Tim kami akan meninjau pesan Anda dan menghubungi Anda kembali   biasanya dalam satu hari kerja."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produk",
-      "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya — 499 produk di 30 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
+      "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya   499 produk di 30 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
     },
     "hub": {
       "eyebrow": "Katalog Pangan & Agro",

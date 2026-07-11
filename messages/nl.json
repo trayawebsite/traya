@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Hoe Wij Werken — Traya International Exim",
+      "title": "Hoe Wij Werken   Traya International Exim",
       "description": "Hoe Traya uw export beheert van aanvraag tot levering: sourcing, kwaliteitscontrole, documentatie, logistiek en verzending per zee, lucht of koerier."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Traya-assistent",
     "subtitle": "Vraag naar onze producten & werkwijze",
-    "greeting": "Hallo! Ik ben de Traya-assistent. Vraag mij gerust naar onze producten, categorieën, monsters, of hoe u met ons kunt samenwerken — ik help u graag verder.",
+    "greeting": "Hallo! Ik ben de Traya-assistent. Vraag mij gerust naar onze producten, categorieën, monsters, of hoe u met ons kunt samenwerken   ik help u graag verder.",
     "chip1": "Wat exporteert u?",
     "chip2": "Hoe werken monsters?",
     "chip3": "Hoe plaats ik een bestelling?",
@@ -126,7 +126,7 @@
     "whatsapp": "Chat via WhatsApp",
     "chat": "Chat met ons",
     "whatsappMessage": "Hallo Traya International Exim, ik zou graag meer informatie willen over uw export van voedingsingrediënten.\n\nProduct(en): \nHoeveelheid / kwaliteit: \nBestemmingsland: \nBedrijf: ",
-    "siteLabel": "Traya International Exim — home",
+    "siteLabel": "Traya International Exim   home",
     "menuAria": "Menu",
     "navAria": "Mobiel",
     "dismissAria": "Sluiten",
@@ -252,7 +252,7 @@
     "messageSample": "Aanvraag: Betaald monster (koper betaalt monsterkosten + verzending)",
     "reassurance": "Doorgaans reactie binnen 1 werkdag · Geheel vrijblijvend.",
     "successHeading": "Aanvraag ontvangen.",
-    "successBody": "Dank u. Ons team beoordeelt uw behoefte en reageert met prijzen, MOQ, verpakking en levertijd — meestal binnen één werkdag.",
+    "successBody": "Dank u. Ons team beoordeelt uw behoefte en reageert met prijzen, MOQ, verpakking en levertijd   meestal binnen één werkdag.",
     "trust": {
       "eyebrow": "Wat u kunt verwachten",
       "heading": "Een duidelijke, volledige offerte.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Indiaas Exportbedrijf",
+      "title": "Traya International Exim LLP   Indiaas Exportbedrijf",
       "description": "Traya International Exim is een multisectoraal Indiaas exporthuis dat internationale kopers helpt bij het sourcen van voedingsingrediënten, specerijen, gedroogde producten, poeders en kruiden uit India."
     },
     "hero": {
       "eyebrow": "Horizonnen Verbreden Door Handel.",
       "heading": "Uw betrouwbare partner voor sourcing uit India.",
-      "sub": "Traya zet zich in voor het opbouwen van duurzame, wereldwijde partnerschappen door middel van vertrouwen, betrouwbaarheid en professionele uitvoering. Met een groeiend portfolio aan kwaliteitsproducten en een klantgerichte aanpak helpen wij bedrijven met vertrouwen internationale handel te voeren.",
+      "sub": "Traya zet zich in voor het opbouwen van duurzame, wereldwijde partnerschappen door middel van vertrouwen, betrouwbaarheid en professionele uitvoering. Met een groeiend portfolio aan kwaliteitsproducten helpen wij bedrijven met vertrouwen internationale handel te voeren.",
       "cta": "Ontdek Producten",
       "ctaEnquiry": "Deel uw behoefte",
       "stat": "Voeding, Agro & Chemicaliën · 499 producten · 30 categorieën",
@@ -283,7 +283,7 @@
       "eyebrow": "Hoe Traya helpt",
       "heading": "Wereldwijde kansen verbinden met",
       "headingAccent": "betrouwbare uitvoering.",
-      "body": "Van het identificeren van de juiste producten tot de levering op uw bestemming: wij beheren elke stap met zorg, compliance en toewijding. Blijf geïnformeerd, blijf vol vertrouwen — met één aanspreekpunt.",
+      "body": "Van het identificeren van de juiste producten tot de levering op uw bestemming: wij beheren elke stap met zorg, compliance en toewijding. Blijf geïnformeerd, blijf vol vertrouwen   met één aanspreekpunt.",
       "f1Title": "Productsourcing",
       "f1Body": "Wij werken samen met een netwerk van kwaliteitsgerichte partners om u betrouwbare producten te leveren.",
       "f2Title": "Exportdocumentatie",
@@ -292,12 +292,12 @@
       "f3Body": "Betrouwbare logistiek en tijdige levering wereldwijd."
     },
     "stats": {
-      "s1": "Wereldwijd",
-      "s1Sub": "Handelspartner",
-      "s2": "Betrouwbare",
-      "s2Sub": "Partnerschappen",
-      "s3": "Groeiend",
-      "s3Sub": "Portfolio",
+      "s1": "499",
+      "s1Sub": "Vermelde producten",
+      "s2": "30",
+      "s2Sub": "Categorieën",
+      "s3": "Betrouwbare",
+      "s3Sub": "Partnerschappen",
       "s4": "100%",
       "s4Sub": "Gesourcet uit India"
     },
@@ -306,7 +306,7 @@
       "heading": "Wat Wij Exporteren",
       "sub": "Ons portfolio is ontworpen om bedrijven in meerdere sectoren te ondersteunen. Naarmate wij groeien, groeit ook ons assortiment.",
       "foodTitle": "Voeding & Agroproducten",
-      "foodBody": "Premium landbouwproducten, gesourcet van betrouwbare Indiase fabrikanten en afgestemd op internationale kwaliteits- en veiligheidsnormen.",
+      "foodBody": "Premium landbouwproducten, gesourcet van betrouwbare Indiase fabrikanten en afgestemd op internationale kwaliteitsnormen.",
       "foodCta": "Bekijk Voeding & Agroproducten",
       "chemTitle": "Chemicaliën",
       "chemBody": "Industriële en speciale chemicaliën voor uiteenlopende productietoepassingen op wereldwijde markten.",
@@ -348,7 +348,7 @@
       "global": "Wereldwijd Perspectief",
       "globalBody": "Sourcing uit India voor kopers op verschillende markten, met documenten en voorwaarden afgestemd op uw bestemming.",
       "growth": "Samen Groeien",
-      "growthBody": "Een groeiend portfolio en terugkerende partnerschappen — wij schalen mee naarmate uw behoeften groeien."
+      "growthBody": "Een groeiend portfolio en terugkerende partnerschappen   wij schalen mee naarmate uw behoeften groeien."
     },
     "testimonials": {
       "eyebrow": "Wat kopers zeggen"
@@ -410,8 +410,8 @@
       "name": "Neha Pardeshi",
       "role": "Oprichter & CEO",
       "p1": "De wereld ging voor mij niet open door schoolboeken, maar door reizen. Het verkennen van verschillende culturen, het ontmoeten van mensen uit alle lagen van de bevolking en het bekijken van de wereld vanuit verschillende perspectieven hebben niet alleen gevormd wie ik ben, maar ook wat ik heb gekozen om op te bouwen.",
-      "p2": "Ik heb altijd geloofd dat wereldhandel uiteindelijk draait om menselijke verbinding. Achter elke zending, elk product en elk partnerschap schuilt een relatie die is opgebouwd op vertrouwen en begrip — iets wat geen enkel algoritme of automatisering ooit werkelijk kan vervangen.",
-      "p3": "Bij Traya International EXIM is ons doel niet alleen om handel te faciliteren, maar om betekenisvolle en duurzame relaties over grenzen heen op te bouwen — relaties die met elke transactie en elk gesprek sterker worden.",
+      "p2": "Ik heb altijd geloofd dat wereldhandel uiteindelijk draait om menselijke verbinding. Achter elke zending, elk product en elk partnerschap schuilt een relatie die is opgebouwd op vertrouwen en begrip   iets wat geen enkel algoritme of automatisering ooit werkelijk kan vervangen.",
+      "p3": "Bij Traya International EXIM is ons doel niet alleen om handel te faciliteren, maar om betekenisvolle en duurzame relaties over grenzen heen op te bouwen   relaties die met elke transactie en elk gesprek sterker worden.",
       "p4": "Wat begon als een passie voor het ontdekken van de wereld, is uitgegroeid tot een onderneming gedreven door toewijding, integriteit en een werkelijk mondiale visie. En we staan nog maar aan het begin.",
       "p5": "Dank u voor uw vertrouwen en voor uw keuze om deel uit te maken van deze reis."
     },
@@ -492,11 +492,11 @@
       "error": "Er is iets misgegaan. Probeer het opnieuw, of e-mail ons rechtstreeks.",
       "rateLimited": "U heeft de daglimiet bereikt. E-mail ons of stuur ons een bericht via WhatsApp.",
       "point1": "Wij reageren binnen één werkdag",
-      "point2": "Sourcing, monsters, prijzen en documentatie — stel ons al uw vragen",
+      "point2": "Sourcing, monsters, prijzen en documentatie   stel ons al uw vragen",
       "point3": "Een directe lijn naar onze trade desk",
       "reassurance": "Doorgaans reactie binnen 1 werkdag · Geheel vrijblijvend.",
       "successHeading": "Bericht verzonden.",
-      "successBody": "Dank u. Ons team beoordeelt uw bericht en neemt contact met u op — meestal binnen één werkdag."
+      "successBody": "Dank u. Ons team beoordeelt uw bericht en neemt contact met u op   meestal binnen één werkdag."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Producten",
-      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën — 499 producten in 30 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
+      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën   499 producten in 30 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
     },
     "hub": {
       "eyebrow": "Catalogus Voeding & Agro",

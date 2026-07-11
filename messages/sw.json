@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Jinsi Tunavyofanya Kazi — Traya International Exim",
+      "title": "Jinsi Tunavyofanya Kazi   Traya International Exim",
       "description": "Jinsi Traya inavyosimamia usafirishaji wako wa bidhaa kutoka ombi hadi uwasilishaji: utafutaji wa bidhaa, uhakiki wa ubora, hati, huduma za usafirishaji, na usafirishaji kwa njia ya bahari, anga, au kurier."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Msaidizi wa Traya",
     "subtitle": "Uliza kuhusu bidhaa zetu na jinsi tunavyofanya kazi",
-    "greeting": "Habari! Mimi ni msaidizi wa Traya. Niulize kuhusu bidhaa zetu, kategoria, sampuli, au jinsi ya kufanya kazi nasi — niko hapa kusaidia.",
+    "greeting": "Habari! Mimi ni msaidizi wa Traya. Niulize kuhusu bidhaa zetu, kategoria, sampuli, au jinsi ya kufanya kazi nasi   niko hapa kusaidia.",
     "chip1": "Mnauza nini nje?",
     "chip2": "Sampuli zinafanyaje kazi?",
     "chip3": "Nawezaje kuweka oda?",
@@ -126,7 +126,7 @@
     "whatsapp": "Zungumza kwenye WhatsApp",
     "chat": "Zungumza nasi",
     "whatsappMessage": "Habari Traya International Exim, ningependa kuuliza kuhusu usafirishaji wenu wa viungo vya chakula.\n\nBidhaa: \nKiasi / daraja: \nNchi lengwa: \nKampuni: ",
-    "siteLabel": "Traya International Exim — nyumbani",
+    "siteLabel": "Traya International Exim   nyumbani",
     "menuAria": "Menyu",
     "navAria": "Simu",
     "dismissAria": "Ondoa",
@@ -252,7 +252,7 @@
     "messageSample": "Ombi: Sampuli ya kulipia (mnunuzi atalipa gharama ya sampuli + usafirishaji)",
     "reassurance": "Kwa kawaida hujibu ndani ya siku 1 ya kazi · Hakuna wajibu.",
     "successHeading": "Ombi limepokelewa.",
-    "successBody": "Asante. Timu yetu itapitia mahitaji yako na kujibu na bei, MOQ, ufungashaji, na muda wa utekelezaji — kwa kawaida ndani ya siku moja ya kazi.",
+    "successBody": "Asante. Timu yetu itapitia mahitaji yako na kujibu na bei, MOQ, ufungashaji, na muda wa utekelezaji   kwa kawaida ndani ya siku moja ya kazi.",
     "trust": {
       "eyebrow": "Nini cha kutarajia",
       "heading": "Nukuu ya bei iliyo wazi na kamili.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Kampuni ya Usafirishaji ya India",
+      "title": "Traya International Exim LLP   Kampuni ya Usafirishaji ya India",
       "description": "Traya International Exim ni kampuni ya usafirishaji ya India yenye sekta mbalimbali inayosaidia wanunuzi wa kimataifa kutafuta viungo vya chakula, viungo vya kupikia, bidhaa zilizokaushwa, unga, na mimea kutoka India."
     },
     "hero": {
       "eyebrow": "Kupanua Upeo Kupitia Biashara.",
       "heading": "Mshirika wako wa kuaminika wa kutafuta bidhaa kutoka India.",
-      "sub": "Traya imejitolea kujenga ushirikiano wa kimataifa wa kudumu kupitia imani, kuaminika, na utekelezaji wa kitaalamu. Kwa wigo unaokua wa bidhaa bora na mtazamo unaomlenga mteja, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.",
+      "sub": "Traya imejitolea kujenga ushirikiano wa kimataifa wa kudumu kupitia imani, kuaminika, na utekelezaji wa kitaalamu. Kwa wigo unaokua wa bidhaa bora, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.",
       "cta": "Gundua Bidhaa",
       "ctaEnquiry": "Shirikisha mahitaji yako",
       "stat": "Chakula, Kilimo na Kemikali · Bidhaa 499 · Kategoria 30",
@@ -283,7 +283,7 @@
       "eyebrow": "Jinsi Traya inavyosaidia",
       "heading": "Kuunganisha fursa za kimataifa na",
       "headingAccent": "utekelezaji wa kuaminika.",
-      "body": "Kutoka kutambua bidhaa sahihi hadi kuzisafirisha eneo lako lengwa, tunasimamia kila hatua kwa uangalifu, uzingatiaji wa kanuni, na dhamira. Baki na taarifa, baki na ujasiri — kupitia mtu mmoja wa kuwasiliana naye.",
+      "body": "Kutoka kutambua bidhaa sahihi hadi kuzisafirisha eneo lako lengwa, tunasimamia kila hatua kwa uangalifu, uzingatiaji wa kanuni, na dhamira. Baki na taarifa, baki na ujasiri   kupitia mtu mmoja wa kuwasiliana naye.",
       "f1Title": "Utafutaji wa Bidhaa",
       "f1Body": "Tunafanya kazi na mtandao wa washirika wanaozingatia ubora ili kukuletea bidhaa za kuaminika.",
       "f2Title": "Hati za Usafirishaji",
@@ -292,12 +292,12 @@
       "f3Body": "Huduma za usafirishaji za kuaminika na uwasilishaji kwa wakati duniani kote."
     },
     "stats": {
-      "s1": "Kimataifa",
-      "s1Sub": "Mshirika wa Biashara",
-      "s2": "Anayeaminika",
-      "s2Sub": "Ushirikiano",
-      "s3": "Unaokua",
-      "s3Sub": "Wigo wa Bidhaa",
+      "s1": "499",
+      "s1Sub": "Bidhaa Zilizoorodheshwa",
+      "s2": "30",
+      "s2Sub": "Kategoria",
+      "s3": "Anayeaminika",
+      "s3Sub": "Ushirikiano",
       "s4": "100%",
       "s4Sub": "Inayotafutwa kutoka India"
     },
@@ -306,7 +306,7 @@
       "heading": "Tunachouza Nje",
       "sub": "Wigo wetu umeundwa kusaidia biashara katika viwanda mbalimbali. Tunavyokua, ndivyo wigo wetu unavyoongezeka.",
       "foodTitle": "Bidhaa za Chakula na Kilimo",
-      "foodBody": "Bidhaa bora za kilimo zinazotafutwa kutoka kwa watengenezaji wa India wanaoaminika, zinazolingana na viwango vya kimataifa vya ubora na usalama.",
+      "foodBody": "Bidhaa bora za kilimo zinazotafutwa kutoka kwa watengenezaji wa India wanaoaminika, zinazolingana na viwango vya kimataifa vya ubora.",
       "foodCta": "Angalia Bidhaa za Chakula na Kilimo",
       "chemTitle": "Kemikali",
       "chemBody": "Kemikali za viwandani na maalum zinazohudumia matumizi mbalimbali ya utengenezaji katika masoko ya kimataifa.",
@@ -409,9 +409,9 @@
       "eyebrow": "Neno kutoka kwa mwanzilishi",
       "name": "Neha Pardeshi",
       "role": "Mwanzilishi na Mkurugenzi Mtendaji",
-      "p1": "Dunia haikunifungukia kupitia vitabu — ilinifungukia kupitia safari. Kuchunguza tamaduni mbalimbali, kukutana na watu wa hali tofauti za maisha, na kuona dunia kupitia mitazamo tofauti kuliunda si tu nilivyo, bali pia nilichochagua kujenga.",
-      "p2": "Nimekuwa nikiamini kwamba biashara ya kimataifa hatimaye inahusu uhusiano wa kibinadamu. Nyuma ya kila shehena, kila bidhaa, na kila ushirikiano kuna uhusiano uliojengwa juu ya imani na uelewano — kitu ambacho hakuna algoriti au automesheni inayoweza kukibadilisha kikamilifu.",
-      "p3": "Katika Traya International EXIM, lengo letu si tu kuwezesha biashara, bali kujenga mahusiano yenye maana na ya kudumu kuvuka mipaka — mahusiano yanayozidi kuimarika kwa kila muamala na kila mazungumzo.",
+      "p1": "Dunia haikunifungukia kupitia vitabu   ilinifungukia kupitia safari. Kuchunguza tamaduni mbalimbali, kukutana na watu wa hali tofauti za maisha, na kuona dunia kupitia mitazamo tofauti kuliunda si tu nilivyo, bali pia nilichochagua kujenga.",
+      "p2": "Nimekuwa nikiamini kwamba biashara ya kimataifa hatimaye inahusu uhusiano wa kibinadamu. Nyuma ya kila shehena, kila bidhaa, na kila ushirikiano kuna uhusiano uliojengwa juu ya imani na uelewano   kitu ambacho hakuna algoriti au automesheni inayoweza kukibadilisha kikamilifu.",
+      "p3": "Katika Traya International EXIM, lengo letu si tu kuwezesha biashara, bali kujenga mahusiano yenye maana na ya kudumu kuvuka mipaka   mahusiano yanayozidi kuimarika kwa kila muamala na kila mazungumzo.",
       "p4": "Kilichoanza kama shauku ya kuchunguza dunia kimebadilika na kuwa biashara inayoongozwa na dhamira, uadilifu, na maono ya kweli ya kimataifa. Na bado tunaanza tu.",
       "p5": "Asante kwa kutuamini na kuchagua kuwa sehemu ya safari hii."
     },
@@ -492,11 +492,11 @@
       "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
       "rateLimited": "Umefikia kikomo cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
       "point1": "Tunajibu ndani ya siku moja ya kazi",
-      "point2": "Utafutaji wa bidhaa, sampuli, bei na hati — tuulize chochote",
+      "point2": "Utafutaji wa bidhaa, sampuli, bei na hati   tuulize chochote",
       "point3": "Njia ya moja kwa moja kwa dawati letu la biashara",
       "reassurance": "Kwa kawaida hujibu ndani ya siku 1 ya kazi · Hakuna wajibu.",
       "successHeading": "Ujumbe umetumwa.",
-      "successBody": "Asante. Timu yetu itapitia ujumbe wako na kukujibu — kwa kawaida ndani ya siku moja ya kazi."
+      "successBody": "Asante. Timu yetu itapitia ujumbe wako na kukujibu   kwa kawaida ndani ya siku moja ya kazi."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Bidhaa",
-      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali — bidhaa 499 katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
+      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali   bidhaa 499 katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
     },
     "hub": {
       "eyebrow": "Katalogi ya Chakula na Kilimo",

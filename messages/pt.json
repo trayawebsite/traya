@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Como Trabalhamos — Traya International Exim",
+      "title": "Como Trabalhamos   Traya International Exim",
       "description": "Como a Traya gere a sua exportação, desde o pedido até à entrega: abastecimento, verificação de qualidade, documentação, logística e envio por mar, ar ou correio."
     },
     "hero": {
@@ -85,7 +85,7 @@
   "Chatbot": {
     "title": "Assistente Traya",
     "subtitle": "Pergunte sobre os nossos produtos e como trabalhamos",
-    "greeting": "Olá! Sou o assistente da Traya. Pergunte-me sobre os nossos produtos, categorias, amostras, ou como trabalhar connosco — estou aqui para ajudar.",
+    "greeting": "Olá! Sou o assistente da Traya. Pergunte-me sobre os nossos produtos, categorias, amostras, ou como trabalhar connosco   estou aqui para ajudar.",
     "chip1": "O que exportam?",
     "chip2": "Como funcionam as amostras?",
     "chip3": "Como faço uma encomenda?",
@@ -126,7 +126,7 @@
     "whatsapp": "Conversar no WhatsApp",
     "chat": "Fale connosco",
     "whatsappMessage": "Olá Traya International Exim, gostaria de solicitar informações sobre as vossas exportações de ingredientes alimentares.\n\nProduto(s): \nQuantidade / grau: \nPaís de destino: \nEmpresa: ",
-    "siteLabel": "Traya International Exim — início",
+    "siteLabel": "Traya International Exim   início",
     "menuAria": "Menu",
     "navAria": "Móvel",
     "dismissAria": "Dispensar",
@@ -252,7 +252,7 @@
     "messageSample": "Pedido: Amostra paga (comprador paga o custo da amostra + envio)",
     "reassurance": "Normalmente respondemos no prazo de 1 dia útil · Sem compromisso.",
     "successHeading": "Pedido recebido.",
-    "successBody": "Obrigado. A nossa equipa irá analisar a sua necessidade e responder com o preço, MOQ, embalagem e prazo de entrega — normalmente no prazo de um dia útil.",
+    "successBody": "Obrigado. A nossa equipa irá analisar a sua necessidade e responder com o preço, MOQ, embalagem e prazo de entrega   normalmente no prazo de um dia útil.",
     "trust": {
       "eyebrow": "O que esperar",
       "heading": "Um orçamento claro e completo.",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Empresa Exportadora Indiana",
+      "title": "Traya International Exim LLP   Empresa Exportadora Indiana",
       "description": "A Traya International Exim é uma casa exportadora indiana multissectorial que ajuda compradores internacionais a abastecerem-se de ingredientes alimentares, especiarias, produtos desidratados, pós e ervas provenientes da Índia."
     },
     "hero": {
       "eyebrow": "A Expandir Horizontes Através do Comércio.",
       "heading": "O seu parceiro de confiança para abastecimento na Índia.",
-      "sub": "A Traya está empenhada em construir parcerias globais duradouras através da confiança, fiabilidade e execução profissional. Com um portefólio de produtos em crescimento e uma abordagem centrada no cliente, ajudamos as empresas a navegar no comércio internacional com confiança.",
+      "sub": "A Traya está empenhada em construir parcerias globais duradouras através da confiança, fiabilidade e execução profissional. Com um portefólio de produtos em crescimento, ajudamos as empresas a navegar no comércio internacional com confiança.",
       "cta": "Explorar Produtos",
       "ctaEnquiry": "Partilhe a sua necessidade",
       "stat": "Alimentos, Agro e Químicos · 499 produtos · 30 categorias",
@@ -283,7 +283,7 @@
       "eyebrow": "Como a Traya ajuda",
       "heading": "A ligar oportunidades globais a",
       "headingAccent": "execução de confiança.",
-      "body": "Desde identificar os produtos certos até os entregar no seu destino, gerimos cada etapa com cuidado, conformidade e compromisso. Mantenha-se informado, mantenha-se confiante — com um único ponto de contacto.",
+      "body": "Desde identificar os produtos certos até os entregar no seu destino, gerimos cada etapa com cuidado, conformidade e compromisso. Mantenha-se informado, mantenha-se confiante   com um único ponto de contacto.",
       "f1Title": "Abastecimento de Produtos",
       "f1Body": "Trabalhamos com uma rede de parceiros focados na qualidade para lhe trazer produtos fiáveis.",
       "f2Title": "Documentação de Exportação",
@@ -292,12 +292,12 @@
       "f3Body": "Logística fiável e entregas pontuais em todo o mundo."
     },
     "stats": {
-      "s1": "Global",
-      "s1Sub": "Parceiro Comercial",
-      "s2": "De Confiança",
-      "s2Sub": "Parcerias",
-      "s3": "Em Expansão",
-      "s3Sub": "Portefólio",
+      "s1": "499",
+      "s1Sub": "Produtos listados",
+      "s2": "30",
+      "s2Sub": "Categorias",
+      "s3": "De Confiança",
+      "s3Sub": "Parcerias",
       "s4": "100%",
       "s4Sub": "Proveniente da Índia"
     },
@@ -306,7 +306,7 @@
       "heading": "O Que Exportamos",
       "sub": "O nosso portefólio foi concebido para apoiar empresas em múltiplos setores. À medida que crescemos, também a nossa gama cresce.",
       "foodTitle": "Produtos Alimentares e Agro",
-      "foodBody": "Produtos agrícolas premium provenientes de fabricantes indianos de confiança, alinhados com os padrões internacionais de qualidade e segurança.",
+      "foodBody": "Produtos agrícolas premium provenientes de fabricantes indianos de confiança, alinhados com os padrões internacionais de qualidade.",
       "foodCta": "Ver Produtos Alimentares e Agro",
       "chemTitle": "Químicos",
       "chemBody": "Químicos industriais e especiais que servem diversas aplicações de fabrico em mercados globais.",
@@ -348,7 +348,7 @@
       "global": "Perspetiva Global",
       "globalBody": "Abastecimento a partir da Índia para compradores em vários mercados, com documentos e condições ajustados ao seu destino.",
       "growth": "A Crescer Juntos",
-      "growthBody": "Um portefólio em expansão e parcerias recorrentes — crescemos à medida que as suas necessidades crescem."
+      "growthBody": "Um portefólio em expansão e parcerias recorrentes   crescemos à medida que as suas necessidades crescem."
     },
     "testimonials": {
       "eyebrow": "O que dizem os compradores"
@@ -409,9 +409,9 @@
       "eyebrow": "Uma nota da fundadora",
       "name": "Neha Pardeshi",
       "role": "Fundadora & CEO",
-      "p1": "O mundo não se abriu para mim através dos livros — abriu-se através das viagens. Explorar culturas diferentes, conhecer pessoas de todos os quadrantes da vida e ver o mundo através de perspetivas diferentes moldou não só quem sou, mas também aquilo que escolhi construir.",
-      "p2": "Sempre acreditei que o comércio global é, no fundo, sobre ligação humana. Por trás de cada carregamento, de cada produto e de cada parceria está uma relação construída sobre confiança e compreensão — algo que nenhum algoritmo ou automação pode verdadeiramente substituir.",
-      "p3": "Na Traya International EXIM, o nosso objetivo não é apenas facilitar o comércio, mas construir relações significativas e duradouras além-fronteiras — relações que se fortalecem a cada transação e a cada conversa.",
+      "p1": "O mundo não se abriu para mim através dos livros   abriu-se através das viagens. Explorar culturas diferentes, conhecer pessoas de todos os quadrantes da vida e ver o mundo através de perspetivas diferentes moldou não só quem sou, mas também aquilo que escolhi construir.",
+      "p2": "Sempre acreditei que o comércio global é, no fundo, sobre ligação humana. Por trás de cada carregamento, de cada produto e de cada parceria está uma relação construída sobre confiança e compreensão   algo que nenhum algoritmo ou automação pode verdadeiramente substituir.",
+      "p3": "Na Traya International EXIM, o nosso objetivo não é apenas facilitar o comércio, mas construir relações significativas e duradouras além-fronteiras   relações que se fortalecem a cada transação e a cada conversa.",
       "p4": "O que começou como uma paixão por explorar o mundo evoluiu para um negócio movido pelo compromisso, pela integridade e por uma visão verdadeiramente global. E estamos apenas a começar.",
       "p5": "Obrigada por confiar em nós e por escolher fazer parte desta jornada."
     },
@@ -492,11 +492,11 @@
       "error": "Algo correu mal. Tente novamente ou envie-nos um email diretamente.",
       "rateLimited": "Atingiu o limite de hoje. Envie-nos um email ou escreva-nos no WhatsApp.",
       "point1": "Respondemos no prazo de um dia útil",
-      "point2": "Abastecimento, amostras, preços e documentação — pergunte-nos o que quiser",
+      "point2": "Abastecimento, amostras, preços e documentação   pergunte-nos o que quiser",
       "point3": "Uma linha direta com a nossa equipa comercial",
       "reassurance": "Normalmente respondemos no prazo de 1 dia útil · Sem compromisso.",
       "successHeading": "Mensagem enviada.",
-      "successBody": "Obrigado. A nossa equipa irá analisar a sua mensagem e entrará em contacto — normalmente no prazo de um dia útil."
+      "successBody": "Obrigado. A nossa equipa irá analisar a sua mensagem e entrará em contacto   normalmente no prazo de um dia útil."
     }
   },
   "Certifications": {
@@ -626,7 +626,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produtos",
-      "description": "Explore o catálogo Alimentar, Agro e Químico da Traya — 499 produtos em 30 categorias, desde ingredientes desidratados e especiarias a corantes reativos, corantes alimentares e pigmentos. Para produtos mecânicos, papel ou outras necessidades de exportação, envie-nos as suas especificações."
+      "description": "Explore o catálogo Alimentar, Agro e Químico da Traya   499 produtos em 30 categorias, desde ingredientes desidratados e especiarias a corantes reativos, corantes alimentares e pigmentos. Para produtos mecânicos, papel ou outras necessidades de exportação, envie-nos as suas especificações."
     },
     "hub": {
       "eyebrow": "Catálogo Alimentar e Agro",

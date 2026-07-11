@@ -1,23 +1,34 @@
-import {getTranslations} from 'next-intl/server';
-import {Container} from '@/components/ui/container';
-import {FaqSchema} from '@/components/seo/faq-schema';
-import type {HomePage} from '@/sanity/lib/types';
+import { getTranslations } from "next-intl/server";
+import { Container } from "@/components/ui/container";
+import { FaqSchema } from "@/components/seo/faq-schema";
+import type { HomePage } from "@/sanity/lib/types";
 
-type FaqData = HomePage['faq'];
+type FaqData = HomePage["faq"];
 
-// Buyer FAQ — native <details>/<summary> accordions. Uses Sanity items when available.
-const FAQ_KEYS = ['moq', 'samples', 'leadtime', 'payment', 'packaging', 'certs'] as const;
+// Buyer FAQ   native <details>/<summary> accordions. Uses Sanity items when available.
+const FAQ_KEYS = [
+  "moq",
+  "samples",
+  "leadtime",
+  "payment",
+  "packaging",
+  "certs",
+] as const;
 
-export async function Faq({data}: {data?: FaqData}) {
-  const t = await getTranslations('Home.faq');
+export async function Faq({ data }: { data?: FaqData }) {
+  const t = await getTranslations("Home.faq");
 
-  const eyebrow = data?.eyebrow || t('eyebrow');
-  const heading = data?.heading || t('heading');
+  const eyebrow = data?.eyebrow || t("eyebrow");
+  const heading = data?.heading || t("heading");
 
   // Use Sanity items if provided, otherwise fall back to i18n
-  const items = data?.items && data.items.length > 0
-    ? data.items.map((item) => ({question: item.question, answer: item.answer}))
-    : FAQ_KEYS.map((k) => ({question: t(`${k}Q`), answer: t(`${k}A`)}));
+  const items =
+    data?.items && data.items.length > 0
+      ? data.items.map((item) => ({
+          question: item.question,
+          answer: item.answer,
+        }))
+      : FAQ_KEYS.map((k) => ({ question: t(`${k}Q`), answer: t(`${k}A`) }));
 
   return (
     <section className="border-b border-traya-border bg-background">

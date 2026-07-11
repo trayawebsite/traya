@@ -1,31 +1,31 @@
-import {getTranslations} from 'next-intl/server';
-import {Link} from '@/i18n/navigation';
-import {Container} from '@/components/ui/container';
-import {HeroCarousel} from './hero-carousel';
-import {SpecLine} from './spec-line';
-import {primaryBtn, secondaryBtn} from './styles';
-import type {HomePage} from '@/sanity/lib/types';
+import { getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { Container } from "@/components/ui/container";
+import { HeroCarousel } from "./hero-carousel";
+import { SpecLine } from "./spec-line";
+import { primaryBtn, secondaryBtn } from "./styles";
+import type { HomePage } from "@/sanity/lib/types";
 
-type HeroData = HomePage['hero'];
+type HeroData = HomePage["hero"];
 
 // Full-bleed hero on a light ingredient photograph (visual weight on the right,
 // filling the section's full height). Uses Sanity data when available, falls
 // back to i18n.
-export async function Hero({data}: {data?: HeroData}) {
-  const t = await getTranslations('Home.hero');
+export async function Hero({ data }: { data?: HeroData }) {
+  const t = await getTranslations("Home.hero");
 
-  const eyebrow = data?.eyebrow || t('eyebrow');
-  const heading = data?.heading || t('heading');
-  const sub = data?.sub || t('sub');
-  const cta = data?.ctaPrimaryLabel || t('cta');
-  const ctaEnquiry = data?.ctaSecondaryLabel || t('ctaEnquiry');
-  const statLine = data?.statLine || t('stat');
+  const eyebrow = data?.eyebrow || t("eyebrow");
+  const heading = data?.heading || t("heading");
+  const sub = data?.sub || t("sub");
+  const cta = data?.ctaPrimaryLabel || t("cta");
+  const ctaEnquiry = data?.ctaSecondaryLabel || t("ctaEnquiry");
+  const statLine = data?.statLine || t("stat");
 
   return (
     <section className="relative isolate overflow-hidden border-b border-traya-border bg-background">
-      {/* Background image carousel — fills the hero's full height */}
+      {/* Background image carousel   fills the hero's full height */}
       <HeroCarousel />
-      {/* Left ivory gradient — keeps the left-side headline legible over the image */}
+      {/* Left ivory gradient   keeps the left-side headline legible over the image */}
       <div
         aria-hidden
         className="absolute inset-0 bg-linear-to-r from-background from-0% via-background/95 via-48% to-background/10 lg:via-background/80 lg:via-58% lg:to-transparent"
@@ -37,7 +37,9 @@ export async function Hero({data}: {data?: HeroData}) {
           <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
             {heading}
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">{sub}</p>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+            {sub}
+          </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-3">
             <Link href="/products" className={primaryBtn}>
@@ -49,7 +51,7 @@ export async function Hero({data}: {data?: HeroData}) {
           </div>
 
           <div className="mt-10 border-t border-traya-border pt-6">
-            <SpecLine items={statLine.split(' · ')} />
+            <SpecLine items={statLine.split(" · ")} />
           </div>
         </div>
       </Container>

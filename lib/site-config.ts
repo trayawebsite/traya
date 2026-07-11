@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────
-// DATA / CONFIG layer — single source of truth for the shell STRUCTURE.
+// DATA / CONFIG layer   single source of truth for the shell STRUCTURE.
 // Components read keys + hrefs from here; visible TEXT comes from
 // messages/<locale>.json (translatable); dynamic VALUES (contact, social URLs,
 // GSTIN/IEC, catalogue) come from lib/site-settings.ts (env now, Sanity later).
@@ -12,7 +12,7 @@ export const siteConfig = {
   name: 'Traya International Exim LLP',
   shortName: 'Traya',
 
-  // Top navigation — labels via t('Links.<key>'). Logo links Home.
+  // Top navigation   labels via t('Links.<key>'). Logo links Home.
   nav: [
     {key: 'home', href: '/'},
     {key: 'about', href: '/about'},
@@ -37,7 +37,7 @@ export const siteConfig = {
     ] as NavItem[],
     // Conversion column. Sample/quote route to the cart-style Enquiry List (RFQ).
     // downloadCatalogue is only rendered when a catalogue file is configured
-    // (site-settings.catalogueUrl) — the footer filters it out otherwise, so the
+    // (site-settings.catalogueUrl)   the footer filters it out otherwise, so the
     // '#' here is never shipped as a live link.
     actions: [
       {key: 'requestSample', href: '/enquiry'},
@@ -51,18 +51,18 @@ export const siteConfig = {
     ] as NavItem[]
   },
 
-  // Socials — order + display label here; real URLs come from site-settings.
+  // Socials   order + display label here; real URLs come from site-settings.
   socials: [
     {key: 'linkedin', label: 'LinkedIn'},
     {key: 'instagram', label: 'Instagram'}
   ],
 
-  // WhatsApp — number from env (NEXT_PUBLIC_WHATSAPP_NUMBER), digits only,
+  // WhatsApp   number from env (NEXT_PUBLIC_WHATSAPP_NUMBER), digits only,
   // with the business line as the default. The prefilled message is localized
   // per-locale via i18n (`Header.whatsappMessage`), not stored here.
   whatsapp: {
     // `||` (not `??`) so an empty env value in production also falls back to the
-    // real number — the button must never disappear from a misconfigured var.
+    // real number   the button must never disappear from a misconfigured var.
     number: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || '919998916679'
   }
 } as const;

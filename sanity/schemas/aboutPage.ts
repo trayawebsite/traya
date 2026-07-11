@@ -1,6 +1,6 @@
 import {defineField, defineType} from 'sanity';
 
-// Singleton — the company profile content, fully editable by the client.
+// Singleton   the company profile content, fully editable by the client.
 export const aboutPage = defineType({
   name: 'aboutPage',
   title: 'About Page',
@@ -69,7 +69,7 @@ export const aboutPage = defineType({
           title: 'Founder letter',
           type: 'text',
           rows: 8,
-          description: 'The personal note from the founder — displayed verbatim on About page'
+          description: 'The personal note from the founder   displayed verbatim on About page'
         }),
       ]
     }),

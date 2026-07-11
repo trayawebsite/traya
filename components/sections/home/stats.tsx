@@ -24,10 +24,12 @@ const IconIndia = (
   </svg>
 );
 
+// Icon pairing follows the stat content: blocks → products, globe → categories
+// (sourced for global markets), handshake → partnerships, map → India.
 const ITEMS = [
-  {key: 's1', icon: IconGlobe},
-  {key: 's2', icon: IconDeal},
-  {key: 's3', icon: IconBlocks},
+  {key: 's1', icon: IconBlocks},
+  {key: 's2', icon: IconGlobe},
+  {key: 's3', icon: IconDeal},
   {key: 's4', icon: IconIndia}
 ] as const;
 
@@ -52,10 +54,10 @@ export async function Stats() {
               {i > 0 && (
                 <span
                   aria-hidden
-                  className="absolute left-0 top-1/2 hidden size-1.5 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-traya-saffron-hi/80 lg:block"
+                  className="absolute left-0 top-1/2 hidden size-1.5 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-traya-saffron/80 lg:block"
                 />
               )}
-              <span className="text-traya-saffron-hi">{item.icon}</span>
+              <span className="text-traya-saffron">{item.icon}</span>
               <p className="mt-4 font-display text-lg uppercase tracking-[0.12em] text-traya-cream lg:text-xl">
                 {t(item.key)}
               </p>

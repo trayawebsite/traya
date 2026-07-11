@@ -1,4 +1,4 @@
-// The shared section header block — eyebrow (section-label) → Lora heading →
+// The shared section header block   eyebrow (section-label) → Lora heading →
 // optional sub. Repeated across ~15 content sections; this is the single source.
 // It's a fragment (no wrapper), so callers keep their own layout/max-width and
 // can place a CTA or grid after it.
@@ -9,7 +9,7 @@ export function SectionHeader({
   heading,
   sub,
   dark = false,
-  lead = false
+  lead = false,
 }: {
   eyebrow: string;
   heading: string;
@@ -19,18 +19,20 @@ export function SectionHeader({
 }) {
   return (
     <>
-      <p className={dark ? 'section-label on-dark' : 'section-label'}>{eyebrow}</p>
+      <p className={dark ? "section-label on-dark" : "section-label"}>
+        {eyebrow}
+      </p>
       <h2
         className={`mt-4 text-balance font-display text-display-sm lg:text-display${
-          dark ? '' : ' text-foreground'
+          dark ? "" : " text-foreground"
         }`}
       >
         {heading}
       </h2>
       {sub && (
         <p
-          className={`${lead ? 'mt-5 text-lg' : 'mt-4'} text-pretty leading-relaxed ${
-            dark ? 'text-traya-cream/75' : 'text-muted-foreground'
+          className={`${lead ? "mt-5 text-lg" : "mt-4"} text-pretty leading-relaxed ${
+            dark ? "text-traya-cream/75" : "text-muted-foreground"
           }`}
         >
           {sub}

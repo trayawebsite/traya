@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────────────────
-// CMS SEAM — site-wide settings (contact, socials, export IDs, catalogue).
+// CMS SEAM   site-wide settings (contact, socials, export IDs, catalogue).
 // When NEXT_PUBLIC_SANITY_PROJECT_ID is set → fetches from Sanity CMS.
 // Otherwise → falls back to env vars with verified defaults.
 // Return shape stays identical, so NO caller changes needed.

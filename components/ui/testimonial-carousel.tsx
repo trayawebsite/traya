@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import {useState, useEffect, useCallback} from 'react';
+import { useState, useEffect, useCallback } from "react";
 
 type Testimonial = {
   quote: string;
@@ -9,8 +9,12 @@ type Testimonial = {
   location?: string;
 };
 
-// Animated testimonial carousel — cycles through quotes with fade transition.
-export function TestimonialCarousel({testimonials}: {testimonials: Testimonial[]}) {
+// Animated testimonial carousel   cycles through quotes with fade transition.
+export function TestimonialCarousel({
+  testimonials,
+}: {
+  testimonials: Testimonial[];
+}) {
   const [active, setActive] = useState(0);
   const [fade, setFade] = useState(true);
 
@@ -37,9 +41,12 @@ export function TestimonialCarousel({testimonials}: {testimonials: Testimonial[]
       <p className="section-label text-[10px]">What buyers say</p>
       <div className="mt-5 min-h-[180px]">
         <div
-          className={`transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}
+          className={`transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}
         >
-          <span aria-hidden className="font-display text-5xl leading-[0.5] text-traya-red/20">
+          <span
+            aria-hidden
+            className="font-display text-5xl leading-[0.5] text-traya-red/20"
+          >
             &ldquo;
           </span>
           <blockquote className="mt-4 font-display text-lg italic leading-snug text-foreground">
@@ -50,10 +57,12 @@ export function TestimonialCarousel({testimonials}: {testimonials: Testimonial[]
               {current.name.charAt(0)}
             </span>
             <div>
-              <p className="text-sm font-medium text-foreground">{current.name}</p>
+              <p className="text-sm font-medium text-foreground">
+                {current.name}
+              </p>
               <p className="text-xs text-muted-foreground">
                 {current.role}
-                {current.location ? ` · ${current.location}` : ''}
+                {current.location ? ` · ${current.location}` : ""}
               </p>
             </div>
           </figcaption>
@@ -75,8 +84,8 @@ export function TestimonialCarousel({testimonials}: {testimonials: Testimonial[]
               }}
               className={`size-2 rounded-full transition-all duration-300 ${
                 i === active
-                  ? 'w-6 bg-traya-red'
-                  : 'bg-traya-border hover:bg-traya-red/50'
+                  ? "w-6 bg-traya-red"
+                  : "bg-traya-border hover:bg-traya-red/50"
               }`}
               aria-label={`Testimonial ${i + 1}`}
             />

@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Come Lavoriamo — Traya International Exim",
+      "title": "Come Lavoriamo   Traya International Exim",
       "description": "Come Traya gestisce la vostra esportazione dalla richiesta alla consegna: approvvigionamento, verifica della qualità, documentazione, logistica e spedizione via mare, aria o corriere."
     },
     "hero": {
@@ -126,7 +126,7 @@
     "whatsapp": "Chatta su WhatsApp",
     "chat": "Chatta con noi",
     "whatsappMessage": "Salve Traya International Exim, vorrei richiedere informazioni sulle vostre esportazioni di ingredienti alimentari.\n\nProdotto/i: \nQuantità / grado: \nPaese di destinazione: \nAzienda: ",
-    "siteLabel": "Traya International Exim — home",
+    "siteLabel": "Traya International Exim   home",
     "menuAria": "Menu",
     "navAria": "Mobile",
     "dismissAria": "Chiudi",
@@ -267,13 +267,13 @@
   },
   "Home": {
     "meta": {
-      "title": "Traya International Exim LLP — Azienda di Esportazione Indiana",
+      "title": "Traya International Exim LLP   Azienda di Esportazione Indiana",
       "description": "Traya International Exim è una casa di esportazione indiana multisettoriale che aiuta gli acquirenti internazionali a reperire ingredienti alimentari, spezie, prodotti disidratati, polveri ed erbe dall'India."
     },
     "hero": {
       "eyebrow": "Ampliare Orizzonti Attraverso il Commercio.",
       "heading": "Il vostro partner di fiducia per l'approvvigionamento dall'India.",
-      "sub": "Traya si impegna a costruire partnership globali durature basate su fiducia, affidabilità ed esecuzione professionale. Con un portafoglio di prodotti di qualità in costante crescita e un approccio orientato al cliente, aiutiamo le aziende ad affrontare il commercio internazionale con sicurezza.",
+      "sub": "Traya si impegna a costruire partnership globali durature basate su fiducia, affidabilità ed esecuzione professionale. Con un portafoglio di prodotti di qualità in costante crescita, aiutiamo le aziende ad affrontare il commercio internazionale con sicurezza.",
       "cta": "Scopri i Prodotti",
       "ctaEnquiry": "Condividi la tua esigenza",
       "stat": "Alimentare, Agro e Chimica · 499 prodotti · 30 categorie",
@@ -292,12 +292,12 @@
       "f3Body": "Logistica affidabile e consegne puntuali in tutto il mondo."
     },
     "stats": {
-      "s1": "Globale",
-      "s1Sub": "Partner Commerciale",
-      "s2": "Affidabile",
-      "s2Sub": "Partnership",
-      "s3": "In Espansione",
-      "s3Sub": "Portafoglio",
+      "s1": "499",
+      "s1Sub": "Prodotti a catalogo",
+      "s2": "30",
+      "s2Sub": "Categorie",
+      "s3": "Affidabile",
+      "s3Sub": "Partnership",
       "s4": "100%",
       "s4Sub": "Approvvigionato dall'India"
     },
@@ -306,7 +306,7 @@
       "heading": "Cosa Esportiamo",
       "sub": "Il nostro portafoglio è pensato per supportare aziende in molteplici settori. Mentre cresciamo, cresce anche la nostra gamma.",
       "foodTitle": "Prodotti Alimentari e Agro",
-      "foodBody": "Prodotti agricoli premium approvvigionati da produttori indiani affidabili, in linea con gli standard internazionali di qualità e sicurezza.",
+      "foodBody": "Prodotti agricoli premium approvvigionati da produttori indiani affidabili, in linea con gli standard internazionali di qualità.",
       "foodCta": "Scopri i Prodotti Alimentari e Agro",
       "chemTitle": "Prodotti Chimici",
       "chemBody": "Prodotti chimici industriali e speciali destinati a diverse applicazioni produttive nei mercati globali.",

@@ -1,20 +1,20 @@
-'use client';
+"use client";
 
-import {useState, cloneElement, useMemo, type ReactElement} from 'react';
-import {useForm} from 'react-hook-form';
-import {zodResolver} from '@hookform/resolvers/zod';
-import {useTranslations} from 'next-intl';
-import {toast} from 'sonner';
-import {makeContactSchema, type ContactInput} from '@/lib/validations';
-import {primaryButton} from '@/lib/button-styles';
-import {Check} from 'lucide-react';
+import { useState, cloneElement, useMemo, type ReactElement } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
+import { toast } from "sonner";
+import { makeContactSchema, type ContactInput } from "@/lib/validations";
+import { primaryButton } from "@/lib/button-styles";
+import { Check } from "lucide-react";
 
-// Contact form — wired to /api/contact (validation → email → Sheets → rate
+// Contact form   wired to /api/contact (validation → email → Sheets → rate
 // limit). Two-column: a left invitation/trust panel + the form, so the section
 // reads as considered rather than a lone card. Inline success confirmation.
 export function ContactForm() {
-  const t = useTranslations('Contact.form');
-  const tv = useTranslations('Validation');
+  const t = useTranslations("Contact.form");
+  const tv = useTranslations("Validation");
   const schema = useMemo(() => makeContactSchema(tv), [tv]);
   const [submitted, setSubmitted] = useState(false);
   const {
@@ -22,8 +22,8 @@ export function ContactForm() {
     handleSubmit,
     reset,
     setFocus,
-    formState: {errors, isSubmitting}
-  } = useForm<ContactInput>({resolver: zodResolver(schema)});
+    formState: { errors, isSubmitting },
+  } = useForm<ContactInput>({ resolver: zodResolver(schema) });
 
   function onInvalid(errs: Record<string, unknown>) {
     const first = Object.keys(errs)[0];
@@ -32,22 +32,22 @@ export function ContactForm() {
 
   async function onSubmit(values: ContactInput) {
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(values)
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(values),
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
         setSubmitted(true);
         reset();
       } else if (res.status === 429) {
-        toast.error(t('rateLimited'));
+        toast.error(t("rateLimited"));
       } else {
-        toast.error(t('error'));
+        toast.error(t("error"));
       }
     } catch {
-      toast.error(t('error'));
+      toast.error(t("error"));
     }
   }
 
@@ -57,64 +57,117 @@ export function ContactForm() {
         <div className="mx-auto mb-5 flex size-14 items-center justify-center rounded-full bg-traya-forest/10 text-traya-forest">
           <Check className="size-7" aria-hidden="true" />
         </div>
-        <h3 className="font-display text-display-sm text-foreground">{t('successHeading')}</h3>
-        <p className="mt-3 leading-relaxed text-muted-foreground">{t('successBody')}</p>
+        <h3 className="font-display text-display-sm text-foreground">
+          {t("successHeading")}
+        </h3>
+        <p className="mt-3 leading-relaxed text-muted-foreground">
+          {t("successBody")}
+        </p>
       </div>
     );
   }
 
   return (
     <div className="mx-auto grid max-w-5xl items-start gap-12 lg:grid-cols-[minmax(0,1fr)_1.5fr] lg:gap-16">
-      {/* Left — invitation + reassurance */}
+      {/* Left   invitation + reassurance */}
       <div className="lg:pt-2">
-        <p className="section-label">{t('eyebrow')}</p>
-        <h2 className="mt-4 text-balance font-display text-display-sm text-foreground">{t('heading')}</h2>
-        <p className="mt-4 leading-relaxed text-muted-foreground">{t('sub')}</p>
+        <p className="section-label">{t("eyebrow")}</p>
+        <h2 className="mt-4 text-balance font-display text-display-sm text-foreground">
+          {t("heading")}
+        </h2>
+        <p className="mt-4 leading-relaxed text-muted-foreground">{t("sub")}</p>
         <ul className="mt-8 space-y-3.5">
-          {(['point1', 'point2', 'point3'] as const).map((k) => (
-            <li key={k} className="flex items-start gap-3 text-sm leading-relaxed text-foreground/80">
-              <Check className="mt-0.5 size-4 shrink-0 text-traya-forest" aria-hidden="true" />
+          {(["point1", "point2", "point3"] as const).map((k) => (
+            <li
+              key={k}
+              className="flex items-start gap-3 text-sm leading-relaxed text-foreground/80"
+            >
+              <Check
+                className="mt-0.5 size-4 shrink-0 text-traya-forest"
+                aria-hidden="true"
+              />
               {t(k)}
             </li>
           ))}
         </ul>
       </div>
 
-      {/* Right — form card */}
+      {/* Right   form card */}
       <form
         onSubmit={handleSubmit(onSubmit, onInvalid)}
         noValidate
         className="rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
       >
         <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
-          <Field id="name" label={t('name')} required error={errors.name?.message}>
-            <input id="name" type="text" autoComplete="name" {...register('name')} className={inputCls} />
+          <Field
+            id="name"
+            label={t("name")}
+            required
+            error={errors.name?.message}
+          >
+            <input
+              id="name"
+              type="text"
+              autoComplete="name"
+              {...register("name")}
+              className={inputCls}
+            />
           </Field>
-          <Field id="email" label={t('email')} required error={errors.email?.message}>
-            <input id="email" type="email" autoComplete="email" {...register('email')} className={inputCls} />
+          <Field
+            id="email"
+            label={t("email")}
+            required
+            error={errors.email?.message}
+          >
+            <input
+              id="email"
+              type="email"
+              autoComplete="email"
+              {...register("email")}
+              className={inputCls}
+            />
           </Field>
-          <Field id="company" label={t('company')} error={errors.company?.message} full>
-            <input id="company" type="text" autoComplete="organization" {...register('company')} className={inputCls} />
+          <Field
+            id="company"
+            label={t("company")}
+            error={errors.company?.message}
+            full
+          >
+            <input
+              id="company"
+              type="text"
+              autoComplete="organization"
+              {...register("company")}
+              className={inputCls}
+            />
           </Field>
-          <Field id="message" label={t('message')} required error={errors.message?.message} full>
+          <Field
+            id="message"
+            label={t("message")}
+            required
+            error={errors.message?.message}
+            full
+          >
             <textarea
               id="message"
               rows={5}
-              placeholder={t('messagePlaceholder')}
-              {...register('message')}
+              placeholder={t("messagePlaceholder")}
+              {...register("message")}
               className={`${inputCls} resize-y`}
             />
           </Field>
         </div>
 
         <div className="mt-7 flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs leading-relaxed text-muted-foreground">{t('reassurance')}</p>
+          <p className="text-xs leading-relaxed text-muted-foreground">
+            {t("reassurance")}
+          </p>
           <button
             type="submit"
             disabled={isSubmitting}
             className={`${primaryButton} shrink-0 disabled:cursor-not-allowed disabled:opacity-60`}
           >
-            {isSubmitting ? t('sending') : t('submit')}
+            {isSubmitting ? t("sending") : t("submit")}
           </button>
         </div>
       </form>
@@ -123,7 +176,7 @@ export function ContactForm() {
 }
 
 const inputCls =
-  'w-full rounded-md border border-traya-border bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30 aria-[invalid=true]:border-destructive';
+  "w-full rounded-md border border-traya-border bg-background px-3.5 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/30 aria-[invalid=true]:border-destructive";
 
 function Field({
   id,
@@ -131,7 +184,7 @@ function Field({
   required,
   error,
   full,
-  children
+  children,
 }: {
   id: string;
   label: string;
@@ -142,18 +195,30 @@ function Field({
 }) {
   const errorId = error ? `${id}-error` : undefined;
   return (
-    <div className={full ? 'sm:col-span-2' : undefined}>
-      <label htmlFor={id} className="mb-1.5 block text-xs font-medium text-foreground/70">
+    <div className={full ? "sm:col-span-2" : undefined}>
+      <label
+        htmlFor={id}
+        className="mb-1.5 block text-xs font-medium text-foreground/70"
+      >
         {label}
-        {required && <span aria-hidden="true" className="text-destructive"> *</span>}
+        {required && (
+          <span aria-hidden="true" className="text-destructive">
+            {" "}
+            *
+          </span>
+        )}
       </label>
       {cloneElement(children as ReactElement<Record<string, unknown>>, {
-        'aria-required': required ? true : undefined,
-        'aria-invalid': error ? true : undefined,
-        'aria-describedby': errorId
+        "aria-required": required ? true : undefined,
+        "aria-invalid": error ? true : undefined,
+        "aria-describedby": errorId,
       })}
       {error && (
-        <p id={errorId} role="alert" className="mt-1.5 text-xs text-destructive">
+        <p
+          id={errorId}
+          role="alert"
+          className="mt-1.5 text-xs text-destructive"
+        >
           {error}
         </p>
       )}
