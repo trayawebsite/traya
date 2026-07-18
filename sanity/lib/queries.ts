@@ -70,18 +70,6 @@ export const productsByCategoryQuery = groq`
   }
 `;
 
-export const featuredProductsQuery = groq`
-  *[_type == "product" && featured == true] | order(title asc) {
-    _id,
-    title,
-    "slug": slug.current,
-    shortDescription,
-    images,
-    forms,
-    "category": category->{title, "slug": slug.current}
-  }
-`;
-
 export const productBySlugQuery = groq`
   *[_type == "product" && slug.current == $slug][0] {
     _id,
@@ -119,7 +107,6 @@ export const homePageQuery = groq`*[_type == "homePage"][0] {
   why,
   testimonialsSection,
   certsSection,
-  process,
   faq,
   finalCta,
   seo

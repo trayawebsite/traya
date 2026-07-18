@@ -6,30 +6,14 @@
     },
     "hero": {
       "eyebrow": "Pendekatan & jangkauan global kami",
-      "heading": "Proses yang terstruktur, dibangun di sekitar kebutuhan Anda.",
-      "sub": "Setiap transaksi internasional memiliki kebutuhannya sendiri: spesifikasi, kepatuhan, dokumentasi, dan logistik. Di Traya, kami mengelola semuanya, sehingga Anda dapat fokus pada bisnis Anda sementara kami menangani sisanya."
-    },
-    "manage": {
-      "eyebrow": "Yang kami kelola untuk Anda",
-      "heading": "Segala hal antara permintaan dan pengiriman",
-      "sub": "Saat Anda bekerja sama dengan Traya, Anda tidak hanya mendapatkan produk. Anda mendapatkan tim yang menangani setiap bagian dari perdagangan Anda, sehingga tidak ada yang terlewat.",
-      "i1Title": "Operasi ekspor & impor",
-      "i1Body": "Pengelolaan perdagangan Anda secara menyeluruh, mulai dari pengadaan produk hingga pengiriman akhir. Satu mitra, satu proses, tanpa celah.",
-      "i2Title": "Pengadaan produk & verifikasi mutu",
-      "i2Body": "Kami mencari produk yang tepat sesuai kebutuhan Anda dan memverifikasi bahwa produk memenuhi spesifikasi Anda sebelum dikirim. Anda mendapatkan apa yang Anda minta, setiap saat.",
-      "i3Title": "Dokumentasi perdagangan",
-      "i3Body": "Setiap dokumen yang dibutuhkan pengiriman Anda: faktur, packing list, sertifikat, dan berkas kepatuhan, disiapkan dengan akurat dan tepat waktu.",
-      "i4Title": "Koordinasi logistik",
-      "i4Body": "Kami mengoordinasikan pergerakan barang Anda melalui laut, udara, atau kurir, sesuai dengan jadwal, volume, dan tujuan Anda. Anda tetap mendapat informasi di setiap tahap.",
-      "i5Title": "Dukungan khusus untuk pembeli",
-      "i5Body": "Satu titik kontak yang konsisten mulai dari permintaan pertama hingga pengiriman. Komunikasi yang jelas, respons cepat, tanpa alih tangan.",
-      "quote": "Kami menyederhanakan kerumitan pengadaan dari India, sehingga Anda dapat fokus pada bisnis Anda."
+      "heading": "Proses yang terstruktur,",
+      "sub": "Setiap transaksi internasional memiliki kebutuhannya sendiri: spesifikasi, kepatuhan, dokumentasi, dan logistik. Di Traya, kami mengelola semuanya, sehingga Anda dapat fokus pada bisnis Anda sementara kami menangani sisanya.",
+      "headingAccent": "dibangun di sekitar kebutuhan Anda."
     },
     "process": {
-      "eyebrow": "Cara kami bekerja",
+      "eyebrow": "Cara Traya",
       "heading": "Dari permintaan hingga pengiriman",
       "sub": "Delapan langkah yang jelas. Satu standar eksekusi yang konsisten.",
-      "step": "Langkah",
       "s1Title": "Permintaan",
       "s1Body": "Anda membagikan kebutuhan produk, jumlah, dan negara tujuan Anda.",
       "s2Title": "Diskusi kebutuhan",
@@ -54,18 +38,15 @@
       "sub": "Kami mengoordinasikan pengiriman internasional melalui tiga moda, disesuaikan dengan ukuran pesanan, urgensi, dan tujuan Anda.",
       "seaTitle": "Angkutan laut",
       "seaBody": "Paling cocok untuk pesanan bervolume besar di mana efisiensi biaya menjadi prioritas. Kami mengoordinasikan pengiriman FCL (Full Container Load) maupun LCL (Less than Container Load).",
-      "seaTag": "Tersedia FCL & LCL",
       "airTitle": "Angkutan udara",
       "airBody": "Untuk kargo yang sensitif waktu atau bernilai tinggi yang perlu bergerak cepat dan aman melintasi batas negara dengan waktu transit minimal.",
-      "airTag": "Udara prioritas & standar",
       "courierTitle": "Kurir untuk sampel",
       "courierBody": "Pengiriman kurir internasional untuk sampel produk, sehingga pembeli dapat mengevaluasi mutu, spesifikasi, dan kesesuaian sebelum memutuskan pesanan penuh.",
-      "courierTag": "Evaluasi pra-pesanan",
       "incoterms": "Incoterms: pengiriman ditangani dengan ketentuan yang sesuai untuk Anda. Kami mendukung FOB, CIF, dan ketentuan perdagangan standar lainnya, disepakati di awal, tanpa keraguan mengenai tanggung jawab atau biaya. Bicarakan dengan kami tentang apa yang paling sesuai dengan kebutuhan Anda."
     },
     "reach": {
       "eyebrow": "Jangkauan global",
-      "heading": "Di mana pun Anda berada, kami dapat menjangkau Anda",
+      "heading": "Di mana pun Anda berada,",
       "p1": "India adalah salah satu tujuan pengadaan paling andal di dunia, dan Ahmedabad berada di jantungnya. Kami memposisikan diri di sini secara sengaja, dengan akses langsung ke produk berkualitas di berbagai kategori dan infrastruktur untuk mengirimkannya ke seluruh dunia.",
       "p2": "Baik Anda importir mapan dengan kebutuhan yang sudah jelas atau bisnis yang baru pertama kali melakukan pengadaan dari India, Traya dibangun untuk melayani Anda, dengan struktur, perhatian, dan keandalan yang sama di setiap skala.",
       "pillar1": "Menyesuaikan diri dengan regulasi perdagangan dan kebutuhan impor negara tujuan Anda.",
@@ -73,7 +54,8 @@
       "pillar3": "Memperlakukan setiap pesanan sebagai fondasi hubungan jangka panjang, bukan transaksi satu kali.",
       "pillar4": "Tetap fleksibel dan responsif seiring perubahan kebutuhan bisnis dan kondisi pasar Anda.",
       "mapCaption": "Kami melayani pembeli internasional secara global",
-      "mapLabel": "Ahmedabad, India"
+      "mapLabel": "Ahmedabad, India",
+      "headingAccent": "kami dapat menjangkau Anda"
     },
     "cta": {
       "heading": "Memiliki kebutuhan tertentu?",
@@ -149,7 +131,7 @@
   },
   "Enquiry": {
     "eyebrow": "Kirim permintaan",
-    "heading": "Mari mulai percakapan.",
+    "heading": "Mari mulai",
     "sub": "Bagikan kebutuhan Anda, biar kami yang mengurus selebihnya.",
     "trust1": "Respons cepat",
     "trust2": "Dukungan tepercaya",
@@ -177,7 +159,7 @@
     "removeFromList": "Hapus dari permintaan",
     "list": {
       "eyebrow": "Daftar Permintaan",
-      "heading": "Tinjau permintaan Anda.",
+      "heading": "Tinjau",
       "sub": "Anda telah memilih produk-produk ini. Tinjau daftarnya, tambahkan detail Anda, dan kirim permintaan.",
       "empty": "Daftar permintaan Anda kosong. Jelajahi produk kami dan tambahkan item untuk memulai.",
       "browseProducts": "Jelajahi produk",
@@ -198,12 +180,14 @@
       "rateLimited": "Anda telah mencapai batas permintaan hari ini. Silakan kirim email atau hubungi kami di WhatsApp.",
       "submittedHeading": "Permintaan terkirim.",
       "submittedBody": "Terima kasih. Tim kami akan meninjau kebutuhan Anda dan menghubungi Anda dengan detail produk yang tersedia, dokumen, harga, dan langkah selanjutnya.",
-      "browseMore": "Lanjutkan menjelajah"
+      "browseMore": "Lanjutkan menjelajah",
+      "headingAccent": "permintaan Anda."
     },
     "meta": {
       "title": "Daftar Permintaan",
       "description": "Tinjau dan kirim permintaan produk Anda. Bagikan spesifikasi, jumlah, tujuan, dan jadwal agar tim kami dapat menanggapi dengan detail yang tepat."
-    }
+    },
+    "headingAccent": "percakapan."
   },
   "Validation": {
     "name": "Silakan masukkan nama Anda",
@@ -272,12 +256,12 @@
     },
     "hero": {
       "eyebrow": "Memperluas Cakrawala Melalui Perdagangan.",
-      "heading": "Mitra tepercaya Anda untuk pengadaan dari India.",
+      "heading": "Mitra tepercaya Anda untuk",
       "sub": "Traya berkomitmen membangun kemitraan global yang langgeng melalui kepercayaan, keandalan, dan eksekusi profesional. Dengan portofolio produk berkualitas yang terus berkembang, kami membantu bisnis menavigasi perdagangan internasional dengan percaya diri.",
       "cta": "Jelajahi Produk",
       "ctaEnquiry": "Bagikan kebutuhan Anda",
-      "stat": "Pangan, Agro & Kimia · 499 produk · 30 kategori",
-      "certified": "Bersertifikat"
+      "certified": "Bersertifikat",
+      "headingAccent": "pengadaan dari India."
     },
     "intro": {
       "eyebrow": "Bagaimana Traya membantu",
@@ -292,29 +276,28 @@
       "f3Body": "Logistik yang andal dan pengiriman tepat waktu ke seluruh dunia."
     },
     "stats": {
-      "s1": "499",
-      "s1Sub": "Produk Terdaftar",
-      "s2": "30",
-      "s2Sub": "Kategori",
-      "s3": "Tepercaya",
-      "s3Sub": "Kemitraan",
+      "s1": "Global",
+      "s1Sub": "Mitra Dagang",
+      "s2": "Tepercaya",
+      "s2Sub": "Kemitraan",
+      "s3": "Berkembang",
+      "s3Sub": "Portofolio",
       "s4": "100%",
       "s4Sub": "Diadakan dari India"
     },
     "groups": {
       "eyebrow": "Portofolio Produk Kami",
-      "heading": "Yang Kami Ekspor",
+      "heading": "Yang Kami",
       "sub": "Portofolio kami dirancang untuk mendukung bisnis di berbagai industri. Seiring kami bertumbuh, begitu pula rangkaian produk kami.",
       "foodTitle": "Produk Pangan & Agro",
-      "foodBody": "Produk pertanian premium yang diadakan dari produsen India tepercaya, selaras dengan standar mutu internasional.",
+      "foodBody": "Produk Pangan & Agro premium yang dirancang untuk memenuhi standar kualitas global, memastikan konsistensi, keamanan, dan keandalan untuk pasar internasional.",
       "foodCta": "Lihat Produk Pangan & Agro",
       "chemTitle": "Bahan Kimia",
-      "chemBody": "Bahan kimia industri dan khusus yang melayani beragam aplikasi manufaktur di pasar global.",
+      "chemBody": "Bahan kimia industri dan khusus berkinerja tinggi, dirancang untuk memenuhi standar kualitas internasional dan beragam kebutuhan industri.",
       "chemCta": "Lihat Bahan Kimia",
       "selection": "Pilihan dari rangkaian Pangan & Agro kami",
       "note": "Portofolio kami terus berkembang seiring kami memperkuat kemitraan di berbagai industri dan pasar internasional baru.",
       "noteAsk": "Tidak menemukan yang Anda butuhkan? Hubungi kami, kami mungkin masih bisa membantu.",
-      "spec": "499 produk terdaftar · 30 kategori · 6 kelompok produk",
       "cta": "Kirim Kebutuhan",
       "badgePremium": "Pangan & Agro",
       "alliums": "Alium Dehidrasi & Sayuran",
@@ -330,11 +313,12 @@
       "chemicals": "Bahan Kimia & Pewarna",
       "chemicalsBlurb": "Pewarna reaktif, asam, dan direct, pewarna makanan, pigmen, dan resin cat untuk industri tekstil, pangan, dan pelapisan.",
       "catFoodColours": "Food Colours",
-      "catReactiveDyes": "Reactive Dyes"
+      "catReactiveDyes": "Reactive Dyes",
+      "headingAccent": "Ekspor"
     },
     "why": {
       "eyebrow": "Mengapa Traya",
-      "heading": "Dibangun untuk kemitraan jangka panjang.",
+      "heading": "Dibangun untuk",
       "sub": "Kami melampaui sekadar transaksi untuk membangun kepercayaan, memberikan mutu, dan bertumbuh bersama.",
       "cta": "Lihat kapabilitas kami",
       "trusted": "Hubungan yang Tepercaya",
@@ -348,32 +332,22 @@
       "global": "Perspektif Global",
       "globalBody": "Pengadaan dari India untuk pembeli di berbagai pasar, dengan dokumen dan ketentuan yang disesuaikan dengan tujuan Anda.",
       "growth": "Bertumbuh Bersama",
-      "growthBody": "Portofolio yang terus berkembang dan kemitraan berulang, kami tumbuh seiring kebutuhan Anda bertambah."
+      "growthBody": "Portofolio yang terus berkembang dan kemitraan berulang, kami tumbuh seiring kebutuhan Anda bertambah.",
+      "headingAccent": "kemitraan jangka panjang."
     },
     "testimonials": {
       "eyebrow": "Kata para pembeli"
     },
     "certs": {
       "eyebrow": "Registrasi ekspor",
-      "heading": "Lihat registrasi di balik ekspor kami.",
-      "sub": "Setiap registrasi ditampilkan bersama otoritas penerbitnya dan artinya bagi pembeli. Dokumen untuk produk atau tujuan tertentu dikonfirmasi saat penawaran harga.",
-      "cta": "Lihat registrasi kami"
-    },
-    "process": {
-      "eyebrow": "Proses ekspor",
-      "heading": "Bagaimana pesanan ekspor bekerja dengan Traya.",
-      "sub": "Anda menerima detail produk dan komersial sebelum menyetujui pesanan.",
-      "step": "Langkah",
-      "step1Title": "Kirim kebutuhan Anda",
-      "step1Body": "Bagikan nama produk, spesifikasi, jumlah, kemasan, tujuan, dan jadwal yang dibutuhkan. Kami akan menanyakan detail apa pun yang belum lengkap.",
-      "step2Title": "Tinjau penawaran",
-      "step2Body": "Kami mengonfirmasi produk, spesifikasi yang tersedia, dokumen, opsi sampel, harga, dan ketentuan komersial.",
-      "step3Title": "Konfirmasi dan kirim",
-      "step3Body": "Setelah disetujui, kami mengoordinasikan pesanan, kemasan, dokumen, dan pengiriman. Kami terus memberi Anda informasi seiring kemajuan pesanan."
+      "heading": "Lihat registrasi",
+      "cta": "Lihat registrasi kami",
+      "headingAccent": "di balik ekspor kami.",
+      "sub": "Setiap pengiriman didukung oleh registrasi dan sertifikasi ekspor yang diperlukan, memastikan kepatuhan, transparansi, dan kepercayaan dalam perdagangan internasional."
     },
     "faq": {
       "eyebrow": "Pertanyaan pembeli",
-      "heading": "Detail penting sebelum Anda memesan.",
+      "heading": "Detail penting",
       "moqQ": "Berapa jumlah pesanan minimum (MOQ) Anda?",
       "moqA": "MOQ bergantung pada produk, grade, pemasok, dan format kemasan. Bagikan target jumlah dan tujuan Anda, dan kami akan mengonfirmasi minimum yang dapat diterapkan bersama penawaran harga.",
       "samplesQ": "Bisakah saya mendapatkan sampel sebelum memesan?",
@@ -385,7 +359,8 @@
       "packagingQ": "Apakah Anda menawarkan kemasan khusus atau private-label?",
       "packagingA": "Opsi curah, khusus, dan private-label mungkin tersedia tergantung produk dan volume pesanan. Bagikan ukuran kemasan, bahan, pelabelan, dan kebutuhan tujuan Anda untuk konfirmasi.",
       "certsQ": "Sertifikasi dan dokumen apa yang Anda sediakan?",
-      "certsA": "Kebutuhan dokumen bervariasi menurut produk dan negara pengimpor. Kami mengonfirmasi registrasi, spesifikasi, sertifikat, laporan uji, dan dokumen ekspor yang berlaku saat penawaran harga."
+      "certsA": "Kebutuhan dokumen bervariasi menurut produk dan negara pengimpor. Kami mengonfirmasi registrasi, spesifikasi, sertifikat, laporan uji, dan dokumen ekspor yang berlaku saat penawaran harga.",
+      "headingAccent": "sebelum Anda memesan."
     },
     "finalCta": {
       "heading": "Lakukan pengadaan dari India bersama Traya.",
@@ -401,12 +376,12 @@
     },
     "hero": {
       "eyebrow": "Tentang Traya",
-      "heading": "Pendekatan yang Halus untuk Perdagangan Global",
-      "tagline": "Pengadaan, dokumentasi, kemasan, dan dukungan pengiriman dikelola oleh satu tim yang berdedikasi.",
-      "body": "TRAYA adalah perusahaan perdagangan global yang berdedikasi membangun kemitraan tepercaya di pasar internasional. Melalui eksekusi profesional dan pendekatan yang berfokus pada pelanggan, kami membantu bisnis menavigasi perdagangan global dengan percaya diri.\n\nDidorong oleh transparansi, perhatian pada detail, dan komitmen pada mutu, setiap interaksi dikelola dengan cermat, memastikan keandalan, konsistensi, dan pengalaman profesional yang dapat diandalkan oleh bisnis.\n\nDengan portofolio yang terus berkembang dan visi pertumbuhan berkelanjutan, TRAYA terus berkembang seiring perubahan kebutuhan pasar global, menciptakan kemitraan yang langgeng yang dibangun atas kepercayaan, mutu, dan kesuksesan bersama."
+      "heading": "Pendekatan yang Halus",
+      "body": "TRAYA adalah perusahaan perdagangan global yang berdedikasi membangun kemitraan tepercaya di pasar internasional. Melalui eksekusi profesional dan pendekatan yang berfokus pada pelanggan, kami membantu bisnis menavigasi perdagangan global dengan percaya diri.\n\nDidorong oleh transparansi, perhatian pada detail, dan komitmen pada mutu, setiap interaksi dikelola dengan cermat, memastikan keandalan, konsistensi, dan pengalaman profesional yang dapat diandalkan oleh bisnis.\n\nDengan portofolio yang terus berkembang dan visi pertumbuhan berkelanjutan, TRAYA terus berkembang seiring perubahan kebutuhan pasar global, menciptakan kemitraan yang langgeng yang dibangun atas kepercayaan, mutu, dan kesuksesan bersama.",
+      "headingAccent": "untuk Perdagangan Global"
     },
     "founder": {
-      "eyebrow": "Catatan dari pendiri",
+      "eyebrow": "Dalam kata-katanya sendiri.",
       "name": "Neha Pardeshi",
       "role": "Pendiri & CEO",
       "p1": "Dunia tidak terbuka bagi saya melalui buku pelajaran   dunia terbuka melalui perjalanan. Menjelajahi berbagai budaya, bertemu orang-orang dari segala latar belakang, dan melihat dunia melalui berbagai perspektif membentuk bukan hanya siapa saya, tetapi juga apa yang saya pilih untuk bangun.",
@@ -426,36 +401,16 @@
       "p3Title": "Integritas",
       "p3Body": "Kami berkomunikasi dengan jelas tentang apa yang tersedia, apa yang perlu dikonfirmasi, dan apa langkah selanjutnya."
     },
-    "why": {
-      "eyebrow": "Mengapa Traya",
-      "heading": "Mitra praktis untuk pengadaan internasional.",
-      "body": "Traya dibangun untuk membantu pembeli mengurangi kebingungan dalam perdagangan internasional. Kami menyatukan pengadaan produk, koordinasi pemasok, dokumentasi, kemasan, dan dukungan pengiriman dalam satu alur kerja yang jelas.",
-      "cta": "Lihat kapabilitas kami",
-      "w1Title": "Standar yang dipimpin pendiri",
-      "w1Body": "Anda bekerja sama dengan tim yang bertanggung jawab penuh atas kebutuhan Anda dan menindaklanjuti setiap detailnya.",
-      "w2Title": "Eksekusi yang terstruktur",
-      "w2Body": "Kami mengonfirmasi spesifikasi, jumlah, kemasan, dokumen, ketentuan komersial, dan jadwal sebelum pesanan berlanjut.",
-      "w3Title": "Pola pikir yang mengutamakan hubungan",
-      "w3Body": "Kami bertujuan mendukung pembeli tetap dengan jawaban yang jelas, pembaruan yang stabil, dan koordinasi yang andal.",
-      "w4Title": "Wawasan global, sentuhan personal",
-      "w4Body": "Anda dapat berbicara dengan tim sungguhan yang memahami kebutuhan Anda dan menanggapi dengan langkah-langkah praktis.",
-      "w5Title": "Berbagai sektor, satu mitra",
-      "w5Body": "Kami mendukung kebutuhan di bidang Pangan & Agro, Bahan Kimia, produk Mekanis, Kertas, dan permintaan perdagangan lainnya.",
-      "w6Title": "Dokumentasi yang berlaku di mana pun",
-      "w6Body": "Kami mengonfirmasi spesifikasi, sertifikat, dokumen komersial, dan dokumen ekspor yang dibutuhkan untuk produk dan tujuan Anda.",
-      "w7Title": "Transparan sepanjang proses",
-      "w7Body": "Kami membagikan harga, jadwal, status pesanan, dan kebutuhan yang tertunda dengan jelas, sehingga Anda tahu apa yang terjadi di setiap tahap."
-    },
     "vision": {
       "eyebrow": "Visi & misi",
       "visionLabel": "Visi Kami",
       "vision": "Menjadi mitra dagang paling tepercaya dan terbesar bagi bisnis yang berkembang lintas batas negara.",
       "missionLabel": "Misi Kami",
-      "m1": "Memfasilitasi operasi ekspor dan impor yang efisien dan terstruktur di pasar global.",
-      "m2": "Membangun dan memperkuat kemitraan perdagangan internasional jangka panjang serta menyediakan solusi yang berkelanjutan.",
-      "m3": "Memastikan eksekusi yang lancar melalui sistem yang disiplin dan kejelasan operasional.",
-      "m4": "Memperluas kehadiran global kami melalui keterlibatan pasar yang strategis.",
-      "commitment": "Kami tidak sedang membangun perusahaan untuk transaksi satu kali. Kami sedang membangun mitra dagang yang dapat terus dituju pembeli untuk dukungan yang jelas di berbagai produk, sektor, dan pasar."
+      "m1": "Menghadirkan produk berkualitas premium yang secara konsisten memenuhi standar internasional dan ekspektasi pelanggan.",
+      "m2": "Membangun kemitraan yang langgeng, dilandasi oleh kepercayaan, transparansi, dan keberhasilan bersama.",
+      "m3": "Menyederhanakan perdagangan internasional melalui eksekusi yang andal, logistik yang efisien, dan layanan yang responsif.",
+      "m4": "Memperluas kehadiran global kami dengan menciptakan peluang bernilai tambah di berbagai pasar internasional.",
+      "commitment": "Kami berupaya membangun kemitraan yang langgeng, dilandasi oleh kepercayaan, keandalan, dan komitmen bersama terhadap kesuksesan jangka panjang di pasar global."
     }
   },
   "Contact": {
@@ -465,8 +420,9 @@
     },
     "hero": {
       "eyebrow": "Kontak",
-      "heading": "Kirimkan kebutuhan pengadaan global Anda.",
-      "body": "Terhubung dengan spesialis ekspor kami melalui email, telepon, WhatsApp, atau formulir permintaan yang aman. Mohon jelaskan spesifikasi produk, jumlah yang dibutuhkan, pelabuhan tujuan, dan jadwal pengiriman Anda agar kami dapat memberikan tanggapan komersial yang menyeluruh dan cepat."
+      "heading": "Hubungi langsung tim ekspor kami.",
+      "body": "Bagikan kebutuhan Anda di bawah ini, atau hubungi kami langsung — setiap pesan ditinjau secara personal, dengan tanggapan dalam satu hari kerja.",
+      "cta": "Kirim kebutuhan Anda"
     },
     "emailLabel": "Email kami",
     "phoneLabel": "Telepon kami",
@@ -491,9 +447,9 @@
       "success": "Terima kasih. Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.",
       "error": "Ada yang tidak beres. Silakan coba lagi, atau kirim email langsung kepada kami.",
       "rateLimited": "Anda telah mencapai batas hari ini. Silakan kirim email atau hubungi kami di WhatsApp.",
-      "point1": "Kami membalas dalam satu hari kerja",
-      "point2": "Pengadaan, sampel, harga, dan dokumentasi   tanyakan apa saja kepada kami",
-      "point3": "Jalur langsung ke tim perdagangan kami",
+      "point1": "Tanggapan dalam satu hari kerja",
+      "point2": "Spesifikasi produk, harga, sampel & dokumentasi",
+      "point3": "Dukungan khusus untuk pertanyaan ekspor Anda",
       "reassurance": "Biasanya membalas dalam 1 hari kerja · Tanpa kewajiban.",
       "successHeading": "Pesan terkirim.",
       "successBody": "Terima kasih. Tim kami akan meninjau pesan Anda dan menghubungi Anda kembali   biasanya dalam satu hari kerja."
@@ -571,13 +527,13 @@
     },
     "hero": {
       "eyebrow": "Kapabilitas",
-      "heading": "Dukungan perdagangan dari kebutuhan hingga pengiriman.",
-      "body": "Traya membantu pembeli melakukan pengadaan produk dari India dan mengoordinasikan langkah-langkah yang membuat pesanan ekspor berjalan: diskusi dengan pemasok, spesifikasi, kemasan, dokumen, ketentuan komersial, dan pembaruan pengiriman."
+      "heading": "Mendukung Bisnis",
+      "body": "Portofolio kami yang terus berkembang memungkinkan kami melayani berbagai industri dengan produk yang memenuhi kebutuhan pasar yang terus berkembang dan standar kualitas internasional.",
+      "headingAccent": "di Berbagai Sektor"
     },
     "industries": {
       "eyebrow": "Industri yang Kami Layani",
-      "heading": "Menggerakkan Industri di Seluruh Dunia",
-      "sub": "Portofolio kami yang terus berkembang memungkinkan kami melayani berbagai industri dengan produk yang memenuhi kebutuhan pasar yang berkembang dan ekspektasi mutu internasional.",
+      "heading": "Lintas Industri. Lintas Batas.",
       "i1Title": "Farmasi & Nutrasetikal",
       "i1Body": "Bahan fungsional, eksipien, dan bahan baku yang berfokus pada kesehatan.",
       "i2Title": "Pangan & Minuman",
@@ -596,18 +552,24 @@
       "i8Body": "Bahan kimia khusus yang mendukung berbagai proses industri."
     },
     "core": {
-      "eyebrow": "Yang kami lakukan",
-      "heading": "Kapabilitas inti untuk pembeli internasional.",
-      "c1Title": "Pengadaan produk",
-      "c1Body": "Kami membantu pembeli mengadakan Pangan & Agro, Bahan Kimia, produk Mekanis, Kertas, dan kebutuhan ekspor lainnya dari India berdasarkan spesifikasi, jumlah, dan tujuan.",
-      "c2Title": "Koordinasi pemasok",
-      "c2Body": "Kami berkoordinasi dengan pemasok yang sesuai untuk memeriksa ketersediaan, grade, kemasan, kesiapan produksi, dan kelayakan pesanan.",
-      "c3Title": "Dukungan spesifikasi dan dokumentasi",
-      "c3Body": "Kami membantu mengonfirmasi spesifikasi, sertifikat, laporan uji, dokumen komersial, dan dokumen ekspor yang dibutuhkan untuk produk dan tujuan.",
-      "c4Title": "Koordinasi kemasan dan pengiriman",
-      "c4Body": "Kami meninjau kebutuhan kemasan, moda pengiriman, kebutuhan tujuan, dan jadwal pengiriman sehingga pesanan dapat berjalan dengan lebih sedikit kejutan.",
-      "c5Title": "Komunikasi yang jelas dengan pembeli",
-      "c5Body": "Kami terus memberi tahu pembeli tentang opsi yang tersedia, detail yang tertunda, ketentuan penawaran harga, status pesanan, dan langkah selanjutnya."
+      "eyebrow": "Yang Kami Tawarkan",
+      "heading": "Semua yang Anda butuhkan untuk perdagangan global yang lancar.",
+      "c1Title": "Sumber Produk Global",
+      "c1Body": "Akses ke portofolio produk yang beragam di berbagai kategori melalui mitra ekspor tepercaya.",
+      "c2Title": "Jaminan Kualitas",
+      "c2Body": "Produk diverifikasi sesuai spesifikasi yang disepakati sebelum pengiriman untuk memastikan konsistensi dan keandalan.",
+      "c3Title": "Dokumentasi Ekspor",
+      "c3Body": "Dokumentasi ekspor yang akurat, sertifikat, packing list, faktur, dan dokumen kepatuhan untuk perdagangan internasional yang lancar.",
+      "c4Title": "Pengiriman & Logistik",
+      "c4Body": "Pilihan pengiriman laut, udara, dan kurir yang disesuaikan dengan ukuran, urgensi, dan tujuan pengiriman.",
+      "c5Title": "Solusi Pengemasan",
+      "c5Body": "Pengemasan yang disesuaikan dengan kebutuhan produk dan standar pengiriman internasional.",
+      "c6Title": "Jangkauan Global",
+      "c6Body": "Melayani pelanggan di seluruh dunia melalui perdagangan internasional yang andal.",
+      "c7Title": "Persyaratan Perdagangan Fleksibel",
+      "c7Body": "Persyaratan komersial dan pengaturan pengiriman yang disesuaikan dengan kebutuhan bisnis Anda.",
+      "c8Title": "Dukungan Khusus",
+      "c8Body": "Komunikasi responsif mulai dari pertanyaan hingga pengiriman dan dukungan pascapengiriman."
     },
     "foundations": {
       "eyebrow": "Cara kami beroperasi",
@@ -629,14 +591,19 @@
       "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya   499 produk di 30 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
     },
     "hub": {
-      "eyebrow": "Katalog Pangan & Agro",
-      "heading": "Temukan produk yang ingin Anda adakan dari India.",
-      "sub": "Jelajahi produk Pangan & Agro dan Bahan Kimia kami berdasarkan kategori. Untuk produk mekanis, kertas, atau produk apa pun yang tidak tercantum di sini, kirimkan kebutuhan Anda dan kami akan meninjau opsi pengadaan yang tersedia.",
-      "spec": "6 kelompok · 30 kategori · 499 produk terdaftar",
+      "eyebrow": "Portofolio Produk Kami",
+      "heading": "Temukan produk",
+      "sub": "Jelajahi beragam portofolio produk kami di berbagai kategori. Mencari produk yang tidak tercantum? Kirimkan kebutuhan Anda, dan kami akan menghubungi Anda kembali.",
+      "spec": "Portofolio produk beragam · Multi-kategori · 500+ produk terdaftar",
       "search": "Cari produk atau kategori...",
-      "all": "Semua",
       "noResults": "Tidak ada produk yang cocok dengan pencarian Anda.",
-      "downloadCatalogue": "Unduh katalog lengkap (PDF)"
+      "downloadCatalogue": "Unduh katalog lengkap (PDF)",
+      "headingAccent": "yang ingin Anda adakan dari India.",
+      "category": "kategori",
+      "categories": "kategori",
+      "allCategories": "Semua Kategori",
+      "allCategoriesSub": "Semua grup",
+      "groupLabel": "Grup"
     },
     "list": {
       "form": "Bentuk",

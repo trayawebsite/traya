@@ -261,13 +261,13 @@ export function CategoryProductList({
                         {added ? t("added") : t("add")}
                       </button>
                       <a
-                        href="#enquiry"
+                        href={`?product=${encodeURIComponent(p.name)}#enquiry`}
                         className="inline-flex items-center justify-center rounded-md bg-traya-red px-3.5 py-2 text-xs font-medium text-white transition-colors hover:bg-traya-red-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                       >
                         {t("quote")}
                       </a>
                       <a
-                        href="?intent=sample#enquiry"
+                        href={`?intent=sample&product=${encodeURIComponent(p.name)}#enquiry`}
                         className="rounded-md border border-traya-border bg-background px-3.5 py-2 text-xs font-medium text-foreground transition-colors hover:border-traya-red/30"
                       >
                         {t("sample")}

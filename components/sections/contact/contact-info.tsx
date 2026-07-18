@@ -1,8 +1,10 @@
+import Image from 'next/image';
 import {getTranslations} from 'next-intl/server';
 import {Container} from '@/components/ui/container';
 import {getSiteSettings} from '@/lib/site-settings';
 import {siteConfig} from '@/lib/site-config';
 import {whatsAppHref} from '@/lib/whatsapp';
+import {primaryButton} from '@/lib/button-styles';
 
 const ICON = 'size-5';
 
@@ -62,19 +64,31 @@ export async function ContactInfo() {
   return (
     <section className="border-b border-traya-border bg-background">
       <Container className="pt-section-sm pb-section-lg">
-        {/* Header */}
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="section-label">{t('hero.eyebrow')}</p>
-          <h1 className="mt-3 text-balance font-display text-display-lg text-foreground">
-            {t('hero.heading')}
-          </h1>
-          <p className="mx-auto mt-4 max-w-lg text-pretty text-lg leading-relaxed text-muted-foreground">
-            {t('hero.body')}
-          </p>
-          <div className="mt-6 inline-flex items-center gap-2 rounded-full border border-traya-saffron-soft bg-traya-saffron-soft/50 px-4 py-1.5 text-sm font-medium text-traya-saffron-lo">
-            {ClockIcon}
-            <span>{t('hours')}</span>
+        {/* Header   left-aligned copy + CTA, image on the right */}
+        <div className="grid items-center gap-10 lg:grid-cols-[0.48fr_0.52fr] lg:gap-16">
+          <div className="max-w-xl">
+            <p className="section-label">{t('hero.eyebrow')}</p>
+            <h1 className="mt-3 text-balance font-display text-display-lg text-foreground">
+              {t('hero.heading')}
+            </h1>
+            <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
+              {t('hero.body')}
+            </p>
+            <a href="#enquiry" className={`mt-7 ${primaryButton}`}>
+              {t('hero.cta')}
+              <span aria-hidden className="ms-1.5">&rarr;</span>
+            </a>
           </div>
+          <Image
+            src="/contact.png"
+            alt=""
+            aria-hidden="true"
+            width={612}
+            height={408}
+            priority
+            sizes="(min-width: 1024px) 45vw, 100vw"
+            className="h-auto w-full max-w-none"
+          />
         </div>
 
         {/* Primary contact methods */}

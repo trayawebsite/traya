@@ -6,30 +6,14 @@
     },
     "hero": {
       "eyebrow": "Cách tiếp cận & phạm vi hoạt động toàn cầu của chúng tôi",
-      "heading": "Một quy trình bài bản, được xây dựng xoay quanh bạn.",
-      "sub": "Mỗi giao dịch quốc tế đều có những yêu cầu riêng: thông số kỹ thuật, tuân thủ quy định, chứng từ và hậu cần. Tại Traya, chúng tôi quản lý toàn bộ những việc đó, để bạn có thể tập trung vào công việc kinh doanh của mình trong khi chúng tôi lo phần còn lại."
-    },
-    "manage": {
-      "eyebrow": "Những gì chúng tôi quản lý thay bạn",
-      "heading": "Mọi việc từ khi hỏi hàng đến khi giao hàng",
-      "sub": "Khi hợp tác với Traya, bạn không chỉ nhận được sản phẩm. Bạn có cả một đội ngũ xử lý mọi khâu trong hoạt động thương mại của mình, để không có chi tiết nào bị bỏ sót.",
-      "i1Title": "Hoạt động xuất nhập khẩu",
-      "i1Body": "Quản lý toàn diện hoạt động thương mại của bạn, từ tìm nguồn sản phẩm đến khâu xuất hàng cuối cùng. Một đối tác, một quy trình, không có khoảng trống nào.",
-      "i2Title": "Tìm nguồn sản phẩm & kiểm định chất lượng",
-      "i2Body": "Chúng tôi tìm đúng sản phẩm theo yêu cầu của bạn và kiểm tra để đảm bảo sản phẩm đáp ứng thông số kỹ thuật trước khi xuất hàng. Bạn luôn nhận được đúng những gì mình yêu cầu, mỗi lần đặt hàng.",
-      "i3Title": "Chứng từ thương mại",
-      "i3Body": "Mọi chứng từ mà lô hàng của bạn cần: hóa đơn, phiếu đóng gói, chứng chỉ và hồ sơ tuân thủ, được chuẩn bị chính xác và đúng hạn.",
-      "i4Title": "Điều phối hậu cần",
-      "i4Body": "Chúng tôi điều phối vận chuyển hàng hóa của bạn bằng đường biển, đường hàng không hoặc chuyển phát nhanh, tùy theo thời hạn, khối lượng và điểm đến của bạn. Bạn luôn được cập nhật thông tin trong suốt quá trình.",
-      "i5Title": "Hỗ trợ khách hàng chuyên biệt",
-      "i5Body": "Một đầu mối liên hệ xuyên suốt từ lần hỏi hàng đầu tiên đến khi giao hàng. Giao tiếp rõ ràng, phản hồi nhanh chóng, không bàn giao qua nhiều đầu mối.",
-      "quote": "Chúng tôi đơn giản hóa sự phức tạp của việc tìm nguồn hàng từ Ấn Độ, để bạn có thể tập trung vào công việc kinh doanh của mình."
+      "heading": "Một quy trình bài bản,",
+      "sub": "Mỗi giao dịch quốc tế đều có những yêu cầu riêng: thông số kỹ thuật, tuân thủ quy định, chứng từ và hậu cần. Tại Traya, chúng tôi quản lý toàn bộ những việc đó, để bạn có thể tập trung vào công việc kinh doanh của mình trong khi chúng tôi lo phần còn lại.",
+      "headingAccent": "được xây dựng xoay quanh bạn."
     },
     "process": {
-      "eyebrow": "Cách chúng tôi làm việc",
+      "eyebrow": "Phương Pháp Traya",
       "heading": "Từ hỏi hàng đến giao hàng",
       "sub": "Tám bước rõ ràng. Một tiêu chuẩn thực thi nhất quán.",
-      "step": "Bước",
       "s1Title": "Hỏi hàng",
       "s1Body": "Bạn chia sẻ yêu cầu về sản phẩm, số lượng và quốc gia điểm đến.",
       "s2Title": "Trao đổi yêu cầu",
@@ -54,18 +38,15 @@
       "sub": "Chúng tôi điều phối các lô hàng quốc tế qua ba phương thức, phù hợp với quy mô đơn hàng, mức độ khẩn cấp và điểm đến của bạn.",
       "seaTitle": "Vận chuyển đường biển",
       "seaBody": "Phù hợp nhất cho các đơn hàng khối lượng lớn, nơi hiệu quả chi phí là yếu tố quan trọng. Chúng tôi điều phối cả lô hàng FCL (nguyên container) và LCL (hàng lẻ ghép container).",
-      "seaTag": "Có FCL & LCL",
       "airTitle": "Vận chuyển đường hàng không",
       "airBody": "Dành cho hàng hóa cần gấp về thời gian hoặc có giá trị cao, cần di chuyển nhanh chóng và an toàn qua biên giới với thời gian vận chuyển tối thiểu.",
-      "airTag": "Hàng không ưu tiên & tiêu chuẩn",
       "courierTitle": "Chuyển phát nhanh cho mẫu hàng",
       "courierBody": "Dịch vụ chuyển phát nhanh quốc tế cho mẫu sản phẩm, giúp người mua đánh giá chất lượng, thông số kỹ thuật và mức độ phù hợp trước khi quyết định đặt hàng số lượng lớn.",
-      "courierTag": "Đánh giá trước khi đặt hàng",
       "incoterms": "Điều kiện Incoterms: các lô hàng được xử lý theo điều kiện phù hợp với bạn. Chúng tôi hỗ trợ FOB, CIF và các điều kiện thương mại tiêu chuẩn khác, được thống nhất trước, không mơ hồ về trách nhiệm hay chi phí. Hãy trao đổi với chúng tôi về điều kiện phù hợp nhất với yêu cầu của bạn."
     },
     "reach": {
       "eyebrow": "Phạm vi hoạt động toàn cầu",
-      "heading": "Dù bạn ở đâu, chúng tôi cũng có thể tiếp cận bạn",
+      "heading": "Dù bạn ở đâu,",
       "p1": "Ấn Độ là một trong những điểm đến tìm nguồn hàng có năng lực hàng đầu thế giới, và Ahmedabad nằm ở vị trí trung tâm của điều đó. Chúng tôi đặt trụ sở tại đây một cách có chủ đích, với khả năng tiếp cận trực tiếp các sản phẩm chất lượng thuộc nhiều danh mục cùng hạ tầng để vận chuyển chúng ra toàn cầu.",
       "p2": "Dù bạn là nhà nhập khẩu đã có kinh nghiệm với yêu cầu rõ ràng, hay là doanh nghiệp lần đầu tìm nguồn hàng từ Ấn Độ, Traya được xây dựng để phục vụ bạn, với cùng một cấu trúc, sự chu đáo và độ tin cậy ở mọi quy mô.",
       "pillar1": "Thích ứng với các quy định thương mại và yêu cầu nhập khẩu của quốc gia điểm đến của bạn.",
@@ -73,7 +54,8 @@
       "pillar3": "Xem mỗi đơn hàng là nền tảng cho một mối quan hệ lâu dài, không phải một giao dịch một lần.",
       "pillar4": "Luôn linh hoạt và ứng biến khi nhu cầu kinh doanh và điều kiện thị trường của bạn thay đổi.",
       "mapCaption": "Chúng tôi phục vụ người mua quốc tế trên toàn cầu",
-      "mapLabel": "Ahmedabad, Ấn Độ"
+      "mapLabel": "Ahmedabad, Ấn Độ",
+      "headingAccent": "chúng tôi cũng có thể tiếp cận bạn"
     },
     "cta": {
       "heading": "Bạn đang có nhu cầu cần trao đổi?",
@@ -149,7 +131,7 @@
   },
   "Enquiry": {
     "eyebrow": "Gửi yêu cầu",
-    "heading": "Hãy bắt đầu cuộc trò chuyện.",
+    "heading": "Hãy bắt đầu",
     "sub": "Chia sẻ nhu cầu của bạn, phần còn lại chúng tôi sẽ lo.",
     "trust1": "Phản hồi nhanh chóng",
     "trust2": "Hỗ trợ đáng tin cậy",
@@ -177,7 +159,7 @@
     "removeFromList": "Xóa khỏi yêu cầu",
     "list": {
       "eyebrow": "Danh sách yêu cầu",
-      "heading": "Xem lại yêu cầu của bạn.",
+      "heading": "Xem lại",
       "sub": "Bạn đã chọn các sản phẩm này. Hãy xem lại danh sách, bổ sung thông tin của bạn và gửi yêu cầu.",
       "empty": "Danh sách yêu cầu của bạn hiện đang trống. Hãy duyệt qua sản phẩm của chúng tôi và thêm sản phẩm để bắt đầu.",
       "browseProducts": "Duyệt sản phẩm",
@@ -198,12 +180,14 @@
       "rateLimited": "Bạn đã đạt giới hạn số lượt gửi yêu cầu hôm nay. Vui lòng gửi email hoặc nhắn tin cho chúng tôi qua WhatsApp.",
       "submittedHeading": "Đã gửi yêu cầu.",
       "submittedBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét yêu cầu của bạn và liên hệ với bạn cùng thông tin sản phẩm, chứng từ, giá cả hiện có và các bước tiếp theo.",
-      "browseMore": "Tiếp tục duyệt xem"
+      "browseMore": "Tiếp tục duyệt xem",
+      "headingAccent": "yêu cầu của bạn."
     },
     "meta": {
       "title": "Danh sách yêu cầu",
       "description": "Xem lại và gửi yêu cầu sản phẩm của bạn. Chia sẻ thông số kỹ thuật, số lượng, điểm đến và thời hạn để đội ngũ của chúng tôi có thể phản hồi với thông tin phù hợp."
-    }
+    },
+    "headingAccent": "cuộc trò chuyện."
   },
   "Validation": {
     "name": "Vui lòng nhập họ và tên của bạn",
@@ -272,12 +256,12 @@
     },
     "hero": {
       "eyebrow": "Mở rộng chân trời thông qua thương mại.",
-      "heading": "Đối tác đáng tin cậy của bạn trong việc tìm nguồn hàng từ Ấn Độ.",
+      "heading": "Đối tác đáng tin cậy của bạn trong việc",
       "sub": "Traya cam kết xây dựng những mối quan hệ đối tác toàn cầu bền vững thông qua sự tin tưởng, độ tin cậy và cách thực hiện chuyên nghiệp. Với danh mục sản phẩm chất lượng ngày càng mở rộng, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại quốc tế.",
       "cta": "Khám phá sản phẩm",
       "ctaEnquiry": "Chia sẻ yêu cầu của bạn",
-      "stat": "Thực phẩm, Nông sản & Hóa chất · 499 sản phẩm · 30 danh mục",
-      "certified": "Chứng nhận"
+      "certified": "Chứng nhận",
+      "headingAccent": "tìm nguồn hàng từ Ấn Độ."
     },
     "intro": {
       "eyebrow": "Traya hỗ trợ như thế nào",
@@ -292,29 +276,28 @@
       "f3Body": "Hậu cần đáng tin cậy và giao hàng đúng hạn trên toàn thế giới."
     },
     "stats": {
-      "s1": "499",
-      "s1Sub": "Sản phẩm niêm yết",
-      "s2": "30",
-      "s2Sub": "Danh mục",
-      "s3": "Đáng tin cậy",
-      "s3Sub": "Quan hệ đối tác",
+      "s1": "Toàn Cầu",
+      "s1Sub": "Đối Tác Thương Mại",
+      "s2": "Đáng tin cậy",
+      "s2Sub": "Quan hệ đối tác",
+      "s3": "Đang Mở Rộng",
+      "s3Sub": "Danh Mục",
       "s4": "100%",
       "s4Sub": "Nguồn hàng từ Ấn Độ"
     },
     "groups": {
       "eyebrow": "Danh mục sản phẩm của chúng tôi",
-      "heading": "Chúng tôi xuất khẩu những gì",
+      "heading": "Chúng tôi xuất khẩu",
       "sub": "Danh mục sản phẩm của chúng tôi được thiết kế để hỗ trợ các doanh nghiệp thuộc nhiều ngành khác nhau. Khi chúng tôi phát triển, danh mục sản phẩm cũng mở rộng theo.",
       "foodTitle": "Sản phẩm Thực phẩm & Nông sản",
-      "foodBody": "Các sản phẩm nông nghiệp cao cấp có nguồn gốc từ các nhà sản xuất Ấn Độ đáng tin cậy, phù hợp với các tiêu chuẩn chất lượng quốc tế.",
+      "foodBody": "Sản phẩm Thực phẩm & Nông sản cao cấp được thiết kế để đáp ứng tiêu chuẩn chất lượng toàn cầu, đảm bảo tính nhất quán, an toàn và độ tin cậy cho các thị trường quốc tế.",
       "foodCta": "Xem sản phẩm Thực phẩm & Nông sản",
       "chemTitle": "Hóa chất",
-      "chemBody": "Hóa chất công nghiệp và chuyên dụng phục vụ nhiều ứng dụng sản xuất trên các thị trường toàn cầu.",
+      "chemBody": "Hóa chất công nghiệp và chuyên dụng hiệu suất cao, được thiết kế để đáp ứng các tiêu chuẩn chất lượng quốc tế và nhu cầu đa dạng của ngành công nghiệp.",
       "chemCta": "Xem Hóa chất",
       "selection": "Một số sản phẩm tiêu biểu từ danh mục Thực phẩm & Nông sản của chúng tôi",
       "note": "Danh mục sản phẩm của chúng tôi tiếp tục mở rộng khi chúng tôi củng cố quan hệ đối tác trong các ngành và thị trường quốc tế mới.",
       "noteAsk": "Không tìm thấy sản phẩm bạn cần? Hãy liên hệ với chúng tôi, chúng tôi vẫn có thể hỗ trợ bạn.",
-      "spec": "499 sản phẩm được niêm yết · 30 danh mục · 6 nhóm sản phẩm",
       "cta": "Gửi yêu cầu",
       "badgePremium": "Thực phẩm & Nông sản",
       "alliums": "Hành, Tỏi Sấy Khô & Rau Củ",
@@ -330,11 +313,12 @@
       "chemicals": "Hóa Chất & Thuốc Nhuộm",
       "chemicalsBlurb": "Thuốc nhuộm hoạt tính, thuốc nhuộm axit và thuốc nhuộm trực tiếp, phẩm màu thực phẩm, bột màu và nhựa sơn dành cho ngành dệt may, thực phẩm và sơn phủ.",
       "catFoodColours": "Food Colours",
-      "catReactiveDyes": "Reactive Dyes"
+      "catReactiveDyes": "Reactive Dyes",
+      "headingAccent": "những gì"
     },
     "why": {
       "eyebrow": "Vì sao chọn Traya",
-      "heading": "Được xây dựng cho những mối quan hệ đối tác dài hạn.",
+      "heading": "Được xây dựng cho",
       "sub": "Chúng tôi không chỉ dừng lại ở giao dịch mà xây dựng lòng tin, mang lại chất lượng và cùng nhau phát triển.",
       "cta": "Xem năng lực của chúng tôi",
       "trusted": "Quan Hệ Đáng Tin Cậy",
@@ -348,32 +332,22 @@
       "global": "Tầm Nhìn Toàn Cầu",
       "globalBody": "Tìm nguồn hàng từ Ấn Độ cho người mua trên nhiều thị trường, với chứng từ và điều khoản phù hợp với điểm đến của bạn.",
       "growth": "Cùng Nhau Phát Triển",
-      "growthBody": "Danh mục sản phẩm ngày càng mở rộng và các quan hệ đối tác lặp lại, chúng tôi phát triển song song với nhu cầu của bạn."
+      "growthBody": "Danh mục sản phẩm ngày càng mở rộng và các quan hệ đối tác lặp lại, chúng tôi phát triển song song với nhu cầu của bạn.",
+      "headingAccent": "những mối quan hệ đối tác dài hạn."
     },
     "testimonials": {
       "eyebrow": "Khách hàng nói gì"
     },
     "certs": {
       "eyebrow": "Đăng ký xuất khẩu",
-      "heading": "Xem các đăng ký đứng sau hoạt động xuất khẩu của chúng tôi.",
-      "sub": "Mỗi đăng ký được hiển thị cùng cơ quan cấp phép và ý nghĩa của nó đối với người mua. Chứng từ cho một sản phẩm hoặc điểm đến cụ thể sẽ được xác nhận trong quá trình báo giá.",
-      "cta": "Xem các đăng ký của chúng tôi"
-    },
-    "process": {
-      "eyebrow": "Quy trình xuất khẩu",
-      "heading": "Một đơn hàng xuất khẩu với Traya diễn ra như thế nào.",
-      "sub": "Bạn sẽ nhận được thông tin sản phẩm và thương mại trước khi phê duyệt đơn hàng.",
-      "step": "Bước",
-      "step1Title": "Gửi yêu cầu của bạn",
-      "step1Body": "Chia sẻ tên sản phẩm, thông số kỹ thuật, số lượng, đóng gói, điểm đến và thời hạn cần thiết. Chúng tôi sẽ hỏi thêm nếu còn thiếu thông tin nào.",
-      "step2Title": "Xem xét đề nghị",
-      "step2Body": "Chúng tôi xác nhận sản phẩm, các thông số kỹ thuật có sẵn, chứng từ, phương án lấy mẫu, giá cả và điều khoản thương mại.",
-      "step3Title": "Xác nhận và giao hàng",
-      "step3Body": "Sau khi được phê duyệt, chúng tôi điều phối đơn hàng, đóng gói, chứng từ và xuất hàng. Chúng tôi luôn cập nhật tiến độ cho bạn."
+      "heading": "Xem các đăng ký",
+      "cta": "Xem các đăng ký của chúng tôi",
+      "headingAccent": "đứng sau hoạt động xuất khẩu của chúng tôi.",
+      "sub": "Mỗi lô hàng đều được hỗ trợ bởi các đăng ký và chứng nhận xuất khẩu cần thiết, đảm bảo sự tuân thủ, minh bạch và tin cậy trong thương mại quốc tế."
     },
     "faq": {
       "eyebrow": "Câu hỏi của người mua",
-      "heading": "Những thông tin quan trọng trước khi bạn đặt hàng.",
+      "heading": "Những thông tin quan trọng",
       "moqQ": "Số lượng đặt hàng tối thiểu của quý công ty là bao nhiêu?",
       "moqA": "Số lượng đặt hàng tối thiểu (MOQ) phụ thuộc vào sản phẩm, phẩm cấp, nhà cung cấp và hình thức đóng gói. Hãy chia sẻ số lượng mục tiêu và điểm đến của bạn, chúng tôi sẽ xác nhận mức tối thiểu khả thi cùng với báo giá.",
       "samplesQ": "Tôi có thể nhận mẫu hàng trước khi đặt hàng không?",
@@ -385,7 +359,8 @@
       "packagingQ": "Quý công ty có cung cấp đóng gói tùy chỉnh hoặc nhãn hiệu riêng không?",
       "packagingA": "Các lựa chọn đóng gói số lượng lớn, tùy chỉnh và nhãn hiệu riêng có thể khả dụng tùy theo sản phẩm và khối lượng đơn hàng. Hãy chia sẻ kích thước bao bì, chất liệu, yêu cầu về nhãn mác và điểm đến để chúng tôi xác nhận.",
       "certsQ": "Quý công ty cung cấp những chứng nhận và chứng từ nào?",
-      "certsA": "Yêu cầu về chứng từ khác nhau tùy theo sản phẩm và quốc gia nhập khẩu. Chúng tôi xác nhận các đăng ký, thông số kỹ thuật, chứng chỉ, báo cáo kiểm nghiệm và chứng từ xuất khẩu phù hợp trong quá trình báo giá."
+      "certsA": "Yêu cầu về chứng từ khác nhau tùy theo sản phẩm và quốc gia nhập khẩu. Chúng tôi xác nhận các đăng ký, thông số kỹ thuật, chứng chỉ, báo cáo kiểm nghiệm và chứng từ xuất khẩu phù hợp trong quá trình báo giá.",
+      "headingAccent": "trước khi bạn đặt hàng."
     },
     "finalCta": {
       "heading": "Tìm nguồn hàng từ Ấn Độ cùng Traya.",
@@ -401,12 +376,12 @@
     },
     "hero": {
       "eyebrow": "Về Traya",
-      "heading": "Một Cách Tiếp Cận Tinh Tế Đối Với Thương Mại Toàn Cầu",
-      "tagline": "Tìm nguồn hàng, chứng từ, đóng gói và hỗ trợ vận chuyển được quản lý bởi một đội ngũ chuyên trách duy nhất.",
-      "body": "TRAYA là một công ty thương mại toàn cầu, tận tâm xây dựng những mối quan hệ đối tác đáng tin cậy trên các thị trường quốc tế. Thông qua cách thực hiện chuyên nghiệp và cách tiếp cận lấy khách hàng làm trọng tâm, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại toàn cầu.\n\nĐược dẫn dắt bởi sự minh bạch, sự chú trọng đến từng chi tiết và cam kết về chất lượng, mỗi tương tác đều được quản lý một cách chu đáo, đảm bảo độ tin cậy, tính nhất quán và một trải nghiệm chuyên nghiệp mà các doanh nghiệp có thể tin tưởng.\n\nVới danh mục sản phẩm ngày càng mở rộng và tầm nhìn về sự phát triển bền vững, TRAYA tiếp tục phát triển song hành cùng nhu cầu thay đổi của thị trường toàn cầu, tạo dựng những mối quan hệ đối tác lâu dài dựa trên sự tin tưởng, chất lượng và thành công chung."
+      "heading": "Một Cách Tiếp Cận Tinh Tế",
+      "body": "TRAYA là một công ty thương mại toàn cầu, tận tâm xây dựng những mối quan hệ đối tác đáng tin cậy trên các thị trường quốc tế. Thông qua cách thực hiện chuyên nghiệp và cách tiếp cận lấy khách hàng làm trọng tâm, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại toàn cầu.\n\nĐược dẫn dắt bởi sự minh bạch, sự chú trọng đến từng chi tiết và cam kết về chất lượng, mỗi tương tác đều được quản lý một cách chu đáo, đảm bảo độ tin cậy, tính nhất quán và một trải nghiệm chuyên nghiệp mà các doanh nghiệp có thể tin tưởng.\n\nVới danh mục sản phẩm ngày càng mở rộng và tầm nhìn về sự phát triển bền vững, TRAYA tiếp tục phát triển song hành cùng nhu cầu thay đổi của thị trường toàn cầu, tạo dựng những mối quan hệ đối tác lâu dài dựa trên sự tin tưởng, chất lượng và thành công chung.",
+      "headingAccent": "Đối Với Thương Mại Toàn Cầu"
     },
     "founder": {
-      "eyebrow": "Đôi lời từ nhà sáng lập",
+      "eyebrow": "Bằng chính lời của bà.",
       "name": "Neha Pardeshi",
       "role": "Nhà sáng lập & Giám đốc điều hành",
       "p1": "Thế giới không mở ra với tôi qua sách vở   mà mở ra qua những chuyến đi. Khám phá những nền văn hóa khác nhau, gặp gỡ những con người từ mọi tầng lớp, và nhìn thế giới qua nhiều góc nhìn khác nhau đã định hình không chỉ con người tôi, mà còn cả những gì tôi chọn để xây dựng.",
@@ -426,36 +401,16 @@
       "p3Title": "Chính trực",
       "p3Body": "Chúng tôi thông tin rõ ràng về những gì có sẵn, những gì cần xác nhận và bước tiếp theo nên là gì."
     },
-    "why": {
-      "eyebrow": "Vì sao chọn Traya",
-      "heading": "Một đối tác thực tế cho việc tìm nguồn hàng quốc tế.",
-      "body": "Traya được xây dựng để giúp người mua giảm bớt sự rối rắm trong thương mại quốc tế. Chúng tôi tích hợp việc tìm nguồn sản phẩm, điều phối nhà cung cấp, chứng từ, đóng gói và hỗ trợ vận chuyển vào một quy trình làm việc rõ ràng.",
-      "cta": "Xem năng lực của chúng tôi",
-      "w1Title": "Tiêu chuẩn do nhà sáng lập dẫn dắt",
-      "w1Body": "Bạn làm việc với một đội ngũ trực tiếp chịu trách nhiệm về yêu cầu của bạn và theo sát đến từng chi tiết.",
-      "w2Title": "Thực hiện có cấu trúc",
-      "w2Body": "Chúng tôi xác nhận thông số kỹ thuật, số lượng, đóng gói, chứng từ, điều khoản thương mại và thời hạn trước khi đơn hàng được tiến hành.",
-      "w3Title": "Tư duy lấy quan hệ làm trọng tâm",
-      "w3Body": "Chúng tôi hướng đến việc hỗ trợ những khách hàng quay lại với câu trả lời rõ ràng, cập nhật thường xuyên và sự điều phối đáng tin cậy.",
-      "w4Title": "Tầm nhìn toàn cầu, sự quan tâm cá nhân",
-      "w4Body": "Bạn có thể trao đổi trực tiếp với một đội ngũ thực sự hiểu yêu cầu và phản hồi bằng các bước tiếp theo thực tế.",
-      "w5Title": "Nhiều lĩnh vực, một đối tác",
-      "w5Body": "Chúng tôi hỗ trợ các yêu cầu thuộc lĩnh vực Thực phẩm & Nông sản, Hóa chất, sản phẩm Cơ khí, Giấy và các yêu cầu thương mại khác.",
-      "w6Title": "Chứng từ đi cùng hàng hóa",
-      "w6Body": "Chúng tôi xác nhận thông số kỹ thuật, chứng chỉ, chứng từ thương mại và chứng từ xuất khẩu cần thiết cho sản phẩm và điểm đến.",
-      "w7Title": "Minh bạch xuyên suốt",
-      "w7Body": "Chúng tôi chia sẻ rõ ràng giá cả, thời hạn, tình trạng đơn hàng và các yêu cầu còn tồn đọng, để bạn luôn biết điều gì đang diễn ra ở mỗi giai đoạn."
-    },
     "vision": {
       "eyebrow": "Tầm nhìn & sứ mệnh",
       "visionLabel": "Tầm Nhìn Của Chúng Tôi",
       "vision": "Trở thành đối tác thương mại đáng tin cậy và lớn nhất cho các doanh nghiệp đang mở rộng ra ngoài biên giới.",
       "missionLabel": "Sứ Mệnh Của Chúng Tôi",
-      "m1": "Tạo điều kiện cho các hoạt động xuất nhập khẩu hiệu quả và có cấu trúc bài bản trên các thị trường toàn cầu.",
-      "m2": "Xây dựng và củng cố các mối quan hệ đối tác thương mại quốc tế dài hạn, đồng thời cung cấp các giải pháp bền vững.",
-      "m3": "Đảm bảo thực hiện liền mạch thông qua hệ thống kỷ luật và sự rõ ràng trong vận hành.",
-      "m4": "Mở rộng sự hiện diện toàn cầu thông qua các hoạt động tiếp cận thị trường mang tính chiến lược.",
-      "commitment": "Chúng tôi không xây dựng một công ty chỉ phục vụ những giao dịch một lần. Chúng tôi đang xây dựng một đối tác thương mại mà người mua có thể quay lại để nhận được sự hỗ trợ rõ ràng trên nhiều sản phẩm, lĩnh vực và thị trường."
+      "m1": "Cung cấp các sản phẩm chất lượng cao, luôn đáp ứng các tiêu chuẩn quốc tế và kỳ vọng của khách hàng.",
+      "m2": "Xây dựng những mối quan hệ đối tác bền vững dựa trên sự tin tưởng, minh bạch và thành công chung.",
+      "m3": "Đơn giản hóa thương mại quốc tế thông qua việc thực thi đáng tin cậy, hậu cần hiệu quả và dịch vụ phản hồi nhanh chóng.",
+      "m4": "Mở rộng sự hiện diện toàn cầu bằng cách tạo ra các cơ hội mang lại giá trị trên các thị trường quốc tế.",
+      "commitment": "Chúng tôi nỗ lực xây dựng những mối quan hệ đối tác bền vững, dựa trên sự tin tưởng, độ tin cậy và cam kết chung hướng đến thành công lâu dài trên các thị trường toàn cầu."
     }
   },
   "Contact": {
@@ -465,8 +420,9 @@
     },
     "hero": {
       "eyebrow": "Liên hệ",
-      "heading": "Gửi yêu cầu tìm nguồn hàng toàn cầu của bạn.",
-      "body": "Kết nối với các chuyên viên xuất khẩu của chúng tôi qua email, điện thoại, WhatsApp hoặc mẫu yêu cầu bảo mật của chúng tôi. Vui lòng cho biết chi tiết thông số kỹ thuật sản phẩm, số lượng cần thiết, cảng đến và thời hạn giao hàng để đảm bảo phản hồi thương mại đầy đủ và nhanh chóng."
+      "heading": "Liên hệ trực tiếp với bộ phận xuất khẩu của chúng tôi.",
+      "body": "Chia sẻ yêu cầu của bạn bên dưới, hoặc liên hệ trực tiếp với chúng tôi — mỗi tin nhắn đều được xem xét cá nhân, với phản hồi trong vòng một ngày làm việc.",
+      "cta": "Gửi yêu cầu của bạn"
     },
     "emailLabel": "Gửi email cho chúng tôi",
     "phoneLabel": "Gọi cho chúng tôi",
@@ -491,9 +447,9 @@
       "success": "Cảm ơn bạn. Tin nhắn của bạn đã được gửi. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
       "error": "Đã xảy ra sự cố. Vui lòng thử lại, hoặc gửi email trực tiếp cho chúng tôi.",
       "rateLimited": "Bạn đã đạt giới hạn hôm nay. Vui lòng gửi email hoặc nhắn tin cho chúng tôi qua WhatsApp.",
-      "point1": "Chúng tôi phản hồi trong vòng một ngày làm việc",
-      "point2": "Tìm nguồn hàng, mẫu hàng, giá cả và chứng từ   hãy hỏi chúng tôi bất cứ điều gì",
-      "point3": "Đường dây liên hệ trực tiếp với bộ phận thương mại của chúng tôi",
+      "point1": "Phản hồi trong vòng một ngày làm việc",
+      "point2": "Thông số sản phẩm, giá cả, mẫu và tài liệu",
+      "point3": "Hỗ trợ chuyên biệt cho các yêu cầu xuất khẩu của bạn",
       "reassurance": "Thường phản hồi trong vòng 1 ngày làm việc · Không ràng buộc.",
       "successHeading": "Đã gửi tin nhắn.",
       "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét tin nhắn của bạn và phản hồi lại   thường trong vòng một ngày làm việc."
@@ -571,13 +527,13 @@
     },
     "hero": {
       "eyebrow": "Năng lực",
-      "heading": "Hỗ trợ thương mại từ yêu cầu đến khi xuất hàng.",
-      "body": "Traya giúp người mua tìm nguồn sản phẩm từ Ấn Độ và điều phối các bước giúp một đơn hàng xuất khẩu vận hành trơn tru: trao đổi với nhà cung cấp, thông số kỹ thuật, đóng gói, chứng từ, điều khoản thương mại và cập nhật vận chuyển."
+      "heading": "Hỗ Trợ Doanh Nghiệp",
+      "body": "Danh mục sản phẩm ngày càng mở rộng của chúng tôi giúp phục vụ nhiều ngành công nghiệp với các sản phẩm đáp ứng yêu cầu thị trường thay đổi và tiêu chuẩn chất lượng quốc tế.",
+      "headingAccent": "Trên Nhiều Lĩnh Vực"
     },
     "industries": {
       "eyebrow": "Các Ngành Chúng Tôi Phục Vụ",
-      "heading": "Tiếp Sức Cho Các Ngành Công Nghiệp Trên Toàn Thế Giới",
-      "sub": "Danh mục sản phẩm ngày càng mở rộng của chúng tôi cho phép chúng tôi phục vụ nhiều ngành công nghiệp khác nhau với các sản phẩm đáp ứng yêu cầu thị trường không ngừng thay đổi và kỳ vọng về chất lượng quốc tế.",
+      "heading": "Xuyên Ngành. Xuyên Biên Giới.",
       "i1Title": "Dược Phẩm & Thực Phẩm Chức Năng",
       "i1Body": "Nguyên liệu chức năng, tá dược và nguyên liệu thô hướng đến sức khỏe.",
       "i2Title": "Thực Phẩm & Đồ Uống",
@@ -596,18 +552,24 @@
       "i8Body": "Hóa chất chuyên dụng phục vụ nhiều quy trình công nghiệp khác nhau."
     },
     "core": {
-      "eyebrow": "Chúng tôi làm gì",
-      "heading": "Năng lực cốt lõi cho người mua quốc tế.",
-      "c1Title": "Tìm nguồn sản phẩm",
-      "c1Body": "Chúng tôi giúp người mua tìm nguồn sản phẩm Thực phẩm & Nông sản, Hóa chất, sản phẩm Cơ khí, Giấy và các yêu cầu xuất khẩu khác từ Ấn Độ dựa trên thông số kỹ thuật, số lượng và điểm đến.",
-      "c2Title": "Điều phối nhà cung cấp",
-      "c2Body": "Chúng tôi điều phối với các nhà cung cấp phù hợp để kiểm tra tính sẵn có, phẩm cấp, đóng gói, mức độ sẵn sàng sản xuất và tính khả thi của đơn hàng.",
-      "c3Title": "Hỗ trợ thông số kỹ thuật và chứng từ",
-      "c3Body": "Chúng tôi giúp xác nhận thông số kỹ thuật, chứng chỉ, báo cáo kiểm nghiệm, chứng từ thương mại và chứng từ xuất khẩu cần thiết cho sản phẩm và điểm đến.",
-      "c4Title": "Điều phối đóng gói và vận chuyển",
-      "c4Body": "Chúng tôi xem xét yêu cầu đóng gói, phương thức vận chuyển, yêu cầu điểm đến và thời hạn xuất hàng để đơn hàng có thể vận hành với ít bất ngờ hơn.",
-      "c5Title": "Giao tiếp rõ ràng với người mua",
-      "c5Body": "Chúng tôi luôn cập nhật cho người mua về các phương án khả dụng, chi tiết còn tồn đọng, điều khoản báo giá, tình trạng đơn hàng và các bước tiếp theo."
+      "eyebrow": "Những Gì Chúng Tôi Cung Cấp",
+      "heading": "Mọi thứ bạn cần cho thương mại toàn cầu liền mạch.",
+      "c1Title": "Nguồn Cung Toàn Cầu",
+      "c1Body": "Tiếp cận danh mục sản phẩm đa dạng trên nhiều danh mục thông qua đối tác xuất khẩu đáng tin cậy.",
+      "c2Title": "Đảm Bảo Chất Lượng",
+      "c2Body": "Sản phẩm được kiểm tra theo thông số kỹ thuật đã thỏa thuận trước khi giao hàng để đảm bảo tính nhất quán và độ tin cậy.",
+      "c3Title": "Chứng Từ Xuất Khẩu",
+      "c3Body": "Chứng từ xuất khẩu chính xác, chứng nhận, danh sách đóng gói, hóa đơn và giấy tờ tuân thủ cho thương mại quốc tế liền mạch.",
+      "c4Title": "Vận Chuyển & Logistics",
+      "c4Body": "Các phương án vận chuyển đường biển, đường hàng không và chuyển phát nhanh phù hợp với quy mô, mức độ khẩn cấp và điểm đến của lô hàng.",
+      "c5Title": "Giải Pháp Đóng Gói",
+      "c5Body": "Đóng gói phù hợp với yêu cầu sản phẩm và tiêu chuẩn vận chuyển quốc tế.",
+      "c6Title": "Phạm Vi Toàn Cầu",
+      "c6Body": "Phục vụ khách hàng trên toàn thế giới thông qua thương mại quốc tế đáng tin cậy.",
+      "c7Title": "Điều Khoản Thương Mại Linh Hoạt",
+      "c7Body": "Các điều khoản thương mại và sắp xếp vận chuyển phù hợp với yêu cầu kinh doanh của bạn.",
+      "c8Title": "Hỗ Trợ Tận Tâm",
+      "c8Body": "Giao tiếp phản hồi nhanh từ khi yêu cầu đến khi giao hàng và hỗ trợ sau giao hàng."
     },
     "foundations": {
       "eyebrow": "Cách chúng tôi vận hành",
@@ -629,14 +591,19 @@
       "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya   499 sản phẩm trên 30 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
     },
     "hub": {
-      "eyebrow": "Catalogue Thực phẩm & Nông sản",
-      "heading": "Tìm sản phẩm bạn muốn tìm nguồn từ Ấn Độ.",
-      "sub": "Duyệt các sản phẩm Thực phẩm & Nông sản và Hóa chất được niêm yết của chúng tôi theo danh mục. Đối với sản phẩm cơ khí, giấy, hoặc bất kỳ sản phẩm nào không hiển thị ở đây, hãy gửi cho chúng tôi yêu cầu của bạn và chúng tôi sẽ xem xét các phương án tìm nguồn khả dụng.",
-      "spec": "6 nhóm · 30 danh mục · 499 sản phẩm được niêm yết",
+      "eyebrow": "Danh Mục Sản Phẩm Của Chúng Tôi",
+      "heading": "Tìm sản phẩm",
+      "sub": "Khám phá danh mục sản phẩm đa dạng của chúng tôi trên nhiều danh mục. Đang tìm sản phẩm chưa được liệt kê? Hãy gửi yêu cầu của bạn, chúng tôi sẽ phản hồi sớm.",
+      "spec": "Danh mục sản phẩm đa dạng · Đa danh mục · Hơn 500 sản phẩm",
       "search": "Tìm kiếm sản phẩm hoặc danh mục...",
-      "all": "Tất cả",
       "noResults": "Không có sản phẩm nào phù hợp với tìm kiếm của bạn.",
-      "downloadCatalogue": "Tải catalogue đầy đủ (PDF)"
+      "downloadCatalogue": "Tải catalogue đầy đủ (PDF)",
+      "headingAccent": "bạn muốn tìm nguồn từ Ấn Độ.",
+      "category": "danh mục",
+      "categories": "danh mục",
+      "allCategories": "Tất cả danh mục",
+      "allCategoriesSub": "Tất cả các nhóm",
+      "groupLabel": "Nhóm"
     },
     "list": {
       "form": "Dạng",

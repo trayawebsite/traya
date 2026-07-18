@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { makeContactSchema, type ContactInput } from "@/lib/validations";
 import { primaryButton } from "@/lib/button-styles";
+import { useHoneypot } from "@/components/ui/honeypot";
 import { Check } from "lucide-react";
 
 // Contact form   wired to /api/contact (validation → email → Sheets → rate
@@ -16,6 +17,7 @@ export function ContactForm() {
   const t = useTranslations("Contact.form");
   const tv = useTranslations("Validation");
   const schema = useMemo(() => makeContactSchema(tv), [tv]);
+  const honeypot = useHoneypot();
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
@@ -35,7 +37,7 @@ export function ContactForm() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, website: honeypot.getValue() }),
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
@@ -82,10 +84,9 @@ export function ContactForm() {
               key={k}
               className="flex items-start gap-3 text-sm leading-relaxed text-foreground/80"
             >
-              <Check
-                className="mt-0.5 size-4 shrink-0 text-traya-forest"
-                aria-hidden="true"
-              />
+              <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-traya-forest/10 text-traya-forest">
+                <Check className="size-3" aria-hidden="true" />
+              </span>
               {t(k)}
             </li>
           ))}
@@ -96,8 +97,9 @@ export function ContactForm() {
       <form
         onSubmit={handleSubmit(onSubmit, onInvalid)}
         noValidate
-        className="rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
+        className="relative rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
       >
+        {honeypot.field}
         <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
           <Field
             id="name"

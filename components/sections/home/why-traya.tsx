@@ -142,12 +142,15 @@ export async function WhyTraya({ data }: { data?: WhyData }) {
   return (
     <section className="border-b border-traya-border bg-traya-surface">
       <Container className="py-section">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="max-w-2xl">
           <p className="section-label">{eyebrow}</p>
           <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
+            {heading}{" "}
+            <span className="text-traya-red">
+              {t("headingAccent")}
+            </span>
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
             {sub}
           </p>
         </div>

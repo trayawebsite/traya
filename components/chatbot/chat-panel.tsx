@@ -12,8 +12,9 @@ const MAX_USER = 15;
 const MAX_INPUT = 500;
 
 // Floating AI assistant panel. Opens from the bot button (state lives in
-// FloatingActions). Streams from /api/chat, falls back to WhatsApp on any error
-// or quota limit. Resets each time it's opened (parent remounts on open).
+// FloatingActions, which mounts this only while open). Streams from /api/chat,
+// falls back to WhatsApp on any error or quota limit. Unmounts on close, so
+// state resets and any in-flight stream is aborted   fresh each open.
 export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void}) {
   const t = useTranslations('Chatbot');
   const th = useTranslations('Header');
@@ -25,6 +26,11 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
   const [status, setStatus] = useState<Status>('idle');
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const abortRef = useRef<AbortController | null>(null);
+
+  // Abort any in-flight /api/chat stream when the panel unmounts (closed or
+  // navigated away) so we don't keep reading/setState after teardown.
+  useEffect(() => () => abortRef.current?.abort(), []);
 
   const waHref = whatsAppHref(th('whatsappMessage'));
 
@@ -52,11 +58,15 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
     setInput('');
     setStatus('streaming');
 
+    const controller = new AbortController();
+    abortRef.current = controller;
+
     try {
       const res = await fetch('/api/chat', {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({messages: history, locale, path: pathname})
+        body: JSON.stringify({messages: history, locale, path: pathname}),
+        signal: controller.signal
       });
 
       if (!res.ok || !res.body) {
@@ -85,7 +95,9 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
         return;
       }
       setStatus('idle');
-    } catch {
+    } catch (err) {
+      // Aborted on unmount → nothing to show; the panel is gone.
+      if (err instanceof DOMException && err.name === 'AbortError') return;
       setMessages((m) => m.slice(0, -1));
       setStatus('offline');
     }

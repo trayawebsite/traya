@@ -6,7 +6,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
 // Primary marketing/catalogue pages. NOTE: /enquiry is deliberately excluded  
 // it's a thin client-side RFQ utility page and is marked noindex.
-const STATIC_PATHS = ['', '/about', '/capabilities', '/products', '/certifications', '/contact'];
+const STATIC_PATHS = ['', '/about', '/capabilities', '/how-we-work', '/products', '/certifications', '/contact'];
 // Legal pages   indexable but low priority.
 const LEGAL_PATHS = ['/privacy', '/terms'];
 

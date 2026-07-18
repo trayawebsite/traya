@@ -8,6 +8,13 @@
 
 ---
 
+## 🔔 STATUS BANNER (2026-06-30) — read first; checkboxes below are partly stale
+The authoritative current status is **[PROJECT_STATUS.md → Session 3](./PROJECT_STATUS.md)**. Since the last tick-through, the following are **DONE** (this file's older `[ ]` boxes under-report them): all 13 routes incl. **Products hub · Category · Product detail · Enquiry List**, privacy/terms, localized 404; **all 4 form UIs** (contact/inquiry/quote/enquiry-list) with localized zod validation, focus-to-error, a11y, honest-delivery; **i18n live in en + ar + fr** with Arabic **RTL**; **Crisp chatbot**; **SEO** JSON-LD (Org/Product/FAQ/Breadcrumb) + locale-aware **canonical/hreflang** + sitemap; **Sanity wiring** behind the project-ID flag; design reverted to coherent **Vermilion**.
+
+**Genuinely remaining:** Resend sending-domain verification + recipient emails · live Sanity project ID · per-SKU spec-sheet PDFs + catalogue PDF · GA/GSC · real imagery (client) · Vercel deploy + handover. Build + lint green.
+
+---
+
 ## ⛳ The idea in one paragraph
 A fast, modern, fully client-editable marketing + catalogue website for **Traya International Exim LLP** — a diversified Indian food-ingredient export house (151 products / 18 categories, from industrial dehydrates to nutraceutical powders to premium retail goods). The site must make 150+ SKUs feel curated (not a catalogue dump), present spec-grade trust signals for very different buyer industries, carry a refined-but-warm founder-led brand, and funnel international B2B buyers into three lead forms + WhatsApp. Built English-first but i18n-ready for future markets.
 
@@ -34,7 +41,7 @@ Decided from [research-findings.md](./research-findings.md). IA = "company/solut
 | `/products` | Catalogue hub | **6 group sections → 18 category tiles ABOVE any hero**; grouped, not equal-weight grid |
 | `/categories/[slug]` | Category landing | ✅ rich Kanegrade template: Overview · Portfolio/product tiles · MOQ & packaging table · tech specs · applications · quality/compliance · filter/sort |
 | `/products/[slug]` | Product detail (light) | flat URL (locked); name · variants · key specs · spec-sheet PDF · **Add to Enquiry / Enquire / Request sample** |
-| `/certifications` | Quality & certs | cert cluster (FSSAI/ISO22000/HACCP/Halal/Kosher/organic/APEDA) + traceability promise; emerging-exporter framing |
+| `/certifications` | Quality & certs | cert cluster (**FSSAI · APEDA · FIEO · Spice Board · MSME** — client-confirmed only; ⚠️ do NOT list ISO22000/HACCP/Halal/Kosher/organic unless genuinely held) + traceability promise; emerging-exporter framing |
 | `/contact` | Contact | form · details · location · WhatsApp |
 | `/enquiry` | ✅ **Enquiry List** | cart-style — batch multiple products → one RFQ (research's #1 conversion lever) |
 | `/[...not-found]` | 404 | |
@@ -52,7 +59,7 @@ Decided from [research-findings.md](./research-findings.md). IA = "company/solut
 ---
 
 ## 🔑 Open decisions / client inputs still needed
-- 🔒 **Design direction** — Saffron Route (recommended) vs Harvest vs Meridian (the 3 options live on `/design-directions`). Build is on hold for *visual* polish until confirmed; tokens default to Saffron Route.
+- ✅ **Design direction — CONFIRMED: Vermilion.** Red `#B5341A` primary (deep `#6D1F10`, white button text) · ivory `#FBF8F2` bg · Lora + Figtree + DM Mono · soft 8px buttons · light-only. Wired into globals.css + layout (Lora). `/design-directions` block 01 reflects it.
 - 🔒 **"40+ countries" stat** — real figure or drop it (don't publish unverified).
 - 🔒 **Recipient email IDs** for lead routing — client to provide.
 - 🔒 **Chatbot** — Crisp recommended; client to confirm.
@@ -75,16 +82,19 @@ Decided from [research-findings.md](./research-findings.md). IA = "company/solut
 
 ---
 
-## PHASE 1 — Design system finalize `[x] WIRED & VERIFIED 2026-06-10`
-- [x] Saffron Route brand tokens in `app/globals.css` (deep/ink/cream/card/surface/border/saffron×4/forest×2/slate)
-- [x] **Brand → shadcn semantic layer bridged** (background=cream, primary=ink, ring=saffron, border/muted/accent mapped) — components on-brand automatically
-- [x] **Fonts actually wired** — Fraunces (display) · Figtree (body) · DM Mono (specs) via `next/font` on `<html>` (was Geist — fixed)
-- [x] Background = cream (was clinical white — fixed)
-- [x] Scale tokens added: display type scale (`text-display-*`), section spacing (`py-section-*`), `max-w-page`, warm shadows (`shadow-*`), `ease-expo`, radius scale
-- [x] `.section-label` identity pattern; headings default to Fraunces; saffron focus ring + selection
+## PHASE 1 — Design system finalize `[x] VERMILION — WIRED & VERIFIED` · evolved 2026-06-19
+> **Session 2 update:** deep is now `#1a1008` (was `#100D08`); **saffron is now the second brand colour** (gold `#C4820A` — logo is red + gold); a **motion system** was added (reveal + stagger + Emil-Kowalski polish; reduced-motion + no-JS safe). Colour jobs: **red = action/eyebrows · gold = highlights · forest = spec stamps · espresso = dark bands.** See PROJECT_STATUS.md → "Session 2".
+- [x] **Vermilion brand tokens** in `app/globals.css` (deep/ink/ivory/card/surface/border · red×4 · forest×2 · slate · **saffron now used**)
+- [x] **Brand → shadcn semantic layer bridged** (background=ivory, primary=**red**, ring=red, border/muted/accent mapped) — components on-brand automatically
+- [x] **Fonts wired** — **Lora** (display) · Figtree (body) · DM Mono (specs) via `next/font` on `<html>`
+- [x] Background = ivory `#FBF8F2`; primary button = vermilion + **white** text (~6:1)
+- [x] **`--destructive` = cool crimson `#A8132F`** — distinct from brand red (no confusion)
+- [x] **Dark mode removed** — light-only; no `.dark` block
+- [x] Scale tokens: display type scale, section spacing, `max-w-page`, warm shadows, `ease-expo`, radius scale
+- [x] `.section-label` (red-deep eyebrow); headings default to Lora; red focus ring + selection
 - [x] Canonical reference: [.claude/design-system.md](./design-system.md); `pnpm build`+`lint` clean
-- [x] `app/design-directions/page.tsx` — 3 options for client
-- [ ] 🔒 **Client confirms direction** (Saffron Route recommended & research-validated) → currently default
+- [x] `app/design-directions/page.tsx` block 01 reflects the final Vermilion direction
+- [x] ✅ **Client confirmed: Vermilion** `#B5341A`
 - [ ] Build reusable components on this system in Phase 2: Button variants, Card shells, Stat block, CTA banner, Cert badge
 - [ ] (optional) `/style-guide` reference page — not built; build only if wanted
 
@@ -132,17 +142,18 @@ Logic/design separation throughout: data in `lib/site-config.ts`, behaviour in h
 ---
 
 ## PHASE 4 — Pages (per FINALIZED SITE MAP above, Q2)
-- [ ] **Home** `/` — hero · capabilities teaser · stats (**150+ · 18 categories · India**) · 6-group category showcase · founder pull-quote · cert cluster · CTA banner
-- [ ] **About** `/about` — founder letter + photo (lead) · who we are / 3 principles · philosophy · global outlook · why Traya · vision/mission
-- [ ] **Capabilities** `/capabilities` — the 5 core capabilities, "solutions house" framing
+> **Status (2026-06-19): 5 of 8 built & green** — full sections, i18n copy, `generateMetadata`, reveal + stagger motion. Catalogue/RFQ cluster (Products hub · Category · Product detail · Enquiry) remains. See PROJECT_STATUS.md → "Session 2".
+- [x] **Home** `/` — hero (light, from `main`) · intro + vision/mission · **dark stats band** · 6-group tiles · why Traya · **testimonials** (sample) · cert teaser · **how it works** · **FAQ** · **final CTA** (dark image)
+- [x] **About** `/about` — 2-col hero (image) · founder letter (dark) · principles · why Traya (7 pts) · vision/mission (dark)
+- [x] **Capabilities** `/capabilities` — solutions-house hero · 5 core capabilities (editorial list) · operating foundations (dark)
 - [ ] **Products hub** `/products` — 6 group sections → 18 category tiles ABOVE any hero; grouped w/ hierarchy, NOT equal-weight dump (Q15)
 - [ ] **Category landing** `/categories/[slug]` — rich Kanegrade template: overview · product tiles · MOQ/packaging table · tech specs · applications · quality · filter/sort
 - [ ] **Product detail (light)** `/products/[slug]` — flat URL; name · variants · key specs · spec-sheet PDF · Add-to-Enquiry / Enquire / Request-sample (Q10)
-- [ ] **Certifications** `/certifications` — cert cluster + what each means to a buyer + traceability; Sanity-editable (Q20)
-- [ ] **Contact** `/contact` — form · company details · location · WhatsApp · email
+- [x] **Certifications** `/certifications` — why-trust pillars · per-cert explainers (logo + issuer + *what it means*) · traceability (dark) · honesty-gated + disclaimer (Q20)
+- [x] **Contact** `/contact` — contact-method cards (email/phone/WhatsApp/address/hours/social) + global enquiry form
 - [ ] **Enquiry List** `/enquiry` — cart-style batched RFQ review + submit
-- [ ] **404** `/[...not-found]`
-- [ ] Responsive pass on every page — mobile / tablet / desktop (Q5)
+- [x] **404** `/[...not-found]`
+- [~] Responsive pass on every page — mobile / tablet / desktop (Q5) — built responsive; full device QA pending
 - [ ] Breadcrumbs (Home › Products › Category › Product) + polyhierarchy (cross-listed items under multiple categories)
 
 ---
@@ -174,10 +185,10 @@ Logic/design separation throughout: data in `lib/site-config.ts`, behaviour in h
 
 ## PHASE 6 — SEO & performance
 - [x] `app/robots.ts` + `app/sitemap.ts` (hreflang alternates, Next 16 native)
-- [ ] `generateMetadata()` per page — titles, descriptions (Q11)
-- [ ] Image **alt tags** everywhere (Q11)
-- [ ] `next/image` for all images — Core Web Vitals (Q14)
-- [ ] JSON-LD structured data — `Organization` + `Product`
+- [~] `generateMetadata()` per page — ✅ on all 5 built pages (i18n title/description + canonical); from Sanity later (Q11)
+- [~] Image **alt tags** — present on built-page images; audit as pages grow (Q11)
+- [x] `next/image` for all images — via the `Photo` wrapper (blur→sharp fade) + `next/image` on founder/cert/hero (Q14)
+- [~] JSON-LD structured data — ✅ `Organization` on Home; `Product` pending product pages
 - [ ] Sitemap includes all products + locales (regenerate on content change)
 - [ ] Canonical URLs + OpenGraph / Twitter images
 - [ ] 🔒 **Google Search Console** — configure + verify + guide client to submit (Q12)

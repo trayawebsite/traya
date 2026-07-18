@@ -143,9 +143,6 @@ export async function IndustriesWeServe() {
           <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
             {t("heading")}
           </h2>
-          <p className="mx-auto mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
-            {t("sub")}
-          </p>
         </div>
 
         <ul className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

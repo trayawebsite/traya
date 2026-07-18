@@ -23,6 +23,14 @@ export async function handleLead(
     return NextResponse.json({ok: false, error: 'Invalid JSON body'}, {status: 400});
   }
 
+  // Honeypot: `website` is a hidden field real users never fill. If it's set, a
+  // bot filled it → look successful (so it doesn't retry) but silently drop the
+  // lead: no email, no sheet row, no rate-limit consumed.
+  const website = (raw as {website?: unknown} | null)?.website;
+  if (typeof website === 'string' && website.trim() !== '') {
+    return NextResponse.json({ok: true, type});
+  }
+
   const parsed = schema.safeParse(raw);
   if (!parsed.success) {
     return NextResponse.json(

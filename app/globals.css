@@ -251,15 +251,21 @@
   .hero-slide:first-child { opacity: 1; }
 }
 
-/* Infinite cert/logo marquee — the track holds two identical copies and slides
-   -50%, so it loops seamlessly. Items use margin (not flex gap) so the halves
-   align exactly. Pauses on hover; static under reduced-motion. */
+/* Infinite cert/logo marquee — the track holds four identical copies and
+   slides -50% (i.e. exactly two copies' worth), so it loops seamlessly; -50%
+   works for any even copy count, not just two. Four copies (not two) because
+   there are only 5 certifications today — two copies alone barely fill a wide
+   viewport, so the loop point becomes obvious almost immediately. Duration is
+   doubled to match (44s for two copies' travel vs. 22s for one), keeping the
+   same scroll speed while giving more distance before the pattern repeats.
+   Items use margin (not flex gap) so the copies align exactly. Pauses on
+   hover; static under reduced-motion. */
 @keyframes traya-marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
 }
 .marquee-track {
-  animation: traya-marquee 22s linear infinite;
+  animation: traya-marquee 44s linear infinite;
   will-change: transform;
 }
 .marquee:hover .marquee-track {

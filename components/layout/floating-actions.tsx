@@ -20,7 +20,9 @@ export function FloatingActions() {
 
   return (
     <>
-      <ChatPanel open={chatOpen} onClose={() => setOpenedAt(null)} />
+      {/* Mount only while open so state (and any in-flight stream) is discarded
+          on close/navigation   a fresh conversation every time it reopens. */}
+      {chatOpen && <ChatPanel open onClose={() => setOpenedAt(null)} />}
       <div className="fixed bottom-6 end-6 z-50 flex items-center gap-3">
         {/* AI assistant   opens the chat panel */}
         <button

@@ -14,7 +14,10 @@ function parseMax(raw: string | undefined, fallback: number): number {
   const n = Number(raw);
   return Number.isFinite(n) && n > 0 ? Math.floor(n) : fallback;
 }
-const DEFAULT_MAX = parseMax(process.env.LEAD_MAX_PER_DAY, 4); // submissions / window
+// 15/day/IP: high enough that several buyers behind one corporate NAT / shared
+// egress IP aren't collectively locked out (4 was too tight for B2B), low enough
+// to blunt abuse   the honeypot is the primary spam gate. Tune via env.
+const DEFAULT_MAX = parseMax(process.env.LEAD_MAX_PER_DAY, 15); // submissions / window
 
 // key → submission timestamps within the window
 const store = new Map<string, number[]>();

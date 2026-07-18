@@ -18,14 +18,18 @@ const en: T = (key) =>
   )[key] ?? key);
 
 // Field building blocks, parameterized by a translator.
+// `.trim()` runs BEFORE the length checks so a whitespace-only value (e.g. "  ")
+// can't satisfy min-length, and the stored/emailed value is clean.
 function baseFields(t: T) {
   return {
-    name: z.string().min(2, t('name')).max(100),
-    email: z.string().email(t('email')),
-    company: z.string().max(150).optional().or(z.literal('')),
-    country: z.string().max(100).optional().or(z.literal('')),
-    phone: z.string().max(30).optional().or(z.literal('')),
-    message: z.string().min(10, t('message')).max(2000)
+    name: z.string().trim().min(2, t('name')).max(100),
+    email: z.string().trim().email(t('email')),
+    company: z.string().trim().max(150).optional().or(z.literal('')),
+    country: z.string().trim().max(100).optional().or(z.literal('')),
+    phone: z.string().trim().max(30).optional().or(z.literal('')),
+    // 5000 chars: comfortably fits a batched Enquiry-List RFQ (every cart item +
+    // the buyer's notes are folded into this one field).
+    message: z.string().trim().min(10, t('message')).max(5000)
   };
 }
 
@@ -44,7 +48,7 @@ export function makeInquirySchema(t: T = en) {
     company: f.company,
     country: f.country,
     phone: f.phone,
-    productName: z.string().max(200).optional().or(z.literal('')),
+    productName: z.string().trim().max(2000).optional().or(z.literal('')),
     productSlug: z.string().max(200).optional().or(z.literal('')),
     message: f.message
   });
@@ -59,7 +63,7 @@ export function makeQuoteSchema(t: T = en) {
     company: f.company,
     country: f.country,
     phone: f.phone,
-    productName: z.string().max(200).optional().or(z.literal('')),
+    productName: z.string().trim().max(2000).optional().or(z.literal('')),
     productSlug: z.string().max(200).optional().or(z.literal('')),
     quantity: z.string().max(100).optional().or(z.literal('')),
     message: f.message

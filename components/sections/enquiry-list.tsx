@@ -8,6 +8,7 @@ import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {useEnquiry, type EnquiryItem} from '@/lib/enquiry-context';
 import {Container} from '@/components/ui/container';
+import {useHoneypot} from '@/components/ui/honeypot';
 import {primaryButton} from '@/lib/button-styles';
 import {toast} from 'sonner';
 
@@ -29,14 +30,15 @@ export function EnquiryListView() {
   const formSchema = useMemo(
     () =>
       z.object({
-        name: z.string().min(2, tv('name')).max(100),
-        email: z.string().email(tv('email')),
-        company: z.string().max(150).optional().or(z.literal('')),
-        phone: z.string().max(30).optional().or(z.literal('')),
-        notes: z.string().max(2000).optional().or(z.literal(''))
+        name: z.string().trim().min(2, tv('name')).max(100),
+        email: z.string().trim().email(tv('email')),
+        company: z.string().trim().max(150).optional().or(z.literal('')),
+        phone: z.string().trim().max(30).optional().or(z.literal('')),
+        notes: z.string().trim().max(2000).optional().or(z.literal(''))
       }),
     [tv]
   );
+  const honeypot = useHoneypot();
   const {
     register,
     handleSubmit,
@@ -62,7 +64,16 @@ export function EnquiryListView() {
       values.notes ? `Notes:\n${values.notes}` : ''
     ]
       .filter(Boolean)
-      .join('\n');
+      .join('\n')
+      .slice(0, 2000);
+
+    // productName is a lead-list column the server caps at 200 chars, so a large
+    // cart must be summarised here — the full itemised list lives in `message`.
+    const allNames = items.map((i) => i.name).join(', ');
+    const productName =
+      allNames.length <= 200
+        ? allNames
+        : `${items.length} products — ${allNames.slice(0, 170).trimEnd()}…`;
 
     try {
       const res = await fetch('/api/inquiry', {
@@ -73,8 +84,9 @@ export function EnquiryListView() {
           email: values.email.trim(),
           company: values.company?.trim() || undefined,
           phone: values.phone?.trim() || undefined,
-          productName: items.map((i) => i.name).join(', '),
-          message: fullMessage
+          productName,
+          message: fullMessage,
+          website: honeypot.getValue()
         })
       });
       const json = await res.json().catch(() => ({}));
@@ -121,7 +133,10 @@ export function EnquiryListView() {
         <div className="mx-auto max-w-3xl">
           <p className="section-label">{t('eyebrow')}</p>
           <h1 className="mt-3 text-balance font-display text-display-lg text-foreground">
-            {t('heading')}
+            {t('heading')}{" "}
+            <span className="text-traya-red">
+              {t('headingAccent')}
+            </span>
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{t('sub')}</p>
 
@@ -145,8 +160,9 @@ export function EnquiryListView() {
               <form
                 onSubmit={handleSubmit(onSubmit, onInvalid)}
                 noValidate
-                className="mt-10 rounded-2xl border border-traya-border bg-card p-6 shadow-sm sm:p-8"
+                className="relative mt-10 rounded-2xl border border-traya-border bg-card p-6 shadow-sm sm:p-8"
               >
+                {honeypot.field}
                 <h2 className="font-display text-lg text-foreground">{t('contactHeading')}</h2>
                 <p className="mt-1 text-sm text-muted-foreground">{t('contactSub')}</p>
 

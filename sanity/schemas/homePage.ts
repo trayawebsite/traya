@@ -24,29 +24,19 @@ export const homePage = defineType({
         defineField({name: 'sub', title: 'Subheading', type: 'text', rows: 2}),
         defineField({name: 'ctaPrimaryLabel', title: 'Primary button label', type: 'string'}),
         defineField({name: 'ctaSecondaryLabel', title: 'Secondary button label', type: 'string'}),
-        defineField({
-          name: 'statLine',
-          title: 'Stat line',
-          type: 'string',
-          description: 'e.g. "499 products · 30 categories · India origin" (· separated)'
-        }),
         defineField({name: 'image', type: 'image', options: {hotspot: true}})
       ]
     }),
     defineField({
       name: 'intro',
-      title: 'Intro · Vision · Mission',
+      title: 'How Traya Helps',
       type: 'object',
       ...sectionHeading(),
+      description: 'Vision/mission now lives on the About page; this section is the split narrative + 3 pillars band.',
       fields: [
         defineField({name: 'eyebrow', type: 'string'}),
         defineField({name: 'heading', type: 'text', rows: 2}),
-        defineField({name: 'body', type: 'text', rows: 4}),
-        defineField({name: 'specLine', title: 'Spec line', type: 'string', description: '· separated'}),
-        defineField({name: 'visionLabel', type: 'string', initialValue: 'Our vision'}),
-        defineField({name: 'vision', type: 'text', rows: 2}),
-        defineField({name: 'missionLabel', type: 'string', initialValue: 'Our mission'}),
-        defineField({name: 'mission', type: 'text', rows: 2})
+        defineField({name: 'body', type: 'text', rows: 4})
       ]
     }),
     defineField({
@@ -66,8 +56,7 @@ export const homePage = defineType({
       fields: [
         defineField({name: 'eyebrow', type: 'string'}),
         defineField({name: 'heading', type: 'text', rows: 2}),
-        defineField({name: 'sub', type: 'text', rows: 2}),
-        defineField({name: 'specLine', title: 'Spec line', type: 'string'})
+        defineField({name: 'sub', type: 'text', rows: 2})
       ]
     }),
     defineField({
@@ -101,23 +90,6 @@ export const homePage = defineType({
         defineField({name: 'eyebrow', type: 'string'}),
         defineField({name: 'heading', type: 'text', rows: 2}),
         defineField({name: 'sub', type: 'text', rows: 2})
-      ]
-    }),
-    defineField({
-      name: 'process',
-      title: 'How it works',
-      type: 'object',
-      ...sectionHeading(),
-      fields: [
-        defineField({name: 'eyebrow', type: 'string'}),
-        defineField({name: 'heading', type: 'text', rows: 2}),
-        defineField({name: 'sub', type: 'text', rows: 2}),
-        defineField({
-          name: 'steps',
-          type: 'array',
-          of: [{type: 'featureItem'}],
-          description: 'title = step name, description = step detail'
-        })
       ]
     }),
     defineField({

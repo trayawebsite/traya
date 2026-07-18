@@ -38,12 +38,6 @@ export const aboutPage = defineType({
       of: [{type: 'featureItem'}]
     }),
     defineField({
-      name: 'whyTraya',
-      title: 'Why Traya (pillars)',
-      type: 'array',
-      of: [{type: 'featureItem'}]
-    }),
-    defineField({
       name: 'commitment',
       title: 'Commitment statement',
       type: 'text',

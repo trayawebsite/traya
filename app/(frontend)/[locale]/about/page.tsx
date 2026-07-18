@@ -3,7 +3,6 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
 import { AboutHero } from "@/components/sections/about/about-hero";
 import { FounderLetter } from "@/components/sections/about/founder-letter";
-import { WhyAbout } from "@/components/sections/about/why-about";
 import { VisionMission } from "@/components/sections/about/vision-mission";
 import { ContactForm } from "@/components/sections/contact/contact-form";
 import { Container } from "@/components/ui/container";
@@ -37,9 +36,6 @@ export default async function AboutPage({
       <AboutHero />
       <Reveal>
         <FounderLetter />
-      </Reveal>
-      <Reveal>
-        <WhyAbout />
       </Reveal>
       <Reveal>
         <VisionMission />

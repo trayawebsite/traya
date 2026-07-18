@@ -60,10 +60,6 @@ export function getProductsByCategory(category: string) {
   return client.fetch<ProductListItem[]>(q.productsByCategoryQuery, {category}, opts(['product']));
 }
 
-export function getFeaturedProducts() {
-  return client.fetch<ProductListItem[]>(q.featuredProductsQuery, {}, opts(['product']));
-}
-
 export function getProductBySlug(slug: string) {
   return client.fetch<Product | null>(q.productBySlugQuery, {slug}, opts(['product']));
 }

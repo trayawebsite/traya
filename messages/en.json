@@ -6,30 +6,14 @@
     },
     "hero": {
       "eyebrow": "Our approach & global reach",
-      "heading": "A structured process, built around you.",
+      "heading": "A structured process,",
+      "headingAccent": "built around you.",
       "sub": "Every international transaction has its own requirements: specifications, compliance, documentation, and logistics. At Traya we manage all of it, so you can focus on your business while we handle the rest."
     },
-    "manage": {
-      "eyebrow": "What we manage for you",
-      "heading": "Everything between enquiry and delivery",
-      "sub": "When you work with Traya you don't just get a product. You get a team that handles every moving part of your trade, so nothing falls through the cracks.",
-      "i1Title": "Export & import operations",
-      "i1Body": "End-to-end management of your trade, from product sourcing to final dispatch. One partner, one process, zero gaps.",
-      "i2Title": "Product sourcing & quality verification",
-      "i2Body": "We source the right product for your requirement and verify it meets your specifications before it moves. You get what you asked for, every time.",
-      "i3Title": "Trade documentation",
-      "i3Body": "Every document your shipment needs: invoices, packing lists, certificates, and compliance paperwork, prepared accurately and on time.",
-      "i4Title": "Logistics coordination",
-      "i4Body": "We coordinate movement of your goods by sea, air, or courier, based on your timeline, volume, and destination. You stay informed throughout.",
-      "i5Title": "Dedicated buyer support",
-      "i5Body": "One consistent point of contact from first enquiry to delivery. Clear communication, prompt responses, no handovers.",
-      "quote": "We simplify the complexity of sourcing from India, so you can focus on your business."
-    },
     "process": {
-      "eyebrow": "How we work",
+      "eyebrow": "The Traya Way",
       "heading": "From enquiry to delivery",
       "sub": "Eight clear steps. One consistent standard of execution.",
-      "step": "Step",
       "s1Title": "Inquiry",
       "s1Body": "You share your product requirement, quantity, and destination country.",
       "s2Title": "Requirement discussion",
@@ -54,18 +38,16 @@
       "sub": "We coordinate international shipments across three modes, matched to your order size, urgency, and destination.",
       "seaTitle": "Sea freight",
       "seaBody": "Best suited for large-volume orders where cost efficiency matters. We coordinate both FCL (Full Container Load) and LCL (Less than Container Load) shipments.",
-      "seaTag": "FCL & LCL available",
       "airTitle": "Air freight",
       "airBody": "For time-sensitive or high-value cargo that needs to move quickly and securely across borders with minimal transit time.",
-      "airTag": "Priority & standard air",
       "courierTitle": "Courier for samples",
       "courierBody": "International courier dispatch for product samples, so buyers can evaluate quality, specifications, and suitability before committing to a full order.",
-      "courierTag": "Pre-order evaluation",
       "incoterms": "Incoterms: shipments are handled on terms that work for you. We support FOB, CIF, and other standard trade terms, agreed upfront, with no ambiguity on responsibilities or costs. Speak to us about what suits your requirement best."
     },
     "reach": {
       "eyebrow": "Global reach",
-      "heading": "Wherever you are, we can reach you",
+      "heading": "Wherever you are,",
+      "headingAccent": "we can reach you",
       "p1": "India is one of the world's most capable sourcing destinations, and Ahmedabad sits at the heart of it. We are positioned here deliberately, with direct access to quality products across multiple categories and the infrastructure to move them globally.",
       "p2": "Whether you're an established importer with defined requirements or a business sourcing from India for the first time, Traya is built to serve you, with the same structure, care, and reliability at every scale.",
       "pillar1": "Adapting to the trade regulations and import requirements of your destination country.",
@@ -149,7 +131,8 @@
   },
   "Enquiry": {
     "eyebrow": "Send an enquiry",
-    "heading": "Let's start a conversation.",
+    "heading": "Let's start",
+    "headingAccent": "a conversation.",
     "sub": "Share your requirements and we'll take care of the rest.",
     "trust1": "Quick response",
     "trust2": "Trusted support",
@@ -177,7 +160,8 @@
     "removeFromList": "Remove from enquiry",
     "list": {
       "eyebrow": "Enquiry List",
-      "heading": "Review your enquiry.",
+      "heading": "Review your",
+      "headingAccent": "enquiry.",
       "sub": "You've selected these products. Review the list, add your details, and submit the enquiry.",
       "empty": "Your enquiry list is empty. Browse our products and add items to get started.",
       "browseProducts": "Browse products",
@@ -272,11 +256,11 @@
     },
     "hero": {
       "eyebrow": "Expanding Horizons Through Trade.",
-      "heading": "Your trusted partner for sourcing from India.",
+      "heading": "Your trusted partner for",
+      "headingAccent": "sourcing from India.",
       "sub": "Traya is committed to building lasting global partnerships through trust, reliability, and professional execution. With a growing portfolio of quality products, we help businesses navigate international trade with confidence.",
       "cta": "Explore Products",
       "ctaEnquiry": "Share your requirement",
-      "stat": "Food, Agro & Chemicals · 499 products · 30 categories",
       "certified": "Certified"
     },
     "intro": {
@@ -292,29 +276,29 @@
       "f3Body": "Reliable logistics and on-time delivery worldwide."
     },
     "stats": {
-      "s1": "499",
-      "s1Sub": "Products Listed",
-      "s2": "30",
-      "s2Sub": "Categories",
-      "s3": "Trusted",
-      "s3Sub": "Partnerships",
+      "s1": "Global",
+      "s1Sub": "Trade Partner",
+      "s2": "Trusted",
+      "s2Sub": "Partnerships",
+      "s3": "Expanding",
+      "s3Sub": "Portfolio",
       "s4": "100%",
       "s4Sub": "Sourced from India"
     },
     "groups": {
       "eyebrow": "Our Product Portfolio",
-      "heading": "What We Export",
+      "heading": "What We",
+      "headingAccent": "Export",
       "sub": "Our portfolio is designed to support businesses across multiple industries. As we grow, so does our range.",
       "foodTitle": "Food & Agro Products",
-      "foodBody": "Premium agricultural products sourced from trusted Indian manufacturers, aligned to international quality standards.",
+      "foodBody": "Premium Food & Agro Products tailored to meet global quality standards, ensuring consistency, safety, and reliability for international markets.",
       "foodCta": "View Food & Agro Products",
       "chemTitle": "Chemicals",
-      "chemBody": "Industrial and specialty chemicals serving diverse manufacturing applications across global markets.",
+      "chemBody": "High-performance industrial and specialty chemicals engineered to meet international quality standards and diverse industry requirements.",
       "chemCta": "View Chemicals",
       "selection": "A selection across our range",
       "note": "Our portfolio continues to expand as we strengthen partnerships across new industries and international markets.",
       "noteAsk": "Don't see what you need? Reach out, we may still be able to help.",
-      "spec": "499 listed products · 30 categories · 6 product groups",
       "cta": "Send a Requirement",
       "badgePremium": "Food & Agro",
       "alliums": "Dehydrated Alliums & Vegetables",
@@ -334,7 +318,8 @@
     },
     "why": {
       "eyebrow": "Why Traya",
-      "heading": "Built for long-term partnerships.",
+      "heading": "Built for long-term",
+      "headingAccent": "partnerships.",
       "sub": "We go beyond transactions to build trust, deliver quality, and grow together.",
       "cta": "View our capabilities",
       "trusted": "Trusted Relationships",
@@ -355,25 +340,15 @@
     },
     "certs": {
       "eyebrow": "Export registrations",
-      "heading": "See the registrations behind our exports.",
-      "sub": "Each registration is shown with its issuing authority and what it means for the buyer. Documents for a specific product or destination are confirmed during quotation.",
-      "cta": "View our registrations"
-    },
-    "process": {
-      "eyebrow": "The export process",
-      "heading": "How an export order works with Traya.",
-      "sub": "You receive the product and commercial details before you approve the order.",
-      "step": "Step",
-      "step1Title": "Send your requirement",
-      "step1Body": "Share the product name, specification, quantity, packaging, destination, and required timeline. We will ask for any missing details.",
-      "step2Title": "Review the offer",
-      "step2Body": "We confirm the product, available specifications, documents, sample options, pricing, and commercial terms.",
-      "step3Title": "Confirm and ship",
-      "step3Body": "After approval, we coordinate the order, packaging, documents, and dispatch. We keep you informed as the order progresses."
+      "heading": "See the registrations",
+      "headingAccent": "behind our exports.",
+      "cta": "View our registrations",
+      "sub": "Every shipment is backed by the required export registrations and certifications, ensuring compliance, transparency, and confidence in international trade."
     },
     "faq": {
       "eyebrow": "Buyer questions",
-      "heading": "Important details before you place an order.",
+      "heading": "Important details",
+      "headingAccent": "before you place an order.",
       "moqQ": "What are your minimum order quantities?",
       "moqA": "MOQs depend on the product, grade, supplier, and packaging format. Share your target quantity and destination, and we will confirm the workable minimum with the quotation.",
       "samplesQ": "Can I get a sample before ordering?",
@@ -401,12 +376,12 @@
     },
     "hero": {
       "eyebrow": "About Traya",
-      "heading": "A Refined Approach to Global Trade",
-      "tagline": "Sourcing, documentation, packaging, and shipment support managed by one dedicated team.",
+      "heading": "A Refined Approach",
+      "headingAccent": "to Global Trade",
       "body": "TRAYA is a global trade company dedicated to building trusted partnerships across international markets. Through professional execution and a customer-focused approach, we help businesses navigate global trade with confidence.\n\nDriven by transparency, attention to detail, and a commitment to quality, every interaction is managed with care, ensuring reliability, consistency, and a professional experience that businesses can depend on.\n\nWith an expanding portfolio and a vision for sustainable growth, TRAYA continues to evolve alongside the changing needs of global markets, creating lasting partnerships built on trust, quality, and shared success."
     },
     "founder": {
-      "eyebrow": "A note from the founder",
+      "eyebrow": "In her own words.",
       "name": "Neha Pardeshi",
       "role": "Founder & CEO",
       "p1": "The world didn't open up to me through textbooks   it opened up through travel. Exploring different cultures, meeting people from all walks of life, and seeing the world through different perspectives shaped not only who I am, but also what I chose to build.",
@@ -426,36 +401,16 @@
       "p3Title": "Integrity",
       "p3Body": "We communicate clearly about what is available, what needs confirmation, and what the next step should be."
     },
-    "why": {
-      "eyebrow": "Why Traya",
-      "heading": "A practical partner for international sourcing.",
-      "body": "Traya was built to help buyers reduce confusion in international trade. We bring product sourcing, supplier coordination, documentation, packaging, and shipment support into one clear workflow.",
-      "cta": "See our capabilities",
-      "w1Title": "Founder-driven standards",
-      "w1Body": "You work with a team that takes ownership of the requirement and follows through on the details.",
-      "w2Title": "Structured execution",
-      "w2Body": "We confirm specifications, quantities, packaging, documents, commercial terms, and timelines before the order proceeds.",
-      "w3Title": "Relationship-first thinking",
-      "w3Body": "We aim to support repeat buyers with clear answers, steady updates, and dependable coordination.",
-      "w4Title": "Global outlook, personal touch",
-      "w4Body": "You can speak to a real team that understands the requirement and responds with practical next steps.",
-      "w5Title": "Multiple sectors, one partner",
-      "w5Body": "We support requirements across Food & Agro, Chemicals, Mechanical products, Paper, and other trade enquiries.",
-      "w6Title": "Documentation that travels",
-      "w6Body": "We confirm the specifications, certificates, commercial documents, and export documents required for the product and destination.",
-      "w7Title": "Transparent throughout",
-      "w7Body": "We share pricing, timelines, order status, and pending requirements clearly, so you know what is happening at each stage."
-    },
     "vision": {
       "eyebrow": "Vision & mission",
       "visionLabel": "Our Vision",
       "vision": "To become the most trusted and largest trading partner for businesses expanding across borders.",
       "missionLabel": "Our Mission",
-      "m1": "To facilitate efficient and well-structured export and import operations across global markets.",
-      "m2": "To build and strengthen long-term international trade partnerships and provide sustainable solutions.",
-      "m3": "To ensure seamless execution through disciplined systems and operational clarity.",
-      "m4": "To expand our global presence through strategic market engagement.",
-      "commitment": "We are not building a firm of one-time transactions. We are building a trade partner buyers can return to for clear support across products, sectors, and markets."
+      "m1": "Deliver premium-quality products that consistently meet international standards and customer expectations.",
+      "m2": "Build enduring partnerships founded on trust, transparency, and mutual success.",
+      "m3": "Simplify international trade through reliable execution, efficient logistics, and responsive service.",
+      "m4": "Expand our global presence by creating value-driven opportunities across international markets.",
+      "commitment": "We strive to build enduring partnerships founded on trust, reliability, and a shared commitment to long-term success across global markets."
     }
   },
   "Contact": {
@@ -465,8 +420,9 @@
     },
     "hero": {
       "eyebrow": "Contact",
-      "heading": "Submit your global sourcing requirements.",
-      "body": "Connect with our export specialists via email, phone, WhatsApp, or our secure enquiry form. Please detail your product specifications, required quantities, destination port, and delivery timelines to ensure a comprehensive and prompt commercial response."
+      "heading": "Reach our export desk directly.",
+      "body": "Share your requirement below, or get in touch  directly every message is reviewed personally, with a response within one business day.",
+      "cta": "Send your requirement"
     },
     "emailLabel": "Email us",
     "phoneLabel": "Call us",
@@ -491,9 +447,9 @@
       "success": "Thank you. Your message has been sent. We'll be in touch shortly.",
       "error": "Something went wrong. Please try again, or email us directly.",
       "rateLimited": "You've reached today's limit. Please email us or message us on WhatsApp.",
-      "point1": "We reply within one business day",
-      "point2": "Sourcing, samples, pricing and documentation   ask us anything",
-      "point3": "A direct line to our trade desk",
+      "point1": "Response within one business day",
+      "point2": "Product specifications, pricing, samples & documentation",
+      "point3": "Dedicated support for your export enquiries",
       "reassurance": "Typically replies within 1 business day · No obligation.",
       "successHeading": "Message sent.",
       "successBody": "Thank you. Our team will review your message and get back to you   usually within one business day."
@@ -571,13 +527,13 @@
     },
     "hero": {
       "eyebrow": "Capabilities",
-      "heading": "Trade support from requirement to shipment.",
-      "body": "Traya helps buyers source products from India and coordinate the steps that make an export order work: supplier discussions, specifications, packaging, documents, commercial terms, and shipment updates."
+      "heading": "Supporting Businesses",
+      "headingAccent": "Across Diverse Sectors",
+      "body": "Our expanding portfolio enables us to serve a broad range of industries with products that meet evolving market requirements and international quality expectations."
     },
     "industries": {
       "eyebrow": "Industries We Serve",
-      "heading": "Powering Industries Worldwide",
-      "sub": "Our expanding portfolio enables us to serve a broad range of industries with products that meet evolving market requirements and international quality expectations.",
+      "heading": "Across Industries. Across Borders.",
       "i1Title": "Pharmaceuticals & Nutraceuticals",
       "i1Body": "Functional ingredients, excipients, and health-focused raw materials.",
       "i2Title": "Food & Beverage",
@@ -596,18 +552,24 @@
       "i8Body": "Specialty chemicals supporting diverse industrial processes."
     },
     "core": {
-      "eyebrow": "What we do",
-      "heading": "Core capabilities for international buyers.",
-      "c1Title": "Product sourcing",
-      "c1Body": "We help buyers source Food & Agro, Chemicals, Mechanical products, Paper, and other export requirements from India based on specifications, quantity, and destination.",
-      "c2Title": "Supplier coordination",
-      "c2Body": "We coordinate with suitable suppliers to check availability, grade, packaging, production readiness, and order feasibility.",
-      "c3Title": "Specification and documentation support",
-      "c3Body": "We help confirm the specifications, certificates, test reports, commercial documents, and export documents required for the product and destination.",
-      "c4Title": "Packaging and shipment coordination",
-      "c4Body": "We review packaging needs, shipment mode, destination requirements, and dispatch timelines so the order can move with fewer surprises.",
-      "c5Title": "Clear buyer communication",
-      "c5Body": "We keep the buyer informed about available options, pending details, quotation terms, order status, and next steps."
+      "eyebrow": "What We Offer",
+      "heading": "Everything you need for seamless global trade.",
+      "c1Title": "Global Sourcing",
+      "c1Body": "Access to a diverse portfolio of products across multiple categories through a trusted export partner.",
+      "c2Title": "Quality Assurance",
+      "c2Body": "Products are verified against agreed specifications before dispatch to ensure consistency and reliability.",
+      "c3Title": "Export Documentation",
+      "c3Body": "Accurate export documentation, certificates, packing lists, invoices, and compliance paperwork for seamless international trade.",
+      "c4Title": "Freight & Logistics",
+      "c4Body": "Sea Freight, Air Freight, and Courier options tailored to shipment size, urgency, and destination.",
+      "c5Title": "Packaging Solutions",
+      "c5Body": "Packaging tailored to product requirements and international shipping standards.",
+      "c6Title": "Worldwide Reach",
+      "c6Body": "Serving customers across the globe through reliable international trade.",
+      "c7Title": "Flexible Trade Terms",
+      "c7Body": "Commercial terms and shipping arrangements tailored to your business requirements.",
+      "c8Title": "Dedicated Support",
+      "c8Body": "Responsive communication from enquiry through shipment and post-delivery assistance."
     },
     "foundations": {
       "eyebrow": "How we operate",
@@ -629,14 +591,19 @@
       "description": "Browse Traya's Food, Agro & Chemicals catalogue   499 products across 30 categories, from dehydrated ingredients and spices to reactive dyes, food colours and pigments. For mechanical products, paper, or other export requirements, send us your specifications."
     },
     "hub": {
-      "eyebrow": "Food & Agro catalogue",
-      "heading": "Find the products you want to source from India.",
-      "sub": "Browse our listed Food & Agro and Chemicals products by category. For mechanical products, paper, or any product not shown here, send us your requirement and we will review the available sourcing options.",
-      "spec": "6 groups · 30 categories · 499 listed products",
+      "eyebrow": "Our Product Portfolio",
+      "heading": "Find the products",
+      "headingAccent": "you want to source from India.",
+      "sub": "Explore our diverse portfolio of products across multiple categories. Looking for a product that's not listed? Send us your requirement, and we'll get back to you.",
+      "spec": "Diverse product portfolio · Multi-category · 500+ listed products",
       "search": "Search products or categories...",
-      "all": "All",
       "noResults": "No products match your search.",
-      "downloadCatalogue": "Download full catalogue (PDF)"
+      "downloadCatalogue": "Download full catalogue (PDF)",
+      "category": "category",
+      "categories": "categories",
+      "allCategories": "All Categories",
+      "allCategoriesSub": "All groups",
+      "groupLabel": "Group"
     },
     "list": {
       "form": "Form",

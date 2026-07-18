@@ -43,8 +43,13 @@ export async function ProductGroups({ data }: { data?: ProductsData }) {
   return (
     <section className="border-b border-traya-border bg-background">
       <Container className="py-section">
-        <div className="max-w-2xl">
-          <SectionHeader eyebrow={eyebrow} heading={heading} sub={sub} />
+        <div className="mx-auto max-w-2xl text-center">
+          <SectionHeader
+            eyebrow={eyebrow}
+            heading={heading}
+            headingAccent={t("headingAccent")}
+            sub={sub}
+          />
         </div>
 
         {/* Two headline ranges   matched photo cards on the brand red */}

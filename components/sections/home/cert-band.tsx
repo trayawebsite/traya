@@ -29,13 +29,27 @@ export async function CertBand({ data }: { data?: CertsData }) {
   const sub = data?.sub || t("sub");
   const cta = t("cta");
 
-  const items = [...s.certifications, ...s.certifications];
+  // Four copies, not two — with only a handful of certifications, two copies
+  // barely fill a wide viewport and the loop repeats almost immediately. The
+  // -50%-translate trick (see .marquee-track) works for any even copy count,
+  // so this just buys more scroll distance before the pattern repeats.
+  const items = [
+    ...s.certifications,
+    ...s.certifications,
+    ...s.certifications,
+    ...s.certifications
+  ];
 
   return (
     <section className="border-b border-traya-border bg-background py-section">
       <Container>
         <div className="max-w-2xl">
-          <SectionHeader eyebrow={eyebrow} heading={heading} sub={sub} />
+          <SectionHeader
+            eyebrow={eyebrow}
+            heading={heading}
+            headingAccent={t("headingAccent")}
+            sub={sub}
+          />
           <Link href="/certifications" className={`${secondaryBtn} mt-6`}>
             {cta}
           </Link>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 
 type Testimonial = {
   quote: string;
@@ -17,20 +17,50 @@ export function TestimonialCarousel({
 }) {
   const [active, setActive] = useState(0);
   const [fade, setFade] = useState(true);
+  // Track the pending fade timeout + the live index so we can clear on unmount
+  // and let the auto-advance interval read the current slide without re-binding.
+  const fadeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // Mirror the live index into a ref so the auto-advance interval can read it
+  // without being torn down/rebound every time the slide changes.
+  const activeRef = useRef(0);
+  useEffect(() => {
+    activeRef.current = active;
+  }, [active]);
 
-  const next = useCallback(() => {
+  // Cross-fade to a specific index. Any in-flight fade is cancelled first so a
+  // fast click / tick can't leave a stale timeout that fires after unmount.
+  const goTo = useCallback((index: number) => {
     setFade(false);
-    setTimeout(() => {
-      setActive((prev) => (prev + 1) % testimonials.length);
+    if (fadeTimer.current) clearTimeout(fadeTimer.current);
+    fadeTimer.current = setTimeout(() => {
+      setActive(index);
       setFade(true);
     }, 300);
-  }, [testimonials.length]);
+  }, []);
 
   useEffect(() => {
     if (testimonials.length <= 1) return;
-    const timer = setInterval(next, 5000);
+    // Respect prefers-reduced-motion: no auto-rotation (CLAUDE.md rule 9).
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return;
+    }
+    const timer = setInterval(
+      () => goTo((activeRef.current + 1) % testimonials.length),
+      5000,
+    );
     return () => clearInterval(timer);
-  }, [testimonials.length, next]);
+  }, [testimonials.length, goTo]);
+
+  // Clear any pending fade timeout when the component unmounts.
+  useEffect(
+    () => () => {
+      if (fadeTimer.current) clearTimeout(fadeTimer.current);
+    },
+    [],
+  );
 
   if (testimonials.length === 0) return null;
 
@@ -75,13 +105,7 @@ export function TestimonialCarousel({
           {testimonials.map((_, i) => (
             <button
               key={i}
-              onClick={() => {
-                setFade(false);
-                setTimeout(() => {
-                  setActive(i);
-                  setFade(true);
-                }, 300);
-              }}
+              onClick={() => goTo(i)}
               className={`size-2 rounded-full transition-all duration-300 ${
                 i === active
                   ? "w-6 bg-traya-red"

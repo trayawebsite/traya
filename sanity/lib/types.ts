@@ -127,7 +127,6 @@ export type AboutPage = {
   mission?: string[];
   philosophy?: FeatureItem[];
   capabilities?: FeatureItem[];
-  whyTraya?: FeatureItem[];
   commitment?: string;
   founder?: Founder;
   stats?: Stat[];
@@ -141,25 +140,18 @@ export type HomePage = {
     sub?: string;
     ctaPrimaryLabel?: string;
     ctaSecondaryLabel?: string;
-    statLine?: string;
     image?: SanityImage;
   };
   intro?: {
     eyebrow?: string;
     heading?: string;
     body?: string;
-    specLine?: string;
-    visionLabel?: string;
-    vision?: string;
-    missionLabel?: string;
-    mission?: string;
   };
   stats?: Stat[];
-  productsSection?: {eyebrow?: string; heading?: string; sub?: string; specLine?: string};
+  productsSection?: {eyebrow?: string; heading?: string; sub?: string};
   why?: {eyebrow?: string; heading?: string; items?: FeatureItem[]};
   testimonialsSection?: {eyebrow?: string; heading?: string};
   certsSection?: {eyebrow?: string; heading?: string; sub?: string};
-  process?: {eyebrow?: string; heading?: string; sub?: string; steps?: FeatureItem[]};
   faq?: {eyebrow?: string; heading?: string; items?: {question: string; answer: string}[]};
   finalCta?: {heading?: string; sub?: string; ctaLabel?: string; image?: SanityImage};
   seo?: Seo;

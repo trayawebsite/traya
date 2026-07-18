@@ -13,12 +13,14 @@ import { Container } from "@/components/ui/container";
 export function PageHero({
   eyebrow,
   heading,
+  headingAccent,
   tagline,
   sub,
   children,
 }: {
   eyebrow: string;
   heading: string;
+  headingAccent?: string;
   tagline?: string;
   sub?: string;
   children?: ReactNode;
@@ -30,6 +32,14 @@ export function PageHero({
           <p className="section-label">{eyebrow}</p>
           <h1 className="mt-3 text-balance font-display text-display-lg text-foreground">
             {heading}
+            {headingAccent && (
+              <>
+                {" "}
+                <span className="text-traya-red">
+                  {headingAccent}
+                </span>
+              </>
+            )}
           </h1>
           {tagline && (
             <p className="mt-3 font-display text-lg italic text-traya-saffron-lo">

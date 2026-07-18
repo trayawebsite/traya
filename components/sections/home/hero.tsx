@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/container";
 import { HeroCarousel } from "./hero-carousel";
-import { SpecLine } from "./spec-line";
 import { primaryBtn, secondaryBtn } from "./styles";
 import type { HomePage } from "@/sanity/lib/types";
 
@@ -19,7 +18,6 @@ export async function Hero({ data }: { data?: HeroData }) {
   const sub = data?.sub || t("sub");
   const cta = data?.ctaPrimaryLabel || t("cta");
   const ctaEnquiry = data?.ctaSecondaryLabel || t("ctaEnquiry");
-  const statLine = data?.statLine || t("stat");
 
   return (
     <section className="relative isolate overflow-hidden border-b border-traya-border bg-background">
@@ -35,7 +33,10 @@ export async function Hero({ data }: { data?: HeroData }) {
         <div className="max-w-2xl">
           <p className="section-label">{eyebrow}</p>
           <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
-            {heading}
+            {heading}{" "}
+            <span className="text-traya-red">
+              {t("headingAccent")}
+            </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             {sub}
@@ -48,10 +49,6 @@ export async function Hero({ data }: { data?: HeroData }) {
             <a href="#enquiry" className={secondaryBtn}>
               {ctaEnquiry}
             </a>
-          </div>
-
-          <div className="mt-10 border-t border-traya-border pt-6">
-            <SpecLine items={statLine.split(" · ")} />
           </div>
         </div>
       </Container>

@@ -19,11 +19,12 @@ export function HeroCarousel({ className = "" }: { className?: string }) {
           src={src}
           alt=""
           fill
-          preload={i === 0}
-          loading={i === 0 ? "eager" : "lazy"}
+          // First slide is the LCP element: `priority` emits the preload link +
+          // fetchpriority="high". Others stay lazy (next/image default).
+          priority={i === 0}
           quality={82}
           sizes="100vw"
-          className="hero-slide absolute inset-0 size-full object-cover object-center lg:object-contain lg:object-right"
+          className="hero-slide absolute inset-0 size-full object-cover object-center lg:object-right"
           style={{
             animationDelay: `${-i * SLIDE_SECONDS}s`,
             animationDuration: `${LOOP_SECONDS}s`,

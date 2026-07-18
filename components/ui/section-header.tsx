@@ -7,12 +7,14 @@
 export function SectionHeader({
   eyebrow,
   heading,
+  headingAccent,
   sub,
   dark = false,
   lead = false,
 }: {
   eyebrow: string;
   heading: string;
+  headingAccent?: string;
   sub?: string;
   dark?: boolean;
   lead?: boolean;
@@ -28,6 +30,14 @@ export function SectionHeader({
         }`}
       >
         {heading}
+        {headingAccent && (
+          <>
+            {" "}
+            <span className={dark ? "text-traya-red-hi" : "text-traya-red"}>
+              {headingAccent}
+            </span>
+          </>
+        )}
       </h2>
       {sub && (
         <p

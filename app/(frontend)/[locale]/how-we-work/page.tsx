@@ -3,7 +3,6 @@ import {setRequestLocale, getTranslations} from 'next-intl/server';
 import {localeAlternates} from '@/lib/seo';
 import {PageHero} from '@/components/ui/page-hero';
 import {
-  WhatWeManage,
   Process,
   HowWeShip,
   GlobalReach
@@ -30,8 +29,12 @@ export default async function HowWeWorkPage({params}: {params: Promise<{locale: 
 
   return (
     <>
-      <PageHero eyebrow={t('hero.eyebrow')} heading={t('hero.heading')} sub={t('hero.sub')} />
-      <WhatWeManage />
+      <PageHero
+        eyebrow={t('hero.eyebrow')}
+        heading={t('hero.heading')}
+        headingAccent={t('hero.headingAccent')}
+        sub={t('hero.sub')}
+      />
       <Process />
       <HowWeShip />
       <GlobalReach />

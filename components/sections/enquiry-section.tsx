@@ -10,6 +10,7 @@ import { toast } from "sonner";
 import { makeInquirySchema, type InquiryInput } from "@/lib/validations";
 import { Container } from "@/components/ui/container";
 import { IconChip } from "@/components/ui/icon-chip";
+import { useHoneypot } from "@/components/ui/honeypot";
 import { primaryButton } from "@/lib/button-styles";
 
 // The three assurance points beside the illustration   chat, shield, globe.
@@ -76,6 +77,7 @@ export function EnquirySection() {
     () => makeInquirySchema(tv).extend({ shipment: z.string().optional() }),
     [tv],
   );
+  const honeypot = useHoneypot();
   const {
     register,
     handleSubmit,
@@ -108,7 +110,7 @@ export function EnquirySection() {
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...rest, message }),
+        body: JSON.stringify({ ...rest, message, website: honeypot.getValue() }),
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
@@ -135,7 +137,8 @@ export function EnquirySection() {
           <div className="lg:pt-4">
             <p className="section-label">{t("eyebrow")}</p>
             <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-              {t("heading")}
+              {t("heading")}{" "}
+              <span className="text-traya-red">{t("headingAccent")}</span>
             </h2>
             <p className="mt-4 max-w-sm leading-relaxed text-muted-foreground">
               {t("sub")}
@@ -175,8 +178,9 @@ export function EnquirySection() {
           <form
             onSubmit={handleSubmit(onSubmit, onInvalid)}
             noValidate
-            className="rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
+            className="relative rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
           >
+            {honeypot.field}
             <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
               <Field
                 id="name"

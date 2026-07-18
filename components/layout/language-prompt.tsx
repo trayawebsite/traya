@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, useSyncExternalStore } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { localeNames, type Locale } from "@/i18n/routing";
@@ -34,12 +34,20 @@ export function LanguagePrompt() {
   const router = useRouter();
   const pathname = usePathname();
   const [dismissed, setDismissed] = useState(false);
+  // `suggested` reads navigator/cookie, which are client-only. `isClient` is
+  // false during SSR + the first client render (so server and client agree →
+  // no hydration mismatch), then true, revealing the banner post-hydration.
+  const isClient = useSyncExternalStore(
+    () => () => {},
+    () => true,
+    () => false,
+  );
 
   const suggested = useMemo(() => {
-    if (dismissed || isDismissed()) return null;
+    if (!isClient || dismissed || isDismissed()) return null;
     const detected = getBrowserLocale();
     return detected && detected !== currentLocale ? detected : null;
-  }, [dismissed, currentLocale]);
+  }, [isClient, dismissed, currentLocale]);
 
   const switchLocale = useCallback(
     (locale: Locale) => {

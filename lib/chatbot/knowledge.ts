@@ -79,16 +79,40 @@ ${contact}
 The enquiry form is on the website; WhatsApp is available from the floating button.`;
 }
 
+// Locale code → English language name, so the model gets an unambiguous
+// instruction for every supported locale (not just en/ar/fr). Keep in sync with
+// i18n/routing.ts locales.
+const LANGUAGE_NAMES: Record<string, string> = {
+  en: 'English',
+  ar: 'Arabic',
+  zh: 'Chinese (Simplified)',
+  ja: 'Japanese',
+  id: 'Indonesian',
+  vi: 'Vietnamese',
+  nl: 'Dutch',
+  ko: 'Korean',
+  de: 'German',
+  fr: 'French',
+  it: 'Italian',
+  es: 'Spanish',
+  ru: 'Russian',
+  pl: 'Polish',
+  sw: 'Swahili',
+  pt: 'Portuguese',
+  tr: 'Turkish'
+};
+
 // Assemble the final system prompt for one request.
 export function buildSystemPrompt(
   knowledge: string,
   opts: {locale: string; pageContext?: string}
 ): string {
+  const language = LANGUAGE_NAMES[opts.locale] ?? 'English';
   return [
     SYSTEM_RULES,
     `# KNOWLEDGE BASE\n${knowledge}`,
     opts.pageContext ? `# CURRENT PAGE\n${opts.pageContext}` : '',
-    `# RESPONSE LANGUAGE\nReply in this language: ${opts.locale} (en = English, ar = Arabic, fr = French). Keep product and category names in English.`
+    `# RESPONSE LANGUAGE\nReply in ${language}. Keep product and category names in their original English trade names.`
   ]
     .filter(Boolean)
     .join('\n\n');

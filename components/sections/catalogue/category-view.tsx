@@ -10,6 +10,9 @@ import { getCategories, type CatalogueCategory } from "@/lib/catalogue";
 import { getSiteSettings } from "@/lib/site-settings";
 import { CertMark } from "@/components/layout/cert-mark";
 import { QuoteForm } from "@/components/sections/quote-form";
+import { BreadcrumbSchema } from "@/components/seo/product-schema";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
 
 // Rich category template   follows the playbook's Kanegrade pattern:
 // Hero · Product grid · Sourcing story · Specs & packaging · Certs · Sibling links · CTA
@@ -43,6 +46,13 @@ export async function CategoryView({
 
   return (
     <>
+      <BreadcrumbSchema
+        items={[
+          { name: tl("home"), url: siteUrl },
+          { name: tl("products"), url: `${siteUrl}/products` },
+          { name: category.title, url: `${siteUrl}/categories/${category.slug}` },
+        ]}
+      />
       {/* 1. Category Hero */}
       <section className="border-b border-traya-border bg-background">
         <Container className="py-section-lg">

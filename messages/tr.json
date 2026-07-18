@@ -6,30 +6,14 @@
     },
     "hero": {
       "eyebrow": "Yaklaşımımız ve küresel erişimimiz",
-      "heading": "Sizin etrafınızda kurgulanmış, yapılandırılmış bir süreç.",
-      "sub": "Her uluslararası işlemin kendine özgü gereksinimleri vardır: teknik özellikler, uyumluluk, belgelendirme ve lojistik. Traya'da bunların tamamını biz yönetiyoruz; böylece siz işinize odaklanırken gerisini biz hallederiz."
-    },
-    "manage": {
-      "eyebrow": "Sizin için yönettiklerimiz",
-      "heading": "Talepten teslimata kadar her şey",
-      "sub": "Traya ile çalıştığınızda yalnızca bir ürün almazsınız. Ticaretinizin her hareketli parçasını yöneten bir ekip kazanırsınız; böylece hiçbir ayrıntı gözden kaçmaz.",
-      "i1Title": "İhracat ve ithalat operasyonları",
-      "i1Body": "Ürün tedarikinden nihai sevkiyata kadar ticaretinizin uçtan uca yönetimi. Tek bir iş ortağı, tek bir süreç, sıfır boşluk.",
-      "i2Title": "Ürün tedariki ve kalite doğrulama",
-      "i2Body": "İhtiyacınıza uygun doğru ürünü tedarik eder ve sevkiyattan önce teknik özelliklerinizi karşıladığını doğrularız. Talep ettiğinizi her seferinde alırsınız.",
-      "i3Title": "Ticari belgelendirme",
-      "i3Body": "Sevkiyatınızın ihtiyaç duyduğu her belge: faturalar, çeki listeleri, sertifikalar ve uyumluluk evrakları, doğru ve zamanında hazırlanır.",
-      "i4Title": "Lojistik koordinasyonu",
-      "i4Body": "Zaman çizelgenize, hacminize ve varış noktanıza göre mallarınızın deniz, hava veya kurye yoluyla hareketini koordine ederiz. Süreç boyunca bilgilendirilirsiniz.",
-      "i5Title": "Özel alıcı desteği",
-      "i5Body": "İlk talepten teslimata kadar tutarlı, tek bir irtibat noktası. Net iletişim, hızlı yanıtlar, devir teslim yok.",
-      "quote": "Hindistan'dan tedarik sürecinin karmaşıklığını sadeleştiriyoruz; böylece siz işinize odaklanabilirsiniz."
+      "heading": "Sizin etrafınızda kurgulanmış,",
+      "sub": "Her uluslararası işlemin kendine özgü gereksinimleri vardır: teknik özellikler, uyumluluk, belgelendirme ve lojistik. Traya'da bunların tamamını biz yönetiyoruz; böylece siz işinize odaklanırken gerisini biz hallederiz.",
+      "headingAccent": "yapılandırılmış bir süreç."
     },
     "process": {
-      "eyebrow": "Nasıl çalışırız",
+      "eyebrow": "Traya Yöntemi",
       "heading": "Talepten teslimata",
       "sub": "Sekiz net adım. Tutarlı bir uygulama standardı.",
-      "step": "Adım",
       "s1Title": "Talep",
       "s1Body": "Ürün ihtiyacınızı, miktarınızı ve varış ülkenizi bizimle paylaşırsınız.",
       "s2Title": "İhtiyaç görüşmesi",
@@ -54,18 +38,15 @@
       "sub": "Sipariş büyüklüğünüze, aciliyetinize ve varış noktanıza uygun olarak uluslararası sevkiyatları üç farklı yöntemle koordine ediyoruz.",
       "seaTitle": "Deniz nakliyesi",
       "seaBody": "Maliyet verimliliğinin önemli olduğu büyük hacimli siparişler için en uygun seçenektir. Hem FCL (Tam Konteyner Yükü) hem de LCL (Konsolide Konteyner Yükü) sevkiyatlarını koordine ederiz.",
-      "seaTag": "FCL ve LCL mevcuttur",
       "airTitle": "Hava nakliyesi",
       "airBody": "Sınırlar arasında hızlı ve güvenli şekilde, minimum transit süresiyle hareket etmesi gereken zamana duyarlı veya yüksek değerli yükler için.",
-      "airTag": "Öncelikli ve standart hava taşımacılığı",
       "courierTitle": "Numuneler için kurye",
       "courierBody": "Alıcıların tam siparişe geçmeden önce kaliteyi, teknik özellikleri ve uygunluğu değerlendirebilmesi için ürün numunelerinin uluslararası kurye ile gönderimi.",
-      "courierTag": "Sipariş öncesi değerlendirme",
       "incoterms": "Teslim Şekilleri (Incoterms): Sevkiyatlar sizin için uygun olan şartlarla yürütülür. FOB, CIF ve diğer standart ticaret şartlarını, sorumluluklar veya maliyetler konusunda hiçbir belirsizlik olmadan, baştan mutabık kalınarak destekliyoruz. İhtiyacınıza en uygun seçeneği konuşmak için bizimle iletişime geçin."
     },
     "reach": {
       "eyebrow": "Küresel erişim",
-      "heading": "Nerede olursanız olun, size ulaşabiliriz",
+      "heading": "Nerede olursanız olun,",
       "p1": "Hindistan, dünyanın en yetkin tedarik merkezlerinden biridir ve Ahmedabad bu merkezin tam kalbinde yer alır. Burada bilinçli olarak konumlandık; birçok kategoride kaliteli ürünlere doğrudan erişim ve bunları küresel olarak taşıyacak altyapıya sahibiz.",
       "p2": "İster tanımlanmış ihtiyaçları olan yerleşik bir ithalatçı olun, ister Hindistan'dan ilk kez tedarik yapan bir işletme, Traya her ölçekte aynı yapı, özen ve güvenilirlikle size hizmet vermek üzere kurulmuştur.",
       "pillar1": "Varış ülkenizin ticaret düzenlemelerine ve ithalat gereksinimlerine uyum sağlamak.",
@@ -73,7 +54,8 @@
       "pillar3": "Her siparişi tek seferlik bir işlem değil, daha uzun soluklu bir ilişkinin temeli olarak ele almak.",
       "pillar4": "İş ihtiyaçlarınız ve piyasa koşulları değiştikçe esnek ve duyarlı kalmak.",
       "mapCaption": "Dünya genelinde uluslararası alıcılara hizmet veriyoruz",
-      "mapLabel": "Ahmedabad, Hindistan"
+      "mapLabel": "Ahmedabad, Hindistan",
+      "headingAccent": "size ulaşabiliriz"
     },
     "cta": {
       "heading": "Aklınızda bir ihtiyaç mı var?",
@@ -149,7 +131,7 @@
   },
   "Enquiry": {
     "eyebrow": "Talep gönderin",
-    "heading": "Bir görüşme başlatalım.",
+    "heading": "Bir görüşme",
     "sub": "İhtiyaçlarınızı paylaşın, gerisiyle biz ilgilenelim.",
     "trust1": "Hızlı yanıt",
     "trust2": "Güvenilir destek",
@@ -177,7 +159,7 @@
     "removeFromList": "Talepten çıkar",
     "list": {
       "eyebrow": "Talep Listesi",
-      "heading": "Talebinizi gözden geçirin.",
+      "heading": "Talebinizi",
       "sub": "Bu ürünleri seçtiniz. Listeyi gözden geçirin, bilgilerinizi ekleyin ve talebi gönderin.",
       "empty": "Talep listeniz boş. Başlamak için ürünlerimize göz atın ve ürün ekleyin.",
       "browseProducts": "Ürünlere göz atın",
@@ -198,12 +180,14 @@
       "rateLimited": "Bugünkü talep limitinize ulaştınız. Lütfen bize e-posta gönderin veya WhatsApp'tan yazın.",
       "submittedHeading": "Talep gönderildi.",
       "submittedBody": "Teşekkür ederiz. Ekibimiz ihtiyacınızı inceleyecek ve mevcut ürün detayları, belgeler, fiyatlandırma ve sonraki adımlarla sizinle iletişime geçecektir.",
-      "browseMore": "Göz atmaya devam edin"
+      "browseMore": "Göz atmaya devam edin",
+      "headingAccent": "gözden geçirin."
     },
     "meta": {
       "title": "Talep Listesi",
       "description": "Ürün talebinizi gözden geçirin ve gönderin. Ekibimizin doğru detaylarla yanıt verebilmesi için teknik özellikleri, miktarı, varış noktasını ve zaman çizelgesini paylaşın."
-    }
+    },
+    "headingAccent": "başlatalım."
   },
   "Validation": {
     "name": "Lütfen adınızı girin",
@@ -272,12 +256,12 @@
     },
     "hero": {
       "eyebrow": "Ticaretle Ufukları Genişletiyoruz.",
-      "heading": "Hindistan'dan tedarik için güvenilir iş ortağınız.",
+      "heading": "Hindistan'dan tedarik için",
       "sub": "Traya, güven, güvenilirlik ve profesyonel uygulama yoluyla kalıcı küresel ortaklıklar kurmaya kararlıdır. Büyüyen kaliteli ürün portföyümüzle işletmelerin uluslararası ticarette güvenle ilerlemesine yardımcı oluyoruz.",
       "cta": "Ürünleri Keşfedin",
       "ctaEnquiry": "İhtiyacınızı paylaşın",
-      "stat": "Gıda, Tarım ve Kimyasallar · 499 ürün · 30 kategori",
-      "certified": "Sertifikalı"
+      "certified": "Sertifikalı",
+      "headingAccent": "güvenilir iş ortağınız."
     },
     "intro": {
       "eyebrow": "Traya nasıl yardımcı olur",
@@ -292,29 +276,28 @@
       "f3Body": "Dünya genelinde güvenilir lojistik ve zamanında teslimat."
     },
     "stats": {
-      "s1": "499",
-      "s1Sub": "Listelenen Ürün",
-      "s2": "30",
-      "s2Sub": "Kategori",
-      "s3": "Güvenilir",
-      "s3Sub": "Ortaklıklar",
+      "s1": "Küresel",
+      "s1Sub": "Ticaret Ortağı",
+      "s2": "Güvenilir",
+      "s2Sub": "Ortaklıklar",
+      "s3": "Genişleyen",
+      "s3Sub": "Portföy",
       "s4": "100%",
       "s4Sub": "Hindistan'dan Tedarik Edilmiştir"
     },
     "groups": {
       "eyebrow": "Ürün Portföyümüz",
-      "heading": "Neler İhraç Ediyoruz",
+      "heading": "Neler",
       "sub": "Portföyümüz, birçok sektördeki işletmeleri desteklemek üzere tasarlanmıştır. Biz büyüdükçe ürün yelpazemiz de büyüyor.",
       "foodTitle": "Gıda ve Tarım Ürünleri",
-      "foodBody": "Güvenilir Hintli üreticilerden tedarik edilen, uluslararası kalite standartlarına uygun premium tarım ürünleri.",
+      "foodBody": "Küresel kalite standartlarını karşılamak üzere hazırlanmış premium Gıda ve Tarım Ürünleri; uluslararası pazarlar için tutarlılık, güvenlik ve güvenilirlik sağlar.",
       "foodCta": "Gıda ve Tarım Ürünlerini Görüntüleyin",
       "chemTitle": "Kimyasallar",
-      "chemBody": "Küresel pazarlarda çeşitli üretim uygulamalarına hizmet eden endüstriyel ve özel kimyasallar.",
+      "chemBody": "Uluslararası kalite standartlarını ve çeşitli sektör gereksinimlerini karşılamak üzere tasarlanmış yüksek performanslı endüstriyel ve özel kimyasallar.",
       "chemCta": "Kimyasalları Görüntüleyin",
       "selection": "Gıda ve Tarım yelpazemizden bir seçki",
       "note": "Yeni sektörler ve uluslararası pazarlarda ortaklıklarımızı güçlendirdikçe portföyümüz genişlemeye devam ediyor.",
       "noteAsk": "Aradığınızı bulamadınız mı? Bize ulaşın, yine de yardımcı olabiliriz.",
-      "spec": "499 listelenmiş ürün · 30 kategori · 6 ürün grubu",
       "cta": "İhtiyacınızı Gönderin",
       "badgePremium": "Gıda ve Tarım",
       "alliums": "Dehidre Soğangiller ve Sebzeler",
@@ -330,11 +313,12 @@
       "chemicals": "Kimyasallar ve Boyalar",
       "chemicalsBlurb": "Tekstil, gıda ve kaplama endüstrileri için reaktif, asit ve direkt boyalar, gıda renklendiricileri, pigmentler ve boya reçineleri.",
       "catFoodColours": "Food Colours",
-      "catReactiveDyes": "Reactive Dyes"
+      "catReactiveDyes": "Reactive Dyes",
+      "headingAccent": "İhraç Ediyoruz"
     },
     "why": {
       "eyebrow": "Neden Traya",
-      "heading": "Uzun vadeli ortaklıklar için kuruldu.",
+      "heading": "Uzun vadeli",
       "sub": "Güven inşa etmek, kalite sunmak ve birlikte büyümek için işlemlerin ötesine geçiyoruz.",
       "cta": "Yetkinliklerimizi görüntüleyin",
       "trusted": "Güvenilir İlişkiler",
@@ -348,32 +332,22 @@
       "global": "Küresel Bakış Açısı",
       "globalBody": "Farklı pazarlardaki alıcılar için Hindistan'dan tedarik, varış noktanıza uygun belgeler ve şartlarla.",
       "growth": "Birlikte Büyüyoruz",
-      "growthBody": "Genişleyen bir portföy ve tekrarlanan ortaklıklar; ihtiyaçlarınız büyüdükçe biz de ölçeğimizi büyütüyoruz."
+      "growthBody": "Genişleyen bir portföy ve tekrarlanan ortaklıklar; ihtiyaçlarınız büyüdükçe biz de ölçeğimizi büyütüyoruz.",
+      "headingAccent": "ortaklıklar için kuruldu."
     },
     "testimonials": {
       "eyebrow": "Alıcılarımız ne diyor"
     },
     "certs": {
       "eyebrow": "İhracat kayıtları",
-      "heading": "İhracatlarımızın arkasındaki kayıtları inceleyin.",
-      "sub": "Her kayıt, düzenleyen kurumu ve alıcı için ne anlama geldiğiyle birlikte gösterilir. Belirli bir ürün veya varış noktasına ilişkin belgeler teklif aşamasında teyit edilir.",
-      "cta": "Kayıtlarımızı görüntüleyin"
-    },
-    "process": {
-      "eyebrow": "İhracat süreci",
-      "heading": "Traya ile bir ihracat siparişi nasıl işler.",
-      "sub": "Siparişi onaylamadan önce ürün ve ticari detayları alırsınız.",
-      "step": "Adım",
-      "step1Title": "İhtiyacınızı gönderin",
-      "step1Body": "Ürün adını, teknik özellikleri, miktarı, ambalajı, varış noktasını ve gereken zaman çizelgesini paylaşın. Eksik detaylar varsa sizden isteyeceğiz.",
-      "step2Title": "Teklifi inceleyin",
-      "step2Body": "Ürünü, mevcut teknik özellikleri, belgeleri, numune seçeneklerini, fiyatlandırmayı ve ticari şartları teyit ederiz.",
-      "step3Title": "Onaylayın ve sevk edin",
-      "step3Body": "Onaydan sonra siparişi, ambalajı, belgeleri ve sevkiyatı koordine ederiz. Sipariş ilerledikçe sizi bilgilendirmeye devam ederiz."
+      "heading": "İhracatlarımızın arkasındaki",
+      "cta": "Kayıtlarımızı görüntüleyin",
+      "headingAccent": "kayıtları inceleyin.",
+      "sub": "Her sevkiyat, gerekli ihracat kayıtları ve sertifikalarıyla desteklenir; bu da uluslararası ticarette uyumluluk, şeffaflık ve güven sağlar."
     },
     "faq": {
       "eyebrow": "Alıcı soruları",
-      "heading": "Sipariş vermeden önce bilinmesi gereken önemli detaylar.",
+      "heading": "Sipariş vermeden önce bilinmesi gereken",
       "moqQ": "Minimum sipariş miktarlarınız nedir?",
       "moqA": "Minimum sipariş miktarları ürüne, kaliteye, tedarikçiye ve ambalaj formatına göre değişir. Hedeflediğiniz miktarı ve varış noktasını paylaşın, uygulanabilir minimumu teklif ile birlikte teyit edelim.",
       "samplesQ": "Sipariş vermeden önce numune alabilir miyim?",
@@ -385,7 +359,8 @@
       "packagingQ": "Özel veya özel etiketli (private-label) ambalaj sunuyor musunuz?",
       "packagingA": "Ürüne ve sipariş hacmine bağlı olarak dökme, özel ve özel etiketli seçenekler mevcut olabilir. Teyit için ambalaj boyutunu, malzemeyi, etiketlemeyi ve varış noktası gereksinimlerinizi paylaşın.",
       "certsQ": "Hangi sertifikaları ve belgeleri sağlıyorsunuz?",
-      "certsA": "Belge gereksinimleri ürüne ve ithalatçı ülkeye göre değişir. Uygulanabilir kayıtları, teknik özellikleri, sertifikaları, test raporlarını ve ihracat belgelerini teklif aşamasında teyit ederiz."
+      "certsA": "Belge gereksinimleri ürüne ve ithalatçı ülkeye göre değişir. Uygulanabilir kayıtları, teknik özellikleri, sertifikaları, test raporlarını ve ihracat belgelerini teklif aşamasında teyit ederiz.",
+      "headingAccent": "önemli detaylar."
     },
     "finalCta": {
       "heading": "Traya ile Hindistan'dan tedarik edin.",
@@ -401,12 +376,12 @@
     },
     "hero": {
       "eyebrow": "Traya Hakkında",
-      "heading": "Küresel Ticarete Rafine Bir Yaklaşım",
-      "tagline": "Tedarik, belgelendirme, ambalaj ve sevkiyat desteği tek bir özel ekip tarafından yönetilir.",
-      "body": "TRAYA, uluslararası pazarlarda güvenilir ortaklıklar kurmaya adanmış küresel bir ticaret şirketidir. Profesyonel uygulama ve müşteri odaklı yaklaşımımızla işletmelerin küresel ticarette güvenle ilerlemesine yardımcı oluyoruz.\n\nŞeffaflık, detaylara verilen önem ve kaliteye bağlılıkla yönlendirilen her etkileşim özenle yönetilir; işletmelerin güvenebileceği güvenilirlik, tutarlılık ve profesyonel bir deneyim sağlanır.\n\nGenişleyen portföyü ve sürdürülebilir büyüme vizyonuyla TRAYA, küresel pazarların değişen ihtiyaçlarıyla birlikte gelişmeye devam ediyor; güven, kalite ve ortak başarı üzerine kurulu kalıcı ortaklıklar yaratıyor."
+      "heading": "Küresel Ticarete",
+      "body": "TRAYA, uluslararası pazarlarda güvenilir ortaklıklar kurmaya adanmış küresel bir ticaret şirketidir. Profesyonel uygulama ve müşteri odaklı yaklaşımımızla işletmelerin küresel ticarette güvenle ilerlemesine yardımcı oluyoruz.\n\nŞeffaflık, detaylara verilen önem ve kaliteye bağlılıkla yönlendirilen her etkileşim özenle yönetilir; işletmelerin güvenebileceği güvenilirlik, tutarlılık ve profesyonel bir deneyim sağlanır.\n\nGenişleyen portföyü ve sürdürülebilir büyüme vizyonuyla TRAYA, küresel pazarların değişen ihtiyaçlarıyla birlikte gelişmeye devam ediyor; güven, kalite ve ortak başarı üzerine kurulu kalıcı ortaklıklar yaratıyor.",
+      "headingAccent": "Rafine Bir Yaklaşım"
     },
     "founder": {
-      "eyebrow": "Kurucudan bir not",
+      "eyebrow": "Kendi ağzından.",
       "name": "Neha Pardeshi",
       "role": "Kurucu ve CEO",
       "p1": "Dünya bana ders kitapları aracılığıyla değil, seyahat aracılığıyla açıldı. Farklı kültürleri keşfetmek, hayatın her kesiminden insanlarla tanışmak ve dünyayı farklı bakış açılarından görmek, yalnızca kim olduğumu değil, neyi inşa etmeyi seçtiğimi de şekillendirdi.",
@@ -426,36 +401,16 @@
       "p3Title": "Dürüstlük",
       "p3Body": "Neyin mevcut olduğu, neyin teyide ihtiyaç duyduğu ve sonraki adımın ne olması gerektiği konusunda net bir şekilde iletişim kurarız."
     },
-    "why": {
-      "eyebrow": "Neden Traya",
-      "heading": "Uluslararası tedarik için pratik bir iş ortağı.",
-      "body": "Traya, alıcıların uluslararası ticaretteki karmaşayı azaltmasına yardımcı olmak için kuruldu. Ürün tedarikini, tedarikçi koordinasyonunu, belgelendirmeyi, ambalajı ve sevkiyat desteğini tek bir net iş akışında bir araya getiriyoruz.",
-      "cta": "Yetkinliklerimizi görün",
-      "w1Title": "Kurucu odaklı standartlar",
-      "w1Body": "İhtiyacınızın sahipliğini üstlenen ve detayları sonuna kadar takip eden bir ekiple çalışırsınız.",
-      "w2Title": "Yapılandırılmış uygulama",
-      "w2Body": "Sipariş ilerlemeden önce teknik özellikleri, miktarları, ambalajı, belgeleri, ticari şartları ve zaman çizelgesini teyit ederiz.",
-      "w3Title": "İlişki odaklı düşünce",
-      "w3Body": "Tekrar eden alıcıları net yanıtlar, istikrarlı güncellemeler ve güvenilir koordinasyonla desteklemeyi hedefliyoruz.",
-      "w4Title": "Küresel bakış açısı, kişisel dokunuş",
-      "w4Body": "İhtiyacı anlayan ve pratik sonraki adımlarla yanıt veren gerçek bir ekiple konuşabilirsiniz.",
-      "w5Title": "Birden fazla sektör, tek bir iş ortağı",
-      "w5Body": "Gıda ve Tarım, Kimyasallar, Mekanik ürünler, Kağıt ve diğer ticari taleplerdeki ihtiyaçları destekliyoruz.",
-      "w6Title": "Her yere uyum sağlayan belgelendirme",
-      "w6Body": "Ürün ve varış noktası için gereken teknik özellikleri, sertifikaları, ticari belgeleri ve ihracat belgelerini teyit ederiz.",
-      "w7Title": "Baştan sona şeffaflık",
-      "w7Body": "Fiyatlandırmayı, zaman çizelgesini, sipariş durumunu ve bekleyen gereksinimleri net bir şekilde paylaşırız; böylece her aşamada neler olduğunu bilirsiniz."
-    },
     "vision": {
       "eyebrow": "Vizyon ve misyon",
       "visionLabel": "Vizyonumuz",
       "vision": "Sınır ötesine açılan işletmeler için en güvenilir ve en büyük ticaret ortağı olmak.",
       "missionLabel": "Misyonumuz",
-      "m1": "Küresel pazarlarda verimli ve iyi yapılandırılmış ihracat ve ithalat operasyonlarını kolaylaştırmak.",
-      "m2": "Uzun vadeli uluslararası ticaret ortaklıkları kurmak, güçlendirmek ve sürdürülebilir çözümler sunmak.",
-      "m3": "Disiplinli sistemler ve operasyonel netlik yoluyla kesintisiz uygulama sağlamak.",
-      "m4": "Stratejik pazar katılımı yoluyla küresel varlığımızı genişletmek.",
-      "commitment": "Tek seferlik işlemler yapan bir firma kurmuyoruz. Alıcıların ürünler, sektörler ve pazarlar genelinde net destek için geri dönebileceği bir ticaret ortağı inşa ediyoruz."
+      "m1": "Uluslararası standartları ve müşteri beklentilerini istikrarlı şekilde karşılayan premium kalitede ürünler sunmak.",
+      "m2": "Güven, şeffaflık ve karşılıklı başarı üzerine kurulu kalıcı ortaklıklar inşa etmek.",
+      "m3": "Güvenilir uygulama, verimli lojistik ve duyarlı hizmet aracılığıyla uluslararası ticareti basitleştirmek.",
+      "m4": "Uluslararası pazarlarda değer odaklı fırsatlar yaratarak küresel varlığımızı genişletmek.",
+      "commitment": "Küresel pazarlarda uzun vadeli başarıya yönelik ortak bir bağlılık, güven ve güvenilirlik üzerine kurulu kalıcı ortaklıklar inşa etmeye çalışıyoruz."
     }
   },
   "Contact": {
@@ -465,8 +420,9 @@
     },
     "hero": {
       "eyebrow": "İletişim",
-      "heading": "Küresel tedarik ihtiyaçlarınızı gönderin.",
-      "body": "İhracat uzmanlarımızla e-posta, telefon, WhatsApp veya güvenli talep formumuz aracılığıyla iletişime geçin. Kapsamlı ve hızlı bir ticari yanıt alabilmeniz için ürün teknik özelliklerinizi, gereken miktarları, varış limanınızı ve teslimat zaman çizelgenizi detaylandırın."
+      "heading": "İhracat masamıza doğrudan ulaşın.",
+      "body": "Talebinizi aşağıda paylaşın veya doğrudan bizimle iletişime geçin — her mesaj kişisel olarak incelenir ve bir iş günü içinde yanıtlanır.",
+      "cta": "Talebinizi gönderin"
     },
     "emailLabel": "Bize e-posta gönderin",
     "phoneLabel": "Bizi arayın",
@@ -491,9 +447,9 @@
       "success": "Teşekkür ederiz. Mesajınız gönderildi. Kısa süre içinde sizinle iletişime geçeceğiz.",
       "error": "Bir şeyler ters gitti. Lütfen tekrar deneyin veya doğrudan bize e-posta gönderin.",
       "rateLimited": "Bugünkü limitinize ulaştınız. Lütfen bize e-posta gönderin veya WhatsApp'tan yazın.",
-      "point1": "Bir iş günü içinde yanıt veriyoruz",
-      "point2": "Tedarik, numuneler, fiyatlandırma ve belgelendirme   bize her şeyi sorabilirsiniz",
-      "point3": "Ticaret masamıza doğrudan bir hat",
+      "point1": "Bir iş günü içinde yanıt",
+      "point2": "Ürün özellikleri, fiyatlandırma, numuneler ve belgeler",
+      "point3": "İhracat sorularınız için özel destek",
       "reassurance": "Genellikle 1 iş günü içinde yanıt verilir · Herhangi bir taahhüt gerektirmez.",
       "successHeading": "Mesaj gönderildi.",
       "successBody": "Teşekkür ederiz. Ekibimiz mesajınızı inceleyecek ve genellikle bir iş günü içinde sizinle iletişime geçecektir."
@@ -571,13 +527,13 @@
     },
     "hero": {
       "eyebrow": "Yetkinlikler",
-      "heading": "İhtiyaçtan sevkiyata ticaret desteği.",
-      "body": "Traya, alıcıların Hindistan'dan ürün tedarik etmesine ve bir ihracat siparişini işler kılan adımları koordine etmesine yardımcı olur: tedarikçi görüşmeleri, teknik özellikler, ambalaj, belgeler, ticari şartlar ve sevkiyat güncellemeleri."
+      "heading": "Farklı Sektörlerdeki",
+      "body": "Sürekli genişleyen ürün portföyümüz, değişen pazar taleplerini ve uluslararası kalite standartlarını karşılayan ürünlerle geniş bir sektör yelpazesine hizmet vermemizi sağlıyor.",
+      "headingAccent": "İşletmelere Destek"
     },
     "industries": {
       "eyebrow": "Hizmet Verdiğimiz Sektörler",
-      "heading": "Dünya Genelinde Sektörlere Güç Katıyoruz",
-      "sub": "Genişleyen portföyümüz, gelişen pazar gereksinimlerini ve uluslararası kalite beklentilerini karşılayan ürünlerle geniş bir sektör yelpazesine hizmet vermemizi sağlıyor.",
+      "heading": "Sektörler Arası. Sınırlar Arası.",
       "i1Title": "İlaç ve Nutrasötikler",
       "i1Body": "Fonksiyonel bileşenler, yardımcı maddeler ve sağlık odaklı hammaddeler.",
       "i2Title": "Gıda ve İçecek",
@@ -596,18 +552,24 @@
       "i8Body": "Çeşitli endüstriyel süreçleri destekleyen özel kimyasallar."
     },
     "core": {
-      "eyebrow": "Ne yapıyoruz",
-      "heading": "Uluslararası alıcılar için temel yetkinlikler.",
-      "c1Title": "Ürün tedariki",
-      "c1Body": "Alıcıların teknik özelliklere, miktara ve varış noktasına göre Hindistan'dan Gıda ve Tarım, Kimyasallar, Mekanik ürünler, Kağıt ve diğer ihracat ihtiyaçlarını tedarik etmesine yardımcı oluyoruz.",
-      "c2Title": "Tedarikçi koordinasyonu",
-      "c2Body": "Mevcudiyeti, kaliteyi, ambalajı, üretim hazırlığını ve sipariş uygulanabilirliğini kontrol etmek için uygun tedarikçilerle koordinasyon sağlarız.",
-      "c3Title": "Teknik özellik ve belgelendirme desteği",
-      "c3Body": "Ürün ve varış noktası için gereken teknik özellikleri, sertifikaları, test raporlarını, ticari belgeleri ve ihracat belgelerini teyit etmeye yardımcı oluruz.",
-      "c4Title": "Ambalaj ve sevkiyat koordinasyonu",
-      "c4Body": "Siparişin daha az sürprizle ilerleyebilmesi için ambalaj ihtiyaçlarını, nakliye yöntemini, varış noktası gereksinimlerini ve sevkiyat zaman çizelgesini inceleriz.",
-      "c5Title": "Net alıcı iletişimi",
-      "c5Body": "Alıcıyı mevcut seçenekler, bekleyen detaylar, teklif şartları, sipariş durumu ve sonraki adımlar hakkında bilgilendiririz."
+      "eyebrow": "Sunduklarımız",
+      "heading": "Kesintisiz küresel ticaret için ihtiyacınız olan her şey.",
+      "c1Title": "Küresel Tedarik",
+      "c1Body": "Güvenilir bir ihracat ortağı aracılığıyla birden çok kategoride çeşitli ürün portföyüne erişim.",
+      "c2Title": "Kalite Güvencesi",
+      "c2Body": "Ürünler, tutarlılık ve güvenilirliği sağlamak amacıyla sevkiyat öncesinde üzerinde anlaşılan özelliklere göre doğrulanır.",
+      "c3Title": "İhracat Belgeleri",
+      "c3Body": "Kesintisiz uluslararası ticaret için doğru ihracat belgeleri, sertifikalar, ambalaj listeleri, faturalar ve uyumluluk evrakları.",
+      "c4Title": "Navlun ve Lojistik",
+      "c4Body": "Sevkiyat büyüklüğüne, aciliyetine ve varış noktasına göre uyarlanmış deniz, hava ve kurye seçenekleri.",
+      "c5Title": "Ambalaj Çözümleri",
+      "c5Body": "Ürün gereksinimlerine ve uluslararası sevkiyat standartlarına uygun ambalajlama.",
+      "c6Title": "Küresel Erişim",
+      "c6Body": "Güvenilir uluslararası ticaret yoluyla dünya genelindeki müşterilere hizmet veriyoruz.",
+      "c7Title": "Esnek Ticaret Koşulları",
+      "c7Body": "İşletmenizin ihtiyaçlarına göre uyarlanmış ticari koşullar ve sevkiyat düzenlemeleri.",
+      "c8Title": "Özel Destek",
+      "c8Body": "Talepten sevkiyata ve teslimat sonrası desteğe kadar hızlı yanıt veren iletişim."
     },
     "foundations": {
       "eyebrow": "Nasıl çalışıyoruz",
@@ -629,14 +591,19 @@
       "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın   30 kategoride 499 ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
     },
     "hub": {
-      "eyebrow": "Gıda ve Tarım kataloğu",
-      "heading": "Hindistan'dan tedarik etmek istediğiniz ürünleri bulun.",
-      "sub": "Listelenen Gıda ve Tarım ile Kimyasallar ürünlerimize kategoriye göre göz atın. Mekanik ürünler, kağıt veya burada gösterilmeyen herhangi bir ürün için ihtiyacınızı bize gönderin, mevcut tedarik seçeneklerini inceleyelim.",
-      "spec": "6 grup · 30 kategori · 499 listelenmiş ürün",
+      "eyebrow": "Ürün Portföyümüz",
+      "heading": "Hindistan'dan tedarik etmek istediğiniz",
+      "sub": "Birden çok kategoride yer alan çeşitli ürün portföyümüzü keşfedin. Listede olmayan bir ürün mü arıyorsunuz? İhtiyacınızı bize iletin, size geri dönüş yapalım.",
+      "spec": "Çeşitli ürün portföyü · Çoklu kategori · 500'den fazla listelenmiş ürün",
       "search": "Ürün veya kategori ara...",
-      "all": "Tümü",
       "noResults": "Aramanızla eşleşen ürün bulunamadı.",
-      "downloadCatalogue": "Tam kataloğu indirin (PDF)"
+      "downloadCatalogue": "Tam kataloğu indirin (PDF)",
+      "headingAccent": "ürünleri bulun.",
+      "category": "kategori",
+      "categories": "kategori",
+      "allCategories": "Tüm Kategoriler",
+      "allCategoriesSub": "Tüm gruplar",
+      "groupLabel": "Grup"
     },
     "list": {
       "form": "Form",

@@ -6,30 +6,14 @@
     },
     "hero": {
       "eyebrow": "Mbinu yetu na wigo wetu wa kimataifa",
-      "heading": "Mchakato uliopangwa vizuri, ulioundwa kwa ajili yako.",
-      "sub": "Kila muamala wa kimataifa una mahitaji yake: vipimo, uzingatiaji wa kanuni, hati, na huduma za usafirishaji. Traya tunasimamia yote haya, ili uweze kuzingatia biashara yako huku sisi tukishughulikia mengine yote."
-    },
-    "manage": {
-      "eyebrow": "Tunachokusimamia",
-      "heading": "Kila kitu kati ya ombi na uwasilishaji",
-      "sub": "Unapofanya kazi na Traya, hupati bidhaa tu. Unapata timu inayoshughulikia kila hatua ya biashara yako, ili hakuna kinachopotea njiani.",
-      "i1Title": "Shughuli za uuzaji nje na uagizaji",
-      "i1Body": "Usimamizi kamili wa biashara yako, kutoka utafutaji wa bidhaa hadi usafirishaji wa mwisho. Mshirika mmoja, mchakato mmoja, hakuna pengo.",
-      "i2Title": "Utafutaji wa bidhaa na uhakiki wa ubora",
-      "i2Body": "Tunatafuta bidhaa sahihi kulingana na mahitaji yako na kuhakikisha inakidhi vipimo vyako kabla ya kusafirishwa. Unapata ulichoomba, kila wakati.",
-      "i3Title": "Hati za biashara",
-      "i3Body": "Kila hati inayohitajika kwa shehena yako: ankara, orodha za ufungashaji, vyeti, na hati za uzingatiaji wa kanuni, zinazotayarishwa kwa usahihi na kwa wakati.",
-      "i4Title": "Uratibu wa usafirishaji",
-      "i4Body": "Tunaratibu usafirishaji wa bidhaa zako kwa njia ya bahari, anga, au kurier, kulingana na muda wako, wingi wa bidhaa, na eneo lengwa. Unaendelea kupata taarifa katika kila hatua.",
-      "i5Title": "Msaada maalum kwa wanunuzi",
-      "i5Body": "Mtu mmoja wa kuwasiliana naye kutoka ombi la kwanza hadi uwasilishaji. Mawasiliano wazi, majibu ya haraka, hakuna kukabidhiana.",
-      "quote": "Tunarahisisha utata wa kutafuta bidhaa kutoka India, ili uweze kuzingatia biashara yako."
+      "heading": "Mchakato uliopangwa vizuri,",
+      "sub": "Kila muamala wa kimataifa una mahitaji yake: vipimo, uzingatiaji wa kanuni, hati, na huduma za usafirishaji. Traya tunasimamia yote haya, ili uweze kuzingatia biashara yako huku sisi tukishughulikia mengine yote.",
+      "headingAccent": "ulioundwa kwa ajili yako."
     },
     "process": {
-      "eyebrow": "Jinsi tunavyofanya kazi",
+      "eyebrow": "Njia ya Traya",
       "heading": "Kutoka ombi hadi uwasilishaji",
       "sub": "Hatua nane wazi. Kiwango kimoja thabiti cha utekelezaji.",
-      "step": "Hatua",
       "s1Title": "Ombi",
       "s1Body": "Unatushirikisha mahitaji ya bidhaa yako, kiasi, na nchi lengwa.",
       "s2Title": "Majadiliano ya mahitaji",
@@ -54,18 +38,15 @@
       "sub": "Tunaratibu usafirishaji wa kimataifa kwa njia tatu, zinazolingana na ukubwa wa oda yako, uharaka, na eneo lengwa.",
       "seaTitle": "Usafirishaji wa baharini",
       "seaBody": "Inafaa zaidi kwa oda kubwa ambapo ufanisi wa gharama ni muhimu. Tunaratibu shehena za FCL (Kontena Kamili) na LCL (Chini ya Kontena Kamili).",
-      "seaTag": "FCL na LCL zinapatikana",
       "airTitle": "Usafirishaji wa anga",
       "airBody": "Kwa mizigo yenye uharaka wa muda au thamani kubwa inayohitaji kusafirishwa haraka na kwa usalama kuvuka mipaka kwa muda mfupi zaidi.",
-      "airTag": "Anga ya kipaumbele na ya kawaida",
       "courierTitle": "Kurier kwa sampuli",
       "courierBody": "Usafirishaji wa kimataifa kwa njia ya kurier kwa sampuli za bidhaa, ili wanunuzi waweze kutathmini ubora, vipimo, na ufaafu kabla ya kuweka oda kamili.",
-      "courierTag": "Tathmini kabla ya oda",
       "incoterms": "Incoterms: shehena zinashughulikiwa kwa masharti yanayokufaa. Tunatumia FOB, CIF, na masharti mengine ya kawaida ya kibiashara, yanayokubaliwa mapema, bila utata kuhusu majukumu au gharama. Wasiliana nasi kujua yapi yanayofaa zaidi mahitaji yako."
     },
     "reach": {
       "eyebrow": "Wigo wa kimataifa",
-      "heading": "Popote ulipo, tunaweza kukufikia",
+      "heading": "Popote ulipo,",
       "p1": "India ni mojawapo ya maeneo yenye uwezo mkubwa zaidi duniani kwa utafutaji wa bidhaa, na Ahmedabad iko katikati yake. Tumejiweka hapa kwa makusudi, tukiwa na upatikanaji wa moja kwa moja wa bidhaa bora katika kategoria mbalimbali pamoja na miundombinu ya kuzisafirisha duniani kote.",
       "p2": "Iwe wewe ni muagizaji aliyethibitika mwenye mahitaji maalum au biashara inayotafuta bidhaa kutoka India kwa mara ya kwanza, Traya imeundwa kukuhudumia, kwa muundo ule ule, uangalifu, na kuaminika katika kila kiwango.",
       "pillar1": "Kuzoea kanuni za kibiashara na mahitaji ya uagizaji ya nchi yako lengwa.",
@@ -73,7 +54,8 @@
       "pillar3": "Kuchukulia kila oda kama msingi wa uhusiano wa muda mrefu, si muamala wa mara moja.",
       "pillar4": "Kubaki tayari kubadilika na kujibu haraka mahitaji ya biashara yako na mabadiliko ya soko yanapobadilika.",
       "mapCaption": "Tunahudumia wanunuzi wa kimataifa duniani kote",
-      "mapLabel": "Ahmedabad, India"
+      "mapLabel": "Ahmedabad, India",
+      "headingAccent": "tunaweza kukufikia"
     },
     "cta": {
       "heading": "Una mahitaji akilini?",
@@ -149,7 +131,7 @@
   },
   "Enquiry": {
     "eyebrow": "Tuma ombi",
-    "heading": "Tuanze mazungumzo.",
+    "heading": "Tuanze",
     "sub": "Shiriki mahitaji yako, na sisi tutashughulikia yaliyobaki.",
     "trust1": "Mwitikio wa haraka",
     "trust2": "Msaada wa kuaminika",
@@ -177,7 +159,7 @@
     "removeFromList": "Ondoa kwenye ombi",
     "list": {
       "eyebrow": "Orodha ya Maombi",
-      "heading": "Pitia ombi lako.",
+      "heading": "Pitia",
       "sub": "Umechagua bidhaa hizi. Pitia orodha, ongeza maelezo yako, na wasilisha ombi.",
       "empty": "Orodha yako ya maombi ni tupu. Vinjari bidhaa zetu na uongeze vitu ili kuanza.",
       "browseProducts": "Vinjari bidhaa",
@@ -198,12 +180,14 @@
       "rateLimited": "Umefikia kikomo cha maombi cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
       "submittedHeading": "Ombi limewasilishwa.",
       "submittedBody": "Asante. Timu yetu itapitia mahitaji yako na kuwasiliana nawe ikiwa na maelezo ya bidhaa yanayopatikana, hati, bei, na hatua zinazofuata.",
-      "browseMore": "Endelea kuvinjari"
+      "browseMore": "Endelea kuvinjari",
+      "headingAccent": "ombi lako."
     },
     "meta": {
       "title": "Orodha ya Maombi",
       "description": "Pitia na wasilisha ombi lako la bidhaa. Shirikisha vipimo, kiasi, eneo lengwa, na muda ili timu yetu iweze kujibu kwa maelezo sahihi."
-    }
+    },
+    "headingAccent": "mazungumzo."
   },
   "Validation": {
     "name": "Tafadhali weka jina lako",
@@ -272,12 +256,12 @@
     },
     "hero": {
       "eyebrow": "Kupanua Upeo Kupitia Biashara.",
-      "heading": "Mshirika wako wa kuaminika wa kutafuta bidhaa kutoka India.",
+      "heading": "Mshirika wako wa kuaminika wa",
       "sub": "Traya imejitolea kujenga ushirikiano wa kimataifa wa kudumu kupitia imani, kuaminika, na utekelezaji wa kitaalamu. Kwa wigo unaokua wa bidhaa bora, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.",
       "cta": "Gundua Bidhaa",
       "ctaEnquiry": "Shirikisha mahitaji yako",
-      "stat": "Chakula, Kilimo na Kemikali · Bidhaa 499 · Kategoria 30",
-      "certified": "Imethibitishwa"
+      "certified": "Imethibitishwa",
+      "headingAccent": "kutafuta bidhaa kutoka India."
     },
     "intro": {
       "eyebrow": "Jinsi Traya inavyosaidia",
@@ -292,29 +276,28 @@
       "f3Body": "Huduma za usafirishaji za kuaminika na uwasilishaji kwa wakati duniani kote."
     },
     "stats": {
-      "s1": "499",
-      "s1Sub": "Bidhaa Zilizoorodheshwa",
-      "s2": "30",
-      "s2Sub": "Kategoria",
-      "s3": "Anayeaminika",
-      "s3Sub": "Ushirikiano",
+      "s1": "Kimataifa",
+      "s1Sub": "Mshirika wa Biashara",
+      "s2": "Anayeaminika",
+      "s2Sub": "Ushirikiano",
+      "s3": "Unaokua",
+      "s3Sub": "Portfolio",
       "s4": "100%",
       "s4Sub": "Inayotafutwa kutoka India"
     },
     "groups": {
       "eyebrow": "Wigo Wetu wa Bidhaa",
-      "heading": "Tunachouza Nje",
+      "heading": "Tunachouza",
       "sub": "Wigo wetu umeundwa kusaidia biashara katika viwanda mbalimbali. Tunavyokua, ndivyo wigo wetu unavyoongezeka.",
       "foodTitle": "Bidhaa za Chakula na Kilimo",
-      "foodBody": "Bidhaa bora za kilimo zinazotafutwa kutoka kwa watengenezaji wa India wanaoaminika, zinazolingana na viwango vya kimataifa vya ubora.",
+      "foodBody": "Bidhaa bora za chakula na kilimo zilizoundwa kukidhi viwango vya kimataifa vya ubora, zikihakikisha uthabiti, usalama, na kuaminika kwa masoko ya kimataifa.",
       "foodCta": "Angalia Bidhaa za Chakula na Kilimo",
       "chemTitle": "Kemikali",
-      "chemBody": "Kemikali za viwandani na maalum zinazohudumia matumizi mbalimbali ya utengenezaji katika masoko ya kimataifa.",
+      "chemBody": "Kemikali za viwandani na maalum zenye ufanisi wa hali ya juu, zilizoundwa kukidhi viwango vya kimataifa vya ubora na mahitaji mbalimbali ya viwanda.",
       "chemCta": "Angalia Kemikali",
       "selection": "Uteuzi kutoka kwa wigo wetu wa Chakula na Kilimo",
       "note": "Wigo wetu unaendelea kupanuka tunapoimarisha ushirikiano katika viwanda vipya na masoko ya kimataifa.",
       "noteAsk": "Huoni unachohitaji? Wasiliana nasi, huenda bado tukaweza kusaidia.",
-      "spec": "Bidhaa 499 zilizoorodheshwa · Kategoria 30 · Makundi 6 ya bidhaa",
       "cta": "Tuma Mahitaji",
       "badgePremium": "Chakula na Kilimo",
       "alliums": "Vitunguu na Mboga Zilizokaushwa",
@@ -330,11 +313,12 @@
       "chemicals": "Kemikali na Rangi",
       "chemicalsBlurb": "Rangi za reactive, acid na direct, rangi za chakula, pigmenti na resini za rangi kwa ajili ya viwanda vya nguo, chakula na mipako.",
       "catFoodColours": "Food Colours",
-      "catReactiveDyes": "Reactive Dyes"
+      "catReactiveDyes": "Reactive Dyes",
+      "headingAccent": "Nje"
     },
     "why": {
       "eyebrow": "Kwa Nini Traya",
-      "heading": "Imeundwa kwa ushirikiano wa muda mrefu.",
+      "heading": "Imeundwa kwa",
       "sub": "Tunaenda mbali zaidi ya miamala ili kujenga imani, kutoa ubora, na kukua pamoja.",
       "cta": "Angalia uwezo wetu",
       "trusted": "Mahusiano ya Kuaminika",
@@ -348,32 +332,22 @@
       "global": "Mtazamo wa Kimataifa",
       "globalBody": "Kutafuta bidhaa kutoka India kwa wanunuzi katika masoko mbalimbali, huku hati na masharti yakilingana na eneo lako lengwa.",
       "growth": "Kukua Pamoja",
-      "growthBody": "Wigo unaokua na ushirikiano wa kurudia, tunakua kadri mahitaji yako yanavyoongezeka."
+      "growthBody": "Wigo unaokua na ushirikiano wa kurudia, tunakua kadri mahitaji yako yanavyoongezeka.",
+      "headingAccent": "ushirikiano wa muda mrefu."
     },
     "testimonials": {
       "eyebrow": "Wanunuzi Wanasema Nini"
     },
     "certs": {
       "eyebrow": "Usajili wa Usafirishaji",
-      "heading": "Angalia usajili ulio nyuma ya usafirishaji wetu.",
-      "sub": "Kila usajili unaonyeshwa pamoja na mamlaka iliyotoa na maana yake kwa mnunuzi. Hati za bidhaa au eneo maalum zinathibitishwa wakati wa nukuu ya bei.",
-      "cta": "Angalia usajili wetu"
-    },
-    "process": {
-      "eyebrow": "Mchakato wa Usafirishaji",
-      "heading": "Jinsi oda ya usafirishaji inavyofanya kazi na Traya.",
-      "sub": "Unapokea maelezo ya bidhaa na ya kibiashara kabla ya kuidhinisha oda.",
-      "step": "Hatua",
-      "step1Title": "Tuma mahitaji yako",
-      "step1Body": "Shirikisha jina la bidhaa, vipimo, kiasi, ufungashaji, eneo lengwa, na muda unaohitajika. Tutauliza maelezo yoyote yanayokosekana.",
-      "step2Title": "Pitia ofa",
-      "step2Body": "Tunathibitisha bidhaa, vipimo vinavyopatikana, hati, chaguzi za sampuli, bei, na masharti ya kibiashara.",
-      "step3Title": "Thibitisha na Usafirishe",
-      "step3Body": "Baada ya idhini, tunaratibu oda, ufungashaji, hati, na usafirishaji. Tunakuweka na taarifa oda inavyoendelea."
+      "heading": "Angalia usajili",
+      "cta": "Angalia usajili wetu",
+      "headingAccent": "ulio nyuma ya usafirishaji wetu.",
+      "sub": "Kila shehena inaungwa mkono na usajili na vyeti vinavyohitajika vya usafirishaji, hivyo kuhakikisha uzingatiaji wa sheria, uwazi, na kujiamini katika biashara ya kimataifa."
     },
     "faq": {
       "eyebrow": "Maswali ya Wanunuzi",
-      "heading": "Maelezo muhimu kabla ya kuweka oda.",
+      "heading": "Maelezo muhimu",
       "moqQ": "Kiasi chenu cha chini cha oda ni kipi?",
       "moqA": "MOQ hutegemea bidhaa, daraja, muuzaji, na aina ya ufungashaji. Shirikisha kiasi unachotarajia na eneo lengwa, na tutathibitisha kiwango cha chini kinachowezekana pamoja na nukuu ya bei.",
       "samplesQ": "Naweza kupata sampuli kabla ya kuagiza?",
@@ -385,7 +359,8 @@
       "packagingQ": "Je, mnatoa ufungashaji maalum au wa chapa binafsi?",
       "packagingA": "Chaguzi za jumla, maalum, na chapa binafsi zinaweza kupatikana kutegemea bidhaa na wingi wa oda. Shirikisha ukubwa wa kifungashio, aina ya nyenzo, uwekaji lebo, na mahitaji ya eneo lengwa kwa uthibitisho.",
       "certsQ": "Ni vyeti na hati gani mnazotoa?",
-      "certsA": "Mahitaji ya hati hutofautiana kulingana na bidhaa na nchi inayoagiza. Tunathibitisha usajili, vipimo, vyeti, ripoti za vipimo, na hati za usafirishaji zinazohusika wakati wa nukuu ya bei."
+      "certsA": "Mahitaji ya hati hutofautiana kulingana na bidhaa na nchi inayoagiza. Tunathibitisha usajili, vipimo, vyeti, ripoti za vipimo, na hati za usafirishaji zinazohusika wakati wa nukuu ya bei.",
+      "headingAccent": "kabla ya kuweka oda."
     },
     "finalCta": {
       "heading": "Tafuta Bidhaa Kutoka India na Traya.",
@@ -401,12 +376,12 @@
     },
     "hero": {
       "eyebrow": "Kuhusu Traya",
-      "heading": "Mbinu Iliyosafishwa ya Biashara ya Kimataifa",
-      "tagline": "Utafutaji wa bidhaa, hati, ufungashaji, na msaada wa usafirishaji unasimamiwa na timu moja maalum.",
-      "body": "TRAYA ni kampuni ya biashara ya kimataifa iliyojitolea kujenga ushirikiano wa kuaminika katika masoko ya kimataifa. Kupitia utekelezaji wa kitaalamu na mtazamo unaomlenga mteja, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.\n\nTukiongozwa na uwazi, umakini kwa undani, na dhamira ya ubora, kila mwingiliano unasimamiwa kwa uangalifu, tukihakikisha kuaminika, uthabiti, na uzoefu wa kitaalamu ambao biashara zinaweza kutegemea.\n\nKwa wigo unaopanuka na maono ya ukuaji endelevu, TRAYA inaendelea kubadilika sambamba na mahitaji yanayobadilika ya masoko ya kimataifa, ikijenga ushirikiano wa kudumu uliojengwa juu ya imani, ubora, na mafanikio ya pamoja."
+      "heading": "Mbinu Iliyosafishwa",
+      "body": "TRAYA ni kampuni ya biashara ya kimataifa iliyojitolea kujenga ushirikiano wa kuaminika katika masoko ya kimataifa. Kupitia utekelezaji wa kitaalamu na mtazamo unaomlenga mteja, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.\n\nTukiongozwa na uwazi, umakini kwa undani, na dhamira ya ubora, kila mwingiliano unasimamiwa kwa uangalifu, tukihakikisha kuaminika, uthabiti, na uzoefu wa kitaalamu ambao biashara zinaweza kutegemea.\n\nKwa wigo unaopanuka na maono ya ukuaji endelevu, TRAYA inaendelea kubadilika sambamba na mahitaji yanayobadilika ya masoko ya kimataifa, ikijenga ushirikiano wa kudumu uliojengwa juu ya imani, ubora, na mafanikio ya pamoja.",
+      "headingAccent": "ya Biashara ya Kimataifa"
     },
     "founder": {
-      "eyebrow": "Neno kutoka kwa mwanzilishi",
+      "eyebrow": "Kwa maneno yake mwenyewe.",
       "name": "Neha Pardeshi",
       "role": "Mwanzilishi na Mkurugenzi Mtendaji",
       "p1": "Dunia haikunifungukia kupitia vitabu   ilinifungukia kupitia safari. Kuchunguza tamaduni mbalimbali, kukutana na watu wa hali tofauti za maisha, na kuona dunia kupitia mitazamo tofauti kuliunda si tu nilivyo, bali pia nilichochagua kujenga.",
@@ -426,36 +401,16 @@
       "p3Title": "Uadilifu",
       "p3Body": "Tunawasiliana kwa uwazi kuhusu kinachopatikana, kinachohitaji uthibitisho, na hatua inayofuata inapaswa kuwa nini."
     },
-    "why": {
-      "eyebrow": "Kwa Nini Traya",
-      "heading": "Mshirika wa vitendo kwa utafutaji wa kimataifa wa bidhaa.",
-      "body": "Traya ilijengwa kusaidia wanunuzi kupunguza mkanganyiko katika biashara ya kimataifa. Tunaunganisha utafutaji wa bidhaa, uratibu wa wauzaji, hati, ufungashaji, na msaada wa usafirishaji katika mtiririko mmoja wazi wa kazi.",
-      "cta": "Angalia uwezo wetu",
-      "w1Title": "Viwango Vinavyoongozwa na Mwanzilishi",
-      "w1Body": "Unafanya kazi na timu inayochukua umiliki wa mahitaji na kufuatilia undani hadi mwisho.",
-      "w2Title": "Utekelezaji Uliopangwa",
-      "w2Body": "Tunathibitisha vipimo, kiasi, ufungashaji, hati, masharti ya kibiashara, na muda kabla oda haijaendelea.",
-      "w3Title": "Mtazamo Unaotanguliza Mahusiano",
-      "w3Body": "Tunalenga kusaidia wanunuzi wanaorudi kwa majibu wazi, taarifa za mara kwa mara, na uratibu wa kuaminika.",
-      "w4Title": "Mtazamo wa Kimataifa, Mguso wa Kibinafsi",
-      "w4Body": "Unaweza kuzungumza na timu halisi inayoelewa mahitaji na kujibu kwa hatua za vitendo zinazofuata.",
-      "w5Title": "Sekta Mbalimbali, Mshirika Mmoja",
-      "w5Body": "Tunasaidia mahitaji katika Chakula na Kilimo, Kemikali, Bidhaa za Mitambo, Karatasi, na maombi mengine ya kibiashara.",
-      "w6Title": "Hati Zinazosafiri",
-      "w6Body": "Tunathibitisha vipimo, vyeti, hati za kibiashara, na hati za usafirishaji zinazohitajika kwa bidhaa na eneo lengwa.",
-      "w7Title": "Uwazi Katika Kila Hatua",
-      "w7Body": "Tunashirikisha bei, muda, hali ya oda, na mahitaji yanayosubiri kwa uwazi, ili ujue kinachoendelea katika kila hatua."
-    },
     "vision": {
       "eyebrow": "Maono na Dhamira",
       "visionLabel": "Maono Yetu",
       "vision": "Kuwa mshirika wa biashara anayeaminika zaidi na mkubwa zaidi kwa biashara zinazopanuka kuvuka mipaka.",
       "missionLabel": "Dhamira Yetu",
-      "m1": "Kuwezesha shughuli za usafirishaji na uagizaji zenye ufanisi na muundo mzuri katika masoko ya kimataifa.",
-      "m2": "Kujenga na kuimarisha ushirikiano wa muda mrefu wa biashara ya kimataifa na kutoa suluhisho endelevu.",
-      "m3": "Kuhakikisha utekelezaji usio na vikwazo kupitia mifumo yenye nidhamu na uwazi wa kiutendaji.",
-      "m4": "Kupanua uwepo wetu wa kimataifa kupitia ushirikiano wa kimkakati wa kisoko.",
-      "commitment": "Hatujengi kampuni ya miamala ya mara moja. Tunajenga mshirika wa biashara ambaye wanunuzi wanaweza kurejea kwa msaada wazi katika bidhaa, sekta, na masoko."
+      "m1": "Kutoa bidhaa za ubora wa hali ya juu zinazokidhi kwa uthabiti viwango vya kimataifa na matarajio ya wateja.",
+      "m2": "Kujenga ushirikiano wa kudumu unaotokana na imani, uwazi, na mafanikio ya pamoja.",
+      "m3": "Kurahisisha biashara ya kimataifa kupitia utekelezaji wa kuaminika, usafirishaji wenye ufanisi, na huduma inayojibu haraka.",
+      "m4": "Kupanua uwepo wetu wa kimataifa kwa kuunda fursa zenye thamani katika masoko ya kimataifa.",
+      "commitment": "Tunajitahidi kujenga ushirikiano wa kudumu unaotokana na imani, kuaminika, na dhamira ya pamoja ya mafanikio ya muda mrefu katika masoko ya kimataifa."
     }
   },
   "Contact": {
@@ -465,8 +420,9 @@
     },
     "hero": {
       "eyebrow": "Wasiliana",
-      "heading": "Wasilisha mahitaji yako ya utafutaji wa bidhaa wa kimataifa.",
-      "body": "Wasiliana na wataalamu wetu wa usafirishaji kupitia barua pepe, simu, WhatsApp, au fomu yetu salama ya ombi. Tafadhali eleza kwa undani vipimo vya bidhaa yako, kiasi kinachohitajika, bandari lengwa, na muda wa uwasilishaji ili kuhakikisha jibu kamili na la haraka la kibiashara."
+      "heading": "Wasiliana moja kwa moja na dawati letu la usafirishaji nje.",
+      "body": "Shiriki mahitaji yako hapa chini, au wasiliana nasi moja kwa moja — kila ujumbe unapitiwa binafsi, ukiwa na jibu ndani ya siku moja ya kazi.",
+      "cta": "Tuma mahitaji yako"
     },
     "emailLabel": "Tutumie Barua Pepe",
     "phoneLabel": "Tupigie Simu",
@@ -491,9 +447,9 @@
       "success": "Asante. Ujumbe wako umetumwa. Tutawasiliana nawe hivi karibuni.",
       "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
       "rateLimited": "Umefikia kikomo cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
-      "point1": "Tunajibu ndani ya siku moja ya kazi",
-      "point2": "Utafutaji wa bidhaa, sampuli, bei na hati   tuulize chochote",
-      "point3": "Njia ya moja kwa moja kwa dawati letu la biashara",
+      "point1": "Jibu ndani ya siku moja ya kazi",
+      "point2": "Vipimo vya bidhaa, bei, sampuli na hati",
+      "point3": "Msaada maalum kwa maswali yako ya usafirishaji nje",
       "reassurance": "Kwa kawaida hujibu ndani ya siku 1 ya kazi · Hakuna wajibu.",
       "successHeading": "Ujumbe umetumwa.",
       "successBody": "Asante. Timu yetu itapitia ujumbe wako na kukujibu   kwa kawaida ndani ya siku moja ya kazi."
@@ -571,13 +527,13 @@
     },
     "hero": {
       "eyebrow": "Uwezo Wetu",
-      "heading": "Msaada wa kibiashara kutoka mahitaji hadi usafirishaji.",
-      "body": "Traya inasaidia wanunuzi kutafuta bidhaa kutoka India na kuratibu hatua zinazofanya oda ya usafirishaji ifanikiwe: mazungumzo na wauzaji, vipimo, ufungashaji, hati, masharti ya kibiashara, na taarifa za usafirishaji."
+      "heading": "Kusaidia Biashara",
+      "body": "Mkusanyiko wetu unaokua wa bidhaa unatuwezesha kuhudumia sekta mbalimbali kwa bidhaa zinazokidhi mahitaji ya soko yanayobadilika na viwango vya kimataifa vya ubora.",
+      "headingAccent": "Katika Sekta Mbalimbali"
     },
     "industries": {
       "eyebrow": "Viwanda Tunavyohudumia",
-      "heading": "Kuwezesha Viwanda Duniani Kote",
-      "sub": "Wigo wetu unaokua unatuwezesha kuhudumia viwanda vingi kwa bidhaa zinazokidhi mahitaji ya soko yanayobadilika na matarajio ya kimataifa ya ubora.",
+      "heading": "Kupitia Sekta. Kupitia Mipaka.",
       "i1Title": "Dawa na Bidhaa za Kinutraceutical",
       "i1Body": "Viungo vya kiutendaji, excipients, na malighafi zinazolenga afya.",
       "i2Title": "Chakula na Vinywaji",
@@ -596,18 +552,24 @@
       "i8Body": "Kemikali maalum zinazosaidia michakato mbalimbali ya viwandani."
     },
     "core": {
-      "eyebrow": "Tunachofanya",
-      "heading": "Uwezo mkuu kwa wanunuzi wa kimataifa.",
-      "c1Title": "Utafutaji wa Bidhaa",
-      "c1Body": "Tunasaidia wanunuzi kutafuta Chakula na Kilimo, Kemikali, Bidhaa za Mitambo, Karatasi, na mahitaji mengine ya usafirishaji kutoka India kulingana na vipimo, kiasi, na eneo lengwa.",
-      "c2Title": "Uratibu wa Wauzaji",
-      "c2Body": "Tunaratibu na wauzaji wanaofaa kuangalia upatikanaji, daraja, ufungashaji, utayari wa uzalishaji, na uwezekano wa oda.",
-      "c3Title": "Msaada wa Vipimo na Hati",
-      "c3Body": "Tunasaidia kuthibitisha vipimo, vyeti, ripoti za vipimo, hati za kibiashara, na hati za usafirishaji zinazohitajika kwa bidhaa na eneo lengwa.",
-      "c4Title": "Uratibu wa Ufungashaji na Usafirishaji",
-      "c4Body": "Tunapitia mahitaji ya ufungashaji, aina ya usafirishaji, mahitaji ya eneo lengwa, na muda wa usafirishaji ili oda iende bila mshangao mwingi.",
-      "c5Title": "Mawasiliano Wazi na Mnunuzi",
-      "c5Body": "Tunamweka mnunuzi na taarifa kuhusu chaguzi zinazopatikana, maelezo yanayosubiri, masharti ya nukuu ya bei, hali ya oda, na hatua zinazofuata."
+      "eyebrow": "Tunachotoa",
+      "heading": "Kila kitu unachohitaji kwa biashara ya kimataifa isiyo na vikwazo.",
+      "c1Title": "Utafutaji wa Bidhaa Kimataifa",
+      "c1Body": "Upatikanaji wa mkusanyiko mbalimbali wa bidhaa katika kategoria nyingi kupitia mshirika wa kuaminika wa usafirishaji nje.",
+      "c2Title": "Uhakikisho wa Ubora",
+      "c2Body": "Bidhaa huthibitishwa dhidi ya vipimo vilivyokubaliwa kabla ya kusafirishwa ili kuhakikisha uthabiti na kutegemewa.",
+      "c3Title": "Nyaraka za Usafirishaji Nje",
+      "c3Body": "Nyaraka sahihi za usafirishaji nje, vyeti, orodha za ufungashaji, ankara, na nyaraka za utii kwa biashara ya kimataifa isiyo na vikwazo.",
+      "c4Title": "Usafirishaji na Vifaa",
+      "c4Body": "Chaguo za usafirishaji wa baharini, angani, na kwa kasi vilivyolengwa kulingana na ukubwa wa shehena, uharaka, na marudio.",
+      "c5Title": "Suluhisho za Ufungashaji",
+      "c5Body": "Ufungashaji uliolengwa kulingana na mahitaji ya bidhaa na viwango vya kimataifa vya usafirishaji.",
+      "c6Title": "Wigo wa Kimataifa",
+      "c6Body": "Tunahudumia wateja duniani kote kupitia biashara ya kimataifa inayotegemewa.",
+      "c7Title": "Masharti Rahisi ya Kibiashara",
+      "c7Body": "Masharti ya kibiashara na mipango ya usafirishaji iliyolengwa kulingana na mahitaji ya biashara yako.",
+      "c8Title": "Msaada Maalum",
+      "c8Body": "Mawasiliano ya haraka kuanzia uchunguzi hadi usafirishaji na msaada baada ya utoaji."
     },
     "foundations": {
       "eyebrow": "Jinsi Tunavyofanya Kazi",
@@ -629,14 +591,19 @@
       "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali   bidhaa 499 katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
     },
     "hub": {
-      "eyebrow": "Katalogi ya Chakula na Kilimo",
-      "heading": "Pata bidhaa unazotaka kuzitafuta kutoka India.",
-      "sub": "Vinjari bidhaa zetu za Chakula na Kilimo na Kemikali zilizoorodheshwa kwa kategoria. Kwa bidhaa za mitambo, karatasi, au bidhaa yoyote isiyoonyeshwa hapa, tutumie mahitaji yako na tutapitia chaguzi za utafutaji zinazopatikana.",
-      "spec": "Makundi 6 · Kategoria 30 · Bidhaa 499 zilizoorodheshwa",
+      "eyebrow": "Mkusanyiko Wetu wa Bidhaa",
+      "heading": "Pata bidhaa",
+      "sub": "Chunguza mkusanyiko wetu mbalimbali wa bidhaa katika kategoria nyingi. Unatafuta bidhaa isiyoorodheshwa hapa? Tutumie mahitaji yako, nasi tutawasiliana nawe.",
+      "spec": "Mkusanyiko mbalimbali wa bidhaa · Kategoria nyingi · Bidhaa zaidi ya 500 zilizoorodheshwa",
       "search": "Tafuta bidhaa au kategoria...",
-      "all": "Zote",
       "noResults": "Hakuna bidhaa zinazolingana na utafutaji wako.",
-      "downloadCatalogue": "Pakua katalogi kamili (PDF)"
+      "downloadCatalogue": "Pakua katalogi kamili (PDF)",
+      "headingAccent": "unazotaka kuzitafuta kutoka India.",
+      "category": "kategoria",
+      "categories": "kategoria",
+      "allCategories": "Kategoria Zote",
+      "allCategoriesSub": "Vikundi vyote",
+      "groupLabel": "Kikundi"
     },
     "list": {
       "form": "Aina",

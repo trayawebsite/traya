@@ -64,9 +64,6 @@ export default async function HomePage({
       <Reveal>
         <CertBand />
       </Reveal>
-      {/* NOTE: the 3-step HowItWorks section was removed from the home flow  
-          it triple-covered ground already held by the Intro pillars and the
-          dedicated /how-we-work page. Component kept for reuse. */}
       <Reveal>
         <Faq />
       </Reveal>

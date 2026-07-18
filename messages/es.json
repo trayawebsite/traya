@@ -6,30 +6,14 @@
     },
     "hero": {
       "eyebrow": "Nuestro enfoque y alcance global",
-      "heading": "Un proceso estructurado, diseñado en torno a usted.",
-      "sub": "Cada transacción internacional tiene sus propios requisitos: especificaciones, cumplimiento normativo, documentación y logística. En Traya nos encargamos de todo, para que usted pueda concentrarse en su negocio mientras nosotros nos ocupamos del resto."
-    },
-    "manage": {
-      "eyebrow": "Lo que gestionamos por usted",
-      "heading": "Todo entre la consulta y la entrega",
-      "sub": "Cuando trabaja con Traya no recibe solo un producto. Cuenta con un equipo que gestiona cada parte de su operación comercial, para que nada se le escape.",
-      "i1Title": "Operaciones de exportación e importación",
-      "i1Body": "Gestión integral de su comercio, desde el abastecimiento del producto hasta el despacho final. Un solo socio, un solo proceso, cero vacíos.",
-      "i2Title": "Abastecimiento de productos y verificación de calidad",
-      "i2Body": "Buscamos el producto adecuado para su necesidad y verificamos que cumpla sus especificaciones antes de que se mueva. Recibe lo que pidió, siempre.",
-      "i3Title": "Documentación comercial",
-      "i3Body": "Todo documento que su envío necesita: facturas, listas de empaque, certificados y papeleo de cumplimiento, preparados con precisión y a tiempo.",
-      "i4Title": "Coordinación logística",
-      "i4Body": "Coordinamos el movimiento de su mercancía por mar, aire o mensajería, según su plazo, volumen y destino. Usted se mantiene informado en todo momento.",
-      "i5Title": "Atención dedicada al comprador",
-      "i5Body": "Un único punto de contacto constante desde la primera consulta hasta la entrega. Comunicación clara, respuestas rápidas, sin traspasos.",
-      "quote": "Simplificamos la complejidad de abastecerse desde India, para que usted pueda concentrarse en su negocio."
+      "heading": "Un proceso estructurado,",
+      "sub": "Cada transacción internacional tiene sus propios requisitos: especificaciones, cumplimiento normativo, documentación y logística. En Traya nos encargamos de todo, para que usted pueda concentrarse en su negocio mientras nosotros nos ocupamos del resto.",
+      "headingAccent": "diseñado en torno a usted."
     },
     "process": {
-      "eyebrow": "Cómo trabajamos",
+      "eyebrow": "La Manera Traya",
       "heading": "De la consulta a la entrega",
       "sub": "Ocho pasos claros. Un único estándar de ejecución.",
-      "step": "Paso",
       "s1Title": "Consulta",
       "s1Body": "Usted comparte su necesidad de producto, la cantidad y el país de destino.",
       "s2Title": "Discusión del requisito",
@@ -54,18 +38,15 @@
       "sub": "Coordinamos envíos internacionales en tres modalidades, según el tamaño de su pedido, la urgencia y el destino.",
       "seaTitle": "Flete marítimo",
       "seaBody": "Ideal para pedidos de gran volumen donde la eficiencia de costos es clave. Coordinamos envíos tanto FCL (contenedor completo) como LCL (carga consolidada).",
-      "seaTag": "FCL y LCL disponibles",
       "airTitle": "Flete aéreo",
       "airBody": "Para carga urgente o de alto valor que necesita moverse con rapidez y seguridad a través de fronteras con un tiempo de tránsito mínimo.",
-      "airTag": "Aéreo prioritario y estándar",
       "courierTitle": "Mensajería para muestras",
       "courierBody": "Envío internacional por mensajería para muestras de producto, para que los compradores puedan evaluar calidad, especificaciones e idoneidad antes de comprometerse con un pedido completo.",
-      "courierTag": "Evaluación previa al pedido",
       "incoterms": "Incoterms: los envíos se gestionan en las condiciones que le convengan. Trabajamos con FOB, CIF y otros términos comerciales estándar, acordados de antemano, sin ambigüedad sobre responsabilidades ni costos. Consúltenos sobre lo que mejor se adapte a su necesidad."
     },
     "reach": {
       "eyebrow": "Alcance global",
-      "heading": "Dondequiera que esté, podemos llegar hasta usted",
+      "heading": "Dondequiera que esté,",
       "p1": "India es uno de los destinos de abastecimiento más capaces del mundo, y Ahmedabad se encuentra en su corazón. Estamos posicionados aquí de forma deliberada, con acceso directo a productos de calidad en múltiples categorías y la infraestructura para moverlos a nivel global.",
       "p2": "Ya sea que sea un importador establecido con requisitos definidos o una empresa que se abastece de India por primera vez, Traya está preparada para atenderle, con la misma estructura, cuidado y confiabilidad en cada escala.",
       "pillar1": "Adaptándonos a las regulaciones comerciales y los requisitos de importación de su país de destino.",
@@ -73,7 +54,8 @@
       "pillar3": "Tratando cada pedido como la base de una relación más larga, no como una transacción única.",
       "pillar4": "Manteniéndonos flexibles y receptivos a medida que cambian las necesidades de su negocio y las condiciones del mercado.",
       "mapCaption": "Atendemos a compradores internacionales en todo el mundo",
-      "mapLabel": "Ahmedabad, India"
+      "mapLabel": "Ahmedabad, India",
+      "headingAccent": "podemos llegar hasta usted"
     },
     "cta": {
       "heading": "¿Tiene una necesidad en mente?",
@@ -149,7 +131,7 @@
   },
   "Enquiry": {
     "eyebrow": "Enviar una consulta",
-    "heading": "Empecemos una conversación.",
+    "heading": "Empecemos",
     "sub": "Comparta sus necesidades y nosotros nos encargamos del resto.",
     "trust1": "Respuesta rápida",
     "trust2": "Soporte confiable",
@@ -177,7 +159,7 @@
     "removeFromList": "Quitar de la consulta",
     "list": {
       "eyebrow": "Lista de Consulta",
-      "heading": "Revise su consulta.",
+      "heading": "Revise",
       "sub": "Ha seleccionado estos productos. Revise la lista, añada sus datos y envíe la consulta.",
       "empty": "Su lista de consulta está vacía. Explore nuestros productos y añada artículos para comenzar.",
       "browseProducts": "Explorar productos",
@@ -198,12 +180,14 @@
       "rateLimited": "Ha alcanzado el límite de consultas de hoy. Escríbanos por correo electrónico o por WhatsApp.",
       "submittedHeading": "Consulta enviada.",
       "submittedBody": "Gracias. Nuestro equipo revisará su necesidad y le contactará con los detalles disponibles del producto, documentos, precios y próximos pasos.",
-      "browseMore": "Seguir explorando"
+      "browseMore": "Seguir explorando",
+      "headingAccent": "su consulta."
     },
     "meta": {
       "title": "Lista de Consulta",
       "description": "Revise y envíe su consulta de producto. Comparta las especificaciones, la cantidad, el destino y el plazo para que nuestro equipo pueda responder con los detalles correctos."
-    }
+    },
+    "headingAccent": "una conversación."
   },
   "Validation": {
     "name": "Por favor, indique su nombre",
@@ -272,12 +256,12 @@
     },
     "hero": {
       "eyebrow": "Ampliando Horizontes a Través del Comercio.",
-      "heading": "Su socio de confianza para abastecerse desde India.",
+      "heading": "Su socio de confianza para",
       "sub": "Traya se compromete a construir alianzas globales duraderas a través de la confianza, la fiabilidad y la ejecución profesional. Con un portafolio de productos de calidad en constante crecimiento, ayudamos a las empresas a navegar el comercio internacional con confianza.",
       "cta": "Explorar Productos",
       "ctaEnquiry": "Comparta su necesidad",
-      "stat": "Alimentos, Agro y Químicos · 499 productos · 30 categorías",
-      "certified": "Certificado"
+      "certified": "Certificado",
+      "headingAccent": "abastecerse desde India."
     },
     "intro": {
       "eyebrow": "Cómo ayuda Traya",
@@ -292,29 +276,28 @@
       "f3Body": "Logística confiable y entrega puntual en todo el mundo."
     },
     "stats": {
-      "s1": "499",
-      "s1Sub": "Productos listados",
-      "s2": "30",
-      "s2Sub": "Categorías",
-      "s3": "De Confianza",
-      "s3Sub": "Alianzas",
+      "s1": "Global",
+      "s1Sub": "Socio Comercial",
+      "s2": "De Confianza",
+      "s2Sub": "Alianzas",
+      "s3": "En Expansión",
+      "s3Sub": "Portafolio",
       "s4": "100%",
       "s4Sub": "Abastecido desde India"
     },
     "groups": {
       "eyebrow": "Nuestro Portafolio de Productos",
-      "heading": "Lo Que Exportamos",
+      "heading": "Lo Que",
       "sub": "Nuestro portafolio está diseñado para dar soporte a empresas de múltiples industrias. A medida que crecemos, también lo hace nuestra gama.",
       "foodTitle": "Productos Alimentarios y Agro",
-      "foodBody": "Productos agrícolas premium abastecidos de fabricantes indios de confianza, alineados con los estándares internacionales de calidad.",
+      "foodBody": "Productos alimentarios y agrícolas premium, diseñados para cumplir con los estándares de calidad global, garantizando consistencia, seguridad y fiabilidad para los mercados internacionales.",
       "foodCta": "Ver Productos Alimentarios y Agro",
       "chemTitle": "Químicos",
-      "chemBody": "Químicos industriales y especializados que dan servicio a diversas aplicaciones de manufactura en mercados globales.",
+      "chemBody": "Productos químicos industriales y especializados de alto rendimiento, diseñados para cumplir con los estándares de calidad internacionales y las diversas necesidades de la industria.",
       "chemCta": "Ver Químicos",
       "selection": "Una selección de nuestra gama Alimentaria y Agro",
       "note": "Nuestro portafolio continúa expandiéndose a medida que fortalecemos alianzas en nuevas industrias y mercados internacionales.",
       "noteAsk": "¿No encuentra lo que necesita? Contáctenos, es posible que aún podamos ayudarle.",
-      "spec": "499 productos listados · 30 categorías · 6 grupos de productos",
       "cta": "Enviar una Necesidad",
       "badgePremium": "Alimentos y Agro",
       "alliums": "Alliums Deshidratados y Vegetales",
@@ -330,11 +313,12 @@
       "chemicals": "Químicos y Colorantes",
       "chemicalsBlurb": "Colorantes reactivos, ácidos y directos, colorantes alimentarios, pigmentos y resinas para pintura, destinados a las industrias textil, alimentaria y de recubrimientos.",
       "catFoodColours": "Food Colours",
-      "catReactiveDyes": "Reactive Dyes"
+      "catReactiveDyes": "Reactive Dyes",
+      "headingAccent": "Exportamos"
     },
     "why": {
       "eyebrow": "Por qué Traya",
-      "heading": "Construidos para alianzas a largo plazo.",
+      "heading": "Construidos para",
       "sub": "Vamos más allá de las transacciones para construir confianza, entregar calidad y crecer juntos.",
       "cta": "Ver nuestras capacidades",
       "trusted": "Relaciones de Confianza",
@@ -348,32 +332,22 @@
       "global": "Perspectiva Global",
       "globalBody": "Abastecimiento desde India para compradores de distintos mercados, con documentos y condiciones adaptados a su destino.",
       "growth": "Creciendo Juntos",
-      "growthBody": "Un portafolio en expansión y alianzas recurrentes: crecemos a medida que crecen sus necesidades."
+      "growthBody": "Un portafolio en expansión y alianzas recurrentes: crecemos a medida que crecen sus necesidades.",
+      "headingAccent": "alianzas a largo plazo."
     },
     "testimonials": {
       "eyebrow": "Lo que dicen los compradores"
     },
     "certs": {
       "eyebrow": "Registros de exportación",
-      "heading": "Conozca los registros detrás de nuestras exportaciones.",
-      "sub": "Cada registro se muestra con su autoridad emisora y su significado para el comprador. Los documentos para un producto o destino específico se confirman durante la cotización.",
-      "cta": "Ver nuestros registros"
-    },
-    "process": {
-      "eyebrow": "El proceso de exportación",
-      "heading": "Cómo funciona un pedido de exportación con Traya.",
-      "sub": "Usted recibe los detalles del producto y comerciales antes de aprobar el pedido.",
-      "step": "Paso",
-      "step1Title": "Envíe su necesidad",
-      "step1Body": "Comparta el nombre del producto, la especificación, la cantidad, el empaque, el destino y el plazo requerido. Le solicitaremos cualquier detalle faltante.",
-      "step2Title": "Revise la oferta",
-      "step2Body": "Confirmamos el producto, las especificaciones disponibles, los documentos, las opciones de muestra, el precio y las condiciones comerciales.",
-      "step3Title": "Confirme y enviamos",
-      "step3Body": "Tras la aprobación, coordinamos el pedido, el empaque, los documentos y el despacho. Le mantenemos informado a medida que el pedido avanza."
+      "heading": "Conozca los registros",
+      "cta": "Ver nuestros registros",
+      "headingAccent": "detrás de nuestras exportaciones.",
+      "sub": "Cada envío está respaldado por los registros y certificaciones de exportación requeridos, garantizando cumplimiento, transparencia y confianza en el comercio internacional."
     },
     "faq": {
       "eyebrow": "Preguntas de compradores",
-      "heading": "Detalles importantes antes de realizar un pedido.",
+      "heading": "Detalles importantes",
       "moqQ": "¿Cuáles son sus cantidades mínimas de pedido?",
       "moqA": "Las MOQ dependen del producto, el grado, el proveedor y el formato de empaque. Comparta su cantidad objetivo y destino, y confirmaremos el mínimo viable junto con la cotización.",
       "samplesQ": "¿Puedo obtener una muestra antes de realizar el pedido?",
@@ -385,7 +359,8 @@
       "packagingQ": "¿Ofrecen empaque personalizado o de marca privada?",
       "packagingA": "Puede haber opciones a granel, personalizadas y de marca privada disponibles según el producto y el volumen del pedido. Comparta el tamaño del paquete, el material, el etiquetado y los requisitos de destino para su confirmación.",
       "certsQ": "¿Qué certificaciones y documentos proporcionan?",
-      "certsA": "Los requisitos de documentación varían según el producto y el país importador. Confirmamos los registros, especificaciones, certificados, informes de prueba y documentos de exportación aplicables durante la cotización."
+      "certsA": "Los requisitos de documentación varían según el producto y el país importador. Confirmamos los registros, especificaciones, certificados, informes de prueba y documentos de exportación aplicables durante la cotización.",
+      "headingAccent": "antes de realizar un pedido."
     },
     "finalCta": {
       "heading": "Abastézcase desde India con Traya.",
@@ -401,12 +376,12 @@
     },
     "hero": {
       "eyebrow": "Sobre Traya",
-      "heading": "Un Enfoque Refinado del Comercio Global",
-      "tagline": "Abastecimiento, documentación, empaque y soporte de envío gestionados por un único equipo dedicado.",
-      "body": "TRAYA es una empresa de comercio global dedicada a construir alianzas de confianza en los mercados internacionales. A través de una ejecución profesional y un enfoque centrado en el cliente, ayudamos a las empresas a navegar el comercio global con confianza.\n\nImpulsados por la transparencia, la atención al detalle y el compromiso con la calidad, cada interacción se gestiona con cuidado, garantizando fiabilidad, consistencia y una experiencia profesional en la que las empresas pueden confiar.\n\nCon un portafolio en expansión y una visión de crecimiento sostenible, TRAYA continúa evolucionando junto con las necesidades cambiantes de los mercados globales, creando alianzas duraderas basadas en la confianza, la calidad y el éxito compartido."
+      "heading": "Un Enfoque Refinado",
+      "body": "TRAYA es una empresa de comercio global dedicada a construir alianzas de confianza en los mercados internacionales. A través de una ejecución profesional y un enfoque centrado en el cliente, ayudamos a las empresas a navegar el comercio global con confianza.\n\nImpulsados por la transparencia, la atención al detalle y el compromiso con la calidad, cada interacción se gestiona con cuidado, garantizando fiabilidad, consistencia y una experiencia profesional en la que las empresas pueden confiar.\n\nCon un portafolio en expansión y una visión de crecimiento sostenible, TRAYA continúa evolucionando junto con las necesidades cambiantes de los mercados globales, creando alianzas duraderas basadas en la confianza, la calidad y el éxito compartido.",
+      "headingAccent": "del Comercio Global"
     },
     "founder": {
-      "eyebrow": "Una nota de la fundadora",
+      "eyebrow": "En sus propias palabras.",
       "name": "Neha Pardeshi",
       "role": "Fundadora y CEO",
       "p1": "El mundo no se abrió ante mí a través de los libros de texto, sino a través de los viajes. Explorar diferentes culturas, conocer personas de toda condición, y ver el mundo desde perspectivas distintas moldeó no solo quién soy, sino también lo que decidí construir.",
@@ -426,36 +401,16 @@
       "p3Title": "Integridad",
       "p3Body": "Comunicamos con claridad qué está disponible, qué necesita confirmación y cuál debería ser el siguiente paso."
     },
-    "why": {
-      "eyebrow": "Por qué Traya",
-      "heading": "Un socio práctico para el abastecimiento internacional.",
-      "body": "Traya fue creada para ayudar a los compradores a reducir la confusión en el comercio internacional. Integramos el abastecimiento de productos, la coordinación con proveedores, la documentación, el empaque y el soporte de envío en un único flujo de trabajo claro.",
-      "cta": "Vea nuestras capacidades",
-      "w1Title": "Estándares liderados por la fundadora",
-      "w1Body": "Trabaja con un equipo que asume la responsabilidad de la necesidad y da seguimiento a cada detalle.",
-      "w2Title": "Ejecución estructurada",
-      "w2Body": "Confirmamos especificaciones, cantidades, empaque, documentos, condiciones comerciales y plazos antes de que el pedido avance.",
-      "w3Title": "Un pensamiento centrado en la relación",
-      "w3Body": "Buscamos apoyar a los compradores recurrentes con respuestas claras, actualizaciones constantes y una coordinación confiable.",
-      "w4Title": "Visión global, trato personal",
-      "w4Body": "Puede hablar con un equipo real que comprende la necesidad y responde con próximos pasos prácticos.",
-      "w5Title": "Múltiples sectores, un solo socio",
-      "w5Body": "Damos soporte a necesidades en Alimentos y Agro, Químicos, productos mecánicos, papel y otras consultas comerciales.",
-      "w6Title": "Documentación que viaja",
-      "w6Body": "Confirmamos las especificaciones, certificados, documentos comerciales y documentos de exportación requeridos para el producto y el destino.",
-      "w7Title": "Transparentes en todo momento",
-      "w7Body": "Compartimos con claridad precios, plazos, estado del pedido y requisitos pendientes, para que usted sepa qué está sucediendo en cada etapa."
-    },
     "vision": {
       "eyebrow": "Visión y misión",
       "visionLabel": "Nuestra Visión",
       "vision": "Convertirnos en el socio comercial más confiable y más grande para las empresas que se expanden a través de las fronteras.",
       "missionLabel": "Nuestra Misión",
-      "m1": "Facilitar operaciones de exportación e importación eficientes y bien estructuradas en los mercados globales.",
-      "m2": "Construir y fortalecer alianzas comerciales internacionales a largo plazo y ofrecer soluciones sostenibles.",
-      "m3": "Garantizar una ejecución fluida a través de sistemas disciplinados y claridad operativa.",
-      "m4": "Expandir nuestra presencia global mediante una participación estratégica en el mercado.",
-      "commitment": "No estamos construyendo una empresa de transacciones únicas. Estamos construyendo un socio comercial al que los compradores puedan volver para recibir un soporte claro en productos, sectores y mercados."
+      "m1": "Ofrecer productos de calidad superior que cumplan de forma constante con los estándares internacionales y las expectativas de los clientes.",
+      "m2": "Construir alianzas duraderas basadas en la confianza, la transparencia y el éxito mutuo.",
+      "m3": "Simplificar el comercio internacional mediante una ejecución fiable, una logística eficiente y un servicio receptivo.",
+      "m4": "Ampliar nuestra presencia global creando oportunidades orientadas al valor en los mercados internacionales.",
+      "commitment": "Nos esforzamos por construir alianzas duraderas basadas en la confianza, la fiabilidad y un compromiso compartido con el éxito a largo plazo en los mercados globales."
     }
   },
   "Contact": {
@@ -465,8 +420,9 @@
     },
     "hero": {
       "eyebrow": "Contacto",
-      "heading": "Envíe sus necesidades de abastecimiento global.",
-      "body": "Comuníquese con nuestros especialistas en comercio exterior por correo electrónico, teléfono, WhatsApp o nuestro formulario de consulta seguro. Detalle las especificaciones de su producto, las cantidades requeridas, el puerto de destino y los plazos de entrega para garantizar una respuesta comercial completa y rápida."
+      "heading": "Contacte directamente con nuestro equipo de exportación.",
+      "body": "Comparta su requerimiento a continuación o póngase en contacto directamente — cada mensaje se revisa de forma personal, con respuesta en un día hábil.",
+      "cta": "Envíe su requerimiento"
     },
     "emailLabel": "Escríbanos",
     "phoneLabel": "Llámenos",
@@ -491,9 +447,9 @@
       "success": "Gracias. Su mensaje ha sido enviado. Nos pondremos en contacto en breve.",
       "error": "Algo salió mal. Inténtelo de nuevo o escríbanos directamente por correo electrónico.",
       "rateLimited": "Ha alcanzado el límite de hoy. Escríbanos por correo electrónico o por WhatsApp.",
-      "point1": "Respondemos en un día hábil",
-      "point2": "Abastecimiento, muestras, precios y documentación   pregúntenos lo que necesite",
-      "point3": "Una línea directa a nuestro equipo comercial",
+      "point1": "Respuesta en un día hábil",
+      "point2": "Especificaciones del producto, precios, muestras y documentación",
+      "point3": "Soporte dedicado para sus consultas de exportación",
       "reassurance": "Normalmente respondemos en 1 día hábil · Sin compromiso.",
       "successHeading": "Mensaje enviado.",
       "successBody": "Gracias. Nuestro equipo revisará su mensaje y le responderá   habitualmente en un día hábil."
@@ -571,13 +527,13 @@
     },
     "hero": {
       "eyebrow": "Capacidades",
-      "heading": "Soporte comercial desde la necesidad hasta el envío.",
-      "body": "Traya ayuda a los compradores a abastecerse de productos desde India y a coordinar los pasos que hacen que un pedido de exportación funcione: conversaciones con proveedores, especificaciones, empaque, documentos, condiciones comerciales y actualizaciones de envío."
+      "heading": "Apoyo a Empresas",
+      "body": "Nuestro creciente portafolio de productos nos permite atender una amplia gama de industrias con productos que satisfacen las exigencias cambiantes del mercado y los estándares de calidad internacionales.",
+      "headingAccent": "en Diversos Sectores"
     },
     "industries": {
       "eyebrow": "Industrias a las que Servimos",
-      "heading": "Impulsando Industrias en Todo el Mundo",
-      "sub": "Nuestro portafolio en expansión nos permite dar servicio a una amplia gama de industrias con productos que cumplen con los requisitos cambiantes del mercado y las expectativas internacionales de calidad.",
+      "heading": "A Través de Industrias. A Través de Fronteras.",
       "i1Title": "Farmacéutica y Nutracéutica",
       "i1Body": "Ingredientes funcionales, excipientes y materias primas centradas en la salud.",
       "i2Title": "Alimentos y Bebidas",
@@ -596,18 +552,24 @@
       "i8Body": "Químicos especializados que dan soporte a diversos procesos industriales."
     },
     "core": {
-      "eyebrow": "Lo que hacemos",
-      "heading": "Capacidades esenciales para compradores internacionales.",
-      "c1Title": "Abastecimiento de productos",
-      "c1Body": "Ayudamos a los compradores a abastecerse de productos Alimentarios y Agro, Químicos, mecánicos, papel y otras necesidades de exportación desde India según las especificaciones, la cantidad y el destino.",
-      "c2Title": "Coordinación con proveedores",
-      "c2Body": "Coordinamos con proveedores idóneos para verificar disponibilidad, grado, empaque, preparación de producción y viabilidad del pedido.",
-      "c3Title": "Soporte de especificación y documentación",
-      "c3Body": "Ayudamos a confirmar las especificaciones, certificados, informes de prueba, documentos comerciales y documentos de exportación requeridos para el producto y el destino.",
-      "c4Title": "Coordinación de empaque y envío",
-      "c4Body": "Revisamos las necesidades de empaque, el modo de envío, los requisitos de destino y los plazos de despacho para que el pedido avance con menos sorpresas.",
-      "c5Title": "Comunicación clara con el comprador",
-      "c5Body": "Mantenemos al comprador informado sobre las opciones disponibles, los detalles pendientes, las condiciones de la cotización, el estado del pedido y los próximos pasos."
+      "eyebrow": "Lo Que Ofrecemos",
+      "heading": "Todo lo que necesita para un comercio global sin complicaciones.",
+      "c1Title": "Abastecimiento Global",
+      "c1Body": "Acceso a un portafolio diverso de productos en múltiples categorías a través de un socio exportador de confianza.",
+      "c2Title": "Garantía de Calidad",
+      "c2Body": "Los productos se verifican según las especificaciones acordadas antes del envío para garantizar consistencia y fiabilidad.",
+      "c3Title": "Documentación de Exportación",
+      "c3Body": "Documentación de exportación precisa, certificados, listas de empaque, facturas y documentos de cumplimiento para un comercio internacional sin complicaciones.",
+      "c4Title": "Flete y Logística",
+      "c4Body": "Opciones de transporte marítimo, aéreo y por mensajería adaptadas al tamaño, la urgencia y el destino del envío.",
+      "c5Title": "Soluciones de Embalaje",
+      "c5Body": "Embalaje adaptado a los requisitos del producto y a las normas internacionales de envío.",
+      "c6Title": "Alcance Mundial",
+      "c6Body": "Atendemos a clientes en todo el mundo mediante un comercio internacional confiable.",
+      "c7Title": "Condiciones Comerciales Flexibles",
+      "c7Body": "Condiciones comerciales y arreglos de envío adaptados a las necesidades de su negocio.",
+      "c8Title": "Soporte Dedicado",
+      "c8Body": "Comunicación receptiva desde la consulta hasta el envío y la asistencia posterior a la entrega."
     },
     "foundations": {
       "eyebrow": "Cómo operamos",
@@ -629,14 +591,19 @@
       "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya   499 productos en 30 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
     },
     "hub": {
-      "eyebrow": "Catálogo Alimentario y Agro",
-      "heading": "Encuentre los productos que desea abastecer desde India.",
-      "sub": "Explore nuestros productos Alimentarios, Agro y Químicos listados por categoría. Para productos mecánicos, papel, o cualquier producto que no aparezca aquí, envíenos su necesidad y revisaremos las opciones de abastecimiento disponibles.",
-      "spec": "6 grupos · 30 categorías · 499 productos listados",
+      "eyebrow": "Nuestro Portafolio de Productos",
+      "heading": "Encuentre los productos",
+      "sub": "Explore nuestro diverso portafolio de productos en múltiples categorías. ¿Busca un producto que no aparece aquí? Envíenos su requerimiento y nos pondremos en contacto con usted.",
+      "spec": "Portafolio de productos diverso · Multicategoría · Más de 500 productos listados",
       "search": "Buscar productos o categorías...",
-      "all": "Todos",
       "noResults": "Ningún producto coincide con su búsqueda.",
-      "downloadCatalogue": "Descargar catálogo completo (PDF)"
+      "downloadCatalogue": "Descargar catálogo completo (PDF)",
+      "headingAccent": "que desea abastecer desde India.",
+      "category": "categoría",
+      "categories": "categorías",
+      "allCategories": "Todas las categorías",
+      "allCategoriesSub": "Todos los grupos",
+      "groupLabel": "Grupo"
     },
     "list": {
       "form": "Forma",

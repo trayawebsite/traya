@@ -2,6 +2,13 @@ import {NextResponse} from 'next/server';
 import {rateLimit, getClientIp} from '@/lib/rate-limit';
 import {buildKnowledgeBase, buildSystemPrompt} from '@/lib/chatbot/knowledge';
 import {getProductBySlug, getCategoryBySlug} from '@/lib/catalogue';
+import {routing} from '@/i18n/routing';
+
+// Strips any non-default locale prefix (/de, /ar, …) so path matching below is
+// locale-agnostic. next-intl's usePathname usually strips it already; this is a
+// defensive belt-and-braces so all 17 locales resolve page context, not just en.
+const NON_DEFAULT_LOCALES = routing.locales.filter((l) => l !== routing.defaultLocale);
+const LOCALE_PREFIX = new RegExp(`^/(${NON_DEFAULT_LOCALES.join('|')})(?=/|$)`);
 
 // Node runtime   the knowledge base reads the catalogue/site-settings (fs + Sanity).
 export const runtime = 'nodejs';
@@ -19,7 +26,7 @@ type ChatMessage = {role: 'user' | 'assistant'; content: string};
 // are page-aware. Uses the data layer to resolve product/category slugs to names.
 async function pageContextFrom(path?: string): Promise<string | undefined> {
   if (!path) return undefined;
-  const clean = path.replace(/^\/(ar|fr)(?=\/|$)/, '') || '/';
+  const clean = path.replace(LOCALE_PREFIX, '') || '/';
 
   const product = clean.match(/^\/products\/([^/]+)$/);
   if (product) {
@@ -60,7 +67,12 @@ export async function POST(req: Request) {
   }
 
   const messages = Array.isArray(body.messages) ? body.messages : [];
-  const locale = body.locale === 'ar' || body.locale === 'fr' ? body.locale : 'en';
+  // Accept any supported locale so the model replies in the buyer's language
+  // (Gemini is multilingual); fall back to English for anything unrecognised.
+  const locale =
+    typeof body.locale === 'string' && (routing.locales as readonly string[]).includes(body.locale)
+      ? body.locale
+      : 'en';
   const last = messages[messages.length - 1];
 
   if (!last || last.role !== 'user' || typeof last.content !== 'string' || !last.content.trim()) {

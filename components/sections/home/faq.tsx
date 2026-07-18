@@ -37,7 +37,10 @@ export async function Faq({ data }: { data?: FaqData }) {
         <div className="mx-auto max-w-2xl text-center">
           <p className="section-label">{eyebrow}</p>
           <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-            {heading}
+            {heading}{" "}
+            <span className="text-traya-red">
+              {t("headingAccent")}
+            </span>
           </h2>
         </div>
 

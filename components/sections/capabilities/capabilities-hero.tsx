@@ -6,6 +6,11 @@ import { PageHero } from "@/components/ui/page-hero";
 export async function CapabilitiesHero() {
   const t = await getTranslations("Capabilities.hero");
   return (
-    <PageHero eyebrow={t("eyebrow")} heading={t("heading")} sub={t("body")} />
+    <PageHero
+      eyebrow={t("eyebrow")}
+      heading={t("heading")}
+      headingAccent={t("headingAccent")}
+      sub={t("body")}
+    />
   );
 }

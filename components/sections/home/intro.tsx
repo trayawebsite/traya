@@ -1,16 +1,16 @@
-import { getTranslations } from "next-intl/server";
 import Image from "next/image";
+import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/container";
 import { IconChip } from "@/components/ui/icon-chip";
 import type { HomePage } from "@/sanity/lib/types";
 
 type IntroData = HomePage["intro"];
 
-// "How Traya helps"   split hero-style band: narrative on the left, a reserved
-// slot for the world-map artwork on the right (client to supply), and the three
-// service pillars in a divided row underneath.
+// "How Traya helps"   split hero-style band: narrative on the left, the
+// trade-route world map on the right, and the three service pillars in a
+// divided row underneath.
 const FEATURE_ICONS = [
-  // Product sourcing   globe
+  // Product sourcing   package (reads as "products" more directly than a globe)
   <svg
     key="0"
     viewBox="0 0 24 24"
@@ -22,9 +22,9 @@ const FEATURE_ICONS = [
     className="size-5"
     aria-hidden="true"
   >
-    <circle cx="12" cy="12" r="10" />
-    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
-    <path d="M2 12h20" />
+    <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73Z" />
+    <path d="m3.3 7 8.7 5 8.7-5" />
+    <path d="M12 22V12" />
   </svg>,
   // Export documentation   document with lines
   <svg
@@ -44,7 +44,8 @@ const FEATURE_ICONS = [
     <path d="M16 13H8" />
     <path d="M16 17H8" />
   </svg>,
-  // Shipment support   ship
+  // Shipment support   delivery truck (reads clearly at small size, unlike a
+  // detailed ship silhouette)
   <svg
     key="2"
     viewBox="0 0 24 24"
@@ -56,11 +57,11 @@ const FEATURE_ICONS = [
     className="size-5"
     aria-hidden="true"
   >
-    <path d="M12 10.189V14" />
-    <path d="M12 2v3" />
-    <path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6" />
-    <path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 1.62 6" />
-    <path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" />
+    <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" />
+    <path d="M15 18H9" />
+    <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14v10" />
+    <circle cx="17" cy="18" r="2" />
+    <circle cx="7" cy="18" r="2" />
   </svg>,
 ];
 
@@ -118,17 +119,16 @@ export async function Intro({ data }: { data?: IntroData }) {
             </ul>
           </div>
 
-          {/* Global-reach map (decorative)   fills the right column's height */}
-          <div
-            aria-hidden
-            className="relative hidden min-h-96 lg:col-span-5 lg:block lg:self-stretch"
-          >
+          {/* Trade-route world map (decorative)   fills the right column */}
+          <div className="hidden lg:col-span-5 lg:flex lg:items-center lg:justify-center lg:self-stretch">
             <Image
-              src="/home/global-reach.webp"
+              src="/trade-map-relief.webp"
               alt=""
-              fill
-              sizes="(min-width: 1024px) 40vw, 100vw"
-              className="object-contain"
+              aria-hidden="true"
+              width={1536}
+              height={1024}
+              sizes="(min-width: 1024px) 42vw, 100vw"
+              className="h-auto w-full"
             />
           </div>
         </div>

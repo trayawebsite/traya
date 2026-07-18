@@ -24,7 +24,7 @@ export async function FounderLetter({ data }: { data?: Founder }) {
   return (
     <section className="bg-traya-deep text-traya-cream">
       <Container className="py-section-lg">
-        <div className="mx-auto grid max-w-5xl items-start gap-12 lg:grid-cols-[0.4fr_0.6fr] lg:gap-16">
+        <div className="mx-auto grid max-w-5xl items-center gap-12 lg:grid-cols-[0.4fr_0.6fr] lg:gap-16">
           <Photo
             src={photoSrc}
             alt={name}
@@ -34,7 +34,7 @@ export async function FounderLetter({ data }: { data?: Founder }) {
           />
 
           <div>
-            <p className="section-label on-dark">{t("eyebrow")}</p>
+            <h2 className="text-balance font-display text-display-sm text-traya-cream lg:text-display">{t("eyebrow")}</h2>
 
             <div className="mt-6 space-y-4 leading-relaxed text-traya-cream/75">
               {paragraphs.map((p, i) => (
@@ -42,10 +42,12 @@ export async function FounderLetter({ data }: { data?: Founder }) {
               ))}
             </div>
 
-            <p className="mt-8 border-t border-traya-cream/15 pt-6 text-sm">
-              <span className="font-medium text-traya-cream">{name}</span>
-              <span className="text-traya-cream/60"> · {title}</span>
-            </p>
+            {/* Signature block   name as the byline, role as a small tracked
+                caption beneath (an editorial signature, not a repeated label) */}
+            <div className="mt-8 border-t border-traya-cream/15 pt-6">
+              <p className="font-display text-2xl text-traya-cream sm:text-3xl">{name}</p>
+              <p className="mt-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-traya-saffron">{title}</p>
+            </div>
           </div>
         </div>
       </Container>

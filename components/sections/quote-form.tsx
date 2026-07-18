@@ -14,6 +14,7 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { makeQuoteSchema, type QuoteInput } from "@/lib/validations";
 import { primaryButton } from "@/lib/button-styles";
+import { useHoneypot } from "@/components/ui/honeypot";
 import { TestimonialCarousel } from "@/components/ui/testimonial-carousel";
 import {
   User,
@@ -55,6 +56,7 @@ export function QuoteForm({
     () => makeQuoteSchema(tv).extend({ purpose: z.enum(["quote", "sample"]) }),
     [tv],
   );
+  const honeypot = useHoneypot();
   const [submitted, setSubmitted] = useState(false);
   const {
     register,
@@ -73,14 +75,21 @@ export function QuoteForm({
     },
   });
 
-  // Preselect "sample" when arrived via a Request-a-Sample link (?intent=sample).
+  // Apply "?intent=sample" (preselect sample) and "?product=…" (per-SKU
+  // attribution) from category enquire links. Both write into the form via
+  // RHF setValue (not React state), so there's no setState-in-effect.
   useEffect(() => {
-    const intent = new URLSearchParams(window.location.search).get("intent");
-    if (intent === "sample") setValue("purpose", "sample");
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("intent") === "sample") setValue("purpose", "sample");
+    const product = params.get("product");
+    if (product) setValue("productName", product);
   }, [setValue]);
 
   const purpose = useWatch({ control, name: "purpose" });
   const isSample = purpose === "sample";
+  // Effective product label: the live "productName" form value (the prop by
+  // default, or a per-SKU "?product=" applied above) → badge + heading.
+  const displayName = useWatch({ control, name: "productName" });
 
   function onInvalid(errs: Record<string, unknown>) {
     const first = Object.keys(errs)[0];
@@ -96,7 +105,7 @@ export function QuoteForm({
       const res = await fetch("/api/quote", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...rest, message }),
+        body: JSON.stringify({ ...rest, message, website: honeypot.getValue() }),
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
@@ -145,16 +154,17 @@ export function QuoteForm({
       <form
         onSubmit={handleSubmit(onSubmit, onInvalid)}
         noValidate
-        className="max-w-2xl rounded-2xl border border-traya-border bg-card px-5 py-6 shadow-sm sm:px-6 sm:py-8"
+        className="relative max-w-2xl rounded-2xl border border-traya-border bg-card px-5 py-6 shadow-sm sm:px-6 sm:py-8"
       >
-        {productName && (
+        {honeypot.field}
+        {displayName && (
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-traya-border bg-traya-surface px-3.5 py-1.5 text-xs font-medium text-foreground/80">
             <Package
               className="size-3.5 text-traya-saffron-lo"
               aria-hidden="true"
             />
             {t("quotingFor")}{" "}
-            <span className="font-semibold text-foreground">{productName}</span>
+            <span className="font-semibold text-foreground">{displayName}</span>
           </div>
         )}
 
@@ -189,11 +199,11 @@ export function QuoteForm({
 
         <h2 className="mt-5 font-display text-display-sm text-foreground">
           {isSample
-            ? productName
-              ? t("sampleHeadingFor", { name: productName })
+            ? displayName
+              ? t("sampleHeadingFor", { name: displayName })
               : t("sampleHeading")
-            : productName
-              ? t("headingFor", { name: productName })
+            : displayName
+              ? t("headingFor", { name: displayName })
               : t("heading")}
         </h2>
         <p className="mt-3 leading-relaxed text-muted-foreground">
