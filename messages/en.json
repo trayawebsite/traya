@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Products",
-      "description": "Browse Traya's Food, Agro & Chemicals catalogue   499 products across 30 categories, from dehydrated ingredients and spices to reactive dyes, food colours and pigments. For mechanical products, paper, or other export requirements, send us your specifications."
+      "description": "Browse Traya's Food, Agro & Chemicals catalogue   450+ products across 28 categories, from dehydrated ingredients and spices to reactive dyes, food colours and pigments. For mechanical products, paper, or other export requirements, send us your specifications."
     },
     "hub": {
       "eyebrow": "Our Product Portfolio",
@@ -653,7 +653,11 @@
       "siblingHeading": "Related categories",
       "downloadCta": "Download category spec sheet",
       "closingCta": "Ready to source from this category?",
-      "closingSub": "Share your product requirement, quantity, and destination. Our team will review and respond with available options, specifications, and pricing."
+      "closingSub": "Share your product requirement, quantity, and destination. Our team will review and respond with available options, specifications, and pricing.",
+      "specMoqValChem": "Starting from 500 kg",
+      "specPackagingValChem": "25 kg HDPE bags, fibre drums, paper bags & custom export packaging",
+      "specDocs": "Documents",
+      "specDocsVal": "COA, TDS, MSDS on request"
     },
     "detail": {
       "eyebrow": "Product",

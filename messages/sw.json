@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Bidhaa",
-      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali   bidhaa 499 katika kategoria 30, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
+      "description": "Vinjari katalogi ya Traya ya Chakula, Kilimo na Kemikali   bidhaa 450+ katika kategoria 28, kutoka viambato vilivyokaushwa na viungo hadi rangi za reactive, rangi za chakula na pigmenti. Kwa bidhaa za mitambo, karatasi, au mahitaji mengine ya usafirishaji, tutumie vipimo vyako."
     },
     "hub": {
       "eyebrow": "Mkusanyiko Wetu wa Bidhaa",
@@ -653,7 +653,11 @@
       "siblingHeading": "Kategoria Zinazohusiana",
       "downloadCta": "Pakua karatasi ya vipimo ya kategoria",
       "closingCta": "Uko tayari kutafuta bidhaa kutoka kategoria hii?",
-      "closingSub": "Shirikisha mahitaji yako ya bidhaa, kiasi, na eneo lengwa. Timu yetu itapitia na kujibu na chaguzi zinazopatikana, vipimo, na bei."
+      "closingSub": "Shirikisha mahitaji yako ya bidhaa, kiasi, na eneo lengwa. Timu yetu itapitia na kujibu na chaguzi zinazopatikana, vipimo, na bei.",
+      "specMoqValChem": "Kuanzia kg 500",
+      "specPackagingValChem": "Mifuko ya HDPE ya kg 25, mapipa ya nyuzi, mifuko ya karatasi na ufungashaji maalum wa kuuza nje",
+      "specDocs": "Nyaraka",
+      "specDocsVal": "COA, TDS, MSDS kwa ombi"
     },
     "detail": {
       "eyebrow": "Bidhaa",

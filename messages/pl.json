@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produkty",
-      "description": "Przeglądaj katalog Traya obejmujący żywność, produkty rolne i chemikalia   499 produktów w 30 kategoriach, od suszonych składników i przypraw po barwniki reaktywne, barwniki spożywcze i pigmenty. W przypadku produktów mechanicznych, papieru lub innych zapytań eksportowych prześlij nam swoją specyfikację."
+      "description": "Przeglądaj katalog Traya obejmujący żywność, produkty rolne i chemikalia   450+ produktów w 28 kategoriach, od suszonych składników i przypraw po barwniki reaktywne, barwniki spożywcze i pigmenty. W przypadku produktów mechanicznych, papieru lub innych zapytań eksportowych prześlij nam swoją specyfikację."
     },
     "hub": {
       "eyebrow": "Nasze Portfolio Produktów",
@@ -653,7 +653,11 @@
       "siblingHeading": "Powiązane kategorie",
       "downloadCta": "Pobierz kartę specyfikacji kategorii",
       "closingCta": "Gotowi na pozyskanie towarów z tej kategorii?",
-      "closingSub": "Podaj swoje zapotrzebowanie na produkt, ilość i miejsce docelowe. Nasz zespół przeanalizuje zapytanie i odpowie z dostępnymi opcjami, specyfikacjami oraz cenami."
+      "closingSub": "Podaj swoje zapotrzebowanie na produkt, ilość i miejsce docelowe. Nasz zespół przeanalizuje zapytanie i odpowie z dostępnymi opcjami, specyfikacjami oraz cenami.",
+      "specMoqValChem": "Od 500 kg",
+      "specPackagingValChem": "Worki HDPE 25 kg, bębny włókniste, worki papierowe i niestandardowe opakowania eksportowe",
+      "specDocs": "Dokumenty",
+      "specDocsVal": "COA, TDS, MSDS na życzenie"
     },
     "detail": {
       "eyebrow": "Produkt",

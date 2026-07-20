@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produkte",
-      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya   499 Produkte in 30 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
+      "description": "Durchstöbern Sie den Lebensmittel-, Agrar- & Chemikalienkatalog von Traya   450+ Produkte in 28 Kategorien, von dehydrierten Zutaten und Gewürzen bis hin zu Reaktivfarbstoffen, Lebensmittelfarben und Pigmenten. Für mechanische Produkte, Papier oder andere Exportanforderungen senden Sie uns Ihre Spezifikationen."
     },
     "hub": {
       "eyebrow": "Unser Produktportfolio",
@@ -653,7 +653,11 @@
       "siblingHeading": "Verwandte Kategorien",
       "downloadCta": "Kategorie-Datenblatt herunterladen",
       "closingCta": "Bereit, aus dieser Kategorie zu beziehen?",
-      "closingSub": "Teilen Sie uns Ihren Produktbedarf, die Menge und das Zielland mit. Unser Team prüft dies und antwortet mit verfügbaren Optionen, Spezifikationen und Preisen."
+      "closingSub": "Teilen Sie uns Ihren Produktbedarf, die Menge und das Zielland mit. Unser Team prüft dies und antwortet mit verfügbaren Optionen, Spezifikationen und Preisen.",
+      "specMoqValChem": "Ab 500 kg",
+      "specPackagingValChem": "25-kg-HDPE-Säcke, Faserfässer, Papiersäcke & individuelle Exportverpackung",
+      "specDocs": "Dokumente",
+      "specDocsVal": "COA, TDS, MSDS auf Anfrage"
     },
     "detail": {
       "eyebrow": "Produkt",

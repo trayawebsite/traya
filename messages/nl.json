@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Producten",
-      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën   499 producten in 30 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
+      "description": "Blader door Traya's catalogus Voeding, Agro & Chemicaliën   450+ producten in 28 categorieën, van gedroogde ingrediënten en specerijen tot reactieve kleurstoffen, voedingskleurstoffen en pigmenten. Stuur ons uw specificaties voor mechanische producten, papier of andere exportbehoeften."
     },
     "hub": {
       "eyebrow": "Ons Productportfolio",
@@ -653,7 +653,11 @@
       "siblingHeading": "Gerelateerde categorieën",
       "downloadCta": "Download specificatieblad categorie",
       "closingCta": "Klaar om te sourcen uit deze categorie?",
-      "closingSub": "Deel uw productbehoefte, hoeveelheid en bestemming. Ons team beoordeelt dit en reageert met beschikbare opties, specificaties en prijzen."
+      "closingSub": "Deel uw productbehoefte, hoeveelheid en bestemming. Ons team beoordeelt dit en reageert met beschikbare opties, specificaties en prijzen.",
+      "specMoqValChem": "Vanaf 500 kg",
+      "specPackagingValChem": "25 kg HDPE-zakken, vezelvaten, papieren zakken & aangepaste exportverpakking",
+      "specDocs": "Documenten",
+      "specDocsVal": "COA, TDS, MSDS op aanvraag"
     },
     "detail": {
       "eyebrow": "Product",

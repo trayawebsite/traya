@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { siteConfig } from "@/lib/site-config";
@@ -38,9 +39,19 @@ export function SiteHeader() {
         <Link
           href="/"
           aria-label={th("siteLabel")}
-          className="rounded-sm font-display text-lg font-semibold tracking-wide text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="flex items-center gap-2.5 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
-          TRAYA
+          <Image
+            src="/logo-mark.webp"
+            alt=""
+            width={34}
+            height={34}
+            priority
+            className="size-8 w-auto"
+          />
+          <span className="font-display text-lg font-semibold tracking-wide text-foreground">
+            TRAYA
+          </span>
         </Link>
 
         <NavDesktop

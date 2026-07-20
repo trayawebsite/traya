@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Produk",
-      "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya   499 produk di 30 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
+      "description": "Jelajahi katalog Pangan, Agro & Bahan Kimia Traya   450+ produk di 28 kategori, mulai dari bahan dehidrasi dan rempah hingga pewarna reaktif, pewarna makanan, dan pigmen. Untuk produk mekanis, kertas, atau kebutuhan ekspor lainnya, kirimkan spesifikasi Anda kepada kami."
     },
     "hub": {
       "eyebrow": "Portofolio Produk Kami",
@@ -653,7 +653,11 @@
       "siblingHeading": "Kategori terkait",
       "downloadCta": "Unduh lembar spesifikasi kategori",
       "closingCta": "Siap melakukan pengadaan dari kategori ini?",
-      "closingSub": "Bagikan kebutuhan produk, jumlah, dan tujuan Anda. Tim kami akan meninjau dan menanggapi dengan opsi yang tersedia, spesifikasi, dan harga."
+      "closingSub": "Bagikan kebutuhan produk, jumlah, dan tujuan Anda. Tim kami akan meninjau dan menanggapi dengan opsi yang tersedia, spesifikasi, dan harga.",
+      "specMoqValChem": "Mulai dari 500 kg",
+      "specPackagingValChem": "Kantong HDPE 25 kg, drum serat, kantong kertas & kemasan ekspor khusus",
+      "specDocs": "Dokumen",
+      "specDocsVal": "COA, TDS, MSDS berdasarkan permintaan"
     },
     "detail": {
       "eyebrow": "Produk",

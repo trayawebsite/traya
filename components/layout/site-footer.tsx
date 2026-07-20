@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/container";
 import { siteConfig } from "@/lib/site-config";
@@ -91,9 +92,15 @@ export async function SiteFooter() {
           <Link
             href="/"
             aria-label={`${siteConfig.name}   home`}
-            className="rounded-sm font-display text-lg font-medium tracking-wide text-traya-cream uppercase sm:text-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi"
+            className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi"
           >
-            {siteConfig.name}
+            <Image
+              src="/logo-light.webp"
+              alt={siteConfig.name}
+              width={173}
+              height={220}
+              className="h-24 w-auto sm:h-28"
+            />
           </Link>
           <ScrollToTop />
         </div>

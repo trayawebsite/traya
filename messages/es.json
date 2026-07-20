@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Productos",
-      "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya   499 productos en 30 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
+      "description": "Explore el catálogo de Alimentos, Agro y Químicos de Traya   450+ productos en 28 categorías, desde ingredientes deshidratados y especias hasta colorantes reactivos, colorantes alimentarios y pigmentos. Para productos mecánicos, papel u otras necesidades de exportación, envíenos sus especificaciones."
     },
     "hub": {
       "eyebrow": "Nuestro Portafolio de Productos",
@@ -653,7 +653,11 @@
       "siblingHeading": "Categorías relacionadas",
       "downloadCta": "Descargar ficha técnica de la categoría",
       "closingCta": "¿Listo para abastecerse de esta categoría?",
-      "closingSub": "Comparta su necesidad de producto, cantidad y destino. Nuestro equipo revisará y responderá con las opciones disponibles, especificaciones y precios."
+      "closingSub": "Comparta su necesidad de producto, cantidad y destino. Nuestro equipo revisará y responderá con las opciones disponibles, especificaciones y precios.",
+      "specMoqValChem": "Desde 500 kg",
+      "specPackagingValChem": "Sacos HDPE de 25 kg, tambores de fibra, sacos de papel y embalaje de exportación personalizado",
+      "specDocs": "Documentos",
+      "specDocsVal": "COA, TDS, MSDS a pedido"
     },
     "detail": {
       "eyebrow": "Producto",

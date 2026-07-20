@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Ürünler",
-      "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın   30 kategoride 499 ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
+      "description": "Traya'nın Gıda, Tarım ve Kimyasallar kataloğuna göz atın   28 kategoride 450+ ürün, dehidre bileşenlerden ve baharatlardan reaktif boyalara, gıda renklendiricilerine ve pigmentlere kadar. Mekanik ürünler, kağıt veya diğer ihracat ihtiyaçları için teknik özelliklerinizi bize gönderin."
     },
     "hub": {
       "eyebrow": "Ürün Portföyümüz",
@@ -653,7 +653,11 @@
       "siblingHeading": "İlgili kategoriler",
       "downloadCta": "Kategori teknik özellik föyünü indirin",
       "closingCta": "Bu kategoriden tedarik yapmaya hazır mısınız?",
-      "closingSub": "Ürün ihtiyacınızı, miktarınızı ve varış noktanızı paylaşın. Ekibimiz inceleyip mevcut seçenekler, teknik özellikler ve fiyatlandırma ile yanıt verecektir."
+      "closingSub": "Ürün ihtiyacınızı, miktarınızı ve varış noktanızı paylaşın. Ekibimiz inceleyip mevcut seçenekler, teknik özellikler ve fiyatlandırma ile yanıt verecektir.",
+      "specMoqValChem": "500 kg'dan itibaren",
+      "specPackagingValChem": "25 kg HDPE torbalar, fiber variller, kağıt torbalar ve özel ihracat ambalajı",
+      "specDocs": "Belgeler",
+      "specDocsVal": "Talep üzerine COA, TDS, MSDS"
     },
     "detail": {
       "eyebrow": "Ürün",

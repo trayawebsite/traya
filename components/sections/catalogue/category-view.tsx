@@ -44,6 +44,28 @@ export async function CategoryView({
     1;
   const heroImageSrc = `/t${imageIndex}.png`;
 
+  // MOQ / packaging spec rows: Sanity override first, else group-aware defaults.
+  // Per the client's final lists, chemicals carry a firm 500 kg MOQ + export
+  // packaging + compliance docs on the category page; food stays quote-led
+  // (its per-order specs live on each product, not the category header).
+  const isChemicals = category.group === "chemicals";
+  const specRows =
+    category.moqPackaging && category.moqPackaging.length > 0
+      ? category.moqPackaging.map((sp) => ({ label: sp.label, value: sp.value }))
+      : isChemicals
+        ? [
+            { label: t("category.specOrigin"), value: t("category.specOriginVal") },
+            { label: t("category.specMoq"), value: t("category.specMoqValChem") },
+            { label: t("category.specPackaging"), value: t("category.specPackagingValChem") },
+            { label: t("category.specDocs"), value: t("category.specDocsVal") },
+          ]
+        : [
+            { label: t("category.specOrigin"), value: t("category.specOriginVal") },
+            { label: t("category.specMoq"), value: t("category.specMoqVal") },
+            { label: t("category.specPackaging"), value: t("category.specPackagingVal") },
+            { label: t("category.specIncoterms"), value: t("category.specIncotermsVal") },
+          ];
+
   return (
     <>
       <BreadcrumbSchema
@@ -115,31 +137,7 @@ export async function CategoryView({
                 noResults: t("category.noResults"),
               }}
               categoryTitle={category.title}
-              specs={
-                category.moqPackaging && category.moqPackaging.length > 0
-                  ? category.moqPackaging.map((s) => ({
-                      label: s.label,
-                      value: s.value,
-                    }))
-                  : [
-                      {
-                        label: t("category.specOrigin"),
-                        value: t("category.specOriginVal"),
-                      },
-                      {
-                        label: t("category.specMoq"),
-                        value: t("category.specMoqVal"),
-                      },
-                      {
-                        label: t("category.specPackaging"),
-                        value: t("category.specPackagingVal"),
-                      },
-                      {
-                        label: t("category.specIncoterms"),
-                        value: t("category.specIncotermsVal"),
-                      },
-                    ]
-              }
+              specs={specRows}
             />
             <div className="mt-10">
               <a href="#enquiry" className={primaryButton}>
@@ -179,58 +177,21 @@ export async function CategoryView({
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {t("category.specsNote")}
                 </p>
-                {/* MOQ & Packaging from Sanity or defaults */}
+                {/* MOQ & Packaging — group-aware defaults (see specRows above) */}
                 <dl className="mt-4 space-y-2">
-                  {category.moqPackaging && category.moqPackaging.length > 0 ? (
-                    category.moqPackaging.map((spec, i) => (
-                      <div
-                        key={i}
-                        className="flex justify-between border-b border-traya-border pb-2 last:border-0"
-                      >
-                        <dt className="text-sm text-muted-foreground">
-                          {spec.label}
-                        </dt>
-                        <dd className="text-sm font-medium text-foreground">
-                          {spec.value}
-                        </dd>
-                      </div>
-                    ))
-                  ) : (
-                    <>
-                      <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">
-                          {t("category.specOrigin")}
-                        </dt>
-                        <dd className="text-sm font-medium text-foreground">
-                          {t("category.specOriginVal")}
-                        </dd>
-                      </div>
-                      <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">
-                          {t("category.specMoq")}
-                        </dt>
-                        <dd className="text-sm font-medium text-foreground">
-                          {t("category.specMoqVal")}
-                        </dd>
-                      </div>
-                      <div className="flex justify-between border-b border-traya-border pb-2">
-                        <dt className="text-sm text-muted-foreground">
-                          {t("category.specPackaging")}
-                        </dt>
-                        <dd className="text-sm font-medium text-foreground">
-                          {t("category.specPackagingVal")}
-                        </dd>
-                      </div>
-                      <div className="flex justify-between">
-                        <dt className="text-sm text-muted-foreground">
-                          {t("category.specIncoterms")}
-                        </dt>
-                        <dd className="text-sm font-medium text-foreground">
-                          {t("category.specIncotermsVal")}
-                        </dd>
-                      </div>
-                    </>
-                  )}
+                  {specRows.map((spec, i) => (
+                    <div
+                      key={i}
+                      className="flex justify-between border-b border-traya-border pb-2 last:border-0"
+                    >
+                      <dt className="text-sm text-muted-foreground">
+                        {spec.label}
+                      </dt>
+                      <dd className="text-sm font-medium text-foreground">
+                        {spec.value}
+                      </dd>
+                    </div>
+                  ))}
                 </dl>
               </div>
             </div>

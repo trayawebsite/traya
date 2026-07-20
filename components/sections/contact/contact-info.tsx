@@ -80,7 +80,7 @@ export async function ContactInfo() {
             </a>
           </div>
           <Image
-            src="/contact.png"
+            src="/contact.webp"
             alt=""
             aria-hidden="true"
             width={612}

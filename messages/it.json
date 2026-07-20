@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Prodotti",
-      "description": "Sfoglia il catalogo Alimentare, Agro e Chimica di Traya: 499 prodotti in 30 categorie, dagli ingredienti disidratati e le spezie ai coloranti reattivi, ai coloranti alimentari e ai pigmenti. Per prodotti meccanici, carta o altre esigenze di esportazione, inviaci le tue specifiche tecniche."
+      "description": "Sfoglia il catalogo Alimentare, Agro e Chimica di Traya: 450+ prodotti in 28 categorie, dagli ingredienti disidratati e le spezie ai coloranti reattivi, ai coloranti alimentari e ai pigmenti. Per prodotti meccanici, carta o altre esigenze di esportazione, inviaci le tue specifiche tecniche."
     },
     "hub": {
       "eyebrow": "Il Nostro Portafoglio Prodotti",
@@ -653,7 +653,11 @@
       "siblingHeading": "Categorie correlate",
       "downloadCta": "Scarica la scheda tecnica della categoria",
       "closingCta": "Pronto ad approvvigionarti da questa categoria?",
-      "closingSub": "Condividi la tua esigenza di prodotto, la quantità e la destinazione. Il nostro team esaminerà la richiesta e risponderà con le opzioni disponibili, le specifiche tecniche e i prezzi."
+      "closingSub": "Condividi la tua esigenza di prodotto, la quantità e la destinazione. Il nostro team esaminerà la richiesta e risponderà con le opzioni disponibili, le specifiche tecniche e i prezzi.",
+      "specMoqValChem": "A partire da 500 kg",
+      "specPackagingValChem": "Sacchi HDPE da 25 kg, fusti in fibra, sacchi di carta e imballaggio da esportazione personalizzato",
+      "specDocs": "Documenti",
+      "specDocsVal": "COA, TDS, MSDS su richiesta"
     },
     "detail": {
       "eyebrow": "Prodotto",

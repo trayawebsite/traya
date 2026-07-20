@@ -1,4 +1,5 @@
 import {getTranslations} from 'next-intl/server';
+import Image from 'next/image';
 import {Container} from '@/components/ui/container';
 import {Photo} from '@/components/sections/home/photo';
 import type {AboutPage} from '@/sanity/lib/types';
@@ -16,6 +17,14 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
         <div className="grid items-center gap-10 lg:grid-cols-[0.55fr_0.45fr] lg:gap-16">
           {/* Left — editorial text */}
           <div className="order-1 lg:order-1">
+            <Image
+              src="/logo.webp"
+              alt="Traya International Exim LLP"
+              width={150}
+              height={191}
+              priority
+              className="mb-7 h-20 w-auto sm:h-24"
+            />
             <p className="section-label">{t('eyebrow')}</p>
             <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
               {heading}{" "}
@@ -33,7 +42,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
           {/* Right — photograph, full-bleed to the right edge */}
           <div className="order-2 lg:order-2">
             <Photo
-              src="/exim.png"
+              src="/exim.webp"
               alt="Container ships and cranes at an international shipping port"
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"

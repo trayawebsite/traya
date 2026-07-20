@@ -588,7 +588,7 @@
   "Catalogue": {
     "meta": {
       "title": "Sản phẩm",
-      "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya   499 sản phẩm trên 30 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
+      "description": "Khám phá catalogue Thực phẩm, Nông sản & Hóa chất của Traya   450+ sản phẩm trên 28 danh mục, từ nguyên liệu sấy khô và gia vị đến thuốc nhuộm hoạt tính, phẩm màu thực phẩm và bột màu. Đối với sản phẩm cơ khí, giấy hoặc các yêu cầu xuất khẩu khác, hãy gửi cho chúng tôi thông số kỹ thuật của bạn."
     },
     "hub": {
       "eyebrow": "Danh Mục Sản Phẩm Của Chúng Tôi",
@@ -653,7 +653,11 @@
       "siblingHeading": "Danh mục liên quan",
       "downloadCta": "Tải bảng thông số kỹ thuật danh mục",
       "closingCta": "Sẵn sàng tìm nguồn hàng từ danh mục này?",
-      "closingSub": "Chia sẻ yêu cầu sản phẩm, số lượng và điểm đến của bạn. Đội ngũ của chúng tôi sẽ xem xét và phản hồi với các phương án khả dụng, thông số kỹ thuật và giá cả."
+      "closingSub": "Chia sẻ yêu cầu sản phẩm, số lượng và điểm đến của bạn. Đội ngũ của chúng tôi sẽ xem xét và phản hồi với các phương án khả dụng, thông số kỹ thuật và giá cả.",
+      "specMoqValChem": "Từ 500 kg",
+      "specPackagingValChem": "Bao HDPE 25 kg, thùng sợi, bao giấy & đóng gói xuất khẩu tùy chỉnh",
+      "specDocs": "Tài liệu",
+      "specDocsVal": "COA, TDS, MSDS theo yêu cầu"
     },
     "detail": {
       "eyebrow": "Sản phẩm",
