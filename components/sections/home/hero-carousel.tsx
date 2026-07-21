@@ -4,7 +4,7 @@ import Image from "next/image";
 // list the actual file numbers). Loop timing derives from the count so the
 // crossfade stays seamless when images are added/removed   keep ≥6.
 const SLIDE_SECONDS = 3.5;
-const IMAGES = [1, 2, 3, 4, 7, 8].map((n) => `/home/t${n}.png`);
+const IMAGES = [1, 2, 3, 4, 7, 8].map((n) => `/home/t${n}.webp`);
 const LOOP_SECONDS = IMAGES.length * SLIDE_SECONDS;
 
 export function HeroCarousel({ className = "" }: { className?: string }) {

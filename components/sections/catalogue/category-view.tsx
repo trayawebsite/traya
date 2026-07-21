@@ -35,14 +35,14 @@ export async function CategoryView({
   // Fetch certifications
   const s = await getSiteSettings();
 
-  // Deterministic image assignment (t1.png to t5.png)
+  // Deterministic image assignment (t1.webp to t5.webp)
   const imageIndex =
     (category.title
       .split("")
       .reduce((acc, char) => acc + char.charCodeAt(0), 0) %
       5) +
     1;
-  const heroImageSrc = `/t${imageIndex}.png`;
+  const heroImageSrc = `/t${imageIndex}.webp`;
 
   // MOQ / packaging spec rows: Sanity override first, else group-aware defaults.
   // Per the client's final lists, chemicals carry a firm 500 kg MOQ + export

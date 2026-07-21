@@ -1,7 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Container } from "@/components/ui/container";
 import { IconChip } from "@/components/ui/icon-chip";
-import { NetworkGlobe } from "@/components/ui/network-globe";
+import Image from "next/image";
 import type { AboutPage } from "@/sanity/lib/types";
 
 const MISSION_KEYS = ["m1", "m2", "m3", "m4"] as const;
@@ -62,7 +62,14 @@ export async function VisionMission({ data }: { data?: AboutPage | null }) {
             <p className="mt-6 max-w-md leading-relaxed text-muted-foreground">
               {commitment}
             </p>
-            <NetworkGlobe tone="light" className="mt-8 aspect-4/3 w-full max-w-sm" />
+            <Image
+              src="/vision.webp"
+              alt="Global trade network — ocean freight, containers and road transport spanning continents"
+              width={612}
+              height={408}
+              sizes="(min-width: 1024px) 420px, 100vw"
+              className="mt-8 w-full max-w-md"
+            />
           </div>
 
           {/* Mission   right */}
