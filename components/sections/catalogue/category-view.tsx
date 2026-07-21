@@ -11,6 +11,7 @@ import { getSiteSettings } from "@/lib/site-settings";
 import { CertMark } from "@/components/layout/cert-mark";
 import { QuoteForm } from "@/components/sections/quote-form";
 import { BreadcrumbSchema } from "@/components/seo/product-schema";
+import { categoryCutout } from "@/lib/category-covers";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
 
@@ -35,14 +36,16 @@ export async function CategoryView({
   // Fetch certifications
   const s = await getSiteSettings();
 
-  // Deterministic image assignment (t1.webp to t5.webp)
+  // Hero image floats on ivory (object-contain): a category's own transparent
+  // cut-out if it has one, otherwise the shared transparent food image.
+  const cutout = categoryCutout(category.slug);
   const imageIndex =
     (category.title
       .split("")
       .reduce((acc, char) => acc + char.charCodeAt(0), 0) %
       5) +
     1;
-  const heroImageSrc = `/t${imageIndex}.webp`;
+  const heroImageSrc = cutout ?? `/t${imageIndex}.webp`;
 
   // MOQ / packaging spec rows: Sanity override first, else group-aware defaults.
   // Per the client's final lists, chemicals carry a firm 500 kg MOQ + export

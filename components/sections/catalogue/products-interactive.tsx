@@ -5,6 +5,7 @@ import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
 import {Photo} from '@/components/sections/home/photo';
 import {IconChip} from '@/components/ui/icon-chip';
+import {CATEGORY_COVERS} from '@/lib/category-covers';
 
 type Category = {
   title: string;
@@ -15,8 +16,8 @@ type Category = {
 };
 type Group = {key: string; label: string; blurb: string; categories: Category[]};
 
-// One representative photo per browse group (reused across the group's category
-// cards). Uses the shared home-page product imagery.
+// One representative photo per browse group (fallback for categories without a
+// dedicated cover). Uses the shared home-page product imagery.
 const GROUP_IMAGE: Record<string, string> = {
   alliums: '/home/cover-food.webp',
   powders: '/home/tile-powders.webp',
@@ -25,6 +26,12 @@ const GROUP_IMAGE: Record<string, string> = {
   nutraceutical: '/home/tile-nutraceutical.webp',
   chemicals: '/home/cover-chemicals.webp'
 };
+
+// Prefer a category's own cover (CATEGORY_COVERS); fall back to its group photo.
+function categoryImage(cat: Category): string {
+  if (CATEGORY_COVERS.has(cat.slug)) return `/categories/${cat.slug}.webp`;
+  return GROUP_IMAGE[cat.group] ?? '/home/cover-food.webp';
+}
 
 // The 6 underlying browse groups are presented to buyers as 2 top-level ranges
 // (Food & Agro, Chemicals), so the hub opens on a simple choice instead of a
@@ -236,7 +243,7 @@ export function ProductsInteractive({groups}: {groups: Group[]}) {
                       >
                         <div className="relative aspect-[4/3] overflow-hidden">
                           <Photo
-                            src={GROUP_IMAGE[g.key] ?? '/home/cover-food.webp'}
+                            src={categoryImage(cat)}
                             alt={cat.title}
                             sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                             className="h-full w-full"
