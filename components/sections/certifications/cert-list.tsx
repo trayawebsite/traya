@@ -41,34 +41,53 @@ export async function CertList() {
               <li
                 key={`${c.name}-${i}`}
                 data-stagger
-                className="flex flex-col rounded-2xl border border-traya-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-7"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-traya-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-traya-saffron/40 hover:shadow-lg"
               >
-                <div className="flex items-start gap-4">
-                  <span className="inline-flex h-16 w-20 shrink-0 items-center justify-center rounded-xl border border-traya-border bg-white px-3">
-                    <CertMark name={c.name} src={c.file} boost={c.boost} />
-                  </span>
-                  <div className="min-w-0">
-                    <h3 className="font-display text-lg leading-tight text-foreground">
-                      {c.name}
-                    </h3>
-                    {issuedBy && (
-                      <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
-                        {issuedBy}
-                      </p>
-                    )}
+                {/* saffron brand accent */}
+                <span
+                  aria-hidden
+                  className="h-1 w-full bg-linear-to-r from-traya-saffron/80 via-traya-saffron/40 to-transparent"
+                />
+                <div className="flex flex-1 flex-col p-6 sm:p-7">
+                  <div className="flex items-center gap-4">
+                    <span className="inline-flex h-18 w-24 shrink-0 items-center justify-center rounded-xl border border-traya-border bg-white px-3 shadow-sm transition-transform duration-300 group-hover:scale-[1.03]">
+                      <CertMark name={c.name} src={c.file} boost={c.boost} />
+                    </span>
+                    <div className="min-w-0">
+                      <h3 className="font-display text-lg leading-tight text-foreground">
+                        {c.name}
+                      </h3>
+                      {issuedBy && (
+                        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">
+                          {issuedBy}
+                        </p>
+                      )}
+                    </div>
                   </div>
-                </div>
 
-                {meaning && (
-                  <div className="mt-5 flex-1 rounded-xl bg-traya-forest/5 p-4">
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-traya-forest">
-                      {t("meaningLabel")}
-                    </p>
-                    <p className="mt-1.5 text-sm leading-relaxed text-foreground/85">
-                      {meaning}
-                    </p>
-                  </div>
-                )}
+                  {meaning && (
+                    <div className="mt-5 flex-1 rounded-xl border border-traya-forest/10 bg-traya-forest/5 p-4">
+                      <p className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-traya-forest">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="size-3.5"
+                          aria-hidden="true"
+                        >
+                          <path d="M20 6 9 17l-5-5" />
+                        </svg>
+                        {t("meaningLabel")}
+                      </p>
+                      <p className="mt-1.5 text-sm leading-relaxed text-foreground/85">
+                        {meaning}
+                      </p>
+                    </div>
+                  )}
+                </div>
               </li>
             );
           })}

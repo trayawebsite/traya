@@ -35,23 +35,20 @@ export function SiteHeader() {
           : "border-b border-transparent",
       )}
     >
-      <Container className="flex h-16 items-center justify-between gap-4">
+      <Container className="flex h-20 items-center justify-between gap-4">
         <Link
           href="/"
           aria-label={th("siteLabel")}
-          className="flex items-center gap-2.5 rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           <Image
-            src="/logo-mark.webp"
-            alt=""
-            width={34}
-            height={34}
+            src="/logo.webp"
+            alt="Traya International Exim LLP"
+            width={126}
+            height={160}
             priority
-            className="size-8 w-auto"
+            className="h-14 w-auto sm:h-16"
           />
-          <span className="font-display text-lg font-semibold tracking-wide text-foreground">
-            TRAYA
-          </span>
         </Link>
 
         <NavDesktop

@@ -104,13 +104,13 @@ export async function CategoryView({
               )}
             </div>
 
-            <div className="relative hidden aspect-square w-full lg:block lg:col-span-5 xl:col-span-4">
+            <div className="relative mx-auto hidden aspect-square w-full max-w-70 lg:block lg:col-span-5 lg:justify-self-center xl:col-span-4 xl:max-w-80">
               <Image
                 src={heroImageSrc}
                 alt={category.title}
                 fill
                 priority
-                sizes="(min-width: 1024px) 33vw, 100vw"
+                sizes="320px"
                 className="object-contain transition-transform duration-700 ease-expo hover:scale-105"
               />
             </div>

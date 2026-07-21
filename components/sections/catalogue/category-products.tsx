@@ -116,8 +116,10 @@ export function CategoryProductList({
 
       {/* Expandable product rows */}
       {filtered.length > 0 ? (
-        <ul className="mt-6 grid items-start gap-2.5 md:grid-cols-2">
-          {filtered.map((p) => {
+        <div className="mt-6 flex flex-col gap-2.5 md:flex-row md:items-start md:gap-5">
+          {[0, 1].map((col) => (
+            <ul key={col} className="flex flex-1 flex-col gap-2.5">
+              {filtered.filter((_, i) => i % 2 === col).map((p) => {
             const isOpen = open.has(p.slug);
             const isChem = !!(p.series || p.colourIndex || p.packSizes);
             const form = detectForm(p.name);
@@ -278,7 +280,9 @@ export function CategoryProductList({
               </li>
             );
           })}
-        </ul>
+            </ul>
+          ))}
+        </div>
       ) : (
         <div className="mt-12 text-center">
           <p className="text-muted-foreground">{labels.noResults}</p>
