@@ -42,8 +42,8 @@ export default async function AboutPage({
       </Reveal>
       <Reveal>
         <section
-          id="enquiry"
-          className="border-b border-traya-border bg-traya-surface"
+          id="inquiry"
+          className="scroll-mt-32 border-b border-traya-border bg-traya-surface"
         >
           <Container className="py-section">
             <ContactForm />

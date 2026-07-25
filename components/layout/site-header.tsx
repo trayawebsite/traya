@@ -12,7 +12,7 @@ import { useScrolled } from "@/components/hooks/use-scrolled";
 import { NavDesktop } from "./nav-desktop";
 import { NavMobile } from "./nav-mobile";
 import { LanguageSwitcher } from "./language-switcher";
-import { EnquiryBadge } from "@/components/enquiry/enquiry-badge";
+import { InquiryBadge } from "@/components/inquiry/inquiry-badge";
 
 // CONTAINER   resolves labels via i18n, wires behaviour (active route, mobile
 // open/close, sticky elevation). Presentation is token-driven; no animation.
@@ -35,7 +35,12 @@ export function SiteHeader() {
           : "border-b border-transparent",
       )}
     >
-      <Container className="flex h-20 items-center justify-between gap-4">
+      <Container
+        className={cn(
+          "flex items-center justify-between gap-4 transition-[height] duration-300 ease-expo motion-reduce:transition-none",
+          scrolled ? "h-20" : "h-32",
+        )}
+      >
         <Link
           href="/"
           aria-label={th("siteLabel")}
@@ -47,7 +52,10 @@ export function SiteHeader() {
             width={126}
             height={160}
             priority
-            className="h-14 w-auto sm:h-16"
+            className={cn(
+              "w-auto transition-[height] duration-300 ease-expo motion-reduce:transition-none",
+              scrolled ? "h-14 sm:h-16" : "h-24 sm:h-28",
+            )}
           />
         </Link>
 
@@ -58,7 +66,7 @@ export function SiteHeader() {
         />
 
         <div className="flex items-center gap-2">
-          <EnquiryBadge className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
+          <InquiryBadge className="inline-flex items-center gap-1.5 rounded-md px-2 py-1.5 text-sm font-medium text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring" />
           <LanguageSwitcher />
           <Link
             href={siteConfig.cta.href}

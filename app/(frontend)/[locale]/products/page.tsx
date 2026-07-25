@@ -17,14 +17,20 @@ export async function generateMetadata({
   };
 }
 
-// Products hub (/products)   the catalogue entry point. Global Enquiry + Footer
-// from the layout.
+// Products hub (/products)   the catalogue entry point. Global inquiry + Footer
+// from the layout. The optional ?range=food|chemicals opens the hub straight on
+// that range's list (used by category/product breadcrumbs); read on the server
+// so the initial HTML already shows the right tab   no hydration mismatch.
 export default async function ProductsPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: string }>;
+  searchParams: Promise<{ range?: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <ProductsHub />;
+  const { range } = await searchParams;
+  const initialRange = range === "food" || range === "chemicals" ? range : "all";
+  return <ProductsHub initialRange={initialRange} />;
 }

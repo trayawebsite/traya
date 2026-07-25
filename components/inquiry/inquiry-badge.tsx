@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import {useEnquiry} from '@/lib/enquiry-context';
-import {Link} from '@/i18n/navigation';
+import { useInquiry } from "@/lib/inquiry-context";
+import { Link } from "@/i18n/navigation";
 
-export function EnquiryBadge({className = ''}: {className?: string}) {
-  const {count} = useEnquiry();
+export function InquiryBadge({ className = "" }: { className?: string }) {
+  const { count } = useInquiry();
 
   if (count === 0) return null;
 
   return (
-    <Link href="/enquiry" className={className}>
+    <Link href="/inquiry" className={className}>
       <span className="relative">
         <svg
           className="size-5"

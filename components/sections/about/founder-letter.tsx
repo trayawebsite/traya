@@ -30,11 +30,11 @@ export async function FounderLetter({ data }: { data?: Founder }) {
             alt={name}
             dark
             sizes="(min-width: 1024px) 20rem, 100vw"
-            className="mx-auto aspect-4/5 w-full max-w-xs rounded-2xl"
+            className="mx-auto aspect-4/6 w-full max-w-xs rounded-2xl"
           />
 
           <div>
-            <h2 className="text-balance font-display text-display-sm text-traya-cream lg:text-display">{t("eyebrow")}</h2>
+            <h2 className="text-balance font-display text-display-sm uppercase text-traya-cream lg:text-display">{t("eyebrow")}</h2>
 
             <div className="mt-6 space-y-4 leading-relaxed text-traya-cream/75">
               {paragraphs.map((p, i) => (

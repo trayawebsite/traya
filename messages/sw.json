@@ -40,7 +40,7 @@
       "seaBody": "Inafaa zaidi kwa oda kubwa ambapo ufanisi wa gharama ni muhimu. Tunaratibu shehena za FCL (Kontena Kamili) na LCL (Chini ya Kontena Kamili).",
       "airTitle": "Usafirishaji wa anga",
       "airBody": "Kwa mizigo yenye uharaka wa muda au thamani kubwa inayohitaji kusafirishwa haraka na kwa usalama kuvuka mipaka kwa muda mfupi zaidi.",
-      "courierTitle": "Kurier kwa sampuli",
+      "courierTitle": "Kurier",
       "courierBody": "Usafirishaji wa kimataifa kwa njia ya kurier kwa sampuli za bidhaa, ili wanunuzi waweze kutathmini ubora, vipimo, na ufaafu kabla ya kuweka oda kamili.",
       "incoterms": "Incoterms: shehena zinashughulikiwa kwa masharti yanayokufaa. Tunatumia FOB, CIF, na masharti mengine ya kawaida ya kibiashara, yanayokubaliwa mapema, bila utata kuhusu majukumu au gharama. Wasiliana nasi kujua yapi yanayofaa zaidi mahitaji yako."
     },
@@ -53,7 +53,7 @@
       "pillar2": "Kuhakikisha bidhaa zinakidhi viwango vya uzingatiaji wa kanuni za masoko unayofanyia kazi.",
       "pillar3": "Kuchukulia kila oda kama msingi wa uhusiano wa muda mrefu, si muamala wa mara moja.",
       "pillar4": "Kubaki tayari kubadilika na kujibu haraka mahitaji ya biashara yako na mabadiliko ya soko yanapobadilika.",
-      "mapCaption": "Tunahudumia wanunuzi wa kimataifa duniani kote",
+      "mapCaption": "Lango lako la biashara ya kimataifa",
       "mapLabel": "Ahmedabad, India",
       "headingAccent": "tunaweza kukufikia"
     },
@@ -75,7 +75,7 @@
     "send": "Tuma",
     "close": "Funga mazungumzo",
     "whatsappAction": "Zungumza kwenye WhatsApp",
-    "enquiryAction": "Fomu ya ombi",
+    "inquiryAction": "Fomu ya ombi",
     "offline": "Msaidizi wetu amepumzika kidogo. Tutumie ujumbe kwenye WhatsApp na tutakusaidia mara moja.",
     "rateLimited": "Umefikia kikomo cha mazungumzo cha leo. Tutumie ujumbe kwenye WhatsApp na tutakusaidia mara moja.",
     "limitReached": "Hebu tuendelee kwenye WhatsApp kwa jibu la haraka zaidi.",
@@ -95,7 +95,7 @@
     "howWeWork": "Jinsi Tunavyofanya Kazi",
     "certifications": "Vyeti",
     "contact": "Wasiliana Nasi",
-    "enquiry": "Ombi",
+    "inquiry": "Ombi",
     "privacy": "Sera ya Faragha",
     "terms": "Masharti ya Matumizi",
     "breadcrumb": "Njia ya Ukurasa"
@@ -126,10 +126,10 @@
     "requestQuote": "Omba Nukuu ya Bei",
     "downloadCatalogue": "Pakua Katalogi",
     "rights": "Haki zote zimehifadhiwa.",
-    "builtBy": "Imejengwa na Studio Morpheus",
+    "builtBy": "Imejengwa na <link>Studio Morpheus</link>",
     "toTop": "Rudi juu"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "Tuma ombi",
     "heading": "Tuanze",
     "sub": "Shiriki mahitaji yako, na sisi tutashughulikia yaliyobaki.",
@@ -259,7 +259,7 @@
       "heading": "Mshirika wako wa kuaminika wa",
       "sub": "Traya imejitolea kujenga ushirikiano wa kimataifa wa kudumu kupitia imani, kuaminika, na utekelezaji wa kitaalamu. Kwa wigo unaokua wa bidhaa bora, tunasaidia biashara kupitia biashara ya kimataifa kwa ujasiri.",
       "cta": "Gundua Bidhaa",
-      "ctaEnquiry": "Shirikisha mahitaji yako",
+      "ctainquiry": "Shirikisha mahitaji yako",
       "certified": "Imethibitishwa",
       "headingAccent": "kutafuta bidhaa kutoka India."
     },
@@ -336,7 +336,8 @@
       "headingAccent": "ushirikiano wa muda mrefu."
     },
     "testimonials": {
-      "eyebrow": "Wanunuzi Wanasema Nini"
+      "eyebrow": "Wanunuzi Wanasema Nini",
+      "dotLabel": "Ushuhuda {n}"
     },
     "certs": {
       "eyebrow": "Usajili wa Usafirishaji",
@@ -381,7 +382,7 @@
       "headingAccent": "ya Biashara ya Kimataifa"
     },
     "founder": {
-      "eyebrow": "Kwa maneno yake mwenyewe.",
+      "eyebrow": "Ujumbe kutoka kwa Mwanzilishi",
       "name": "Neha Pardeshi",
       "role": "Mwanzilishi na Mkurugenzi Mtendaji",
       "p1": "Dunia haikunifungukia kupitia vitabu   ilinifungukia kupitia safari. Kuchunguza tamaduni mbalimbali, kukutana na watu wa hali tofauti za maisha, na kuona dunia kupitia mitazamo tofauti kuliunda si tu nilivyo, bali pia nilichochagua kujenga.",
@@ -409,8 +410,7 @@
       "m1": "Kutoa bidhaa za ubora wa hali ya juu zinazokidhi kwa uthabiti viwango vya kimataifa na matarajio ya wateja.",
       "m2": "Kujenga ushirikiano wa kudumu unaotokana na imani, uwazi, na mafanikio ya pamoja.",
       "m3": "Kurahisisha biashara ya kimataifa kupitia utekelezaji wa kuaminika, usafirishaji wenye ufanisi, na huduma inayojibu haraka.",
-      "m4": "Kupanua uwepo wetu wa kimataifa kwa kuunda fursa zenye thamani katika masoko ya kimataifa.",
-      "commitment": "Tunajitahidi kujenga ushirikiano wa kudumu unaotokana na imani, kuaminika, na dhamira ya pamoja ya mafanikio ya muda mrefu katika masoko ya kimataifa."
+      "m4": "Kupanua uwepo wetu wa kimataifa kwa kuunda fursa zenye thamani katika masoko ya kimataifa."
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "Wasiliana na Traya International Exim kwa barua pepe, simu, WhatsApp, au fomu ya ombi. Shirikisha mahitaji yako ya bidhaa, kiasi, eneo lengwa, na muda."
     },
     "hero": {
-      "eyebrow": "Wasiliana",
-      "heading": "Wasiliana moja kwa moja na dawati letu la usafirishaji nje.",
-      "body": "Shiriki mahitaji yako hapa chini, au wasiliana nasi moja kwa moja — kila ujumbe unapitiwa binafsi, ukiwa na jibu ndani ya siku moja ya kazi.",
+      "eyebrow": "Wasiliana nasi",
+      "heading": "Hebu tujenge shehena yako inayofuata.",
       "cta": "Tuma mahitaji yako"
     },
     "emailLabel": "Tutumie Barua Pepe",
@@ -431,12 +430,10 @@
     "addressLabel": "Tutembelee",
     "mapCta": "Angalia kwenye ramani",
     "hoursLabel": "Muda wa Kujibu",
-    "hours": "Tunajibu baada ya kupitia mahitaji yako",
+    "hours": "Kila swali linasomwa na kupitiwa binafsi – hakuna majibu ya kiotomatiki, hakuna foleni.",
     "socialLabel": "Tufuate",
     "form": {
-      "eyebrow": "Tutumie Ujumbe",
-      "heading": "Shirikisha mahitaji yako.",
-      "sub": "Jaza maelezo hapa chini na timu yetu itapitia mahitaji yako ili kutoa jibu kamili la kibiashara.",
+      "eyebrow": "Anza uchunguzi wako",
       "name": "Jina lako",
       "email": "Anwani ya barua pepe",
       "company": "Shirika",
@@ -447,12 +444,14 @@
       "success": "Asante. Ujumbe wako umetumwa. Tutawasiliana nawe hivi karibuni.",
       "error": "Hitilafu imetokea. Tafadhali jaribu tena, au tutumie barua pepe moja kwa moja.",
       "rateLimited": "Umefikia kikomo cha leo. Tafadhali tutumie barua pepe au ujumbe kwenye WhatsApp.",
-      "point1": "Jibu ndani ya siku moja ya kazi",
-      "point2": "Vipimo vya bidhaa, bei, sampuli na hati",
-      "point3": "Msaada maalum kwa maswali yako ya usafirishaji nje",
       "reassurance": "Kwa kawaida hujibu ndani ya siku 1 ya kazi · Hakuna wajibu.",
       "successHeading": "Ujumbe umetumwa.",
-      "successBody": "Asante. Timu yetu itapitia ujumbe wako na kukujibu   kwa kawaida ndani ya siku moja ya kazi."
+      "successBody": "Asante. Timu yetu itapitia ujumbe wako na kukujibu   kwa kawaida ndani ya siku moja ya kazi.",
+      "phone": "Simu / WhatsApp",
+      "country": "Nchi lengwa",
+      "category": "Unauliza kuhusu nini?",
+      "categoryPlaceholder": "Chagua kategoria",
+      "categoryOptions": "Bidhaa za Chakula na Kilimo · Kemikali · Uchunguzi wa Jumla"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "Mkusanyiko Wetu wa Bidhaa",
       "heading": "Pata bidhaa",
       "sub": "Chunguza mkusanyiko wetu mbalimbali wa bidhaa katika kategoria nyingi. Unatafuta bidhaa isiyoorodheshwa hapa? Tutumie mahitaji yako, nasi tutawasiliana nawe.",
-      "spec": "Mkusanyiko mbalimbali wa bidhaa · Kategoria nyingi · Bidhaa zaidi ya 500 zilizoorodheshwa",
+      "spec": "Mkusanyiko mbalimbali wa bidhaa · Kategoria nyingi · Bidhaa zaidi ya 450 zilizoorodheshwa",
       "search": "Tafuta bidhaa au kategoria...",
       "noResults": "Hakuna bidhaa zinazolingana na utafutaji wako.",
       "downloadCatalogue": "Pakua katalogi kamili (PDF)",
@@ -642,7 +641,7 @@
       "specOrigin": "Asili",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "Kwa ombi",
+      "specMoqVal": "kg 200",
       "specPackaging": "Ufungashaji",
       "specPackagingVal": "Inaweza kubadilishwa",
       "specIncoterms": "Incoterms",
@@ -654,7 +653,7 @@
       "downloadCta": "Pakua karatasi ya vipimo ya kategoria",
       "closingCta": "Uko tayari kutafuta bidhaa kutoka kategoria hii?",
       "closingSub": "Shirikisha mahitaji yako ya bidhaa, kiasi, na eneo lengwa. Timu yetu itapitia na kujibu na chaguzi zinazopatikana, vipimo, na bei.",
-      "specMoqValChem": "Kuanzia kg 500",
+      "specMoqValChem": "kg 500",
       "specPackagingValChem": "Mifuko ya HDPE ya kg 25, mapipa ya nyuzi, mifuko ya karatasi na ufungashaji maalum wa kuuza nje",
       "specDocs": "Nyaraka",
       "specDocsVal": "COA, TDS, MSDS kwa ombi"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "Inapakia…"
   }
 }

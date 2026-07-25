@@ -41,7 +41,8 @@ export const categoryBySlugQuery = groq`
       forms,
       series,
       colourIndex,
-      packSizes
+      packSizes,
+      grade
     }
   }
 `;
@@ -85,6 +86,7 @@ export const productBySlugQuery = groq`
     series,
     colourIndex,
     packSizes,
+    grade,
     brochure,
     featured,
     seo,

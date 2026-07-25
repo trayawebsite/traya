@@ -40,6 +40,7 @@ export type ProductListItem = {
   series?: string;
   colourIndex?: string;
   packSizes?: string;
+  grade?: string;
   category?: CategoryRef;
 };
 
@@ -57,6 +58,7 @@ export type Product = {
   series?: string;
   colourIndex?: string;
   packSizes?: string;
+  grade?: string;
   brochure?: SanityFile;
   featured?: boolean;
   category?: CategoryRef;

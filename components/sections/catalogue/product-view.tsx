@@ -10,7 +10,7 @@ import {
   type CatalogueProduct,
 } from "@/lib/catalogue";
 import { getSiteSettings } from "@/lib/site-settings";
-import { AddToEnquiryButton } from "@/components/enquiry/add-to-enquiry";
+import { AddToInquiryButton } from "@/components/inquiry/add-to-inquiry";
 import { QuoteForm } from "@/components/sections/quote-form";
 import { ProductImages } from "./product-images";
 import {
@@ -59,7 +59,15 @@ export async function ProductView({
         <Breadcrumb
           items={[
             { label: tl("home"), href: "/" },
-            { label: tl("products"), href: "/products" },
+            {
+              label: tl("products"),
+              href: {
+                pathname: "/products",
+                query: {
+                  range: category.group === "chemicals" ? "chemicals" : "food",
+                },
+              },
+            },
             { label: category.title, href: `/categories/${category.slug}` },
             { label: product.name },
           ]}
@@ -205,13 +213,13 @@ export async function ProductView({
                 {category.title}
               </p>
               <div className="mt-6 flex flex-col gap-3">
-                <AddToEnquiryButton
+                <AddToInquiryButton
                   slug={product.slug}
                   name={product.name}
                   category={category.title}
                   className={primaryButton}
                 />
-                <a href="?intent=sample#enquiry" className={secondaryBtn}>
+                <a href="?intent=sample#inquiry" className={secondaryBtn}>
                   {t("detail.sampleCta")}
                 </a>
               </div>
@@ -221,8 +229,8 @@ export async function ProductView({
 
         {/* Quote request form with testimonials */}
         <div
-          id="enquiry"
-          className="mt-16 border-t border-traya-border pt-10 scroll-mt-24"
+          id="inquiry"
+          className="mt-16 border-t border-traya-border pt-10 scroll-mt-32"
         >
           <QuoteForm
             productName={product.name}
@@ -248,7 +256,7 @@ export async function ProductView({
               >
                 {t("detail.categoryLabel")}{" "}
                 <ArrowRight
-                  className="size-4 transition-transform group-hover:translate-x-1 rtl:-scale-x-100"
+                  className="size-4 transition-transform group-hover:translate-x-1 rtl:-scale-x-100 motion-reduce:transition-none"
                   aria-hidden="true"
                 />
               </Link>
@@ -264,7 +272,7 @@ export async function ProductView({
                       <span className="font-display text-lg leading-snug text-foreground transition-colors group-hover:text-traya-red-deep">
                         {p.name}
                       </span>
-                      <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-background border border-traya-border text-muted-foreground transition-all duration-300 group-hover:translate-x-1 group-hover:border-traya-red/20 group-hover:bg-traya-red/5 group-hover:text-traya-red-deep">
+                      <div className="flex size-8 shrink-0 items-center justify-center rounded-full bg-background border border-traya-border text-muted-foreground transition-all duration-300 group-hover:translate-x-1 group-hover:border-traya-red/20 group-hover:bg-traya-red/5 group-hover:text-traya-red-deep motion-reduce:transition-none">
                         <ArrowRight
                           className="size-4 rtl:-scale-x-100"
                           aria-hidden="true"

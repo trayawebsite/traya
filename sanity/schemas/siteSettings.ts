@@ -51,7 +51,7 @@ export const siteSettings = defineType({
       title: 'Founder photo',
       type: 'image',
       options: {hotspot: true},
-      description: 'Used in the enquiry section + About page founder block'
+      description: 'Used in the inquiry section + About page founder block'
     }),
     defineField({
       name: 'social',

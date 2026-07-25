@@ -41,7 +41,7 @@ export async function CertList() {
               <li
                 key={`${c.name}-${i}`}
                 data-stagger
-                className="group relative flex flex-col overflow-hidden rounded-2xl border border-traya-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-traya-saffron/40 hover:shadow-lg"
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-traya-border bg-card shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-traya-saffron/40 hover:shadow-lg motion-reduce:transition-none"
               >
                 {/* saffron brand accent */}
                 <span
@@ -50,7 +50,7 @@ export async function CertList() {
                 />
                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                   <div className="flex items-center gap-4">
-                    <span className="inline-flex h-18 w-24 shrink-0 items-center justify-center rounded-xl border border-traya-border bg-white px-3 shadow-sm transition-transform duration-300 group-hover:scale-[1.03]">
+                    <span className="inline-flex h-18 w-24 shrink-0 items-center justify-center rounded-xl border border-traya-border bg-white px-3 shadow-sm transition-transform duration-300 group-hover:scale-[1.03] motion-reduce:transition-none">
                       <CertMark name={c.name} src={c.file} boost={c.boost} />
                     </span>
                     <div className="min-w-0">

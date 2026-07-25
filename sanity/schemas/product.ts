@@ -48,6 +48,13 @@ export const product = defineType({
     }),
     defineField({name: 'hsCode', title: 'HS Code', type: 'string', description: 'Internal reference   not shown on the public site'}),
     defineField({name: 'origin', type: 'string', initialValue: 'India'}),
+    defineField({
+      name: 'grade',
+      title: 'Grade',
+      type: 'string',
+      description: 'Shown on the category page. Leave empty to default to "Food Grade" for food products.',
+      options: {list: ['Food Grade', 'Industrial Grade', 'Technical Grade', 'Pharma Grade']}
+    }),
     // Chemicals catalogue fields (leave empty for food products)
     defineField({
       name: 'series',

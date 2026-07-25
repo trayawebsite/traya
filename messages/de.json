@@ -40,7 +40,7 @@
       "seaBody": "Am besten geeignet für Aufträge mit großem Volumen, bei denen Kosteneffizienz zählt. Wir koordinieren sowohl FCL- (Full Container Load) als auch LCL-Sendungen (Less than Container Load).",
       "airTitle": "Luftfracht",
       "airBody": "Für zeitkritische oder hochwertige Fracht, die schnell und sicher über Grenzen hinweg mit minimaler Transitzeit transportiert werden muss.",
-      "courierTitle": "Kurierversand für Muster",
+      "courierTitle": "Kurier",
       "courierBody": "Internationaler Kurierversand für Produktmuster, damit Käufer Qualität, Spezifikationen und Eignung prüfen können, bevor sie sich für einen vollständigen Auftrag entscheiden.",
       "incoterms": "Incoterms: Sendungen werden zu den für Sie passenden Bedingungen abgewickelt. Wir unterstützen FOB, CIF und andere Standard-Handelsbedingungen, im Voraus vereinbart, ohne Unklarheiten bei Verantwortlichkeiten oder Kosten. Sprechen Sie mit uns darüber, was für Ihren Bedarf am besten passt."
     },
@@ -53,7 +53,7 @@
       "pillar2": "Sicherstellung, dass Produkte den Compliance-Standards der Märkte entsprechen, in denen Sie tätig sind.",
       "pillar3": "Jeder Auftrag wird als Grundlage einer längerfristigen Beziehung behandelt, nicht als einmalige Transaktion.",
       "pillar4": "Flexibilität und Reaktionsfähigkeit, wenn sich Ihre Geschäftsanforderungen und Marktbedingungen ändern.",
-      "mapCaption": "Wir betreuen internationale Käufer weltweit",
+      "mapCaption": "Ihr Tor zum globalen Handel",
       "mapLabel": "Ahmedabad, Indien",
       "headingAccent": "wir erreichen Sie"
     },
@@ -75,7 +75,7 @@
     "send": "Senden",
     "close": "Chat schließen",
     "whatsappAction": "Auf WhatsApp chatten",
-    "enquiryAction": "Anfrageformular",
+    "inquiryAction": "Anfrageformular",
     "offline": "Unser Assistent macht gerade eine kurze Pause. Schreiben Sie uns auf WhatsApp, wir helfen Ihnen sofort weiter.",
     "rateLimited": "Sie haben das heutige Chat-Limit erreicht. Schreiben Sie uns auf WhatsApp, wir helfen Ihnen sofort weiter.",
     "limitReached": "Lassen Sie uns für eine schnellere Antwort auf WhatsApp weitermachen.",
@@ -94,8 +94,8 @@
     "products": "Produkte",
     "howWeWork": "Wie wir arbeiten",
     "certifications": "Zertifizierungen",
-    "contact": "Kontakt",
-    "enquiry": "Anfrage",
+    "contact": "Kontaktieren Sie uns",
+    "inquiry": "Anfrage",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "breadcrumb": "Brotkrümelnavigation"
@@ -126,10 +126,10 @@
     "requestQuote": "Angebot anfordern",
     "downloadCatalogue": "Katalog herunterladen",
     "rights": "Alle Rechte vorbehalten.",
-    "builtBy": "Entwickelt von Studio Morpheus",
+    "builtBy": "Entwickelt von <link>Studio Morpheus</link>",
     "toTop": "Nach oben"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "Anfrage senden",
     "heading": "Lassen Sie uns",
     "sub": "Teilen Sie uns Ihre Anforderungen mit – um den Rest kümmern wir uns.",
@@ -259,7 +259,7 @@
       "heading": "Ihr vertrauensvoller Partner für",
       "sub": "Traya setzt sich für den Aufbau dauerhafter globaler Partnerschaften durch Vertrauen, Zuverlässigkeit und professionelle Umsetzung ein. Mit einem wachsenden Produktportfolio helfen wir Unternehmen, den internationalen Handel mit Zuversicht zu meistern.",
       "cta": "Produkte entdecken",
-      "ctaEnquiry": "Ihren Bedarf mitteilen",
+      "ctainquiry": "Ihren Bedarf mitteilen",
       "certified": "Zertifiziert",
       "headingAccent": "die Beschaffung aus Indien."
     },
@@ -336,7 +336,8 @@
       "headingAccent": "Partnerschaften gebaut."
     },
     "testimonials": {
-      "eyebrow": "Was Käufer sagen"
+      "eyebrow": "Was Käufer sagen",
+      "dotLabel": "Kundenstimme {n}"
     },
     "certs": {
       "eyebrow": "Exportregistrierungen",
@@ -381,7 +382,7 @@
       "headingAccent": "für globalen Handel"
     },
     "founder": {
-      "eyebrow": "In ihren eigenen Worten.",
+      "eyebrow": "Eine Nachricht der Gründerin",
       "name": "Neha Pardeshi",
       "role": "Gründerin & CEO",
       "p1": "Die Welt hat sich mir nicht durch Lehrbücher eröffnet   sie hat sich mir durch das Reisen eröffnet. Das Erkunden verschiedener Kulturen, das Kennenlernen von Menschen aus allen Lebensbereichen und der Blick auf die Welt aus unterschiedlichen Perspektiven haben nicht nur geprägt, wer ich bin, sondern auch, was ich aufbauen wollte.",
@@ -409,8 +410,7 @@
       "m1": "Produkte von höchster Qualität liefern, die durchgängig internationalen Standards und den Erwartungen unserer Kunden entsprechen.",
       "m2": "Dauerhafte Partnerschaften aufbauen, die auf Vertrauen, Transparenz und gemeinsamem Erfolg beruhen.",
       "m3": "Den internationalen Handel durch zuverlässige Umsetzung, effiziente Logistik und reaktionsschnellen Service vereinfachen.",
-      "m4": "Unsere globale Präsenz ausbauen, indem wir wertorientierte Chancen auf internationalen Märkten schaffen.",
-      "commitment": "Wir streben danach, dauerhafte Partnerschaften aufzubauen, die auf Vertrauen, Zuverlässigkeit und einem gemeinsamen Engagement für langfristigen Erfolg auf globalen Märkten beruhen."
+      "m4": "Unsere globale Präsenz ausbauen, indem wir wertorientierte Chancen auf internationalen Märkten schaffen."
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "Kontaktieren Sie Traya International Exim per E-Mail, Telefon, WhatsApp oder Anfrageformular. Teilen Sie uns Ihren Produktbedarf, die Menge, das Zielland und den Zeitrahmen mit."
     },
     "hero": {
-      "eyebrow": "Kontakt",
-      "heading": "Direkter Kontakt zu unserem Export-Team.",
-      "body": "Teilen Sie uns unten Ihre Anfrage mit oder kontaktieren Sie uns direkt — jede Nachricht wird persönlich geprüft, mit einer Antwort innerhalb eines Werktages.",
+      "eyebrow": "Kontaktieren Sie uns",
+      "heading": "Gemeinsam gestalten wir Ihre nächste Sendung.",
       "cta": "Senden Sie Ihre Anfrage"
     },
     "emailLabel": "Schreiben Sie uns",
@@ -431,12 +430,10 @@
     "addressLabel": "Besuchen Sie uns",
     "mapCta": "Auf Karte ansehen",
     "hoursLabel": "Antwortzeit",
-    "hours": "Wir antworten nach Prüfung Ihres Bedarfs",
+    "hours": "Jede Anfrage wird persönlich gelesen und geprüft – keine automatischen Antworten, keine Warteschlangen.",
     "socialLabel": "Folgen Sie uns",
     "form": {
-      "eyebrow": "Senden Sie uns eine Nachricht",
-      "heading": "Teilen Sie uns Ihren Bedarf mit.",
-      "sub": "Füllen Sie die untenstehenden Angaben aus, und unser Team prüft Ihren Bedarf, um umfassend kommerziell zu antworten.",
+      "eyebrow": "Starten Sie Ihre Anfrage",
       "name": "Ihr Name",
       "email": "E-Mail-Adresse",
       "company": "Unternehmen",
@@ -447,12 +444,14 @@
       "success": "Vielen Dank. Ihre Nachricht wurde gesendet. Wir melden uns in Kürze bei Ihnen.",
       "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.",
       "rateLimited": "Sie haben das heutige Limit erreicht. Bitte schreiben Sie uns eine E-Mail oder eine Nachricht auf WhatsApp.",
-      "point1": "Antwort innerhalb eines Werktages",
-      "point2": "Produktspezifikationen, Preise, Muster & Dokumentation",
-      "point3": "Persönliche Betreuung für Ihre Exportanfragen",
       "reassurance": "In der Regel innerhalb eines Werktags · Unverbindlich.",
       "successHeading": "Nachricht gesendet.",
-      "successBody": "Vielen Dank. Unser Team prüft Ihre Nachricht und meldet sich bei Ihnen zurück   in der Regel innerhalb eines Werktags."
+      "successBody": "Vielen Dank. Unser Team prüft Ihre Nachricht und meldet sich bei Ihnen zurück   in der Regel innerhalb eines Werktags.",
+      "phone": "Telefon / WhatsApp",
+      "country": "Zielland",
+      "category": "Worum geht es bei Ihrer Anfrage?",
+      "categoryPlaceholder": "Kategorie wählen",
+      "categoryOptions": "Lebensmittel & Agrarprodukte · Chemikalien · Allgemeine Anfrage"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "Unser Produktportfolio",
       "heading": "Finden Sie die Produkte,",
       "sub": "Entdecken Sie unser vielfältiges Produktportfolio über mehrere Kategorien hinweg. Sie suchen ein Produkt, das hier nicht aufgeführt ist? Senden Sie uns Ihre Anforderung, und wir melden uns bei Ihnen.",
-      "spec": "Vielfältiges Produktportfolio · Multi-Kategorie · Über 500 gelistete Produkte",
+      "spec": "Vielfältiges Produktportfolio · Multi-Kategorie · Über 450 gelistete Produkte",
       "search": "Produkte oder Kategorien suchen...",
       "noResults": "Keine Produkte entsprechen Ihrer Suche.",
       "downloadCatalogue": "Vollständigen Katalog herunterladen (PDF)",
@@ -642,7 +641,7 @@
       "specOrigin": "Herkunft",
       "specOriginVal": "Indien",
       "specMoq": "Mindestbestellmenge",
-      "specMoqVal": "Auf Anfrage",
+      "specMoqVal": "200 kg",
       "specPackaging": "Verpackung",
       "specPackagingVal": "Anpassbar",
       "specIncoterms": "Incoterms",
@@ -654,7 +653,7 @@
       "downloadCta": "Kategorie-Datenblatt herunterladen",
       "closingCta": "Bereit, aus dieser Kategorie zu beziehen?",
       "closingSub": "Teilen Sie uns Ihren Produktbedarf, die Menge und das Zielland mit. Unser Team prüft dies und antwortet mit verfügbaren Optionen, Spezifikationen und Preisen.",
-      "specMoqValChem": "Ab 500 kg",
+      "specMoqValChem": "500 kg",
       "specPackagingValChem": "25-kg-HDPE-Säcke, Faserfässer, Papiersäcke & individuelle Exportverpackung",
       "specDocs": "Dokumente",
       "specDocsVal": "COA, TDS, MSDS auf Anfrage"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "Wird geladen…"
   }
 }

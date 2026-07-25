@@ -8,35 +8,35 @@ import {
   type ReactNode,
 } from "react";
 
-export type EnquiryItem = {
+export type InquiryItem = {
   slug: string;
   name: string;
   category: string;
   addedAt: number;
 };
 
-type EnquiryContextValue = {
-  items: EnquiryItem[];
-  add: (item: Omit<EnquiryItem, "addedAt">) => void;
+type InquiryContextValue = {
+  items: InquiryItem[];
+  add: (item: Omit<InquiryItem, "addedAt">) => void;
   remove: (slug: string) => void;
   clear: () => void;
   has: (slug: string) => boolean;
   count: number;
 };
 
-const STORAGE_KEY = "traya-enquiry-list";
+const STORAGE_KEY = "traya-inquiry-list";
 
 // ── localStorage-backed external store ───────────────────────────────────
 // Using useSyncExternalStore (rather than useState + an effect) gives us a
 // server snapshot of [] that matches the first client render   no hydration
 // mismatch on the header badge   while reading the real persisted list on the
 // client, and it stays lint-clean (no setState-in-effect).
-const EMPTY: EnquiryItem[] = [];
-let cache: EnquiryItem[] = EMPTY; // stable snapshot reference
+const EMPTY: InquiryItem[] = [];
+let cache: InquiryItem[] = EMPTY; // stable snapshot reference
 let cacheRaw: string | null = null; // the raw string `cache` was parsed from
 const listeners = new Set<() => void>();
 
-function read(): EnquiryItem[] {
+function read(): InquiryItem[] {
   if (typeof window === "undefined") return EMPTY;
   let raw: string | null = null;
   try {
@@ -61,7 +61,7 @@ function emit() {
   for (const l of listeners) l();
 }
 
-function write(items: EnquiryItem[]) {
+function write(items: InquiryItem[]) {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
   } catch {
@@ -87,12 +87,12 @@ function subscribe(callback: () => void) {
 const getSnapshot = () => read();
 const getServerSnapshot = () => EMPTY;
 
-const EnquiryContext = createContext<EnquiryContextValue | null>(null);
+const InquiryContext = createContext<InquiryContextValue | null>(null);
 
-export function EnquiryProvider({ children }: { children: ReactNode }) {
+export function InquiryProvider({ children }: { children: ReactNode }) {
   const items = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
 
-  const add = useCallback((item: Omit<EnquiryItem, "addedAt">) => {
+  const add = useCallback((item: Omit<InquiryItem, "addedAt">) => {
     const current = read();
     if (current.some((i) => i.slug === item.slug)) return;
     write([...current, { ...item, addedAt: Date.now() }]);
@@ -112,16 +112,16 @@ export function EnquiryProvider({ children }: { children: ReactNode }) {
   );
 
   return (
-    <EnquiryContext.Provider
+    <InquiryContext.Provider
       value={{ items, add, remove, clear, has, count: items.length }}
     >
       {children}
-    </EnquiryContext.Provider>
+    </InquiryContext.Provider>
   );
 }
 
-export function useEnquiry() {
-  const ctx = useContext(EnquiryContext);
-  if (!ctx) throw new Error("useEnquiry must be used within EnquiryProvider");
+export function useInquiry() {
+  const ctx = useContext(InquiryContext);
+  if (!ctx) throw new Error("useInquiry must be used within InquiryProvider");
   return ctx;
 }

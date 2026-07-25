@@ -4,7 +4,7 @@ import { useState, useMemo, Fragment } from "react";
 import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 import { ChevronDown, Check, Plus } from "lucide-react";
-import { useEnquiry } from "@/lib/enquiry-context";
+import { useInquiry } from "@/lib/inquiry-context";
 import type { SanityImage } from "@/sanity/lib/types";
 
 type Product = {
@@ -16,6 +16,7 @@ type Product = {
   series?: string;
   colourIndex?: string;
   packSizes?: string;
+  grade?: string;
 };
 
 type Spec = { label: string; value: string };
@@ -62,7 +63,7 @@ export function CategoryProductList({
   categoryTitle: string;
 }) {
   const t = useTranslations("Catalogue.list");
-  const { add, has } = useEnquiry();
+  const { add, has } = useInquiry();
   const [query, setQuery] = useState("");
   // First two products start expanded (just one when the category has a single
   // product) so the page never opens as a wall of closed rows.
@@ -119,167 +120,180 @@ export function CategoryProductList({
         <div className="mt-6 flex flex-col gap-2.5 md:flex-row md:items-start md:gap-5">
           {[0, 1].map((col) => (
             <ul key={col} className="flex flex-1 flex-col gap-2.5">
-              {filtered.filter((_, i) => i % 2 === col).map((p) => {
-            const isOpen = open.has(p.slug);
-            const isChem = !!(p.series || p.colourIndex || p.packSizes);
-            const form = detectForm(p.name);
-            const added = has(p.slug);
-            return (
-              <li
-                key={p.slug}
-                className={`overflow-hidden rounded-xl border bg-card transition-colors ${
-                  isOpen ? "border-traya-red/30" : "border-traya-border"
-                }`}
-              >
-                <button
-                  type="button"
-                  aria-expanded={isOpen}
-                  onClick={() => toggle(p.slug)}
-                  className="flex w-full items-center gap-3 px-4 py-3.5 text-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                >
-                  <span className="min-w-0 flex-1">
-                    <span className="block text-sm font-medium text-foreground">
-                      {p.name}
-                    </span>
-                    <span className="mt-1.5 flex flex-wrap gap-1.5">
-                      {isChem ? (
-                        <>
-                          {p.series && (
-                            <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
-                              {p.series}
-                            </span>
-                          )}
-                          {p.colourIndex && (
-                            <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
-                              {p.colourIndex}
-                            </span>
-                          )}
-                        </>
-                      ) : (
-                        <>
-                          {form && (
-                            <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
-                              {form}
-                            </span>
-                          )}
-                          <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
-                            {t("gradeValue")}
-                          </span>
-                        </>
-                      )}
-                    </span>
-                  </span>
-                  <ChevronDown
-                    className={`size-4 shrink-0 text-muted-foreground transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
-                    aria-hidden="true"
-                  />
-                </button>
-
-                {isOpen && (
-                  <div className="border-t border-traya-border px-4 pb-4 pt-3">
-                    {p.shortDescription && (
-                      <p className="mb-3 text-sm leading-relaxed text-muted-foreground">
-                        {p.shortDescription}
-                      </p>
-                    )}
-                    <dl className="grid grid-cols-[104px_1fr] gap-x-4 gap-y-1.5 text-sm">
-                      {isChem ? (
-                        <>
-                          {p.series && (
-                            <Fragment>
-                              <dt className="text-muted-foreground">
-                                {t("series")}
-                              </dt>
-                              <dd className="text-foreground">{p.series}</dd>
-                            </Fragment>
-                          )}
-                          {p.colourIndex && (
-                            <Fragment>
-                              <dt className="text-muted-foreground">
-                                {t("colourIndex")}
-                              </dt>
-                              <dd className="text-foreground">
-                                {p.colourIndex}
-                              </dd>
-                            </Fragment>
-                          )}
-                          {p.packSizes && (
-                            <Fragment>
-                              <dt className="text-muted-foreground">
-                                {t("packSizes")}
-                              </dt>
-                              <dd className="text-foreground">{p.packSizes}</dd>
-                            </Fragment>
-                          )}
-                        </>
-                      ) : (
-                        <>
-                          {form && (
-                            <Fragment>
-                              <dt className="text-muted-foreground">
-                                {t("form")}
-                              </dt>
-                              <dd className="text-foreground">{form}</dd>
-                            </Fragment>
-                          )}
-                          <dt className="text-muted-foreground">
-                            {t("grade")}
-                          </dt>
-                          <dd className="text-foreground">{t("gradeValue")}</dd>
-                        </>
-                      )}
-                      {specs.map((s) => (
-                        <Fragment key={s.label}>
-                          <dt className="text-muted-foreground">{s.label}</dt>
-                          <dd className="text-foreground">{s.value}</dd>
-                        </Fragment>
-                      ))}
-                    </dl>
-
-                    <div className="mt-5 flex flex-wrap gap-2.5">
+              {filtered
+                .filter((_, i) => i % 2 === col)
+                .map((p) => {
+                  const isOpen = open.has(p.slug);
+                  const isChem = !!(p.series || p.colourIndex || p.packSizes);
+                  const form = detectForm(p.name);
+                  const added = has(p.slug);
+                  return (
+                    <li
+                      key={p.slug}
+                      className={`overflow-hidden rounded-xl border bg-card transition-colors ${
+                        isOpen ? "border-traya-red/30" : "border-traya-border"
+                      }`}
+                    >
                       <button
                         type="button"
-                        onClick={() => {
-                          if (!added) {
-                            add({
-                              slug: p.slug,
-                              name: p.name,
-                              category: categoryTitle,
-                            });
-                            toast.success(t("addedToast"));
-                          }
-                        }}
-                        className={`inline-flex items-center gap-1.5 rounded-md px-3.5 py-2 text-xs font-medium transition-colors ${
-                          added
-                            ? "border border-traya-forest/30 bg-traya-forest/10 text-traya-forest"
-                            : "border border-traya-border bg-background text-foreground hover:border-traya-red/30"
-                        }`}
+                        aria-expanded={isOpen}
+                        onClick={() => toggle(p.slug)}
+                        className="flex w-full items-center gap-3 px-4 py-3.5 text-start focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                       >
-                        {added ? (
-                          <Check className="size-3.5" aria-hidden="true" />
-                        ) : (
-                          <Plus className="size-3.5" aria-hidden="true" />
-                        )}
-                        {added ? t("added") : t("add")}
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-sm font-medium text-foreground">
+                            {p.name}
+                          </span>
+                          <span className="mt-1.5 flex flex-wrap gap-1.5">
+                            {isChem ? (
+                              <>
+                                {p.series && (
+                                  <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
+                                    {p.series}
+                                  </span>
+                                )}
+                                {p.colourIndex && (
+                                  <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
+                                    {p.colourIndex}
+                                  </span>
+                                )}
+                              </>
+                            ) : (
+                              <>
+                                {form && (
+                                  <span className="rounded bg-traya-forest/10 px-2 py-0.5 text-[10px] font-semibold text-traya-forest">
+                                    {form}
+                                  </span>
+                                )}
+                                <span className="rounded bg-traya-surface px-2 py-0.5 text-[10px] font-semibold text-traya-slate">
+                                  {p.grade || t("gradeValue")}
+                                </span>
+                              </>
+                            )}
+                          </span>
+                        </span>
+                        <ChevronDown
+                          className={`size-4 shrink-0 text-muted-foreground transition-transform duration-200 motion-reduce:transition-none ${isOpen ? "rotate-180" : ""}`}
+                          aria-hidden="true"
+                        />
                       </button>
-                      <a
-                        href={`?product=${encodeURIComponent(p.name)}#enquiry`}
-                        className="inline-flex items-center justify-center rounded-md bg-traya-red px-3.5 py-2 text-xs font-medium text-white transition-colors hover:bg-traya-red-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                      >
-                        {t("quote")}
-                      </a>
-                      <a
-                        href={`?intent=sample&product=${encodeURIComponent(p.name)}#enquiry`}
-                        className="rounded-md border border-traya-border bg-background px-3.5 py-2 text-xs font-medium text-foreground transition-colors hover:border-traya-red/30"
-                      >
-                        {t("sample")}
-                      </a>
-                    </div>
-                  </div>
-                )}
-              </li>
-            );
-          })}
+
+                      {isOpen && (
+                        <div className="border-t border-traya-border px-4 pb-4 pt-3">
+                          {p.shortDescription && (
+                            <p className="mb-3 text-sm leading-relaxed text-muted-foreground">
+                              {p.shortDescription}
+                            </p>
+                          )}
+                          <dl className="grid grid-cols-[104px_1fr] gap-x-4 gap-y-1.5 text-sm">
+                            {isChem ? (
+                              <>
+                                {p.series && (
+                                  <Fragment>
+                                    <dt className="text-muted-foreground">
+                                      {t("series")}
+                                    </dt>
+                                    <dd className="text-foreground">
+                                      {p.series}
+                                    </dd>
+                                  </Fragment>
+                                )}
+                                {p.colourIndex && (
+                                  <Fragment>
+                                    <dt className="text-muted-foreground">
+                                      {t("colourIndex")}
+                                    </dt>
+                                    <dd className="text-foreground">
+                                      {p.colourIndex}
+                                    </dd>
+                                  </Fragment>
+                                )}
+                                {p.packSizes && (
+                                  <Fragment>
+                                    <dt className="text-muted-foreground">
+                                      {t("packSizes")}
+                                    </dt>
+                                    <dd className="text-foreground">
+                                      {p.packSizes}
+                                    </dd>
+                                  </Fragment>
+                                )}
+                              </>
+                            ) : (
+                              <>
+                                {form && (
+                                  <Fragment>
+                                    <dt className="text-muted-foreground">
+                                      {t("form")}
+                                    </dt>
+                                    <dd className="text-foreground">{form}</dd>
+                                  </Fragment>
+                                )}
+                                <dt className="text-muted-foreground">
+                                  {t("grade")}
+                                </dt>
+                                <dd className="text-foreground">
+                                  {p.grade || t("gradeValue")}
+                                </dd>
+                              </>
+                            )}
+                            {specs.map((s) => (
+                              <Fragment key={s.label}>
+                                <dt className="text-muted-foreground">
+                                  {s.label}
+                                </dt>
+                                <dd className="text-foreground">{s.value}</dd>
+                              </Fragment>
+                            ))}
+                          </dl>
+
+                          <div className="mt-5 flex flex-wrap gap-2.5">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                if (!added) {
+                                  add({
+                                    slug: p.slug,
+                                    name: p.name,
+                                    category: categoryTitle,
+                                  });
+                                  toast.success(t("addedToast"));
+                                }
+                              }}
+                              className={`inline-flex items-center gap-1.5 rounded-md px-3.5 py-2 text-xs font-medium transition-colors ${
+                                added
+                                  ? "border border-traya-forest/30 bg-traya-forest/10 text-traya-forest"
+                                  : "border border-traya-border bg-background text-foreground hover:border-traya-red/30"
+                              }`}
+                            >
+                              {added ? (
+                                <Check
+                                  className="size-3.5"
+                                  aria-hidden="true"
+                                />
+                              ) : (
+                                <Plus className="size-3.5" aria-hidden="true" />
+                              )}
+                              {added ? t("added") : t("add")}
+                            </button>
+                            <a
+                              href={`?product=${encodeURIComponent(p.name)}#inquiry`}
+                              className="inline-flex items-center justify-center rounded-md bg-traya-red px-3.5 py-2 text-xs font-medium text-white transition-colors hover:bg-traya-red-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                            >
+                              {t("quote")}
+                            </a>
+                            <a
+                              href={`?intent=sample&product=${encodeURIComponent(p.name)}#inquiry`}
+                              className="rounded-md border border-traya-border bg-background px-3.5 py-2 text-xs font-medium text-foreground transition-colors hover:border-traya-red/30"
+                            >
+                              {t("sample")}
+                            </a>
+                          </div>
+                        </div>
+                      )}
+                    </li>
+                  );
+                })}
             </ul>
           ))}
         </div>

@@ -11,11 +11,12 @@ import { useHoneypot } from "@/components/ui/honeypot";
 import { Check } from "lucide-react";
 
 // Contact form   wired to /api/contact (validation → email → Sheets → rate
-// limit). Two-column: a left invitation/trust panel + the form, so the section
-// reads as considered rather than a lone card. Inline success confirmation.
+// limit). A single centered card under a simple eyebrow. Inline success
+// confirmation.
 export function ContactForm() {
   const t = useTranslations("Contact.form");
   const tv = useTranslations("Validation");
+  const categoryOptions = t("categoryOptions").split(" · ");
   const schema = useMemo(() => makeContactSchema(tv), [tv]);
   const honeypot = useHoneypot();
   const [submitted, setSubmitted] = useState(false);
@@ -70,34 +71,13 @@ export function ContactForm() {
   }
 
   return (
-    <div className="mx-auto grid max-w-5xl items-start gap-12 lg:grid-cols-[minmax(0,1fr)_1.5fr] lg:gap-16">
-      {/* Left   invitation + reassurance */}
-      <div className="lg:pt-2">
-        <p className="section-label">{t("eyebrow")}</p>
-        <h2 className="mt-4 text-balance font-display text-display-sm text-foreground">
-          {t("heading")}
-        </h2>
-        <p className="mt-4 leading-relaxed text-muted-foreground">{t("sub")}</p>
-        <ul className="mt-8 space-y-3.5">
-          {(["point1", "point2", "point3"] as const).map((k) => (
-            <li
-              key={k}
-              className="flex items-start gap-3 text-sm leading-relaxed text-foreground/80"
-            >
-              <span className="mt-0.5 flex size-5 shrink-0 items-center justify-center rounded-full bg-traya-forest/10 text-traya-forest">
-                <Check className="size-3" aria-hidden="true" />
-              </span>
-              {t(k)}
-            </li>
-          ))}
-        </ul>
-      </div>
+    <div className="mx-auto max-w-2xl">
+      <p className="section-label text-center">{t("eyebrow")}</p>
 
-      {/* Right   form card */}
       <form
         onSubmit={handleSubmit(onSubmit, onInvalid)}
         noValidate
-        className="relative rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
+        className="relative mt-6 rounded-2xl border border-traya-border bg-card p-6 shadow-md sm:p-8"
       >
         {honeypot.field}
         <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
@@ -129,11 +109,19 @@ export function ContactForm() {
               className={inputCls}
             />
           </Field>
+          <Field id="phone" label={t("phone")} error={errors.phone?.message}>
+            <input
+              id="phone"
+              type="tel"
+              autoComplete="tel"
+              {...register("phone")}
+              className={inputCls}
+            />
+          </Field>
           <Field
             id="company"
             label={t("company")}
             error={errors.company?.message}
-            full
           >
             <input
               id="company"
@@ -142,6 +130,36 @@ export function ContactForm() {
               {...register("company")}
               className={inputCls}
             />
+          </Field>
+          <Field
+            id="country"
+            label={t("country")}
+            error={errors.country?.message}
+          >
+            <input
+              id="country"
+              type="text"
+              autoComplete="country-name"
+              {...register("country")}
+              className={inputCls}
+            />
+          </Field>
+          <Field id="category" label={t("category")}>
+            <select
+              id="category"
+              defaultValue=""
+              {...register("category")}
+              className={inputCls}
+            >
+              <option value="" disabled>
+                {t("categoryPlaceholder")}
+              </option>
+              {categoryOptions.map((c) => (
+                <option key={c} value={c}>
+                  {c}
+                </option>
+              ))}
+            </select>
           </Field>
           <Field
             id="message"

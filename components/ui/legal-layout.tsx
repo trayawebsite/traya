@@ -1,10 +1,13 @@
 import { Check } from "lucide-react";
+import { Fragment } from "react";
 import { Container } from "@/components/ui/container";
 
 // Shared legal-page scaffold (Privacy, Terms)   ONE structure so the two stay
 // consistent with each other and with the site's centered inner-page headers.
 // Each section renders EITHER a paragraph (`content`) or a ✓ bullet list
-// (`items`). All content is data (i18n), passed in.
+// (`items`). All content is data (i18n), passed in. No section numerals   a
+// short saffron rule under each heading carries the rhythm instead, with a
+// saffron diamond seam between sections (the same seam mark used in stats.tsx).
 export function LegalLayout({
   title,
   lastUpdated,
@@ -24,7 +27,9 @@ export function LegalLayout({
             <h1 className="text-balance font-display text-display-lg text-foreground">
               {title}
             </h1>
-            <p className="mt-4 text-sm text-muted-foreground">{lastUpdated}</p>
+            <p className="mt-4 text-sm font-medium text-traya-saffron-lo">
+              {lastUpdated}
+            </p>
             {intro && (
               <p className="mx-auto mt-5 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
                 {intro}
@@ -36,17 +41,20 @@ export function LegalLayout({
 
       <section className="bg-background">
         <Container className="max-w-3xl pt-section pb-section-lg">
-          <div className="space-y-12">
-            {sections.map((s, i) => (
-              <section key={s.title}>
+          {sections.map((s, i) => (
+            <Fragment key={s.title}>
+              {i > 0 && (
+                <div aria-hidden className="relative my-10 h-px bg-traya-border">
+                  <span className="absolute left-1/2 top-1/2 size-1.5 -translate-x-1/2 -translate-y-1/2 rotate-45 bg-traya-saffron" />
+                </div>
+              )}
+              <section>
                 <h2 className="font-display text-2xl text-foreground">
-                  <span className="me-3 font-mono text-base font-medium text-traya-saffron-lo">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
                   {s.title}
                 </h2>
+                <div aria-hidden className="mt-2 h-0.5 w-10 bg-traya-saffron" />
                 {s.content && (
-                  <p className="mt-3 text-[15px] leading-relaxed text-foreground/80">
+                  <p className="mt-4 text-[15px] leading-relaxed text-foreground/80">
                     {s.content}
                   </p>
                 )}
@@ -67,8 +75,8 @@ export function LegalLayout({
                   </ul>
                 )}
               </section>
-            ))}
-          </div>
+            </Fragment>
+          ))}
         </Container>
       </section>
     </>

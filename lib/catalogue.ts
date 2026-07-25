@@ -27,6 +27,9 @@ export type CatalogueProduct = {
   series?: string;
   colourIndex?: string;
   packSizes?: string;
+  // Overrides the default "Food Grade" shown on non-chemical products
+  // (e.g. Psyllium Husk Powder, which is Industrial Grade).
+  grade?: string;
 };
 
 export type CatalogueCategory = {
@@ -91,7 +94,8 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
             forms: p.forms,
             series: p.series,
             colourIndex: p.colourIndex,
-            packSizes: p.packSizes
+            packSizes: p.packSizes,
+            grade: p.grade
           }))
         };
       })
@@ -157,6 +161,7 @@ export async function getProductBySlug(
             series: fullProduct.series,
             colourIndex: fullProduct.colourIndex,
             packSizes: fullProduct.packSizes,
+            grade: fullProduct.grade,
             brochureUrl: fullProduct.brochure?.asset?._ref
               ? fileUrlForRef(fullProduct.brochure.asset._ref) ?? undefined
               : undefined

@@ -1,44 +1,48 @@
-import type {Metadata} from 'next';
-import {setRequestLocale, getTranslations} from 'next-intl/server';
-import {localeAlternates} from '@/lib/seo';
-import {PageHero} from '@/components/ui/page-hero';
+import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { localeAlternates } from "@/lib/seo";
+import { PageHero } from "@/components/ui/page-hero";
 import {
   Process,
   HowWeShip,
-  GlobalReach
-} from '@/components/sections/how-we-work/sections';
+  GlobalReach,
+} from "@/components/sections/how-we-work/sections";
 
 export async function generateMetadata({
-  params
+  params,
 }: {
-  params: Promise<{locale: string}>;
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const {locale} = await params;
-  const t = await getTranslations({locale, namespace: 'HowWeWork.meta'});
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "HowWeWork.meta" });
   return {
-    title: t('title'),
-    description: t('description'),
-    alternates: localeAlternates(locale, '/how-we-work')
+    title: t("title"),
+    description: t("description"),
+    alternates: localeAlternates(locale, "/how-we-work"),
   };
 }
 
-export default async function HowWeWorkPage({params}: {params: Promise<{locale: string}>}) {
-  const {locale} = await params;
+export default async function HowWeWorkPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations({locale, namespace: 'HowWeWork'});
+  const t = await getTranslations({ locale, namespace: "HowWeWork" });
 
   return (
     <>
       <PageHero
-        eyebrow={t('hero.eyebrow')}
-        heading={t('hero.heading')}
-        headingAccent={t('hero.headingAccent')}
-        sub={t('hero.sub')}
+        eyebrow={t("hero.eyebrow")}
+        heading={t("hero.heading")}
+        headingAccent={t("hero.headingAccent")}
+        sub={t("hero.sub")}
       />
       <Process />
       <HowWeShip />
       <GlobalReach />
-      {/* Closing ask is the global enquiry form (rendered site-wide in the layout);
+      {/* Closing ask is the global inquiry form (rendered site-wide in the layout);
           no separate CTA band here, to avoid stacking duplicate requirement asks. */}
     </>
   );

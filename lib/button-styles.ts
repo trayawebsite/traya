@@ -1,5 +1,5 @@
 // Canonical primary button   ONE consistent effect for every primary CTA
-// (Get a Quote, Request a sample, Start an enquiry, Send enquiry). Vermilion
+// (Get a Quote, Request a sample, Start an inquiry, Send inquiry). Vermilion
 // fill that deepens to red on hover, a subtle press, and a vermilion focus ring.
 // Soft `rounded-lg` shape (the glowing secondary is the pill). Only the focus
 // ring-offset colour changes by background (light vs deep band).

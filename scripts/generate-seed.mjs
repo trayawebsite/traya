@@ -208,14 +208,14 @@ docs.push({
   process: {
     _type: "object",
     eyebrow: "How it works",
-    heading: "From first enquiry to delivered cargo.",
+    heading: "From first inquiry to delivered cargo.",
     sub: "A simple, transparent path. No guesswork, no surprises.",
   },
   finalCta: {
     _type: "object",
     heading: "Ready to source from India?",
     sub: "Bulk volumes, custom packaging, full documentation. Tell us what you need and we will usually respond within one business day.",
-    ctaLabel: "Start an enquiry",
+    ctaLabel: "Start an inquiry",
   },
 });
 

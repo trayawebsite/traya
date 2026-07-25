@@ -33,8 +33,8 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
           {/* Right — photograph, full-bleed to the right edge */}
           <div className="order-2 lg:order-2">
             <Photo
-              src="/exim.webp"
-              alt="Container ships and cranes at an international shipping port"
+              src="/home/about-hero.webp"
+              alt=""
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"
               className="aspect-square w-full rounded-2xl lg:rounded-s-2xl lg:rounded-e-none"

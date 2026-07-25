@@ -65,12 +65,12 @@ const POINT_ICONS = [
 // message before POSTing to /api/inquiry.
 type FormValues = InquiryInput & { shipment?: string };
 
-// Pre-footer enquiry section (site-wide). Light ivory band + lifted white form
+// Pre-footer inquiry section (site-wide). Light ivory band + lifted white form
 // card → strong contrast against the dark footer below. Vermilion only on the
 // submit + accents. Wired to /api/inquiry (validation → email → Sheets → rate
 // limit all already behind it). Real <label>s, not placeholder-as-label.
-export function EnquirySection() {
-  const t = useTranslations("Enquiry");
+export function InquirySection() {
+  const t = useTranslations("inquiry");
   const tv = useTranslations("Validation");
   const shipmentModes = t("shipmentModes").split(" · ");
   const formSchema = useMemo(
@@ -110,7 +110,11 @@ export function EnquirySection() {
       const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...rest, message, website: honeypot.getValue() }),
+        body: JSON.stringify({
+          ...rest,
+          message,
+          website: honeypot.getValue(),
+        }),
       });
       const json = await res.json().catch(() => ({}));
       if (res.ok && json.ok) {
@@ -128,8 +132,8 @@ export function EnquirySection() {
 
   return (
     <section
-      id="enquiry"
-      className="border-t border-traya-border bg-traya-surface"
+      id="inquiry"
+      className="scroll-mt-32 border-t border-traya-border bg-traya-surface"
     >
       <Container className="py-section">
         <div className="grid items-start gap-12 lg:grid-cols-[1fr_1.15fr] lg:gap-20">
@@ -164,7 +168,7 @@ export function EnquirySection() {
               ))}
             </ul>
             <Image
-              src="/enquiry/conversation.webp"
+              src="/inquiry/conversation.webp"
               alt=""
               aria-hidden
               width={1000}

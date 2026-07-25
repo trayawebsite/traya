@@ -82,7 +82,7 @@ export function LanguageSwitcher() {
         <Flag locale={locale} />
         <span className="font-medium uppercase">{locale}</span>
         <svg
-          className={`size-3.5 shrink-0 text-muted-foreground transition-transform duration-150 ${open ? "rotate-180" : ""}`}
+          className={`size-3.5 shrink-0 text-muted-foreground transition-transform duration-150 motion-reduce:transition-none ${open ? "rotate-180" : ""}`}
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"

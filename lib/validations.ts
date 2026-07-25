@@ -27,7 +27,7 @@ function baseFields(t: T) {
     company: z.string().trim().max(150).optional().or(z.literal('')),
     country: z.string().trim().max(100).optional().or(z.literal('')),
     phone: z.string().trim().max(30).optional().or(z.literal('')),
-    // 5000 chars: comfortably fits a batched Enquiry-List RFQ (every cart item +
+    // 5000 chars: comfortably fits a batched inquiry-List RFQ (every cart item +
     // the buyer's notes are folded into this one field).
     message: z.string().trim().min(10, t('message')).max(5000)
   };
@@ -36,7 +36,15 @@ function baseFields(t: T) {
 // Contact Us
 export function makeContactSchema(t: T = en) {
   const f = baseFields(t);
-  return z.object({name: f.name, email: f.email, company: f.company, message: f.message});
+  return z.object({
+    name: f.name,
+    email: f.email,
+    phone: f.phone,
+    company: f.company,
+    country: f.country,
+    category: z.string().trim().max(100).optional().or(z.literal('')),
+    message: f.message
+  });
 }
 
 // Product Inquiry (tied to a specific product)

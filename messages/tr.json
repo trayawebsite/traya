@@ -40,7 +40,7 @@
       "seaBody": "Maliyet verimliliğinin önemli olduğu büyük hacimli siparişler için en uygun seçenektir. Hem FCL (Tam Konteyner Yükü) hem de LCL (Konsolide Konteyner Yükü) sevkiyatlarını koordine ederiz.",
       "airTitle": "Hava nakliyesi",
       "airBody": "Sınırlar arasında hızlı ve güvenli şekilde, minimum transit süresiyle hareket etmesi gereken zamana duyarlı veya yüksek değerli yükler için.",
-      "courierTitle": "Numuneler için kurye",
+      "courierTitle": "Kurye",
       "courierBody": "Alıcıların tam siparişe geçmeden önce kaliteyi, teknik özellikleri ve uygunluğu değerlendirebilmesi için ürün numunelerinin uluslararası kurye ile gönderimi.",
       "incoterms": "Teslim Şekilleri (Incoterms): Sevkiyatlar sizin için uygun olan şartlarla yürütülür. FOB, CIF ve diğer standart ticaret şartlarını, sorumluluklar veya maliyetler konusunda hiçbir belirsizlik olmadan, baştan mutabık kalınarak destekliyoruz. İhtiyacınıza en uygun seçeneği konuşmak için bizimle iletişime geçin."
     },
@@ -53,7 +53,7 @@
       "pillar2": "Ürünlerin faaliyet gösterdiğiniz pazarların uyumluluk standartlarını karşılamasını sağlamak.",
       "pillar3": "Her siparişi tek seferlik bir işlem değil, daha uzun soluklu bir ilişkinin temeli olarak ele almak.",
       "pillar4": "İş ihtiyaçlarınız ve piyasa koşulları değiştikçe esnek ve duyarlı kalmak.",
-      "mapCaption": "Dünya genelinde uluslararası alıcılara hizmet veriyoruz",
+      "mapCaption": "Küresel ticarete açılan kapınız",
       "mapLabel": "Ahmedabad, Hindistan",
       "headingAccent": "size ulaşabiliriz"
     },
@@ -75,7 +75,7 @@
     "send": "Gönder",
     "close": "Sohbeti kapat",
     "whatsappAction": "WhatsApp'tan sohbet edin",
-    "enquiryAction": "Talep formu",
+    "inquiryAction": "Talep formu",
     "offline": "Asistanımız kısa bir mola veriyor. Bize WhatsApp'tan yazın, hemen yardımcı olalım.",
     "rateLimited": "Bugünkü sohbet limitinize ulaştınız. Bize WhatsApp'tan yazın, hemen yardımcı olalım.",
     "limitReached": "Daha hızlı yanıt için WhatsApp üzerinden devam edelim.",
@@ -95,7 +95,7 @@
     "howWeWork": "Nasıl Çalışırız",
     "certifications": "Sertifikalar",
     "contact": "Bize Ulaşın",
-    "enquiry": "Talep",
+    "inquiry": "Talep",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları",
     "breadcrumb": "Sayfa yolu"
@@ -126,10 +126,10 @@
     "requestQuote": "Teklif Talep Edin",
     "downloadCatalogue": "Kataloğu İndirin",
     "rights": "Tüm hakları saklıdır.",
-    "builtBy": "Studio Morpheus tarafından geliştirildi",
+    "builtBy": "<link>Studio Morpheus</link> tarafından geliştirildi",
     "toTop": "Başa dön"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "Talep gönderin",
     "heading": "Bir görüşme",
     "sub": "İhtiyaçlarınızı paylaşın, gerisiyle biz ilgilenelim.",
@@ -259,7 +259,7 @@
       "heading": "Hindistan'dan tedarik için",
       "sub": "Traya, güven, güvenilirlik ve profesyonel uygulama yoluyla kalıcı küresel ortaklıklar kurmaya kararlıdır. Büyüyen kaliteli ürün portföyümüzle işletmelerin uluslararası ticarette güvenle ilerlemesine yardımcı oluyoruz.",
       "cta": "Ürünleri Keşfedin",
-      "ctaEnquiry": "İhtiyacınızı paylaşın",
+      "ctainquiry": "İhtiyacınızı paylaşın",
       "certified": "Sertifikalı",
       "headingAccent": "güvenilir iş ortağınız."
     },
@@ -336,7 +336,8 @@
       "headingAccent": "ortaklıklar için kuruldu."
     },
     "testimonials": {
-      "eyebrow": "Alıcılarımız ne diyor"
+      "eyebrow": "Alıcılarımız ne diyor",
+      "dotLabel": "Görüş {n}"
     },
     "certs": {
       "eyebrow": "İhracat kayıtları",
@@ -381,7 +382,7 @@
       "headingAccent": "Rafine Bir Yaklaşım"
     },
     "founder": {
-      "eyebrow": "Kendi ağzından.",
+      "eyebrow": "Kurucumuzdan Bir Not",
       "name": "Neha Pardeshi",
       "role": "Kurucu ve CEO",
       "p1": "Dünya bana ders kitapları aracılığıyla değil, seyahat aracılığıyla açıldı. Farklı kültürleri keşfetmek, hayatın her kesiminden insanlarla tanışmak ve dünyayı farklı bakış açılarından görmek, yalnızca kim olduğumu değil, neyi inşa etmeyi seçtiğimi de şekillendirdi.",
@@ -409,8 +410,7 @@
       "m1": "Uluslararası standartları ve müşteri beklentilerini istikrarlı şekilde karşılayan premium kalitede ürünler sunmak.",
       "m2": "Güven, şeffaflık ve karşılıklı başarı üzerine kurulu kalıcı ortaklıklar inşa etmek.",
       "m3": "Güvenilir uygulama, verimli lojistik ve duyarlı hizmet aracılığıyla uluslararası ticareti basitleştirmek.",
-      "m4": "Uluslararası pazarlarda değer odaklı fırsatlar yaratarak küresel varlığımızı genişletmek.",
-      "commitment": "Küresel pazarlarda uzun vadeli başarıya yönelik ortak bir bağlılık, güven ve güvenilirlik üzerine kurulu kalıcı ortaklıklar inşa etmeye çalışıyoruz."
+      "m4": "Uluslararası pazarlarda değer odaklı fırsatlar yaratarak küresel varlığımızı genişletmek."
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "Traya International Exim ile e-posta, telefon, WhatsApp veya talep formu aracılığıyla iletişime geçin. Ürün ihtiyacınızı, miktarınızı, varış noktanızı ve zaman çizelgenizi paylaşın."
     },
     "hero": {
-      "eyebrow": "İletişim",
-      "heading": "İhracat masamıza doğrudan ulaşın.",
-      "body": "Talebinizi aşağıda paylaşın veya doğrudan bizimle iletişime geçin — her mesaj kişisel olarak incelenir ve bir iş günü içinde yanıtlanır.",
+      "eyebrow": "Bize ulaşın",
+      "heading": "Bir sonraki sevkiyatınızı birlikte oluşturalım.",
       "cta": "Talebinizi gönderin"
     },
     "emailLabel": "Bize e-posta gönderin",
@@ -431,12 +430,10 @@
     "addressLabel": "Bizi ziyaret edin",
     "mapCta": "Haritada görüntüle",
     "hoursLabel": "Yanıt süresi",
-    "hours": "İhtiyacınızı inceledikten sonra yanıt veriyoruz",
+    "hours": "Her talep kişisel olarak okunur ve incelenir – otomatik yanıt yok, sıra bekleme yok.",
     "socialLabel": "Bizi takip edin",
     "form": {
-      "eyebrow": "Bize mesaj gönderin",
-      "heading": "İhtiyacınızı paylaşın.",
-      "sub": "Aşağıdaki detayları doldurun, ekibimiz kapsamlı bir ticari yanıt sağlamak için ihtiyacınızı inceleyecektir.",
+      "eyebrow": "Talebinizi başlatın",
       "name": "Adınız",
       "email": "E-posta adresi",
       "company": "Kurum",
@@ -447,12 +444,14 @@
       "success": "Teşekkür ederiz. Mesajınız gönderildi. Kısa süre içinde sizinle iletişime geçeceğiz.",
       "error": "Bir şeyler ters gitti. Lütfen tekrar deneyin veya doğrudan bize e-posta gönderin.",
       "rateLimited": "Bugünkü limitinize ulaştınız. Lütfen bize e-posta gönderin veya WhatsApp'tan yazın.",
-      "point1": "Bir iş günü içinde yanıt",
-      "point2": "Ürün özellikleri, fiyatlandırma, numuneler ve belgeler",
-      "point3": "İhracat sorularınız için özel destek",
       "reassurance": "Genellikle 1 iş günü içinde yanıt verilir · Herhangi bir taahhüt gerektirmez.",
       "successHeading": "Mesaj gönderildi.",
-      "successBody": "Teşekkür ederiz. Ekibimiz mesajınızı inceleyecek ve genellikle bir iş günü içinde sizinle iletişime geçecektir."
+      "successBody": "Teşekkür ederiz. Ekibimiz mesajınızı inceleyecek ve genellikle bir iş günü içinde sizinle iletişime geçecektir.",
+      "phone": "Telefon / WhatsApp",
+      "country": "Varış ülkesi",
+      "category": "Talebiniz ne ile ilgili?",
+      "categoryPlaceholder": "Bir kategori seçin",
+      "categoryOptions": "Gıda ve Tarım Ürünleri · Kimyasallar · Genel Talep"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "Ürün Portföyümüz",
       "heading": "Hindistan'dan tedarik etmek istediğiniz",
       "sub": "Birden çok kategoride yer alan çeşitli ürün portföyümüzü keşfedin. Listede olmayan bir ürün mü arıyorsunuz? İhtiyacınızı bize iletin, size geri dönüş yapalım.",
-      "spec": "Çeşitli ürün portföyü · Çoklu kategori · 500'den fazla listelenmiş ürün",
+      "spec": "Çeşitli ürün portföyü · Çoklu kategori · 450'den fazla listelenmiş ürün",
       "search": "Ürün veya kategori ara...",
       "noResults": "Aramanızla eşleşen ürün bulunamadı.",
       "downloadCatalogue": "Tam kataloğu indirin (PDF)",
@@ -642,7 +641,7 @@
       "specOrigin": "Menşe",
       "specOriginVal": "Hindistan",
       "specMoq": "Minimum Sipariş Miktarı",
-      "specMoqVal": "Talep üzerine",
+      "specMoqVal": "200 kg",
       "specPackaging": "Ambalaj",
       "specPackagingVal": "Özelleştirilebilir",
       "specIncoterms": "Teslim Şekilleri",
@@ -654,7 +653,7 @@
       "downloadCta": "Kategori teknik özellik föyünü indirin",
       "closingCta": "Bu kategoriden tedarik yapmaya hazır mısınız?",
       "closingSub": "Ürün ihtiyacınızı, miktarınızı ve varış noktanızı paylaşın. Ekibimiz inceleyip mevcut seçenekler, teknik özellikler ve fiyatlandırma ile yanıt verecektir.",
-      "specMoqValChem": "500 kg'dan itibaren",
+      "specMoqValChem": "500 kg",
       "specPackagingValChem": "25 kg HDPE torbalar, fiber variller, kağıt torbalar ve özel ihracat ambalajı",
       "specDocs": "Belgeler",
       "specDocsVal": "Talep üzerine COA, TDS, MSDS"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "Yükleniyor…"
   }
 }

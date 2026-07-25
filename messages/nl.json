@@ -40,7 +40,7 @@
       "seaBody": "Het meest geschikt voor grote orders waarbij kostenefficiëntie belangrijk is. Wij coördineren zowel FCL- (Full Container Load) als LCL-zendingen (Less than Container Load).",
       "airTitle": "Luchtvracht",
       "airBody": "Voor tijdsgevoelige of hoogwaardige lading die snel en veilig grenzen moet overschrijden met minimale transittijd.",
-      "courierTitle": "Koeriersdienst voor monsters",
+      "courierTitle": "Koeriersdienst",
       "courierBody": "Internationale koeriersverzending voor productmonsters, zodat kopers kwaliteit, specificaties en geschiktheid kunnen beoordelen voordat zij een volledige order plaatsen.",
       "incoterms": "Incoterms: zendingen worden afgehandeld op voorwaarden die voor u werken. Wij ondersteunen FOB, CIF en andere standaard handelsvoorwaarden, vooraf overeengekomen, zonder onduidelijkheid over verantwoordelijkheden of kosten. Neem contact met ons op om te bespreken wat het beste bij uw behoefte past."
     },
@@ -53,7 +53,7 @@
       "pillar2": "Ervoor zorgen dat producten voldoen aan de compliance-normen van de markten waarin u actief bent.",
       "pillar3": "Elke order behandelen als de basis van een langdurige relatie, niet als een eenmalige transactie.",
       "pillar4": "Flexibel en responsief blijven naarmate uw zakelijke behoeften en marktomstandigheden veranderen.",
-      "mapCaption": "Wij bedienen internationale kopers wereldwijd",
+      "mapCaption": "Uw poort naar wereldwijde handel",
       "mapLabel": "Ahmedabad, India",
       "headingAccent": "wij bereiken u"
     },
@@ -75,7 +75,7 @@
     "send": "Verstuur",
     "close": "Chat sluiten",
     "whatsappAction": "Chat via WhatsApp",
-    "enquiryAction": "Aanvraagformulier",
+    "inquiryAction": "Aanvraagformulier",
     "offline": "Onze assistent neemt even pauze. Stuur ons een bericht via WhatsApp en wij helpen u direct verder.",
     "rateLimited": "U heeft de daglimiet voor chatberichten bereikt. Stuur ons een bericht via WhatsApp en wij helpen u direct verder.",
     "limitReached": "Laten we verdergaan via WhatsApp voor een sneller antwoord.",
@@ -94,8 +94,8 @@
     "products": "Producten",
     "howWeWork": "Hoe Wij Werken",
     "certifications": "Certificeringen",
-    "contact": "Contact",
-    "enquiry": "Aanvraag",
+    "contact": "Neem contact op",
+    "inquiry": "Aanvraag",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden",
     "breadcrumb": "Kruimelpad"
@@ -126,10 +126,10 @@
     "requestQuote": "Offerte Aanvragen",
     "downloadCatalogue": "Catalogus Downloaden",
     "rights": "Alle rechten voorbehouden.",
-    "builtBy": "Gebouwd door Studio Morpheus",
+    "builtBy": "Gebouwd door <link>Studio Morpheus</link>",
     "toTop": "Terug naar boven"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "Stuur een aanvraag",
     "heading": "Laten we",
     "sub": "Deel uw wensen, wij regelen de rest.",
@@ -259,7 +259,7 @@
       "heading": "Uw betrouwbare partner voor",
       "sub": "Traya zet zich in voor het opbouwen van duurzame, wereldwijde partnerschappen door middel van vertrouwen, betrouwbaarheid en professionele uitvoering. Met een groeiend portfolio aan kwaliteitsproducten helpen wij bedrijven met vertrouwen internationale handel te voeren.",
       "cta": "Ontdek Producten",
-      "ctaEnquiry": "Deel uw behoefte",
+      "ctainquiry": "Deel uw behoefte",
       "certified": "Gecertificeerd",
       "headingAccent": "sourcing uit India."
     },
@@ -336,7 +336,8 @@
       "headingAccent": "langdurige partnerschappen."
     },
     "testimonials": {
-      "eyebrow": "Wat kopers zeggen"
+      "eyebrow": "Wat kopers zeggen",
+      "dotLabel": "Getuigenis {n}"
     },
     "certs": {
       "eyebrow": "Exportregistraties",
@@ -381,7 +382,7 @@
       "headingAccent": "van Wereldhandel"
     },
     "founder": {
-      "eyebrow": "In haar eigen woorden.",
+      "eyebrow": "Een Bericht van de Oprichter",
       "name": "Neha Pardeshi",
       "role": "Oprichter & CEO",
       "p1": "De wereld ging voor mij niet open door schoolboeken, maar door reizen. Het verkennen van verschillende culturen, het ontmoeten van mensen uit alle lagen van de bevolking en het bekijken van de wereld vanuit verschillende perspectieven hebben niet alleen gevormd wie ik ben, maar ook wat ik heb gekozen om op te bouwen.",
@@ -409,8 +410,7 @@
       "m1": "Producten van premiumkwaliteit leveren die consequent voldoen aan internationale normen en klantverwachtingen.",
       "m2": "Duurzame partnerschappen opbouwen die gebaseerd zijn op vertrouwen, transparantie en wederzijds succes.",
       "m3": "Internationale handel vereenvoudigen door middel van betrouwbare uitvoering, efficiënte logistiek en responsieve service.",
-      "m4": "Onze wereldwijde aanwezigheid uitbreiden door waardegedreven kansen te creëren op internationale markten.",
-      "commitment": "Wij streven ernaar duurzame partnerschappen op te bouwen, gebaseerd op vertrouwen, betrouwbaarheid en een gedeelde toewijding aan succes op de lange termijn in wereldwijde markten."
+      "m4": "Onze wereldwijde aanwezigheid uitbreiden door waardegedreven kansen te creëren op internationale markten."
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "Neem contact op met Traya International Exim per e-mail, telefoon, WhatsApp of via het aanvraagformulier. Deel uw productbehoefte, hoeveelheid, bestemming en tijdlijn."
     },
     "hero": {
-      "eyebrow": "Contact",
-      "heading": "Neem rechtstreeks contact op met ons exportteam.",
-      "body": "Deel hieronder uw vereiste, of neem rechtstreeks contact op — elk bericht wordt persoonlijk beoordeeld, met een reactie binnen één werkdag.",
+      "eyebrow": "Neem contact op",
+      "heading": "Laten we uw volgende zending vormgeven.",
       "cta": "Stuur uw vereiste"
     },
     "emailLabel": "E-mail ons",
@@ -431,12 +430,10 @@
     "addressLabel": "Bezoek ons",
     "mapCta": "Bekijk op kaart",
     "hoursLabel": "Reactietijd",
-    "hours": "Wij reageren na beoordeling van uw behoefte",
+    "hours": "Elke aanvraag wordt persoonlijk gelezen en beoordeeld – geen automatische antwoorden, geen wachtrijen.",
     "socialLabel": "Volg ons",
     "form": {
-      "eyebrow": "Stuur ons een bericht",
-      "heading": "Deel uw behoefte.",
-      "sub": "Vul onderstaande gegevens in en ons team beoordeelt uw behoefte om een volledige commerciële reactie te geven.",
+      "eyebrow": "Start uw aanvraag",
       "name": "Uw naam",
       "email": "E-mailadres",
       "company": "Organisatie",
@@ -447,12 +444,14 @@
       "success": "Dank u. Uw bericht is verzonden. Wij nemen binnenkort contact met u op.",
       "error": "Er is iets misgegaan. Probeer het opnieuw, of e-mail ons rechtstreeks.",
       "rateLimited": "U heeft de daglimiet bereikt. E-mail ons of stuur ons een bericht via WhatsApp.",
-      "point1": "Reactie binnen één werkdag",
-      "point2": "Productspecificaties, prijzen, monsters & documentatie",
-      "point3": "Toegewijde ondersteuning voor uw exportvragen",
       "reassurance": "Doorgaans reactie binnen 1 werkdag · Geheel vrijblijvend.",
       "successHeading": "Bericht verzonden.",
-      "successBody": "Dank u. Ons team beoordeelt uw bericht en neemt contact met u op   meestal binnen één werkdag."
+      "successBody": "Dank u. Ons team beoordeelt uw bericht en neemt contact met u op   meestal binnen één werkdag.",
+      "phone": "Telefoon / WhatsApp",
+      "country": "Bestemmingsland",
+      "category": "Waar gaat uw vraag over?",
+      "categoryPlaceholder": "Selecteer een categorie",
+      "categoryOptions": "Voedsel- en agroproducten · Chemicaliën · Algemene vraag"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "Ons Productportfolio",
       "heading": "Vind de producten",
       "sub": "Ontdek ons diverse productportfolio verspreid over meerdere categorieën. Op zoek naar een product dat hier niet vermeld staat? Stuur ons uw vereisten en we nemen contact met u op.",
-      "spec": "Divers productportfolio · Multi-categorie · 500+ vermelde producten",
+      "spec": "Divers productportfolio · Multi-categorie · 450+ vermelde producten",
       "search": "Zoek producten of categorieën...",
       "noResults": "Geen producten komen overeen met uw zoekopdracht.",
       "downloadCatalogue": "Download volledige catalogus (PDF)",
@@ -642,7 +641,7 @@
       "specOrigin": "Herkomst",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "Op aanvraag",
+      "specMoqVal": "200 kg",
       "specPackaging": "Verpakking",
       "specPackagingVal": "Aanpasbaar",
       "specIncoterms": "Incoterms",
@@ -654,7 +653,7 @@
       "downloadCta": "Download specificatieblad categorie",
       "closingCta": "Klaar om te sourcen uit deze categorie?",
       "closingSub": "Deel uw productbehoefte, hoeveelheid en bestemming. Ons team beoordeelt dit en reageert met beschikbare opties, specificaties en prijzen.",
-      "specMoqValChem": "Vanaf 500 kg",
+      "specMoqValChem": "500 kg",
       "specPackagingValChem": "25 kg HDPE-zakken, vezelvaten, papieren zakken & aangepaste exportverpakking",
       "specDocs": "Documenten",
       "specDocsVal": "COA, TDS, MSDS op aanvraag"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "Laden…"
   }
 }

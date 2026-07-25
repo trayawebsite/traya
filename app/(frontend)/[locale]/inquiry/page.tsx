@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { localeAlternates } from "@/lib/seo";
-import { EnquiryListView } from "@/components/sections/enquiry-list";
+import { InquiryListView } from "@/components/sections/inquiry-list";
 
 export async function generateMetadata({
   params,
@@ -9,17 +9,17 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Enquiry.meta" });
+  const t = await getTranslations({ locale, namespace: "inquiry.meta" });
   return {
     title: t("title"),
     description: t("description"),
-    alternates: localeAlternates(locale, "/enquiry"),
+    alternates: localeAlternates(locale, "/inquiry"),
     // Thin client-side RFQ utility page   keep it out of the index.
     robots: { index: false, follow: true },
   };
 }
 
-export default async function EnquiryPage({
+export default async function InquiryPage({
   params,
 }: {
   params: Promise<{ locale: string }>;
@@ -27,8 +27,8 @@ export default async function EnquiryPage({
   const { locale } = await params;
   setRequestLocale(locale);
   return (
-    <div id="enquiry">
-      <EnquiryListView />
+    <div id="inquiry">
+      <InquiryListView />
     </div>
   );
 }

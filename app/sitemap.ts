@@ -4,7 +4,7 @@ import {getCategorySlugs, getProductSlugs} from '@/lib/catalogue';
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
 
-// Primary marketing/catalogue pages. NOTE: /enquiry is deliberately excluded  
+// Primary marketing/catalogue pages. NOTE: /inquiry is deliberately excluded  
 // it's a thin client-side RFQ utility page and is marked noindex.
 const STATIC_PATHS = ['', '/about', '/capabilities', '/how-we-work', '/products', '/certifications', '/contact'];
 // Legal pages   indexable but low priority.

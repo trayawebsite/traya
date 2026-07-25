@@ -49,7 +49,7 @@ async function pageContextFrom(path?: string): Promise<string | undefined> {
     '/products': 'the Products catalogue',
     '/certifications': 'the Certifications page',
     '/contact': 'the Contact page',
-    '/enquiry': 'the Enquiry List page'
+    '/inquiry': 'the inquiry List page'
   };
   return map[clean] ? `The buyer is on ${map[clean]}.` : undefined;
 }

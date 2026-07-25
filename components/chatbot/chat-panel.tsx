@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import {useEffect, useRef, useState, type ReactNode} from 'react';
-import {useTranslations, useLocale} from 'next-intl';
-import {usePathname} from '@/i18n/navigation';
-import {whatsAppHref} from '@/lib/whatsapp';
+import { useEffect, useRef, useState, type ReactNode } from "react";
+import { useTranslations, useLocale } from "next-intl";
+import { usePathname } from "@/i18n/navigation";
+import { whatsAppHref } from "@/lib/whatsapp";
 
-type Msg = {role: 'user' | 'assistant'; content: string};
-type Status = 'idle' | 'streaming' | 'offline' | 'rate' | 'limit';
+type Msg = { role: "user" | "assistant"; content: string };
+type Status = "idle" | "streaming" | "offline" | "rate" | "limit";
 
 const MAX_USER = 15;
 const MAX_INPUT = 500;
@@ -15,15 +15,21 @@ const MAX_INPUT = 500;
 // FloatingActions, which mounts this only while open). Streams from /api/chat,
 // falls back to WhatsApp on any error or quota limit. Unmounts on close, so
 // state resets and any in-flight stream is aborted   fresh each open.
-export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void}) {
-  const t = useTranslations('Chatbot');
-  const th = useTranslations('Header');
+export function ChatPanel({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) {
+  const t = useTranslations("Chatbot");
+  const th = useTranslations("Header");
   const locale = useLocale();
   const pathname = usePathname();
 
   const [messages, setMessages] = useState<Msg[]>([]);
-  const [input, setInput] = useState('');
-  const [status, setStatus] = useState<Status>('idle');
+  const [input, setInput] = useState("");
+  const [status, setStatus] = useState<Status>("idle");
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -32,14 +38,17 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
   // navigated away) so we don't keep reading/setState after teardown.
   useEffect(() => () => abortRef.current?.abort(), []);
 
-  const waHref = whatsAppHref(th('whatsappMessage'));
+  const waHref = whatsAppHref(th("whatsappMessage"));
 
-  const userCount = messages.filter((m) => m.role === 'user').length;
+  const userCount = messages.filter((m) => m.role === "user").length;
   const atLimit = userCount >= MAX_USER;
-  const busy = status === 'streaming';
+  const busy = status === "streaming";
 
   useEffect(() => {
-    scrollRef.current?.scrollTo({top: scrollRef.current.scrollHeight, behavior: 'smooth'});
+    scrollRef.current?.scrollTo({
+      top: scrollRef.current.scrollHeight,
+      behavior: "smooth",
+    });
   }, [messages, status]);
 
   useEffect(() => {
@@ -50,69 +59,75 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
     const value = text.trim();
     if (!value || busy) return;
     if (atLimit) {
-      setStatus('limit');
+      setStatus("limit");
       return;
     }
-    const history: Msg[] = [...messages, {role: 'user', content: value}];
-    setMessages([...history, {role: 'assistant', content: ''}]);
-    setInput('');
-    setStatus('streaming');
+    const history: Msg[] = [...messages, { role: "user", content: value }];
+    setMessages([...history, { role: "assistant", content: "" }]);
+    setInput("");
+    setStatus("streaming");
 
     const controller = new AbortController();
     abortRef.current = controller;
 
     try {
-      const res = await fetch('/api/chat', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({messages: history, locale, path: pathname}),
-        signal: controller.signal
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: history, locale, path: pathname }),
+        signal: controller.signal,
       });
 
       if (!res.ok || !res.body) {
         setMessages((m) => m.slice(0, -1)); // drop the empty placeholder
-        setStatus(res.status === 429 ? 'rate' : 'offline');
+        setStatus(res.status === 429 ? "rate" : "offline");
         return;
       }
 
       const reader = res.body.getReader();
       const dec = new TextDecoder();
-      let acc = '';
+      let acc = "";
       for (;;) {
-        const {done, value: chunk} = await reader.read();
+        const { done, value: chunk } = await reader.read();
         if (done) break;
-        acc += dec.decode(chunk, {stream: true});
+        acc += dec.decode(chunk, { stream: true });
         setMessages((m) => {
           const copy = [...m];
-          copy[copy.length - 1] = {role: 'assistant', content: acc};
+          copy[copy.length - 1] = { role: "assistant", content: acc };
           return copy;
         });
       }
       // Empty stream → treat as offline so the buyer still gets a route out.
       if (!acc.trim()) {
         setMessages((m) => m.slice(0, -1));
-        setStatus('offline');
+        setStatus("offline");
         return;
       }
-      setStatus('idle');
+      setStatus("idle");
     } catch (err) {
       // Aborted on unmount → nothing to show; the panel is gone.
-      if (err instanceof DOMException && err.name === 'AbortError') return;
+      if (err instanceof DOMException && err.name === "AbortError") return;
       setMessages((m) => m.slice(0, -1));
-      setStatus('offline');
+      setStatus("offline");
     }
   }
 
   if (!open) return null;
 
-  const showChips = messages.length === 0 && status === 'idle';
+  const showChips = messages.length === 0 && status === "idle";
   const notice =
-    status === 'limit' ? t('limitReached') : status === 'rate' ? t('rateLimited') : status === 'offline' ? t('offline') : null;
+    status === "limit"
+      ? t("limitReached")
+      : status === "rate"
+        ? t("rateLimited")
+        : status === "offline"
+          ? t("offline")
+          : null;
 
   return (
     <div
       role="dialog"
-      aria-label={t('title')}
+      aria-label={t("title")}
       className="fixed bottom-24 end-6 z-50 flex h-[32rem] max-h-[calc(100dvh-8rem)] w-[calc(100vw-3rem)] max-w-sm flex-col overflow-hidden rounded-2xl border border-traya-border bg-card shadow-xl"
     >
       {/* Header */}
@@ -122,14 +137,18 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
             <BotGlyph />
           </span>
           <div className="min-w-0">
-            <p className="font-display text-sm leading-tight text-foreground">{t('title')}</p>
-            <p className="truncate text-[11px] leading-tight text-muted-foreground">{t('subtitle')}</p>
+            <p className="font-display text-sm leading-tight text-foreground">
+              {t("title")}
+            </p>
+            <p className="truncate text-[11px] leading-tight text-muted-foreground">
+              {t("subtitle")}
+            </p>
           </div>
         </div>
         <button
           type="button"
           onClick={onClose}
-          aria-label={t('close')}
+          aria-label={t("close")}
           className="rounded-md p-1 text-muted-foreground transition-colors hover:bg-traya-border/50 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
         >
           <CloseGlyph />
@@ -137,18 +156,21 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
       </div>
 
       {/* Messages */}
-      <div ref={scrollRef} className="flex-1 space-y-3 overflow-y-auto px-4 py-4">
-        <Bubble role="assistant">{t('greeting')}</Bubble>
+      <div
+        ref={scrollRef}
+        className="flex-1 space-y-3 overflow-y-auto px-4 py-4"
+      >
+        <Bubble role="assistant">{t("greeting")}</Bubble>
 
         {messages.map((m, i) => (
           <Bubble key={i} role={m.role}>
-            {m.content || (busy && i === messages.length - 1 ? <Dots /> : '')}
+            {m.content || (busy && i === messages.length - 1 ? <Dots /> : "")}
           </Bubble>
         ))}
 
         {showChips && (
           <div className="flex flex-wrap gap-2 pt-1">
-            {(['chip1', 'chip2', 'chip3'] as const).map((k) => (
+            {(["chip1", "chip2", "chip3"] as const).map((k) => (
               <button
                 key={k}
                 type="button"
@@ -171,7 +193,7 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex items-center gap-1.5 text-sm font-medium text-traya-red-deep hover:underline"
               >
-                {t('whatsappAction')} <span aria-hidden>→</span>
+                {t("whatsappAction")} <span aria-hidden>→</span>
               </a>
             )}
           </div>
@@ -188,15 +210,15 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full border border-traya-border px-2.5 py-1 text-[11px] font-medium text-foreground transition-colors hover:border-whatsapp"
             >
-              {t('whatsappAction')}
+              {t("whatsappAction")}
             </a>
           )}
           <a
-            href="#enquiry"
+            href="#inquiry"
             onClick={onClose}
             className="inline-flex items-center rounded-full border border-traya-border px-2.5 py-1 text-[11px] font-medium text-foreground transition-colors hover:border-traya-red/40"
           >
-            {t('enquiryAction')}
+            {t("inquiryAction")}
           </a>
         </div>
 
@@ -213,33 +235,43 @@ export function ChatPanel({open, onClose}: {open: boolean; onClose: () => void})
             onChange={(e) => setInput(e.target.value)}
             maxLength={MAX_INPUT}
             disabled={busy || atLimit}
-            placeholder={t('placeholder')}
-            aria-label={t('placeholder')}
+            placeholder={t("placeholder")}
+            aria-label={t("placeholder")}
             className="min-w-0 flex-1 rounded-full border border-traya-border bg-background px-3.5 py-2 text-sm text-foreground placeholder:text-muted-foreground/70 focus-visible:border-traya-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red/25 disabled:opacity-60"
           />
           <button
             type="submit"
             disabled={!input.trim() || busy || atLimit}
-            aria-label={t('send')}
+            aria-label={t("send")}
             className="grid size-9 shrink-0 place-items-center rounded-full bg-traya-red text-white transition-colors hover:bg-traya-red-deep focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:opacity-40"
           >
             <SendGlyph />
           </button>
         </form>
 
-        <p className="mt-2 text-center text-[10px] leading-tight text-muted-foreground">{t('disclaimer')}</p>
+        <p className="mt-2 text-center text-[10px] leading-tight text-muted-foreground">
+          {t("disclaimer")}
+        </p>
       </div>
     </div>
   );
 }
 
-function Bubble({role, children}: {role: 'user' | 'assistant'; children: ReactNode}) {
-  const isUser = role === 'user';
+function Bubble({
+  role,
+  children,
+}: {
+  role: "user" | "assistant";
+  children: ReactNode;
+}) {
+  const isUser = role === "user";
   return (
-    <div className={isUser ? 'flex justify-end' : 'flex justify-start'}>
+    <div className={isUser ? "flex justify-end" : "flex justify-start"}>
       <div
         className={`max-w-[85%] whitespace-pre-wrap rounded-2xl px-3.5 py-2 text-sm leading-relaxed ${
-          isUser ? 'bg-traya-red text-white' : 'bg-traya-surface text-foreground'
+          isUser
+            ? "bg-traya-red text-white"
+            : "bg-traya-surface text-foreground"
         }`}
       >
         {children}
@@ -260,7 +292,16 @@ function Dots() {
 
 function BotGlyph() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="size-4" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="size-4"
+      aria-hidden="true"
+    >
       <path d="M12 8V4H8" />
       <rect width="16" height="12" x="4" y="8" rx="2" />
       <path d="M2 14h2" />
@@ -273,7 +314,15 @@ function BotGlyph() {
 
 function CloseGlyph() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="size-4" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      className="size-4"
+      aria-hidden="true"
+    >
       <path d="M18 6 6 18M6 6l12 12" />
     </svg>
   );
@@ -281,7 +330,16 @@ function CloseGlyph() {
 
 function SendGlyph() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" className="size-4" aria-hidden="true">
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="size-4"
+      aria-hidden="true"
+    >
       <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" />
     </svg>
   );

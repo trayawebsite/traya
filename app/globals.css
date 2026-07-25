@@ -280,6 +280,27 @@
    inert so the markup needn't change. Restraint = premium: no constant ambient
    motion competing with the marquee. */
 
+/* Ambient maroon glow behind the values band (home stats). A single, low-opacity
+   deep-red radial that slowly breathes for warmth/depth on the espresso band —
+   deliberately long + gentle so it reads as ambient light, not motion. Sits
+   BEHIND the content (z-index handled in markup). Static + centered under
+   reduced-motion. */
+@keyframes traya-glow-breathe {
+  0%   { transform: translate3d(-6%, -4%, 0) scale(1);    opacity: 0.5; }
+  50%  { transform: translate3d(6%, 4%, 0)   scale(1.18); opacity: 0.85; }
+  100% { transform: translate3d(-6%, -4%, 0) scale(1);    opacity: 0.5; }
+}
+.stats-glow {
+  background:
+    radial-gradient(closest-side, color-mix(in oklab, var(--traya-red-deep) 85%, black) 0%, transparent 72%);
+  filter: blur(28px);
+  animation: traya-glow-breathe 22s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@media (prefers-reduced-motion: reduce) {
+  .stats-glow { animation: none; transform: none; opacity: 0.7; }
+}
+
 /* Scroll-reveal entrance signature — the site's one motion signature, kept
    QUIET: a soft fade + 8px rise (~500ms), played once when JS toggles
    [data-shown] on intersection (see components/ui/reveal.tsx). Subtle on purpose

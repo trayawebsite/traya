@@ -61,6 +61,7 @@ const gridStyle: React.CSSProperties = {
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
   const tl = await getTranslations("Links");
+  const th = await getTranslations("Header");
   const s = await getSiteSettings();
 
   const socialUrl: Record<string, string> = {
@@ -85,13 +86,13 @@ export async function SiteFooter() {
         style={gridStyle}
       />
 
-      <Container className="relative py-section">
+      <Container className="relative pb-section pt-10">
         {/* Masthead: wordmark left, back-to-top right (the big tagline now lives
             in the contact section above   no redundant statement here). */}
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
             href="/"
-            aria-label={`${siteConfig.name}   home`}
+            aria-label={th("siteLabel")}
             className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi"
           >
             <Image
@@ -99,18 +100,18 @@ export async function SiteFooter() {
               alt={siteConfig.name}
               width={173}
               height={220}
-              className="h-24 w-auto sm:h-28"
+              className="h-32 w-auto sm:h-40"
             />
           </Link>
           <ScrollToTop />
         </div>
 
         {/* Columns */}
-        <div className="mt-12 grid gap-12 border-t border-traya-clay/20 pt-12 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
-          {/* Brand line + address (wordmark is in the masthead above) */}
+        <div className="mt-8 grid gap-12 border-t border-traya-clay/20 pt-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
+          {/* Brand name + address (logo/tagline are in the masthead above) */}
           <div className="max-w-xs">
-            <p className="font-display text-lg leading-snug text-traya-cream/90">
-              {t("tagline")}
+            <p className="font-display text-lg leading-snug text-traya-saffron">
+              {siteConfig.name}
             </p>
             {s.contact.address && (
               <address className="mt-4 text-sm not-italic leading-relaxed text-traya-cream/70">
@@ -249,7 +250,20 @@ export async function SiteFooter() {
             )}
             {s.legal.iec && <li className="font-mono">IEC {s.legal.iec}</li>}
           </ul>
-          <p>{t("builtBy")}</p>
+          <p>
+            {t.rich("builtBy", {
+              link: (chunks) => (
+                <a
+                  href="https://dreamwithmorpheus.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-traya-cream/30 underline-offset-2 transition-colors hover:text-traya-cream hover:decoration-traya-cream/60"
+                >
+                  {chunks}
+                </a>
+              ),
+            })}
+          </p>
         </Container>
       </div>
     </footer>

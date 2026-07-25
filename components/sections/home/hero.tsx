@@ -17,7 +17,7 @@ export async function Hero({ data }: { data?: HeroData }) {
   const heading = data?.heading || t("heading");
   const sub = data?.sub || t("sub");
   const cta = data?.ctaPrimaryLabel || t("cta");
-  const ctaEnquiry = data?.ctaSecondaryLabel || t("ctaEnquiry");
+  const ctainquiry = data?.ctaSecondaryLabel || t("ctainquiry");
 
   return (
     <section className="relative isolate overflow-hidden border-b border-traya-border bg-background">
@@ -34,9 +34,7 @@ export async function Hero({ data }: { data?: HeroData }) {
           <p className="section-label">{eyebrow}</p>
           <h1 className="mt-5 text-balance font-display text-display-lg text-foreground">
             {heading}{" "}
-            <span className="text-traya-red">
-              {t("headingAccent")}
-            </span>
+            <span className="text-traya-red">{t("headingAccent")}</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             {sub}
@@ -46,8 +44,8 @@ export async function Hero({ data }: { data?: HeroData }) {
             <Link href="/products" className={primaryBtn}>
               {cta}
             </Link>
-            <a href="#enquiry" className={secondaryBtn}>
-              {ctaEnquiry}
+            <a href="#inquiry" className={secondaryBtn}>
+              {ctainquiry}
             </a>
           </div>
         </div>

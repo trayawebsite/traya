@@ -40,7 +40,7 @@
       "seaBody": "最适合注重成本效益的大批量订单。我们同时协调整箱（FCL）和拼箱（LCL）运输。",
       "airTitle": "空运",
       "airBody": "适用于对时效要求高或高价值的货物，能够以最短运输时间实现快速、安全的跨境运输。",
-      "courierTitle": "样品快递",
+      "courierTitle": "快递",
       "courierBody": "为产品样品提供国际快递服务，让买家在下达正式订单前评估质量、规格及适用性。",
       "incoterms": "国际贸易术语：我们按适合您的条款处理货运，支持FOB、CIF及其他标准贸易术语，并提前商定，责任与费用划分清晰无误。欢迎与我们沟通，找到最适合您需求的方案。"
     },
@@ -53,7 +53,7 @@
       "pillar2": "确保产品符合您所在市场的合规标准。",
       "pillar3": "将每一笔订单视为长期合作关系的基础，而非一次性交易。",
       "pillar4": "随着您业务需求和市场状况的变化，保持灵活与快速响应。",
-      "mapCaption": "我们服务全球的国际买家",
+      "mapCaption": "您通往全球贸易的门户",
       "mapLabel": "印度，艾哈迈达巴德",
       "headingAccent": "我们都能触达"
     },
@@ -75,7 +75,7 @@
     "send": "发送",
     "close": "关闭聊天",
     "whatsappAction": "通过WhatsApp聊天",
-    "enquiryAction": "询价表单",
+    "inquiryAction": "询价表单",
     "offline": "我们的助手暂时休息中。请通过WhatsApp联系我们，我们会立即为您提供帮助。",
     "rateLimited": "您今日的聊天次数已达上限。请通过WhatsApp联系我们，我们会立即为您提供帮助。",
     "limitReached": "请通过WhatsApp继续沟通，以便更快获得答复。",
@@ -95,7 +95,7 @@
     "howWeWork": "工作方式",
     "certifications": "资质认证",
     "contact": "联系我们",
-    "enquiry": "询价",
+    "inquiry": "询价",
     "privacy": "隐私政策",
     "terms": "使用条款",
     "breadcrumb": "面包屑导航"
@@ -126,10 +126,10 @@
     "requestQuote": "申请报价",
     "downloadCatalogue": "下载产品目录",
     "rights": "版权所有，保留所有权利。",
-    "builtBy": "由 Studio Morpheus 构建",
+    "builtBy": "由 <link>Studio Morpheus</link> 构建",
     "toTop": "返回顶部"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "发送询价",
     "heading": "让我们开始",
     "sub": "分享您的需求，其余的交给我们。",
@@ -259,7 +259,7 @@
       "heading": "您值得信赖的",
       "sub": "Traya致力于通过信任、可靠与专业执行，建立持久的全球合作关系。凭借不断扩展的优质产品组合，我们帮助企业自信地驾驭国际贸易。",
       "cta": "探索产品",
-      "ctaEnquiry": "提交您的需求",
+      "ctainquiry": "提交您的需求",
       "certified": "认证资质",
       "headingAccent": "印度寻源合作伙伴。"
     },
@@ -336,7 +336,8 @@
       "headingAccent": "长期合作关系而生。"
     },
     "testimonials": {
-      "eyebrow": "买家评价"
+      "eyebrow": "买家评价",
+      "dotLabel": "客户评价 {n}"
     },
     "certs": {
       "eyebrow": "出口注册资质",
@@ -381,7 +382,7 @@
       "headingAccent": "全球贸易之道"
     },
     "founder": {
-      "eyebrow": "创始人亲述。",
+      "eyebrow": "创始人寄语",
       "name": "Neha Pardeshi",
       "role": "创始人兼首席执行官",
       "p1": "这个世界向我敞开，靠的不是教科书，而是旅行。探索不同的文化，结识各行各业的人，以不同的视角看待世界  这些经历不仅塑造了今天的我，也塑造了我选择去创建的事业。",
@@ -409,8 +410,7 @@
       "m1": "提供始终符合国际标准和客户期望的优质产品。",
       "m2": "建立以信任、透明和互利共赢为基础的长久合作关系。",
       "m3": "通过可靠的执行、高效的物流和快速响应的服务，简化国际贸易流程。",
-      "m4": "通过在国际市场创造价值驱动的机遇，拓展我们的全球业务版图。",
-      "commitment": "我们致力于建立以信任、可靠为基础的长久合作关系，携手在全球市场中共同追求长期成功。"
+      "m4": "通过在国际市场创造价值驱动的机遇，拓展我们的全球业务版图。"
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "通过电子邮件、电话、WhatsApp或询价表单联系Traya International Exim。请提供您的产品需求、数量、目的地及交付时间。"
     },
     "hero": {
-      "eyebrow": "联系方式",
-      "heading": "直接联系我们的出口团队。",
-      "body": "请在下方留下您的需求，或直接与我们联系——每一条消息都会由专人亲自审阅，并在一个工作日内回复。",
+      "eyebrow": "联系我们",
+      "heading": "让我们共同打造您的下一批货运。",
       "cta": "提交您的需求"
     },
     "emailLabel": "发送邮件",
@@ -431,12 +430,10 @@
     "addressLabel": "来访地址",
     "mapCta": "在地图上查看",
     "hoursLabel": "响应时间",
-    "hours": "我们将在审核您的需求后予以回复",
+    "hours": "每一条咨询都由专人亲自阅读和审核——没有自动回复，没有排队等待。",
     "socialLabel": "关注我们",
     "form": {
-      "eyebrow": "给我们留言",
-      "heading": "告诉我们您的需求。",
-      "sub": "请填写以下信息，我们的团队将审核您的需求并提供全面的商业回复。",
+      "eyebrow": "开始您的咨询",
       "name": "您的姓名",
       "email": "电子邮箱",
       "company": "公司名称",
@@ -447,12 +444,14 @@
       "success": "感谢您的留言，我们已收到，稍后将与您联系。",
       "error": "出现了一些问题，请重试，或直接发送邮件与我们联系。",
       "rateLimited": "您今日的留言次数已达上限。请发送邮件或通过WhatsApp联系我们。",
-      "point1": "一个工作日内回复",
-      "point2": "产品规格、价格、样品及文件资料",
-      "point3": "为您的出口咨询提供专属支持",
       "reassurance": "通常在1个工作日内回复 · 无需承担任何义务。",
       "successHeading": "留言已发送。",
-      "successBody": "感谢您的留言。我们的团队将进行审核并回复您  通常在1个工作日内完成。"
+      "successBody": "感谢您的留言。我们的团队将进行审核并回复您  通常在1个工作日内完成。",
+      "phone": "电话/WhatsApp",
+      "country": "目的地国家",
+      "category": "您咨询的是什么内容？",
+      "categoryPlaceholder": "请选择类别",
+      "categoryOptions": "食品与农产品 · 化学品 · 一般咨询"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "我们的产品组合",
       "heading": "找到您想从印度采购的",
       "sub": "探索我们跨多个类别的多样化产品组合。找不到您需要的产品？请将您的需求发送给我们，我们会尽快回复。",
-      "spec": "多样化产品组合 · 多品类 · 500+ 已上架产品",
+      "spec": "多样化产品组合 · 多品类 · 450+ 已上架产品",
       "search": "搜索产品或品类……",
       "noResults": "未找到符合搜索条件的产品。",
       "downloadCatalogue": "下载完整产品目录（PDF）",
@@ -642,7 +641,7 @@
       "specOrigin": "产地",
       "specOriginVal": "印度",
       "specMoq": "最小起订量",
-      "specMoqVal": "询价确认",
+      "specMoqVal": "200 公斤",
       "specPackaging": "包装",
       "specPackagingVal": "可定制",
       "specIncoterms": "贸易术语",
@@ -654,7 +653,7 @@
       "downloadCta": "下载品类规格表",
       "closingCta": "准备好从该品类采购了吗？",
       "closingSub": "请提供您的产品需求、数量及目的地。我们的团队将审核并回复可选方案、规格及价格。",
-      "specMoqValChem": "500 公斤起",
+      "specMoqValChem": "500 公斤",
       "specPackagingValChem": "25 公斤 HDPE 袋、纤维桶、纸袋及定制出口包装",
       "specDocs": "文件",
       "specDocsVal": "COA、TDS、MSDS 可应要求提供"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "加载中…"
   }
 }

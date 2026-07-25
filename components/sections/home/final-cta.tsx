@@ -9,7 +9,7 @@ type FinalCtaData = HomePage["finalCta"];
 
 // Reusable closing CTA band   a drifting vermilion glow on the deep espresso.
 // Content precedence: explicit props > Sanity data > i18n (Home.finalCta).
-// Primary → enquiry form; the WhatsApp secondary is standard on every instance.
+// Primary → inquiry form; the WhatsApp secondary is standard on every instance.
 // Reuse it on any page by passing heading/sub/ctaLabel.
 export async function FinalCta({
   data,
@@ -49,7 +49,7 @@ export async function FinalCta({
           <p className="mt-5 leading-relaxed text-traya-cream/75">{sub}</p>
           {actions && (
             <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
-              <a href="#enquiry" className={primaryButtonDark}>
+              <a href="#inquiry" className={primaryButtonDark}>
                 {ctaLabel}
               </a>
               {waHref && (

@@ -50,7 +50,7 @@ export async function handleLead(
       {
         ok: false,
         error:
-          'You have reached the enquiry limit for today. Please email us or message on WhatsApp, and we will get back to you.'
+          'You have reached the inquiry limit for today. Please email us or message on WhatsApp, and we will get back to you.'
       },
       {status: 429, headers: {'Retry-After': String(limit.retryAfterSec)}}
     );
@@ -133,6 +133,7 @@ function textFor(type: LeadType, data: LeadData): string {
     data.company ? `Company:  ${data.company}` : null,
     data.country ? `Country:  ${data.country}` : null,
     data.phone ? `Phone:    ${data.phone}` : null,
+    data.category ? `Inquiring about: ${data.category}` : null,
     data.productName ? `Product:  ${data.productName}` : null,
     data.quantity ? `Quantity: ${data.quantity}` : null,
     '',

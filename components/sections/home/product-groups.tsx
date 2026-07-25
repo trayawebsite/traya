@@ -107,7 +107,7 @@ export async function ProductGroups({ data }: { data?: ProductsData }) {
             {t("note")}{" "}
             <span className="font-medium text-foreground">{t("noteAsk")}</span>
           </p>
-          <a href="#enquiry" className={`${secondaryBtn} shrink-0`}>
+          <a href="#inquiry" className={`${secondaryBtn} shrink-0`}>
             {t("cta")}
           </a>
         </div>
@@ -157,7 +157,7 @@ function HeadlineCard({
           {cta}
           <span
             aria-hidden
-            className="transition-transform duration-150 ease-expo group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5"
+            className="transition-transform duration-150 ease-expo group-hover:translate-x-0.5 rtl:group-hover:-translate-x-0.5 motion-reduce:transition-none"
           >
             &rarr;
           </span>

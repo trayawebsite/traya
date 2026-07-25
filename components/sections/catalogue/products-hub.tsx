@@ -7,7 +7,11 @@ import {getGroups} from '@/lib/catalogue';
 import {getSiteSettings} from '@/lib/site-settings';
 import {Download} from 'lucide-react';
 
-export async function ProductsHub() {
+export async function ProductsHub({
+  initialRange = 'all'
+}: {
+  initialRange?: 'all' | 'food' | 'chemicals';
+}) {
   const t = await getTranslations('Catalogue');
   const tg = await getTranslations('Home.groups');
   const groups = await getGroups();
@@ -50,7 +54,7 @@ export async function ProductsHub() {
         </div>
 
         <div className="mt-8 border-t border-traya-border pb-16 pt-8">
-          <ProductsInteractive groups={serialized} />
+          <ProductsInteractive groups={serialized} initialRange={initialRange} />
         </div>
       </PageHero>
     </Reveal>

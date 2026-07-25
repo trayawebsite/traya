@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import { useTranslations } from "next-intl";
 
 type Testimonial = {
   quote: string;
@@ -15,6 +16,7 @@ export function TestimonialCarousel({
 }: {
   testimonials: Testimonial[];
 }) {
+  const t = useTranslations("Home.testimonials");
   const [active, setActive] = useState(0);
   const [fade, setFade] = useState(true);
   // Track the pending fade timeout + the live index so we can clear on unmount
@@ -68,7 +70,7 @@ export function TestimonialCarousel({
 
   return (
     <div className="flex flex-col justify-end">
-      <p className="section-label text-[10px]">What buyers say</p>
+      <p className="section-label text-[10px]">{t("eyebrow")}</p>
       <div className="mt-5 min-h-[180px]">
         <div
           className={`transition-opacity duration-300 ${fade ? "opacity-100" : "opacity-0"}`}
@@ -111,7 +113,7 @@ export function TestimonialCarousel({
                   ? "w-6 bg-traya-red"
                   : "bg-traya-border hover:bg-traya-red/50"
               }`}
-              aria-label={`Testimonial ${i + 1}`}
+              aria-label={t("dotLabel", { n: i + 1 })}
             />
           ))}
         </div>

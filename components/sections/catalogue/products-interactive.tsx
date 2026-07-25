@@ -3,6 +3,7 @@
 import {useState, useMemo, type ReactNode} from 'react';
 import {useTranslations} from 'next-intl';
 import {Link} from '@/i18n/navigation';
+import Image from 'next/image';
 import {Photo} from '@/components/sections/home/photo';
 import {IconChip} from '@/components/ui/icon-chip';
 import {CATEGORY_COVERS} from '@/lib/category-covers';
@@ -42,6 +43,12 @@ const SUPER_GROUPS = [
 ] as const;
 type SuperKey = 'all' | (typeof SUPER_GROUPS)[number]['key'];
 
+// Range photograph per top-level range (shown on the overview cards).
+const SUPER_IMAGE: Record<(typeof SUPER_GROUPS)[number]['key'], string> = {
+  food: '/products/range-food.webp',
+  chemicals: '/products/range-chemicals.webp'
+};
+
 const SUPER_ICON: Record<(typeof SUPER_GROUPS)[number]['key'], ReactNode> = {
   food: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" className="size-5" aria-hidden="true">
@@ -75,10 +82,19 @@ function ArrowIcon({className = 'text-traya-saffron-lo'}: {className?: string}) 
   );
 }
 
-export function ProductsInteractive({groups}: {groups: Group[]}) {
+export function ProductsInteractive({
+  groups,
+  initialRange = 'all'
+}: {
+  groups: Group[];
+  initialRange?: SuperKey;
+}) {
   const t = useTranslations('Catalogue');
   const tg = useTranslations('Home.groups');
-  const [activeSuper, setActiveSuper] = useState<SuperKey>('all');
+  // Initial range comes from the server (?range= read in the page), so the
+  // first render already shows the right tab   no client-only param read, no
+  // hydration mismatch. A user's tab click then takes over via normal state.
+  const [activeSuper, setActiveSuper] = useState<SuperKey>(initialRange);
   const [query, setQuery] = useState('');
 
   const superStats = useMemo(() => {
@@ -194,29 +210,41 @@ export function ProductsInteractive({groups}: {groups: Group[]}) {
                   type="button"
                   onClick={() => setActiveSuper(sg.key)}
                   data-stagger
-                  className="group relative flex h-full w-full flex-col rounded-2xl border border-traya-border bg-card p-6 text-start shadow-sm transition-all duration-300 hover:border-traya-saffron/40 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:p-7"
+                  className="group relative flex h-full w-full flex-col overflow-hidden rounded-2xl border border-traya-border bg-card text-start shadow-sm transition-all duration-300 hover:border-traya-saffron/40 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  <div className="flex items-center justify-between gap-3">
-                    <IconChip className="size-11">{SUPER_ICON[sg.key]}</IconChip>
-                    <span className="flex items-center gap-2">
+                  {/* Range photograph */}
+                  <div className="relative aspect-video w-full overflow-hidden">
+                    <Image
+                      src={SUPER_IMAGE[sg.key]}
+                      alt={copy.title}
+                      fill
+                      sizes="(min-width: 640px) 45vw, 100vw"
+                      className="object-cover transition-transform duration-500 ease-expo group-hover:scale-105 motion-reduce:group-hover:scale-100"
+                    />
+                    <span className="absolute end-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-traya-cream/90 px-2.5 py-1 backdrop-blur-sm">
                       <span aria-hidden className={`size-1.5 shrink-0 rounded-full ${sg.dot}`} />
-                      <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+                      <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-traya-deep">
                         {t('hub.groupLabel')} {String(i + 1).padStart(2, '0')}
                       </span>
                     </span>
                   </div>
 
-                  <h3 className="mt-5 font-display text-display-sm text-foreground">{copy.title}</h3>
-                  <p className="mt-2.5 max-w-md text-pretty leading-relaxed text-muted-foreground">{copy.body}</p>
+                  {/* Copy */}
+                  <div className="flex flex-1 flex-col p-6 sm:p-7">
+                    <div className="flex items-center gap-3">
+                      <IconChip className="size-10 shrink-0">{SUPER_ICON[sg.key]}</IconChip>
+                      <h3 className="font-display text-display-sm text-foreground">{copy.title}</h3>
+                    </div>
+                    <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{copy.body}</p>
 
-                  <span className="mt-5 font-mono text-xs font-medium uppercase tracking-[0.08em] text-traya-saffron-lo">
-                    {stats.categories} {catWord(stats.categories)} · {stats.products}+ {prodWord(stats.products)}
-                  </span>
-
-                  <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-traya-red-deep">
-                    {copy.cta}
-                    <ArrowIcon />
-                  </span>
+                    <span className="mt-auto pt-5 font-mono text-xs font-medium uppercase tracking-[0.08em] text-traya-saffron-lo">
+                      {stats.categories} {catWord(stats.categories)} · {stats.products}+ {prodWord(stats.products)}
+                    </span>
+                    <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-traya-red-deep">
+                      {copy.cta}
+                      <ArrowIcon />
+                    </span>
+                  </div>
                 </button>
               </li>
             );

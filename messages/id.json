@@ -40,7 +40,7 @@
       "seaBody": "Paling cocok untuk pesanan bervolume besar di mana efisiensi biaya menjadi prioritas. Kami mengoordinasikan pengiriman FCL (Full Container Load) maupun LCL (Less than Container Load).",
       "airTitle": "Angkutan udara",
       "airBody": "Untuk kargo yang sensitif waktu atau bernilai tinggi yang perlu bergerak cepat dan aman melintasi batas negara dengan waktu transit minimal.",
-      "courierTitle": "Kurir untuk sampel",
+      "courierTitle": "Kurir",
       "courierBody": "Pengiriman kurir internasional untuk sampel produk, sehingga pembeli dapat mengevaluasi mutu, spesifikasi, dan kesesuaian sebelum memutuskan pesanan penuh.",
       "incoterms": "Incoterms: pengiriman ditangani dengan ketentuan yang sesuai untuk Anda. Kami mendukung FOB, CIF, dan ketentuan perdagangan standar lainnya, disepakati di awal, tanpa keraguan mengenai tanggung jawab atau biaya. Bicarakan dengan kami tentang apa yang paling sesuai dengan kebutuhan Anda."
     },
@@ -53,7 +53,7 @@
       "pillar2": "Memastikan produk memenuhi standar kepatuhan pasar tempat Anda beroperasi.",
       "pillar3": "Memperlakukan setiap pesanan sebagai fondasi hubungan jangka panjang, bukan transaksi satu kali.",
       "pillar4": "Tetap fleksibel dan responsif seiring perubahan kebutuhan bisnis dan kondisi pasar Anda.",
-      "mapCaption": "Kami melayani pembeli internasional secara global",
+      "mapCaption": "Gerbang Anda menuju perdagangan global",
       "mapLabel": "Ahmedabad, India",
       "headingAccent": "kami dapat menjangkau Anda"
     },
@@ -75,7 +75,7 @@
     "send": "Kirim",
     "close": "Tutup obrolan",
     "whatsappAction": "Obrolan di WhatsApp",
-    "enquiryAction": "Formulir permintaan",
+    "inquiryAction": "Formulir permintaan",
     "offline": "Asisten kami sedang beristirahat sebentar. Kirim pesan kepada kami di WhatsApp dan kami akan segera membantu Anda.",
     "rateLimited": "Anda telah mencapai batas obrolan hari ini. Kirim pesan kepada kami di WhatsApp dan kami akan segera membantu Anda.",
     "limitReached": "Mari lanjutkan di WhatsApp untuk jawaban yang lebih cepat.",
@@ -95,7 +95,7 @@
     "howWeWork": "Cara Kami Bekerja",
     "certifications": "Sertifikasi",
     "contact": "Hubungi Kami",
-    "enquiry": "Permintaan",
+    "inquiry": "Permintaan",
     "privacy": "Kebijakan Privasi",
     "terms": "Ketentuan Penggunaan",
     "breadcrumb": "Jejak Navigasi"
@@ -126,10 +126,10 @@
     "requestQuote": "Minta Penawaran",
     "downloadCatalogue": "Unduh Katalog",
     "rights": "Hak cipta dilindungi.",
-    "builtBy": "Dibangun oleh Studio Morpheus",
+    "builtBy": "Dibangun oleh <link>Studio Morpheus</link>",
     "toTop": "Kembali ke atas"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "Kirim permintaan",
     "heading": "Mari mulai",
     "sub": "Bagikan kebutuhan Anda, biar kami yang mengurus selebihnya.",
@@ -259,7 +259,7 @@
       "heading": "Mitra tepercaya Anda untuk",
       "sub": "Traya berkomitmen membangun kemitraan global yang langgeng melalui kepercayaan, keandalan, dan eksekusi profesional. Dengan portofolio produk berkualitas yang terus berkembang, kami membantu bisnis menavigasi perdagangan internasional dengan percaya diri.",
       "cta": "Jelajahi Produk",
-      "ctaEnquiry": "Bagikan kebutuhan Anda",
+      "ctainquiry": "Bagikan kebutuhan Anda",
       "certified": "Bersertifikat",
       "headingAccent": "pengadaan dari India."
     },
@@ -336,7 +336,8 @@
       "headingAccent": "kemitraan jangka panjang."
     },
     "testimonials": {
-      "eyebrow": "Kata para pembeli"
+      "eyebrow": "Kata para pembeli",
+      "dotLabel": "Testimoni {n}"
     },
     "certs": {
       "eyebrow": "Registrasi ekspor",
@@ -381,7 +382,7 @@
       "headingAccent": "untuk Perdagangan Global"
     },
     "founder": {
-      "eyebrow": "Dalam kata-katanya sendiri.",
+      "eyebrow": "Catatan dari Sang Pendiri",
       "name": "Neha Pardeshi",
       "role": "Pendiri & CEO",
       "p1": "Dunia tidak terbuka bagi saya melalui buku pelajaran   dunia terbuka melalui perjalanan. Menjelajahi berbagai budaya, bertemu orang-orang dari segala latar belakang, dan melihat dunia melalui berbagai perspektif membentuk bukan hanya siapa saya, tetapi juga apa yang saya pilih untuk bangun.",
@@ -409,8 +410,7 @@
       "m1": "Menghadirkan produk berkualitas premium yang secara konsisten memenuhi standar internasional dan ekspektasi pelanggan.",
       "m2": "Membangun kemitraan yang langgeng, dilandasi oleh kepercayaan, transparansi, dan keberhasilan bersama.",
       "m3": "Menyederhanakan perdagangan internasional melalui eksekusi yang andal, logistik yang efisien, dan layanan yang responsif.",
-      "m4": "Memperluas kehadiran global kami dengan menciptakan peluang bernilai tambah di berbagai pasar internasional.",
-      "commitment": "Kami berupaya membangun kemitraan yang langgeng, dilandasi oleh kepercayaan, keandalan, dan komitmen bersama terhadap kesuksesan jangka panjang di pasar global."
+      "m4": "Memperluas kehadiran global kami dengan menciptakan peluang bernilai tambah di berbagai pasar internasional."
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "Hubungi Traya International Exim melalui email, telepon, WhatsApp, atau formulir permintaan. Bagikan kebutuhan produk, jumlah, tujuan, dan jadwal Anda."
     },
     "hero": {
-      "eyebrow": "Kontak",
-      "heading": "Hubungi langsung tim ekspor kami.",
-      "body": "Bagikan kebutuhan Anda di bawah ini, atau hubungi kami langsung — setiap pesan ditinjau secara personal, dengan tanggapan dalam satu hari kerja.",
+      "eyebrow": "Hubungi kami",
+      "heading": "Mari bangun pengiriman Anda berikutnya.",
       "cta": "Kirim kebutuhan Anda"
     },
     "emailLabel": "Email kami",
@@ -431,12 +430,10 @@
     "addressLabel": "Kunjungi kami",
     "mapCta": "Lihat di peta",
     "hoursLabel": "Waktu respons",
-    "hours": "Kami membalas setelah meninjau kebutuhan Anda",
+    "hours": "Setiap pertanyaan dibaca dan ditinjau secara personal – tanpa balasan otomatis, tanpa antrean.",
     "socialLabel": "Ikuti kami",
     "form": {
-      "eyebrow": "Kirim pesan kepada kami",
-      "heading": "Bagikan kebutuhan Anda.",
-      "sub": "Isi detail di bawah ini dan tim kami akan meninjau kebutuhan Anda untuk memberikan tanggapan komersial yang menyeluruh.",
+      "eyebrow": "Mulai pertanyaan Anda",
       "name": "Nama Anda",
       "email": "Alamat email",
       "company": "Organisasi",
@@ -447,12 +444,14 @@
       "success": "Terima kasih. Pesan Anda telah terkirim. Kami akan segera menghubungi Anda.",
       "error": "Ada yang tidak beres. Silakan coba lagi, atau kirim email langsung kepada kami.",
       "rateLimited": "Anda telah mencapai batas hari ini. Silakan kirim email atau hubungi kami di WhatsApp.",
-      "point1": "Tanggapan dalam satu hari kerja",
-      "point2": "Spesifikasi produk, harga, sampel & dokumentasi",
-      "point3": "Dukungan khusus untuk pertanyaan ekspor Anda",
       "reassurance": "Biasanya membalas dalam 1 hari kerja · Tanpa kewajiban.",
       "successHeading": "Pesan terkirim.",
-      "successBody": "Terima kasih. Tim kami akan meninjau pesan Anda dan menghubungi Anda kembali   biasanya dalam satu hari kerja."
+      "successBody": "Terima kasih. Tim kami akan meninjau pesan Anda dan menghubungi Anda kembali   biasanya dalam satu hari kerja.",
+      "phone": "Telepon / WhatsApp",
+      "country": "Negara tujuan",
+      "category": "Pertanyaan Anda tentang apa?",
+      "categoryPlaceholder": "Pilih kategori",
+      "categoryOptions": "Produk Pangan & Agro · Bahan Kimia · Pertanyaan Umum"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "Portofolio Produk Kami",
       "heading": "Temukan produk",
       "sub": "Jelajahi beragam portofolio produk kami di berbagai kategori. Mencari produk yang tidak tercantum? Kirimkan kebutuhan Anda, dan kami akan menghubungi Anda kembali.",
-      "spec": "Portofolio produk beragam · Multi-kategori · 500+ produk terdaftar",
+      "spec": "Portofolio produk beragam · Multi-kategori · 450+ produk terdaftar",
       "search": "Cari produk atau kategori...",
       "noResults": "Tidak ada produk yang cocok dengan pencarian Anda.",
       "downloadCatalogue": "Unduh katalog lengkap (PDF)",
@@ -642,7 +641,7 @@
       "specOrigin": "Asal",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "Berdasarkan permintaan",
+      "specMoqVal": "200 kg",
       "specPackaging": "Kemasan",
       "specPackagingVal": "Dapat disesuaikan",
       "specIncoterms": "Incoterms",
@@ -654,7 +653,7 @@
       "downloadCta": "Unduh lembar spesifikasi kategori",
       "closingCta": "Siap melakukan pengadaan dari kategori ini?",
       "closingSub": "Bagikan kebutuhan produk, jumlah, dan tujuan Anda. Tim kami akan meninjau dan menanggapi dengan opsi yang tersedia, spesifikasi, dan harga.",
-      "specMoqValChem": "Mulai dari 500 kg",
+      "specMoqValChem": "500 kg",
       "specPackagingValChem": "Kantong HDPE 25 kg, drum serat, kantong kertas & kemasan ekspor khusus",
       "specDocs": "Dokumen",
       "specDocsVal": "COA, TDS, MSDS berdasarkan permintaan"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "Memuat…"
   }
 }

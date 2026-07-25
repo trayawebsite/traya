@@ -35,13 +35,13 @@ export const siteConfig = {
       {key: 'certifications', href: '/certifications'},
       {key: 'contact', href: '/contact'}
     ] as NavItem[],
-    // Conversion column. Sample/quote route to the cart-style Enquiry List (RFQ).
+    // Conversion column. Sample/quote route to the cart-style inquiry List (RFQ).
     // downloadCatalogue is only rendered when a catalogue file is configured
     // (site-settings.catalogueUrl)   the footer filters it out otherwise, so the
     // '#' here is never shipped as a live link.
     actions: [
-      {key: 'requestSample', href: '/enquiry'},
-      {key: 'requestQuote', href: '/enquiry'},
+      {key: 'requestSample', href: '/inquiry'},
+      {key: 'requestQuote', href: '/inquiry'},
       {key: 'downloadCatalogue', href: '#'}
     ] as NavItem[],
     // Bottom-bar legal.

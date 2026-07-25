@@ -2,11 +2,14 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 
 // Breadcrumb trail   Home › Products › Category › Product. Pass items in order;
-// the last (no href) is the current page.
+// the last (no href) is the current page. An href may be a plain path or an
+// object with a query (next-intl drops the query from a string href, so a
+// range-linked crumb must use the object form).
+type Href = string | { pathname: string; query?: Record<string, string> };
 export function Breadcrumb({
   items,
 }: {
-  items: { label: string; href?: string }[];
+  items: { label: string; href?: Href }[];
 }) {
   const t = useTranslations("Links");
   return (

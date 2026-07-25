@@ -7,7 +7,7 @@ import { Photo } from "@/components/sections/home/photo";
 
 // How We Work   built from the client's skeleton, in the Traya design system.
 // Sections: 8-step process · How we ship · Global reach.
-// The closing ask is the global enquiry form (rendered site-wide in the layout).
+// The closing ask is the global inquiry form (rendered site-wide in the layout).
 
 // ── 1. Our process   8 steps ───────────────────────────────────────────
 // A connected flow, not a plain numbered list: each step gets a solid number

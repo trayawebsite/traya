@@ -40,7 +40,7 @@
       "seaBody": "Phù hợp nhất cho các đơn hàng khối lượng lớn, nơi hiệu quả chi phí là yếu tố quan trọng. Chúng tôi điều phối cả lô hàng FCL (nguyên container) và LCL (hàng lẻ ghép container).",
       "airTitle": "Vận chuyển đường hàng không",
       "airBody": "Dành cho hàng hóa cần gấp về thời gian hoặc có giá trị cao, cần di chuyển nhanh chóng và an toàn qua biên giới với thời gian vận chuyển tối thiểu.",
-      "courierTitle": "Chuyển phát nhanh cho mẫu hàng",
+      "courierTitle": "Chuyển phát nhanh",
       "courierBody": "Dịch vụ chuyển phát nhanh quốc tế cho mẫu sản phẩm, giúp người mua đánh giá chất lượng, thông số kỹ thuật và mức độ phù hợp trước khi quyết định đặt hàng số lượng lớn.",
       "incoterms": "Điều kiện Incoterms: các lô hàng được xử lý theo điều kiện phù hợp với bạn. Chúng tôi hỗ trợ FOB, CIF và các điều kiện thương mại tiêu chuẩn khác, được thống nhất trước, không mơ hồ về trách nhiệm hay chi phí. Hãy trao đổi với chúng tôi về điều kiện phù hợp nhất với yêu cầu của bạn."
     },
@@ -53,7 +53,7 @@
       "pillar2": "Đảm bảo sản phẩm đáp ứng các tiêu chuẩn tuân thủ của thị trường bạn đang hoạt động.",
       "pillar3": "Xem mỗi đơn hàng là nền tảng cho một mối quan hệ lâu dài, không phải một giao dịch một lần.",
       "pillar4": "Luôn linh hoạt và ứng biến khi nhu cầu kinh doanh và điều kiện thị trường của bạn thay đổi.",
-      "mapCaption": "Chúng tôi phục vụ người mua quốc tế trên toàn cầu",
+      "mapCaption": "Cổng kết nối của bạn với thương mại toàn cầu",
       "mapLabel": "Ahmedabad, Ấn Độ",
       "headingAccent": "chúng tôi cũng có thể tiếp cận bạn"
     },
@@ -75,7 +75,7 @@
     "send": "Gửi",
     "close": "Đóng trò chuyện",
     "whatsappAction": "Nhắn tin qua WhatsApp",
-    "enquiryAction": "Mẫu yêu cầu",
+    "inquiryAction": "Mẫu yêu cầu",
     "offline": "Trợ lý của chúng tôi đang tạm nghỉ. Hãy nhắn tin cho chúng tôi qua WhatsApp và chúng tôi sẽ hỗ trợ bạn ngay.",
     "rateLimited": "Bạn đã đạt giới hạn trò chuyện hôm nay. Hãy nhắn tin cho chúng tôi qua WhatsApp và chúng tôi sẽ hỗ trợ bạn ngay.",
     "limitReached": "Hãy tiếp tục trên WhatsApp để nhận câu trả lời nhanh hơn.",
@@ -94,8 +94,8 @@
     "products": "Sản phẩm",
     "howWeWork": "Cách chúng tôi làm việc",
     "certifications": "Chứng nhận",
-    "contact": "Liên hệ",
-    "enquiry": "Yêu cầu",
+    "contact": "Liên hệ với chúng tôi",
+    "inquiry": "Yêu cầu",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản sử dụng",
     "breadcrumb": "Đường dẫn điều hướng"
@@ -126,10 +126,10 @@
     "requestQuote": "Yêu cầu báo giá",
     "downloadCatalogue": "Tải catalogue",
     "rights": "Bảo lưu mọi quyền.",
-    "builtBy": "Được xây dựng bởi Studio Morpheus",
+    "builtBy": "Được xây dựng bởi <link>Studio Morpheus</link>",
     "toTop": "Lên đầu trang"
   },
-  "Enquiry": {
+  "inquiry": {
     "eyebrow": "Gửi yêu cầu",
     "heading": "Hãy bắt đầu",
     "sub": "Chia sẻ nhu cầu của bạn, phần còn lại chúng tôi sẽ lo.",
@@ -259,7 +259,7 @@
       "heading": "Đối tác đáng tin cậy của bạn trong việc",
       "sub": "Traya cam kết xây dựng những mối quan hệ đối tác toàn cầu bền vững thông qua sự tin tưởng, độ tin cậy và cách thực hiện chuyên nghiệp. Với danh mục sản phẩm chất lượng ngày càng mở rộng, chúng tôi giúp các doanh nghiệp tự tin điều hướng thương mại quốc tế.",
       "cta": "Khám phá sản phẩm",
-      "ctaEnquiry": "Chia sẻ yêu cầu của bạn",
+      "ctainquiry": "Chia sẻ yêu cầu của bạn",
       "certified": "Chứng nhận",
       "headingAccent": "tìm nguồn hàng từ Ấn Độ."
     },
@@ -336,7 +336,8 @@
       "headingAccent": "những mối quan hệ đối tác dài hạn."
     },
     "testimonials": {
-      "eyebrow": "Khách hàng nói gì"
+      "eyebrow": "Khách hàng nói gì",
+      "dotLabel": "Lời chứng thực {n}"
     },
     "certs": {
       "eyebrow": "Đăng ký xuất khẩu",
@@ -381,7 +382,7 @@
       "headingAccent": "Đối Với Thương Mại Toàn Cầu"
     },
     "founder": {
-      "eyebrow": "Bằng chính lời của bà.",
+      "eyebrow": "Lời Nhắn Từ Người Sáng Lập",
       "name": "Neha Pardeshi",
       "role": "Nhà sáng lập & Giám đốc điều hành",
       "p1": "Thế giới không mở ra với tôi qua sách vở   mà mở ra qua những chuyến đi. Khám phá những nền văn hóa khác nhau, gặp gỡ những con người từ mọi tầng lớp, và nhìn thế giới qua nhiều góc nhìn khác nhau đã định hình không chỉ con người tôi, mà còn cả những gì tôi chọn để xây dựng.",
@@ -409,8 +410,7 @@
       "m1": "Cung cấp các sản phẩm chất lượng cao, luôn đáp ứng các tiêu chuẩn quốc tế và kỳ vọng của khách hàng.",
       "m2": "Xây dựng những mối quan hệ đối tác bền vững dựa trên sự tin tưởng, minh bạch và thành công chung.",
       "m3": "Đơn giản hóa thương mại quốc tế thông qua việc thực thi đáng tin cậy, hậu cần hiệu quả và dịch vụ phản hồi nhanh chóng.",
-      "m4": "Mở rộng sự hiện diện toàn cầu bằng cách tạo ra các cơ hội mang lại giá trị trên các thị trường quốc tế.",
-      "commitment": "Chúng tôi nỗ lực xây dựng những mối quan hệ đối tác bền vững, dựa trên sự tin tưởng, độ tin cậy và cam kết chung hướng đến thành công lâu dài trên các thị trường toàn cầu."
+      "m4": "Mở rộng sự hiện diện toàn cầu bằng cách tạo ra các cơ hội mang lại giá trị trên các thị trường quốc tế."
     }
   },
   "Contact": {
@@ -419,9 +419,8 @@
       "description": "Liên hệ với Traya International Exim qua email, điện thoại, WhatsApp hoặc mẫu yêu cầu. Chia sẻ yêu cầu sản phẩm, số lượng, điểm đến và thời hạn của bạn."
     },
     "hero": {
-      "eyebrow": "Liên hệ",
-      "heading": "Liên hệ trực tiếp với bộ phận xuất khẩu của chúng tôi.",
-      "body": "Chia sẻ yêu cầu của bạn bên dưới, hoặc liên hệ trực tiếp với chúng tôi — mỗi tin nhắn đều được xem xét cá nhân, với phản hồi trong vòng một ngày làm việc.",
+      "eyebrow": "Liên hệ với chúng tôi",
+      "heading": "Hãy cùng xây dựng lô hàng tiếp theo của bạn.",
       "cta": "Gửi yêu cầu của bạn"
     },
     "emailLabel": "Gửi email cho chúng tôi",
@@ -431,12 +430,10 @@
     "addressLabel": "Ghé thăm chúng tôi",
     "mapCta": "Xem trên bản đồ",
     "hoursLabel": "Thời gian phản hồi",
-    "hours": "Chúng tôi phản hồi sau khi xem xét yêu cầu của bạn",
+    "hours": "Mọi yêu cầu đều được đọc và xem xét trực tiếp bởi con người – không có phản hồi tự động, không xếp hàng chờ.",
     "socialLabel": "Theo dõi chúng tôi",
     "form": {
-      "eyebrow": "Gửi tin nhắn cho chúng tôi",
-      "heading": "Chia sẻ yêu cầu của bạn.",
-      "sub": "Điền các thông tin bên dưới và đội ngũ của chúng tôi sẽ xem xét yêu cầu của bạn để đưa ra phản hồi thương mại đầy đủ.",
+      "eyebrow": "Bắt đầu yêu cầu của bạn",
       "name": "Họ và tên",
       "email": "Địa chỉ email",
       "company": "Tổ chức",
@@ -447,12 +444,14 @@
       "success": "Cảm ơn bạn. Tin nhắn của bạn đã được gửi. Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.",
       "error": "Đã xảy ra sự cố. Vui lòng thử lại, hoặc gửi email trực tiếp cho chúng tôi.",
       "rateLimited": "Bạn đã đạt giới hạn hôm nay. Vui lòng gửi email hoặc nhắn tin cho chúng tôi qua WhatsApp.",
-      "point1": "Phản hồi trong vòng một ngày làm việc",
-      "point2": "Thông số sản phẩm, giá cả, mẫu và tài liệu",
-      "point3": "Hỗ trợ chuyên biệt cho các yêu cầu xuất khẩu của bạn",
       "reassurance": "Thường phản hồi trong vòng 1 ngày làm việc · Không ràng buộc.",
       "successHeading": "Đã gửi tin nhắn.",
-      "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét tin nhắn của bạn và phản hồi lại   thường trong vòng một ngày làm việc."
+      "successBody": "Cảm ơn bạn. Đội ngũ của chúng tôi sẽ xem xét tin nhắn của bạn và phản hồi lại   thường trong vòng một ngày làm việc.",
+      "phone": "Điện thoại / WhatsApp",
+      "country": "Quốc gia điểm đến",
+      "category": "Yêu cầu của bạn liên quan đến điều gì?",
+      "categoryPlaceholder": "Chọn một danh mục",
+      "categoryOptions": "Sản phẩm Thực phẩm & Nông sản · Hóa chất · Yêu cầu chung"
     }
   },
   "Certifications": {
@@ -594,7 +593,7 @@
       "eyebrow": "Danh Mục Sản Phẩm Của Chúng Tôi",
       "heading": "Tìm sản phẩm",
       "sub": "Khám phá danh mục sản phẩm đa dạng của chúng tôi trên nhiều danh mục. Đang tìm sản phẩm chưa được liệt kê? Hãy gửi yêu cầu của bạn, chúng tôi sẽ phản hồi sớm.",
-      "spec": "Danh mục sản phẩm đa dạng · Đa danh mục · Hơn 500 sản phẩm",
+      "spec": "Danh mục sản phẩm đa dạng · Đa danh mục · Hơn 450 sản phẩm",
       "search": "Tìm kiếm sản phẩm hoặc danh mục...",
       "noResults": "Không có sản phẩm nào phù hợp với tìm kiếm của bạn.",
       "downloadCatalogue": "Tải catalogue đầy đủ (PDF)",
@@ -642,7 +641,7 @@
       "specOrigin": "Xuất xứ",
       "specOriginVal": "Ấn Độ",
       "specMoq": "MOQ",
-      "specMoqVal": "Theo yêu cầu",
+      "specMoqVal": "200 kg",
       "specPackaging": "Đóng gói",
       "specPackagingVal": "Có thể tùy chỉnh",
       "specIncoterms": "Incoterms",
@@ -654,7 +653,7 @@
       "downloadCta": "Tải bảng thông số kỹ thuật danh mục",
       "closingCta": "Sẵn sàng tìm nguồn hàng từ danh mục này?",
       "closingSub": "Chia sẻ yêu cầu sản phẩm, số lượng và điểm đến của bạn. Đội ngũ của chúng tôi sẽ xem xét và phản hồi với các phương án khả dụng, thông số kỹ thuật và giá cả.",
-      "specMoqValChem": "Từ 500 kg",
+      "specMoqValChem": "500 kg",
       "specPackagingValChem": "Bao HDPE 25 kg, thùng sợi, bao giấy & đóng gói xuất khẩu tùy chỉnh",
       "specDocs": "Tài liệu",
       "specDocsVal": "COA, TDS, MSDS theo yêu cầu"
@@ -751,5 +750,8 @@
         }
       }
     }
+  },
+  "Common": {
+    "loading": "Đang tải…"
   }
 }

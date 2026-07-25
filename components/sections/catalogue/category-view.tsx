@@ -54,19 +54,40 @@ export async function CategoryView({
   const isChemicals = category.group === "chemicals";
   const specRows =
     category.moqPackaging && category.moqPackaging.length > 0
-      ? category.moqPackaging.map((sp) => ({ label: sp.label, value: sp.value }))
+      ? category.moqPackaging.map((sp) => ({
+          label: sp.label,
+          value: sp.value,
+        }))
       : isChemicals
         ? [
-            { label: t("category.specOrigin"), value: t("category.specOriginVal") },
-            { label: t("category.specMoq"), value: t("category.specMoqValChem") },
-            { label: t("category.specPackaging"), value: t("category.specPackagingValChem") },
+            {
+              label: t("category.specOrigin"),
+              value: t("category.specOriginVal"),
+            },
+            {
+              label: t("category.specMoq"),
+              value: t("category.specMoqValChem"),
+            },
+            {
+              label: t("category.specPackaging"),
+              value: t("category.specPackagingValChem"),
+            },
             { label: t("category.specDocs"), value: t("category.specDocsVal") },
           ]
         : [
-            { label: t("category.specOrigin"), value: t("category.specOriginVal") },
+            {
+              label: t("category.specOrigin"),
+              value: t("category.specOriginVal"),
+            },
             { label: t("category.specMoq"), value: t("category.specMoqVal") },
-            { label: t("category.specPackaging"), value: t("category.specPackagingVal") },
-            { label: t("category.specIncoterms"), value: t("category.specIncotermsVal") },
+            {
+              label: t("category.specPackaging"),
+              value: t("category.specPackagingVal"),
+            },
+            {
+              label: t("category.specIncoterms"),
+              value: t("category.specIncotermsVal"),
+            },
           ];
 
   return (
@@ -75,7 +96,10 @@ export async function CategoryView({
         items={[
           { name: tl("home"), url: siteUrl },
           { name: tl("products"), url: `${siteUrl}/products` },
-          { name: category.title, url: `${siteUrl}/categories/${category.slug}` },
+          {
+            name: category.title,
+            url: `${siteUrl}/categories/${category.slug}`,
+          },
         ]}
       />
       {/* 1. Category Hero */}
@@ -84,7 +108,13 @@ export async function CategoryView({
           <Breadcrumb
             items={[
               { label: tl("home"), href: "/" },
-              { label: tl("products"), href: "/products" },
+              {
+                label: tl("products"),
+                href: {
+                  pathname: "/products",
+                  query: { range: isChemicals ? "chemicals" : "food" },
+                },
+              },
               { label: category.title },
             ]}
           />
@@ -111,7 +141,7 @@ export async function CategoryView({
                 fill
                 priority
                 sizes="320px"
-                className="object-contain transition-transform duration-700 ease-expo hover:scale-105"
+                className="object-contain transition-transform duration-700 ease-expo hover:scale-105 motion-reduce:transition-none"
               />
             </div>
           </div>
@@ -134,6 +164,7 @@ export async function CategoryView({
                 series: p.series,
                 colourIndex: p.colourIndex,
                 packSizes: p.packSizes,
+                grade: p.grade,
               }))}
               labels={{
                 search: t("category.search"),
@@ -143,7 +174,7 @@ export async function CategoryView({
               specs={specRows}
             />
             <div className="mt-10">
-              <a href="#enquiry" className={primaryButton}>
+              <a href="#inquiry" className={primaryButton}>
                 {t("category.enquireCta")}
               </a>
             </div>
@@ -288,7 +319,7 @@ export async function CategoryView({
                         </span>
                       </div>
                       <svg
-                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 rtl:-scale-x-100"
+                        className="size-4 shrink-0 text-traya-saffron-lo transition-transform duration-300 ease-expo group-hover:translate-x-1 rtl:-scale-x-100 motion-reduce:transition-none"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -311,8 +342,8 @@ export async function CategoryView({
       {/* 6. Quote request form (icon form   self-contained heading + trust panel) */}
       <Reveal>
         <section
-          id="enquiry"
-          className="border-t border-traya-border bg-background scroll-mt-24"
+          id="inquiry"
+          className="border-t border-traya-border bg-background scroll-mt-32"
         >
           <Container className="py-section">
             <QuoteForm
