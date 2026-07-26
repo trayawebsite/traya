@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Tunachotoa",
-      "heading": "Kila kitu unachohitaji kwa biashara ya kimataifa isiyo na vikwazo.",
+      "heading": "Kila kitu unachohitaji kwa",
       "c1Title": "Utafutaji wa Bidhaa Kimataifa",
       "c1Body": "Upatikanaji wa mkusanyiko mbalimbali wa bidhaa katika kategoria nyingi kupitia mshirika wa kuaminika wa usafirishaji nje.",
       "c2Title": "Uhakikisho wa Ubora",
@@ -568,7 +568,8 @@
       "c7Title": "Masharti Rahisi ya Kibiashara",
       "c7Body": "Masharti ya kibiashara na mipango ya usafirishaji iliyolengwa kulingana na mahitaji ya biashara yako.",
       "c8Title": "Msaada Maalum",
-      "c8Body": "Mawasiliano ya haraka kuanzia uchunguzi hadi usafirishaji na msaada baada ya utoaji."
+      "c8Body": "Mawasiliano ya haraka kuanzia uchunguzi hadi usafirishaji na msaada baada ya utoaji.",
+      "headingAccent": "biashara ya kimataifa isiyo na vikwazo."
     },
     "foundations": {
       "eyebrow": "Jinsi Tunavyofanya Kazi",

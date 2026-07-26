@@ -154,7 +154,8 @@ export async function CoreCapabilities() {
           <div className="max-w-2xl">
             <p className="section-label">{t("eyebrow")}</p>
             <h2 className="mt-4 text-balance font-display text-display-sm text-foreground lg:text-display">
-              {t("heading")}
+              {t("heading")}{" "}
+              <span className="text-traya-red">{t("headingAccent")}</span>
             </h2>
           </div>
           <Image

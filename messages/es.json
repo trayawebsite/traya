@@ -94,7 +94,7 @@
     "products": "Productos",
     "howWeWork": "Cómo Trabajamos",
     "certifications": "Certificaciones",
-    "contact": "Póngase en contacto",
+    "contact": "Contacto",
     "inquiry": "Consulta",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Uso",
@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Lo Que Ofrecemos",
-      "heading": "Todo lo que necesita para un comercio global sin complicaciones.",
+      "heading": "Todo lo que necesita para",
       "c1Title": "Abastecimiento Global",
       "c1Body": "Acceso a un portafolio diverso de productos en múltiples categorías a través de un socio exportador de confianza.",
       "c2Title": "Garantía de Calidad",
@@ -568,7 +568,8 @@
       "c7Title": "Condiciones Comerciales Flexibles",
       "c7Body": "Condiciones comerciales y arreglos de envío adaptados a las necesidades de su negocio.",
       "c8Title": "Soporte Dedicado",
-      "c8Body": "Comunicación receptiva desde la consulta hasta el envío y la asistencia posterior a la entrega."
+      "c8Body": "Comunicación receptiva desde la consulta hasta el envío y la asistencia posterior a la entrega.",
+      "headingAccent": "un comercio global sin complicaciones."
     },
     "foundations": {
       "eyebrow": "Cómo operamos",

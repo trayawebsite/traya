@@ -34,7 +34,7 @@ export async function FounderLetter({ data }: { data?: Founder }) {
           />
 
           <div>
-            <h2 className="text-balance font-display text-display-sm uppercase text-traya-cream lg:text-display">{t("eyebrow")}</h2>
+            <h2 className="text-balance font-display text-lg uppercase text-traya-saffron">{t("eyebrow")}</h2>
 
             <div className="mt-6 space-y-4 leading-relaxed text-traya-cream/75">
               {paragraphs.map((p, i) => (
@@ -45,7 +45,7 @@ export async function FounderLetter({ data }: { data?: Founder }) {
             {/* Signature block   name as the byline, role as a small tracked
                 caption beneath (an editorial signature, not a repeated label) */}
             <div className="mt-8 border-t border-traya-cream/15 pt-6">
-              <p className="font-display text-2xl text-traya-cream sm:text-3xl">{name}</p>
+              <p className="font-display text-lg text-traya-cream">{name}</p>
               <p className="mt-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-traya-saffron">{title}</p>
             </div>
           </div>

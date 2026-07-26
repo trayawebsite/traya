@@ -94,7 +94,7 @@
     "products": "Producten",
     "howWeWork": "Hoe Wij Werken",
     "certifications": "Certificeringen",
-    "contact": "Neem contact op",
+    "contact": "Contact",
     "inquiry": "Aanvraag",
     "privacy": "Privacybeleid",
     "terms": "Gebruiksvoorwaarden",
@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Wat Wij Bieden",
-      "heading": "Alles wat u nodig heeft voor naadloze wereldhandel.",
+      "heading": "Alles wat u nodig heeft voor",
       "c1Title": "Wereldwijde Sourcing",
       "c1Body": "Toegang tot een divers productportfolio verspreid over meerdere categorieën via een betrouwbare exportpartner.",
       "c2Title": "Kwaliteitsborging",
@@ -568,7 +568,8 @@
       "c7Title": "Flexibele Handelsvoorwaarden",
       "c7Body": "Commerciële voorwaarden en verzendregelingen afgestemd op uw bedrijfsbehoeften.",
       "c8Title": "Toegewijde Ondersteuning",
-      "c8Body": "Responsieve communicatie van aanvraag tot verzending en ondersteuning na levering."
+      "c8Body": "Responsieve communicatie van aanvraag tot verzending en ondersteuning na levering.",
+      "headingAccent": "naadloze wereldhandel."
     },
     "foundations": {
       "eyebrow": "Hoe wij werken",

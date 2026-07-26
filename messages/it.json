@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Cosa Offriamo",
-      "heading": "Tutto ciò di cui hai bisogno per un commercio globale senza interruzioni.",
+      "heading": "Tutto ciò di cui hai bisogno per",
       "c1Title": "Approvvigionamento Globale",
       "c1Body": "Accesso a un portafoglio diversificato di prodotti in più categorie tramite un partner export affidabile.",
       "c2Title": "Garanzia di Qualità",
@@ -568,7 +568,8 @@
       "c7Title": "Condizioni Commerciali Flessibili",
       "c7Body": "Condizioni commerciali e modalità di spedizione su misura per le esigenze della tua attività.",
       "c8Title": "Supporto Dedicato",
-      "c8Body": "Comunicazione reattiva dalla richiesta alla spedizione fino all'assistenza post-consegna."
+      "c8Body": "Comunicazione reattiva dalla richiesta alla spedizione fino all'assistenza post-consegna.",
+      "headingAccent": "un commercio globale senza interruzioni."
     },
     "foundations": {
       "eyebrow": "Come operiamo",

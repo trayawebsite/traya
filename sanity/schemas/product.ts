@@ -25,7 +25,6 @@ export const product = defineType({
       rows: 2,
       description: 'One-line summary shown on cards and in search results'
     }),
-    defineField({name: 'description', type: 'array', of: [{type: 'block'}]}),
     defineField({
       name: 'images',
       type: 'array',
@@ -79,14 +78,7 @@ export const product = defineType({
       title: 'Brochure / Spec sheet (PDF)',
       type: 'file',
       options: {accept: '.pdf'}
-    }),
-    defineField({
-      name: 'featured',
-      title: 'Featured on homepage',
-      type: 'boolean',
-      initialValue: false
-    }),
-    defineField({name: 'seo', type: 'seo'})
+    })
   ],
   preview: {
     select: {title: 'title', subtitle: 'category.title', media: 'images.0'}

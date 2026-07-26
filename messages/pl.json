@@ -94,7 +94,7 @@
     "products": "Produkty",
     "howWeWork": "Jak pracujemy",
     "certifications": "Certyfikaty",
-    "contact": "Skontaktuj się z nami",
+    "contact": "Kontakt",
     "inquiry": "Zapytanie",
     "privacy": "Polityka prywatności",
     "terms": "Warunki korzystania",
@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Co Oferujemy",
-      "heading": "Wszystko, czego potrzebujesz do bezproblemowego handlu globalnego.",
+      "heading": "Wszystko, czego potrzebujesz do",
       "c1Title": "Globalne Pozyskiwanie Produktów",
       "c1Body": "Dostęp do zróżnicowanego portfolio produktów w wielu kategoriach dzięki zaufanemu partnerowi eksportowemu.",
       "c2Title": "Zapewnienie Jakości",
@@ -568,7 +568,8 @@
       "c7Title": "Elastyczne Warunki Handlowe",
       "c7Body": "Warunki handlowe i ustalenia dotyczące wysyłki dostosowane do potrzeb Twojej firmy.",
       "c8Title": "Dedykowane Wsparcie",
-      "c8Body": "Szybka komunikacja od zapytania po wysyłkę i wsparcie po dostawie."
+      "c8Body": "Szybka komunikacja od zapytania po wysyłkę i wsparcie po dostawie.",
+      "headingAccent": "bezproblemowego handlu globalnego."
     },
     "foundations": {
       "eyebrow": "Jak działamy",

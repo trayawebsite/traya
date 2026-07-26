@@ -62,6 +62,7 @@ export async function SiteFooter() {
   const t = await getTranslations("Footer");
   const tl = await getTranslations("Links");
   const th = await getTranslations("Header");
+  const tc = await getTranslations("Contact");
   const s = await getSiteSettings();
 
   const socialUrl: Record<string, string> = {
@@ -72,13 +73,8 @@ export async function SiteFooter() {
 
   return (
     <footer className="relative mt-auto overflow-hidden bg-traya-deep text-traya-cream">
-      {/* Brand spectrum rule   chilli-deep · chilli · turmeric · forest */}
-      <div aria-hidden className="flex h-1.5 w-full">
-        <span className="w-1/4 bg-traya-red-deep" />
-        <span className="w-1/4 bg-traya-red" />
-        <span className="w-1/4 bg-traya-saffron" />
-        <span className="w-1/4 bg-traya-forest" />
-      </div>
+      {/* Brand rule   saffron only */}
+      <div aria-hidden className="h-1.5 w-full bg-traya-saffron" />
       {/* faint line-grid texture */}
       <div
         aria-hidden
@@ -108,13 +104,13 @@ export async function SiteFooter() {
 
         {/* Columns */}
         <div className="mt-8 grid gap-12 border-t border-traya-clay/20 pt-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.3fr]">
-          {/* Brand name + address (logo/tagline are in the masthead above) */}
+          {/* Address (brand name/tagline already carried by the logo above
+              repeating it here read as redundant, so this column matches its
+              siblings: a saffron label + its content, nothing more). */}
           <div className="max-w-xs">
-            <p className="font-display text-lg leading-snug text-traya-saffron">
-              {siteConfig.name}
-            </p>
+            <h2 className={headingCls}>{tc("addressLabel")}</h2>
             {s.contact.address && (
-              <address className="mt-4 text-sm not-italic leading-relaxed text-traya-cream/70">
+              <address className="mt-5 text-sm not-italic leading-relaxed text-traya-cream/70">
                 {s.contact.address}
               </address>
             )}

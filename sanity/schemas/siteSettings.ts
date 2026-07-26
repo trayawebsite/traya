@@ -12,17 +12,6 @@ export const siteSettings = defineType({
       initialValue: 'Traya International Exim LLP'
     }),
     defineField({
-      name: 'tagline',
-      type: 'string',
-      description: 'Primary tagline   e.g. "Building Partnerships Across Continents"'
-    }),
-    defineField({
-      name: 'secondaryTagline',
-      type: 'string',
-      description: 'Secondary tagline   e.g. "A Refined Approach to Global Trade"'
-    }),
-    defineField({name: 'about', title: 'About', type: 'array', of: [{type: 'block'}]}),
-    defineField({
       name: 'catalogueFile',
       title: 'Consolidated catalogue (PDF)',
       type: 'file',
@@ -31,18 +20,12 @@ export const siteSettings = defineType({
     }),
     defineField({
       name: 'emails',
-      title: 'Contact emails',
+      title: 'Contact email',
       type: 'array',
       of: [{type: 'string'}],
-      description: 'Lead inquiries can be routed to all of these addresses'
+      description: 'Public contact email shown on the site (the first address is used). Lead delivery is configured in env, not here.'
     }),
     defineField({name: 'phone', type: 'string'}),
-    defineField({
-      name: 'whatsappNumber',
-      title: 'WhatsApp number',
-      type: 'string',
-      description: 'International format, digits only (e.g. 919876543210)'
-    }),
     defineField({name: 'address', type: 'text', rows: 3}),
     defineField({name: 'gstin', title: 'GSTIN', type: 'string', description: 'Shown in the footer legal bar'}),
     defineField({name: 'iec', title: 'IEC (Import Export Code)', type: 'string', description: 'Shown in the footer legal bar'}),
@@ -59,8 +42,7 @@ export const siteSettings = defineType({
       options: {collapsible: true},
       fields: [
         defineField({name: 'linkedin', type: 'url'}),
-        defineField({name: 'instagram', type: 'url'}),
-        defineField({name: 'facebook', type: 'url'})
+        defineField({name: 'instagram', type: 'url'})
       ]
     })
   ],

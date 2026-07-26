@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Ce Que Nous Offrons",
-      "heading": "Tout ce dont vous avez besoin pour un commerce mondial sans faille.",
+      "heading": "Tout ce dont vous avez besoin pour",
       "c1Title": "Sourcing Mondial",
       "c1Body": "Accès à un portefeuille diversifié de produits dans plusieurs catégories grâce à un partenaire d'exportation de confiance.",
       "c2Title": "Assurance Qualité",
@@ -568,7 +568,8 @@
       "c7Title": "Conditions Commerciales Flexibles",
       "c7Body": "Conditions commerciales et modalités d'expédition adaptées aux besoins de votre entreprise.",
       "c8Title": "Support Dédié",
-      "c8Body": "Communication réactive, de la demande à l'expédition et à l'assistance après livraison."
+      "c8Body": "Communication réactive, de la demande à l'expédition et à l'assistance après livraison.",
+      "headingAccent": "un commerce mondial sans faille."
     },
     "foundations": {
       "eyebrow": "Comment nous opérons",

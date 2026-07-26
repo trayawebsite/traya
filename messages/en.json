@@ -94,7 +94,7 @@
     "products": "Products",
     "howWeWork": "How We Work",
     "certifications": "Certifications",
-    "contact": "Get in Touch",
+    "contact": "Contact Us",
     "inquiry": "inquiry",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "What We Offer",
-      "heading": "Everything you need for seamless global trade.",
+      "heading": "Everything you need for",
       "c1Title": "Global Sourcing",
       "c1Body": "Access to a diverse portfolio of products across multiple categories through a trusted export partner.",
       "c2Title": "Quality Assurance",
@@ -568,7 +568,8 @@
       "c7Title": "Flexible Trade Terms",
       "c7Body": "Commercial terms and shipping arrangements tailored to your business requirements.",
       "c8Title": "Dedicated Support",
-      "c8Body": "Responsive communication from inquiry through shipment and post-delivery assistance."
+      "c8Body": "Responsive communication from inquiry through shipment and post-delivery assistance.",
+      "headingAccent": "seamless global trade."
     },
     "foundations": {
       "eyebrow": "How we operate",

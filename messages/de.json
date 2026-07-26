@@ -94,7 +94,7 @@
     "products": "Produkte",
     "howWeWork": "Wie wir arbeiten",
     "certifications": "Zertifizierungen",
-    "contact": "Kontaktieren Sie uns",
+    "contact": "Kontakt",
     "inquiry": "Anfrage",
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Was Wir Bieten",
-      "heading": "Alles, was Sie für nahtlosen internationalen Handel benötigen.",
+      "heading": "Alles, was Sie benötigen,",
       "c1Title": "Globale Beschaffung",
       "c1Body": "Zugang zu einem vielfältigen Produktportfolio über mehrere Kategorien hinweg durch einen vertrauenswürdigen Exportpartner.",
       "c2Title": "Qualitätssicherung",
@@ -568,7 +568,8 @@
       "c7Title": "Flexible Handelsbedingungen",
       "c7Body": "Kommerzielle Bedingungen und Versandvereinbarungen, abgestimmt auf Ihre geschäftlichen Anforderungen.",
       "c8Title": "Persönlicher Support",
-      "c8Body": "Reaktionsschnelle Kommunikation von der Anfrage über den Versand bis zur Unterstützung nach der Lieferung."
+      "c8Body": "Reaktionsschnelle Kommunikation von der Anfrage über den Versand bis zur Unterstützung nach der Lieferung.",
+      "headingAccent": "für nahtlosen internationalen Handel."
     },
     "foundations": {
       "eyebrow": "Wie wir arbeiten",

@@ -79,11 +79,8 @@ docs.push({
   _id: "siteSettings",
   _type: "siteSettings",
   companyName: "Traya International Exim LLP",
-  tagline: "Building Partnerships Across Continents",
-  secondaryTagline: "A Refined Approach to Global Trade",
   emails: ["info@trayaexim.com"],
   phone: "+91 99989 16679",
-  whatsappNumber: "919998916679",
   address:
     "Shantakaaram, Shivranjani Society, Satellite, Ahmedabad, Gujarat 380015, India",
   social: {

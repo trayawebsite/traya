@@ -49,7 +49,6 @@ export type Product = {
   title: string;
   slug: string;
   shortDescription?: string;
-  description?: PortableText;
   images?: SanityImage[];
   forms?: ProductForm[];
   specifications?: SpecRow[];
@@ -60,9 +59,7 @@ export type Product = {
   packSizes?: string;
   grade?: string;
   brochure?: SanityFile;
-  featured?: boolean;
   category?: CategoryRef;
-  seo?: Seo;
 };
 
 export type CategoryWithProducts = {
@@ -72,13 +69,10 @@ export type CategoryWithProducts = {
   group?: string;
   description?: string;
   image?: SanityImage;
-  seo?: Seo;
   // Rich template fields
-  overview?: PortableText;
   moqPackaging?: SpecRow[];
   applications?: FeatureItem[];
   qualityCompliance?: string;
-  specSheet?: SanityFile;
   productCount: number;
   products: ProductListItem[];
 };
@@ -101,17 +95,13 @@ export type Certification = {
   order?: number;
 };
 
-export type Social = {linkedin?: string; instagram?: string; facebook?: string};
+export type Social = {linkedin?: string; instagram?: string};
 
 export type SiteSettings = {
   companyName?: string;
-  tagline?: string;
-  secondaryTagline?: string;
-  about?: PortableText;
   catalogueFile?: SanityFile;
   emails?: string[];
   phone?: string;
-  whatsappNumber?: string;
   address?: string;
   gstin?: string;
   iec?: string;

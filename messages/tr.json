@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Sunduklarımız",
-      "heading": "Kesintisiz küresel ticaret için ihtiyacınız olan her şey.",
+      "heading": "İhtiyacınız olan her şey,",
       "c1Title": "Küresel Tedarik",
       "c1Body": "Güvenilir bir ihracat ortağı aracılığıyla birden çok kategoride çeşitli ürün portföyüne erişim.",
       "c2Title": "Kalite Güvencesi",
@@ -568,7 +568,8 @@
       "c7Title": "Esnek Ticaret Koşulları",
       "c7Body": "İşletmenizin ihtiyaçlarına göre uyarlanmış ticari koşullar ve sevkiyat düzenlemeleri.",
       "c8Title": "Özel Destek",
-      "c8Body": "Talepten sevkiyata ve teslimat sonrası desteğe kadar hızlı yanıt veren iletişim."
+      "c8Body": "Talepten sevkiyata ve teslimat sonrası desteğe kadar hızlı yanıt veren iletişim.",
+      "headingAccent": "kesintisiz küresel ticaret için."
     },
     "foundations": {
       "eyebrow": "Nasıl çalışıyoruz",

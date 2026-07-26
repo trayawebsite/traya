@@ -94,7 +94,7 @@
     "products": "Sản phẩm",
     "howWeWork": "Cách chúng tôi làm việc",
     "certifications": "Chứng nhận",
-    "contact": "Liên hệ với chúng tôi",
+    "contact": "Liên hệ",
     "inquiry": "Yêu cầu",
     "privacy": "Chính sách bảo mật",
     "terms": "Điều khoản sử dụng",
@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Những Gì Chúng Tôi Cung Cấp",
-      "heading": "Mọi thứ bạn cần cho thương mại toàn cầu liền mạch.",
+      "heading": "Mọi thứ bạn cần cho",
       "c1Title": "Nguồn Cung Toàn Cầu",
       "c1Body": "Tiếp cận danh mục sản phẩm đa dạng trên nhiều danh mục thông qua đối tác xuất khẩu đáng tin cậy.",
       "c2Title": "Đảm Bảo Chất Lượng",
@@ -568,7 +568,8 @@
       "c7Title": "Điều Khoản Thương Mại Linh Hoạt",
       "c7Body": "Các điều khoản thương mại và sắp xếp vận chuyển phù hợp với yêu cầu kinh doanh của bạn.",
       "c8Title": "Hỗ Trợ Tận Tâm",
-      "c8Body": "Giao tiếp phản hồi nhanh từ khi yêu cầu đến khi giao hàng và hỗ trợ sau giao hàng."
+      "c8Body": "Giao tiếp phản hồi nhanh từ khi yêu cầu đến khi giao hàng và hỗ trợ sau giao hàng.",
+      "headingAccent": "thương mại toàn cầu liền mạch."
     },
     "foundations": {
       "eyebrow": "Cách chúng tôi vận hành",

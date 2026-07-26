@@ -25,12 +25,9 @@ export const categoryBySlugQuery = groq`
     group,
     description,
     image,
-    seo,
-    overview,
     moqPackaging,
     applications,
     qualityCompliance,
-    specSheet,
     "productCount": count(*[_type == "product" && references(^._id)]),
     "products": *[_type == "product" && references(^._id)] | order(title asc) {
       _id,
@@ -77,7 +74,6 @@ export const productBySlugQuery = groq`
     title,
     "slug": slug.current,
     shortDescription,
-    description,
     images,
     forms,
     specifications,
@@ -88,8 +84,6 @@ export const productBySlugQuery = groq`
     packSizes,
     grade,
     brochure,
-    featured,
-    seo,
     "category": category->{title, "slug": slug.current}
   }
 `;

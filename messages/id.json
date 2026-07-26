@@ -552,7 +552,7 @@
     },
     "core": {
       "eyebrow": "Yang Kami Tawarkan",
-      "heading": "Semua yang Anda butuhkan untuk perdagangan global yang lancar.",
+      "heading": "Semua yang Anda butuhkan untuk",
       "c1Title": "Sumber Produk Global",
       "c1Body": "Akses ke portofolio produk yang beragam di berbagai kategori melalui mitra ekspor tepercaya.",
       "c2Title": "Jaminan Kualitas",
@@ -568,7 +568,8 @@
       "c7Title": "Persyaratan Perdagangan Fleksibel",
       "c7Body": "Persyaratan komersial dan pengaturan pengiriman yang disesuaikan dengan kebutuhan bisnis Anda.",
       "c8Title": "Dukungan Khusus",
-      "c8Body": "Komunikasi responsif mulai dari pertanyaan hingga pengiriman dan dukungan pascapengiriman."
+      "c8Body": "Komunikasi responsif mulai dari pertanyaan hingga pengiriman dan dukungan pascapengiriman.",
+      "headingAccent": "perdagangan global yang lancar."
     },
     "foundations": {
       "eyebrow": "Cara kami beroperasi",

@@ -43,7 +43,6 @@ export type CatalogueCategory = {
   moqPackaging?: SpecRow[];
   applications?: FeatureItem[];
   qualityCompliance?: string;
-  specSheetUrl?: string;
   products: CatalogueProduct[];
 };
 
@@ -82,9 +81,6 @@ async function fetchSanityCategories(): Promise<CatalogueCategory[]> {
           moqPackaging: detail?.moqPackaging,
           applications: detail?.applications,
           qualityCompliance: detail?.qualityCompliance,
-          specSheetUrl: detail?.specSheet?.asset?._ref
-            ? fileUrlForRef(detail.specSheet.asset._ref) ?? undefined
-            : undefined,
           products: (detail?.products ?? []).map((p, j) => ({
             n: j + 1,
             name: p.title,

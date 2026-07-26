@@ -33,7 +33,7 @@ export async function AboutHero({data}: {data?: AboutPage | null}) {
           {/* Right — photograph, full-bleed to the right edge */}
           <div className="order-2 lg:order-2">
             <Photo
-              src="/home/about-hero.webp"
+              src="/home/about-hero.jpg"
               alt=""
               priority
               sizes="(min-width: 1024px) 40vw, 100vw"
