@@ -3,15 +3,17 @@
 import { useState, useCallback, useMemo, useSyncExternalStore } from "react";
 import { useLocale } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
-import { localeNames, type Locale } from "@/i18n/routing";
+import { localeNames, routing, type Locale } from "@/i18n/routing";
 
 const COOKIE_NAME = "NEXT_LOCALE";
 const PROMPT_DISMISSED = "locale-prompt-dismissed";
 
-// Locales with real translations (not English stubs). Only these are offered by
-// the auto-suggest prompt, so we never nudge a visitor into an untranslated
-// locale. Add codes here as translations are completed.
-const PROMPT_LOCALES: Locale[] = ["ar", "fr"];
+// Every non-default locale is fully translated (messages/*.json are complete and
+// key-identical to en.json), so all of them are offered by the auto-suggest
+// prompt. Derived from `routing.locales` so adding a locale needs no edit here.
+const PROMPT_LOCALES: Locale[] = routing.locales.filter(
+  (l) => l !== routing.defaultLocale,
+);
 
 function getBrowserLocale(): Locale | null {
   if (typeof navigator === "undefined") return null;

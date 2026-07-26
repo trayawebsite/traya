@@ -1,3 +1,4 @@
+import { jsonLd } from "./json-ld";
 // FAQ structured data   helps AI systems extract Q&A content for citations
 export function FaqSchema({
   items,
@@ -20,7 +21,7 @@ export function FaqSchema({
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: jsonLd(schema) }}
     />
   );
 }

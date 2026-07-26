@@ -7,7 +7,7 @@ import {
   getTranslations,
   setRequestLocale,
 } from "next-intl/server";
-import { routing } from "@/i18n/routing";
+import { routing, ogLocales, type Locale } from "@/i18n/routing";
 import { TopBar } from "@/components/layout/top-bar";
 import { SiteHeader } from "@/components/layout/site-header";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -43,7 +43,40 @@ const dmMono = DM_Mono({
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
 
-export const metadata: Metadata = {
+// Root metadata. OG/Twitter copy is localized per request (a German visitor's
+// share card should not be English), while `keywords` stays English — it targets
+// the English search terms buyers actually use, and is locale-agnostic anyway.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const safeLocale = hasLocale(routing.locales, locale)
+    ? locale
+    : routing.defaultLocale;
+  const t = await getTranslations({ locale: safeLocale, namespace: "Home.meta" });
+
+  return {
+    ...staticMetadata,
+    openGraph: {
+      ...staticMetadata.openGraph,
+      title: t("title"),
+      description: t("description"),
+      locale: ogLocales[safeLocale as Locale],
+      alternateLocale: routing.locales
+        .filter((l) => l !== safeLocale)
+        .map((l) => ogLocales[l]),
+    },
+    twitter: {
+      ...staticMetadata.twitter,
+      title: t("title"),
+      description: t("description"),
+    },
+  };
+}
+
+const staticMetadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
     default:

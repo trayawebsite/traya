@@ -204,8 +204,11 @@ export function ChemicalShades({
               )}
 
               {/* Capped at 4 across   wider cards keep the shade name, the
-                  reference number and the swatch all comfortably readable. */}
-              <ul className="mt-5 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+                  reference number and the swatch all comfortably readable.
+                  `items-start` is load-bearing: without it the grid stretches
+                  every card in a row to the height of the tallest, so opening
+                  one card would balloon its neighbours into empty boxes. */}
+              <ul className="mt-5 grid grid-cols-2 items-start gap-4 sm:grid-cols-3 lg:grid-cols-4">
                 {sr.shades.map((p) => (
                   <ShadeCard
                     key={p.slug}
