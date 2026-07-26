@@ -662,7 +662,17 @@
       "specPackagingValChem": "Sacs HDPE de 25 kg, fûts en fibre, sacs papier et emballage d'exportation personnalisé",
       "specDocs": "Documents",
       "specDocsVal": "COA, TDS, MSDS sur demande",
-      "specPrivateLabel": "Marque privée disponible"
+      "specPrivateLabel": "Marque privée disponible",
+      "industriesHeading": "Industries desservies",
+      "subRangeHeading": "Parcourir par sous-gamme",
+      "allSubRanges": "Tous",
+      "shade": "nuance",
+      "shades": "nuances",
+      "subRange": "sous-gamme",
+      "subRanges": "sous-gammes",
+      "specSample": "Disponibilité d'échantillons",
+      "specSampleVal": "Disponible",
+      "shadeRefLabel": "Référence"
     },
     "detail": {
       "eyebrow": "Produit",

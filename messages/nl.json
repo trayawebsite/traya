@@ -662,7 +662,17 @@
       "specPackagingValChem": "25 kg HDPE-zakken, vezelvaten, papieren zakken & aangepaste exportverpakking",
       "specDocs": "Documenten",
       "specDocsVal": "COA, TDS, MSDS op aanvraag",
-      "specPrivateLabel": "Private label beschikbaar"
+      "specPrivateLabel": "Private label beschikbaar",
+      "industriesHeading": "Bediende sectoren",
+      "subRangeHeading": "Bladeren per deelassortiment",
+      "allSubRanges": "Alle",
+      "shade": "kleur",
+      "shades": "kleuren",
+      "subRange": "deelassortiment",
+      "subRanges": "deelassortimenten",
+      "specSample": "Beschikbaarheid monsters",
+      "specSampleVal": "Beschikbaar",
+      "shadeRefLabel": "Referentie"
     },
     "detail": {
       "eyebrow": "Product",

@@ -662,7 +662,17 @@
       "specPackagingValChem": "25 kg HDPE bags, fibre drums, paper bags & custom export packaging",
       "specDocs": "Documents",
       "specDocsVal": "COA, TDS, MSDS on request",
-      "specPrivateLabel": "Private Label Available"
+      "specPrivateLabel": "Private Label Available",
+      "industriesHeading": "Industries Served",
+      "subRangeHeading": "Browse by sub-range",
+      "allSubRanges": "All",
+      "shade": "shade",
+      "shades": "shades",
+      "subRange": "sub-range",
+      "subRanges": "sub-ranges",
+      "specSample": "Sample availability",
+      "specSampleVal": "Available",
+      "shadeRefLabel": "Reference"
     },
     "detail": {
       "eyebrow": "Product",

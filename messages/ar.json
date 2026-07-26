@@ -662,7 +662,17 @@
       "specPackagingValChem": "أكياس HDPE سعة 25 كجم، براميل ليفية، أكياس ورقية وتغليف تصدير مخصص",
       "specDocs": "المستندات",
       "specDocsVal": "COA وTDS وMSDS عند الطلب",
-      "specPrivateLabel": "متوفر بعلامة تجارية خاصة"
+      "specPrivateLabel": "متوفر بعلامة تجارية خاصة",
+      "industriesHeading": "الصناعات التي نخدمها",
+      "subRangeHeading": "تصفح حسب النطاق الفرعي",
+      "allSubRanges": "الكل",
+      "shade": "درجة لون",
+      "shades": "درجات لون",
+      "subRange": "نطاق فرعي",
+      "subRanges": "نطاقات فرعية",
+      "specSample": "توفر العينات",
+      "specSampleVal": "متوفر",
+      "shadeRefLabel": "المرجع"
     },
     "detail": {
       "eyebrow": "المنتج",

@@ -662,7 +662,17 @@
       "specPackagingValChem": "Мешки HDPE 25 кг, фибровые барабаны, бумажные мешки и индивидуальная экспортная упаковка",
       "specDocs": "Документы",
       "specDocsVal": "COA, TDS, MSDS по запросу",
-      "specPrivateLabel": "Доступна собственная торговая марка"
+      "specPrivateLabel": "Доступна собственная торговая марка",
+      "industriesHeading": "Обслуживаемые отрасли",
+      "subRangeHeading": "Просмотр по подгруппам",
+      "allSubRanges": "Все",
+      "shade": "оттенок",
+      "shades": "оттенки",
+      "subRange": "подгруппа",
+      "subRanges": "подгруппы",
+      "specSample": "Наличие образцов",
+      "specSampleVal": "Доступно",
+      "shadeRefLabel": "Референс"
     },
     "detail": {
       "eyebrow": "Продукт",

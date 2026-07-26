@@ -13,6 +13,12 @@ import { CertMark } from "@/components/layout/cert-mark";
 import { QuoteForm } from "@/components/sections/quote-form";
 import { BreadcrumbSchema } from "@/components/seo/product-schema";
 import { categoryCutout } from "@/lib/category-covers";
+import { ChemicalShades, type SubRange } from "./chemical-shades";
+import {
+  CHEMICAL_CATEGORY_META,
+  SUBCATEGORY_BLURB,
+  orderSubcategories,
+} from "@/lib/chemicals-meta";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
 
@@ -72,6 +78,10 @@ export async function CategoryView({
               label: t("category.specPackaging"),
               value: t("category.specPackagingValChem"),
             },
+            {
+              label: t("category.specSample"),
+              value: t("category.specSampleVal"),
+            },
             { label: t("category.specDocs"), value: t("category.specDocsVal") },
           ]
         : [
@@ -85,6 +95,29 @@ export async function CategoryView({
               value: t("category.specPackagingVal"),
             },
           ];
+
+  // Speciality chemicals browse as colour ranges: group the category's shades
+  // by their `series` (the client's sub-range), in the approved reading order.
+  const chemMeta = CHEMICAL_CATEGORY_META[category.slug];
+  const subRanges: SubRange[] = (() => {
+    if (!isChemicals) return [];
+    const bySeries = new Map<string, SubRange["shades"]>();
+    for (const p of category.products) {
+      const key = p.series ?? "";
+      if (!bySeries.has(key)) bySeries.set(key, []);
+      bySeries.get(key)!.push({
+        name: p.name,
+        slug: p.slug,
+        colourIndex: p.colourIndex,
+        packSizes: p.packSizes,
+      });
+    }
+    return orderSubcategories(category.slug, [...bySeries.keys()]).map((name) => ({
+      name,
+      blurb: SUBCATEGORY_BLURB[name],
+      shades: bySeries.get(name) ?? [],
+    }));
+  })();
 
   return (
     <>
@@ -116,16 +149,44 @@ export async function CategoryView({
           />
           <div className="mt-8 grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="max-w-3xl lg:col-span-7 xl:col-span-8">
-              <h1 className="text-balance font-display text-display-lg text-foreground">
+              {chemMeta && <p className="section-label">{chemMeta.tagline}</p>}
+              <h1
+                className={`text-balance font-display text-display-lg text-foreground ${chemMeta ? "mt-3" : ""}`}
+              >
                 {category.title}
               </h1>
               <p className="mt-4 text-lg text-muted-foreground">
                 {count} {count === 1 ? t("product") : t("products")}
+                {subRanges.length > 1 && (
+                  <>
+                    {" · "}
+                    {subRanges.length} {t("category.subRanges")}
+                  </>
+                )}
               </p>
               {category.description && (
                 <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
                   {category.description}
                 </p>
+              )}
+
+              {/* Industries served   who actually buys this chemistry */}
+              {chemMeta && (
+                <div className="mt-7">
+                  <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+                    {t("category.industriesHeading")}
+                  </p>
+                  <ul className="mt-3 flex flex-wrap gap-2">
+                    {chemMeta.industries.map((ind) => (
+                      <li
+                        key={ind}
+                        className="rounded-full border border-traya-border bg-traya-surface px-3.5 py-1.5 text-xs font-medium text-foreground"
+                      >
+                        {ind}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               )}
             </div>
 
@@ -143,31 +204,64 @@ export async function CategoryView({
         </Container>
       </section>
 
-      {/* 2. Product Grid */}
+      {/* 2. The range   speciality chemicals browse as sub-range tiles + colour
+          swatch grids (a dye catalogue is read by eye); food keeps the
+          spec-led expandable product list. */}
       <Reveal>
         <section className="bg-traya-surface">
           <Container className="py-section">
-            <h2 className="font-display text-display-sm text-foreground">
-              {t("category.rangeHeading")}
-            </h2>
-            <CategoryProductList
-              products={category.products.map((p) => ({
-                name: p.name,
-                slug: p.slug,
-                shortDescription: p.shortDescription,
-                images: p.images,
-                series: p.series,
-                colourIndex: p.colourIndex,
-                packSizes: p.packSizes,
-                grade: p.grade,
-              }))}
-              labels={{
-                search: t("category.search"),
-                noResults: t("category.noResults"),
-              }}
-              categoryTitle={category.title}
-              specs={specRows}
-            />
+            {isChemicals ? (
+              <ChemicalShades
+                subRanges={subRanges}
+                categoryTitle={category.title}
+                categorySlug={category.slug}
+                labels={{
+                  subRangeHeading: t("category.subRangeHeading"),
+                  allSubRanges: t("category.allSubRanges"),
+                  // Resins are binders, not colours   count them as products.
+                  unitOne:
+                    category.slug === "paint-resins"
+                      ? t("product")
+                      : t("category.shade"),
+                  unitMany:
+                    category.slug === "paint-resins"
+                      ? t("products")
+                      : t("category.shades"),
+                  search: t("category.search"),
+                  noResults: t("category.noResults"),
+                  add: t("list.add"),
+                  added: t("list.added"),
+                  addedToast: t("list.addedToast"),
+                  quote: t("list.quote"),
+                  sample: t("list.sample"),
+                  refLabel: t("category.shadeRefLabel"),
+                }}
+              />
+            ) : (
+              <>
+                <h2 className="font-display text-display-sm text-foreground">
+                  {t("category.rangeHeading")}
+                </h2>
+                <CategoryProductList
+                  products={category.products.map((p) => ({
+                    name: p.name,
+                    slug: p.slug,
+                    shortDescription: p.shortDescription,
+                    images: p.images,
+                    series: p.series,
+                    colourIndex: p.colourIndex,
+                    packSizes: p.packSizes,
+                    grade: p.grade,
+                  }))}
+                  labels={{
+                    search: t("category.search"),
+                    noResults: t("category.noResults"),
+                  }}
+                  categoryTitle={category.title}
+                  specs={specRows}
+                />
+              </>
+            )}
             <div className="mt-10">
               <a href="#inquiry" className={primaryButton}>
                 {t("category.enquireCta")}
@@ -205,12 +299,12 @@ export async function CategoryView({
                   </div>
                 ))}
               </dl>
-              {!isChemicals && (
-                <p className="mt-4 flex items-center gap-2 text-sm font-medium text-traya-forest">
-                  <Check className="size-4 shrink-0" aria-hidden="true" />
-                  {t("category.specPrivateLabel")}
-                </p>
-              )}
+              {/* Private label   stated for food and for chemicals (the
+                  chemicals list's shared specs confirm it applies there too). */}
+              <p className="mt-4 flex items-center gap-2 text-sm font-medium text-traya-forest">
+                <Check className="size-4 shrink-0" aria-hidden="true" />
+                {t("category.specPrivateLabel")}
+              </p>
               {/* Quality & Compliance from Sanity */}
               {category.qualityCompliance && (
                 <div className="mt-6 rounded-xl border border-traya-border bg-card p-4">

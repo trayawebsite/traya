@@ -662,7 +662,17 @@
       "specPackagingValChem": "Sacchi HDPE da 25 kg, fusti in fibra, sacchi di carta e imballaggio da esportazione personalizzato",
       "specDocs": "Documenti",
       "specDocsVal": "COA, TDS, MSDS su richiesta",
-      "specPrivateLabel": "Marchio privato disponibile"
+      "specPrivateLabel": "Marchio privato disponibile",
+      "industriesHeading": "Settori serviti",
+      "subRangeHeading": "Sfoglia per sotto-gamma",
+      "allSubRanges": "Tutti",
+      "shade": "tonalità",
+      "shades": "tonalità",
+      "subRange": "sotto-gamma",
+      "subRanges": "sotto-gamme",
+      "specSample": "Disponibilità campioni",
+      "specSampleVal": "Disponibile",
+      "shadeRefLabel": "Riferimento"
     },
     "detail": {
       "eyebrow": "Prodotto",

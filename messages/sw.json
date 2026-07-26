@@ -662,7 +662,17 @@
       "specPackagingValChem": "Mifuko ya HDPE ya kg 25, mapipa ya nyuzi, mifuko ya karatasi na ufungashaji maalum wa kuuza nje",
       "specDocs": "Nyaraka",
       "specDocsVal": "COA, TDS, MSDS kwa ombi",
-      "specPrivateLabel": "Chapa Binafsi Inapatikana"
+      "specPrivateLabel": "Chapa Binafsi Inapatikana",
+      "industriesHeading": "Sekta Tunazohudumia",
+      "subRangeHeading": "Vinjari kwa kundi dogo",
+      "allSubRanges": "Zote",
+      "shade": "rangi",
+      "shades": "rangi",
+      "subRange": "kundi dogo",
+      "subRanges": "makundi madogo",
+      "specSample": "Upatikanaji wa sampuli",
+      "specSampleVal": "Inapatikana",
+      "shadeRefLabel": "Rejea"
     },
     "detail": {
       "eyebrow": "Bidhaa",

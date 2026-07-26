@@ -662,7 +662,17 @@
       "specPackagingValChem": "Bao HDPE 25 kg, thùng sợi, bao giấy & đóng gói xuất khẩu tùy chỉnh",
       "specDocs": "Tài liệu",
       "specDocsVal": "COA, TDS, MSDS theo yêu cầu",
-      "specPrivateLabel": "Có Sẵn Nhãn Hiệu Riêng"
+      "specPrivateLabel": "Có Sẵn Nhãn Hiệu Riêng",
+      "industriesHeading": "Ngành hàng phục vụ",
+      "subRangeHeading": "Duyệt theo nhóm phụ",
+      "allSubRanges": "Tất cả",
+      "shade": "sắc màu",
+      "shades": "sắc màu",
+      "subRange": "nhóm phụ",
+      "subRanges": "nhóm phụ",
+      "specSample": "Cung cấp mẫu",
+      "specSampleVal": "Có sẵn",
+      "shadeRefLabel": "Mã tham chiếu"
     },
     "detail": {
       "eyebrow": "Sản phẩm",

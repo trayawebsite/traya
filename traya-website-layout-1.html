@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TRAYA Speciality Chemicals — Website Layout Prototype</title>
+<style>
+  :root{
+    --navy:#0F2438;
+    --navy-2:#16314B;
+    --ink:#1B2430;
+    --paper:#F7F5F0;
+    --paper-2:#FFFFFF;
+    --line:#E4E0D6;
+    --amber:#C8862B;
+    --amber-2:#B4741F;
+    --muted:#6B7280;
+    --green:#2E7D5B;
+    --radius:10px;
+    --maxw:1240px;
+    font-size:16px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+  button{font-family:inherit;cursor:pointer;}
+
+  /* ===== DEV MODE ANNOTATION ===== */
+  .dev-toggle{
+    position:fixed;top:14px;right:14px;z-index:9999;
+    background:var(--ink);color:#fff;border:none;border-radius:999px;
+    padding:9px 16px;font-size:12.5px;font-weight:600;letter-spacing:.02em;
+    box-shadow:0 4px 14px rgba(0,0,0,.25);
+    display:flex;align-items:center;gap:7px;
+  }
+  .dev-toggle .dot{width:7px;height:7px;border-radius:50%;background:#4ADE80;}
+  body.dev-mode .dev-note{display:block;}
+  .dev-note{
+    display:none;
+    position:absolute;top:-9px;left:0;
+    background:#111827;color:#D1FAE5;font-size:10.5px;font-family:ui-monospace,Menlo,Consolas,monospace;
+    padding:2px 7px;border-radius:4px;white-space:nowrap;
+    transform:translateY(-100%);
+    z-index:50;
+    box-shadow:0 2px 8px rgba(0,0,0,.3);
+  }
+  body.dev-mode [data-note]{position:relative;outline:1px dashed rgba(74,222,128,.55);outline-offset:2px;}
+
+  /* ===== TOP UTILITY BAR ===== */
+  .util-bar{background:var(--navy);color:#CBD5C8;font-size:12.5px;}
+  .util-bar .wrap{display:flex;justify-content:space-between;align-items:center;padding:7px 28px;}
+  .util-bar a{opacity:.9;margin-left:18px;}
+  .util-bar a:hover{opacity:1;text-decoration:underline;}
+  .util-left span{opacity:.75;}
+
+  /* ===== HEADER / NAV ===== */
+  header.site{background:var(--paper-2);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:500;}
+  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;gap:24px;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:.02em;color:var(--navy);}
+  .logo .mark{width:34px;height:34px;border-radius:8px;background:linear-gradient(135deg,#0F2438,#1E4C73);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;}
+  .logo small{display:block;font-size:10px;font-weight:600;letter-spacing:.14em;color:var(--amber);margin-top:1px;}
+
+  nav.main{display:flex;gap:2px;flex:1;justify-content:center;}
+  nav.main > .nav-item{position:relative;}
+  nav.main > .nav-item > button{
+    background:none;border:none;padding:12px 14px;font-size:14px;font-weight:600;color:var(--ink);
+    border-bottom:2px solid transparent;
+  }
+  nav.main > .nav-item:hover > button, nav.main > .nav-item.active > button{color:var(--amber-2);border-color:var(--amber-2);}
+
+  .mega{
+    display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);
+    background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 40px rgba(15,36,56,.14);
+    padding:18px;width:340px;z-index:600;
+  }
+  nav.main > .nav-item:hover .mega{display:block;}
+  .mega .mega-title{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:8px;font-weight:700;}
+  .mega ul{list-style:none;margin:0;padding:0;display:grid;gap:2px;}
+  .mega li a{display:flex;justify-content:space-between;padding:8px 10px;border-radius:7px;font-size:13.5px;color:var(--ink);}
+  .mega li a:hover{background:var(--paper);color:var(--amber-2);}
+  .mega li a .count{color:var(--muted);font-size:11.5px;}
+  .mega .mega-cta{display:block;margin-top:10px;padding-top:10px;border-top:1px solid var(--line);font-size:12.5px;font-weight:700;color:var(--amber-2);}
+
+  .header-actions{display:flex;align-items:center;gap:10px;}
+  .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:7px;font-size:13.5px;font-weight:700;border:1px solid transparent;white-space:nowrap;}
+  .btn-primary{background:var(--amber-2);color:#fff;}
+  .btn-primary:hover{background:#9C5F16;}
+  .btn-ghost{background:transparent;border-color:var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--navy);}
+  .btn-sm{padding:6px 12px;font-size:12.5px;}
+  .search-box{display:flex;align-items:center;border:1px solid var(--line);border-radius:7px;padding:7px 10px;gap:6px;min-width:200px;}
+  .search-box input{border:none;outline:none;font-size:13px;width:100%;background:transparent;}
+
+  /* ===== HERO ===== */
+  .hero{background:radial-gradient(1200px 500px at 15% -10%,#1E4C73 0%,var(--navy) 55%,#0B1A29 100%);color:#fff;padding:64px 0 56px;}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;}
+  .eyebrow{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#F3C67A;background:rgba(243,198,122,.12);border:1px solid rgba(243,198,122,.3);padding:5px 11px;border-radius:999px;margin-bottom:16px;}
+  .hero h1{font-size:38px;line-height:1.15;margin:0 0 14px;font-weight:800;}
+  .hero p{font-size:15.5px;color:#C9D3DD;max-width:520px;margin:0 0 26px;}
+  .hero-ctas{display:flex;gap:12px;}
+  .hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:20px;}
+  .hero-stats div{text-align:center;}
+  .hero-stats b{display:block;font-size:22px;color:#F3C67A;}
+  .hero-stats span{font-size:11.5px;color:#B9C4CF;}
+
+  /* ===== TRUST / SPECS STRIP ===== */
+  .specs-strip{background:#fff;border-bottom:1px solid var(--line);}
+  .specs-strip .wrap{display:grid;grid-template-columns:repeat(7,1fr);gap:0;padding:18px 28px;}
+  .spec-item{text-align:center;padding:0 8px;border-left:1px solid var(--line);}
+  .spec-item:first-child{border-left:none;}
+  .spec-item .label{font-size:10px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700;margin-bottom:4px;}
+  .spec-item .value{font-size:12.5px;font-weight:700;color:var(--navy);line-height:1.3;}
+
+  /* ===== SECTION HEADINGS ===== */
+  .section{padding:52px 0;}
+  .section-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:28px;gap:20px;}
+  .section-head h2{font-size:25px;margin:0 0 6px;font-weight:800;color:var(--navy);}
+  .section-head p{margin:0;color:var(--muted);font-size:14px;max-width:560px;}
+
+  /* ===== CATEGORY GRID (home) ===== */
+  .cat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .cat-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;transition:.15s;position:relative;overflow:hidden;}
+  .cat-card:hover{border-color:var(--amber-2);box-shadow:0 12px 30px rgba(15,36,56,.08);transform:translateY(-2px);}
+  .cat-card .icon{width:42px;height:42px;border-radius:9px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;margin-bottom:14px;}
+  .cat-card h3{font-size:17px;margin:0 0 6px;font-weight:800;}
+  .cat-card p.tag{font-size:12.5px;color:var(--amber-2);font-weight:700;margin:0 0 10px;}
+  .cat-card p.desc{font-size:13px;color:var(--muted);margin:0 0 16px;min-height:56px;}
+  .cat-card .meta{display:flex;justify-content:space-between;align-items:center;font-size:12px;border-top:1px solid var(--line);padding-top:12px;}
+  .cat-card .meta b{color:var(--navy);}
+  .swatch-row{display:flex;gap:5px;margin-bottom:14px;}
+  .swatch-row span{width:16px;height:16px;border-radius:4px;border:1px solid rgba(0,0,0,.08);}
+
+  /* ===== BREADCRUMB ===== */
+  .breadcrumb{font-size:12.5px;color:var(--muted);padding:16px 0 0;}
+  .breadcrumb a:hover{color:var(--amber-2);}
+  .breadcrumb .sep{margin:0 6px;opacity:.5;}
+
+  /* ===== CATEGORY PAGE ===== */
+  .cat-hero{padding:26px 0 8px;}
+  .cat-hero h1{font-size:30px;margin:6px 0 8px;font-weight:800;color:var(--navy);}
+  .cat-hero p{color:var(--muted);font-size:14.5px;max-width:720px;margin:0;}
+
+  .subcat-tabs{display:flex;flex-wrap:wrap;gap:8px;padding:22px 0 6px;border-bottom:1px solid var(--line);margin-bottom:26px;}
+  .subcat-tabs button{padding:9px 15px;border-radius:999px;border:1px solid var(--line);background:#fff;font-size:13px;font-weight:600;color:var(--ink);}
+  .subcat-tabs button.active{background:var(--navy);border-color:var(--navy);color:#fff;}
+  .subcat-tabs button:hover:not(.active){border-color:var(--amber-2);color:var(--amber-2);}
+
+  .subcat-block{margin-bottom:44px;}
+  .subcat-headline{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:6px;flex-wrap:wrap;}
+  .subcat-headline h3{font-size:19px;margin:0;font-weight:800;color:var(--navy);}
+  .subcat-headline .subcount{font-size:12.5px;color:var(--muted);font-weight:600;}
+  .subcat-desc{font-size:13.5px;color:var(--muted);margin:2px 0 14px;max-width:700px;}
+
+  .info-bar{display:flex;flex-wrap:wrap;gap:0;background:#fff;border:1px solid var(--line);border-radius:9px;margin-bottom:18px;overflow:hidden;}
+  .info-bar .chip{padding:11px 16px;font-size:12px;border-right:1px solid var(--line);flex:1;min-width:150px;}
+  .info-bar .chip:last-child{border-right:none;}
+  .info-bar .chip b{display:block;color:var(--navy);font-size:10px;text-transform:uppercase;letter-spacing:.06em;margin-bottom:3px;font-weight:700;}
+  .info-bar .chip span{color:var(--ink);font-weight:600;}
+
+  .industry-label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700;margin-bottom:8px;}
+  .industry-row{display:flex;flex-wrap:wrap;gap:8px;}
+  .industry-row .itag{font-size:12px;font-weight:700;color:var(--navy);background:#F3EFE4;border:1px solid var(--line);padding:6px 13px;border-radius:20px;}
+
+  /* ===== PRODUCT GRID ===== */
+  .product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px;}
+  .product-card{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;text-align:left;}
+  .product-card:hover{border-color:var(--amber-2);box-shadow:0 8px 20px rgba(15,36,56,.09);}
+  .swatch{height:74px;width:100%;position:relative;}
+  .swatch::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,0) 60%,rgba(0,0,0,.14) 100%);}
+  .product-info{padding:10px 12px 12px;}
+  .product-info .pname{font-size:12.8px;font-weight:700;color:var(--ink);margin:0 0 3px;line-height:1.25;}
+  .product-info .pref{font-size:11px;color:var(--muted);margin:0;}
+
+  /* resin cards (no swatch) */
+  .resin-card{background:#fff;border:1px solid var(--line);border-radius:9px;padding:16px;}
+  .resin-card h4{margin:0 0 4px;font-size:14px;}
+  .resin-card p{margin:0;font-size:12px;color:var(--muted);}
+  .resin-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;}
+
+  /* ===== MODAL (product detail) ===== */
+  .modal-overlay{display:none;position:fixed;inset:0;background:rgba(11,26,41,.55);z-index:2000;align-items:center;justify-content:center;padding:24px;}
+  .modal-overlay.open{display:flex;}
+  .modal{background:#fff;border-radius:14px;max-width:640px;width:100%;max-height:88vh;overflow:auto;box-shadow:0 30px 70px rgba(0,0,0,.35);}
+  .modal-top{display:flex;}
+  .modal-swatch{width:150px;flex-shrink:0;}
+  .modal-head{flex:1;padding:22px 22px 14px;}
+  .modal-close{position:absolute;top:14px;right:16px;background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:50%;width:30px;height:30px;font-size:15px;}
+  .modal-wrap{position:relative;}
+  .modal-crumb{font-size:11.5px;color:var(--muted);margin-bottom:6px;}
+  .modal-head h2{font-size:21px;margin:0 0 4px;font-weight:800;color:var(--navy);}
+  .modal-head .ref{font-size:13px;color:var(--amber-2);font-weight:700;}
+  .modal-body{padding:6px 22px 22px;}
+  .spec-table{width:100%;border-collapse:collapse;margin:14px 0;}
+  .spec-table tr{border-top:1px solid var(--line);}
+  .spec-table td{padding:9px 0;font-size:13px;vertical-align:top;}
+  .spec-table td:first-child{color:var(--muted);width:150px;font-weight:600;}
+  .spec-table td:last-child{color:var(--ink);font-weight:600;}
+  .modal-ctas{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap;}
+
+  /* ===== VIEW TOGGLE (prototype nav for dev) ===== */
+  .proto-bar{background:#111827;color:#E5E7EB;font-size:12px;padding:8px 0;}
+  .proto-bar .wrap{display:flex;align-items:center;gap:16px;}
+  .proto-bar b{color:#F3C67A;font-weight:700;}
+  .proto-bar .pages{display:flex;gap:6px;flex-wrap:wrap;}
+  .proto-bar .pages button{background:#1F2937;color:#D1D5DB;border:1px solid #374151;padding:5px 11px;border-radius:6px;font-size:11.5px;}
+  .proto-bar .pages button.active{background:#F3C67A;color:#111827;border-color:#F3C67A;font-weight:700;}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--navy);color:#B9C4CF;margin-top:20px;}
+  .footer-top{padding:44px 0 30px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.1fr;gap:28px;}
+  .footer-top h4{color:#fff;font-size:13px;margin:0 0 12px;text-transform:uppercase;letter-spacing:.06em;}
+  .footer-top ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;}
+  .footer-top a{font-size:13px;color:#B9C4CF;}
+  .footer-top a:hover{color:#F3C67A;}
+  .footer-top p{font-size:13px;line-height:1.6;margin:0 0 14px;color:#9FB0BE;}
+  .footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:16px 0;display:flex;justify-content:space-between;font-size:12px;color:#8A9CAA;}
+  .cert-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;}
+  .cert-row span{font-size:10.5px;font-weight:700;border:1px solid rgba(255,255,255,.2);padding:4px 9px;border-radius:5px;color:#DCE4EA;}
+
+  /* ===== SITEMAP PANEL ===== */
+  .sitemap-panel{display:none;background:#fff;border:1px solid var(--line);border-radius:10px;padding:22px;margin:24px 0;}
+  .sitemap-panel.open{display:block;}
+  .sitemap-panel h3{margin-top:0;}
+  .tree{font-size:13px;line-height:1.9;}
+  .tree .l1{font-weight:800;color:var(--navy);margin-top:10px;}
+  .tree .l2{margin-left:22px;color:var(--ink);}
+  .tree .l2 b{color:var(--amber-2);}
+  .tree .l3{margin-left:44px;color:var(--muted);font-size:12px;}
+
+  @media (max-width:980px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .cat-grid{grid-template-columns:repeat(2,1fr);}
+    .specs-strip .wrap{grid-template-columns:repeat(3,1fr);row-gap:14px;}
+    .footer-top{grid-template-columns:1fr 1fr;}
+    nav.main{display:none;}
+  }
+</style>
+</head>
+<body>
+<button class="dev-toggle" onclick="document.body.classList.toggle('dev-mode')"><span class="dot"></span>Developer notes: OFF/ON</button>
+
+<div class="proto-bar">
+  <div class="wrap">
+    <b>PROTOTYPE NAV</b>
+    <span>Jump between page templates —</span>
+    <div class="pages" id="protoNav"></div>
+  </div>
+</div>
+
+<div class="util-bar">
+  <div class="wrap">
+    <div class="util-left"><span>Speciality Chemicals Manufacturer & Exporter</span></div>
+    <div>
+      <a href="#">Track Enquiry</a>
+      <a href="#">Download Full Catalogue (PDF)</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="header-inner wrap">
+    <a class="logo" href="#" onclick="goHome();return false;" data-note="Logo → links home">
+      <span class="mark">TR</span>
+      <span>TRAYA<small>SPECIALITY CHEMICALS</small></span>
+    </a>
+
+    <nav class="main" id="mainNav" data-note="Mega-menu: 1 item per category, sub-items per sub-category, product count auto-generated from catalogue data"></nav>
+
+    <div class="header-actions">
+      <div class="search-box" data-note="Global search: matches product name + C.I./E.E.C./FD&C reference no. across all categories">
+        <span>🔍</span><input placeholder="Search shade or reference no.…">
+      </div>
+      <button class="btn btn-ghost" data-note="Opens saved RFQ list (session-based product comparison / enquiry basket)">Enquiry List (0)</button>
+      <button class="btn btn-primary" data-note="Primary conversion action — opens quote request form modal">Get a Quote</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- HOME VIEW -->
+<!-- ============================================================ -->
+<div id="view-home">
+
+  <section class="hero" data-note="Hero: value prop + primary CTAs + trust stat block">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">247+ Shades Across 6 Product Lines</span>
+        <h1>Speciality dyes, pigments &amp; resin chemistry — manufactured for export.</h1>
+        <p>Reactive, direct, acid &amp; food-grade colours, organic/inorganic pigments and paint resins — with full C.I., E.E.C. &amp; FD&amp;C reference data and export documentation on every product.</p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary">Browse Product Range</button>
+          <button class="btn btn-ghost" style="border-color:rgba(255,255,255,.35);color:#fff;">Request Sample</button>
+        </div>
+      </div>
+      <div class="hero-stats" data-note="Stat block — pull counts live from product database">
+        <div><b>6</b><span>Categories</span></div>
+        <div><b>18</b><span>Sub-ranges</span></div>
+        <div><b>247+</b><span>Shades / SKUs</span></div>
+        <div><b>500kg</b><span>MOQ</span></div>
+        <div><b>FCL</b><span>Max order size</span></div>
+        <div><b>COA·TDS·MSDS</b><span>On request</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs-strip" data-note="Global specification strip — sourced once, applies to every category/product page (from sheet rows 5–12)">
+    <div class="wrap" id="specsStrip"></div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Product Categories</h2>
+          <p>Six core chemistry lines, each broken into buying-ready sub-ranges with shade-level detail.</p>
+        </div>
+        <button class="btn btn-ghost" onclick="toggleSitemap()">View Full Sitemap</button>
+      </div>
+
+      <div class="sitemap-panel" id="sitemapPanel">
+        <h3>Site structure (for developer reference)</h3>
+        <div class="tree" id="sitemapTree"></div>
+      </div>
+
+      <div class="cat-grid" id="catGrid" data-note="Category card: icon, name, tagline, blurb, swatch preview (first 6 product colours), sub-category count, shade count → links to Category Page"></div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <h2>Why Buyers Source From TRAYA</h2>
+          <p>The same commitments apply across every category — shown once here, and repeated contextually on category and product pages.</p>
+        </div>
+      </div>
+      <div class="cat-grid" style="grid-template-columns:repeat(4,1fr);">
+        <div class="cat-card"><div class="icon">✓</div><h3>Documented Quality</h3><p class="desc">COA, TDS &amp; MSDS available on request for every shade, with C.I./E-number/FD&amp;C references quoted upfront.</p></div>
+        <div class="cat-card"><div class="icon">✓</div><h3>Flexible Scale</h3><p class="desc">500 kg minimum order, scaling to full container loads — with bulk and custom quantities available on request.</p></div>
+        <div class="cat-card"><div class="icon">✓</div><h3>Private Label</h3><p class="desc">Custom packaging, private labelling and bespoke shade formulation available across applicable ranges.</p></div>
+        <div class="cat-card"><div class="icon">✓</div><h3>Export Ready</h3><p class="desc">Packaging formats built for international freight, with MOQ and packaging specification confirmed once per category.</p></div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ============================================================ -->
+<!-- CATEGORY VIEW -->
+<!-- ============================================================ -->
+<div id="view-category" style="display:none;">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="#" onclick="goHome();return false;">Home</a><span class="sep">/</span><a href="#" onclick="goHome();return false;">Products</span><span class="sep">/</span><span id="crumbCat" style="color:var(--ink);font-weight:600;"></span></div>
+    <div class="cat-hero">
+      <span class="eyebrow" id="catTagline" style="color:var(--amber-2);background:rgba(200,134,43,.1);border-color:rgba(200,134,43,.25);"></span>
+      <h1 id="catTitle"></h1>
+      <p id="catBlurb"></p>
+      <div style="margin-top:16px;" data-note="Industries Served — which buyer industries use this category; shown once per category, under the description.">
+        <div class="industry-label">Industries Served</div>
+        <div class="industry-row" id="catIndustries"></div>
+      </div>
+    </div>
+
+    <div class="info-bar" id="catSpecBlock" style="margin-top:22px;" data-note="Category-level specification block — appears ONCE per category page. MOQ, Packaging, Sample Availability, Private Label and Documents (COA/TDS/MSDS) are stated here only; they are not repeated on sub-range sections or on individual product detail views."></div>
+
+    <div class="subcat-tabs" id="subcatTabs" data-note="Sub-category quick filter — pills scroll product grid to matching section, 'All' shows every sub-range stacked"></div>
+
+    <div id="subcatBlocks"></div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- PRODUCT MODAL -->
+<!-- ============================================================ -->
+<div class="modal-overlay" id="productModal" onclick="if(event.target===this)closeModal();">
+  <div class="modal">
+    <div class="modal-wrap">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div class="modal-top">
+        <div class="modal-swatch" id="modalSwatch"></div>
+        <div class="modal-head">
+          <div class="modal-crumb" id="modalCrumb"></div>
+          <h2 id="modalName"></h2>
+          <div class="ref" id="modalRef"></div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <table class="spec-table" id="modalSpecs"></table>
+        <div class="modal-ctas">
+          <button class="btn btn-primary">Request Quote for this Shade</button>
+          <button class="btn btn-ghost">Request Free Sample</button>
+          <button class="btn btn-ghost">Add to Enquiry List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap footer-top">
+    <div>
+      <h4>TRAYA</h4>
+      <p>Manufacturer &amp; exporter of reactive, direct, acid and food-grade colours, pigments and paint resins. Custom shades, private label and export documentation on request.</p>
+      <div class="cert-row"><span>ISO 9001</span><span>REACH</span><span>GMP</span><span>Export House</span></div>
+    </div>
+    <div>
+      <h4>Categories</h4>
+      <ul id="footerCats"></ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Manufacturing &amp; QC</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Certifications</a></li>
+        <li><a href="#">Blog / Resources</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Buyers</h4>
+      <ul>
+        <li><a href="#">Request a Sample</a></li>
+        <li><a href="#">Get a Quote</a></li>
+        <li><a href="#">Download Catalogue</a></li>
+        <li><a href="#">Private Label Enquiry</a></li>
+        <li><a href="#">Shipping &amp; MOQ Policy</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Get in Touch</h4>
+      <ul>
+        <li>sales@traya-chemicals.com</li>
+        <li>+91 XX XXXX XXXX</li>
+        <li>Export enquiries welcomed worldwide</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 TRAYA Speciality Chemicals. All rights reserved.</span>
+    <span>Website layout prototype — for developer review</span>
+  </div>
+</footer>
+
+<script>
+const DATA = [{"category": "REACTIVE DYES", "subcategories": [{"subcategory": "P Series", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Lemon Yellow PX4G", "hex": "#F5E642", "ci": "Yellow 18", "eec": null, "fdc": null}, {"name": "Golden Yellow PXR", "hex": "#F2C230", "ci": "Yellow 12", "eec": null, "fdc": null}, {"name": "Orange PX2R", "hex": "#F0791A", "ci": "Orange 13", "eec": null, "fdc": null}, {"name": "Red PX8B", "hex": "#D32B2B", "ci": "Red 31", "eec": null, "fdc": null}, {"name": "Red PX6B", "hex": "#D32B2B", "ci": "Red 76", "eec": null, "fdc": null}, {"name": "Red Brown PXR", "hex": "#D32B2B", "ci": "Brown 9", "eec": null, "fdc": null}, {"name": "Blue PX5R", "hex": "#1F5FA8", "ci": "Blue 13", "eec": null, "fdc": null}, {"name": "Turq. Blue P5G", "hex": "#0FA3A3", "ci": "Blue 25", "eec": null, "fdc": null}, {"name": "Black PN", "hex": "#1C1C1C", "ci": "Black 8", "eec": null, "fdc": null}, {"name": "Purple P3R", "hex": "#6A3AA0", "ci": "Violet 1", "eec": null, "fdc": null}, {"name": "Magenta PB", "hex": "#C81E76", "ci": "Violet 26", "eec": null, "fdc": null}, {"name": "Blue PX3R", "hex": "#1F5FA8", "ci": null, "eec": null, "fdc": null}]}, {"subcategory": "VS Based", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Yellow FG", "hex": "#F5D622", "ci": "Yellow 42", "eec": null, "fdc": null}, {"name": "Yellow GR", "hex": "#F5D622", "ci": "Yellow 15", "eec": null, "fdc": null}, {"name": "Yellow GL", "hex": "#F5D622", "ci": "Yellow 37", "eec": null, "fdc": null}, {"name": "Golden Yellow R", "hex": "#F2C230", "ci": "Yellow 77", "eec": null, "fdc": null}, {"name": "Golden Yellow RNL", "hex": "#F2C230", "ci": "Orange 107", "eec": null, "fdc": null}, {"name": "Orange 2R", "hex": "#F0791A", "ci": "Orange 7", "eec": null, "fdc": null}, {"name": "Orange 3R", "hex": "#F0791A", "ci": "Orange 16", "eec": null, "fdc": null}, {"name": "Red C2G", "hex": "#D32B2B", "ci": "Red 106", "eec": null, "fdc": null}, {"name": "Red 5B", "hex": "#D32B2B", "ci": "Red 35", "eec": null, "fdc": null}, {"name": "Red RB", "hex": "#D32B2B", "ci": "Red 198", "eec": null, "fdc": null}, {"name": "Red BSID", "hex": "#D32B2B", "ci": "Red 111", "eec": null, "fdc": null}, {"name": "Brown GR", "hex": "#7A4B2A", "ci": "Brown Mix", "eec": null, "fdc": null}, {"name": "Blue 3R", "hex": "#1F5FA8", "ci": "Blue 28", "eec": null, "fdc": null}, {"name": "Blue BB", "hex": "#1F5FA8", "ci": "Blue 220", "eec": null, "fdc": null}, {"name": "Blue R SPL", "hex": "#1F5FA8", "ci": "Blue 19", "eec": null, "fdc": null}, {"name": "Black B", "hex": "#1C1C1C", "ci": "Black 5", "eec": null, "fdc": null}, {"name": "Black RL", "hex": "#1C1C1C", "ci": "Black 31", "eec": null, "fdc": null}, {"name": "Violet 5R", "hex": "#6A3AA0", "ci": "Violet 5", "eec": null, "fdc": null}]}, {"subcategory": "ME Brand (Bi-Functional)", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Yellow ME4GL", "hex": "#F5D622", "ci": "Yellow 160A", "eec": null, "fdc": null}, {"name": "Golden Yellow MERL", "hex": "#F2C230", "ci": "Yellow 145", "eec": null, "fdc": null}, {"name": "Orange ME2RL", "hex": "#F0791A", "ci": "Orange 122", "eec": null, "fdc": null}, {"name": "Red ME4BL", "hex": "#D32B2B", "ci": "Red 195", "eec": null, "fdc": null}, {"name": "Red ME6BL", "hex": "#D32B2B", "ci": "Red 250", "eec": null, "fdc": null}, {"name": "Blue ME2RL", "hex": "#1F5FA8", "ci": "Blue 158", "eec": null, "fdc": null}, {"name": "Blue BFN", "hex": "#1F5FA8", "ci": "Blue 222", "eec": null, "fdc": null}, {"name": "Navy Blue ME2GL", "hex": "#1B2A5E", "ci": "Blue 194", "eec": null, "fdc": null}, {"name": "Black WNN", "hex": "#1C1C1C", "ci": "Black Mix", "eec": null, "fdc": null}, {"name": "Green ME4BL", "hex": "#2E8B57", "ci": "Green-27", "eec": null, "fdc": null}]}, {"subcategory": "Cold Brand", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Lemon Yellow M4G", "hex": "#F5E642", "ci": "Yellow 22", "eec": null, "fdc": null}, {"name": "Yellow M8G", "hex": "#F5D622", "ci": "Yellow 86", "eec": null, "fdc": null}, {"name": "Yellow MGR", "hex": "#F5D622", "ci": "Yellow 7", "eec": null, "fdc": null}, {"name": "Golden Yellow MR", "hex": "#F2C230", "ci": "Yellow 44", "eec": null, "fdc": null}, {"name": "Orange M2R", "hex": "#F0791A", "ci": "Orange 4", "eec": null, "fdc": null}, {"name": "Red M5B", "hex": "#D32B2B", "ci": "Red 2", "eec": null, "fdc": null}, {"name": "Red M8B", "hex": "#D32B2B", "ci": "Red 11", "eec": null, "fdc": null}, {"name": "Pink MB", "hex": "#E8759F", "ci": "Red 74", "eec": null, "fdc": null}, {"name": "Blue MR", "hex": "#1F5FA8", "ci": "Blue 4", "eec": null, "fdc": null}, {"name": "Blue M2R", "hex": "#1F5FA8", "ci": "Blue 81", "eec": null, "fdc": null}, {"name": "Blue M4GD", "hex": "#1F5FA8", "ci": "Blue 168", "eec": null, "fdc": null}, {"name": "Magenta MB", "hex": "#C81E76", "ci": "Violet 13", "eec": null, "fdc": null}, {"name": "Violet C4R", "hex": "#6A3AA0", "ci": "Violet 12", "eec": null, "fdc": null}]}, {"subcategory": "High Exhaust (HE)", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Lemon Yellow HE4G", "hex": "#F5E642", "ci": "Yellow 81", "eec": null, "fdc": null}, {"name": "Yellow HE4R", "hex": "#F5D622", "ci": "Yellow 84", "eec": null, "fdc": null}, {"name": "Yellow HE6G", "hex": "#F5D622", "ci": "Yellow 135", "eec": null, "fdc": null}, {"name": "Golden Yellow HER", "hex": "#F2C230", "ci": "Yellow 84", "eec": null, "fdc": null}, {"name": "Orange HE2R", "hex": "#F0791A", "ci": "Orange 84", "eec": null, "fdc": null}, {"name": "Red HE3B", "hex": "#D32B2B", "ci": "Red 120", "eec": null, "fdc": null}, {"name": "Red HE7B", "hex": "#D32B2B", "ci": "Red 141", "eec": null, "fdc": null}, {"name": "Red HE8B", "hex": "#D32B2B", "ci": "Red 152", "eec": null, "fdc": null}, {"name": "Navy Blue HER", "hex": "#1B2A5E", "ci": "Blue 171", "eec": null, "fdc": null}, {"name": "Navy Blue HE2R", "hex": "#1B2A5E", "ci": "Blue 172", "eec": null, "fdc": null}, {"name": "Black HEBL", "hex": "#1C1C1C", "ci": "Black 160", "eec": null, "fdc": null}, {"name": "Black HFGR", "hex": "#1C1C1C", "ci": "Black Mix", "eec": null, "fdc": null}, {"name": "Green HE4BD", "hex": "#2E8B57", "ci": "Green 19A", "eec": null, "fdc": null}]}]}, {"category": "DIRECT DYES", "subcategories": [{"subcategory": "Non-Benzidine Range", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Fast Yellow PG", "hex": "#F3D622", "ci": "Yellow 142", "eec": null, "fdc": null}, {"name": "Fast Lemon Yellow 5GLL", "hex": "#F5E642", "ci": "Yellow 44", "eec": null, "fdc": null}, {"name": "Fast Yellow 3GX", "hex": "#F3D622", "ci": "Yellow 6", "eec": null, "fdc": null}, {"name": "Sun Yellow RCH", "hex": "#F9DE3B", "ci": "Yellow 99", "eec": null, "fdc": null}, {"name": "Fast Yellow RL", "hex": "#F3D622", "ci": "Yellow 86", "eec": null, "fdc": null}, {"name": "Fast Yellow ARL", "hex": "#F3D622", "ci": "Yellow 106", "eec": null, "fdc": null}, {"name": "Fast Orange TGLL (Y)", "hex": "#F0791A", "ci": "Orange 34", "eec": null, "fdc": null}, {"name": "Fast Orange TGLL (R)", "hex": "#F0791A", "ci": "Orange 39", "eec": null, "fdc": null}, {"name": "Viscose Orange A", "hex": "#F0791A", "ci": "Orange 108", "eec": null, "fdc": null}, {"name": "Fast Orange SE", "hex": "#F0791A", "ci": "Orange 26", "eec": null, "fdc": null}, {"name": "Fast Scarlet 4BS", "hex": "#E22A2A", "ci": "Red 23", "eec": null, "fdc": null}, {"name": "Fast Red BLN", "hex": "#D32B2B", "ci": "Red 80", "eec": null, "fdc": null}, {"name": "Fast Red 5BL", "hex": "#D32B2B", "ci": "Red 81", "eec": null, "fdc": null}, {"name": "Fast Red 12B", "hex": "#D32B2B", "ci": "Red 31", "eec": null, "fdc": null}, {"name": "Brilliant Helio 2R", "hex": "#7C4FA6", "ci": "Violet 7", "eec": null, "fdc": null}, {"name": "Brilliant Helio B", "hex": "#7C4FA6", "ci": "Violet 51", "eec": null, "fdc": null}, {"name": "Fast Violet MB", "hex": "#6A3AA0", "ci": "Violet 9", "eec": null, "fdc": null}, {"name": "Fast Turquoise Blue GL", "hex": "#0FA3A3", "ci": "Blue 86", "eec": null, "fdc": null}, {"name": "Fast Turquoise FBL", "hex": "#0FA3A3", "ci": "Blue 199", "eec": null, "fdc": null}, {"name": "Fast Blue GLL", "hex": "#1F5FA8", "ci": "Blue 71", "eec": null, "fdc": null}, {"name": "Fast Green BLL", "hex": "#1E8A5C", "ci": "Green 26", "eec": null, "fdc": null}, {"name": "Paper Brown SD", "hex": "#7A4B2A", "ci": "Brown 44", "eec": null, "fdc": null}, {"name": "Fast Black VSF 600", "hex": "#1C1C1C", "ci": "Black 22", "eec": null, "fdc": null}]}]}, {"category": "ACID DYES", "subcategories": [{"subcategory": "Acid & Acid Milling", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Yellow 5GN", "hex": "#F5D622", "ci": "Yellow 110", "eec": null, "fdc": null}, {"name": "Red RS", "hex": "#D32B2B", "ci": "Red 114", "eec": null, "fdc": null}, {"name": "Red G", "hex": "#D32B2B", "ci": "Red 85", "eec": null, "fdc": null}, {"name": "Red GRS", "hex": "#D32B2B", "ci": null, "eec": null, "fdc": null}, {"name": "Red 3BN", "hex": "#D32B2B", "ci": "Red 31", "eec": null, "fdc": null}, {"name": "Red 10B", "hex": "#D32B2B", "ci": "Violet 54", "eec": null, "fdc": null}, {"name": "Maroon V", "hex": "#6E1B25", "ci": "Red 119", "eec": null, "fdc": null}, {"name": "Fast Blue S5R", "hex": "#1F5FA8", "ci": "Blue 113", "eec": null, "fdc": null}, {"name": "Red B", "hex": "#D32B2B", "ci": "Red 249", "eec": null, "fdc": null}, {"name": "Red F2R", "hex": "#D32B2B", "ci": "Red 151", "eec": null, "fdc": null}, {"name": "Geranine 2G", "hex": "#D6281F", "ci": "Red 1", "eec": null, "fdc": null}, {"name": "Orange II", "hex": "#F0791A", "ci": "Orange 7", "eec": null, "fdc": null}, {"name": "Orange 2G", "hex": "#F0791A", "ci": "Orange 10", "eec": null, "fdc": null}, {"name": "Fast Red A", "hex": "#D32B2B", "ci": "Red 88", "eec": null, "fdc": null}, {"name": "Green V", "hex": "#2E8B57", "ci": "Green 16", "eec": null, "fdc": null}, {"name": "Black 10BX", "hex": "#1C1C1C", "ci": "Black 1", "eec": null, "fdc": null}, {"name": "Scarlet 3R", "hex": "#E22A2A", "ci": "Red 18", "eec": null, "fdc": null}, {"name": "Scarlet MOO", "hex": "#E22A2A", "ci": "Red 73", "eec": null, "fdc": null}, {"name": "Yellow G", "hex": "#F5D622", "ci": "Yellow 1", "eec": null, "fdc": null}, {"name": "Yellow PF", "hex": "#F5D622", "ci": "Yellow 23", "eec": null, "fdc": null}, {"name": "Yellow 2G", "hex": "#F5D622", "ci": "Yellow 17", "eec": null, "fdc": null}, {"name": "Yellow MR", "hex": "#F5D622", "ci": "Yellow 42", "eec": null, "fdc": null}, {"name": "Metanil Yellow", "hex": "#F5D622", "ci": "Yellow 36", "eec": null, "fdc": null}, {"name": "Red CG", "hex": "#D32B2B", "ci": "Red 97", "eec": null, "fdc": null}, {"name": "Blue PR", "hex": "#1F5FA8", "ci": "Blue 129", "eec": null, "fdc": null}, {"name": "Blue 25", "hex": "#1F5FA8", "ci": null, "eec": null, "fdc": null}, {"name": "Blue 324", "hex": "#1F5FA8", "ci": null, "eec": null, "fdc": null}, {"name": "Carmosine Red", "hex": "#D32B2B", "ci": "Red 14", "eec": null, "fdc": null}, {"name": "Brown RD", "hex": "#7A4B2A", "ci": "Brown 14", "eec": null, "fdc": null}, {"name": "Brown CGG", "hex": "#7A4B2A", "ci": "Brown 83", "eec": null, "fdc": null}, {"name": "Brown HEGT", "hex": "#7A4B2A", "ci": "Brown 106", "eec": null, "fdc": null}, {"name": "Brown SP", "hex": "#7A4B2A", "ci": "Brown 121", "eec": null, "fdc": null}, {"name": "Brown RT", "hex": "#7A4B2A", "ci": "Brown 214", "eec": null, "fdc": null}, {"name": "Brown SR", "hex": "#7A4B2A", "ci": "Brown 344", "eec": null, "fdc": null}, {"name": "Brown SG", "hex": "#7A4B2A", "ci": "Brown 349", "eec": null, "fdc": null}]}, {"subcategory": "1:2 Metal Complex", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Yellow GL", "hex": "#F5D622", "ci": "Yellow 114", "eec": null, "fdc": null}, {"name": "Yellow 2GLN Supra", "hex": "#F5D622", "ci": "Yellow 129", "eec": null, "fdc": null}, {"name": "Orange RL", "hex": "#F0791A", "ci": "Orange 86", "eec": null, "fdc": null}, {"name": "Brown 2RL", "hex": "#7A4B2A", "ci": "Brown 45", "eec": null, "fdc": null}, {"name": "Dark Brown 5R", "hex": "#7A4B2A", "ci": "Brown 48", "eec": null, "fdc": null}, {"name": "Grey BL", "hex": "#8A8D91", "ci": "Black 58", "eec": null, "fdc": null}, {"name": "Yellow GR", "hex": "#F5D622", "ci": "Yellow 99", "eec": null, "fdc": null}, {"name": "Yellow 2GL", "hex": "#F5D622", "ci": "Yellow 151", "eec": null, "fdc": null}, {"name": "Yellow RL", "hex": "#F5D622", "ci": "Orange 80", "eec": null, "fdc": null}, {"name": "Yellow M5RL", "hex": "#F5D622", "ci": "Yellow 204", "eec": null, "fdc": null}, {"name": "Orange G", "hex": "#F0791A", "ci": "Orange 74", "eec": null, "fdc": null}, {"name": "Orange MRL", "hex": "#F0791A", "ci": "Orange 142", "eec": null, "fdc": null}, {"name": "Red MBR", "hex": "#D32B2B", "ci": "Red 362", "eec": null, "fdc": null}, {"name": "Bordeaux MB", "hex": "#5E1A2E", "ci": "Violet 90", "eec": null, "fdc": null}, {"name": "Blue 2G", "hex": "#1F5FA8", "ci": "Blue 158", "eec": null, "fdc": null}, {"name": "Dark Blue MTR", "hex": "#1B3B78", "ci": "Blue 193", "eec": null, "fdc": null}, {"name": "Brown MBL", "hex": "#7A4B2A", "ci": "Brown 355", "eec": null, "fdc": null}, {"name": "Brown 365", "hex": "#7A4B2A", "ci": null, "eec": null, "fdc": null}, {"name": "Brown 402", "hex": "#7A4B2A", "ci": null, "eec": null, "fdc": null}, {"name": "Black MSRL", "hex": "#1C1C1C", "ci": "Black 194", "eec": null, "fdc": null}, {"name": "Black WA", "hex": "#1C1C1C", "ci": "Black 52", "eec": null, "fdc": null}]}, {"subcategory": "Chrome Dyes", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Chrome Black T", "hex": "#1C1C1C", "ci": "Black 11", "eec": null, "fdc": null}, {"name": "Chrome Red B", "hex": "#C6281E", "ci": "Red 7", "eec": null, "fdc": null}, {"name": "Chrome Yellow", "hex": "#F5D622", "ci": "Yellow 10", "eec": null, "fdc": null}, {"name": "Chrome Green", "hex": "#2E8B57", "ci": "Green 17", "eec": null, "fdc": null}]}]}, {"category": "FOOD COLOURS", "subcategories": [{"subcategory": "Synthetic Food Colours", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / Bulk / Custom Packing Available", "products": [{"name": "Tartrazine", "hex": "#F3D617", "ci": "19140", "eec": "E102", "fdc": "Yellow 5"}, {"name": "Quinoline Yellow", "hex": "#F5D622", "ci": "47005", "eec": "E104", "fdc": null}, {"name": "Sunset Yellow", "hex": "#F6A11A", "ci": "15985", "eec": "E110", "fdc": "Yellow 6"}, {"name": "Erythrosine", "hex": "#E0234E", "ci": "45430", "eec": "E127", "fdc": "Red 3"}, {"name": "Allura Red", "hex": "#E2231A", "ci": "16035", "eec": "E129", "fdc": "Red 40"}, {"name": "Red 2G", "hex": "#D32B2B", "ci": "18050", "eec": "E128", "fdc": null}, {"name": "Phloxine B", "hex": "#E0517B", "ci": "45410", "eec": null, "fdc": "Acid Red 92"}, {"name": "Ponceau 4R", "hex": "#D7263D", "ci": "6255", "eec": "E124", "fdc": null}, {"name": "Carmoisine", "hex": "#9C1A3C", "ci": "14720", "eec": "E122", "fdc": null}, {"name": "Amaranth", "hex": "#8C1C3E", "ci": "16185", "eec": "E123", "fdc": "Red 2"}, {"name": "Brilliant Blue FCF", "hex": "#0072BC", "ci": "42090", "eec": "E133", "fdc": "Blue 1"}, {"name": "Indigo Carmine", "hex": "#2C3E8C", "ci": "73015", "eec": "E132", "fdc": "Blue 2"}, {"name": "Patent Blue V", "hex": "#1D5FA8", "ci": "42051", "eec": "E131", "fdc": null}, {"name": "Fast Green FCF", "hex": "#1E8A5C", "ci": "42053", "eec": "E143", "fdc": "Green 3"}, {"name": "Green S", "hex": "#1E8A5C", "ci": "44090", "eec": "E142", "fdc": null}, {"name": "Chocolate Brown HT", "hex": "#5A3620", "ci": "20285", "eec": "E155", "fdc": null}, {"name": "Black PN", "hex": "#1C1C1C", "ci": "28440", "eec": "E151", "fdc": null}]}, {"subcategory": "Blended Food Colours", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Lemon Yellow", "hex": "#F5E642", "ci": null, "eec": null, "fdc": null}, {"name": "Egg Yellow", "hex": "#F7D74A", "ci": null, "eec": null, "fdc": null}, {"name": "Orange Red", "hex": "#E1481F", "ci": null, "eec": null, "fdc": null}, {"name": "Strawberry Red", "hex": "#C41E3A", "ci": null, "eec": null, "fdc": null}, {"name": "Rose Pink", "hex": "#E3609B", "ci": null, "eec": null, "fdc": null}, {"name": "Raspberry Red", "hex": "#B21D3E", "ci": null, "eec": null, "fdc": null}, {"name": "Grape", "hex": "#5B2A83", "ci": null, "eec": null, "fdc": null}, {"name": "Falsa", "hex": "#6A3B8C", "ci": null, "eec": null, "fdc": null}, {"name": "Cola Chocolate", "hex": "#4A2E1C", "ci": null, "eec": null, "fdc": null}, {"name": "Chocolate Brown", "hex": "#5A3620", "ci": null, "eec": null, "fdc": null}, {"name": "Dark Chocolate", "hex": "#3B2418", "ci": null, "eec": null, "fdc": null}, {"name": "Lime Green", "hex": "#A6D22B", "ci": null, "eec": null, "fdc": null}, {"name": "Apple Green", "hex": "#7CB93B", "ci": null, "eec": null, "fdc": null}, {"name": "Pea Green", "hex": "#5B8C3A", "ci": null, "eec": null, "fdc": null}, {"name": "Black Currant", "hex": "#3A1E3F", "ci": null, "eec": null, "fdc": null}, {"name": "Approved Black", "hex": "#1C1C1C", "ci": null, "eec": null, "fdc": null}]}, {"subcategory": "Lake Colours", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available bags / drums", "products": [{"name": "Quinoline Yellow", "hex": "#F5D622", "ci": "47005:1", "eec": "E104", "fdc": "Yellow 13"}, {"name": "Tartrazine", "hex": "#F3D617", "ci": "19140:1", "eec": "E102", "fdc": "Yellow 5"}, {"name": "Sunset Yellow FCF", "hex": "#F6A11A", "ci": "15985:1", "eec": "E110", "fdc": "Yellow 3"}, {"name": "Erythrosine", "hex": "#E0234E", "ci": "45430:1", "eec": "E127", "fdc": "Red 14"}, {"name": "Allura Red", "hex": "#E2231A", "ci": "16035:1", "eec": "E129", "fdc": "Red 17"}, {"name": "Ponceau 4R", "hex": "#D7263D", "ci": "16255:1", "eec": "E124", "fdc": "Red 7"}, {"name": "Phloxine B", "hex": "#E0517B", "ci": "45410:1", "eec": null, "fdc": "Red 28"}, {"name": "Amaranth", "hex": "#8C1C3E", "ci": "16185:1", "eec": "E123", "fdc": "Red 9"}, {"name": "Carmoisine", "hex": "#9C1A3C", "ci": "14720:1", "eec": "E122", "fdc": "Red 3"}, {"name": "Chocolate Brown HT", "hex": "#5A3620", "ci": "20285:1", "eec": "E155", "fdc": "Brown 3"}, {"name": "Brilliant Blue FCF", "hex": "#0072BC", "ci": "42090:1", "eec": "E133", "fdc": "Blue 2"}, {"name": "Green S", "hex": "#1E8A5C", "ci": "44090:1", "eec": "E142", "fdc": "Green 4"}, {"name": "Indigo Carmine", "hex": "#2C3E8C", "ci": "173015:1", "eec": "E132", "fdc": "Blue 2"}, {"name": "Patent Blue V", "hex": "#1D5FA8", "ci": "42051:1", "eec": "E131", "fdc": "Blue 5"}, {"name": "Black PN", "hex": "#1C1C1C", "ci": "28440:1", "eec": "E151", "fdc": "Black 1"}]}, {"subcategory": "Natural Food Colours", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Plain Scotch Grade (Caramel)", "hex": "#6B4226", "ci": null, "eec": "E150a — Liquid", "fdc": null}, {"name": "Caustic Sulphite Grade (Caramel)", "hex": "#6B4226", "ci": null, "eec": "E150b — Liquid", "fdc": null}, {"name": "Beer Grade (Caramel)", "hex": "#6B4226", "ci": null, "eec": "E150c — Liquid", "fdc": null}, {"name": "Single Strength (Caramel)", "hex": "#6B4226", "ci": null, "eec": "E150d — Liquid", "fdc": null}, {"name": "Double Strength (Caramel)", "hex": "#6B4226", "ci": null, "eec": "E150d — Liquid", "fdc": null}, {"name": "Caramel Powder", "hex": "#6B4226", "ci": null, "eec": "E150 — Powder", "fdc": null}, {"name": "Annatto Oil Soluble (10.5% & Bixin)", "hex": "#E8892B", "ci": null, "eec": "E160b — Liquid", "fdc": null}, {"name": "Annatto Water Soluble (1.5% Non-Bixin)", "hex": "#E8892B", "ci": null, "eec": "E160b — Liquid", "fdc": null}, {"name": "Curcumin Colour", "hex": "#F4B400", "ci": null, "eec": "E100 — Powder", "fdc": null}, {"name": "Red Beet Root (0.3%–0.45% Betanine)", "hex": "#7C1B3A", "ci": null, "eec": "E162 — Powder", "fdc": null}, {"name": "Paprika Colour, Water Soluble 40,000 I.U.", "hex": "#D2551A", "ci": null, "eec": "E160c — Liquid", "fdc": null}, {"name": "Paprika Colour, Water Soluble 40,000 I.U., Powder", "hex": "#D2551A", "ci": null, "eec": "E160c — Powder", "fdc": null}, {"name": "Chlorophyll Green", "hex": "#3F7A3D", "ci": null, "eec": "E141 — Liquid", "fdc": null}]}, {"subcategory": "D&C Colours", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Yellow 8", "hex": "#F5D622", "ci": "45350", "eec": null, "fdc": null}, {"name": "Yellow 10", "hex": "#F5D622", "ci": "47005", "eec": null, "fdc": null}, {"name": "Yellow 11", "hex": "#F5D622", "ci": "47000", "eec": null, "fdc": null}, {"name": "Yellow 7", "hex": "#F5D622", "ci": "45350", "eec": null, "fdc": null}, {"name": "Yellow 33", "hex": "#F5D622", "ci": "47005", "eec": null, "fdc": null}, {"name": "Orange", "hex": "#F0791A", "ci": "15570", "eec": null, "fdc": null}, {"name": "Red 6", "hex": "#D32B2B", "ci": "15850", "eec": null, "fdc": null}, {"name": "Red 7", "hex": "#D32B2B", "ci": "15850:1", "eec": null, "fdc": null}, {"name": "Red 21", "hex": "#D32B2B", "ci": "45380", "eec": null, "fdc": null}, {"name": "Red 22", "hex": "#D32B2B", "ci": "45380", "eec": null, "fdc": null}, {"name": "Red 27", "hex": "#D32B2B", "ci": "45410", "eec": null, "fdc": null}, {"name": "Red 28", "hex": "#D32B2B", "ci": "45410", "eec": null, "fdc": null}, {"name": "Red 30", "hex": "#D32B2B", "ci": "73360", "eec": null, "fdc": null}, {"name": "Red 33", "hex": "#D32B2B", "ci": "17200", "eec": null, "fdc": null}, {"name": "Green 5", "hex": "#2E8B57", "ci": "61570", "eec": null, "fdc": null}, {"name": "Green 6", "hex": "#2E8B57", "ci": "61565", "eec": null, "fdc": null}, {"name": "Blue 1", "hex": "#1F5FA8", "ci": "42090", "eec": null, "fdc": null}, {"name": "Violet 2", "hex": "#6A3AA0", "ci": "60725", "eec": null, "fdc": null}]}]}, {"category": "PIGMENTS", "subcategories": [{"subcategory": "Organic Pigments", "moq": "500kg", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Toludine Red", "hex": "#D32B2B", "ci": "Pigment Red 3", "eec": null, "fdc": null}, {"name": "Rubine Toner", "hex": "#C2185B", "ci": "Pigment Red 57:1", "eec": null, "fdc": null}, {"name": "Beta Blue", "hex": "#1B4F9C", "ci": "Pigment Blue 15:3", "eec": null, "fdc": null}, {"name": "Ph. Green", "hex": "#1C7C4B", "ci": "Pigment Green 7", "eec": null, "fdc": null}, {"name": "Violet", "hex": "#6A3AA0", "ci": "Pigment Violet 23", "eec": null, "fdc": null}]}, {"subcategory": "Inorganic Pigments", "moq": "200kgs", "packaging": "25 kg / 50 kg / 100 kg / 200kg / Bulk / Custom Packing Available", "products": [{"name": "Carbon Black", "hex": "#1C1C1C", "ci": "Pigment Black 7", "eec": null, "fdc": null}, {"name": "Lemon Chrome", "hex": "#F5E642", "ci": "Pigment Yellow 34", "eec": null, "fdc": null}, {"name": "Middle Chrome", "hex": "#F2B705", "ci": "Pigment Yellow 34", "eec": null, "fdc": null}, {"name": "Prime Rose Chrome", "hex": "#F6E14A", "ci": "Pigment Yellow 34", "eec": null, "fdc": null}, {"name": "Scarlet Chrome", "hex": "#E22A2A", "ci": "Pigment Red 104", "eec": null, "fdc": null}, {"name": "Prussian Blue", "hex": "#153A6B", "ci": "Pigment Blue 27", "eec": null, "fdc": null}, {"name": "Iron Oxide Yellow", "hex": "#F5D622", "ci": "Pigment Yellow 42", "eec": null, "fdc": null}, {"name": "Iron Oxide Red", "hex": "#D32B2B", "ci": "Pigment Red 101", "eec": null, "fdc": null}]}]}, {"category": "PAINT RESINS", "subcategories": [{"subcategory": "Alkyd Resins", "moq": "500kgs", "packaging": "50 kg / 200 kg drums; 1 MT", "products": [{"name": "Alkyd Resin DCO 70%", "hex": "#B9B9B9", "ci": null, "eec": null, "fdc": null}, {"name": "Alkyd Resin Soya 70%", "hex": "#B9B9B9", "ci": null, "eec": null, "fdc": null}, {"name": "Alkyd Resin Linseed 70%", "hex": "#B9B9B9", "ci": null, "eec": null, "fdc": null}, {"name": "Fast Drying Alkyd Resin", "hex": "#B9B9B9", "ci": null, "eec": null, "fdc": null}]}, {"subcategory": "Maleic Resins", "moq": "500kgs", "packaging": "50 kg / 200 kg drums; 1 MT", "products": [{"name": "Maleic Resin Lump", "hex": "#B9B9B9", "ci": null, "eec": null, "fdc": null}, {"name": "Maleic Medium 70%", "hex": "#B9B9B9", "ci": null, "eec": null, "fdc": null}]}]}];
+const CATEGORY_META = {"REACTIVE DYES": {"icon": "RD", "tagline": "Brilliant, wash-fast colour for cellulosic fibres", "blurb": "High-fixation reactive dyes engineered for cotton, viscose and blended textiles — covering bright, mid and dark shade ranges across five chemistries (P, VS, ME Bi-Functional, Cold and High Exhaust). Consistent batch-to-batch reproducibility for dyehouses and printers.", "industries": ["Textile & Garment Manufacturing", "Dyehouses & Textile Printing", "Home Textiles & Furnishings"]}, "DIRECT DYES": {"icon": "DD", "tagline": "Non-benzidine direct dyes for cellulosics & paper", "blurb": "A restricted-amine-free (non-benzidine) direct dye range for cotton, viscose and paper substrates, offering good light and wash fastness with straightforward, economical application.", "industries": ["Textile & Garment Manufacturing", "Paper & Pulp Industry", "Dyehouses & Textile Printing"]}, "ACID DYES": {"icon": "AD", "tagline": "Wool, nylon, silk & leather dyeing solutions", "blurb": "A full-spectrum acid dye portfolio spanning levelling & milling acid dyes, 1:2 pre-metallised complexes and chrome dyes — built for protein and polyamide fibres, leather and technical applications requiring high fastness.", "industries": ["Woollen & Worsted Textiles", "Nylon & Polyamide Textiles", "Leather & Tannery", "Silk Processing"]}, "FOOD COLOURS": {"icon": "FC", "tagline": "Certified colours for food, beverage & pharma", "blurb": "Synthetic, blended, lake, natural and D&C colour systems referenced to C.I., E.E.C (E-number) and FD&C standards — supplied with full regulatory documentation for food, beverage, nutraceutical and pharmaceutical formulators.", "industries": ["Food & Beverage Manufacturing", "Confectionery & Bakery", "Pharmaceutical & Nutraceutical", "Cosmetics & Personal Care"]}, "PIGMENTS": {"icon": "PG", "tagline": "Organic & inorganic pigments for coatings, ink & plastics", "blurb": "High-strength organic pigments and heat/light-stable inorganic pigments (chromes, iron oxides, Prussian blue, carbon black) for paints, printing inks, plastics and construction materials.", "industries": ["Paints & Coatings", "Printing Inks", "Plastics & Polymers", "Construction Materials"]}, "PAINT RESINS": {"icon": "PR", "tagline": "Alkyd & maleic resins for coatings manufacture", "blurb": "Alkyd and maleic resin binders — DCO, soya and linseed oil-modified grades plus fast-drying and maleic medium variants — for decorative and industrial paint formulation.", "industries": ["Paint & Coatings Manufacturing", "Industrial & Decorative Coatings", "Varnish & Ink Binders"]}};
+const SUBCAT_BLURB = {"P Series": "Bright, economical reactive range for exhaust dyeing of cotton and viscose.", "VS Based": "Vinyl sulphone reactive dyes offering strong reactivity and good build-up.", "ME Brand (Bi-Functional)": "Bi-functional reactive dyes for high fixation efficiency and reduced salt/effluent load.", "Cold Brand": "Cold-pad-batch and low-temperature exhaust reactive dyes.", "High Exhaust (HE)": "High-exhaustion reactive dyes engineered for maximum fixation and lower wastewater colour load.", "Non-Benzidine Range": "Restricted-amine-free direct dyes for cellulosic fibres and paper.", "Acid & Acid Milling": "Levelling and milling acid dyes for wool, nylon and silk.", "1:2 Metal Complex": "Pre-metallised acid dyes for excellent wet fastness on wool and nylon.", "Chrome Dyes": "Mordant/chrome dyes for deep, fast shades on wool.", "Synthetic Food Colours": "FD&C / E-number referenced synthetic colours for food and beverage use.", "Blended Food Colours": "Ready-to-use blended shades for confectionery, beverages and bakery.", "Lake Colours": "Insoluble lake pigments for oil-based, fat-based and dry-mix food applications.", "Natural Food Colours": "Naturally derived colours — caramel, annatto, curcumin, beet root, paprika, chlorophyll.", "D&C Colours": "FDA D&C certified colours for pharmaceutical and cosmetic applications.", "Organic Pigments": "High tinting-strength organic pigments for ink, paint and plastics.", "Inorganic Pigments": "Heat- and light-stable inorganic pigments including chromes and iron oxides.", "Alkyd Resins": "Oil-modified alkyd resins for decorative and industrial paint binders.", "Maleic Resins": "Maleic resin binders for varnish and paint formulation."};
+const SITE_SPECS = [["MOQ", "500 kg", "Minimum order quantity, starting from"], ["Packaging", "25kg HDPE Bags . Fibre Drums . Paper Bags . Custom Packing", "Standard packaging options"], ["Samples", "Available", "Sample availability"], ["Private Label", "Available", "Private label & custom packaging"], ["Custom Shades", "Available where applicable", "Custom shades & formulations"], ["Documentation", "COA . TDS . MSDS Available on request", "Quality & compliance documents"]];
+const CATEGORY_SPECS = {"REACTIVE DYES": {"moq": "500kg", "packaging": "25 kg & Custom Packing Available", "sample": "Available", "privateLabel": "Available"}, "DIRECT DYES": {"moq": "500kg", "packaging": "25 kg & Custom Packing Available", "sample": "Available", "privateLabel": "Available"}, "ACID DYES": {"moq": "500kg", "packaging": "25 kg & Custom Packing Available", "sample": "Available", "privateLabel": "Available"}, "FOOD COLOURS": {"moq": "500kg", "packaging": "25 kg & Custom Packing Available", "sample": "Available", "privateLabel": "Available"}, "PIGMENTS": {"moq": "500kg (Organic Pigments) · 200kgs (Inorganic Pigments)", "packaging": "25 kg & Custom Packing Available", "sample": "Available", "privateLabel": "Available"}, "PAINT RESINS": {"moq": "500kgs", "packaging": "25 kg & Custom Packing Available", "sample": "Available", "privateLabel": "Available"}};
+
+function slugify(s){ return s.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,''); }
+function catCount(cat){ return cat.subcategories.reduce((n,sc)=>n+sc.products.length,0); }
+function titleCase(s){ return s.split(' ').map(w=> w.length<=3 && w===w.toUpperCase() ? w : (w.charAt(0)+w.slice(1).toLowerCase())).join(' '); }
+function displayRef(p){ return p.ci || p.eec || p.fdc || '—'; }
+
+function renderSpecsStrip(){
+  document.getElementById('specsStrip').innerHTML = SITE_SPECS.map(([label,value,hint])=>`
+    <div class="spec-item" data-note="${hint}"><div class="label">${label}</div><div class="value">${value}</div></div>`).join('');
+}
+
+function renderNav(){
+  document.getElementById('mainNav').innerHTML = DATA.map(cat=>{
+    const meta = CATEGORY_META[cat.category];
+    const items = cat.subcategories.map(sc=>`
+      <li><a href="#" onclick="goCategory('${cat.category}','${slugify(sc.subcategory)}');return false;">${sc.subcategory} <span class="count">${sc.products.length}</span></a></li>`).join('');
+    return `
+      <div class="nav-item">
+        <button onclick="goCategory('${cat.category}');" data-note="Nav item → Category page">${titleCase(cat.category)}</button>
+        <div class="mega">
+          <div class="mega-title">${meta.tagline}</div>
+          <ul>${items}</ul>
+          <a class="mega-cta" href="#" onclick="goCategory('${cat.category}');return false;">View all ${catCount(cat)} shades →</a>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function renderCatGrid(){
+  document.getElementById('catGrid').innerHTML = DATA.map(cat=>{
+    const meta = CATEGORY_META[cat.category];
+    const swatches = cat.subcategories.flatMap(sc=>sc.products).slice(0,8);
+    return `
+      <a class="cat-card" href="#" onclick="goCategory('${cat.category}');return false;" data-note="→ Category Page: ${cat.category}">
+        <div class="icon">${meta.icon}</div>
+        <h3>${titleCase(cat.category)}</h3>
+        <p class="tag">${meta.tagline}</p>
+        <p class="desc">${meta.blurb}</p>
+        <div class="swatch-row">${swatches.map(p=>`<span style="background:${p.hex}"></span>`).join('')}</div>
+        <div class="meta"><span>${cat.subcategories.length} sub-ranges</span><b>${catCount(cat)} shades →</b></div>
+      </a>`;
+  }).join('');
+  document.getElementById('footerCats').innerHTML = DATA.map(cat=>
+    `<li><a href="#" onclick="goCategory('${cat.category}');return false;">${titleCase(cat.category)}</a></li>`).join('');
+}
+
+function renderSitemap(){
+  document.getElementById('sitemapTree').innerHTML = `
+    <div class="l1">Home (/)</div>
+    <div class="l2">→ Category Landing Grid, Global Trust/Specs Strip, Why-Us</div>
+    ${DATA.map(cat=>`
+      <div class="l1">${titleCase(cat.category)} (/products/${slugify(cat.category)}) <span style="color:#9CA3AF;font-weight:400;">— MOQ/Packaging/Sample/Private Label shown once at category level: ${CATEGORY_SPECS[cat.category].moq} · ${CATEGORY_SPECS[cat.category].packaging}</span></div>
+      ${cat.subcategories.map(sc=>`<div class="l2"><b>${sc.subcategory}</b> — ${sc.products.length} shades</div>`).join('')}
+    `).join('')}
+    <div class="l1">Product Detail (modal / deep-link: /products/[category]/[shade-slug])</div>
+    <div class="l2">Name · Category · Sub-range · C.I. Reference No. · E.E.C. No. (food colours only, where present) · FD&amp;C No. (food colours only, where present) · Custom Shades flag · RFQ CTA (Documents live once per category, Section 5A)</div>
+    <div class="l1">Utility Pages</div>
+    <div class="l2">Get a Quote (RFQ form) · Request Sample · Download Catalogue (PDF) · About · Certifications · Contact</div>
+  `;
+}
+function toggleSitemap(){ document.getElementById('sitemapPanel').classList.toggle('open'); }
+
+let currentCat = null;
+
+function goHome(){
+  document.getElementById('view-home').style.display='';
+  document.getElementById('view-category').style.display='none';
+  window.scrollTo({top:0,behavior:'smooth'});
+  setActiveProtoNav('home');
+}
+
+function goCategory(catName, subSlug){
+  const cat = DATA.find(c=>c.category===catName);
+  if(!cat) return;
+  currentCat = cat;
+  const meta = CATEGORY_META[catName];
+
+  document.getElementById('view-home').style.display='none';
+  document.getElementById('view-category').style.display='';
+  document.getElementById('crumbCat').textContent = titleCase(catName);
+  document.getElementById('catTagline').textContent = meta.tagline;
+  document.getElementById('catTitle').textContent = titleCase(catName);
+  document.getElementById('catBlurb').textContent = meta.blurb;
+  document.getElementById('catIndustries').innerHTML = meta.industries.map(i=>`<span class="itag">${i}</span>`).join('');
+
+  const specs = CATEGORY_SPECS[catName];
+  document.getElementById('catSpecBlock').innerHTML = `
+    <div class="chip"><b>MOQ</b><span>${specs.moq}</span></div>
+    <div class="chip"><b>Packaging</b><span>${specs.packaging}</span></div>
+    <div class="chip"><b>Sample</b><span>${specs.sample}</span></div>
+    <div class="chip"><b>Private Label</b><span>${specs.privateLabel}</span></div>
+    <div class="chip"><b>Documents</b><span>COA · TDS · MSDS available on request</span></div>
+  `;
+
+  const tabs = document.getElementById('subcatTabs');
+  tabs.innerHTML = `<button class="active" data-tab="all" onclick="filterSubcat('all',this)">All (${catCount(cat)})</button>` +
+    cat.subcategories.map(sc=>`<button data-tab="${slugify(sc.subcategory)}" onclick="filterSubcat('${slugify(sc.subcategory)}',this)">${sc.subcategory} (${sc.products.length})</button>`).join('');
+
+  document.getElementById('subcatBlocks').innerHTML = cat.subcategories.map(sc=>{
+    const slug = slugify(sc.subcategory);
+    const isResin = catName === 'PAINT RESINS';
+    const grid = isResin
+      ? `<div class="resin-grid">${sc.products.map(p=>`
+          <div class="resin-card" data-note="Resin SKU — no colour swatch; spec-sheet download primary action">
+            <h4>${p.name}</h4>
+            <p>${p.ci ? p.ci : sc.subcategory+' binder'}</p>
+          </div>`).join('')}</div>`
+      : `<div class="product-grid">${sc.products.map((p,i)=>`
+          <button class="product-card" onclick='openModal(${JSON.stringify(catName)},${JSON.stringify(sc.subcategory)},${i})' data-note="Product card → opens detail modal">
+            <div class="swatch" style="background:${p.hex}"></div>
+            <div class="product-info">
+              <p class="pname">${p.name}</p>
+              <p class="pref">${displayRef(p)}</p>
+            </div>
+          </button>`).join('')}</div>`;
+
+    return `
+      <div class="subcat-block" id="sc-${slug}">
+        <div class="subcat-headline">
+          <h3>${sc.subcategory}</h3>
+          <span class="subcount">${sc.products.length} shades</span>
+        </div>
+        <p class="subcat-desc">${SUBCAT_BLURB[sc.subcategory]||''}</p>
+        ${grid}
+      </div>`;
+  }).join('');
+
+  window.scrollTo({top:0,behavior:'smooth'});
+  setActiveProtoNav(slugify(catName));
+
+  if(subSlug){
+    setTimeout(()=>{
+      const target = document.getElementById('sc-'+subSlug);
+      if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+    },80);
+  }
+}
+
+function filterSubcat(slug, btn){
+  document.querySelectorAll('.subcat-tabs button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.subcat-block').forEach(b=>{
+    b.style.display = (slug==='all' || b.id==='sc-'+slug) ? '' : 'none';
+  });
+}
+
+function openModal(catName, subName, idx){
+  const cat = DATA.find(c=>c.category===catName);
+  const sc = cat.subcategories.find(s=>s.subcategory===subName);
+  const p = sc.products[idx];
+
+  document.getElementById('modalSwatch').style.background = p.hex;
+  document.getElementById('modalCrumb').textContent = `${titleCase(catName)} / ${subName}`;
+  document.getElementById('modalName').textContent = p.name;
+  document.getElementById('modalRef').textContent = (p.ci||p.eec||p.fdc) ? 'Ref: '+displayRef(p) : 'No standard reference for this shade';
+
+  const rows = [
+    ['Category', titleCase(catName)],
+    ['Sub-range', subName],
+    ['C.I. Reference No.', p.ci || '—'],
+  ];
+  if (p.eec) rows.push(['E.E.C No.', p.eec]);
+  if (p.fdc) rows.push(['F.D & C. No.', p.fdc]);
+  rows.push(['Custom Shades', 'Available (where applicable)']);
+
+  document.getElementById('modalSpecs').innerHTML = rows.map(([k,v])=>`<tr><td>${k}</td><td>${v}</td></tr>`).join('');
+  document.getElementById('productModal').classList.add('open');
+}
+function closeModal(){ document.getElementById('productModal').classList.remove('open'); }
+
+function setActiveProtoNav(key){
+  document.querySelectorAll('#protoNav button').forEach(b=>b.classList.toggle('active', b.dataset.key===key));
+}
+function renderProtoNav(){
+  const buttons = [['home','Home']].concat(DATA.map(c=>[slugify(c.category), titleCase(c.category)]));
+  document.getElementById('protoNav').innerHTML = buttons.map(([key,label])=>`<button data-key="${key}" onclick="${key==='home'?'goHome()':'goCategory('+JSON.stringify(DATA.find(c=>slugify(c.category)===key).category)+')'}">${label}</button>`).join('');
+  setActiveProtoNav('home');
+}
+
+renderSpecsStrip();
+renderNav();
+renderCatGrid();
+renderSitemap();
+renderProtoNav();
+</script>
+</body>
+</html>

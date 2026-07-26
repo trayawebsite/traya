@@ -662,7 +662,17 @@
       "specPackagingValChem": "Kantong HDPE 25 kg, drum serat, kantong kertas & kemasan ekspor khusus",
       "specDocs": "Dokumen",
       "specDocsVal": "COA, TDS, MSDS berdasarkan permintaan",
-      "specPrivateLabel": "Tersedia Label Pribadi"
+      "specPrivateLabel": "Tersedia Label Pribadi",
+      "industriesHeading": "Industri yang Kami Layani",
+      "subRangeHeading": "Jelajahi per sub-rangkaian",
+      "allSubRanges": "Semua",
+      "shade": "warna",
+      "shades": "warna",
+      "subRange": "sub-rangkaian",
+      "subRanges": "sub-rangkaian",
+      "specSample": "Ketersediaan sampel",
+      "specSampleVal": "Tersedia",
+      "shadeRefLabel": "Referensi"
     },
     "detail": {
       "eyebrow": "Produk",

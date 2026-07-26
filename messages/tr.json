@@ -662,7 +662,17 @@
       "specPackagingValChem": "25 kg HDPE torbalar, fiber variller, kağıt torbalar ve özel ihracat ambalajı",
       "specDocs": "Belgeler",
       "specDocsVal": "Talep üzerine COA, TDS, MSDS",
-      "specPrivateLabel": "Özel Marka Mevcut"
+      "specPrivateLabel": "Özel Marka Mevcut",
+      "industriesHeading": "Hizmet Verilen Sektörler",
+      "subRangeHeading": "Alt gruba göre inceleyin",
+      "allSubRanges": "Tümü",
+      "shade": "ton",
+      "shades": "ton",
+      "subRange": "alt grup",
+      "subRanges": "alt gruplar",
+      "specSample": "Numune temini",
+      "specSampleVal": "Mevcut",
+      "shadeRefLabel": "Referans"
     },
     "detail": {
       "eyebrow": "Ürün",

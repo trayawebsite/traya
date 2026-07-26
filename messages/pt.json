@@ -662,7 +662,17 @@
       "specPackagingValChem": "Sacos HDPE de 25 kg, tambores de fibra, sacos de papel e embalagem de exportação personalizada",
       "specDocs": "Documentos",
       "specDocsVal": "COA, TDS, MSDS mediante solicitação",
-      "specPrivateLabel": "Marca própria disponível"
+      "specPrivateLabel": "Marca própria disponível",
+      "industriesHeading": "Setores atendidos",
+      "subRangeHeading": "Explorar por subgama",
+      "allSubRanges": "Todos",
+      "shade": "tom",
+      "shades": "tons",
+      "subRange": "subgama",
+      "subRanges": "subgamas",
+      "specSample": "Disponibilidade de amostras",
+      "specSampleVal": "Disponível",
+      "shadeRefLabel": "Referência"
     },
     "detail": {
       "eyebrow": "Produto",

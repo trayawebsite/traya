@@ -662,7 +662,17 @@
       "specPackagingValChem": "25 kg HDPE 백, 파이버 드럼, 종이 백 및 맞춤 수출 포장",
       "specDocs": "문서",
       "specDocsVal": "COA, TDS, MSDS 요청 시 제공",
-      "specPrivateLabel": "자체 브랜드(PB) 가능"
+      "specPrivateLabel": "자체 브랜드(PB) 가능",
+      "industriesHeading": "서비스 산업 분야",
+      "subRangeHeading": "세부 제품군별 보기",
+      "allSubRanges": "전체",
+      "shade": "색상",
+      "shades": "색상",
+      "subRange": "세부 제품군",
+      "subRanges": "세부 제품군",
+      "specSample": "샘플 제공",
+      "specSampleVal": "가능",
+      "shadeRefLabel": "참조 번호"
     },
     "detail": {
       "eyebrow": "제품",

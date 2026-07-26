@@ -662,7 +662,17 @@
       "specPackagingValChem": "Worki HDPE 25 kg, bębny włókniste, worki papierowe i niestandardowe opakowania eksportowe",
       "specDocs": "Dokumenty",
       "specDocsVal": "COA, TDS, MSDS na życzenie",
-      "specPrivateLabel": "Dostępna marka własna"
+      "specPrivateLabel": "Dostępna marka własna",
+      "industriesHeading": "Obsługiwane branże",
+      "subRangeHeading": "Przeglądaj według podgrupy",
+      "allSubRanges": "Wszystkie",
+      "shade": "odcień",
+      "shades": "odcienie",
+      "subRange": "podgrupa",
+      "subRanges": "podgrupy",
+      "specSample": "Dostępność próbek",
+      "specSampleVal": "Dostępne",
+      "shadeRefLabel": "Numer referencyjny"
     },
     "detail": {
       "eyebrow": "Produkt",

@@ -662,7 +662,17 @@
       "specPackagingValChem": "25-kg-HDPE-Säcke, Faserfässer, Papiersäcke & individuelle Exportverpackung",
       "specDocs": "Dokumente",
       "specDocsVal": "COA, TDS, MSDS auf Anfrage",
-      "specPrivateLabel": "Eigenmarke verfügbar"
+      "specPrivateLabel": "Eigenmarke verfügbar",
+      "industriesHeading": "Belieferte Branchen",
+      "subRangeHeading": "Nach Teilbereich durchsuchen",
+      "allSubRanges": "Alle",
+      "shade": "Farbton",
+      "shades": "Farbtöne",
+      "subRange": "Teilbereich",
+      "subRanges": "Teilbereiche",
+      "specSample": "Musterverfügbarkeit",
+      "specSampleVal": "Verfügbar",
+      "shadeRefLabel": "Referenz"
     },
     "detail": {
       "eyebrow": "Produkt",

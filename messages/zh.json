@@ -662,7 +662,17 @@
       "specPackagingValChem": "25 公斤 HDPE 袋、纤维桶、纸袋及定制出口包装",
       "specDocs": "文件",
       "specDocsVal": "COA、TDS、MSDS 可应要求提供",
-      "specPrivateLabel": "支持定制品牌（贴牌）"
+      "specPrivateLabel": "支持定制品牌（贴牌）",
+      "industriesHeading": "服务行业",
+      "subRangeHeading": "按子系列浏览",
+      "allSubRanges": "全部",
+      "shade": "色号",
+      "shades": "色号",
+      "subRange": "子系列",
+      "subRanges": "子系列",
+      "specSample": "样品供应",
+      "specSampleVal": "可提供",
+      "shadeRefLabel": "索引号"
     },
     "detail": {
       "eyebrow": "产品",
