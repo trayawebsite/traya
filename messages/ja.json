@@ -603,7 +603,13 @@
       "categories": "カテゴリー",
       "allCategories": "すべてのカテゴリー",
       "allCategoriesSub": "すべてのグループ",
-      "groupLabel": "グループ"
+      "groupLabel": "グループ",
+      "foodTitle": "食品・農産物",
+      "foodBody": "世界市場の多様なニーズに応えるため、厳選された高品質な食品・農産物の豊富なラインナップをご覧ください。",
+      "foodCta": "食品・農産物ポートフォリオを見る",
+      "chemTitle": "化学製品",
+      "chemBody": "国際産業の要件に対応する、工業用および特殊化学品の総合的なポートフォリオ。",
+      "chemCta": "化学製品ポートフォリオを見る"
     },
     "list": {
       "form": "形態",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title}(インド産)。{count}{products}をご用意しています。仕様、MOQ、梱包、書類、価格はお問い合わせ時に確認いたします。Traya International Exim LLP。",
       "eyebrow": "カテゴリー",
-      "rangeHeading": "全ラインナップ",
+      "rangeHeading": "すべてのバリエーションを見る",
       "note": "仕様、グレード、MOQ、梱包、書類、価格は、ご要件の確認後にお伝えいたします。数量と仕向地をお知らせいただくと、より正確にご案内できます。",
       "enquireCta": "このカテゴリーについて問い合わせる",
       "viewProduct": "見る",
       "search": "製品を検索...",
       "noResults": "該当する製品が見つかりませんでした。",
-      "sourcingHeading": "調達と原産地",
-      "sourcingBody": "インド各地の実績あるメーカーおよび加工施設から直接製品を調達しています。各バッチは出荷前に品質、仕様、コンプライアンスの確認を受けます。",
       "specsHeading": "仕様・梱包",
       "specsNote": "グレード、MOQ、梱包形態、インコタームズ、書類は注文ごとに確認いたします。詳細な見積もりのため、ご要件をお知らせください。",
       "specOrigin": "原産地",
       "specOriginVal": "インド",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "200 kg から",
       "specPackaging": "梱包",
-      "specPackagingVal": "カスタマイズ可能",
+      "specPackagingVal": "25kg・50kg・100kg、カスタム梱包にも対応",
       "specIncoterms": "インコタームズ",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "用途",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "25 kg HDPE 袋、ファイバードラム、紙袋、カスタム輸出梱包",
       "specDocs": "書類",
-      "specDocsVal": "COA・TDS・MSDS はご要望に応じて"
+      "specDocsVal": "COA・TDS・MSDS はご要望に応じて",
+      "specPrivateLabel": "プライベートブランド対応可能"
     },
     "detail": {
       "eyebrow": "製品",

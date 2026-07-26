@@ -603,7 +603,13 @@
       "categories": "카테고리",
       "allCategories": "전체 카테고리",
       "allCategoriesSub": "모든 그룹",
-      "groupLabel": "그룹"
+      "groupLabel": "그룹",
+      "foodTitle": "식품 및 농산물",
+      "foodBody": "글로벌 시장의 다양한 요구를 충족하도록 신중하게 소싱된 프리미엄 식품 및 농산물의 폭넓은 포트폴리오를 만나보세요.",
+      "foodCta": "식품 및 농산물 포트폴리오 보기",
+      "chemTitle": "화학제품",
+      "chemBody": "국제 산업의 요구에 맞춘 산업용 및 특수 화학제품의 종합 포트폴리오입니다.",
+      "chemCta": "화학제품 포트폴리오 보기"
     },
     "list": {
       "form": "형태",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "인도산 {title}. {count}개 {products} 이용 가능. 사양, 최소 주문 수량(MOQ), 포장, 서류, 가격은 문의 시 확인됩니다. Traya International Exim LLP.",
       "eyebrow": "카테고리",
-      "rangeHeading": "전체 제품군",
+      "rangeHeading": "모든 종류 살펴보기",
       "note": "사양, 등급, 최소 주문 수량(MOQ), 포장, 서류, 가격은 요구 사항 검토 후 확인됩니다. 더 정확한 답변을 위해 수량과 목적지를 알려주세요.",
       "enquireCta": "이 카테고리 문의하기",
       "viewProduct": "보기",
       "search": "제품 검색...",
       "noResults": "검색 결과와 일치하는 제품이 없습니다.",
-      "sourcingHeading": "소싱 및 원산지",
-      "sourcingBody": "저희는 인도 전역의 안정적으로 자리 잡은 제조업체 및 가공 시설로부터 직접 제품을 소싱합니다. 발송 전 각 배치는 품질, 사양, 규정 준수 여부를 검토받습니다.",
       "specsHeading": "사양 및 포장",
       "specsNote": "등급, 최소 주문 수량(MOQ), 포장 형태, 인코텀즈, 서류는 주문별로 확인됩니다. 상세 견적을 위해 요구 사항을 공유해 주세요.",
       "specOrigin": "원산지",
       "specOriginVal": "인도",
       "specMoq": "최소 주문 수량(MOQ)",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "200 kg부터",
       "specPackaging": "포장",
-      "specPackagingVal": "맞춤 가능",
+      "specPackagingVal": "25kg • 50kg • 100kg 및 맞춤 포장",
       "specIncoterms": "인코텀즈",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "용도",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "25 kg HDPE 백, 파이버 드럼, 종이 백 및 맞춤 수출 포장",
       "specDocs": "문서",
-      "specDocsVal": "COA, TDS, MSDS 요청 시 제공"
+      "specDocsVal": "COA, TDS, MSDS 요청 시 제공",
+      "specPrivateLabel": "자체 브랜드(PB) 가능"
     },
     "detail": {
       "eyebrow": "제품",

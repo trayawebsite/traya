@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Check } from "lucide-react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Container } from "@/components/ui/container";
@@ -23,7 +24,6 @@ export async function CategoryView({
   category: CatalogueCategory;
 }) {
   const t = await getTranslations("Catalogue");
-  const tg = await getTranslations("Home.groups");
   const tl = await getTranslations("Links");
   const count = category.products.length;
 
@@ -84,10 +84,6 @@ export async function CategoryView({
               label: t("category.specPackaging"),
               value: t("category.specPackagingVal"),
             },
-            {
-              label: t("category.specIncoterms"),
-              value: t("category.specIncotermsVal"),
-            },
           ];
 
   return (
@@ -120,8 +116,7 @@ export async function CategoryView({
           />
           <div className="mt-8 grid gap-12 lg:grid-cols-12 lg:items-center">
             <div className="max-w-3xl lg:col-span-7 xl:col-span-8">
-              <p className="section-label">{tg(category.group)}</p>
-              <h1 className="mt-4 text-balance font-display text-display-lg text-foreground">
+              <h1 className="text-balance font-display text-display-lg text-foreground">
                 {category.title}
               </h1>
               <p className="mt-4 text-lg text-muted-foreground">
@@ -182,52 +177,51 @@ export async function CategoryView({
         </section>
       </Reveal>
 
-      {/* 3. Sourcing & Origin Story + Specs */}
+      {/* 3. Specifications & Packaging   full-width card (the "Sourcing &
+          origin" intro that used to run alongside it has been removed). */}
       <Reveal>
         <section className="border-b border-traya-border bg-background">
           <Container className="py-section">
-            <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
-              <div>
-                <p className="section-label">{t("category.sourcingHeading")}</p>
-                <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-                  {t("category.sourcingBody")}
-                </p>
-                {/* Quality & Compliance from Sanity */}
-                {category.qualityCompliance && (
-                  <div className="mt-6 rounded-xl border border-traya-border bg-traya-surface p-4">
-                    <h3 className="font-display text-base text-foreground">
-                      {t("category.certsHeading")}
-                    </h3>
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {category.qualityCompliance}
-                    </p>
+            <div className="mx-auto max-w-3xl rounded-2xl border border-traya-border bg-traya-surface p-6 sm:p-8">
+              <h3 className="font-display text-lg text-foreground">
+                {t("category.specsHeading")}
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {t("category.specsNote")}
+              </p>
+              {/* MOQ & Packaging — group-aware defaults (see specRows above) */}
+              <dl className="mt-4 space-y-2">
+                {specRows.map((spec, i) => (
+                  <div
+                    key={i}
+                    className="flex justify-between border-b border-traya-border pb-2 last:border-0"
+                  >
+                    <dt className="text-sm text-muted-foreground">
+                      {spec.label}
+                    </dt>
+                    <dd className="text-sm font-medium text-foreground">
+                      {spec.value}
+                    </dd>
                   </div>
-                )}
-              </div>
-              <div className="rounded-2xl border border-traya-border bg-traya-surface p-6">
-                <h3 className="font-display text-lg text-foreground">
-                  {t("category.specsHeading")}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {t("category.specsNote")}
+                ))}
+              </dl>
+              {!isChemicals && (
+                <p className="mt-4 flex items-center gap-2 text-sm font-medium text-traya-forest">
+                  <Check className="size-4 shrink-0" aria-hidden="true" />
+                  {t("category.specPrivateLabel")}
                 </p>
-                {/* MOQ & Packaging — group-aware defaults (see specRows above) */}
-                <dl className="mt-4 space-y-2">
-                  {specRows.map((spec, i) => (
-                    <div
-                      key={i}
-                      className="flex justify-between border-b border-traya-border pb-2 last:border-0"
-                    >
-                      <dt className="text-sm text-muted-foreground">
-                        {spec.label}
-                      </dt>
-                      <dd className="text-sm font-medium text-foreground">
-                        {spec.value}
-                      </dd>
-                    </div>
-                  ))}
-                </dl>
-              </div>
+              )}
+              {/* Quality & Compliance from Sanity */}
+              {category.qualityCompliance && (
+                <div className="mt-6 rounded-xl border border-traya-border bg-card p-4">
+                  <h3 className="font-display text-base text-foreground">
+                    {t("category.certsHeading")}
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                    {category.qualityCompliance}
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Applications from Sanity */}

@@ -603,7 +603,13 @@
       "categories": "categorieën",
       "allCategories": "Alle categorieën",
       "allCategoriesSub": "Alle groepen",
-      "groupLabel": "Groep"
+      "groupLabel": "Groep",
+      "foodTitle": "Voedsel- & Agroproducten",
+      "foodBody": "Ontdek ons uitgebreide portfolio van premium voedsel- en agroproducten, zorgvuldig ingekocht om te voldoen aan de uiteenlopende eisen van wereldwijde markten.",
+      "foodCta": "Bekijk Voedsel- & Agroportfolio",
+      "chemTitle": "Chemicaliën",
+      "chemBody": "Een uitgebreid portfolio van industriële en speciale chemicaliën, afgestemd op de eisen van internationale industrieën.",
+      "chemCta": "Bekijk Chemicaliënportfolio"
     },
     "list": {
       "form": "Vorm",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} uit India. {count} {products} beschikbaar. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag. Traya International Exim LLP.",
       "eyebrow": "Categorie",
-      "rangeHeading": "Het volledige assortiment",
+      "rangeHeading": "Ontdek Alle Varianten",
       "note": "Specificaties, kwaliteiten, MOQ, verpakking, documenten en prijzen worden bevestigd nadat wij uw behoefte hebben beoordeeld. Deel de hoeveelheid en bestemming voor een nauwkeuriger antwoord.",
       "enquireCta": "Vraag naar deze categorie",
       "viewProduct": "Bekijk",
       "search": "Zoek producten...",
       "noResults": "Geen producten komen overeen met uw zoekopdracht.",
-      "sourcingHeading": "Sourcing & herkomst",
-      "sourcingBody": "Wij sourcen producten rechtstreeks van gevestigde fabrikanten en verwerkingsfaciliteiten in heel India. Elke partij wordt vóór verzending gecontroleerd op kwaliteit, specificaties en compliance.",
       "specsHeading": "Specificaties & verpakking",
       "specsNote": "Kwaliteiten, MOQ, verpakkingsformaten, Incoterms en documentatie worden per order bevestigd. Deel uw vereisten voor een gedetailleerde offerte.",
       "specOrigin": "Herkomst",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "Vanaf 200 kg",
       "specPackaging": "Verpakking",
-      "specPackagingVal": "Aanpasbaar",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg & aangepaste verpakking",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Toepassingen",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "25 kg HDPE-zakken, vezelvaten, papieren zakken & aangepaste exportverpakking",
       "specDocs": "Documenten",
-      "specDocsVal": "COA, TDS, MSDS op aanvraag"
+      "specDocsVal": "COA, TDS, MSDS op aanvraag",
+      "specPrivateLabel": "Private label beschikbaar"
     },
     "detail": {
       "eyebrow": "Product",

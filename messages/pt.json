@@ -603,7 +603,13 @@
       "categories": "categorias",
       "allCategories": "Todas as categorias",
       "allCategoriesSub": "Todos os grupos",
-      "groupLabel": "Grupo"
+      "groupLabel": "Grupo",
+      "foodTitle": "Produtos Alimentares e Agrícolas",
+      "foodBody": "Descubra o nosso amplo portefólio de produtos alimentares e agrícolas premium, cuidadosamente selecionados para satisfazer os diversos requisitos dos mercados globais.",
+      "foodCta": "Ver Portefólio Alimentar e Agrícola",
+      "chemTitle": "Produtos Químicos",
+      "chemBody": "Um portefólio abrangente de produtos químicos industriais e especializados, adaptado aos requisitos das indústrias internacionais.",
+      "chemCta": "Ver Portefólio de Produtos Químicos"
     },
     "list": {
       "form": "Forma",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} proveniente da Índia. {count} {products} disponíveis. Especificações, MOQ, embalagem, documentos e preços são confirmados mediante pedido. Traya International Exim LLP.",
       "eyebrow": "Categoria",
-      "rangeHeading": "A gama completa",
+      "rangeHeading": "Explore Todas as Variantes",
       "note": "Especificações, graus, MOQ, embalagem, documentos e preços são confirmados após analisarmos a sua necessidade. Partilhe a quantidade e o destino para uma resposta mais precisa.",
       "enquireCta": "Perguntar sobre esta categoria",
       "viewProduct": "Ver",
       "search": "Pesquisar produtos...",
       "noResults": "Nenhum produto corresponde à sua pesquisa.",
-      "sourcingHeading": "Abastecimento e origem",
-      "sourcingBody": "Abastecemo-nos diretamente junto de fabricantes e instalações de processamento estabelecidos em toda a Índia. Cada lote é analisado quanto à qualidade, especificações e conformidade antes da expedição.",
       "specsHeading": "Especificações e embalagem",
       "specsNote": "Os graus, a MOQ, os formatos de embalagem, os Incoterms e a documentação são confirmados por encomenda. Partilhe as suas necessidades para uma cotação detalhada.",
       "specOrigin": "Origem",
       "specOriginVal": "Índia",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "A partir de 200 kg",
       "specPackaging": "Embalagem",
-      "specPackagingVal": "Personalizável",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg e embalagem personalizada",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Aplicações",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "Sacos HDPE de 25 kg, tambores de fibra, sacos de papel e embalagem de exportação personalizada",
       "specDocs": "Documentos",
-      "specDocsVal": "COA, TDS, MSDS mediante solicitação"
+      "specDocsVal": "COA, TDS, MSDS mediante solicitação",
+      "specPrivateLabel": "Marca própria disponível"
     },
     "detail": {
       "eyebrow": "Produto",

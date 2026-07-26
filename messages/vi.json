@@ -603,7 +603,13 @@
       "categories": "danh mục",
       "allCategories": "Tất cả danh mục",
       "allCategoriesSub": "Tất cả các nhóm",
-      "groupLabel": "Nhóm"
+      "groupLabel": "Nhóm",
+      "foodTitle": "Sản Phẩm Thực Phẩm & Nông Sản",
+      "foodBody": "Khám phá danh mục sản phẩm thực phẩm và nông sản cao cấp phong phú của chúng tôi, được tuyển chọn kỹ lưỡng để đáp ứng các yêu cầu đa dạng của thị trường toàn cầu.",
+      "foodCta": "Xem Danh Mục Thực Phẩm & Nông Sản",
+      "chemTitle": "Hóa Chất",
+      "chemBody": "Danh mục toàn diện các hóa chất công nghiệp và chuyên dụng, được thiết kế để đáp ứng yêu cầu của các ngành công nghiệp quốc tế.",
+      "chemCta": "Xem Danh Mục Hóa Chất"
     },
     "list": {
       "form": "Dạng",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} từ Ấn Độ. {count} {products} có sẵn. Thông số kỹ thuật, số lượng đặt hàng tối thiểu, đóng gói, chứng từ và giá cả được xác nhận khi có yêu cầu. Traya International Exim LLP.",
       "eyebrow": "Danh mục",
-      "rangeHeading": "Toàn bộ dòng sản phẩm",
+      "rangeHeading": "Khám Phá Tất Cả Các Biến Thể",
       "note": "Thông số kỹ thuật, phẩm cấp, số lượng đặt hàng tối thiểu, đóng gói, chứng từ và giá cả được xác nhận sau khi chúng tôi xem xét yêu cầu của bạn. Hãy chia sẻ số lượng và điểm đến để nhận được phản hồi chính xác hơn.",
       "enquireCta": "Hỏi hàng về danh mục này",
       "viewProduct": "Xem",
       "search": "Tìm kiếm sản phẩm...",
       "noResults": "Không có sản phẩm nào phù hợp với tìm kiếm của bạn.",
-      "sourcingHeading": "Tìm nguồn & xuất xứ",
-      "sourcingBody": "Chúng tôi tìm nguồn sản phẩm trực tiếp từ các nhà sản xuất và cơ sở chế biến uy tín trên khắp Ấn Độ. Mỗi lô hàng được kiểm tra về chất lượng, thông số kỹ thuật và sự tuân thủ trước khi xuất hàng.",
       "specsHeading": "Thông số kỹ thuật & đóng gói",
       "specsNote": "Phẩm cấp, số lượng đặt hàng tối thiểu, hình thức đóng gói, điều kiện Incoterms và chứng từ được xác nhận theo từng đơn hàng. Hãy chia sẻ yêu cầu của bạn để nhận báo giá chi tiết.",
       "specOrigin": "Xuất xứ",
       "specOriginVal": "Ấn Độ",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "Từ 200 kg",
       "specPackaging": "Đóng gói",
-      "specPackagingVal": "Có thể tùy chỉnh",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg & đóng gói theo yêu cầu",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Ứng dụng",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "Bao HDPE 25 kg, thùng sợi, bao giấy & đóng gói xuất khẩu tùy chỉnh",
       "specDocs": "Tài liệu",
-      "specDocsVal": "COA, TDS, MSDS theo yêu cầu"
+      "specDocsVal": "COA, TDS, MSDS theo yêu cầu",
+      "specPrivateLabel": "Có Sẵn Nhãn Hiệu Riêng"
     },
     "detail": {
       "eyebrow": "Sản phẩm",

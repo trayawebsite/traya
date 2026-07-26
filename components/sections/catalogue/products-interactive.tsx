@@ -90,7 +90,6 @@ export function ProductsInteractive({
   initialRange?: SuperKey;
 }) {
   const t = useTranslations('Catalogue');
-  const tg = useTranslations('Home.groups');
   // Initial range comes from the server (?range= read in the page), so the
   // first render already shows the right tab   no client-only param read, no
   // hydration mismatch. A user's tab click then takes over via normal state.
@@ -140,8 +139,8 @@ export function ProductsInteractive({
   const prodWord = (n: number) => (n === 1 ? t('product') : t('products'));
 
   const cardCopy: Record<(typeof SUPER_GROUPS)[number]['key'], {title: string; body: string; cta: string}> = {
-    food: {title: tg('foodTitle'), body: tg('foodBody'), cta: tg('foodCta')},
-    chemicals: {title: tg('chemTitle'), body: tg('chemBody'), cta: tg('chemCta')}
+    food: {title: t('hub.foodTitle'), body: t('hub.foodBody'), cta: t('hub.foodCta')},
+    chemicals: {title: t('hub.chemTitle'), body: t('hub.chemBody'), cta: t('hub.chemCta')}
   };
 
   return (

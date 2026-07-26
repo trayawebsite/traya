@@ -603,7 +603,13 @@
       "categories": "catégories",
       "allCategories": "Toutes les catégories",
       "allCategoriesSub": "Tous les groupes",
-      "groupLabel": "Groupe"
+      "groupLabel": "Groupe",
+      "foodTitle": "Produits Alimentaires et Agricoles",
+      "foodBody": "Découvrez notre vaste portefeuille de produits alimentaires et agricoles haut de gamme, soigneusement sourcés pour répondre aux exigences variées des marchés mondiaux.",
+      "foodCta": "Voir le Portefeuille Alimentaire et Agricole",
+      "chemTitle": "Produits Chimiques",
+      "chemBody": "Un portefeuille complet de produits chimiques industriels et spécialisés, adapté aux exigences des industries internationales.",
+      "chemCta": "Voir le Portefeuille de Produits Chimiques"
     },
     "list": {
       "form": "Forme",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} depuis l'Inde. {count} {products} disponibles. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande. Traya International Exim LLP.",
       "eyebrow": "Catégorie",
-      "rangeHeading": "La gamme complète",
+      "rangeHeading": "Découvrez Toutes les Variantes",
       "note": "Les spécifications, qualités, quantités minimales de commande, emballages, documents et prix sont confirmés après examen de vos exigences. Partagez la quantité et la destination pour une réponse plus précise.",
       "enquireCta": "Se renseigner sur cette catégorie",
       "viewProduct": "Voir",
       "search": "Rechercher des produits...",
       "noResults": "Aucun produit ne correspond à votre recherche.",
-      "sourcingHeading": "Approvisionnement et origine",
-      "sourcingBody": "Nous sourçons nos produits directement auprès de fabricants et d'installations de traitement établis à travers l'Inde. Chaque lot est examiné pour la qualité, les spécifications et la conformité avant l'expédition.",
       "specsHeading": "Spécifications et emballage",
       "specsNote": "Les qualités, les quantités minimales de commande, les formats d'emballage, les Incoterms et la documentation sont confirmés par commande. Partagez vos exigences pour un devis détaillé.",
       "specOrigin": "Origine",
       "specOriginVal": "Inde",
       "specMoq": "QMC",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "À partir de 200 kg",
       "specPackaging": "Emballage",
-      "specPackagingVal": "Personnalisable",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg et emballage personnalisé",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Applications",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "Sacs HDPE de 25 kg, fûts en fibre, sacs papier et emballage d'exportation personnalisé",
       "specDocs": "Documents",
-      "specDocsVal": "COA, TDS, MSDS sur demande"
+      "specDocsVal": "COA, TDS, MSDS sur demande",
+      "specPrivateLabel": "Marque privée disponible"
     },
     "detail": {
       "eyebrow": "Produit",

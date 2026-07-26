@@ -603,7 +603,13 @@
       "categories": "kategorie",
       "allCategories": "Wszystkie kategorie",
       "allCategoriesSub": "Wszystkie grupy",
-      "groupLabel": "Grupa"
+      "groupLabel": "Grupa",
+      "foodTitle": "Produkty Spożywcze i Rolne",
+      "foodBody": "Odkryj naszą obszerną ofertę wysokiej jakości produktów spożywczych i rolnych, starannie pozyskiwanych, aby sprostać różnorodnym wymaganiom rynków globalnych.",
+      "foodCta": "Zobacz Ofertę Spożywczą i Rolną",
+      "chemTitle": "Chemikalia",
+      "chemBody": "Kompleksowa oferta chemikaliów przemysłowych i specjalistycznych, dostosowana do wymagań międzynarodowych branż.",
+      "chemCta": "Zobacz Ofertę Chemikaliów"
     },
     "list": {
       "form": "Forma",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} z Indii. Dostępne: {count} {products}. Specyfikacje, MOQ, opakowanie, dokumenty oraz ceny są potwierdzane po zapytaniu. Traya International Exim LLP.",
       "eyebrow": "Kategoria",
-      "rangeHeading": "Pełny asortyment",
+      "rangeHeading": "Poznaj Wszystkie Warianty",
       "note": "Specyfikacje, gatunki, MOQ, opakowanie, dokumenty oraz ceny są potwierdzane po przeanalizowaniu Twojego zapotrzebowania. Podaj ilość i miejsce docelowe, aby uzyskać dokładniejszą odpowiedź.",
       "enquireCta": "Zapytaj o tę kategorię",
       "viewProduct": "Zobacz",
       "search": "Szukaj produktów...",
       "noResults": "Brak produktów pasujących do wyszukiwania.",
-      "sourcingHeading": "Pozyskiwanie i pochodzenie",
-      "sourcingBody": "Pozyskujemy produkty bezpośrednio od uznanych producentów i zakładów przetwórczych w całych Indiach. Każda partia jest sprawdzana pod kątem jakości, specyfikacji i zgodności przed wysyłką.",
       "specsHeading": "Specyfikacje i opakowanie",
       "specsNote": "Gatunki, MOQ, formaty opakowań, Incoterms oraz dokumentacja są potwierdzane dla każdego zamówienia. Podaj swoje wymagania, aby otrzymać szczegółową wycenę.",
       "specOrigin": "Pochodzenie",
       "specOriginVal": "Indie",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "Od 200 kg",
       "specPackaging": "Opakowanie",
-      "specPackagingVal": "Do uzgodnienia",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg i opakowanie na zamówienie",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Zastosowania",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "Worki HDPE 25 kg, bębny włókniste, worki papierowe i niestandardowe opakowania eksportowe",
       "specDocs": "Dokumenty",
-      "specDocsVal": "COA, TDS, MSDS na życzenie"
+      "specDocsVal": "COA, TDS, MSDS na życzenie",
+      "specPrivateLabel": "Dostępna marka własna"
     },
     "detail": {
       "eyebrow": "Produkt",

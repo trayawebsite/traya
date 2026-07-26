@@ -603,7 +603,13 @@
       "categories": "类别",
       "allCategories": "所有类别",
       "allCategoriesSub": "所有分组",
-      "groupLabel": "分组"
+      "groupLabel": "分组",
+      "foodTitle": "食品与农产品",
+      "foodBody": "探索我们种类丰富的优质食品与农产品组合，精心采购以满足全球市场的多样化需求。",
+      "foodCta": "查看食品与农产品系列",
+      "chemTitle": "化学品",
+      "chemBody": "全面的工业及特种化学品组合，专为满足国际行业需求而设计。",
+      "chemCta": "查看化学品系列"
     },
     "list": {
       "form": "形态",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title}产自印度，现有{count}{products}可选。规格、最小起订量、包装、单证及价格将在询价时确认。Traya International Exim LLP。",
       "eyebrow": "品类",
-      "rangeHeading": "完整产品系列",
+      "rangeHeading": "探索所有款式",
       "note": "规格、等级、最小起订量、包装、单证及价格将在我们审核您的需求后确认。请提供数量及目的地，以便获得更准确的回复。",
       "enquireCta": "咨询该品类",
       "viewProduct": "查看",
       "search": "搜索产品……",
       "noResults": "未找到符合搜索条件的产品。",
-      "sourcingHeading": "寻源与产地",
-      "sourcingBody": "我们直接从印度各地成熟的制造商及加工设施采购产品。每一批次在发货前都会经过质量、规格及合规性审核。",
       "specsHeading": "规格与包装",
       "specsNote": "等级、最小起订量、包装形式、贸易术语及单证将按订单确认。请告知您的需求，以获取详细报价。",
       "specOrigin": "产地",
       "specOriginVal": "印度",
       "specMoq": "最小起订量",
-      "specMoqVal": "200 公斤",
+      "specMoqVal": "200 公斤起",
       "specPackaging": "包装",
-      "specPackagingVal": "可定制",
+      "specPackagingVal": "25公斤 • 50公斤 • 100公斤及定制包装",
       "specIncoterms": "贸易术语",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "应用领域",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 公斤",
       "specPackagingValChem": "25 公斤 HDPE 袋、纤维桶、纸袋及定制出口包装",
       "specDocs": "文件",
-      "specDocsVal": "COA、TDS、MSDS 可应要求提供"
+      "specDocsVal": "COA、TDS、MSDS 可应要求提供",
+      "specPrivateLabel": "支持定制品牌（贴牌）"
     },
     "detail": {
       "eyebrow": "产品",

@@ -603,7 +603,13 @@
       "categories": "Kategorien",
       "allCategories": "Alle Kategorien",
       "allCategoriesSub": "Alle Gruppen",
-      "groupLabel": "Gruppe"
+      "groupLabel": "Gruppe",
+      "foodTitle": "Lebensmittel- & Agrarprodukte",
+      "foodBody": "Entdecken Sie unser umfangreiches Portfolio an hochwertigen Lebensmittel- und Agrarprodukten, sorgfältig beschafft, um die vielfältigen Anforderungen globaler Märkte zu erfüllen.",
+      "foodCta": "Lebensmittel- & Agrarportfolio ansehen",
+      "chemTitle": "Chemikalien",
+      "chemBody": "Ein umfassendes Portfolio an Industrie- und Spezialchemikalien, zugeschnitten auf die Anforderungen internationaler Industrien.",
+      "chemCta": "Chemikalien-Portfolio ansehen"
     },
     "list": {
       "form": "Form",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} aus Indien. {count} {products} verfügbar. Spezifikationen, Mindestbestellmenge, Verpackung, Dokumente und Preise werden auf Anfrage bestätigt. Traya International Exim LLP.",
       "eyebrow": "Kategorie",
-      "rangeHeading": "Das vollständige Sortiment",
+      "rangeHeading": "Alle Varianten entdecken",
       "note": "Spezifikationen, Güteklassen, Mindestbestellmenge, Verpackung, Dokumente und Preise werden bestätigt, nachdem wir Ihren Bedarf geprüft haben. Teilen Sie uns die Menge und das Zielland für eine genauere Antwort mit.",
       "enquireCta": "Nach dieser Kategorie fragen",
       "viewProduct": "Ansehen",
       "search": "Produkte suchen...",
       "noResults": "Keine Produkte entsprechen Ihrer Suche.",
-      "sourcingHeading": "Beschaffung & Herkunft",
-      "sourcingBody": "Wir beziehen Produkte direkt von etablierten Herstellern und Verarbeitungsbetrieben in ganz Indien. Jede Charge wird vor dem Versand auf Qualität, Spezifikationen und Compliance geprüft.",
       "specsHeading": "Spezifikationen & Verpackung",
       "specsNote": "Güteklassen, Mindestbestellmenge, Verpackungsformate, Incoterms und Dokumentation werden je Auftrag bestätigt. Teilen Sie uns Ihre Anforderungen für ein detailliertes Angebot mit.",
       "specOrigin": "Herkunft",
       "specOriginVal": "Indien",
       "specMoq": "Mindestbestellmenge",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "Ab 200 kg",
       "specPackaging": "Verpackung",
-      "specPackagingVal": "Anpassbar",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg & individuelle Verpackung",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Anwendungen",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "25-kg-HDPE-Säcke, Faserfässer, Papiersäcke & individuelle Exportverpackung",
       "specDocs": "Dokumente",
-      "specDocsVal": "COA, TDS, MSDS auf Anfrage"
+      "specDocsVal": "COA, TDS, MSDS auf Anfrage",
+      "specPrivateLabel": "Eigenmarke verfügbar"
     },
     "detail": {
       "eyebrow": "Produkt",

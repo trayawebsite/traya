@@ -603,7 +603,13 @@
       "categories": "categorie",
       "allCategories": "Tutte le categorie",
       "allCategoriesSub": "Tutti i gruppi",
-      "groupLabel": "Gruppo"
+      "groupLabel": "Gruppo",
+      "foodTitle": "Prodotti Alimentari e Agricoli",
+      "foodBody": "Scopri il nostro ampio portafoglio di prodotti alimentari e agricoli di alta qualità, accuratamente selezionati per soddisfare le diverse esigenze dei mercati globali.",
+      "foodCta": "Visualizza il Portafoglio Alimentare e Agricolo",
+      "chemTitle": "Prodotti Chimici",
+      "chemBody": "Un portafoglio completo di prodotti chimici industriali e speciali, su misura per le esigenze delle industrie internazionali.",
+      "chemCta": "Visualizza il Portafoglio Chimico"
     },
     "list": {
       "form": "Forma",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} dall'India. {count} {products} disponibili. Specifiche tecniche, MOQ, imballaggio, documenti e prezzi vengono confermati su richiesta. Traya International Exim LLP.",
       "eyebrow": "Categoria",
-      "rangeHeading": "La gamma completa",
+      "rangeHeading": "Esplora Tutte le Varianti",
       "note": "Specifiche tecniche, gradi, MOQ, imballaggio, documenti e prezzi vengono confermati dopo l'esame della tua esigenza. Condividi la quantità e la destinazione per una risposta più precisa.",
       "enquireCta": "Richiedi informazioni su questa categoria",
       "viewProduct": "Visualizza",
       "search": "Cerca prodotti...",
       "noResults": "Nessun prodotto corrisponde alla tua ricerca.",
-      "sourcingHeading": "Approvvigionamento e origine",
-      "sourcingBody": "Approvvigioniamo i prodotti direttamente da produttori e stabilimenti di lavorazione affermati in tutta l'India. Ogni lotto viene esaminato per qualità, specifiche tecniche e conformità prima della spedizione.",
       "specsHeading": "Specifiche tecniche e imballaggio",
       "specsNote": "Gradi, MOQ, formati di imballaggio, Incoterms e documentazione vengono confermati per ogni ordine. Condividi le tue esigenze per un preventivo dettagliato.",
       "specOrigin": "Origine",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "A partire da 200 kg",
       "specPackaging": "Imballaggio",
-      "specPackagingVal": "Personalizzabile",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg e imballaggio personalizzato",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Applicazioni",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "Sacchi HDPE da 25 kg, fusti in fibra, sacchi di carta e imballaggio da esportazione personalizzato",
       "specDocs": "Documenti",
-      "specDocsVal": "COA, TDS, MSDS su richiesta"
+      "specDocsVal": "COA, TDS, MSDS su richiesta",
+      "specPrivateLabel": "Marchio privato disponibile"
     },
     "detail": {
       "eyebrow": "Prodotto",

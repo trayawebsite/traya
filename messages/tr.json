@@ -603,7 +603,13 @@
       "categories": "kategori",
       "allCategories": "Tüm Kategoriler",
       "allCategoriesSub": "Tüm gruplar",
-      "groupLabel": "Grup"
+      "groupLabel": "Grup",
+      "foodTitle": "Gıda ve Tarım Ürünleri",
+      "foodBody": "Küresel pazarların çeşitli gereksinimlerini karşılamak üzere özenle tedarik edilen premium gıda ve tarım ürünlerinden oluşan geniş portföyümüzü keşfedin.",
+      "foodCta": "Gıda ve Tarım Portföyünü Görüntüle",
+      "chemTitle": "Kimyasallar",
+      "chemBody": "Uluslararası endüstrilerin gereksinimlerini karşılamak üzere hazırlanmış, endüstriyel ve özel kimyasallardan oluşan kapsamlı bir portföy.",
+      "chemCta": "Kimyasallar Portföyünü Görüntüle"
     },
     "list": {
       "form": "Form",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "Hindistan'dan {title}. {count} {products} mevcuttur. Teknik özellikler, minimum sipariş miktarı, ambalaj, belgeler ve fiyatlandırma talep üzerine teyit edilir. Traya International Exim LLP.",
       "eyebrow": "Kategori",
-      "rangeHeading": "Tam ürün yelpazesi",
+      "rangeHeading": "Tüm Varyantları Keşfedin",
       "note": "Teknik özellikler, kaliteler, minimum sipariş miktarı, ambalaj, belgeler ve fiyatlandırma ihtiyacınızı incelememizin ardından teyit edilir. Daha doğru bir yanıt için miktarı ve varış noktasını paylaşın.",
       "enquireCta": "Bu kategori hakkında talepte bulunun",
       "viewProduct": "Görüntüle",
       "search": "Ürün ara...",
       "noResults": "Aramanızla eşleşen ürün bulunamadı.",
-      "sourcingHeading": "Tedarik ve menşe",
-      "sourcingBody": "Ürünleri Hindistan genelindeki köklü üreticilerden ve işleme tesislerinden doğrudan tedarik ediyoruz. Her parti, sevkiyattan önce kalite, teknik özellikler ve uyumluluk açısından incelenir.",
       "specsHeading": "Teknik özellikler ve ambalaj",
       "specsNote": "Kaliteler, minimum sipariş miktarı, ambalaj formatları, teslim şekilleri (Incoterms) ve belgeler sipariş bazında teyit edilir. Ayrıntılı bir teklif için ihtiyaçlarınızı paylaşın.",
       "specOrigin": "Menşe",
       "specOriginVal": "Hindistan",
       "specMoq": "Minimum Sipariş Miktarı",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "200 kg'dan itibaren",
       "specPackaging": "Ambalaj",
-      "specPackagingVal": "Özelleştirilebilir",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg ve özel ambalaj",
       "specIncoterms": "Teslim Şekilleri",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Kullanım Alanları",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "25 kg HDPE torbalar, fiber variller, kağıt torbalar ve özel ihracat ambalajı",
       "specDocs": "Belgeler",
-      "specDocsVal": "Talep üzerine COA, TDS, MSDS"
+      "specDocsVal": "Talep üzerine COA, TDS, MSDS",
+      "specPrivateLabel": "Özel Marka Mevcut"
     },
     "detail": {
       "eyebrow": "Ürün",

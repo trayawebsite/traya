@@ -42,7 +42,12 @@ export function Reveal({
           }
         }
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
+      // threshold: 0   fires as soon as ANY part of the element is visible.
+      // A fixed fraction (e.g. 0.12) is only safe for elements shorter than
+      // the viewport; a tall wrapper (e.g. the products hub's full category
+      // grid for a large range) could need 12% of a huge height scrolled
+      // past before revealing, which reads as a blank page until then.
+      { threshold: 0, rootMargin: "0px 0px -8% 0px" },
     );
     io.observe(el);
     return () => io.disconnect();

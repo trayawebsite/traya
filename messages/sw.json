@@ -603,7 +603,13 @@
       "categories": "kategoria",
       "allCategories": "Kategoria Zote",
       "allCategoriesSub": "Vikundi vyote",
-      "groupLabel": "Kikundi"
+      "groupLabel": "Kikundi",
+      "foodTitle": "Bidhaa za Chakula na Kilimo",
+      "foodBody": "Gundua orodha yetu kubwa ya bidhaa bora za chakula na kilimo, zilizochaguliwa kwa uangalifu kukidhi mahitaji mbalimbali ya masoko ya kimataifa.",
+      "foodCta": "Angalia Orodha ya Chakula na Kilimo",
+      "chemTitle": "Kemikali",
+      "chemBody": "Orodha kamili ya kemikali za viwandani na maalum, iliyoundwa kukidhi mahitaji ya viwanda vya kimataifa.",
+      "chemCta": "Angalia Orodha ya Kemikali"
     },
     "list": {
       "form": "Aina",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} kutoka India. {count} {products} zinapatikana. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi. Traya International Exim LLP.",
       "eyebrow": "Kategoria",
-      "rangeHeading": "Wigo Kamili",
+      "rangeHeading": "Chunguza Aina Zote",
       "note": "Vipimo, madaraja, MOQ, ufungashaji, hati, na bei vinathibitishwa baada ya kupitia mahitaji yako. Shirikisha kiasi na eneo lengwa kwa jibu sahihi zaidi.",
       "enquireCta": "Uliza kuhusu kategoria hii",
       "viewProduct": "Angalia",
       "search": "Tafuta bidhaa...",
       "noResults": "Hakuna bidhaa zinazolingana na utafutaji wako.",
-      "sourcingHeading": "Utafutaji na Asili",
-      "sourcingBody": "Tunatafuta bidhaa moja kwa moja kutoka kwa watengenezaji na vituo vya usindikaji vilivyothibitika kote India. Kila kundi la bidhaa linakaguliwa kwa ubora, vipimo, na uzingatiaji wa kanuni kabla ya kusafirishwa.",
       "specsHeading": "Vipimo na Ufungashaji",
       "specsNote": "Madaraja, MOQ, aina za ufungashaji, Incoterms, na hati vinathibitishwa kwa kila oda. Shirikisha mahitaji yako kwa nukuu ya bei ya kina.",
       "specOrigin": "Asili",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "kg 200",
+      "specMoqVal": "Kuanzia kg 200",
       "specPackaging": "Ufungashaji",
-      "specPackagingVal": "Inaweza kubadilishwa",
+      "specPackagingVal": "kg 25 • kg 50 • kg 100 na ufungaji maalum",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Matumizi",
@@ -657,7 +661,8 @@
       "specMoqValChem": "kg 500",
       "specPackagingValChem": "Mifuko ya HDPE ya kg 25, mapipa ya nyuzi, mifuko ya karatasi na ufungashaji maalum wa kuuza nje",
       "specDocs": "Nyaraka",
-      "specDocsVal": "COA, TDS, MSDS kwa ombi"
+      "specDocsVal": "COA, TDS, MSDS kwa ombi",
+      "specPrivateLabel": "Chapa Binafsi Inapatikana"
     },
     "detail": {
       "eyebrow": "Bidhaa",

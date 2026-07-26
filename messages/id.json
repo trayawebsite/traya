@@ -603,7 +603,13 @@
       "categories": "kategori",
       "allCategories": "Semua Kategori",
       "allCategoriesSub": "Semua grup",
-      "groupLabel": "Grup"
+      "groupLabel": "Grup",
+      "foodTitle": "Produk Pangan & Agro",
+      "foodBody": "Jelajahi portofolio lengkap produk pangan dan agro premium kami, yang bersumber dengan cermat untuk memenuhi beragam kebutuhan pasar global.",
+      "foodCta": "Lihat Portofolio Pangan & Agro",
+      "chemTitle": "Bahan Kimia",
+      "chemBody": "Portofolio lengkap bahan kimia industri dan khusus yang disesuaikan dengan kebutuhan industri internasional.",
+      "chemCta": "Lihat Portofolio Bahan Kimia"
     },
     "list": {
       "form": "Bentuk",
@@ -629,22 +635,20 @@
     "category": {
       "metaDescription": "{title} dari India. {count} {products} tersedia. Spesifikasi, MOQ, kemasan, dokumen, dan harga dikonfirmasi saat permintaan. Traya International Exim LLP.",
       "eyebrow": "Kategori",
-      "rangeHeading": "Rangkaian lengkap",
+      "rangeHeading": "Jelajahi Semua Varian",
       "note": "Spesifikasi, grade, MOQ, kemasan, dokumen, dan harga dikonfirmasi setelah kami meninjau kebutuhan Anda. Bagikan jumlah dan tujuan Anda untuk tanggapan yang lebih akurat.",
       "enquireCta": "Tanyakan tentang kategori ini",
       "viewProduct": "Lihat",
       "search": "Cari produk...",
       "noResults": "Tidak ada produk yang cocok dengan pencarian Anda.",
-      "sourcingHeading": "Pengadaan & asal",
-      "sourcingBody": "Kami mengadakan produk langsung dari produsen dan fasilitas pengolahan mapan di seluruh India. Setiap batch ditinjau mutu, spesifikasi, dan kepatuhannya sebelum pengiriman.",
       "specsHeading": "Spesifikasi & kemasan",
       "specsNote": "Grade, MOQ, format kemasan, Incoterms, dan dokumentasi dikonfirmasi per pesanan. Bagikan kebutuhan Anda untuk penawaran harga yang rinci.",
       "specOrigin": "Asal",
       "specOriginVal": "India",
       "specMoq": "MOQ",
-      "specMoqVal": "200 kg",
+      "specMoqVal": "Mulai dari 200 kg",
       "specPackaging": "Kemasan",
-      "specPackagingVal": "Dapat disesuaikan",
+      "specPackagingVal": "25 kg • 50 kg • 100 kg & kemasan khusus",
       "specIncoterms": "Incoterms",
       "specIncotermsVal": "FOB / CIF",
       "applicationsHeading": "Aplikasi",
@@ -657,7 +661,8 @@
       "specMoqValChem": "500 kg",
       "specPackagingValChem": "Kantong HDPE 25 kg, drum serat, kantong kertas & kemasan ekspor khusus",
       "specDocs": "Dokumen",
-      "specDocsVal": "COA, TDS, MSDS berdasarkan permintaan"
+      "specDocsVal": "COA, TDS, MSDS berdasarkan permintaan",
+      "specPrivateLabel": "Tersedia Label Pribadi"
     },
     "detail": {
       "eyebrow": "Produk",
