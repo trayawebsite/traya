@@ -59,7 +59,7 @@ export async function VisionMission({ data }: { data?: AboutPage | null }) {
               {vision}
             </p>
             <Image
-              src="/mission.webp"
+              src="/mission.jpg"
               alt=""
               width={480}
               height={320}

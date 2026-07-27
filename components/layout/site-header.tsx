@@ -47,14 +47,16 @@ export function SiteHeader() {
           className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
         >
           <Image
-            src="/logo.webp"
+            src="/logo-lockup.webp"
             alt="Traya International Exim LLP"
-            width={126}
-            height={160}
+            width={1116}
+            height={242}
             priority
+            // Horizontal lockup (4.6:1), so heights are much smaller than the
+            // old portrait mark   at h-16 this is already ~295px wide.
             className={cn(
               "w-auto transition-[height] duration-300 ease-expo motion-reduce:transition-none",
-              scrolled ? "h-14 sm:h-16" : "h-24 sm:h-28",
+              scrolled ? "h-8 sm:h-10" : "h-11 sm:h-14",
             )}
           />
         </Link>

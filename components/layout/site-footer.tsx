@@ -92,11 +92,11 @@ export async function SiteFooter() {
             className="rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-traya-red-hi"
           >
             <Image
-              src="/logo-light.webp"
+              src="/logo-lockup-light.webp"
               alt={siteConfig.name}
-              width={173}
-              height={220}
-              className="h-32 w-auto sm:h-40"
+              width={1116}
+              height={242}
+              className="h-16 w-auto sm:h-20"
             />
           </Link>
           <ScrollToTop />
