@@ -663,6 +663,7 @@
       "specDocs": "Documents",
       "specDocsVal": "COA, TDS, MSDS sur demande",
       "specPrivateLabel": "Marque privée disponible",
+      "specCustomShades": "Nuances personnalisées disponibles (le cas échéant)",
       "industriesHeading": "Industries desservies",
       "subRangeHeading": "Parcourir par sous-gamme",
       "allSubRanges": "Tous",
@@ -672,7 +673,9 @@
       "subRanges": "sous-gammes",
       "specSample": "Disponibilité d'échantillons",
       "specSampleVal": "Disponible",
-      "shadeRefLabel": "Référence"
+      "shadeCiLabel": "N° de référence C.I.",
+      "shadeEecLabel": "N° C.E.E.",
+      "shadeFdcLabel": "N° F.D & C."
     },
     "detail": {
       "eyebrow": "Produit",

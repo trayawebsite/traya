@@ -5,12 +5,12 @@ import { toast } from "sonner";
 import { Check, Plus, Search } from "lucide-react";
 import { useInquiry } from "@/lib/inquiry-context";
 import { shadeHex } from "@/lib/chemical-shades";
+import { parseColourRefs, primaryColourRef } from "@/lib/chemicals-meta";
 
 export type Shade = {
   name: string;
   slug: string;
   colourIndex?: string;
-  packSizes?: string;
 };
 
 export type SubRange = {
@@ -33,7 +33,11 @@ type Labels = {
   addedToast: string;
   quote: string;
   sample: string;
-  refLabel: string;
+  /** Reference-number rows. Food colours carry all three; dyes only the C.I. */
+  ciLabel: string;
+  eecLabel: string;
+  fdcLabel: string;
+  formLabel: string;
 };
 
 const slugify = (s: string) =>
@@ -43,7 +47,7 @@ const slugify = (s: string) =>
 // A dye category is a *colour* catalogue, so the shade itself has to be the
 // primary visual   a flat text list of 79 near-identical product names is
 // unreadable. Tiles give the category structure at a glance; the grids let a
-// buyer scan a whole sub-range by eye, then open one shade for its reference
+// buyer scan a whole sub-range by eye, then open one shade for its Colour Index
 // number and actions.
 export function ChemicalShades({
   subRanges,
@@ -65,7 +69,7 @@ export function ChemicalShades({
     [subRanges],
   );
 
-  // Search spans every sub-range (name + reference), so a query typed while one
+  // Search spans every sub-range (name + Colour Index), so a query typed while one
   // sub-range is selected can never silently hide matches elsewhere.
   const visible = useMemo(() => {
     const q = query.toLowerCase().trim();
@@ -204,7 +208,7 @@ export function ChemicalShades({
               )}
 
               {/* Capped at 4 across   wider cards keep the shade name, the
-                  reference number and the swatch all comfortably readable.
+                  Colour Index number and the swatch all comfortably readable.
                   `items-start` is load-bearing: without it the grid stretches
                   every card in a row to the height of the tallest, so opening
                   one card would balloon its neighbours into empty boxes. */}
@@ -260,9 +264,9 @@ function FilterPill({
   );
 }
 
-// One shade. Collapsed it is a swatch + name + reference (all a buyer needs to
-// scan); expanded it reveals the reference detail and the actions, so a 79-shade
-// grid stays readable instead of repeating three buttons 79 times.
+// One shade. Collapsed it is a swatch + name + Colour Index (all a buyer needs
+// to scan); expanded it labels the C.I. number and reveals the actions, so a
+// 79-shade grid stays readable instead of repeating three buttons 79 times.
 function ShadeCard({
   shade,
   categoryTitle,
@@ -282,6 +286,14 @@ function ShadeCard({
   const added = has(shade.slug);
   const hex = shadeHex(shade.name, shade.colourIndex);
   const isResin = categorySlug === "paint-resins";
+
+  const refs = parseColourRefs(shade.colourIndex);
+  const refRows = [
+    { label: labels.ciLabel, value: refs.ci },
+    { label: labels.eecLabel, value: refs.eec },
+    { label: labels.fdcLabel, value: refs.fdc },
+    { label: labels.formLabel, value: refs.form },
+  ].filter((r): r is { label: string; value: string } => Boolean(r.value));
 
   return (
     <li
@@ -311,7 +323,7 @@ function ShadeCard({
           </span>
           {(shade.colourIndex || !isResin) && (
             <span className="mt-0.5 block font-mono text-[11px] text-muted-foreground">
-              {shade.colourIndex || "—"}
+              {primaryColourRef(shade.colourIndex) || "—"}
             </span>
           )}
         </span>
@@ -319,19 +331,21 @@ function ShadeCard({
 
       {open && (
         <div className="border-t border-traya-border px-3 pb-3 pt-2.5">
-          <dl className="space-y-1 text-[11px]">
-            <div className="flex justify-between gap-2">
-              <dt className="text-muted-foreground">{labels.refLabel}</dt>
-              <dd className="text-end font-mono text-foreground">
-                {shade.colourIndex || "—"}
-              </dd>
-            </div>
-            {shade.packSizes && (
-              <div className="flex justify-between gap-2">
-                <dt className="shrink-0 text-muted-foreground">Pack</dt>
-                <dd className="text-end text-foreground">{shade.packSizes}</dd>
+          {/* One labelled row per reference number. Food colours carry a C.I.,
+              an E number and an FD&C designation in a single catalogue cell
+              run together they are unreadable, so each gets its own line. */}
+          <dl className="divide-y divide-traya-border/60 text-[11px] empty:hidden">
+            {refRows.map((row) => (
+              <div
+                key={row.label}
+                className="flex items-baseline justify-between gap-2 py-1 first:pt-0 last:pb-0"
+              >
+                <dt className="shrink-0 text-muted-foreground">{row.label}</dt>
+                <dd className="text-end font-mono text-foreground">
+                  {row.value}
+                </dd>
               </div>
-            )}
+            ))}
           </dl>
 
           <div className="mt-3 flex flex-col gap-1.5">

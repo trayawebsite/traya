@@ -663,6 +663,7 @@
       "specDocs": "Документы",
       "specDocsVal": "COA, TDS, MSDS по запросу",
       "specPrivateLabel": "Доступна собственная торговая марка",
+      "specCustomShades": "Возможны индивидуальные оттенки (где применимо)",
       "industriesHeading": "Обслуживаемые отрасли",
       "subRangeHeading": "Просмотр по подгруппам",
       "allSubRanges": "Все",
@@ -672,7 +673,9 @@
       "subRanges": "подгруппы",
       "specSample": "Наличие образцов",
       "specSampleVal": "Доступно",
-      "shadeRefLabel": "Референс"
+      "shadeCiLabel": "Референс C.I. №",
+      "shadeEecLabel": "E.E.C №",
+      "shadeFdcLabel": "F.D & C. №"
     },
     "detail": {
       "eyebrow": "Продукт",

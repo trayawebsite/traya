@@ -663,6 +663,7 @@
       "specDocs": "文件",
       "specDocsVal": "COA、TDS、MSDS 可应要求提供",
       "specPrivateLabel": "支持定制品牌（贴牌）",
+      "specCustomShades": "可提供定制色号（适用时）",
       "industriesHeading": "服务行业",
       "subRangeHeading": "按子系列浏览",
       "allSubRanges": "全部",
@@ -672,7 +673,9 @@
       "subRanges": "子系列",
       "specSample": "样品供应",
       "specSampleVal": "可提供",
-      "shadeRefLabel": "索引号"
+      "shadeCiLabel": "C.I. 索引号",
+      "shadeEecLabel": "E.E.C 编号",
+      "shadeFdcLabel": "F.D & C. 编号"
     },
     "detail": {
       "eyebrow": "产品",

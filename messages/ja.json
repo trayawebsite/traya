@@ -663,6 +663,7 @@
       "specDocs": "書類",
       "specDocsVal": "COA・TDS・MSDS はご要望に応じて",
       "specPrivateLabel": "プライベートブランド対応可能",
+      "specCustomShades": "カスタムシェード対応可（該当する場合）",
       "industriesHeading": "対応業界",
       "subRangeHeading": "サブレンジから探す",
       "allSubRanges": "すべて",
@@ -672,7 +673,9 @@
       "subRanges": "サブレンジ",
       "specSample": "サンプルの提供",
       "specSampleVal": "対応可能",
-      "shadeRefLabel": "参照番号"
+      "shadeCiLabel": "C.I. 参照番号",
+      "shadeEecLabel": "E.E.C 番号",
+      "shadeFdcLabel": "F.D & C. 番号"
     },
     "detail": {
       "eyebrow": "製品",

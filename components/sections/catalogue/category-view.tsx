@@ -109,7 +109,6 @@ export async function CategoryView({
         name: p.name,
         slug: p.slug,
         colourIndex: p.colourIndex,
-        packSizes: p.packSizes,
       });
     }
     return orderSubcategories(category.slug, [...bySeries.keys()]).map((name) => ({
@@ -234,7 +233,10 @@ export async function CategoryView({
                   addedToast: t("list.addedToast"),
                   quote: t("list.quote"),
                   sample: t("list.sample"),
-                  refLabel: t("category.shadeRefLabel"),
+                  ciLabel: t("category.shadeCiLabel"),
+                  eecLabel: t("category.shadeEecLabel"),
+                  fdcLabel: t("category.shadeFdcLabel"),
+                  formLabel: t("list.form"),
                 }}
               />
             ) : (
@@ -300,11 +302,22 @@ export async function CategoryView({
                 ))}
               </dl>
               {/* Private label   stated for food and for chemicals (the
-                  chemicals list's shared specs confirm it applies there too). */}
-              <p className="mt-4 flex items-center gap-2 text-sm font-medium text-traya-forest">
-                <Check className="size-4 shrink-0" aria-hidden="true" />
-                {t("category.specPrivateLabel")}
-              </p>
+                  chemicals list's shared specs confirm it applies there too).
+                  Custom shades are a chemicals-only offer. */}
+              <ul className="mt-4 space-y-2">
+                {[
+                  t("category.specPrivateLabel"),
+                  ...(isChemicals ? [t("category.specCustomShades")] : []),
+                ].map((claim) => (
+                  <li
+                    key={claim}
+                    className="flex items-center gap-2 text-sm font-medium text-traya-forest"
+                  >
+                    <Check className="size-4 shrink-0" aria-hidden="true" />
+                    {claim}
+                  </li>
+                ))}
+              </ul>
               {/* Quality & Compliance from Sanity */}
               {category.qualityCompliance && (
                 <div className="mt-6 rounded-xl border border-traya-border bg-card p-4">

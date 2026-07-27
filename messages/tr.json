@@ -663,6 +663,7 @@
       "specDocs": "Belgeler",
       "specDocsVal": "Talep üzerine COA, TDS, MSDS",
       "specPrivateLabel": "Özel Marka Mevcut",
+      "specCustomShades": "Özel renk tonları mevcut (uygun olduğu durumlarda)",
       "industriesHeading": "Hizmet Verilen Sektörler",
       "subRangeHeading": "Alt gruba göre inceleyin",
       "allSubRanges": "Tümü",
@@ -672,7 +673,9 @@
       "subRanges": "alt gruplar",
       "specSample": "Numune temini",
       "specSampleVal": "Mevcut",
-      "shadeRefLabel": "Referans"
+      "shadeCiLabel": "C.I. Referans No.",
+      "shadeEecLabel": "E.E.C No.",
+      "shadeFdcLabel": "F.D & C. No."
     },
     "detail": {
       "eyebrow": "Ürün",

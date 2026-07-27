@@ -663,6 +663,7 @@
       "specDocs": "Documenten",
       "specDocsVal": "COA, TDS, MSDS op aanvraag",
       "specPrivateLabel": "Private label beschikbaar",
+      "specCustomShades": "Aangepaste kleurtinten beschikbaar (indien van toepassing)",
       "industriesHeading": "Bediende sectoren",
       "subRangeHeading": "Bladeren per deelassortiment",
       "allSubRanges": "Alle",
@@ -672,7 +673,9 @@
       "subRanges": "deelassortimenten",
       "specSample": "Beschikbaarheid monsters",
       "specSampleVal": "Beschikbaar",
-      "shadeRefLabel": "Referentie"
+      "shadeCiLabel": "C.I.-referentienr.",
+      "shadeEecLabel": "E.E.G.-nr.",
+      "shadeFdcLabel": "F.D & C.-nr."
     },
     "detail": {
       "eyebrow": "Product",

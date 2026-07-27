@@ -663,6 +663,7 @@
       "specDocs": "Dokumenty",
       "specDocsVal": "COA, TDS, MSDS na życzenie",
       "specPrivateLabel": "Dostępna marka własna",
+      "specCustomShades": "Odcienie na zamówienie dostępne (w stosownych przypadkach)",
       "industriesHeading": "Obsługiwane branże",
       "subRangeHeading": "Przeglądaj według podgrupy",
       "allSubRanges": "Wszystkie",
@@ -672,7 +673,9 @@
       "subRanges": "podgrupy",
       "specSample": "Dostępność próbek",
       "specSampleVal": "Dostępne",
-      "shadeRefLabel": "Numer referencyjny"
+      "shadeCiLabel": "Nr referencyjny C.I.",
+      "shadeEecLabel": "Nr E.W.G.",
+      "shadeFdcLabel": "Nr F.D & C."
     },
     "detail": {
       "eyebrow": "Produkt",

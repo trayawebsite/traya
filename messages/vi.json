@@ -663,6 +663,7 @@
       "specDocs": "Tài liệu",
       "specDocsVal": "COA, TDS, MSDS theo yêu cầu",
       "specPrivateLabel": "Có Sẵn Nhãn Hiệu Riêng",
+      "specCustomShades": "Có sẵn màu theo yêu cầu (nếu áp dụng)",
       "industriesHeading": "Ngành hàng phục vụ",
       "subRangeHeading": "Duyệt theo nhóm phụ",
       "allSubRanges": "Tất cả",
@@ -672,7 +673,9 @@
       "subRanges": "nhóm phụ",
       "specSample": "Cung cấp mẫu",
       "specSampleVal": "Có sẵn",
-      "shadeRefLabel": "Mã tham chiếu"
+      "shadeCiLabel": "Số tham chiếu C.I.",
+      "shadeEecLabel": "Số E.E.C",
+      "shadeFdcLabel": "Số F.D & C."
     },
     "detail": {
       "eyebrow": "Sản phẩm",

@@ -663,6 +663,7 @@
       "specDocs": "Nyaraka",
       "specDocsVal": "COA, TDS, MSDS kwa ombi",
       "specPrivateLabel": "Chapa Binafsi Inapatikana",
+      "specCustomShades": "Rangi maalum zinapatikana (inapohusika)",
       "industriesHeading": "Sekta Tunazohudumia",
       "subRangeHeading": "Vinjari kwa kundi dogo",
       "allSubRanges": "Zote",
@@ -672,7 +673,9 @@
       "subRanges": "makundi madogo",
       "specSample": "Upatikanaji wa sampuli",
       "specSampleVal": "Inapatikana",
-      "shadeRefLabel": "Rejea"
+      "shadeCiLabel": "Nambari ya Rejea C.I.",
+      "shadeEecLabel": "Nambari ya E.E.C",
+      "shadeFdcLabel": "Nambari ya F.D & C."
     },
     "detail": {
       "eyebrow": "Bidhaa",

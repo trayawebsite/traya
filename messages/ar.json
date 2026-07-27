@@ -663,6 +663,7 @@
       "specDocs": "المستندات",
       "specDocsVal": "COA وTDS وMSDS عند الطلب",
       "specPrivateLabel": "متوفر بعلامة تجارية خاصة",
+      "specCustomShades": "درجات ألوان مخصصة متاحة (حيثما ينطبق)",
       "industriesHeading": "الصناعات التي نخدمها",
       "subRangeHeading": "تصفح حسب النطاق الفرعي",
       "allSubRanges": "الكل",
@@ -672,7 +673,9 @@
       "subRanges": "نطاقات فرعية",
       "specSample": "توفر العينات",
       "specSampleVal": "متوفر",
-      "shadeRefLabel": "المرجع"
+      "shadeCiLabel": "رقم مرجع C.I.",
+      "shadeEecLabel": "رقم E.E.C",
+      "shadeFdcLabel": "رقم F.D & C."
     },
     "detail": {
       "eyebrow": "المنتج",

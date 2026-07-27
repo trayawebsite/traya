@@ -78,6 +78,66 @@ export const SUBCATEGORY_BLURB: Record<string, string> = {
   "Maleic Resins": "Maleic resin binders for varnish and paint formulation."
 };
 
+/**
+ * The client's catalogue keeps every reference number for a shade in one cell,
+ * slash-separated   e.g. "C.I. 15985 / E110 / FD&C Yellow 6" (food colours) or
+ * just "Black 8" (dyes). Food colours are the only range that carries all
+ * three, and read as an unlabelled run-on string; split them so each number can
+ * be shown on its own labelled row.
+ */
+export type ColourRefs = {
+  /** Colour Index reference   "15985", "19140:1", "Black 8". */
+  ci?: string;
+  /** European E number   "E110". */
+  eec?: string;
+  /** US FD&C designation, prefix stripped   "Yellow 6". */
+  fdc?: string;
+  /** Physical form, which the natural-colour rows carry in the same cell. */
+  form?: string;
+};
+
+export function parseColourRefs(raw?: string): ColourRefs {
+  const refs: ColourRefs = {};
+  if (!raw) return refs;
+
+  for (const segment of raw.split("/")) {
+    let part = segment.replace(/\s+/g, " ").trim();
+    if (!part) continue;
+
+    // "E150a   Liquid"   form travels with the E number on natural colours.
+    const form = part.match(/\s(liquid|powder)$/i);
+    if (form) {
+      refs.form = form[1][0].toUpperCase() + form[1].slice(1).toLowerCase();
+      part = part.slice(0, form.index).trim();
+      if (!part) continue;
+    }
+
+    if (/^c\.?\s?i\.?[\s.]/i.test(part)) {
+      refs.ci = part.replace(/^c\.?\s?i\.?[\s.]*/i, "");
+    } else if (/^e\s?\d/i.test(part)) {
+      refs.eec = part;
+    } else if (/^fd\s?&\s?c\b/i.test(part)) {
+      refs.fdc = part.replace(/^fd\s?&\s?c\.?\s*/i, "");
+    } else if (refs.ci) {
+      // A trailing C.I. generic name, e.g. "C.I. 45410 / Acid Red 92".
+      refs.ci = `${refs.ci} / ${part}`;
+    } else {
+      refs.ci = part;
+    }
+  }
+  return refs;
+}
+
+/**
+ * The one reference a shade is scanned by in the grid   the first segment,
+ * kept verbatim (prefix and all) so a food colour shows "C.I. 15985" rather
+ * than three numbers crowding a small card.
+ */
+export function primaryColourRef(raw?: string): string | undefined {
+  const first = raw?.split("/")[0].replace(/\s+/g, " ").trim();
+  return first || undefined;
+}
+
 /** Is this one of the six speciality-chemical categories? */
 export function isChemicalCategory(slug: string): boolean {
   return slug in CHEMICAL_CATEGORY_META;

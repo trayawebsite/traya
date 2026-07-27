@@ -663,6 +663,7 @@
       "specDocs": "Dokumen",
       "specDocsVal": "COA, TDS, MSDS berdasarkan permintaan",
       "specPrivateLabel": "Tersedia Label Pribadi",
+      "specCustomShades": "Warna khusus tersedia (bila berlaku)",
       "industriesHeading": "Industri yang Kami Layani",
       "subRangeHeading": "Jelajahi per sub-rangkaian",
       "allSubRanges": "Semua",
@@ -672,7 +673,9 @@
       "subRanges": "sub-rangkaian",
       "specSample": "Ketersediaan sampel",
       "specSampleVal": "Tersedia",
-      "shadeRefLabel": "Referensi"
+      "shadeCiLabel": "No. Referensi C.I.",
+      "shadeEecLabel": "No. E.E.C",
+      "shadeFdcLabel": "No. F.D & C."
     },
     "detail": {
       "eyebrow": "Produk",
