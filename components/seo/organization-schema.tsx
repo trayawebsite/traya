@@ -1,7 +1,6 @@
 import { getSiteSettings } from "@/lib/site-settings";
 import { jsonLd } from "./json-ld";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
+import { siteUrl } from "@/lib/site-url";
 
 // Organization structured data   helps search engines and AI understand the business
 export async function OrganizationSchema() {

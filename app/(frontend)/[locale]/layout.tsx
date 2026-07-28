@@ -16,6 +16,7 @@ import { InquiryProvider } from "@/lib/inquiry-context";
 import { InquirySectionWrapper } from "@/components/layout/inquiry-section-wrapper";
 import { LanguagePrompt } from "@/components/layout/language-prompt";
 import { Toaster } from "@/components/ui/sonner";
+import { siteUrl } from "@/lib/site-url";
 import "../../globals.css";
 
 // Display: Lora (calligraphic serif, warm & editorial). Headlines only.
@@ -40,8 +41,6 @@ const dmMono = DM_Mono({
   weight: ["400", "500"],
   display: "swap",
 });
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
 
 // Root metadata. OG/Twitter copy is localized per request (a German visitor's
 // share card should not be English), while `keywords` stays English — it targets
@@ -106,7 +105,8 @@ const staticMetadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Traya International Exim LLP",
-    title: "Traya International Exim LLP | Indian Food Ingredient Exporter",
+    // Overridden per locale in generateMetadata above; this is the fallback.
+    title: "TRAYA INTERNATIONAL EXIM LLP | Indian Import & Export Company",
     description:
       "B2B food ingredient & chemicals supplier from India. Dehydrated onions, garlic, spices, powders, herbs, dyes, food colours & more. 450+ products, FSSAI-licensed, global shipping.",
     url: siteUrl,
@@ -122,7 +122,7 @@ const staticMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Traya International Exim LLP | Indian Food Ingredient Exporter",
+    title: "TRAYA INTERNATIONAL EXIM LLP | Indian Import & Export Company",
     description:
       "B2B food ingredient & chemicals supplier from India. 450+ products, FSSAI-licensed, global shipping.",
   },

@@ -1,8 +1,7 @@
 import type {MetadataRoute} from 'next';
 import {routing} from '@/i18n/routing';
 import {getCategorySlugs, getProductSlugs} from '@/lib/catalogue';
-
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.trayaexim.com';
+import {siteUrl as baseUrl} from '@/lib/site-url';
 
 // Primary marketing/catalogue pages. NOTE: /inquiry is deliberately excluded  
 // it's a thin client-side RFQ utility page and is marked noindex.

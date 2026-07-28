@@ -19,8 +19,7 @@ import {
   SUBCATEGORY_BLURB,
   orderSubcategories,
 } from "@/lib/chemicals-meta";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
+import { siteUrl } from "@/lib/site-url";
 
 // Rich category template   follows the playbook's Kanegrade pattern:
 // Hero · Product grid · Sourcing story · Specs & packaging · Certs · Sibling links · CTA

@@ -1,7 +1,6 @@
 import type { CatalogueProduct, CatalogueCategory } from "@/lib/catalogue";
 import { jsonLd } from "./json-ld";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
+import { siteUrl } from "@/lib/site-url";
 
 // Product structured data   helps search engines and AI understand product details
 export function ProductSchema({

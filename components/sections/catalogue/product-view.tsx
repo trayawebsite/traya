@@ -18,8 +18,7 @@ import {
   BreadcrumbSchema,
 } from "@/components/seo/product-schema";
 import { Download, ArrowRight } from "lucide-react";
-
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.trayaexim.com";
+import { siteUrl } from "@/lib/site-url";
 
 // Product detail   renders rich Sanity data when available (images, description,
 // specs, forms), with i18n fallback for fields not in CMS.
