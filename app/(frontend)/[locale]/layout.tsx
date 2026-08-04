@@ -106,7 +106,7 @@ const staticMetadata: Metadata = {
     type: "website",
     siteName: "Traya International Exim LLP",
     // Overridden per locale in generateMetadata above; this is the fallback.
-    title: "TRAYA INTERNATIONAL EXIM LLP | Indian Import & Export Company",
+    title: "TRAYA INTERNATIONAL EXIM LLP | Indian Export & Import Company",
     description:
       "B2B food ingredient & chemicals supplier from India. Dehydrated onions, garlic, spices, powders, herbs, dyes, food colours & more. 450+ products, FSSAI-licensed, global shipping.",
     url: siteUrl,
@@ -122,9 +122,15 @@ const staticMetadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "TRAYA INTERNATIONAL EXIM LLP | Indian Import & Export Company",
+    title: "TRAYA INTERNATIONAL EXIM LLP | Indian Export & Import Company",
     description:
       "B2B food ingredient & chemicals supplier from India. 450+ products, FSSAI-licensed, global shipping.",
+  },
+  // Google Search Console site ownership. Emitted on every page as
+  // <meta name="google-site-verification">; GSC only reads the homepage, but
+  // leaving it site-wide means a re-verify can never fail on a stray route.
+  verification: {
+    google: "E9HvmSY0T1xuzI2soOMAQPAumifwsfQUgx_Oh-s6Mcg",
   },
   robots: {
     index: true,

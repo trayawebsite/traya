@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Como Trabalhamos   Traya International Exim",
+      "title": "Como Trabalhamos",
       "description": "Como a Traya gere a sua exportação, desde o pedido até à entrega: abastecimento, verificação de qualidade, documentação, logística e envio por mar, ar ou correio."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Empresa Indiana de Importação e Exportação",
-      "description": "A Traya International Exim LLP é uma casa indiana de importação e exportação multissetorial que ajuda compradores globais a adquirir ingredientes alimentares, especiarias, produtos desidratados, pós, ervas, corantes e químicos especializados."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Empresa Indiana de Exportação e Importação",
+      "description": "A Traya International Exim LLP é uma casa indiana de exportação e importação multissetorial que ajuda compradores globais a adquirir ingredientes alimentares, especiarias, produtos desidratados, pós, ervas, corantes e químicos especializados."
     },
     "hero": {
       "eyebrow": "A Expandir Horizontes Através do Comércio.",
@@ -629,10 +629,12 @@
     "viewRange": "Ver gama",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} proveniente da Índia, na categoria {category}. Especificações, MOQ, embalagem, documentos e preços são confirmados mediante pedido. Traya International Exim LLP.",
       "ogDescription": "{product} proveniente da Índia, na categoria {category}. Especificações, MOQ, embalagem, documentos e preços são confirmados mediante pedido."
     },
     "category": {
+      "metaTitle": "Exportador e fornecedor de {title} da Índia",
       "metaDescription": "{title} proveniente da Índia. {count} {products} disponíveis. Especificações, MOQ, embalagem, documentos e preços são confirmados mediante pedido. Traya International Exim LLP.",
       "eyebrow": "Categoria",
       "rangeHeading": "Explore Todas as Variantes",

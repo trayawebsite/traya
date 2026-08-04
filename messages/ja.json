@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "取り組み方   Traya International Exim",
+      "title": "取り組み方",
       "description": "Trayaがお問い合わせから納品まで輸出をどのように管理するか:調達、品質検証、書類作成、物流、そして海上・航空・クーリエによる輸送について。"
     },
     "hero": {
@@ -629,10 +629,12 @@
     "viewRange": "ラインナップを見る",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{category}カテゴリーの{product}(インド産)。仕様、MOQ、梱包、書類、価格はお問い合わせ時に確認いたします。Traya International Exim LLP。",
       "ogDescription": "{category}カテゴリーの{product}(インド産)。仕様、MOQ、梱包、書類、価格はお問い合わせ時に確認いたします。"
     },
     "category": {
+      "metaTitle": "インド産{title}の輸出・供給業者",
       "metaDescription": "{title}(インド産)。{count}{products}をご用意しています。仕様、MOQ、梱包、書類、価格はお問い合わせ時に確認いたします。Traya International Exim LLP。",
       "eyebrow": "カテゴリー",
       "rangeHeading": "すべてのバリエーションを見る",

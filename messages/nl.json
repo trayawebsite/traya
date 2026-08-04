@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Hoe Wij Werken   Traya International Exim",
+      "title": "Hoe Wij Werken",
       "description": "Hoe Traya uw export beheert van aanvraag tot levering: sourcing, kwaliteitscontrole, documentatie, logistiek en verzending per zee, lucht of koerier."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Indiaas Import- & Exportbedrijf",
-      "description": "Traya International Exim LLP is een multisectoraal Indiaas import- en exporthuis dat wereldwijde inkopers helpt bij het inkopen van voedselingrediënten, specerijen, gedroogde producten, poeders, kruiden, kleurstoffen en speciaalchemicaliën."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Indiaas Export- & Importbedrijf",
+      "description": "Traya International Exim LLP is een multisectoraal Indiaas export- en importhuis dat wereldwijde inkopers helpt bij het inkopen van voedselingrediënten, specerijen, gedroogde producten, poeders, kruiden, kleurstoffen en speciaalchemicaliën."
     },
     "hero": {
       "eyebrow": "Horizonnen Verbreden Door Handel.",
@@ -629,10 +629,12 @@
     "viewRange": "Bekijk assortiment",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} uit India in de categorie {category}. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag. Traya International Exim LLP.",
       "ogDescription": "{product} uit India in de categorie {category}. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag."
     },
     "category": {
+      "metaTitle": "{title} exporteur & leverancier uit India",
       "metaDescription": "{title} uit India. {count} {products} beschikbaar. Specificaties, MOQ, verpakking, documenten en prijzen worden bevestigd op aanvraag. Traya International Exim LLP.",
       "eyebrow": "Categorie",
       "rangeHeading": "Ontdek Alle Varianten",

@@ -26,13 +26,37 @@ export async function generateMetadata({
   const t = await getTranslations({locale, namespace: 'Catalogue'});
   const found = await getProductBySlug(slug);
   if (!found) return {};
+  const {product, category} = found;
+
+  // Chemical SKUs repeat across sub-ranges (Tartrazine is both a Synthetic Food
+  // Colour and a Lake Colour), so the bare "<product> | <category>" title
+  // collided on 14 pages. The series makes each one unique.
+  const title = product.series
+    ? t('productMeta.titleWithSeries', {
+        product: product.name,
+        series: product.series,
+        category: category.title
+      })
+    : t('productMeta.title', {product: product.name, category: category.title});
+
   return {
-    title: t('productMeta.title', {product: found.product.name, category: found.category.title}),
-    description: t('productMeta.description', {product: found.product.name, category: found.category.title}),
+    title,
+    description: t('productMeta.description', {product: product.name, category: category.title}),
     alternates: localeAlternates(locale, `/products/${slug}`),
     openGraph: {
-      title: `${found.product.name} | Traya International Exim`,
-      description: t('productMeta.ogDescription', {product: found.product.name, category: found.category.title})
+      title: `${product.name} | Traya International Exim`,
+      description: t('productMeta.ogDescription', {product: product.name, category: category.title}),
+      // Next REPLACES the parent's openGraph wholesale rather than merging it,
+      // so omitting images here stripped the share image from all 452 product
+      // pages   a shared product link previewed as bare text.
+      images: [
+        {
+          url: '/og-image.jpg',
+          width: 1200,
+          height: 630,
+          alt: `${product.name}   Traya International Exim`
+        }
+      ]
     }
   };
 }

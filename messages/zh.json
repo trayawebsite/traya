@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "工作方式   Traya International Exim",
+      "title": "工作方式",
       "description": "了解Traya如何管理您从询价到交付的整个出口流程：寻源、质量核验、单证、物流以及海运、空运或快递运输。"
     },
     "hero": {
@@ -629,10 +629,12 @@
     "viewRange": "查看全部系列",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product}产自印度，属于{category}品类。规格、最小起订量、包装、单证及价格将在询价时确认。Traya International Exim LLP。",
       "ogDescription": "{product}产自印度，属于{category}品类。规格、最小起订量、包装、单证及价格将在询价时确认。"
     },
     "category": {
+      "metaTitle": "印度{title}出口商与供应商",
       "metaDescription": "{title}产自印度，现有{count}{products}可选。规格、最小起订量、包装、单证及价格将在询价时确认。Traya International Exim LLP。",
       "eyebrow": "品类",
       "rangeHeading": "探索所有款式",

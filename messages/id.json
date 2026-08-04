@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Cara Kami Bekerja   Traya International Exim",
+      "title": "Cara Kami Bekerja",
       "description": "Bagaimana Traya mengelola ekspor Anda mulai dari permintaan hingga pengiriman: pengadaan, verifikasi mutu, dokumentasi, logistik, dan pengiriman melalui laut, udara, atau kurir."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Perusahaan Impor & Ekspor India",
-      "description": "Traya International Exim LLP adalah rumah impor & ekspor India multisektor yang membantu pembeli global mendapatkan bahan pangan, rempah, produk kering, bubuk, herbal, pewarna, dan bahan kimia khusus."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Perusahaan Ekspor & Impor India",
+      "description": "Traya International Exim LLP adalah rumah ekspor & impor India multisektor yang membantu pembeli global mendapatkan bahan pangan, rempah, produk kering, bubuk, herbal, pewarna, dan bahan kimia khusus."
     },
     "hero": {
       "eyebrow": "Memperluas Cakrawala Melalui Perdagangan.",
@@ -629,10 +629,12 @@
     "viewRange": "Lihat rangkaian",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} dari India dalam kategori {category}. Spesifikasi, MOQ, kemasan, dokumen, dan harga dikonfirmasi saat permintaan. Traya International Exim LLP.",
       "ogDescription": "{product} dari India dalam kategori {category}. Spesifikasi, MOQ, kemasan, dokumen, dan harga dikonfirmasi saat permintaan."
     },
     "category": {
+      "metaTitle": "Eksportir & pemasok {title} dari India",
       "metaDescription": "{title} dari India. {count} {products} tersedia. Spesifikasi, MOQ, kemasan, dokumen, dan harga dikonfirmasi saat permintaan. Traya International Exim LLP.",
       "eyebrow": "Kategori",
       "rangeHeading": "Jelajahi Semua Varian",

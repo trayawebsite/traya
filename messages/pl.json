@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Jak pracujemy   Traya International Exim",
+      "title": "Jak pracujemy",
       "description": "Jak Traya zarządza Państwa eksportem od zapytania do dostawy: pozyskiwanie towaru, weryfikacja jakości, dokumentacja, logistyka oraz transport morski, lotniczy i kurierski."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Indyjska firma importowo-eksportowa",
-      "description": "Traya International Exim LLP to wielobranżowy indyjski dom importowo-eksportowy, który pomaga nabywcom na całym świecie pozyskiwać składniki spożywcze, przyprawy, produkty suszone, proszki, zioła, barwniki i chemikalia specjalistyczne."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Indyjska firma eksportowo-importowa",
+      "description": "Traya International Exim LLP to wielobranżowy indyjski dom eksportowo-importowy, który pomaga nabywcom na całym świecie pozyskiwać składniki spożywcze, przyprawy, produkty suszone, proszki, zioła, barwniki i chemikalia specjalistyczne."
     },
     "hero": {
       "eyebrow": "Poszerzamy horyzonty poprzez handel.",
@@ -629,10 +629,12 @@
     "viewRange": "Zobacz asortyment",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} z Indii, w kategorii {category}. Specyfikacje, MOQ, opakowanie, dokumenty oraz ceny są potwierdzane po zapytaniu. Traya International Exim LLP.",
       "ogDescription": "{product} z Indii, w kategorii {category}. Specyfikacje, MOQ, opakowanie, dokumenty oraz ceny są potwierdzane po zapytaniu."
     },
     "category": {
+      "metaTitle": "Eksporter i dostawca {title} z Indii",
       "metaDescription": "{title} z Indii. Dostępne: {count} {products}. Specyfikacje, MOQ, opakowanie, dokumenty oraz ceny są potwierdzane po zapytaniu. Traya International Exim LLP.",
       "eyebrow": "Kategoria",
       "rangeHeading": "Poznaj Wszystkie Warianty",

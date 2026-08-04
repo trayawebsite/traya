@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "How We Work   Traya International Exim",
+      "title": "How We Work",
       "description": "How Traya manages your export from inquiry to delivery: sourcing, quality verification, documentation, logistics, and shipping by sea, air, or courier."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Indian Import & Export Company",
-      "description": "Traya International Exim LLP is a multi-sector Indian import & export house helping global buyers source food ingredients, spices, dehydrated products, powders, herbs, dyes & speciality chemicals."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Indian Export & Import Company",
+      "description": "Traya International Exim LLP is a multi-sector Indian export & import house helping global buyers source food ingredients, spices, dehydrated products, powders, herbs, dyes & speciality chemicals."
     },
     "hero": {
       "eyebrow": "Expanding Horizons Through Trade",
@@ -629,10 +629,12 @@
     "viewRange": "View range",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} from India in the {category} category. Specifications, MOQ, packaging, documents, and pricing are confirmed on inquiry. Traya International Exim LLP.",
       "ogDescription": "{product} from India in the {category} category. Specs, MOQ, packaging, documents, and pricing are confirmed on inquiry."
     },
     "category": {
+      "metaTitle": "{title} Exporter & Supplier from India",
       "metaDescription": "{title} from India. {count} {products} available. Specifications, MOQ, packaging, documents, and pricing are confirmed on inquiry. Traya International Exim LLP.",
       "eyebrow": "Category",
       "rangeHeading": "Explore All Variants",

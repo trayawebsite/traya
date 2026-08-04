@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Nasıl Çalışırız   Traya International Exim",
+      "title": "Nasıl Çalışırız",
       "description": "Traya'nın talebinizden teslimata kadar ihracat sürecinizi nasıl yönettiği: tedarik, kalite doğrulama, belgelendirme, lojistik ve deniz, hava veya kurye yoluyla nakliye."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Hindistan Menşeli İthalat & İhracat Şirketi",
-      "description": "Traya International Exim LLP, küresel alıcıların gıda bileşenleri, baharatlar, kurutulmuş ürünler, tozlar, bitkiler, boyar maddeler ve özel kimyasallar tedarik etmesine yardımcı olan çok sektörlü bir Hindistan ithalat ve ihracat kuruluşudur."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Hindistan Menşeli İhracat & İthalat Şirketi",
+      "description": "Traya International Exim LLP, küresel alıcıların gıda bileşenleri, baharatlar, kurutulmuş ürünler, tozlar, bitkiler, boyar maddeler ve özel kimyasallar tedarik etmesine yardımcı olan çok sektörlü bir Hindistan ihracat ve ithalat kuruluşudur."
     },
     "hero": {
       "eyebrow": "Ticaretle Ufukları Genişletiyoruz.",
@@ -629,10 +629,12 @@
     "viewRange": "Yelpazeyi görüntüle",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{category} kategorisinde Hindistan'dan {product}. Teknik özellikler, minimum sipariş miktarı, ambalaj, belgeler ve fiyatlandırma talep üzerine teyit edilir. Traya International Exim LLP.",
       "ogDescription": "{category} kategorisinde Hindistan'dan {product}. Teknik özellikler, minimum sipariş miktarı, ambalaj, belgeler ve fiyatlandırma talep üzerine teyit edilir."
     },
     "category": {
+      "metaTitle": "Hindistan'dan {title} ihracatçısı ve tedarikçisi",
       "metaDescription": "Hindistan'dan {title}. {count} {products} mevcuttur. Teknik özellikler, minimum sipariş miktarı, ambalaj, belgeler ve fiyatlandırma talep üzerine teyit edilir. Traya International Exim LLP.",
       "eyebrow": "Kategori",
       "rangeHeading": "Tüm Varyantları Keşfedin",

@@ -29,7 +29,9 @@ export async function generateMetadata({
   const count = category.products.length;
   const productWord = count === 1 ? t('product') : t('products');
   return {
-    title: `${category.title} | ${count} ${productWord}`,
+    // Keyword-led, not count-led: buyers search "<category> exporter india",
+    // never "<category> | 79 products". The count still shows on the page.
+    title: t('category.metaTitle', {title: category.title}),
     description: t('category.metaDescription', {title: category.title, count, products: productWord}),
     alternates: localeAlternates(locale, `/categories/${slug}`)
   };

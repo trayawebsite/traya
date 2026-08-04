@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Jinsi Tunavyofanya Kazi   Traya International Exim",
+      "title": "Jinsi Tunavyofanya Kazi",
       "description": "Jinsi Traya inavyosimamia usafirishaji wako wa bidhaa kutoka ombi hadi uwasilishaji: utafutaji wa bidhaa, uhakiki wa ubora, hati, huduma za usafirishaji, na usafirishaji kwa njia ya bahari, anga, au kurier."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Kampuni ya Uagizaji na Usafirishaji ya India",
-      "description": "Traya International Exim LLP ni kampuni ya Kihindi ya uagizaji na usafirishaji yenye sekta nyingi, inayosaidia wanunuzi duniani kupata viungo vya chakula, vikolezo, bidhaa zilizokaushwa, unga, mimea, rangi na kemikali maalum."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Kampuni ya Usafirishaji na Uagizaji ya India",
+      "description": "Traya International Exim LLP ni kampuni ya Kihindi ya usafirishaji na uagizaji yenye sekta nyingi, inayosaidia wanunuzi duniani kupata viungo vya chakula, vikolezo, bidhaa zilizokaushwa, unga, mimea, rangi na kemikali maalum."
     },
     "hero": {
       "eyebrow": "Kupanua Upeo Kupitia Biashara.",
@@ -629,10 +629,12 @@
     "viewRange": "Angalia wigo",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} kutoka India katika kategoria ya {category}. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi. Traya International Exim LLP.",
       "ogDescription": "{product} kutoka India katika kategoria ya {category}. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi."
     },
     "category": {
+      "metaTitle": "Msafirishaji na msambazaji wa {title} kutoka India",
       "metaDescription": "{title} kutoka India. {count} {products} zinapatikana. Vipimo, MOQ, ufungashaji, hati, na bei vinathibitishwa unapotuma ombi. Traya International Exim LLP.",
       "eyebrow": "Kategoria",
       "rangeHeading": "Chunguza Aina Zote",

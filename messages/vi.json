@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Cách Chúng Tôi Làm Việc   Traya International Exim",
+      "title": "Cách Chúng Tôi Làm Việc",
       "description": "Cách Traya quản lý hoạt động xuất khẩu của bạn từ khi hỏi hàng đến khi giao hàng: tìm nguồn cung ứng, kiểm định chất lượng, chứng từ, hậu cần và vận chuyển bằng đường biển, đường hàng không hoặc chuyển phát nhanh."
     },
     "hero": {
@@ -629,10 +629,12 @@
     "viewRange": "Xem toàn bộ dòng sản phẩm",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} từ Ấn Độ thuộc danh mục {category}. Thông số kỹ thuật, số lượng đặt hàng tối thiểu, đóng gói, chứng từ và giá cả được xác nhận khi có yêu cầu. Traya International Exim LLP.",
       "ogDescription": "{product} từ Ấn Độ thuộc danh mục {category}. Thông số kỹ thuật, MOQ, đóng gói, chứng từ và giá cả được xác nhận khi có yêu cầu."
     },
     "category": {
+      "metaTitle": "Nhà xuất khẩu & cung cấp {title} từ Ấn Độ",
       "metaDescription": "{title} từ Ấn Độ. {count} {products} có sẵn. Thông số kỹ thuật, số lượng đặt hàng tối thiểu, đóng gói, chứng từ và giá cả được xác nhận khi có yêu cầu. Traya International Exim LLP.",
       "eyebrow": "Danh mục",
       "rangeHeading": "Khám Phá Tất Cả Các Biến Thể",

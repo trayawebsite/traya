@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Cómo Trabajamos   Traya International Exim",
+      "title": "Cómo Trabajamos",
       "description": "Cómo gestiona Traya su exportación desde la consulta hasta la entrega: abastecimiento, verificación de calidad, documentación, logística y envío por mar, aire o mensajería."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Empresa India de Importación y Exportación",
-      "description": "Traya International Exim LLP es una casa india de importación y exportación multisectorial que ayuda a compradores globales a abastecerse de ingredientes alimentarios, especias, productos deshidratados, polvos, hierbas, colorantes y químicos especializados."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Empresa India de Exportación e Importación",
+      "description": "Traya International Exim LLP es una casa india de exportación e importación multisectorial que ayuda a compradores globales a abastecerse de ingredientes alimentarios, especias, productos deshidratados, polvos, hierbas, colorantes y químicos especializados."
     },
     "hero": {
       "eyebrow": "Ampliando Horizontes a Través del Comercio.",
@@ -629,10 +629,12 @@
     "viewRange": "Ver gama",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} desde India en la categoría {category}. Las especificaciones, MOQ, empaque, documentos y precios se confirman al consultar. Traya International Exim LLP.",
       "ogDescription": "{product} desde India en la categoría {category}. Especificaciones, MOQ, empaque, documentos y precios se confirman al consultar."
     },
     "category": {
+      "metaTitle": "Exportador y proveedor de {title} desde India",
       "metaDescription": "{title} desde India. {count} {products} disponibles. Las especificaciones, MOQ, empaque, documentos y precios se confirman al consultar. Traya International Exim LLP.",
       "eyebrow": "Categoría",
       "rangeHeading": "Explore Todas las Variantes",

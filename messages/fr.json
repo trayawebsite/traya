@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "Notre méthode   Traya International Exim",
+      "title": "Notre méthode",
       "description": "Comment Traya gère votre exportation de la demande à la livraison : sourcing, vérification qualité, documentation, logistique et expédition par mer, air ou courrier."
     },
     "hero": {
@@ -251,8 +251,8 @@
   },
   "Home": {
     "meta": {
-      "title": "TRAYA INTERNATIONAL EXIM LLP | Société indienne d'import-export",
-      "description": "Traya International Exim LLP est une maison d'import-export indienne multisectorielle qui aide les acheteurs du monde entier à s'approvisionner en ingrédients alimentaires, épices, produits déshydratés, poudres, herbes, colorants et produits chimiques de spécialité."
+      "title": "TRAYA INTERNATIONAL EXIM LLP | Société indienne d'export-import",
+      "description": "Traya International Exim LLP est une maison d'export-import indienne multisectorielle qui aide les acheteurs du monde entier à s'approvisionner en ingrédients alimentaires, épices, produits déshydratés, poudres, herbes, colorants et produits chimiques de spécialité."
     },
     "hero": {
       "eyebrow": "Élargir les horizons par le commerce.",
@@ -629,10 +629,12 @@
     "viewRange": "Voir la gamme",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{product} de l'Inde dans la catégorie {category}. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande. Traya International Exim LLP.",
       "ogDescription": "{product} de l'Inde dans la catégorie {category}. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande."
     },
     "category": {
+      "metaTitle": "Exportateur et fournisseur de {title} en Inde",
       "metaDescription": "{title} depuis l'Inde. {count} {products} disponibles. Les spécifications, QMC, emballage, documents et prix sont confirmés lors de la demande. Traya International Exim LLP.",
       "eyebrow": "Catégorie",
       "rangeHeading": "Découvrez Toutes les Variantes",

@@ -1,7 +1,7 @@
 {
   "HowWeWork": {
     "meta": {
-      "title": "업무 방식   Traya International Exim",
+      "title": "업무 방식",
       "description": "문의부터 배송까지, Traya가 귀사의 수출을 관리하는 방법: 소싱, 품질 검증, 서류 작업, 물류, 해상·항공·특송 운송."
     },
     "hero": {
@@ -629,10 +629,12 @@
     "viewRange": "제품군 보기",
     "productMeta": {
       "title": "{product} | {category}",
+      "titleWithSeries": "{product} ({series}) | {category}",
       "description": "{category} 카테고리의 인도산 {product}. 사양, 최소 주문 수량(MOQ), 포장, 서류, 가격은 문의 시 확인됩니다. Traya International Exim LLP.",
       "ogDescription": "{category} 카테고리의 인도산 {product}. 사양, MOQ, 포장, 서류, 가격은 문의 시 확인됩니다."
     },
     "category": {
+      "metaTitle": "인도 {title} 수출 및 공급업체",
       "metaDescription": "인도산 {title}. {count}개 {products} 이용 가능. 사양, 최소 주문 수량(MOQ), 포장, 서류, 가격은 문의 시 확인됩니다. Traya International Exim LLP.",
       "eyebrow": "카테고리",
       "rangeHeading": "모든 종류 살펴보기",
