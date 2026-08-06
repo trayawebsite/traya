@@ -1,65 +1,24 @@
-import type { CatalogueProduct, CatalogueCategory } from "@/lib/catalogue";
 import { jsonLd } from "./json-ld";
-import { siteUrl } from "@/lib/site-url";
 
-// Product structured data   helps search engines and AI understand product details
-export function ProductSchema({
-  product,
-  category,
-}: {
-  product: CatalogueProduct;
-  category: CatalogueCategory;
-}) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: product.name,
-    url: `${siteUrl}/products/${product.slug}`,
-    description:
-      product.shortDescription ||
-      `${product.name} from India. Available for B2B wholesale export.`,
-    category: category.title,
-    brand: {
-      "@type": "Brand",
-      name: "Traya International Exim LLP",
-    },
-    manufacturer: {
-      "@type": "Organization",
-      name: "Traya International Exim LLP",
-      url: siteUrl,
-    },
-    countryOfOrigin: {
-      "@type": "Country",
-      name: "India",
-    },
-    // No `offers` block: this is a quote-only (RFQ) B2B export catalogue with no
-    // listed price. A literal price:"0" reads as "Free" and is rejected by
-    // Google's Product rich-result validation   so we omit Offer entirely.
-    additionalProperty: [
-      ...(product.origin
-        ? [
-            {
-              "@type": "PropertyValue",
-              name: "Origin",
-              value: product.origin,
-            },
-          ]
-        : []),
-      ...(product.specifications?.map((spec) => ({
-        "@type": "PropertyValue",
-        name: spec.label,
-        value: spec.value,
-      })) ?? []),
-    ],
-  };
-
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: jsonLd(schema) }}
-    />
-  );
-}
+// ─────────────────────────────────────────────────────────────────────────
+// DELIBERATELY NO `Product` SCHEMA   do not re-add it.
+//
+// Google's Product type requires one of `offers` (with a real price),
+// `review`, or `aggregateRating`. This is a quote-only (RFQ) B2B export
+// catalogue: there is no public price, and there are no per-product reviews or
+// ratings. Emitting Product without those made every SKU an "invalid item" in
+// Search Console (reported 2026-08-06) with no upside   the price/stars rich
+// result was never attainable.
+//
+// The dishonest workarounds are off the table: `price: "0"` renders as "Free",
+// and a fabricated `aggregateRating` is exactly the spammy structured markup
+// Google issues manual actions for.
+//
+// If the client ever publishes real prices or collects real product reviews,
+// Product + a truthful Offer can come back. Until then, BreadcrumbList is the
+// only structured data these pages can honestly claim   and it is the one that
+// actually earns a rich result (the breadcrumb trail under the listing).
+// ─────────────────────────────────────────────────────────────────────────
 
 // BreadcrumbList structured data
 export function BreadcrumbSchema({

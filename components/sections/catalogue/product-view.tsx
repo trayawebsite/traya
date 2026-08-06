@@ -13,10 +13,7 @@ import { getSiteSettings } from "@/lib/site-settings";
 import { AddToInquiryButton } from "@/components/inquiry/add-to-inquiry";
 import { QuoteForm } from "@/components/sections/quote-form";
 import { ProductImages } from "./product-images";
-import {
-  ProductSchema,
-  BreadcrumbSchema,
-} from "@/components/seo/product-schema";
+import { BreadcrumbSchema } from "@/components/seo/product-schema";
 import { Download, ArrowRight } from "lucide-react";
 import { siteUrl } from "@/lib/site-url";
 
@@ -42,7 +39,9 @@ export async function ProductView({
 
   return (
     <section className="bg-background">
-      <ProductSchema product={product} category={category} />
+      {/* No Product JSON-LD here   see components/seo/product-schema.tsx.
+          BreadcrumbSchema stays: it is valid and powers the breadcrumb trail
+          Google shows under the result. */}
       <BreadcrumbSchema
         items={[
           { name: tl("home"), url: siteUrl },
